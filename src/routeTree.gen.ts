@@ -13,6 +13,7 @@ import { Route as TrabalhosRealizadosRouteImport } from './routes/trabalhos-real
 import { Route as SolucoesWebRouteImport } from './routes/solucoes-web'
 import { Route as SoftwareRouteImport } from './routes/software'
 import { Route as SistemaSobDemandaNcBrasilRouteImport } from './routes/sistema-sob-demanda-nc-brasil'
+import { Route as SistemaDeLeilaoRouteImport } from './routes/sistema-de-leilao'
 import { Route as ProgramaDeOrdemDeServicoRouteImport } from './routes/programa-de-ordem-de-servico'
 import { Route as OrcamentoRouteImport } from './routes/orcamento'
 import { Route as NossosSistemasRouteImport } from './routes/nossos-sistemas'
@@ -52,6 +53,11 @@ const SistemaSobDemandaNcBrasilRoute =
     path: '/sistema-sob-demanda-nc-brasil',
     getParentRoute: () => rootRouteImport,
   } as any)
+const SistemaDeLeilaoRoute = SistemaDeLeilaoRouteImport.update({
+  id: '/sistema-de-leilao',
+  path: '/sistema-de-leilao',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProgramaDeOrdemDeServicoRoute =
   ProgramaDeOrdemDeServicoRouteImport.update({
     id: '/programa-de-ordem-de-servico',
@@ -158,6 +164,7 @@ export interface FileRoutesByFullPath {
   '/nossos-sistemas': typeof NossosSistemasRoute
   '/orcamento': typeof OrcamentoRoute
   '/programa-de-ordem-de-servico': typeof ProgramaDeOrdemDeServicoRoute
+  '/sistema-de-leilao': typeof SistemaDeLeilaoRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRoute
@@ -181,6 +188,7 @@ export interface FileRoutesByTo {
   '/nossos-sistemas': typeof NossosSistemasRoute
   '/orcamento': typeof OrcamentoRoute
   '/programa-de-ordem-de-servico': typeof ProgramaDeOrdemDeServicoRoute
+  '/sistema-de-leilao': typeof SistemaDeLeilaoRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRoute
@@ -205,6 +213,7 @@ export interface FileRoutesById {
   '/nossos-sistemas': typeof NossosSistemasRoute
   '/orcamento': typeof OrcamentoRoute
   '/programa-de-ordem-de-servico': typeof ProgramaDeOrdemDeServicoRoute
+  '/sistema-de-leilao': typeof SistemaDeLeilaoRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRoute
@@ -230,6 +239,7 @@ export interface FileRouteTypes {
     | '/nossos-sistemas'
     | '/orcamento'
     | '/programa-de-ordem-de-servico'
+    | '/sistema-de-leilao'
     | '/sistema-sob-demanda-nc-brasil'
     | '/software'
     | '/solucoes-web'
@@ -253,6 +263,7 @@ export interface FileRouteTypes {
     | '/nossos-sistemas'
     | '/orcamento'
     | '/programa-de-ordem-de-servico'
+    | '/sistema-de-leilao'
     | '/sistema-sob-demanda-nc-brasil'
     | '/software'
     | '/solucoes-web'
@@ -276,6 +287,7 @@ export interface FileRouteTypes {
     | '/nossos-sistemas'
     | '/orcamento'
     | '/programa-de-ordem-de-servico'
+    | '/sistema-de-leilao'
     | '/sistema-sob-demanda-nc-brasil'
     | '/software'
     | '/solucoes-web'
@@ -300,6 +312,7 @@ export interface RootRouteChildren {
   NossosSistemasRoute: typeof NossosSistemasRoute
   OrcamentoRoute: typeof OrcamentoRoute
   ProgramaDeOrdemDeServicoRoute: typeof ProgramaDeOrdemDeServicoRoute
+  SistemaDeLeilaoRoute: typeof SistemaDeLeilaoRoute
   SistemaSobDemandaNcBrasilRoute: typeof SistemaSobDemandaNcBrasilRoute
   SoftwareRoute: typeof SoftwareRoute
   SolucoesWebRoute: typeof SolucoesWebRoute
@@ -341,6 +354,13 @@ declare module '@tanstack/react-router' {
       path: '/sistema-sob-demanda-nc-brasil'
       fullPath: '/sistema-sob-demanda-nc-brasil'
       preLoaderRoute: typeof SistemaSobDemandaNcBrasilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistema-de-leilao': {
+      id: '/sistema-de-leilao'
+      path: '/sistema-de-leilao'
+      fullPath: '/sistema-de-leilao'
+      preLoaderRoute: typeof SistemaDeLeilaoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/programa-de-ordem-de-servico': {
@@ -476,6 +496,7 @@ const rootRouteChildren: RootRouteChildren = {
   NossosSistemasRoute: NossosSistemasRoute,
   OrcamentoRoute: OrcamentoRoute,
   ProgramaDeOrdemDeServicoRoute: ProgramaDeOrdemDeServicoRoute,
+  SistemaDeLeilaoRoute: SistemaDeLeilaoRoute,
   SistemaSobDemandaNcBrasilRoute: SistemaSobDemandaNcBrasilRoute,
   SoftwareRoute: SoftwareRoute,
   SolucoesWebRoute: SolucoesWebRoute,

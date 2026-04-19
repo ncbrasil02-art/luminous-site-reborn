@@ -11,7 +11,7 @@ const systems = [
     title: "Sistemas de Leilão Eletrônico",
     description: "Plataformas completas para leilões judiciais e extrajudiciais, com lances em tempo real, gestão de lotes e integração com editais.",
     features: ["Lances em Tempo Real", "Auditagem Completa", "Gestão de Arrematantes", "Homologação Jurídica"],
-    to: "/portfolio/criacao-de-sistemas"
+    to: "/sistema-de-leilao"
   },
   {
     icon: ShoppingCart,
