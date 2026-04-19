@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Zap, ChevronDown, Gavel, LayoutDashboard } from "lucide-react";
+import { Menu, X, Zap, ChevronDown, Gavel, LayoutDashboard, Globe2, ShoppingBag, Smartphone, LineChart, ClipboardList, Cpu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
   DropdownMenu,
@@ -11,17 +11,25 @@ import {
 
 const navItems = [
   { to: "/empresa", label: "Empresa" },
-  { to: "/solucoes-web", label: "Soluções Web" },
-  { to: "/nossos-servicos", label: "Serviços" },
+  { 
+    label: "Soluções", 
+    submenu: [
+      { to: "/solucoes-web", label: "Criação de Sites", icon: Globe2 },
+      { to: "/portfolio/lojas-virtuais-criadas", label: "E-commerce", icon: ShoppingBag },
+      { to: "/portfolio/criacao-de-aplicativos", label: "Aplicativos Mobile", icon: Smartphone },
+      { to: "/nossos-servicos", label: "Marketing Digital", icon: LineChart },
+    ]
+  },
   { 
     label: "Sistemas", 
     submenu: [
-      { to: "/nossos-sistemas", label: "Ver todos os sistemas", icon: LayoutDashboard },
+      { to: "/nossos-sistemas", label: "Todos os Sistemas", icon: LayoutDashboard },
       { to: "/sistema-de-leilao", label: "Sistema de Leilão", icon: Gavel },
+      { to: "/programa-de-ordem-de-servico", label: "Ordem de Serviço", icon: ClipboardList },
+      { to: "/sistema-sob-demanda-nc-brasil", label: "Sistemas Sob Demanda", icon: Cpu },
     ]
   },
   { to: "/trabalhos-realizados", label: "Portfólio" },
-  { to: "/orcamento", label: "Orçamento" },
   { to: "/contato", label: "Contato" },
 ] as const;
 
