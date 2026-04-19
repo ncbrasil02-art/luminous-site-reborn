@@ -14,7 +14,8 @@ import {
   Terminal,
   ChevronRight,
   HelpCircle,
-  BarChart3
+  BarChart3,
+  ShoppingBag
 } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { 
