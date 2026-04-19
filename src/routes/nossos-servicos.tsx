@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Globe2, ShoppingBag, Smartphone, Sparkles, LineChart, Search, Palette, Code2 } from "lucide-react";
+import { ArrowRight, Globe2, ShoppingBag, Smartphone, Sparkles, LineChart, Search, Palette, Code2, Zap } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { buildStubMeta } from "@/components/StubPage";
+import { SystemsCarousel } from "@/components/SystemsCarousel";
 
 const URL = "https://www.ncbrasil.com.br/nossos-servicos";
 
@@ -126,7 +127,20 @@ export const Route = createFileRoute("/nossos-servicos")({
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* COMPLEMENTARY SYSTEMS SECTION ==================================== */}
+      <section className="relative py-24 md:py-32 bg-surface/30">
+        <div className="absolute inset-0 -z-10 grid-pattern opacity-20" />
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <SectionHeading
+            eyebrow="Engenharia Web"
+            title={<>Sistemas que <span className="text-gradient">potencializam</span> seus serviços</>}
+            description="Além de marketing e design, entregamos a inteligência de software necessária para escalar sua operação."
+          />
+          <div className="mt-16">
+            <SystemsCarousel />
+          </div>
+        </div>
+      </section>
       <section className="relative py-24 md:py-32">
         <div className="mx-auto max-w-5xl px-4 md:px-6">
           <Reveal>
