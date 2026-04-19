@@ -45,10 +45,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
         <Link to="/" className="group flex items-center gap-2">
-          <img src="/logo.jpg" alt="NC Brasil" className="h-9 w-auto object-contain" />
-          <span className="font-display text-lg font-bold tracking-tight">
-            NC <span className="text-gradient">Brasil</span>
-          </span>
+          <img src="/logo.jpg" alt="NC Brasil" className="h-10 w-auto object-contain transition-transform group-hover:scale-105" />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
