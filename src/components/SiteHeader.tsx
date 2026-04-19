@@ -45,10 +45,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
         <Link to="/" className="group flex items-center gap-2">
-          <span className="relative grid h-9 w-9 place-items-center rounded-lg bg-gradient-primary glow-sm">
-            <Zap className="h-5 w-5 text-primary-foreground" />
-            <span className="absolute inset-0 rounded-lg bg-gradient-primary opacity-60 blur-md animate-glow-pulse" />
-          </span>
+          <img src="/logo.jpg" alt="NC Brasil" className="h-9 w-auto object-contain" />
           <span className="font-display text-lg font-bold tracking-tight">
             NC <span className="text-gradient">Brasil</span>
           </span>
