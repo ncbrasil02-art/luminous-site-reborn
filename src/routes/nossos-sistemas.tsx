@@ -1,11 +1,35 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Code2, Database, Gavel, LayoutDashboard, ShoppingCart, Users, Layers, ShieldCheck } from "lucide-react";
-import { Reveal } from "@/components/Section";
+import { 
+  ArrowRight, 
+  Code2, 
+  Database, 
+  Gavel, 
+  LayoutDashboard, 
+  ShoppingCart, 
+  Users, 
+  Layers, 
+  ShieldCheck,
+  Car,
+  Ticket,
+  Gift,
+  Coins,
+  Globe,
+  Store,
+  Key,
+  Calendar,
+  Map,
+  MessageSquare,
+  Home,
+  Share2,
+  Church,
+  Search
+} from "lucide-react";
+import { Reveal, SectionHeading } from "@/components/Section";
 import { buildStubMeta } from "@/components/StubPage";
 
 const URL = "https://www.ncbrasil.com.br/nossos-sistemas";
 
-const systems = [
+const mainSystems = [
   {
     icon: Gavel,
     title: "Sistemas de Leilão Eletrônico",
@@ -26,28 +50,26 @@ const systems = [
     description: "Plataformas de ofertas com gatilhos de escassez, gestão de cupons e validação via QR Code para estabelecimentos parceiros.",
     features: ["Controle de Cupons", "Validação por App", "Relatórios de Vendas", "Integração de Parceiros"],
     to: "/portfolio/sistema-de-compra-coletiva"
-  },
-  {
-    icon: LayoutDashboard,
-    title: "Intranets & ERPs Customizados",
-    description: "Sistemas internos para gestão de processos, documentos e comunicação corporativa, moldados exatamente ao seu fluxo de trabalho.",
-    features: ["Gestão de Processos", "Controle de Acesso", "BI & Dashboards", "Segurança de Dados"],
-    to: "/portfolio/criacao-de-sistemas"
-  },
-  {
-    icon: Database,
-    title: "Sistemas de Gestão de Dados",
-    description: "Soluções para coleta, tratamento e visualização de grandes volumes de dados para tomada de decisão estratégica.",
-    features: ["APIs Escaláveis", "Migração de Dados", "Segurança Avançada", "Performance Otimizada"],
-    to: "/portfolio/criacao-de-sistemas"
-  },
-  {
-    icon: ShieldCheck,
-    title: "Sistemas de Área Restrita",
-    description: "Plataformas seguras para membros, cursos online, portais do cliente e áreas de suporte com acesso controlado.",
-    features: ["Login Multifator", "Gestão de Assinaturas", "Download Seguro", "Log de Atividades"],
-    to: "/portfolio/criacao-de-sistemas"
   }
+];
+
+const catalogSystems = [
+  { icon: Gavel, title: "Sistema de Leilão", to: "/sistema-de-leilao" },
+  { icon: Gavel, title: "Sistema de Leilão Rural Online", to: "/orcamento" },
+  { icon: Car, title: "Classificados de Veículos", to: "/orcamento" },
+  { icon: Ticket, title: "Sistema de Cupom Descontos", to: "/orcamento" },
+  { icon: Gift, title: "Sistema de Raspadinha On-line", to: "/orcamento" },
+  { icon: Coins, title: "Sistema de Rifas", to: "/orcamento" },
+  { icon: Globe, title: "Script Plataforma Chinesa", to: "/orcamento" },
+  { icon: Store, title: "MarketPlace de Ofertas", to: "/orcamento" },
+  { icon: Key, title: "Revenda de Veículos", to: "/orcamento" },
+  { icon: Calendar, title: "Sistema de Ingressos Online", to: "/orcamento" },
+  { icon: Coins, title: "Leilão de Centavos", to: "/orcamento" },
+  { icon: Map, title: "Sistema Guia Comercial", to: "/orcamento" },
+  { icon: MessageSquare, title: "Atendimento On-line", to: "/orcamento" },
+  { icon: Home, title: "Site para Imobiliária", to: "/orcamento" },
+  { icon: Share2, title: "Sistema de Afiliados", to: "/orcamento" },
+  { icon: Church, title: "Sites para Igrejas", to: "/orcamento" },
 ];
 
 export const Route = createFileRoute("/nossos-sistemas")({
