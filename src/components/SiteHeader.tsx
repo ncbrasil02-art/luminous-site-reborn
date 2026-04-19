@@ -1,13 +1,25 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X, Zap, ChevronDown, Gavel, LayoutDashboard } from "lucide-react";
 import { cn } from "@/lib/utils";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const navItems = [
   { to: "/empresa", label: "Empresa" },
   { to: "/solucoes-web", label: "Soluções Web" },
   { to: "/nossos-servicos", label: "Serviços" },
-  { to: "/nossos-sistemas", label: "Sistemas" },
+  { 
+    label: "Sistemas", 
+    submenu: [
+      { to: "/nossos-sistemas", label: "Ver todos os sistemas", icon: LayoutDashboard },
+      { to: "/sistema-de-leilao", label: "Sistema de Leilão", icon: Gavel },
+    ]
+  },
   { to: "/trabalhos-realizados", label: "Portfólio" },
   { to: "/orcamento", label: "Orçamento" },
   { to: "/contato", label: "Contato" },
