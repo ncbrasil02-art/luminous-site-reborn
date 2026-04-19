@@ -56,14 +56,33 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/50 hover:text-foreground"
-              activeProps={{ className: "text-foreground bg-secondary/50" }}
-            >
-              {item.label}
-            </Link>
+            "submenu" in item ? (
+              <DropdownMenu key={item.label}>
+                <DropdownMenuTrigger className="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/50 hover:text-foreground data-[state=open]:bg-secondary/50 data-[state=open]:text-foreground outline-none">
+                  {item.label}
+                  <ChevronDown className="h-4 w-4 opacity-50" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start" className="w-56 overflow-hidden rounded-xl border border-border/60 bg-card p-1 shadow-xl animate-in fade-in zoom-in-95 duration-200">
+                  {item.submenu.map((subItem) => (
+                    <DropdownMenuItem key={subItem.to} asChild className="focus:bg-secondary/80 focus:text-foreground">
+                      <Link to={subItem.to} className="flex w-full items-center gap-3 px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+                        <subItem.icon className="h-4 w-4 text-primary" />
+                        {subItem.label}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            ) : (
+              <Link
+                key={item.to}
+                to={item.to}
+                className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/50 hover:text-foreground"
+                activeProps={{ className: "text-foreground bg-secondary/50" }}
+              >
+                {item.label}
+              </Link>
+            )
           ))}
         </nav>
 
