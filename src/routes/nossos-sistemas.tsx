@@ -103,11 +103,15 @@ export const Route = createFileRoute("/nossos-sistemas")({
         </div>
       </section>
 
-      {/* Systems Grid */}
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {systems.map((system, i) => (
+          <SectionHeading
+            eyebrow="Categorias Principais"
+            title={<>Sistemas <span className="text-gradient">Core</span></>}
+            description="Nossas soluções de engenharia mais robustas e escaláveis para negócios de alta complexidade."
+          />
+          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {mainSystems.map((system, i) => (
               <Reveal key={system.title} delay={i * 0.05}>
                 <div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-sm">
                   <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-primary opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-20" />
@@ -136,12 +140,46 @@ export const Route = createFileRoute("/nossos-sistemas")({
                         to={system.to}
                         className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
                       >
-                        Ver cases de {system.title}
+                        Ver detalhes
                         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </Link>
                     </div>
                   </div>
                 </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Complete Catalog Section */}
+      <section className="py-24 bg-surface/50">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <SectionHeading
+            eyebrow="Portfólio de Scripts & Softwares"
+            title={<>Catálogo <span className="text-gradient">Completo</span> de Soluções</>}
+            description="Explore nossa ampla gama de sistemas prontos para implantação imediata em diversos setores."
+          />
+          
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {catalogSystems.map((item, i) => (
+              <Reveal key={item.title} delay={i * 0.02}>
+                <Link
+                  to={item.to}
+                  className="group flex items-center gap-4 rounded-2xl border border-border bg-card p-4 transition-all hover:border-primary/40 hover:bg-primary/5 hover:translate-x-1"
+                >
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                    <item.icon className="h-5 w-5" />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-sm font-bold leading-tight transition-colors group-hover:text-primary">
+                      {item.title}
+                    </span>
+                    <span className="mt-1 flex items-center gap-1 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+                      Saiba mais <ArrowRight className="h-2.5 w-2.5" />
+                    </span>
+                  </div>
+                </Link>
               </Reveal>
             ))}
           </div>
