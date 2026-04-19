@@ -11,10 +11,12 @@ import {
   Smartphone,
   Sparkles,
   Trophy,
+  Zap,
 } from "lucide-react";
 
 import heroTech from "@/assets/hero-tech.jpg";
 import { Reveal, SectionHeading } from "@/components/Section";
+import { SystemsCarousel } from "@/components/SystemsCarousel";
 
 const SITE_URL = "https://www.ncbrasil.com.br";
 const OG_IMAGE = `${SITE_URL}/og-home.jpg`;
@@ -264,23 +266,22 @@ function HomePage() {
         </div>
       </section>
 
-      {/* SOLUÇÕES ========================================================= */}
-      <section className="relative py-24 md:py-32">
+      {/* SERVIÇOS E SOLUÇÕES =============================================== */}
+      <section className="relative py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-mesh opacity-60" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="O que fazemos"
+            eyebrow="Nossos Serviços"
             title={
               <>
-                Soluções digitais com <span className="text-gradient">visão de negócio</span>
+                Soluções <span className="text-gradient">360°</span> para o seu negócio
               </>
             }
             description={
               <>
-                Combinamos <strong className="text-foreground">design</strong>,{" "}
-                <strong className="text-foreground">engenharia</strong> e{" "}
-                <strong className="text-foreground">marketing</strong> para entregar
-                produtos digitais que geram resultado real.
+                Desde a <strong className="text-foreground">concepção visual</strong> até o 
+                <strong className="text-foreground"> marketing de performance</strong>, entregamos 
+                o ecossistema completo para sua empresa brilhar no digital.
               </>
             }
           />
@@ -290,26 +291,52 @@ function HomePage() {
               <Reveal key={s.title} delay={i * 0.05}>
                 <Link
                   to={s.to}
-                  className="group relative block h-full overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-sm"
+                  className="group relative block h-full overflow-hidden rounded-[2rem] border border-border bg-card/40 p-8 backdrop-blur-sm transition-all hover:-translate-y-2 hover:border-primary/40 hover:glow-md hover:bg-card/60"
                 >
-                  <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-primary opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-30" />
-                  <div className="relative">
-                    <div className="mb-5 inline-flex rounded-xl bg-primary/10 p-3 text-primary ring-1 ring-primary/20">
-                      <s.icon className="h-6 w-6" />
+                  <div className="relative z-10">
+                    <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
+                      <s.icon className="h-7 w-7" />
                     </div>
-                    <h3 className="font-display text-xl font-semibold">{s.title}</h3>
-                    <p className="mt-2 text-sm text-muted-foreground">
+                    <h3 className="font-display text-2xl font-bold">{s.title}</h3>
+                    <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                       {renderBold(s.desc)}
                     </p>
-                    <div className="mt-5 inline-flex items-center gap-1 text-sm font-medium text-primary">
-                      Saiba mais
-                      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    <div className="mt-8 flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-primary opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
+                      Conhecer Solução
+                      <ArrowRight className="h-4 w-4" />
                     </div>
                   </div>
                 </Link>
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* SISTEMAS EM DESTAQUE (SLIDER) ===================================== */}
+      <section className="relative py-24 md:py-32 bg-surface/30">
+        <div className="absolute inset-0 -z-10 grid-pattern opacity-20" />
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+            <div className="max-w-2xl">
+              <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
+                <Zap className="h-3.5 w-3.5" />
+                Engenharia de Elite
+              </span>
+              <h2 className="mt-4 font-display text-3xl font-bold md:text-5xl">
+                Sistemas <span className="text-gradient">Inteligentes</span> que impulsionam resultados
+              </h2>
+            </div>
+            <Link 
+              to="/nossos-sistemas" 
+              className="group inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-primary hover:text-white transition-colors"
+            >
+              Ver todos os sistemas
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-2" />
+            </Link>
+          </div>
+
+          <SystemsCarousel />
         </div>
       </section>
 

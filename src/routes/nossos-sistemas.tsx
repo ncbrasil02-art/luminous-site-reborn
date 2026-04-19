@@ -22,10 +22,14 @@ import {
   Home,
   Share2,
   Church,
-  Search
+  Search,
+  Zap,
+  Cpu,
+  ClipboardList
 } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { buildStubMeta } from "@/components/StubPage";
+import { SystemsCarousel } from "@/components/SystemsCarousel";
 
 const URL = "https://www.ncbrasil.com.br/nossos-sistemas";
 
@@ -106,48 +110,12 @@ export const Route = createFileRoute("/nossos-sistemas")({
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Categorias Principais"
-            title={<>Sistemas <span className="text-gradient">Core</span></>}
+            eyebrow="Principais Tecnologias"
+            title={<>Sistemas <span className="text-gradient">Core</span> de Alta Performance</>}
             description="Nossas soluções de engenharia mais robustas e escaláveis para negócios de alta complexidade."
           />
-          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {mainSystems.map((system, i) => (
-              <Reveal key={system.title} delay={i * 0.05}>
-                <div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-sm">
-                  <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-primary opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-20" />
-                  
-                  <div className="relative flex flex-1 flex-col">
-                    <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform group-hover:scale-110">
-                      <system.icon className="h-6 w-6" />
-                    </div>
-                    
-                    <h3 className="font-display text-2xl font-bold">{system.title}</h3>
-                    <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                      {system.description}
-                    </p>
-                    
-                    <ul className="mt-8 space-y-3">
-                      {system.features.map((feature) => (
-                        <li key={feature} className="flex items-center gap-2 text-xs font-medium text-foreground/80">
-                          <Code2 className="h-3 w-3 text-primary" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    
-                    <div className="mt-auto pt-8">
-                      <Link
-                        to={system.to}
-                        className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
-                      >
-                        Ver detalhes
-                        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
+          <div className="mt-16">
+            <SystemsCarousel />
           </div>
         </div>
       </section>
@@ -166,17 +134,17 @@ export const Route = createFileRoute("/nossos-sistemas")({
               <Reveal key={item.title} delay={i * 0.02}>
                 <Link
                   to={item.to}
-                  className="group flex items-center gap-4 rounded-2xl border border-border bg-card p-4 transition-all hover:border-primary/40 hover:bg-primary/5 hover:translate-x-1"
+                  className="group relative flex items-center gap-4 overflow-hidden rounded-2xl border border-border bg-card/60 p-4 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:bg-card hover:glow-sm hover:shadow-xl"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
-                    <item.icon className="h-5 w-5" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:shadow-primary-glow">
+                    <item.icon className="h-6 w-6" />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-sm font-bold leading-tight transition-colors group-hover:text-primary">
                       {item.title}
                     </span>
-                    <span className="mt-1 flex items-center gap-1 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-                      Saiba mais <ArrowRight className="h-2.5 w-2.5" />
+                    <span className="mt-1 flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground">
+                      Explorar Solução <ArrowRight className="h-2.5 w-2.5 transition-transform group-hover:translate-x-1" />
                     </span>
                   </div>
                 </Link>
