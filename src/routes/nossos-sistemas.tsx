@@ -134,17 +134,17 @@ export const Route = createFileRoute("/nossos-sistemas")({
               <Reveal key={item.title} delay={i * 0.02}>
                 <Link
                   to={item.to}
-                  className="group flex items-center gap-4 rounded-2xl border border-border bg-card p-4 transition-all hover:border-primary/40 hover:bg-primary/5 hover:translate-x-1"
+                  className="group relative flex items-center gap-4 overflow-hidden rounded-2xl border border-border bg-card/60 p-4 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:bg-card hover:glow-sm hover:shadow-xl"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
-                    <item.icon className="h-5 w-5" />
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-all duration-300 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:shadow-primary-glow">
+                    <item.icon className="h-6 w-6" />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-sm font-bold leading-tight transition-colors group-hover:text-primary">
                       {item.title}
                     </span>
-                    <span className="mt-1 flex items-center gap-1 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
-                      Saiba mais <ArrowRight className="h-2.5 w-2.5" />
+                    <span className="mt-1 flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground group-hover:text-foreground">
+                      Explorar Solução <ArrowRight className="h-2.5 w-2.5 transition-transform group-hover:translate-x-1" />
                     </span>
                   </div>
                 </Link>
