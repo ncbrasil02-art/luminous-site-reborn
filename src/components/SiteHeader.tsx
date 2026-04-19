@@ -1,13 +1,25 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X, Zap, ChevronDown, Gavel, LayoutDashboard } from "lucide-react";
 import { cn } from "@/lib/utils";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const navItems = [
   { to: "/empresa", label: "Empresa" },
   { to: "/solucoes-web", label: "Soluções Web" },
   { to: "/nossos-servicos", label: "Serviços" },
-  { to: "/nossos-sistemas", label: "Sistemas" },
+  { 
+    label: "Sistemas", 
+    submenu: [
+      { to: "/nossos-sistemas", label: "Ver todos os sistemas", icon: LayoutDashboard },
+      { to: "/sistema-de-leilao", label: "Sistema de Leilão", icon: Gavel },
+    ]
+  },
   { to: "/trabalhos-realizados", label: "Portfólio" },
   { to: "/orcamento", label: "Orçamento" },
   { to: "/contato", label: "Contato" },
@@ -44,14 +56,33 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => (
-            <Link
-              key={item.to}
-              to={item.to}
-              className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/50 hover:text-foreground"
-              activeProps={{ className: "text-foreground bg-secondary/50" }}
-            >
-              {item.label}
-            </Link>
+            "submenu" in item ? (
+              <DropdownMenu key={item.label}>
+                <DropdownMenuTrigger className="flex items-center gap-1 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/50 hover:text-foreground data-[state=open]:bg-secondary/50 data-[state=open]:text-foreground outline-none">
+                  {item.label}
+                  <ChevronDown className="h-4 w-4 opacity-50" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start" className="w-56 overflow-hidden rounded-xl border border-border/60 bg-card p-1 shadow-xl animate-in fade-in zoom-in-95 duration-200">
+                  {item.submenu.map((subItem) => (
+                    <DropdownMenuItem key={subItem.to} asChild className="focus:bg-secondary/80 focus:text-foreground">
+                      <Link to={subItem.to} className="flex w-full items-center gap-3 px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+                        <subItem.icon className="h-4 w-4 text-primary" />
+                        {subItem.label}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            ) : (
+              <Link
+                key={item.to}
+                to={item.to}
+                className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary/50 hover:text-foreground"
+                activeProps={{ className: "text-foreground bg-secondary/50" }}
+              >
+                {item.label}
+              </Link>
+            )
           ))}
         </nav>
 
@@ -77,15 +108,35 @@ export function SiteHeader() {
         <div className="glass border-t border-border lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4">
             {navItems.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
-                activeProps={{ className: "text-foreground bg-secondary/60" }}
-              >
-                {item.label}
-              </Link>
+              "submenu" in item ? (
+                <div key={item.label} className="flex flex-col gap-1">
+                  <span className="px-3 py-2 text-xs font-bold uppercase tracking-wider text-muted-foreground/60">
+                    {item.label}
+                  </span>
+                  {item.submenu.map((subItem) => (
+                    <Link
+                      key={subItem.to}
+                      to={subItem.to}
+                      onClick={() => setOpen(false)}
+                      className="flex items-center gap-3 rounded-md px-3 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
+                      activeProps={{ className: "text-foreground bg-secondary/60" }}
+                    >
+                      <subItem.icon className="h-4 w-4 text-primary" />
+                      {subItem.label}
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  onClick={() => setOpen(false)}
+                  className="rounded-md px-3 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
+                  activeProps={{ className: "text-foreground bg-secondary/60" }}
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
             <Link
               to="/orcamento"
