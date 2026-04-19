@@ -108,15 +108,35 @@ export function SiteHeader() {
         <div className="glass border-t border-border lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4">
             {navItems.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
-                activeProps={{ className: "text-foreground bg-secondary/60" }}
-              >
-                {item.label}
-              </Link>
+              "submenu" in item ? (
+                <div key={item.label} className="flex flex-col gap-1">
+                  <span className="px-3 py-2 text-xs font-bold uppercase tracking-wider text-muted-foreground/60">
+                    {item.label}
+                  </span>
+                  {item.submenu.map((subItem) => (
+                    <Link
+                      key={subItem.to}
+                      to={subItem.to}
+                      onClick={() => setOpen(false)}
+                      className="flex items-center gap-3 rounded-md px-3 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
+                      activeProps={{ className: "text-foreground bg-secondary/60" }}
+                    >
+                      <subItem.icon className="h-4 w-4 text-primary" />
+                      {subItem.label}
+                    </Link>
+                  ))}
+                </div>
+              ) : (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  onClick={() => setOpen(false)}
+                  className="rounded-md px-3 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
+                  activeProps={{ className: "text-foreground bg-secondary/60" }}
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
             <Link
               to="/orcamento"
