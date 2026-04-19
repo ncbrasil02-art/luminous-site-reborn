@@ -1,11 +1,35 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Code2, Database, Gavel, LayoutDashboard, ShoppingCart, Users, Layers, ShieldCheck } from "lucide-react";
-import { Reveal } from "@/components/Section";
+import { 
+  ArrowRight, 
+  Code2, 
+  Database, 
+  Gavel, 
+  LayoutDashboard, 
+  ShoppingCart, 
+  Users, 
+  Layers, 
+  ShieldCheck,
+  Car,
+  Ticket,
+  Gift,
+  Coins,
+  Globe,
+  Store,
+  Key,
+  Calendar,
+  Map,
+  MessageSquare,
+  Home,
+  Share2,
+  Church,
+  Search
+} from "lucide-react";
+import { Reveal, SectionHeading } from "@/components/Section";
 import { buildStubMeta } from "@/components/StubPage";
 
 const URL = "https://www.ncbrasil.com.br/nossos-sistemas";
 
-const systems = [
+const mainSystems = [
   {
     icon: Gavel,
     title: "Sistemas de Leilão Eletrônico",
@@ -26,35 +50,33 @@ const systems = [
     description: "Plataformas de ofertas com gatilhos de escassez, gestão de cupons e validação via QR Code para estabelecimentos parceiros.",
     features: ["Controle de Cupons", "Validação por App", "Relatórios de Vendas", "Integração de Parceiros"],
     to: "/portfolio/sistema-de-compra-coletiva"
-  },
-  {
-    icon: LayoutDashboard,
-    title: "Intranets & ERPs Customizados",
-    description: "Sistemas internos para gestão de processos, documentos e comunicação corporativa, moldados exatamente ao seu fluxo de trabalho.",
-    features: ["Gestão de Processos", "Controle de Acesso", "BI & Dashboards", "Segurança de Dados"],
-    to: "/portfolio/criacao-de-sistemas"
-  },
-  {
-    icon: Database,
-    title: "Sistemas de Gestão de Dados",
-    description: "Soluções para coleta, tratamento e visualização de grandes volumes de dados para tomada de decisão estratégica.",
-    features: ["APIs Escaláveis", "Migração de Dados", "Segurança Avançada", "Performance Otimizada"],
-    to: "/portfolio/criacao-de-sistemas"
-  },
-  {
-    icon: ShieldCheck,
-    title: "Sistemas de Área Restrita",
-    description: "Plataformas seguras para membros, cursos online, portais do cliente e áreas de suporte com acesso controlado.",
-    features: ["Login Multifator", "Gestão de Assinaturas", "Download Seguro", "Log de Atividades"],
-    to: "/portfolio/criacao-de-sistemas"
   }
+];
+
+const catalogSystems = [
+  { icon: Gavel, title: "Sistema de Leilão", to: "/sistema-de-leilao" },
+  { icon: Gavel, title: "Sistema de Leilão Rural Online", to: "/orcamento" },
+  { icon: Car, title: "Classificados de Veículos", to: "/orcamento" },
+  { icon: Ticket, title: "Sistema de Cupom Descontos", to: "/orcamento" },
+  { icon: Gift, title: "Sistema de Raspadinha On-line (Script)", to: "/orcamento" },
+  { icon: Coins, title: "Sistema de Rifas", to: "/orcamento" },
+  { icon: Globe, title: "Script Plataforma Chinesa", to: "/orcamento" },
+  { icon: Store, title: "MarketPlace de Ofertas", to: "/orcamento" },
+  { icon: Key, title: "Revenda de Veículos", to: "/orcamento" },
+  { icon: Calendar, title: "Sistema de Ingressos Online", to: "/orcamento" },
+  { icon: Coins, title: "Leilão de Centavos", to: "/orcamento" },
+  { icon: Map, title: "Sistema Guia Comercial", to: "/orcamento" },
+  { icon: MessageSquare, title: "Atendimento On-line", to: "/orcamento" },
+  { icon: Home, title: "Site para Imobiliária", to: "/orcamento" },
+  { icon: Share2, title: "Sistema de Afiliados", to: "/orcamento" },
+  { icon: Church, title: "Sites para Igrejas", to: "/orcamento" },
 ];
 
 export const Route = createFileRoute("/nossos-sistemas")({
   head: () => buildStubMeta({
     title: "Nossos Sistemas · NC Brasil — Plataformas Web Personalizadas",
-    description: "Sistemas web sob demanda: leilões eletrônicos, marketplaces, intranets, ERPs, sistemas de cupons e plataformas customizadas.",
-    keywords: "criação de sistemas, sistema sob demanda, leilão eletrônico, marketplace, intranet, ERP customizado",
+    description: "Catálogo completo de sistemas web: leilões, marketplaces, rifas, raspadinhas, classificados, guias comerciais e plataformas customizadas sob demanda.",
+    keywords: "sistema de leilão, sistema de rifas, raspadinha online, classificados de veículos, guia comercial, plataforma chinesa, site imobiliária, sistema de afiliados, nc brasil",
     canonical: URL,
   }),
   component: () => (
@@ -81,11 +103,15 @@ export const Route = createFileRoute("/nossos-sistemas")({
         </div>
       </section>
 
-      {/* Systems Grid */}
       <section className="py-24">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {systems.map((system, i) => (
+          <SectionHeading
+            eyebrow="Categorias Principais"
+            title={<>Sistemas <span className="text-gradient">Core</span></>}
+            description="Nossas soluções de engenharia mais robustas e escaláveis para negócios de alta complexidade."
+          />
+          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {mainSystems.map((system, i) => (
               <Reveal key={system.title} delay={i * 0.05}>
                 <div className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-sm">
                   <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-primary opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-20" />
@@ -114,12 +140,46 @@ export const Route = createFileRoute("/nossos-sistemas")({
                         to={system.to}
                         className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
                       >
-                        Ver cases de {system.title}
+                        Ver detalhes
                         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </Link>
                     </div>
                   </div>
                 </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Complete Catalog Section */}
+      <section className="py-24 bg-surface/50">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <SectionHeading
+            eyebrow="Portfólio de Scripts & Softwares"
+            title={<>Catálogo <span className="text-gradient">Completo</span> de Soluções</>}
+            description="Explore nossa ampla gama de sistemas prontos para implantação imediata em diversos setores."
+          />
+          
+          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {catalogSystems.map((item, i) => (
+              <Reveal key={item.title} delay={i * 0.02}>
+                <Link
+                  to={item.to}
+                  className="group flex items-center gap-4 rounded-2xl border border-border bg-card p-4 transition-all hover:border-primary/40 hover:bg-primary/5 hover:translate-x-1"
+                >
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                    <item.icon className="h-5 w-5" />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-sm font-bold leading-tight transition-colors group-hover:text-primary">
+                      {item.title}
+                    </span>
+                    <span className="mt-1 flex items-center gap-1 text-[10px] font-medium uppercase tracking-wider text-muted-foreground">
+                      Saiba mais <ArrowRight className="h-2.5 w-2.5" />
+                    </span>
+                  </div>
+                </Link>
               </Reveal>
             ))}
           </div>
