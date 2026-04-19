@@ -75,8 +75,8 @@ const catalogSystems = [
 export const Route = createFileRoute("/nossos-sistemas")({
   head: () => buildStubMeta({
     title: "Nossos Sistemas · NC Brasil — Plataformas Web Personalizadas",
-    description: "Sistemas web sob demanda: leilões eletrônicos, marketplaces, intranets, ERPs, sistemas de cupons e plataformas customizadas.",
-    keywords: "criação de sistemas, sistema sob demanda, leilão eletrônico, marketplace, intranet, ERP customizado",
+    description: "Catálogo completo de sistemas web: leilões, marketplaces, rifas, raspadinhas, classificados, guias comerciais e plataformas customizadas sob demanda.",
+    keywords: "sistema de leilão, sistema de rifas, raspadinha online, classificados de veículos, guia comercial, plataforma chinesa, site imobiliária, sistema de afiliados, nc brasil",
     canonical: URL,
   }),
   component: () => (
