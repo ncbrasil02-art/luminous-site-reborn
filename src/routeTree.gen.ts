@@ -9,19 +9,89 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TrabalhosRealizadosRouteImport } from './routes/trabalhos-realizados'
+import { Route as SolucoesWebRouteImport } from './routes/solucoes-web'
+import { Route as SoftwareRouteImport } from './routes/software'
+import { Route as SistemaSobDemandaNcBrasilRouteImport } from './routes/sistema-sob-demanda-nc-brasil'
+import { Route as ProgramaDeOrdemDeServicoRouteImport } from './routes/programa-de-ordem-de-servico'
 import { Route as OrcamentoRouteImport } from './routes/orcamento'
+import { Route as NossosSistemasRouteImport } from './routes/nossos-sistemas'
+import { Route as NossosServicosRouteImport } from './routes/nossos-servicos'
+import { Route as InstagramParaEmpresasRouteImport } from './routes/instagram-para-empresas'
+import { Route as ErrosNaCriacaoDeUmAplicativoRouteImport } from './routes/erros-na-criacao-de-um-aplicativo'
 import { Route as EmpresaRouteImport } from './routes/empresa'
+import { Route as DicasParaECommerceRouteImport } from './routes/dicas-para-e-commerce'
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PortfolioSistemaDeCompraColetivaRouteImport } from './routes/portfolio.sistema-de-compra-coletiva'
+import { Route as PortfolioLojasVirtuaisCriadasRouteImport } from './routes/portfolio.lojas-virtuais-criadas'
+import { Route as PortfolioLogotiposCriadosRouteImport } from './routes/portfolio.logotipos-criados'
+import { Route as PortfolioIdentidadeVisualRouteImport } from './routes/portfolio.identidade-visual'
+import { Route as PortfolioCriacaoDeSistemasRouteImport } from './routes/portfolio.criacao-de-sistemas'
+import { Route as PortfolioCriacaoDeLogomarcasRouteImport } from './routes/portfolio.criacao-de-logomarcas'
+import { Route as PortfolioCriacaoDeAplicativosRouteImport } from './routes/portfolio.criacao-de-aplicativos'
 
+const TrabalhosRealizadosRoute = TrabalhosRealizadosRouteImport.update({
+  id: '/trabalhos-realizados',
+  path: '/trabalhos-realizados',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SolucoesWebRoute = SolucoesWebRouteImport.update({
+  id: '/solucoes-web',
+  path: '/solucoes-web',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SoftwareRoute = SoftwareRouteImport.update({
+  id: '/software',
+  path: '/software',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SistemaSobDemandaNcBrasilRoute =
+  SistemaSobDemandaNcBrasilRouteImport.update({
+    id: '/sistema-sob-demanda-nc-brasil',
+    path: '/sistema-sob-demanda-nc-brasil',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ProgramaDeOrdemDeServicoRoute =
+  ProgramaDeOrdemDeServicoRouteImport.update({
+    id: '/programa-de-ordem-de-servico',
+    path: '/programa-de-ordem-de-servico',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const OrcamentoRoute = OrcamentoRouteImport.update({
   id: '/orcamento',
   path: '/orcamento',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NossosSistemasRoute = NossosSistemasRouteImport.update({
+  id: '/nossos-sistemas',
+  path: '/nossos-sistemas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NossosServicosRoute = NossosServicosRouteImport.update({
+  id: '/nossos-servicos',
+  path: '/nossos-servicos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InstagramParaEmpresasRoute = InstagramParaEmpresasRouteImport.update({
+  id: '/instagram-para-empresas',
+  path: '/instagram-para-empresas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ErrosNaCriacaoDeUmAplicativoRoute =
+  ErrosNaCriacaoDeUmAplicativoRouteImport.update({
+    id: '/erros-na-criacao-de-um-aplicativo',
+    path: '/erros-na-criacao-de-um-aplicativo',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const EmpresaRoute = EmpresaRouteImport.update({
   id: '/empresa',
   path: '/empresa',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DicasParaECommerceRoute = DicasParaECommerceRouteImport.update({
+  id: '/dicas-para-e-commerce',
+  path: '/dicas-para-e-commerce',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContatoRoute = ContatoRouteImport.update({
@@ -34,43 +104,252 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PortfolioSistemaDeCompraColetivaRoute =
+  PortfolioSistemaDeCompraColetivaRouteImport.update({
+    id: '/portfolio/sistema-de-compra-coletiva',
+    path: '/portfolio/sistema-de-compra-coletiva',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PortfolioLojasVirtuaisCriadasRoute =
+  PortfolioLojasVirtuaisCriadasRouteImport.update({
+    id: '/portfolio/lojas-virtuais-criadas',
+    path: '/portfolio/lojas-virtuais-criadas',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PortfolioLogotiposCriadosRoute =
+  PortfolioLogotiposCriadosRouteImport.update({
+    id: '/portfolio/logotipos-criados',
+    path: '/portfolio/logotipos-criados',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PortfolioIdentidadeVisualRoute =
+  PortfolioIdentidadeVisualRouteImport.update({
+    id: '/portfolio/identidade-visual',
+    path: '/portfolio/identidade-visual',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PortfolioCriacaoDeSistemasRoute =
+  PortfolioCriacaoDeSistemasRouteImport.update({
+    id: '/portfolio/criacao-de-sistemas',
+    path: '/portfolio/criacao-de-sistemas',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PortfolioCriacaoDeLogomarcasRoute =
+  PortfolioCriacaoDeLogomarcasRouteImport.update({
+    id: '/portfolio/criacao-de-logomarcas',
+    path: '/portfolio/criacao-de-logomarcas',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PortfolioCriacaoDeAplicativosRoute =
+  PortfolioCriacaoDeAplicativosRouteImport.update({
+    id: '/portfolio/criacao-de-aplicativos',
+    path: '/portfolio/criacao-de-aplicativos',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
+  '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRoute
+  '/erros-na-criacao-de-um-aplicativo': typeof ErrosNaCriacaoDeUmAplicativoRoute
+  '/instagram-para-empresas': typeof InstagramParaEmpresasRoute
+  '/nossos-servicos': typeof NossosServicosRoute
+  '/nossos-sistemas': typeof NossosSistemasRoute
   '/orcamento': typeof OrcamentoRoute
+  '/programa-de-ordem-de-servico': typeof ProgramaDeOrdemDeServicoRoute
+  '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
+  '/software': typeof SoftwareRoute
+  '/solucoes-web': typeof SolucoesWebRoute
+  '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
+  '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
+  '/portfolio/criacao-de-sistemas': typeof PortfolioCriacaoDeSistemasRoute
+  '/portfolio/identidade-visual': typeof PortfolioIdentidadeVisualRoute
+  '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
+  '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
+  '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
+  '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRoute
+  '/erros-na-criacao-de-um-aplicativo': typeof ErrosNaCriacaoDeUmAplicativoRoute
+  '/instagram-para-empresas': typeof InstagramParaEmpresasRoute
+  '/nossos-servicos': typeof NossosServicosRoute
+  '/nossos-sistemas': typeof NossosSistemasRoute
   '/orcamento': typeof OrcamentoRoute
+  '/programa-de-ordem-de-servico': typeof ProgramaDeOrdemDeServicoRoute
+  '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
+  '/software': typeof SoftwareRoute
+  '/solucoes-web': typeof SolucoesWebRoute
+  '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
+  '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
+  '/portfolio/criacao-de-sistemas': typeof PortfolioCriacaoDeSistemasRoute
+  '/portfolio/identidade-visual': typeof PortfolioIdentidadeVisualRoute
+  '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
+  '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
+  '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
+  '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRoute
+  '/erros-na-criacao-de-um-aplicativo': typeof ErrosNaCriacaoDeUmAplicativoRoute
+  '/instagram-para-empresas': typeof InstagramParaEmpresasRoute
+  '/nossos-servicos': typeof NossosServicosRoute
+  '/nossos-sistemas': typeof NossosSistemasRoute
   '/orcamento': typeof OrcamentoRoute
+  '/programa-de-ordem-de-servico': typeof ProgramaDeOrdemDeServicoRoute
+  '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
+  '/software': typeof SoftwareRoute
+  '/solucoes-web': typeof SolucoesWebRoute
+  '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
+  '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
+  '/portfolio/criacao-de-sistemas': typeof PortfolioCriacaoDeSistemasRoute
+  '/portfolio/identidade-visual': typeof PortfolioIdentidadeVisualRoute
+  '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
+  '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
+  '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contato' | '/empresa' | '/orcamento'
+  fullPaths:
+    | '/'
+    | '/contato'
+    | '/dicas-para-e-commerce'
+    | '/empresa'
+    | '/erros-na-criacao-de-um-aplicativo'
+    | '/instagram-para-empresas'
+    | '/nossos-servicos'
+    | '/nossos-sistemas'
+    | '/orcamento'
+    | '/programa-de-ordem-de-servico'
+    | '/sistema-sob-demanda-nc-brasil'
+    | '/software'
+    | '/solucoes-web'
+    | '/trabalhos-realizados'
+    | '/portfolio/criacao-de-aplicativos'
+    | '/portfolio/criacao-de-logomarcas'
+    | '/portfolio/criacao-de-sistemas'
+    | '/portfolio/identidade-visual'
+    | '/portfolio/logotipos-criados'
+    | '/portfolio/lojas-virtuais-criadas'
+    | '/portfolio/sistema-de-compra-coletiva'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contato' | '/empresa' | '/orcamento'
-  id: '__root__' | '/' | '/contato' | '/empresa' | '/orcamento'
+  to:
+    | '/'
+    | '/contato'
+    | '/dicas-para-e-commerce'
+    | '/empresa'
+    | '/erros-na-criacao-de-um-aplicativo'
+    | '/instagram-para-empresas'
+    | '/nossos-servicos'
+    | '/nossos-sistemas'
+    | '/orcamento'
+    | '/programa-de-ordem-de-servico'
+    | '/sistema-sob-demanda-nc-brasil'
+    | '/software'
+    | '/solucoes-web'
+    | '/trabalhos-realizados'
+    | '/portfolio/criacao-de-aplicativos'
+    | '/portfolio/criacao-de-logomarcas'
+    | '/portfolio/criacao-de-sistemas'
+    | '/portfolio/identidade-visual'
+    | '/portfolio/logotipos-criados'
+    | '/portfolio/lojas-virtuais-criadas'
+    | '/portfolio/sistema-de-compra-coletiva'
+  id:
+    | '__root__'
+    | '/'
+    | '/contato'
+    | '/dicas-para-e-commerce'
+    | '/empresa'
+    | '/erros-na-criacao-de-um-aplicativo'
+    | '/instagram-para-empresas'
+    | '/nossos-servicos'
+    | '/nossos-sistemas'
+    | '/orcamento'
+    | '/programa-de-ordem-de-servico'
+    | '/sistema-sob-demanda-nc-brasil'
+    | '/software'
+    | '/solucoes-web'
+    | '/trabalhos-realizados'
+    | '/portfolio/criacao-de-aplicativos'
+    | '/portfolio/criacao-de-logomarcas'
+    | '/portfolio/criacao-de-sistemas'
+    | '/portfolio/identidade-visual'
+    | '/portfolio/logotipos-criados'
+    | '/portfolio/lojas-virtuais-criadas'
+    | '/portfolio/sistema-de-compra-coletiva'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContatoRoute: typeof ContatoRoute
+  DicasParaECommerceRoute: typeof DicasParaECommerceRoute
   EmpresaRoute: typeof EmpresaRoute
+  ErrosNaCriacaoDeUmAplicativoRoute: typeof ErrosNaCriacaoDeUmAplicativoRoute
+  InstagramParaEmpresasRoute: typeof InstagramParaEmpresasRoute
+  NossosServicosRoute: typeof NossosServicosRoute
+  NossosSistemasRoute: typeof NossosSistemasRoute
   OrcamentoRoute: typeof OrcamentoRoute
+  ProgramaDeOrdemDeServicoRoute: typeof ProgramaDeOrdemDeServicoRoute
+  SistemaSobDemandaNcBrasilRoute: typeof SistemaSobDemandaNcBrasilRoute
+  SoftwareRoute: typeof SoftwareRoute
+  SolucoesWebRoute: typeof SolucoesWebRoute
+  TrabalhosRealizadosRoute: typeof TrabalhosRealizadosRoute
+  PortfolioCriacaoDeAplicativosRoute: typeof PortfolioCriacaoDeAplicativosRoute
+  PortfolioCriacaoDeLogomarcasRoute: typeof PortfolioCriacaoDeLogomarcasRoute
+  PortfolioCriacaoDeSistemasRoute: typeof PortfolioCriacaoDeSistemasRoute
+  PortfolioIdentidadeVisualRoute: typeof PortfolioIdentidadeVisualRoute
+  PortfolioLogotiposCriadosRoute: typeof PortfolioLogotiposCriadosRoute
+  PortfolioLojasVirtuaisCriadasRoute: typeof PortfolioLojasVirtuaisCriadasRoute
+  PortfolioSistemaDeCompraColetivaRoute: typeof PortfolioSistemaDeCompraColetivaRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/trabalhos-realizados': {
+      id: '/trabalhos-realizados'
+      path: '/trabalhos-realizados'
+      fullPath: '/trabalhos-realizados'
+      preLoaderRoute: typeof TrabalhosRealizadosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/solucoes-web': {
+      id: '/solucoes-web'
+      path: '/solucoes-web'
+      fullPath: '/solucoes-web'
+      preLoaderRoute: typeof SolucoesWebRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/software': {
+      id: '/software'
+      path: '/software'
+      fullPath: '/software'
+      preLoaderRoute: typeof SoftwareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistema-sob-demanda-nc-brasil': {
+      id: '/sistema-sob-demanda-nc-brasil'
+      path: '/sistema-sob-demanda-nc-brasil'
+      fullPath: '/sistema-sob-demanda-nc-brasil'
+      preLoaderRoute: typeof SistemaSobDemandaNcBrasilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/programa-de-ordem-de-servico': {
+      id: '/programa-de-ordem-de-servico'
+      path: '/programa-de-ordem-de-servico'
+      fullPath: '/programa-de-ordem-de-servico'
+      preLoaderRoute: typeof ProgramaDeOrdemDeServicoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/orcamento': {
       id: '/orcamento'
       path: '/orcamento'
@@ -78,11 +357,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof OrcamentoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/nossos-sistemas': {
+      id: '/nossos-sistemas'
+      path: '/nossos-sistemas'
+      fullPath: '/nossos-sistemas'
+      preLoaderRoute: typeof NossosSistemasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/nossos-servicos': {
+      id: '/nossos-servicos'
+      path: '/nossos-servicos'
+      fullPath: '/nossos-servicos'
+      preLoaderRoute: typeof NossosServicosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/instagram-para-empresas': {
+      id: '/instagram-para-empresas'
+      path: '/instagram-para-empresas'
+      fullPath: '/instagram-para-empresas'
+      preLoaderRoute: typeof InstagramParaEmpresasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/erros-na-criacao-de-um-aplicativo': {
+      id: '/erros-na-criacao-de-um-aplicativo'
+      path: '/erros-na-criacao-de-um-aplicativo'
+      fullPath: '/erros-na-criacao-de-um-aplicativo'
+      preLoaderRoute: typeof ErrosNaCriacaoDeUmAplicativoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/empresa': {
       id: '/empresa'
       path: '/empresa'
       fullPath: '/empresa'
       preLoaderRoute: typeof EmpresaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dicas-para-e-commerce': {
+      id: '/dicas-para-e-commerce'
+      path: '/dicas-para-e-commerce'
+      fullPath: '/dicas-para-e-commerce'
+      preLoaderRoute: typeof DicasParaECommerceRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contato': {
@@ -99,15 +413,90 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/portfolio/sistema-de-compra-coletiva': {
+      id: '/portfolio/sistema-de-compra-coletiva'
+      path: '/portfolio/sistema-de-compra-coletiva'
+      fullPath: '/portfolio/sistema-de-compra-coletiva'
+      preLoaderRoute: typeof PortfolioSistemaDeCompraColetivaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio/lojas-virtuais-criadas': {
+      id: '/portfolio/lojas-virtuais-criadas'
+      path: '/portfolio/lojas-virtuais-criadas'
+      fullPath: '/portfolio/lojas-virtuais-criadas'
+      preLoaderRoute: typeof PortfolioLojasVirtuaisCriadasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio/logotipos-criados': {
+      id: '/portfolio/logotipos-criados'
+      path: '/portfolio/logotipos-criados'
+      fullPath: '/portfolio/logotipos-criados'
+      preLoaderRoute: typeof PortfolioLogotiposCriadosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio/identidade-visual': {
+      id: '/portfolio/identidade-visual'
+      path: '/portfolio/identidade-visual'
+      fullPath: '/portfolio/identidade-visual'
+      preLoaderRoute: typeof PortfolioIdentidadeVisualRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio/criacao-de-sistemas': {
+      id: '/portfolio/criacao-de-sistemas'
+      path: '/portfolio/criacao-de-sistemas'
+      fullPath: '/portfolio/criacao-de-sistemas'
+      preLoaderRoute: typeof PortfolioCriacaoDeSistemasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio/criacao-de-logomarcas': {
+      id: '/portfolio/criacao-de-logomarcas'
+      path: '/portfolio/criacao-de-logomarcas'
+      fullPath: '/portfolio/criacao-de-logomarcas'
+      preLoaderRoute: typeof PortfolioCriacaoDeLogomarcasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio/criacao-de-aplicativos': {
+      id: '/portfolio/criacao-de-aplicativos'
+      path: '/portfolio/criacao-de-aplicativos'
+      fullPath: '/portfolio/criacao-de-aplicativos'
+      preLoaderRoute: typeof PortfolioCriacaoDeAplicativosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContatoRoute: ContatoRoute,
+  DicasParaECommerceRoute: DicasParaECommerceRoute,
   EmpresaRoute: EmpresaRoute,
+  ErrosNaCriacaoDeUmAplicativoRoute: ErrosNaCriacaoDeUmAplicativoRoute,
+  InstagramParaEmpresasRoute: InstagramParaEmpresasRoute,
+  NossosServicosRoute: NossosServicosRoute,
+  NossosSistemasRoute: NossosSistemasRoute,
   OrcamentoRoute: OrcamentoRoute,
+  ProgramaDeOrdemDeServicoRoute: ProgramaDeOrdemDeServicoRoute,
+  SistemaSobDemandaNcBrasilRoute: SistemaSobDemandaNcBrasilRoute,
+  SoftwareRoute: SoftwareRoute,
+  SolucoesWebRoute: SolucoesWebRoute,
+  TrabalhosRealizadosRoute: TrabalhosRealizadosRoute,
+  PortfolioCriacaoDeAplicativosRoute: PortfolioCriacaoDeAplicativosRoute,
+  PortfolioCriacaoDeLogomarcasRoute: PortfolioCriacaoDeLogomarcasRoute,
+  PortfolioCriacaoDeSistemasRoute: PortfolioCriacaoDeSistemasRoute,
+  PortfolioIdentidadeVisualRoute: PortfolioIdentidadeVisualRoute,
+  PortfolioLogotiposCriadosRoute: PortfolioLogotiposCriadosRoute,
+  PortfolioLojasVirtuaisCriadasRoute: PortfolioLojasVirtuaisCriadasRoute,
+  PortfolioSistemaDeCompraColetivaRoute: PortfolioSistemaDeCompraColetivaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { createStart } from '@tanstack/react-start'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+  }
+}
