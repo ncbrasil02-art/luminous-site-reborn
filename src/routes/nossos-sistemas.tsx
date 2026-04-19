@@ -58,7 +58,7 @@ const catalogSystems = [
   { icon: Gavel, title: "Sistema de Leilão Rural Online", to: "/orcamento" },
   { icon: Car, title: "Classificados de Veículos", to: "/orcamento" },
   { icon: Ticket, title: "Sistema de Cupom Descontos", to: "/orcamento" },
-  { icon: Gift, title: "Sistema de Raspadinha On-line", to: "/orcamento" },
+  { icon: Gift, title: "Sistema de Raspadinha On-line (Script)", to: "/orcamento" },
   { icon: Coins, title: "Sistema de Rifas", to: "/orcamento" },
   { icon: Globe, title: "Script Plataforma Chinesa", to: "/orcamento" },
   { icon: Store, title: "MarketPlace de Ofertas", to: "/orcamento" },
