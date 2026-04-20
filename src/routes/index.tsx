@@ -165,107 +165,91 @@ function HomePage() {
   return (
     <>
       {/* HERO ============================================================= */}
-      <section className="relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          <img
-            src={heroTech}
-            alt=""
-            aria-hidden
-            width={1920}
-            height={1080}
-            className="h-full w-full object-cover opacity-50"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
-          <div className="absolute inset-0 bg-hero-glow" />
-          <div className="absolute inset-0 grid-pattern opacity-30" />
-        </div>
+      <LampContainer>
+        <motion.span
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-primary backdrop-blur"
+        >
+          <Sparkles className="h-3.5 w-3.5" />
+          Sistemas · Sites · Apps · Marketing
+        </motion.span>
 
-        <div className="mx-auto flex min-h-[88vh] max-w-7xl flex-col items-center justify-center px-4 py-24 text-center md:px-6">
-          <motion.span
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-primary backdrop-blur"
-          >
-            <Sparkles className="h-3.5 w-3.5" />
-            Sistemas · Sites · Apps · Marketing
-          </motion.span>
+        <motion.h1
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="mt-6 max-w-5xl font-display text-4xl font-bold leading-[1.05] tracking-tight text-white md:text-7xl"
+        >
+          Tecnologia que <span className="text-cyan-400">vende</span>.
+          <br className="hidden md:block" />
+          Design que <span className="text-cyan-400">encanta</span>.
+        </motion.h1>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="mt-6 max-w-5xl font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-7xl"
-          >
-            Tecnologia que <span className="text-gradient">vende</span>.
-            <br className="hidden md:block" />
-            Design que <span className="text-gradient">encanta</span>.
-          </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="mt-6 max-w-2xl text-base text-slate-300 md:text-lg"
+        >
+          Somos a <strong className="text-white">NC Brasil</strong> — agência de{" "}
+          <Link to="/nossos-sistemas" className="story-link text-white">
+            <strong>sistemas web sob demanda</strong>
+          </Link>
+          ,{" "}
+          <Link to="/portfolio/lojas-virtuais-criadas" className="story-link text-white">
+            <strong>lojas virtuais</strong>
+          </Link>{" "}
+          e{" "}
+          <Link to="/portfolio/criacao-de-aplicativos" className="story-link text-white">
+            <strong>aplicativos mobile</strong>
+          </Link>{" "}
+          para empresas em <strong className="text-white">SP</strong> e{" "}
+          <strong className="text-white">RJ</strong>.
+        </motion.p>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-6 max-w-2xl text-base text-muted-foreground md:text-lg"
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="mt-10 flex flex-col items-center gap-3 sm:flex-row"
+        >
+          <Link
+            to="/orcamento"
+            className="group inline-flex items-center gap-2 rounded-full bg-cyan-500 px-7 py-3.5 text-sm font-semibold text-black glow-md transition-transform hover:scale-105"
           >
-            Somos a <strong className="text-foreground">NC Brasil</strong> — agência de{" "}
-            <Link to="/nossos-sistemas" className="story-link text-foreground">
-              <strong>sistemas web sob demanda</strong>
-            </Link>
-            ,{" "}
-            <Link to="/portfolio/lojas-virtuais-criadas" className="story-link text-foreground">
-              <strong>lojas virtuais</strong>
-            </Link>{" "}
-            e{" "}
-            <Link to="/portfolio/criacao-de-aplicativos" className="story-link text-foreground">
-              <strong>aplicativos mobile</strong>
-            </Link>{" "}
-            para empresas em <strong className="text-foreground">SP</strong> e{" "}
-            <strong className="text-foreground">RJ</strong>.
-          </motion.p>
+            Quero um orçamento
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+          <Link
+            to="/trabalhos-realizados"
+            className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/60 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur transition-colors hover:bg-slate-800"
+          >
+            Ver trabalhos realizados
+          </Link>
+        </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="mt-10 flex flex-col items-center gap-3 sm:flex-row"
-          >
-            <Link
-              to="/orcamento"
-              className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md transition-transform hover:scale-105"
+        {/* Stats */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="mt-20 grid w-full max-w-4xl grid-cols-2 gap-4 md:grid-cols-4"
+        >
+          {stats.map((s) => (
+            <div
+              key={s.label}
+              className="rounded-2xl border border-slate-800 bg-slate-900/40 px-4 py-5 text-center backdrop-blur-sm"
             >
-              Quero um orçamento
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Link>
-            <Link
-              to="/trabalhos-realizados"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur transition-colors hover:bg-surface"
-            >
-              Ver trabalhos realizados
-            </Link>
-          </motion.div>
-
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="mt-20 grid w-full max-w-4xl grid-cols-2 gap-4 md:grid-cols-4"
-          >
-            {stats.map((s) => (
-              <div
-                key={s.label}
-                className="glass rounded-2xl px-4 py-5 text-center"
-              >
-                <div className="font-display text-2xl font-bold text-gradient md:text-3xl">
-                  {s.value}
-                </div>
-                <div className="mt-1 text-xs text-muted-foreground">{s.label}</div>
+              <div className="font-display text-2xl font-bold text-cyan-400 md:text-3xl">
+                {s.value}
               </div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+              <div className="mt-1 text-xs text-slate-400">{s.label}</div>
+            </div>
+          ))}
+        </motion.div>
+      </LampContainer>
 
       {/* SERVIÇOS E SOLUÇÕES =============================================== */}
       <section className="relative py-24 md:py-32 overflow-hidden">
