@@ -17,6 +17,7 @@ import {
 import heroTech from "@/assets/hero-tech.jpg";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
+import { LampContainer } from "@/components/ui/lamp";
 
 const SITE_URL = "https://www.ncbrasil.com.br";
 const OG_IMAGE = `${SITE_URL}/og-home.jpg`;
