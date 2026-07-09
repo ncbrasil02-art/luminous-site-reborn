@@ -1,6 +1,37 @@
 import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Zap, ChevronDown, Gavel, LayoutDashboard, Globe2, ShoppingBag, Smartphone, LineChart, ClipboardList, Cpu } from "lucide-react";
+import {
+  Menu,
+  X,
+  ChevronDown,
+  Users,
+  History,
+  Handshake,
+  Mail,
+  Globe2,
+  ShoppingBag,
+  FileText,
+  LineChart,
+  Search,
+  Server,
+  Code2,
+  LayoutDashboard,
+  Smartphone,
+  Palette,
+  Target,
+  Facebook,
+  Lightbulb,
+  Gavel,
+  Tractor,
+  Car,
+  Ticket,
+  Dice5,
+  Sparkles as ScratchIcon,
+  Gift,
+  Store,
+  CarFront,
+  Coins,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
   DropdownMenu,
@@ -9,29 +40,61 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const navItems = [
-  { to: "/empresa", label: "Empresa" },
-  { 
-    label: "Soluções", 
+type NavLeaf = { to: string; label: string; icon: any };
+type NavItem = { to: string; label: string } | { label: string; submenu: NavLeaf[] };
+
+const navItems: NavItem[] = [
+  {
+    label: "Empresa",
     submenu: [
-      { to: "/solucoes-web", label: "Criação de Sites", icon: Globe2 },
-      { to: "/portfolio/lojas-virtuais-criadas", label: "E-commerce", icon: ShoppingBag },
-      { to: "/portfolio/criacao-de-aplicativos", label: "Aplicativos Mobile", icon: Smartphone },
+      { to: "/empresa", label: "Quem Somos", icon: Users },
+      { to: "/empresa", label: "Nossa História", icon: History },
+      { to: "/trabalhos-realizados", label: "Clientes", icon: Handshake },
+      { to: "/contato", label: "Contato", icon: Mail },
+    ],
+  },
+  {
+    label: "Soluções Web",
+    submenu: [
+      { to: "/solucoes-web", label: "Desenvolvimento de Sites", icon: Globe2 },
+      { to: "/portfolio/lojas-virtuais-criadas", label: "Loja Virtual", icon: ShoppingBag },
+      { to: "/solucoes-web", label: "Landing Pages", icon: FileText },
       { to: "/nossos-servicos", label: "Marketing Digital", icon: LineChart },
-    ]
+      { to: "/nossos-servicos", label: "SEO Google", icon: Search },
+      { to: "/solucoes-web", label: "Hospedagem", icon: Server },
+    ],
   },
-  { 
-    label: "Sistemas", 
+  {
+    label: "Nossos Serviços",
     submenu: [
-      { to: "/nossos-sistemas", label: "Todos os Sistemas", icon: LayoutDashboard },
-      { to: "/sistema-de-leilao", label: "Sistema de Leilão", icon: Gavel },
-      { to: "/programa-de-ordem-de-servico", label: "Ordem de Serviço", icon: ClipboardList },
-      { to: "/sistema-sob-demanda-nc-brasil", label: "Sistemas Sob Demanda", icon: Cpu },
-    ]
+      { to: "/nossos-servicos", label: "Desenvolvimento", icon: Code2 },
+      { to: "/portfolio/criacao-de-sistemas", label: "Sistemas Web", icon: LayoutDashboard },
+      { to: "/portfolio/criacao-de-aplicativos", label: "Aplicativos", icon: Smartphone },
+      { to: "/portfolio/identidade-visual", label: "Identidade Visual", icon: Palette },
+      { to: "/nossos-servicos", label: "Google Ads", icon: Target },
+      { to: "/nossos-servicos", label: "Facebook Ads", icon: Facebook },
+      { to: "/nossos-servicos", label: "Consultoria", icon: Lightbulb },
+    ],
   },
-  { to: "/trabalhos-realizados", label: "Portfólio" },
+  {
+    label: "Nossos Sistemas",
+    submenu: [
+      { to: "/sistema-de-leilao", label: "Sistema de Leilão", icon: Gavel },
+      { to: "/nossos-sistemas", label: "Sistema de Leilão Rural", icon: Tractor },
+      { to: "/nossos-sistemas", label: "Classificados de Veículos", icon: Car },
+      { to: "/nossos-sistemas", label: "Sistema de Cupom", icon: Ticket },
+      { to: "/nossos-sistemas", label: "Plataforma Cassino", icon: Dice5 },
+      { to: "/nossos-sistemas", label: "Sistema de Raspadinha", icon: ScratchIcon },
+      { to: "/nossos-sistemas", label: "Sistema de Rifas", icon: Gift },
+      { to: "/nossos-sistemas", label: "Marketplace de Ofertas", icon: Store },
+      { to: "/nossos-sistemas", label: "Revenda de Veículos", icon: CarFront },
+      { to: "/nossos-sistemas", label: "Leilão de Centavos", icon: Coins },
+    ],
+  },
+  { to: "/trabalhos-realizados", label: "Trabalhos Realizados" },
+  { to: "/orcamento", label: "Orçamentos" },
   { to: "/contato", label: "Contato" },
-] as const;
+];
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
@@ -64,9 +127,9 @@ export function SiteHeader() {
                   {item.label}
                   <ChevronDown className="h-4 w-4 opacity-50" />
                 </DropdownMenuTrigger>
-                <DropdownMenuContent align="start" className="w-56 overflow-hidden rounded-xl border border-border/60 bg-card p-1 shadow-xl animate-in fade-in zoom-in-95 duration-200">
+                <DropdownMenuContent align="start" className="w-64 overflow-hidden rounded-xl border border-border/60 bg-card p-1 shadow-xl animate-in fade-in zoom-in-95 duration-200">
                   {item.submenu.map((subItem) => (
-                    <DropdownMenuItem key={subItem.to} asChild className="focus:bg-secondary/80 focus:text-foreground">
+                    <DropdownMenuItem key={subItem.label} asChild className="focus:bg-secondary/80 focus:text-foreground">
                       <Link to={subItem.to} className="flex w-full items-center gap-3 px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
                         <subItem.icon className="h-4 w-4 text-primary" />
                         {subItem.label}
@@ -107,20 +170,20 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <div className="glass border-t border-border lg:hidden">
+        <div className="glass border-t border-border lg:hidden max-h-[80vh] overflow-y-auto">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-4">
             {navItems.map((item) => (
               "submenu" in item ? (
                 <div key={item.label} className="flex flex-col gap-1">
-                  <span className="px-3 py-2 text-xs font-bold uppercase tracking-wider text-muted-foreground/60">
+                  <span className="px-3 pt-3 pb-1 text-xs font-bold uppercase tracking-wider text-muted-foreground/60">
                     {item.label}
                   </span>
                   {item.submenu.map((subItem) => (
                     <Link
-                      key={subItem.to}
+                      key={subItem.label}
                       to={subItem.to}
                       onClick={() => setOpen(false)}
-                      className="flex items-center gap-3 rounded-md px-3 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
+                      className="flex items-center gap-3 rounded-md px-3 py-2.5 text-sm font-medium text-muted-foreground hover:bg-secondary/50 hover:text-foreground"
                       activeProps={{ className: "text-foreground bg-secondary/60" }}
                     >
                       <subItem.icon className="h-4 w-4 text-primary" />
