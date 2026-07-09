@@ -25,7 +25,12 @@ import { Route as DicasParaECommerceRouteImport } from './routes/dicas-para-e-co
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
+import { Route as SistemasSistemaDeRifasRouteImport } from './routes/sistemas.sistema-de-rifas'
+import { Route as SistemasSistemaDeRevendaDeVeiculosRouteImport } from './routes/sistemas.sistema-de-revenda-de-veiculos'
+import { Route as SistemasSistemaDeRaspadinhaRouteImport } from './routes/sistemas.sistema-de-raspadinha'
+import { Route as SistemasSistemaDeOfertasCupomMarketplaceRouteImport } from './routes/sistemas.sistema-de-ofertas-cupom-marketplace'
 import { Route as SistemasSistemaDeLeilaoRuralRouteImport } from './routes/sistemas.sistema-de-leilao-rural'
+import { Route as SistemasSistemaDeLeilaoDeCentavosRouteImport } from './routes/sistemas.sistema-de-leilao-de-centavos'
 import { Route as SistemasSistemaDeLeilaoRouteImport } from './routes/sistemas.sistema-de-leilao'
 import { Route as SistemasSistemaDeCupomDescontosRouteImport } from './routes/sistemas.sistema-de-cupom-descontos'
 import { Route as SistemasPlataformaChinesaApostasCassinoRouteImport } from './routes/sistemas.plataforma-chinesa-apostas-cassino'
@@ -121,10 +126,39 @@ const SistemasIndexRoute = SistemasIndexRouteImport.update({
   path: '/sistemas/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SistemasSistemaDeRifasRoute = SistemasSistemaDeRifasRouteImport.update({
+  id: '/sistemas/sistema-de-rifas',
+  path: '/sistemas/sistema-de-rifas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SistemasSistemaDeRevendaDeVeiculosRoute =
+  SistemasSistemaDeRevendaDeVeiculosRouteImport.update({
+    id: '/sistemas/sistema-de-revenda-de-veiculos',
+    path: '/sistemas/sistema-de-revenda-de-veiculos',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SistemasSistemaDeRaspadinhaRoute =
+  SistemasSistemaDeRaspadinhaRouteImport.update({
+    id: '/sistemas/sistema-de-raspadinha',
+    path: '/sistemas/sistema-de-raspadinha',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SistemasSistemaDeOfertasCupomMarketplaceRoute =
+  SistemasSistemaDeOfertasCupomMarketplaceRouteImport.update({
+    id: '/sistemas/sistema-de-ofertas-cupom-marketplace',
+    path: '/sistemas/sistema-de-ofertas-cupom-marketplace',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SistemasSistemaDeLeilaoRuralRoute =
   SistemasSistemaDeLeilaoRuralRouteImport.update({
     id: '/sistemas/sistema-de-leilao-rural',
     path: '/sistemas/sistema-de-leilao-rural',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SistemasSistemaDeLeilaoDeCentavosRoute =
+  SistemasSistemaDeLeilaoDeCentavosRouteImport.update({
+    id: '/sistemas/sistema-de-leilao-de-centavos',
+    path: '/sistemas/sistema-de-leilao-de-centavos',
     getParentRoute: () => rootRouteImport,
   } as any)
 const SistemasSistemaDeLeilaoRoute = SistemasSistemaDeLeilaoRouteImport.update({
@@ -220,7 +254,12 @@ export interface FileRoutesByFullPath {
   '/sistemas/plataforma-chinesa-apostas-cassino': typeof SistemasPlataformaChinesaApostasCassinoRoute
   '/sistemas/sistema-de-cupom-descontos': typeof SistemasSistemaDeCupomDescontosRoute
   '/sistemas/sistema-de-leilao': typeof SistemasSistemaDeLeilaoRoute
+  '/sistemas/sistema-de-leilao-de-centavos': typeof SistemasSistemaDeLeilaoDeCentavosRoute
   '/sistemas/sistema-de-leilao-rural': typeof SistemasSistemaDeLeilaoRuralRoute
+  '/sistemas/sistema-de-ofertas-cupom-marketplace': typeof SistemasSistemaDeOfertasCupomMarketplaceRoute
+  '/sistemas/sistema-de-raspadinha': typeof SistemasSistemaDeRaspadinhaRoute
+  '/sistemas/sistema-de-revenda-de-veiculos': typeof SistemasSistemaDeRevendaDeVeiculosRoute
+  '/sistemas/sistema-de-rifas': typeof SistemasSistemaDeRifasRoute
   '/sistemas/': typeof SistemasIndexRoute
 }
 export interface FileRoutesByTo {
@@ -250,7 +289,12 @@ export interface FileRoutesByTo {
   '/sistemas/plataforma-chinesa-apostas-cassino': typeof SistemasPlataformaChinesaApostasCassinoRoute
   '/sistemas/sistema-de-cupom-descontos': typeof SistemasSistemaDeCupomDescontosRoute
   '/sistemas/sistema-de-leilao': typeof SistemasSistemaDeLeilaoRoute
+  '/sistemas/sistema-de-leilao-de-centavos': typeof SistemasSistemaDeLeilaoDeCentavosRoute
   '/sistemas/sistema-de-leilao-rural': typeof SistemasSistemaDeLeilaoRuralRoute
+  '/sistemas/sistema-de-ofertas-cupom-marketplace': typeof SistemasSistemaDeOfertasCupomMarketplaceRoute
+  '/sistemas/sistema-de-raspadinha': typeof SistemasSistemaDeRaspadinhaRoute
+  '/sistemas/sistema-de-revenda-de-veiculos': typeof SistemasSistemaDeRevendaDeVeiculosRoute
+  '/sistemas/sistema-de-rifas': typeof SistemasSistemaDeRifasRoute
   '/sistemas': typeof SistemasIndexRoute
 }
 export interface FileRoutesById {
@@ -281,7 +325,12 @@ export interface FileRoutesById {
   '/sistemas/plataforma-chinesa-apostas-cassino': typeof SistemasPlataformaChinesaApostasCassinoRoute
   '/sistemas/sistema-de-cupom-descontos': typeof SistemasSistemaDeCupomDescontosRoute
   '/sistemas/sistema-de-leilao': typeof SistemasSistemaDeLeilaoRoute
+  '/sistemas/sistema-de-leilao-de-centavos': typeof SistemasSistemaDeLeilaoDeCentavosRoute
   '/sistemas/sistema-de-leilao-rural': typeof SistemasSistemaDeLeilaoRuralRoute
+  '/sistemas/sistema-de-ofertas-cupom-marketplace': typeof SistemasSistemaDeOfertasCupomMarketplaceRoute
+  '/sistemas/sistema-de-raspadinha': typeof SistemasSistemaDeRaspadinhaRoute
+  '/sistemas/sistema-de-revenda-de-veiculos': typeof SistemasSistemaDeRevendaDeVeiculosRoute
+  '/sistemas/sistema-de-rifas': typeof SistemasSistemaDeRifasRoute
   '/sistemas/': typeof SistemasIndexRoute
 }
 export interface FileRouteTypes {
@@ -313,7 +362,12 @@ export interface FileRouteTypes {
     | '/sistemas/plataforma-chinesa-apostas-cassino'
     | '/sistemas/sistema-de-cupom-descontos'
     | '/sistemas/sistema-de-leilao'
+    | '/sistemas/sistema-de-leilao-de-centavos'
     | '/sistemas/sistema-de-leilao-rural'
+    | '/sistemas/sistema-de-ofertas-cupom-marketplace'
+    | '/sistemas/sistema-de-raspadinha'
+    | '/sistemas/sistema-de-revenda-de-veiculos'
+    | '/sistemas/sistema-de-rifas'
     | '/sistemas/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -343,7 +397,12 @@ export interface FileRouteTypes {
     | '/sistemas/plataforma-chinesa-apostas-cassino'
     | '/sistemas/sistema-de-cupom-descontos'
     | '/sistemas/sistema-de-leilao'
+    | '/sistemas/sistema-de-leilao-de-centavos'
     | '/sistemas/sistema-de-leilao-rural'
+    | '/sistemas/sistema-de-ofertas-cupom-marketplace'
+    | '/sistemas/sistema-de-raspadinha'
+    | '/sistemas/sistema-de-revenda-de-veiculos'
+    | '/sistemas/sistema-de-rifas'
     | '/sistemas'
   id:
     | '__root__'
@@ -373,7 +432,12 @@ export interface FileRouteTypes {
     | '/sistemas/plataforma-chinesa-apostas-cassino'
     | '/sistemas/sistema-de-cupom-descontos'
     | '/sistemas/sistema-de-leilao'
+    | '/sistemas/sistema-de-leilao-de-centavos'
     | '/sistemas/sistema-de-leilao-rural'
+    | '/sistemas/sistema-de-ofertas-cupom-marketplace'
+    | '/sistemas/sistema-de-raspadinha'
+    | '/sistemas/sistema-de-revenda-de-veiculos'
+    | '/sistemas/sistema-de-rifas'
     | '/sistemas/'
   fileRoutesById: FileRoutesById
 }
@@ -404,7 +468,12 @@ export interface RootRouteChildren {
   SistemasPlataformaChinesaApostasCassinoRoute: typeof SistemasPlataformaChinesaApostasCassinoRoute
   SistemasSistemaDeCupomDescontosRoute: typeof SistemasSistemaDeCupomDescontosRoute
   SistemasSistemaDeLeilaoRoute: typeof SistemasSistemaDeLeilaoRoute
+  SistemasSistemaDeLeilaoDeCentavosRoute: typeof SistemasSistemaDeLeilaoDeCentavosRoute
   SistemasSistemaDeLeilaoRuralRoute: typeof SistemasSistemaDeLeilaoRuralRoute
+  SistemasSistemaDeOfertasCupomMarketplaceRoute: typeof SistemasSistemaDeOfertasCupomMarketplaceRoute
+  SistemasSistemaDeRaspadinhaRoute: typeof SistemasSistemaDeRaspadinhaRoute
+  SistemasSistemaDeRevendaDeVeiculosRoute: typeof SistemasSistemaDeRevendaDeVeiculosRoute
+  SistemasSistemaDeRifasRoute: typeof SistemasSistemaDeRifasRoute
   SistemasIndexRoute: typeof SistemasIndexRoute
 }
 
@@ -522,11 +591,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SistemasIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sistemas/sistema-de-rifas': {
+      id: '/sistemas/sistema-de-rifas'
+      path: '/sistemas/sistema-de-rifas'
+      fullPath: '/sistemas/sistema-de-rifas'
+      preLoaderRoute: typeof SistemasSistemaDeRifasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/sistema-de-revenda-de-veiculos': {
+      id: '/sistemas/sistema-de-revenda-de-veiculos'
+      path: '/sistemas/sistema-de-revenda-de-veiculos'
+      fullPath: '/sistemas/sistema-de-revenda-de-veiculos'
+      preLoaderRoute: typeof SistemasSistemaDeRevendaDeVeiculosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/sistema-de-raspadinha': {
+      id: '/sistemas/sistema-de-raspadinha'
+      path: '/sistemas/sistema-de-raspadinha'
+      fullPath: '/sistemas/sistema-de-raspadinha'
+      preLoaderRoute: typeof SistemasSistemaDeRaspadinhaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/sistema-de-ofertas-cupom-marketplace': {
+      id: '/sistemas/sistema-de-ofertas-cupom-marketplace'
+      path: '/sistemas/sistema-de-ofertas-cupom-marketplace'
+      fullPath: '/sistemas/sistema-de-ofertas-cupom-marketplace'
+      preLoaderRoute: typeof SistemasSistemaDeOfertasCupomMarketplaceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sistemas/sistema-de-leilao-rural': {
       id: '/sistemas/sistema-de-leilao-rural'
       path: '/sistemas/sistema-de-leilao-rural'
       fullPath: '/sistemas/sistema-de-leilao-rural'
       preLoaderRoute: typeof SistemasSistemaDeLeilaoRuralRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/sistema-de-leilao-de-centavos': {
+      id: '/sistemas/sistema-de-leilao-de-centavos'
+      path: '/sistemas/sistema-de-leilao-de-centavos'
+      fullPath: '/sistemas/sistema-de-leilao-de-centavos'
+      preLoaderRoute: typeof SistemasSistemaDeLeilaoDeCentavosRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sistemas/sistema-de-leilao': {
@@ -637,9 +741,26 @@ const rootRouteChildren: RootRouteChildren = {
     SistemasPlataformaChinesaApostasCassinoRoute,
   SistemasSistemaDeCupomDescontosRoute: SistemasSistemaDeCupomDescontosRoute,
   SistemasSistemaDeLeilaoRoute: SistemasSistemaDeLeilaoRoute,
+  SistemasSistemaDeLeilaoDeCentavosRoute:
+    SistemasSistemaDeLeilaoDeCentavosRoute,
   SistemasSistemaDeLeilaoRuralRoute: SistemasSistemaDeLeilaoRuralRoute,
+  SistemasSistemaDeOfertasCupomMarketplaceRoute:
+    SistemasSistemaDeOfertasCupomMarketplaceRoute,
+  SistemasSistemaDeRaspadinhaRoute: SistemasSistemaDeRaspadinhaRoute,
+  SistemasSistemaDeRevendaDeVeiculosRoute:
+    SistemasSistemaDeRevendaDeVeiculosRoute,
+  SistemasSistemaDeRifasRoute: SistemasSistemaDeRifasRoute,
   SistemasIndexRoute: SistemasIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { createStart } from '@tanstack/react-start'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+  }
+}
