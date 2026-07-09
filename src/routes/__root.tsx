@@ -127,10 +127,8 @@ export const Route = createRootRoute({
       },
     ],
     scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify(orgJsonLd),
-      },
+      { type: "application/ld+json", children: JSON.stringify(orgJsonLd) },
+      { type: "application/ld+json", children: JSON.stringify(websiteJsonLd) },
     ],
   }),
   shellComponent: RootShell,
