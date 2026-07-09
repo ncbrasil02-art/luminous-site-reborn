@@ -1,3 +1,5 @@
+import { trackLead } from "@/lib/analytics";
+
 const WHATSAPP_URL =
   "https://wa.me/5511940002000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20NC%20Brasil%20e%20gostaria%20de%20um%20or%C3%A7amento.";
 
@@ -8,6 +10,7 @@ export function WhatsappFab() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp"
+      onClick={() => trackLead("whatsapp_fab", { channel: "whatsapp" })}
       className="fixed bottom-6 right-6 z-40 grid h-14 w-14 place-items-center rounded-full bg-gradient-primary text-primary-foreground glow-md transition-transform hover:scale-110"
     >
       <span className="absolute inset-0 rounded-full bg-gradient-primary opacity-60 blur-xl animate-glow-pulse" />

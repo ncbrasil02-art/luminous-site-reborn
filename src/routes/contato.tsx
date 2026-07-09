@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 
 import { Reveal, SectionHeading } from "@/components/Section";
+import { trackLead } from "@/lib/analytics";
 
 const SITE_URL = "https://www.ncbrasil.com.br";
 const EMAIL = "contato@ncbrasil.com.br";
@@ -56,6 +57,7 @@ function ContatoPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    trackLead("form_contato");
     const subject = encodeURIComponent(`Contato site — ${form.nome || "novo lead"}`);
     const body = encodeURIComponent(
       `Nome: ${form.nome}\nEmpresa: ${form.empresa}\nE-mail: ${form.email}\nTelefone: ${form.telefone}\n\nMensagem:\n${form.mensagem}`,

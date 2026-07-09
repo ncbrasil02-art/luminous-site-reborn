@@ -1,9 +1,11 @@
-import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
+import { Outlet, Link, createRootRoute, HeadContent, Scripts, useRouterState } from "@tanstack/react-router";
+import { useEffect } from "react";
 
 import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { WhatsappFab } from "@/components/WhatsappFab";
+import { initAnalytics, trackPageView } from "@/lib/analytics";
 
 const SITE_URL = "https://www.ncbrasil.com.br";
 
@@ -119,6 +121,16 @@ function RootShell({ children }: { children: React.ReactNode }) {
 }
 
 function RootComponent() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+
+  useEffect(() => {
+    initAnalytics();
+  }, []);
+
+  useEffect(() => {
+    trackPageView(pathname);
+  }, [pathname]);
+
   return (
     <div className="relative min-h-screen bg-background text-foreground">
       <SiteHeader />
