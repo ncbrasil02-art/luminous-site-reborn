@@ -20,6 +20,24 @@ const orgJsonLd = {
     "https://www.instagram.com/ncbrasil",
     "https://www.linkedin.com/company/ncbrasil",
   ],
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+55-11-4123-4567",
+      contactType: "sales",
+      areaServed: "BR",
+      availableLanguage: ["Portuguese"],
+      contactOption: "TollFree",
+    },
+    {
+      "@type": "ContactPoint",
+      telephone: "+55-11-99999-9999",
+      contactType: "customer support",
+      areaServed: "BR",
+      availableLanguage: ["Portuguese"],
+      contactOption: "HearingImpairedSupported",
+    },
+  ],
   address: [
     {
       "@type": "PostalAddress",
@@ -34,6 +52,20 @@ const orgJsonLd = {
       addressCountry: "BR",
     },
   ],
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "NC Brasil",
+  url: SITE_URL,
+  inLanguage: "pt-BR",
+  publisher: { "@type": "Organization", name: "NC Brasil", url: SITE_URL },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: `${SITE_URL}/buscar?q={search_term_string}`,
+    "query-input": "required name=search_term_string",
+  },
 };
 
 function NotFoundComponent() {
@@ -95,10 +127,8 @@ export const Route = createRootRoute({
       },
     ],
     scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify(orgJsonLd),
-      },
+      { type: "application/ld+json", children: JSON.stringify(orgJsonLd) },
+      { type: "application/ld+json", children: JSON.stringify(websiteJsonLd) },
     ],
   }),
   shellComponent: RootShell,
