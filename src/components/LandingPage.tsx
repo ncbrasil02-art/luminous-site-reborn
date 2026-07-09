@@ -356,6 +356,20 @@ export function buildLPMeta({
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(breadcrumbLd) },
       { type: "application/ld+json", children: JSON.stringify(serviceLd) },
+      ...(faq && faq.length
+        ? [{
+            type: "application/ld+json",
+            children: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faq.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            }),
+          }]
+        : []),
     ],
   };
 }
