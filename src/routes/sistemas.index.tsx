@@ -8,7 +8,7 @@ import { buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas";
 
-export const Route = createFileRoute("/sistemas")({
+export const Route = createFileRoute("/sistemas/")({
   head: () => buildLPMeta({
     title: "Nossos Sistemas | Plataformas Web Sob Demanda — NC Brasil",
     description: "Catálogo de sistemas web prontos e sob demanda da NC Brasil: leilão, cassino, rifas, cupons, classificados de veículos, marketplace e muito mais.",

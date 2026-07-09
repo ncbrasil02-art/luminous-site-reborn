@@ -24,6 +24,7 @@ import { Route as EmpresaRouteImport } from './routes/empresa'
 import { Route as DicasParaECommerceRouteImport } from './routes/dicas-para-e-commerce'
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
 import { Route as PortfolioSistemaDeCompraColetivaRouteImport } from './routes/portfolio.sistema-de-compra-coletiva'
 import { Route as PortfolioLojasVirtuaisCriadasRouteImport } from './routes/portfolio.lojas-virtuais-criadas'
 import { Route as PortfolioLogotiposCriadosRouteImport } from './routes/portfolio.logotipos-criados'
@@ -110,6 +111,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SistemasIndexRoute = SistemasIndexRouteImport.update({
+  id: '/sistemas/',
+  path: '/sistemas/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PortfolioSistemaDeCompraColetivaRoute =
   PortfolioSistemaDeCompraColetivaRouteImport.update({
     id: '/portfolio/sistema-de-compra-coletiva',
@@ -176,6 +182,7 @@ export interface FileRoutesByFullPath {
   '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
   '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
   '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
+  '/sistemas/': typeof SistemasIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -200,6 +207,7 @@ export interface FileRoutesByTo {
   '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
   '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
   '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
+  '/sistemas': typeof SistemasIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -225,6 +233,7 @@ export interface FileRoutesById {
   '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
   '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
   '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
+  '/sistemas/': typeof SistemasIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -251,6 +260,7 @@ export interface FileRouteTypes {
     | '/portfolio/logotipos-criados'
     | '/portfolio/lojas-virtuais-criadas'
     | '/portfolio/sistema-de-compra-coletiva'
+    | '/sistemas/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -275,6 +285,7 @@ export interface FileRouteTypes {
     | '/portfolio/logotipos-criados'
     | '/portfolio/lojas-virtuais-criadas'
     | '/portfolio/sistema-de-compra-coletiva'
+    | '/sistemas'
   id:
     | '__root__'
     | '/'
@@ -299,6 +310,7 @@ export interface FileRouteTypes {
     | '/portfolio/logotipos-criados'
     | '/portfolio/lojas-virtuais-criadas'
     | '/portfolio/sistema-de-compra-coletiva'
+    | '/sistemas/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -324,6 +336,7 @@ export interface RootRouteChildren {
   PortfolioLogotiposCriadosRoute: typeof PortfolioLogotiposCriadosRoute
   PortfolioLojasVirtuaisCriadasRoute: typeof PortfolioLojasVirtuaisCriadasRoute
   PortfolioSistemaDeCompraColetivaRoute: typeof PortfolioSistemaDeCompraColetivaRoute
+  SistemasIndexRoute: typeof SistemasIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -433,6 +446,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sistemas/': {
+      id: '/sistemas/'
+      path: '/sistemas'
+      fullPath: '/sistemas/'
+      preLoaderRoute: typeof SistemasIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/portfolio/sistema-de-compra-coletiva': {
       id: '/portfolio/sistema-de-compra-coletiva'
       path: '/portfolio/sistema-de-compra-coletiva'
@@ -508,6 +528,7 @@ const rootRouteChildren: RootRouteChildren = {
   PortfolioLogotiposCriadosRoute: PortfolioLogotiposCriadosRoute,
   PortfolioLojasVirtuaisCriadasRoute: PortfolioLojasVirtuaisCriadasRoute,
   PortfolioSistemaDeCompraColetivaRoute: PortfolioSistemaDeCompraColetivaRoute,
+  SistemasIndexRoute: SistemasIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
