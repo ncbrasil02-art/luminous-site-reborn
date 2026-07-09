@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/solucoes-web/marketing-digital";
 
+const lpFaq = [
+        { q: "Qual verba mínima?", a: "Recomendamos **R$ 3.000/mês** em verba + fee de gestão para resultados consistentes." },
+        { q: "Fazem contratos longos?", a: "Trabalhamos com **contrato mínimo de 3 meses** — tempo necessário para maturar campanhas." },
+        { q: "Vocês produzem os criativos?", a: "Sim, temos **estúdio próprio** de vídeo, design e copy para criativos ilimitados." },
+        { q: "Como medem resultado?", a: "**GA4, Meta Pixel, GTM e dashboards Looker** — total transparência de números." },
+        { q: "Atendem quais nichos?", a: "**E-commerce, SaaS, educação, saúde, imobiliário, jurídico** e infoprodutos." },
+      ];
+
 export const Route = createFileRoute("/solucoes-web/marketing-digital")({
   head: () => buildLPMeta({
     title: "Marketing Digital 360° | Estratégia, Tráfego Pago e Conteúdo",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/solucoes-web/marketing-digital")({
       { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
       { name: "Marketing Digital", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/solucoes-web/marketing-digital")({
         { icon: Youtube, title: "YouTube Ads", desc: "TrueView, discovery e bumper ads — alcance qualificado em vídeo." },
         { icon: Sparkles, title: "Copywriting", desc: "Criativos com **hooks virais e ganchos de conversão** testados A/B." },
       ]}
-      faq={[
-        { q: "Qual verba mínima?", a: "Recomendamos **R$ 3.000/mês** em verba + fee de gestão para resultados consistentes." },
-        { q: "Fazem contratos longos?", a: "Trabalhamos com **contrato mínimo de 3 meses** — tempo necessário para maturar campanhas." },
-        { q: "Vocês produzem os criativos?", a: "Sim, temos **estúdio próprio** de vídeo, design e copy para criativos ilimitados." },
-        { q: "Como medem resultado?", a: "**GA4, Meta Pixel, GTM e dashboards Looker** — total transparência de números." },
-        { q: "Atendem quais nichos?", a: "**E-commerce, SaaS, educação, saúde, imobiliário, jurídico** e infoprodutos." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

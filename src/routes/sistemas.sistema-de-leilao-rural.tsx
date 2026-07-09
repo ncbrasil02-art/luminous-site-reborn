@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-leilao-rural";
 
+const lpFaq = [
+        { q: "O sistema emite GTA?", a: "Sim, integramos com **SIGSIF e Defesa Agropecuária estadual** para emissão automática de GTA por lote arrematado." },
+        { q: "Aceita leilão presencial e online simultâneo?", a: "Sim. Operamos **leilões híbridos** com pregoeiro no tatersal e lances online sincronizados." },
+        { q: "Como funciona a genética registrada?", a: "Suportamos **ABCZ, ABCB, ABQM** e outras associações com validação automática do RG." },
+        { q: "É possível vender propriedades rurais?", a: "Sim, módulo específico com **matrícula, CAR, georreferenciamento** e visita virtual 360°." },
+        { q: "Vocês fazem toda a divulgação?", a: "Ajudamos com **estratégia de mídia paga** segmentada para produtores rurais e investidores." },
+      ];
+
 export const Route = createFileRoute("/sistemas/sistema-de-leilao-rural")({
   head: () => buildLPMeta({
     title: "Sistema de Leilão Rural Online | Gado, Cavalos e Propriedades",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-leilao-rural")({
       { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
       { name: "Leilão Rural", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-leilao-rural")({
         { icon: Beef, title: "Módulo Elite", desc: "Genética premium com **RGD, RGN, TOP e P.O.** para animais registrados." },
         { icon: Globe2, title: "Divulgação Nacional", desc: "Anúncios integrados com Canal Rural, Compre Rural e redes sociais." },
       ]}
-      faq={[
-        { q: "O sistema emite GTA?", a: "Sim, integramos com **SIGSIF e Defesa Agropecuária estadual** para emissão automática de GTA por lote arrematado." },
-        { q: "Aceita leilão presencial e online simultâneo?", a: "Sim. Operamos **leilões híbridos** com pregoeiro no tatersal e lances online sincronizados." },
-        { q: "Como funciona a genética registrada?", a: "Suportamos **ABCZ, ABCB, ABQM** e outras associações com validação automática do RG." },
-        { q: "É possível vender propriedades rurais?", a: "Sim, módulo específico com **matrícula, CAR, georreferenciamento** e visita virtual 360°." },
-        { q: "Vocês fazem toda a divulgação?", a: "Ajudamos com **estratégia de mídia paga** segmentada para produtores rurais e investidores." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

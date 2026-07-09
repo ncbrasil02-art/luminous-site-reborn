@@ -4,6 +4,13 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/portfolio/sites-criados";
 
+const lpFaq = [
+        { q: "Posso ver cases reais?", a: "Sim, acesse **Trabalhos Realizados** para portfólio completo com links ativos." },
+        { q: "Vocês fazem site institucional?", a: "Sim, é nossa **especialidade há 20 anos** — desde sites simples até portais complexos." },
+        { q: "Quanto tempo demora?", a: "Sites simples em **15-30 dias**, portais complexos em 45-90 dias." },
+        { q: "Fazem manutenção?", a: "Sim, planos mensais com **atualização, backup, monitoramento e suporte**." },
+      ];
+
 export const Route = createFileRoute("/portfolio/sites-criados")({
   head: () => buildLPMeta({
     title: "Portfólio de Sites Criados | Cases de Desenvolvimento Web NC Brasil",
@@ -16,6 +23,7 @@ export const Route = createFileRoute("/portfolio/sites-criados")({
       { name: "Portfólio", url: "https://www.ncbrasil.com.br/trabalhos-realizados" },
       { name: "Sites Criados", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,12 +46,7 @@ export const Route = createFileRoute("/portfolio/sites-criados")({
         { icon: Layers, title: "CMS Editável", desc: "Painel intuitivo para o cliente editar **sem depender de dev**." },
         { icon: ShieldCheck, title: "Seguros e Estáveis", desc: "SSL, WAF, backup diário e **uptime 99,9%**." },
       ]}
-      faq={[
-        { q: "Posso ver cases reais?", a: "Sim, acesse **Trabalhos Realizados** para portfólio completo com links ativos." },
-        { q: "Vocês fazem site institucional?", a: "Sim, é nossa **especialidade há 20 anos** — desde sites simples até portais complexos." },
-        { q: "Quanto tempo demora?", a: "Sites simples em **15-30 dias**, portais complexos em 45-90 dias." },
-        { q: "Fazem manutenção?", a: "Sim, planos mensais com **atualização, backup, monitoramento e suporte**." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

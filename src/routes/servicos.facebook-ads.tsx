@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/servicos/facebook-ads";
 
+const lpFaq = [
+        { q: "Verba mínima?", a: "**R$ 2.000/mês** em mídia + fee de gestão para resultados consistentes." },
+        { q: "Fazem os criativos?", a: "Sim, **estúdio próprio de vídeo, foto e motion** para criativos ilimitados." },
+        { q: "Quanto tempo para resultado?", a: "Primeiros dados em **7 dias**; maturidade da campanha em 30 dias." },
+        { q: "BM fica com quem?", a: "**Você é dono do Business Manager e do Pixel** — mantemos acesso permissionado." },
+        { q: "Trabalham com infoproduto?", a: "Sim, especialidade em **infoprodutos, e-commerce, SaaS e serviços locais**." },
+      ];
+
 export const Route = createFileRoute("/servicos/facebook-ads")({
   head: () => buildLPMeta({
     title: "Gestão de Facebook e Instagram Ads | Meta Ads com Alta Conversão",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/servicos/facebook-ads")({
       { name: "Serviços", url: "https://www.ncbrasil.com.br/servicos" },
       { name: "Facebook Ads", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/servicos/facebook-ads")({
         { icon: LineChart, title: "CAPI + Pixel", desc: "Conversion API server-side para **contornar iOS 14.5+ e ad blockers**." },
         { icon: MousePointerClick, title: "Retargeting", desc: "Segmentação de **abandono de carrinho, visualização e cross-sell**." },
       ]}
-      faq={[
-        { q: "Verba mínima?", a: "**R$ 2.000/mês** em mídia + fee de gestão para resultados consistentes." },
-        { q: "Fazem os criativos?", a: "Sim, **estúdio próprio de vídeo, foto e motion** para criativos ilimitados." },
-        { q: "Quanto tempo para resultado?", a: "Primeiros dados em **7 dias**; maturidade da campanha em 30 dias." },
-        { q: "BM fica com quem?", a: "**Você é dono do Business Manager e do Pixel** — mantemos acesso permissionado." },
-        { q: "Trabalham com infoproduto?", a: "Sim, especialidade em **infoprodutos, e-commerce, SaaS e serviços locais**." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

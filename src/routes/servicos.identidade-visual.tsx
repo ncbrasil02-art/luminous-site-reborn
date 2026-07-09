@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/servicos/identidade-visual";
 
+const lpFaq = [
+        { q: "Qual o prazo?", a: "Identidade completa em **30 a 60 dias**, com etapas de aprovação semanais." },
+        { q: "Quantas propostas apresentam?", a: "**2 a 3 conceitos distintos** na primeira rodada, com ajustes ilimitados no escolhido." },
+        { q: "Entregam manual de marca?", a: "Sim, PDF completo + **versão web interativa** para consulta da equipe." },
+        { q: "Fazem aplicações também?", a: "Sim: papelaria, redes sociais, embalagens, sinalização e **veículos**." },
+        { q: "Registrar no INPI?", a: "Orientamos e conectamos com **escritórios de propriedade intelectual** parceiros." },
+      ];
+
 export const Route = createFileRoute("/servicos/identidade-visual")({
   head: () => buildLPMeta({
     title: "Identidade Visual e Branding | Design de Marca Profissional",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/servicos/identidade-visual")({
       { name: "Serviços", url: "https://www.ncbrasil.com.br/servicos" },
       { name: "Identidade Visual", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/servicos/identidade-visual")({
         { icon: Brush, title: "Motion Branding", desc: "Assinatura animada, transições e **kit para redes sociais em motion**." },
         { icon: Eye, title: "Rebranding", desc: "Refresh ou reposicionamento completo com **plano de transição** para o mercado." },
       ]}
-      faq={[
-        { q: "Qual o prazo?", a: "Identidade completa em **30 a 60 dias**, com etapas de aprovação semanais." },
-        { q: "Quantas propostas apresentam?", a: "**2 a 3 conceitos distintos** na primeira rodada, com ajustes ilimitados no escolhido." },
-        { q: "Entregam manual de marca?", a: "Sim, PDF completo + **versão web interativa** para consulta da equipe." },
-        { q: "Fazem aplicações também?", a: "Sim: papelaria, redes sociais, embalagens, sinalização e **veículos**." },
-        { q: "Registrar no INPI?", a: "Orientamos e conectamos com **escritórios de propriedade intelectual** parceiros." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

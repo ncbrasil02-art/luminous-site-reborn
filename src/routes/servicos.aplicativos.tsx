@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/servicos/aplicativos";
 
+const lpFaq = [
+        { q: "Nativo ou React Native?", a: "**Recomendamos por projeto**: React Native para MVP rápido; nativo para performance crítica ou uso intensivo de hardware." },
+        { q: "Vocês publicam nas lojas?", a: "Sim, cuidamos de **contas de desenvolvedor, screenshots, ASO e revisões** da Apple/Google." },
+        { q: "Fazem manutenção?", a: "Sim, contratos de **evolução mensal** com sprints de melhorias contínuas." },
+        { q: "Qual o prazo médio?", a: "MVP em **90 dias**; app completo em 4 a 8 meses conforme escopo." },
+        { q: "Integram com meu backend?", a: "Sim, ou **construímos o backend** completo com APIs, admin e infraestrutura." },
+      ];
+
 export const Route = createFileRoute("/servicos/aplicativos")({
   head: () => buildLPMeta({
     title: "Desenvolvimento de Aplicativos Mobile | iOS e Android Nativos",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/servicos/aplicativos")({
       { name: "Serviços", url: "https://www.ncbrasil.com.br/servicos" },
       { name: "Aplicativos", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/servicos/aplicativos")({
         { icon: ShieldCheck, title: "Segurança", desc: "Certificate pinning, obfuscação, jailbreak/root detection." },
         { icon: Users, title: "Publicação nas Lojas", desc: "Cuidamos de tudo: **App Store Connect, Google Play Console** e revisões." },
       ]}
-      faq={[
-        { q: "Nativo ou React Native?", a: "**Recomendamos por projeto**: React Native para MVP rápido; nativo para performance crítica ou uso intensivo de hardware." },
-        { q: "Vocês publicam nas lojas?", a: "Sim, cuidamos de **contas de desenvolvedor, screenshots, ASO e revisões** da Apple/Google." },
-        { q: "Fazem manutenção?", a: "Sim, contratos de **evolução mensal** com sprints de melhorias contínuas." },
-        { q: "Qual o prazo médio?", a: "MVP em **90 dias**; app completo em 4 a 8 meses conforme escopo." },
-        { q: "Integram com meu backend?", a: "Sim, ou **construímos o backend** completo com APIs, admin e infraestrutura." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

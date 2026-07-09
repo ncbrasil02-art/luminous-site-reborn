@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-ofertas-cupom-marketplace";
 
+const lpFaq = [
+        { q: "Aceita produtos físicos e serviços?", a: "Sim, arquitetura flexível para **produtos, serviços, ingressos, cursos e cupons** — cada tipo com fluxo próprio." },
+        { q: "Como funciona o onboarding de lojistas?", a: "Autocadastro com **KYC/KYB, aprovação em 24h e integração com Pagar.me** para split automático." },
+        { q: "Vocês entregam app para os lojistas?", a: "Sim, **app do lojista** para gestão + **app do consumidor** — ambos white label." },
+        { q: "É possível operar por franquia regional?", a: "Sim, arquitetura **multi-tenant** — cada franqueado tem cidade, comissão e branding próprios." },
+        { q: "Qual o prazo de implantação?", a: "**60 a 120 dias** para MVP completo com apps e infraestrutura escalável." },
+      ];
+
 export const Route = createFileRoute("/sistemas/sistema-de-ofertas-cupom-marketplace")({
   head: () => buildLPMeta({
     title: "Marketplace de Ofertas e Cupons | Plataforma Multi-Lojista",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-ofertas-cupom-marketp
       { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
       { name: "Marketplace de Ofertas", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-ofertas-cupom-marketp
         { icon: Users, title: "Avaliações e Reviews", desc: "Sistema de reviews com moderação, foto e resposta do lojista." },
         { icon: Truck, title: "Logística Integrada", desc: "Melhor Envio, Correios API e frete grátis condicional por lojista." },
       ]}
-      faq={[
-        { q: "Aceita produtos físicos e serviços?", a: "Sim, arquitetura flexível para **produtos, serviços, ingressos, cursos e cupons** — cada tipo com fluxo próprio." },
-        { q: "Como funciona o onboarding de lojistas?", a: "Autocadastro com **KYC/KYB, aprovação em 24h e integração com Pagar.me** para split automático." },
-        { q: "Vocês entregam app para os lojistas?", a: "Sim, **app do lojista** para gestão + **app do consumidor** — ambos white label." },
-        { q: "É possível operar por franquia regional?", a: "Sim, arquitetura **multi-tenant** — cada franqueado tem cidade, comissão e branding próprios." },
-        { q: "Qual o prazo de implantação?", a: "**60 a 120 dias** para MVP completo com apps e infraestrutura escalável." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

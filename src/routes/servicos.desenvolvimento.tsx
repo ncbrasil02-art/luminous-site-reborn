@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/servicos/desenvolvimento";
 
+const lpFaq = [
+        { q: "Como funcionam as squads?", a: "**PO, Tech Lead, Dev(s), QA e DevOps** dedicados exclusivamente ao seu projeto." },
+        { q: "Vocês assinam NDA?", a: "Sim, **NDA e contrato de confidencialidade** padrão em todos os projetos." },
+        { q: "Código fica comigo?", a: "Sim, **você tem propriedade total do código** e do repositório desde o dia 1." },
+        { q: "Qual metodologia?", a: "**Scrum ou Kanban**, com Jira/Linear, dailys e demos semanais." },
+        { q: "Qual o modelo comercial?", a: "**Escopo fechado ou body shop** por sprint — o que fizer sentido para o projeto." },
+      ];
+
 export const Route = createFileRoute("/servicos/desenvolvimento")({
   head: () => buildLPMeta({
     title: "Desenvolvimento de Software Sob Medida | Fábrica de Software",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/servicos/desenvolvimento")({
       { name: "Serviços", url: "https://www.ncbrasil.com.br/servicos" },
       { name: "Desenvolvimento", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/servicos/desenvolvimento")({
         { icon: GitBranch, title: "DevOps Contínuo", desc: "GitHub Actions, GitLab CI, monitoramento com Datadog/Grafana." },
         { icon: Workflow, title: "Integrações", desc: "APIs REST/GraphQL, webhooks, ERPs, CRMs, **pagamentos e ML**." },
       ]}
-      faq={[
-        { q: "Como funcionam as squads?", a: "**PO, Tech Lead, Dev(s), QA e DevOps** dedicados exclusivamente ao seu projeto." },
-        { q: "Vocês assinam NDA?", a: "Sim, **NDA e contrato de confidencialidade** padrão em todos os projetos." },
-        { q: "Código fica comigo?", a: "Sim, **você tem propriedade total do código** e do repositório desde o dia 1." },
-        { q: "Qual metodologia?", a: "**Scrum ou Kanban**, com Jira/Linear, dailys e demos semanais." },
-        { q: "Qual o modelo comercial?", a: "**Escopo fechado ou body shop** por sprint — o que fizer sentido para o projeto." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

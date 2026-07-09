@@ -6,6 +6,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-leilao";
 
+const lpFaq = [
+        { q: "O sistema atende leilões judiciais?", a: "Sim. Atendemos **leilões judiciais e extrajudiciais** com edital, publicações e integração para juntas oficiais." },
+        { q: "Vocês oferecem transmissão ao vivo?", a: "Sim. Streaming em HD com **cronômetro sincronizado**, chat e histórico gravado do pregão." },
+        { q: "Como funciona o cálculo de comissão?", a: "Configuramos por leilão: **comissão do leiloeiro, taxa administrativa e ITBI** são calculados automaticamente." },
+        { q: "É possível personalizar a identidade visual?", a: "Sim. Todo o sistema é **white-label** — cores, logotipo, domínio próprio e edital personalizado." },
+        { q: "Qual o prazo de implantação?", a: "A implantação típica leva de **30 a 60 dias**, incluindo treinamento e leilão-piloto." },
+      ];
+
 export const Route = createFileRoute("/sistemas/sistema-de-leilao")({
   head: () => buildLPMeta({
     title: "Sistema de Leilão Online | Plataforma Completa — NC Brasil",
@@ -18,6 +26,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-leilao")({
       { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
       { name: "Sistema de Leilão", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -49,13 +58,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-leilao")({
         { icon: Clock, title: "Prorrogação Anti-Sniping", desc: "Extensão automática do prazo quando há lance nos últimos segundos." },
         { icon: Lock, title: "LGPD & Conformidade", desc: "Trilha de auditoria completa, backups e política de retenção." },
       ]}
-      faq={[
-        { q: "O sistema atende leilões judiciais?", a: "Sim. Atendemos **leilões judiciais e extrajudiciais** com edital, publicações e integração para juntas oficiais." },
-        { q: "Vocês oferecem transmissão ao vivo?", a: "Sim. Streaming em HD com **cronômetro sincronizado**, chat e histórico gravado do pregão." },
-        { q: "Como funciona o cálculo de comissão?", a: "Configuramos por leilão: **comissão do leiloeiro, taxa administrativa e ITBI** são calculados automaticamente." },
-        { q: "É possível personalizar a identidade visual?", a: "Sim. Todo o sistema é **white-label** — cores, logotipo, domínio próprio e edital personalizado." },
-        { q: "Qual o prazo de implantação?", a: "A implantação típica leva de **30 a 60 dias**, incluindo treinamento e leilão-piloto." },
-      ]}
+      faq={lpFaq}
       finalCtaTitle={<>Pronto para <span className="text-gradient">digitalizar seus leilões</span>?</>}
     />
   ),

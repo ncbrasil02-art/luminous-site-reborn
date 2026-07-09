@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/servicos/consultoria";
 
+const lpFaq = [
+        { q: "Como funciona a consultoria?", a: "Diagnóstico inicial de **2 semanas** + entrega de roadmap + acompanhamento mensal ou quinzenal." },
+        { q: "Atendem startups ou empresas grandes?", a: "Ambos — **desde early-stage até enterprise** com faturamento >R$ 100Mi." },
+        { q: "Vocês executam ou só apontam?", a: "Ambos os modelos disponíveis: **advisory ou hands-on** com squads dedicadas." },
+        { q: "Qual o investimento?", a: "**A partir de R$ 8.000/mês** dependendo do modelo e nível de senioridade." },
+        { q: "Assinam NDA?", a: "Sim, **NDA e cláusula de não-competição** em todas as consultorias." },
+      ];
+
 export const Route = createFileRoute("/servicos/consultoria")({
   head: () => buildLPMeta({
     title: "Consultoria em Tecnologia e Marketing Digital | Estratégia Sob Medida",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/servicos/consultoria")({
       { name: "Serviços", url: "https://www.ncbrasil.com.br/servicos" },
       { name: "Consultoria", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/servicos/consultoria")({
         { icon: LineChart, title: "Growth Hacking", desc: "Experimentos, funil AARRR e **loops de crescimento** validados." },
         { icon: Rocket, title: "Go-to-Market", desc: "Estratégia de lançamento com **pricing, canais e mensagens**." },
       ]}
-      faq={[
-        { q: "Como funciona a consultoria?", a: "Diagnóstico inicial de **2 semanas** + entrega de roadmap + acompanhamento mensal ou quinzenal." },
-        { q: "Atendem startups ou empresas grandes?", a: "Ambos — **desde early-stage até enterprise** com faturamento >R$ 100Mi." },
-        { q: "Vocês executam ou só apontam?", a: "Ambos os modelos disponíveis: **advisory ou hands-on** com squads dedicadas." },
-        { q: "Qual o investimento?", a: "**A partir de R$ 8.000/mês** dependendo do modelo e nível de senioridade." },
-        { q: "Assinam NDA?", a: "Sim, **NDA e cláusula de não-competição** em todas as consultorias." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

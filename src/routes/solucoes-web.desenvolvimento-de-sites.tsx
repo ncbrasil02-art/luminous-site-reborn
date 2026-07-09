@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/solucoes-web/desenvolvimento-de-sites";
 
+const lpFaq = [
+        { q: "Qual o prazo de entrega?", a: "De **15 a 45 dias** dependendo da complexidade e quantidade de páginas." },
+        { q: "Vocês fazem a hospedagem?", a: "Sim, oferecemos **hospedagem gerenciada** com SSL, CDN e backup diário." },
+        { q: "Posso editar o site depois?", a: "Sim, entregamos com **painel administrativo intuitivo** e treinamento incluso." },
+        { q: "O site é otimizado para Google?", a: "Sim, aplicamos **SEO on-page completo**, schema markup e performance A+." },
+        { q: "Qual o investimento?", a: "Sites institucionais a partir de **R$ 3.500** — solicite proposta personalizada." },
+      ];
+
 export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
   head: () => buildLPMeta({
     title: "Desenvolvimento de Sites Profissionais | Sites Institucionais e Responsivos",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
       { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
       { name: "Desenvolvimento de Sites", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
         { icon: Globe2, title: "Multi-idioma", desc: "Suporte a PT-BR, inglês e espanhol com hreflang configurado." },
         { icon: LineChart, title: "Analytics Integrado", desc: "Google Analytics 4, Tag Manager, Meta Pixel e Search Console prontos." },
       ]}
-      faq={[
-        { q: "Qual o prazo de entrega?", a: "De **15 a 45 dias** dependendo da complexidade e quantidade de páginas." },
-        { q: "Vocês fazem a hospedagem?", a: "Sim, oferecemos **hospedagem gerenciada** com SSL, CDN e backup diário." },
-        { q: "Posso editar o site depois?", a: "Sim, entregamos com **painel administrativo intuitivo** e treinamento incluso." },
-        { q: "O site é otimizado para Google?", a: "Sim, aplicamos **SEO on-page completo**, schema markup e performance A+." },
-        { q: "Qual o investimento?", a: "Sites institucionais a partir de **R$ 3.500** — solicite proposta personalizada." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

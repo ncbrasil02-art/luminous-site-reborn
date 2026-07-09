@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/solucoes-web/loja-virtual";
 
+const lpFaq = [
+        { q: "Vocês integram com Bling ou Tiny?", a: "Sim, integramos com **Bling, Tiny, Omie e ERPs personalizados** via API." },
+        { q: "Aceita dropshipping?", a: "Sim, temos módulo de **dropshipping com AliExpress e fornecedores nacionais**." },
+        { q: "É plataforma própria ou WooCommerce?", a: "Trabalhamos com **plataforma própria escalável** ou WooCommerce, conforme o projeto." },
+        { q: "Quanto custa manter uma loja?", a: "Hospedagem a partir de **R$ 250/mês** com SSL, backup e suporte incluso." },
+        { q: "Qual o prazo?", a: "**30 a 60 dias** para MVP pronto com produtos cadastrados e integrações ativas." },
+      ];
+
 export const Route = createFileRoute("/solucoes-web/loja-virtual")({
   head: () => buildLPMeta({
     title: "Criação de Loja Virtual | E-commerce Profissional com Alta Conversão",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/solucoes-web/loja-virtual")({
       { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
       { name: "Loja Virtual", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/solucoes-web/loja-virtual")({
         { icon: Smartphone, title: "PWA Mobile", desc: "Loja instalável no celular como app — sem depender das lojas de apps." },
         { icon: ShieldCheck, title: "Antifraude", desc: "Análise automática de risco com **ClearSale, Konduto ou Cybersource**." },
       ]}
-      faq={[
-        { q: "Vocês integram com Bling ou Tiny?", a: "Sim, integramos com **Bling, Tiny, Omie e ERPs personalizados** via API." },
-        { q: "Aceita dropshipping?", a: "Sim, temos módulo de **dropshipping com AliExpress e fornecedores nacionais**." },
-        { q: "É plataforma própria ou WooCommerce?", a: "Trabalhamos com **plataforma própria escalável** ou WooCommerce, conforme o projeto." },
-        { q: "Quanto custa manter uma loja?", a: "Hospedagem a partir de **R$ 250/mês** com SSL, backup e suporte incluso." },
-        { q: "Qual o prazo?", a: "**30 a 60 dias** para MVP pronto com produtos cadastrados e integrações ativas." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas/plataforma-chinesa-apostas-cassino";
 
+const lpFaq = [
+        { q: "A plataforma é certificada?", a: "Sim, com **certificações GLI, iTech Labs** e prontos para regulamentação SIGAP/SPA no Brasil." },
+        { q: "Vocês fornecem licença de operação?", a: "Trabalhamos com **licenças de Curaçao, Anjouan e SPA-BR** através de parceiros consultivos." },
+        { q: "Quanto tempo leva para colocar no ar?", a: "Um cassino white label completo fica operacional em **45 a 90 dias** com integrações e app." },
+        { q: "Aceita criptomoedas?", a: "Sim, **BTC, USDT (ERC20/TRC20)** e stablecoins com wallet custodial integrada." },
+        { q: "Fazem app iOS e Android?", a: "Sim, **PWA + apps nativos** publicados via TestFlight, sideload ou lojas alternativas conforme política." },
+      ];
+
 export const Route = createFileRoute("/sistemas/plataforma-chinesa-apostas-cassino")({
   head: () => buildLPMeta({
     title: "Plataforma de Cassino Online | White Label Completa — NC Brasil",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/sistemas/plataforma-chinesa-apostas-cassi
       { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
       { name: "Plataforma de Cassino", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/sistemas/plataforma-chinesa-apostas-cassi
         { icon: Users, title: "Programa de Afiliados", desc: "Painel completo com **CPA, RevShare, sub-afiliados** e trackers dedicados." },
         { icon: Headphones, title: "Suporte 24/7", desc: "Chat, e-mail e WhatsApp em pt-BR integrados no admin do operador." },
       ]}
-      faq={[
-        { q: "A plataforma é certificada?", a: "Sim, com **certificações GLI, iTech Labs** e prontos para regulamentação SIGAP/SPA no Brasil." },
-        { q: "Vocês fornecem licença de operação?", a: "Trabalhamos com **licenças de Curaçao, Anjouan e SPA-BR** através de parceiros consultivos." },
-        { q: "Quanto tempo leva para colocar no ar?", a: "Um cassino white label completo fica operacional em **45 a 90 dias** com integrações e app." },
-        { q: "Aceita criptomoedas?", a: "Sim, **BTC, USDT (ERC20/TRC20)** e stablecoins com wallet custodial integrada." },
-        { q: "Fazem app iOS e Android?", a: "Sim, **PWA + apps nativos** publicados via TestFlight, sideload ou lojas alternativas conforme política." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

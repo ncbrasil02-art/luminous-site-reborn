@@ -4,6 +4,13 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/empresa/quem-somos";
 
+const lpFaq = [
+        { q: "Onde a NC Brasil está localizada?", a: "Sede em **São Paulo (SP)**, com times remotos em Rio, Belo Horizonte, Curitiba e Recife." },
+        { q: "Atendem empresas de qualquer porte?", a: "Sim: de **startups em pré-seed até enterprises** com faturamento acima de R$ 100Mi." },
+        { q: "Qual o diferencial da NC?", a: "**Time sênior**, entrega no prazo, código aberto ao cliente e parceria de longo prazo." },
+        { q: "Vocês têm cases públicos?", a: "Sim, veja **nossos trabalhos realizados** e portfólio detalhado por categoria." },
+      ];
+
 export const Route = createFileRoute("/empresa/quem-somos")({
   head: () => buildLPMeta({
     title: "Quem Somos | NC Brasil — 20 Anos de Tecnologia e Marketing Digital",
@@ -16,6 +23,7 @@ export const Route = createFileRoute("/empresa/quem-somos")({
       { name: "Empresa", url: "https://www.ncbrasil.com.br/empresa" },
       { name: "Quem Somos", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,12 +46,7 @@ export const Route = createFileRoute("/empresa/quem-somos")({
         { icon: Globe2, title: "Alcance Nacional", desc: "Clientes de **Norte a Sul do Brasil** e projetos em Portugal, EUA e Angola." },
         { icon: Handshake, title: "Cultura Colaborativa", desc: "Time treinado em **comunicação clara, autonomia responsável e ownership**." },
       ]}
-      faq={[
-        { q: "Onde a NC Brasil está localizada?", a: "Sede em **São Paulo (SP)**, com times remotos em Rio, Belo Horizonte, Curitiba e Recife." },
-        { q: "Atendem empresas de qualquer porte?", a: "Sim: de **startups em pré-seed até enterprises** com faturamento acima de R$ 100Mi." },
-        { q: "Qual o diferencial da NC?", a: "**Time sênior**, entrega no prazo, código aberto ao cliente e parceria de longo prazo." },
-        { q: "Vocês têm cases públicos?", a: "Sim, veja **nossos trabalhos realizados** e portfólio detalhado por categoria." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

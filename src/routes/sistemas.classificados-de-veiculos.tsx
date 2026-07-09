@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas/classificados-de-veiculos";
 
+const lpFaq = [
+        { q: "É possível integrar com o meu ERP de revenda?", a: "Sim, temos **APIs prontas para AutoConf, Automotor, Boom Sistemas e Localiza Meu Carro**." },
+        { q: "O sistema já vem com SEO otimizado?", a: "Sim. Cada anúncio gera **página única com URL amigável, schema Vehicle, sitemap dinâmico** e imagens otimizadas." },
+        { q: "Aceita anúncios de particulares?", a: "Sim, com **planos gratuitos limitados e pagos para destaque** — moderação automatizada." },
+        { q: "Como funciona o financiamento integrado?", a: "Integramos com o **CredMax, Creditas e bancos parceiros** para simulação em tempo real." },
+        { q: "É responsivo e rápido?", a: "PWA com **cache offline, imagens WebP e Core Web Vitals verde** em todos os dispositivos." },
+      ];
+
 export const Route = createFileRoute("/sistemas/classificados-de-veiculos")({
   head: () => buildLPMeta({
     title: "Sistema de Classificados de Veículos | Portal Automotivo",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/sistemas/classificados-de-veiculos")({
       { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
       { name: "Classificados de Veículos", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/sistemas/classificados-de-veiculos")({
         { icon: MessageCircle, title: "Chat & WhatsApp", desc: "Chat integrado, WhatsApp click-to-call e lead qualificado para revenda." },
         { icon: ShieldCheck, title: "Antifraude", desc: "Validação de placa, chassi, restrições e alerta de anúncio suspeito." },
       ]}
-      faq={[
-        { q: "É possível integrar com o meu ERP de revenda?", a: "Sim, temos **APIs prontas para AutoConf, Automotor, Boom Sistemas e Localiza Meu Carro**." },
-        { q: "O sistema já vem com SEO otimizado?", a: "Sim. Cada anúncio gera **página única com URL amigável, schema Vehicle, sitemap dinâmico** e imagens otimizadas." },
-        { q: "Aceita anúncios de particulares?", a: "Sim, com **planos gratuitos limitados e pagos para destaque** — moderação automatizada." },
-        { q: "Como funciona o financiamento integrado?", a: "Integramos com o **CredMax, Creditas e bancos parceiros** para simulação em tempo real." },
-        { q: "É responsivo e rápido?", a: "PWA com **cache offline, imagens WebP e Core Web Vitals verde** em todos os dispositivos." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });
