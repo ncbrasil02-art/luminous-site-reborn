@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-rifas";
 
+const lpFaq = [
+        { q: "Rifa online é legal no Brasil?", a: "Sim, se estruturada corretamente como **título de capitalização, promoção comercial autorizada pela SECAP** ou por associação. Orientamos o modelo ideal." },
+        { q: "Como funciona o sorteio?", a: "Pela **extração da Loteria Federal** (5 dezenas correspondentes à cota) ou premiação de cota fixa comprada." },
+        { q: "É possível fazer rifas beneficentes?", a: "Sim, temos modelo específico para **associações e ONGs** com prestação de contas transparente." },
+        { q: "Aceita split de pagamento?", a: "Sim, split automático entre **organizador, plataforma e afiliados** integrado com Pagar.me e Iugu." },
+        { q: "Qual o prazo de implantação?", a: "**7 a 15 dias** para versão white label pronta; customizações levam mais tempo." },
+      ];
+
 export const Route = createFileRoute("/sistemas/sistema-de-rifas")({
   head: () => buildLPMeta({
     title: "Sistema de Rifas Online | Plataforma Legal e Completa",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-rifas")({
       { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
       { name: "Sistema de Rifas", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-rifas")({
         { icon: Smartphone, title: "App do Participante", desc: "Notificação do sorteio, cotas compradas e histórico de rifas." },
         { icon: BarChart3, title: "Painel do Organizador", desc: "Vendas em tempo real, conciliação e **saque automático** para conta." },
       ]}
-      faq={[
-        { q: "Rifa online é legal no Brasil?", a: "Sim, se estruturada corretamente como **título de capitalização, promoção comercial autorizada pela SECAP** ou por associação. Orientamos o modelo ideal." },
-        { q: "Como funciona o sorteio?", a: "Pela **extração da Loteria Federal** (5 dezenas correspondentes à cota) ou premiação de cota fixa comprada." },
-        { q: "É possível fazer rifas beneficentes?", a: "Sim, temos modelo específico para **associações e ONGs** com prestação de contas transparente." },
-        { q: "Aceita split de pagamento?", a: "Sim, split automático entre **organizador, plataforma e afiliados** integrado com Pagar.me e Iugu." },
-        { q: "Qual o prazo de implantação?", a: "**7 a 15 dias** para versão white label pronta; customizações levam mais tempo." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

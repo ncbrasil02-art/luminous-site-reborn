@@ -306,6 +306,7 @@ export function buildLPMeta({
   canonical,
   h1,
   breadcrumbs,
+  faq,
 }: {
   title: string;
   description: string;
@@ -313,6 +314,7 @@ export function buildLPMeta({
   canonical: string;
   h1: string;
   breadcrumbs: { name: string; url: string }[];
+  faq?: { q: string; a: string }[];
 }) {
   const breadcrumbLd = {
     "@context": "https://schema.org",
@@ -354,6 +356,20 @@ export function buildLPMeta({
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(breadcrumbLd) },
       { type: "application/ld+json", children: JSON.stringify(serviceLd) },
+      ...(faq && faq.length
+        ? [{
+            type: "application/ld+json",
+            children: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faq.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            }),
+          }]
+        : []),
     ],
   };
 }

@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-leilao-de-centavos";
 
+const lpFaq = [
+        { q: "Leilão de centavos é legal no Brasil?", a: "Sim, quando estruturado como **plataforma de skill/gaming, promoção comercial ou clube de compras** — orientamos o formato mais seguro." },
+        { q: "Como funciona a economia dos créditos?", a: "Usuário compra pacote (ex: 100 créditos por R$50). Cada lance custa 1 crédito e sobe o preço em R$0,01." },
+        { q: "Vocês entregam os prêmios?", a: "Não fazemos a logística, mas integramos com **Melhor Envio, Correios e transportadoras** para automatizar o envio." },
+        { q: "Como evitar multicontas?", a: "**KYC + device fingerprint + análise comportamental** identificam padrões suspeitos automaticamente." },
+        { q: "Aceita criptomoedas?", a: "Sim, opção de créditos comprados em **USDT/BTC** via gateway integrado." },
+      ];
+
 export const Route = createFileRoute("/sistemas/sistema-de-leilao-de-centavos")({
   head: () => buildLPMeta({
     title: "Sistema de Leilão de Centavos | Plataforma Penny Auction",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-leilao-de-centavos")(
       { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
       { name: "Leilão de Centavos", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-leilao-de-centavos")(
         { icon: Clock, title: "Leilões Programados", desc: "Cronograma diário com **leilões flash, VIP e beginners-only**." },
         { icon: ShieldCheck, title: "Antifraude Robusto", desc: "**Device fingerprint, KYC, limite diário e blacklist** — controle multicontas." },
       ]}
-      faq={[
-        { q: "Leilão de centavos é legal no Brasil?", a: "Sim, quando estruturado como **plataforma de skill/gaming, promoção comercial ou clube de compras** — orientamos o formato mais seguro." },
-        { q: "Como funciona a economia dos créditos?", a: "Usuário compra pacote (ex: 100 créditos por R$50). Cada lance custa 1 crédito e sobe o preço em R$0,01." },
-        { q: "Vocês entregam os prêmios?", a: "Não fazemos a logística, mas integramos com **Melhor Envio, Correios e transportadoras** para automatizar o envio." },
-        { q: "Como evitar multicontas?", a: "**KYC + device fingerprint + análise comportamental** identificam padrões suspeitos automaticamente." },
-        { q: "Aceita criptomoedas?", a: "Sim, opção de créditos comprados em **USDT/BTC** via gateway integrado." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

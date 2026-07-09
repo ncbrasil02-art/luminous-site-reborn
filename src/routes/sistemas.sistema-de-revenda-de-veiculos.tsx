@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-revenda-de-veiculos";
 
+const lpFaq = [
+        { q: "Vocês entregam o portal do meu domínio?", a: "Sim, portal com **domínio próprio, SSL, hospedagem otimizada e SEO técnico** incluídos no plano." },
+        { q: "Quais anunciadores externos são integrados?", a: "**Webmotors, iCarros, OLX, MercadoLivre, Facebook Marketplace, Instagram Shopping** e Google Vehicle Ads." },
+        { q: "Funciona no celular do vendedor?", a: "Sim, **app iOS/Android** para vendedores com fichamento no pátio, fotos e captura de leads." },
+        { q: "Como funciona a integração com o financiamento?", a: "Simulador integrado com **os 8 principais bancos** — o vendedor envia proposta em 1 clique." },
+        { q: "Suporta múltiplas lojas?", a: "Sim, arquitetura **multi-loja** com transferência de estoque, permissões e BI consolidado." },
+      ];
+
 export const Route = createFileRoute("/sistemas/sistema-de-revenda-de-veiculos")({
   head: () => buildLPMeta({
     title: "Sistema para Revenda de Veículos | ERP + Portal Automotivo",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-revenda-de-veiculos")
       { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
       { name: "Revenda de Veículos", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-revenda-de-veiculos")
         { icon: BarChart3, title: "BI da Loja", desc: "Ticket médio, tempo em estoque, giro, ROI por canal de origem." },
         { icon: ShieldCheck, title: "Vistoria Digital", desc: "Checklist com fotos, laudo cautelar e histórico do veículo." },
       ]}
-      faq={[
-        { q: "Vocês entregam o portal do meu domínio?", a: "Sim, portal com **domínio próprio, SSL, hospedagem otimizada e SEO técnico** incluídos no plano." },
-        { q: "Quais anunciadores externos são integrados?", a: "**Webmotors, iCarros, OLX, MercadoLivre, Facebook Marketplace, Instagram Shopping** e Google Vehicle Ads." },
-        { q: "Funciona no celular do vendedor?", a: "Sim, **app iOS/Android** para vendedores com fichamento no pátio, fotos e captura de leads." },
-        { q: "Como funciona a integração com o financiamento?", a: "Simulador integrado com **os 8 principais bancos** — o vendedor envia proposta em 1 clique." },
-        { q: "Suporta múltiplas lojas?", a: "Sim, arquitetura **multi-loja** com transferência de estoque, permissões e BI consolidado." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

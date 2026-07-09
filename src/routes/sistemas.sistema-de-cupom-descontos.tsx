@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-cupom-descontos";
 
+const lpFaq = [
+        { q: "É possível integrar com meu e-commerce?", a: "Sim, temos **plugins nativos para Shopify, VTEX, Nuvemshop, Tray, WooCommerce** e API REST." },
+        { q: "Como funciona a comissão sobre vendas?", a: "Trackeamos via **postback ou pixel de conversão** e comissionamos automaticamente com split configurável." },
+        { q: "Vocês entregam o app iOS e Android?", a: "Sim, apps nativos publicados nas lojas com sua marca e suporte à **publicação/manutenção**." },
+        { q: "O sistema previne fraudes de cashback?", a: "Sim, **antifraude com device fingerprint, blacklist e regras de retenção** de saldo." },
+        { q: "Posso operar em múltiplas cidades?", a: "Sim, arquitetura **multi-tenant e geodivisão** para franquias regionais." },
+      ];
+
 export const Route = createFileRoute("/sistemas/sistema-de-cupom-descontos")({
   head: () => buildLPMeta({
     title: "Sistema de Cupons de Desconto | Cashback e Ofertas — NC Brasil",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-cupom-descontos")({
       { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
       { name: "Sistema de Cupom", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-cupom-descontos")({
         { icon: Gift, title: "Programa de Indicações", desc: "MGM com bônus de cashback para quem indica e é indicado." },
         { icon: Users, title: "White Label", desc: "Marca, cores, domínio e app próprios — 100% customizável." },
       ]}
-      faq={[
-        { q: "É possível integrar com meu e-commerce?", a: "Sim, temos **plugins nativos para Shopify, VTEX, Nuvemshop, Tray, WooCommerce** e API REST." },
-        { q: "Como funciona a comissão sobre vendas?", a: "Trackeamos via **postback ou pixel de conversão** e comissionamos automaticamente com split configurável." },
-        { q: "Vocês entregam o app iOS e Android?", a: "Sim, apps nativos publicados nas lojas com sua marca e suporte à **publicação/manutenção**." },
-        { q: "O sistema previne fraudes de cashback?", a: "Sim, **antifraude com device fingerprint, blacklist e regras de retenção** de saldo." },
-        { q: "Posso operar em múltiplas cidades?", a: "Sim, arquitetura **multi-tenant e geodivisão** para franquias regionais." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

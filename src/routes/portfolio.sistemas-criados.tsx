@@ -4,6 +4,13 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/portfolio/sistemas-criados";
 
+const lpFaq = [
+        { q: "Posso ver cases reais?", a: "Sim, acesse **Portfólio Sistemas** para cases com prints e descrição de escopo." },
+        { q: "Fazem ERPs completos?", a: "Sim, ou **customizamos** ERPs existentes (Bling, Omie, TOTVS) para casos específicos." },
+        { q: "Qual o prazo médio?", a: "MVP em **60-90 dias**; sistema completo em 6-12 meses." },
+        { q: "Fazem manutenção?", a: "Sim, contratos de **evolução contínua** com squads dedicadas." },
+      ];
+
 export const Route = createFileRoute("/portfolio/sistemas-criados")({
   head: () => buildLPMeta({
     title: "Portfólio de Sistemas Web | ERPs, CRMs e SaaS Criados pela NC Brasil",
@@ -16,6 +23,7 @@ export const Route = createFileRoute("/portfolio/sistemas-criados")({
       { name: "Portfólio", url: "https://www.ncbrasil.com.br/trabalhos-realizados" },
       { name: "Sistemas Criados", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,12 +46,7 @@ export const Route = createFileRoute("/portfolio/sistemas-criados")({
         { icon: Lock, title: "SSO & MFA", desc: "SAML, OAuth, Microsoft, Google e **autenticação de dois fatores**." },
         { icon: Boxes, title: "Multi-Tenant", desc: "Arquitetura para **milhares de clientes** com isolamento total de dados." },
       ]}
-      faq={[
-        { q: "Posso ver cases reais?", a: "Sim, acesse **Portfólio Sistemas** para cases com prints e descrição de escopo." },
-        { q: "Fazem ERPs completos?", a: "Sim, ou **customizamos** ERPs existentes (Bling, Omie, TOTVS) para casos específicos." },
-        { q: "Qual o prazo médio?", a: "MVP em **60-90 dias**; sistema completo em 6-12 meses." },
-        { q: "Fazem manutenção?", a: "Sim, contratos de **evolução contínua** com squads dedicadas." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

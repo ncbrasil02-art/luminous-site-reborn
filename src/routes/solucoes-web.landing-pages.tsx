@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/solucoes-web/landing-pages";
 
+const lpFaq = [
+        { q: "Qual o prazo de entrega?", a: "LPs simples em **7 dias**, projetos completos em até 20 dias." },
+        { q: "Vocês fazem o copywriting?", a: "Sim, temos **copywriters especializados** em conversão para tráfego pago." },
+        { q: "Serve para Google Ads e Meta Ads?", a: "Sim, todas as LPs seguem as **diretrizes de qualidade** de ambas as plataformas." },
+        { q: "Fazem testes A/B?", a: "Sim, oferecemos **2 versões de teste** e otimização baseada em dados reais." },
+        { q: "Integra com meu CRM?", a: "Sim: RD Station, HubSpot, ActiveCampaign, Mailchimp, Pipedrive e **webhooks personalizados**." },
+      ];
+
 export const Route = createFileRoute("/solucoes-web/landing-pages")({
   head: () => buildLPMeta({
     title: "Criação de Landing Pages | Páginas de Alta Conversão para Campanhas",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/solucoes-web/landing-pages")({
       { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
       { name: "Landing Pages", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/solucoes-web/landing-pages")({
         { icon: LineChart, title: "Analytics + Heatmap", desc: "Google Analytics, Meta Pixel, Hotjar e Clarity **prontos para uso**." },
         { icon: Users, title: "Formulário Otimizado", desc: "Multi-step, validação em tempo real, integração com **RD Station, HubSpot e ActiveCampaign**." },
       ]}
-      faq={[
-        { q: "Qual o prazo de entrega?", a: "LPs simples em **7 dias**, projetos completos em até 20 dias." },
-        { q: "Vocês fazem o copywriting?", a: "Sim, temos **copywriters especializados** em conversão para tráfego pago." },
-        { q: "Serve para Google Ads e Meta Ads?", a: "Sim, todas as LPs seguem as **diretrizes de qualidade** de ambas as plataformas." },
-        { q: "Fazem testes A/B?", a: "Sim, oferecemos **2 versões de teste** e otimização baseada em dados reais." },
-        { q: "Integra com meu CRM?", a: "Sim: RD Station, HubSpot, ActiveCampaign, Mailchimp, Pipedrive e **webhooks personalizados**." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

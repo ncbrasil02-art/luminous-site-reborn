@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/solucoes-web/seo-google";
 
+const lpFaq = [
+        { q: "Em quanto tempo vejo resultado?", a: "Primeiros ganhos em **60-90 dias**; resultados consistentes a partir de 6 meses." },
+        { q: "Vocês garantem primeira página?", a: "Ninguém pode garantir posições — mas nosso **histórico mostra 90% dos projetos no Top 10** em 12 meses." },
+        { q: "Fazem SEO local?", a: "Sim, especialidade em **Google Business Profile, SEO por bairro e Google Maps**." },
+        { q: "Trabalham com que ferramentas?", a: "**Ahrefs, SEMrush, Screaming Frog, Search Console, GA4, Sitebulb** e mais." },
+        { q: "Preciso de conteúdo?", a: "Sim, **conteúdo é o combustível do SEO** — produzimos com redatores especializados." },
+      ];
+
 export const Route = createFileRoute("/solucoes-web/seo-google")({
   head: () => buildLPMeta({
     title: "SEO Google | Otimização e Posicionamento na Primeira Página",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/solucoes-web/seo-google")({
       { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
       { name: "SEO Google", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/solucoes-web/seo-google")({
         { icon: Award, title: "E-E-A-T", desc: "Estratégias para provar **Experience, Expertise, Authority e Trust** ao Google." },
         { icon: Sparkles, title: "SEO para IA", desc: "Otimização para **SGE, Perplexity e resultados de IA generativa**." },
       ]}
-      faq={[
-        { q: "Em quanto tempo vejo resultado?", a: "Primeiros ganhos em **60-90 dias**; resultados consistentes a partir de 6 meses." },
-        { q: "Vocês garantem primeira página?", a: "Ninguém pode garantir posições — mas nosso **histórico mostra 90% dos projetos no Top 10** em 12 meses." },
-        { q: "Fazem SEO local?", a: "Sim, especialidade em **Google Business Profile, SEO por bairro e Google Maps**." },
-        { q: "Trabalham com que ferramentas?", a: "**Ahrefs, SEMrush, Screaming Frog, Search Console, GA4, Sitebulb** e mais." },
-        { q: "Preciso de conteúdo?", a: "Sim, **conteúdo é o combustível do SEO** — produzimos com redatores especializados." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

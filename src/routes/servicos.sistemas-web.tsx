@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/servicos/sistemas-web";
 
+const lpFaq = [
+        { q: "Vocês fazem ERP completo?", a: "Sim, ou **customizamos ERPs existentes** (Bling, Omie, TOTVS) para casos específicos." },
+        { q: "Serve para minha operação?", a: "Sim, **fazemos discovery** para entender processos e propor arquitetura ideal." },
+        { q: "Consigo integrar com outros sistemas?", a: "Sim, **API-first** — integramos com qualquer sistema que exponha API ou webhook." },
+        { q: "Como cobram?", a: "Escopo fechado ou **mensalidade SaaS** (para sistemas próprios comercializados)." },
+        { q: "Quem hospeda?", a: "Hospedamos em **cloud gerenciada** ou entregamos para seu time de DevOps." },
+      ];
+
 export const Route = createFileRoute("/servicos/sistemas-web")({
   head: () => buildLPMeta({
     title: "Desenvolvimento de Sistemas Web | ERPs, CRMs e SaaS Sob Medida",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/servicos/sistemas-web")({
       { name: "Serviços", url: "https://www.ncbrasil.com.br/servicos" },
       { name: "Sistemas Web", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/servicos/sistemas-web")({
         { icon: Settings, title: "API-First", desc: "Todo sistema tem **API REST/GraphQL documentada** para integração." },
         { icon: GitBranch, title: "Evolução Contínua", desc: "Novas features publicadas **sem downtime** via deploys blue/green." },
       ]}
-      faq={[
-        { q: "Vocês fazem ERP completo?", a: "Sim, ou **customizamos ERPs existentes** (Bling, Omie, TOTVS) para casos específicos." },
-        { q: "Serve para minha operação?", a: "Sim, **fazemos discovery** para entender processos e propor arquitetura ideal." },
-        { q: "Consigo integrar com outros sistemas?", a: "Sim, **API-first** — integramos com qualquer sistema que exponha API ou webhook." },
-        { q: "Como cobram?", a: "Escopo fechado ou **mensalidade SaaS** (para sistemas próprios comercializados)." },
-        { q: "Quem hospeda?", a: "Hospedamos em **cloud gerenciada** ou entregamos para seu time de DevOps." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

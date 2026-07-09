@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/solucoes-web/hospedagem";
 
+const lpFaq = [
+        { q: "Qual a diferença para hospedagens populares?", a: "Nossa hospedagem é **gerenciada por engenheiros DevOps** — não é compartilhada e nunca deixa seu site fora do ar por vizinho ruim." },
+        { q: "Migram meu site atual?", a: "Sim, **migração gratuita e sem downtime**, cuidamos de tudo em até 48h." },
+        { q: "Qual o valor?", a: "Planos a partir de **R$ 149/mês** — proposta personalizada conforme necessidade." },
+        { q: "Serve para e-commerce?", a: "Sim, temos planos otimizados para **WooCommerce, Magento e plataformas próprias**." },
+        { q: "Fazem manutenção?", a: "Sim, **atualizações, patches de segurança e otimizações** incluídos no plano." },
+      ];
+
 export const Route = createFileRoute("/solucoes-web/hospedagem")({
   head: () => buildLPMeta({
     title: "Hospedagem de Sites e Sistemas | Cloud Gerenciada com SSL e Backup",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/solucoes-web/hospedagem")({
       { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
       { name: "Hospedagem", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/solucoes-web/hospedagem")({
         { icon: Database, title: "Bancos Gerenciados", desc: "PostgreSQL, MySQL, MongoDB e Redis com backup automático e réplicas." },
         { icon: Headphones, title: "Suporte Especialista", desc: "Time DevOps brasileiro — **resposta em menos de 30 minutos** em horário comercial." },
       ]}
-      faq={[
-        { q: "Qual a diferença para hospedagens populares?", a: "Nossa hospedagem é **gerenciada por engenheiros DevOps** — não é compartilhada e nunca deixa seu site fora do ar por vizinho ruim." },
-        { q: "Migram meu site atual?", a: "Sim, **migração gratuita e sem downtime**, cuidamos de tudo em até 48h." },
-        { q: "Qual o valor?", a: "Planos a partir de **R$ 149/mês** — proposta personalizada conforme necessidade." },
-        { q: "Serve para e-commerce?", a: "Sim, temos planos otimizados para **WooCommerce, Magento e plataformas próprias**." },
-        { q: "Fazem manutenção?", a: "Sim, **atualizações, patches de segurança e otimizações** incluídos no plano." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

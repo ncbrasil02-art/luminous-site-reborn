@@ -4,6 +4,13 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/portfolio/aplicativos-criados";
 
+const lpFaq = [
+        { q: "Posso ver os apps criados?", a: "Sim, acesse **Portfólio Aplicativos** para cases com links diretos nas lojas." },
+        { q: "Publicam nas lojas?", a: "Sim, cuidamos de **App Store Connect, Google Play Console, screenshots e ASO**." },
+        { q: "Nativo ou cross-platform?", a: "Recomendamos por projeto: **nativo para performance crítica, cross para MVP rápido**." },
+        { q: "Fazem manutenção?", a: "Sim, contratos de evolução mensal com sprints de melhorias e novas features." },
+      ];
+
 export const Route = createFileRoute("/portfolio/aplicativos-criados")({
   head: () => buildLPMeta({
     title: "Portfólio de Aplicativos | Apps iOS e Android Criados pela NC Brasil",
@@ -16,6 +23,7 @@ export const Route = createFileRoute("/portfolio/aplicativos-criados")({
       { name: "Portfólio", url: "https://www.ncbrasil.com.br/trabalhos-realizados" },
       { name: "Aplicativos Criados", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,12 +46,7 @@ export const Route = createFileRoute("/portfolio/aplicativos-criados")({
         { icon: MapPin, title: "Geolocalização", desc: "Google Maps, Mapbox, tracking em tempo real e **geofencing**." },
         { icon: Wifi, title: "Offline-First", desc: "Funciona sem internet e **sincroniza quando reconecta**." },
       ]}
-      faq={[
-        { q: "Posso ver os apps criados?", a: "Sim, acesse **Portfólio Aplicativos** para cases com links diretos nas lojas." },
-        { q: "Publicam nas lojas?", a: "Sim, cuidamos de **App Store Connect, Google Play Console, screenshots e ASO**." },
-        { q: "Nativo ou cross-platform?", a: "Recomendamos por projeto: **nativo para performance crítica, cross para MVP rápido**." },
-        { q: "Fazem manutenção?", a: "Sim, contratos de evolução mensal com sprints de melhorias e novas features." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

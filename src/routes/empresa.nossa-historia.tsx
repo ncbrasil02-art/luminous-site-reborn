@@ -4,6 +4,13 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/empresa/nossa-historia";
 
+const lpFaq = [
+        { q: "Quando foi fundada?", a: "Em **2005**, em São Paulo, por 3 engenheiros com visão de fábrica de software brasileira." },
+        { q: "Quantos colaboradores?", a: "Time atual de **50+ especialistas** entre engenheiros, designers, PMs e mídia paga." },
+        { q: "Quais os principais marcos?", a: "**2005 fundação, 2010 sistemas B2B, 2015 marketing, 2020 mobile & cloud, 2025 IA generativa**." },
+        { q: "Vocês têm escritório físico?", a: "Sim, sede em **São Paulo** com estrutura para reuniões presenciais e time distribuído no Brasil." },
+      ];
+
 export const Route = createFileRoute("/empresa/nossa-historia")({
   head: () => buildLPMeta({
     title: "Nossa História | 20 Anos de Trajetória da NC Brasil",
@@ -16,6 +23,7 @@ export const Route = createFileRoute("/empresa/nossa-historia")({
       { name: "Empresa", url: "https://www.ncbrasil.com.br/empresa" },
       { name: "Nossa História", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,12 +46,7 @@ export const Route = createFileRoute("/empresa/nossa-historia")({
         { icon: Globe2, title: "Internacional", desc: "Projetos entregues em **Portugal, EUA, Angola e Colômbia** desde 2018." },
         { icon: Star, title: "Hoje", desc: "**50+ especialistas** entregando projetos para PMEs, startups e enterprises." },
       ]}
-      faq={[
-        { q: "Quando foi fundada?", a: "Em **2005**, em São Paulo, por 3 engenheiros com visão de fábrica de software brasileira." },
-        { q: "Quantos colaboradores?", a: "Time atual de **50+ especialistas** entre engenheiros, designers, PMs e mídia paga." },
-        { q: "Quais os principais marcos?", a: "**2005 fundação, 2010 sistemas B2B, 2015 marketing, 2020 mobile & cloud, 2025 IA generativa**." },
-        { q: "Vocês têm escritório físico?", a: "Sim, sede em **São Paulo** com estrutura para reuniões presenciais e time distribuído no Brasil." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

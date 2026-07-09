@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-raspadinha";
 
+const lpFaq = [
+        { q: "É legal operar raspadinhas online no Brasil?", a: "Depende do modelo. Operamos como **título de capitalização, promoção comercial ou fantasy** — orientamos o modelo legal ideal." },
+        { q: "Como funciona o estoque de prêmios?", a: "Configure lotes com **quantidade, valor e probabilidade** — o sistema garante distribuição matemática correta." },
+        { q: "Aceita pagamento via Pix?", a: "Sim, Pix instantâneo para depósito e saque com **conciliação automática 24/7**." },
+        { q: "Vocês entregam identidade visual?", a: "Sim, criamos **arte das raspadinhas, animação e app** — 100% white label." },
+        { q: "Qual o custo de operação?", a: "Modelo **setup + mensalidade + fee por transação** — envie seu volume estimado para proposta." },
+      ];
+
 export const Route = createFileRoute("/sistemas/sistema-de-raspadinha")({
   head: () => buildLPMeta({
     title: "Sistema de Raspadinha Online | Plataforma Instant Win",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-raspadinha")({
       { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
       { name: "Raspadinha Online", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-raspadinha")({
         { icon: Smartphone, title: "PWA + App Nativo", desc: "Instalável no celular com **notificações push** de novas raspadinhas." },
         { icon: Zap, title: "Escala Massiva", desc: "Infraestrutura para **milhares de jogadas por segundo** com filas assíncronas." },
       ]}
-      faq={[
-        { q: "É legal operar raspadinhas online no Brasil?", a: "Depende do modelo. Operamos como **título de capitalização, promoção comercial ou fantasy** — orientamos o modelo legal ideal." },
-        { q: "Como funciona o estoque de prêmios?", a: "Configure lotes com **quantidade, valor e probabilidade** — o sistema garante distribuição matemática correta." },
-        { q: "Aceita pagamento via Pix?", a: "Sim, Pix instantâneo para depósito e saque com **conciliação automática 24/7**." },
-        { q: "Vocês entregam identidade visual?", a: "Sim, criamos **arte das raspadinhas, animação e app** — 100% white label." },
-        { q: "Qual o custo de operação?", a: "Modelo **setup + mensalidade + fee por transação** — envie seu volume estimado para proposta." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

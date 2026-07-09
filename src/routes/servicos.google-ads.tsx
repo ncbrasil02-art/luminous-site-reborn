@@ -4,6 +4,14 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/servicos/google-ads";
 
+const lpFaq = [
+        { q: "Verba mínima?", a: "**R$ 2.000/mês** em mídia + fee de gestão para resultados consistentes." },
+        { q: "Somos Google Partner?", a: "Sim, **Google Premier Partner** com certificações em Search, Shopping e YouTube." },
+        { q: "Fica no meu MCC?", a: "Sim, você **é dono da conta** — nós apenas gerenciamos com acesso permissionado." },
+        { q: "Fazem criativos de vídeo?", a: "Sim, estúdio próprio produz **anúncios em vídeo, imagens e responsivos**." },
+        { q: "Vocês reportam como?", a: "Dashboards **Looker Studio em tempo real** + call semanal ou quinzenal." },
+      ];
+
 export const Route = createFileRoute("/servicos/google-ads")({
   head: () => buildLPMeta({
     title: "Gestão de Google Ads | Agência Parceira Premier com ROI Comprovado",
@@ -16,6 +24,7 @@ export const Route = createFileRoute("/servicos/google-ads")({
       { name: "Serviços", url: "https://www.ncbrasil.com.br/servicos" },
       { name: "Google Ads", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,13 +47,7 @@ export const Route = createFileRoute("/servicos/google-ads")({
         { icon: DollarSign, title: "Foco em ROAS", desc: "Bidding com **tROAS, tCPA e Max Conversions** — testes constantes." },
         { icon: Users, title: "Landing Pages", desc: "Criamos LPs otimizadas para **Quality Score 10/10** e conversão." },
       ]}
-      faq={[
-        { q: "Verba mínima?", a: "**R$ 2.000/mês** em mídia + fee de gestão para resultados consistentes." },
-        { q: "Somos Google Partner?", a: "Sim, **Google Premier Partner** com certificações em Search, Shopping e YouTube." },
-        { q: "Fica no meu MCC?", a: "Sim, você **é dono da conta** — nós apenas gerenciamos com acesso permissionado." },
-        { q: "Fazem criativos de vídeo?", a: "Sim, estúdio próprio produz **anúncios em vídeo, imagens e responsivos**." },
-        { q: "Vocês reportam como?", a: "Dashboards **Looker Studio em tempo real** + call semanal ou quinzenal." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });

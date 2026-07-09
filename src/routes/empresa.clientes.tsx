@@ -4,6 +4,13 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/empresa/clientes";
 
+const lpFaq = [
+        { q: "Posso ver os clientes atendidos?", a: "Sim, acesse **Trabalhos Realizados** para portfolio completo com cases documentados." },
+        { q: "Vocês atendem meu segmento?", a: "Provavelmente sim — atendemos **50+ segmentos** diferentes. Fale conosco para confirmar." },
+        { q: "Trabalham com franquias?", a: "Sim, temos experiência com **arquitetura multi-tenant e gestão de franqueadora**." },
+        { q: "Aceitam projetos de ONG?", a: "Sim, temos **condições especiais para ONGs e organizações sem fins lucrativos**." },
+      ];
+
 export const Route = createFileRoute("/empresa/clientes")({
   head: () => buildLPMeta({
     title: "Nossos Clientes | Marcas que Confiam na NC Brasil",
@@ -16,6 +23,7 @@ export const Route = createFileRoute("/empresa/clientes")({
       { name: "Empresa", url: "https://www.ncbrasil.com.br/empresa" },
       { name: "Clientes", url: URL },
     ],
+    faq: lpFaq,
   }),
   component: () => (
     <LandingPage
@@ -38,12 +46,7 @@ export const Route = createFileRoute("/empresa/clientes")({
         { icon: Globe2, title: "Nacional & Internacional", desc: "Atendemos **Brasil inteiro + Portugal, EUA, Angola e Colômbia**." },
         { icon: Heart, title: "Parcerias Longas", desc: "Média de **5 anos de relacionamento** com clientes ativos." },
       ]}
-      faq={[
-        { q: "Posso ver os clientes atendidos?", a: "Sim, acesse **Trabalhos Realizados** para portfolio completo com cases documentados." },
-        { q: "Vocês atendem meu segmento?", a: "Provavelmente sim — atendemos **50+ segmentos** diferentes. Fale conosco para confirmar." },
-        { q: "Trabalham com franquias?", a: "Sim, temos experiência com **arquitetura multi-tenant e gestão de franqueadora**." },
-        { q: "Aceitam projetos de ONG?", a: "Sim, temos **condições especiais para ONGs e organizações sem fins lucrativos**." },
-      ]}
+      faq={lpFaq}
     />
   ),
 });
