@@ -26,7 +26,7 @@ import {
   Car,
   Ticket,
   Dice5,
-  Scratch as ScratchIcon,
+  Sparkles as ScratchIcon,
   Gift,
   Store,
   CarFront,
