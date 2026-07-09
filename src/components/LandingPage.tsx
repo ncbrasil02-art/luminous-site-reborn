@@ -306,6 +306,7 @@ export function buildLPMeta({
   canonical,
   h1,
   breadcrumbs,
+  faq,
 }: {
   title: string;
   description: string;
@@ -313,6 +314,7 @@ export function buildLPMeta({
   canonical: string;
   h1: string;
   breadcrumbs: { name: string; url: string }[];
+  faq?: { q: string; a: string }[];
 }) {
   const breadcrumbLd = {
     "@context": "https://schema.org",
