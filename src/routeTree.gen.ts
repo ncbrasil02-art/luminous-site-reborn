@@ -25,6 +25,12 @@ import { Route as DicasParaECommerceRouteImport } from './routes/dicas-para-e-co
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
+import { Route as SolucoesWebSeoGoogleRouteImport } from './routes/solucoes-web.seo-google'
+import { Route as SolucoesWebMarketingDigitalRouteImport } from './routes/solucoes-web.marketing-digital'
+import { Route as SolucoesWebLojaVirtualRouteImport } from './routes/solucoes-web.loja-virtual'
+import { Route as SolucoesWebLandingPagesRouteImport } from './routes/solucoes-web.landing-pages'
+import { Route as SolucoesWebHospedagemRouteImport } from './routes/solucoes-web.hospedagem'
+import { Route as SolucoesWebDesenvolvimentoDeSitesRouteImport } from './routes/solucoes-web.desenvolvimento-de-sites'
 import { Route as SistemasSistemaDeRifasRouteImport } from './routes/sistemas.sistema-de-rifas'
 import { Route as SistemasSistemaDeRevendaDeVeiculosRouteImport } from './routes/sistemas.sistema-de-revenda-de-veiculos'
 import { Route as SistemasSistemaDeRaspadinhaRouteImport } from './routes/sistemas.sistema-de-raspadinha'
@@ -35,6 +41,13 @@ import { Route as SistemasSistemaDeLeilaoRouteImport } from './routes/sistemas.s
 import { Route as SistemasSistemaDeCupomDescontosRouteImport } from './routes/sistemas.sistema-de-cupom-descontos'
 import { Route as SistemasPlataformaChinesaApostasCassinoRouteImport } from './routes/sistemas.plataforma-chinesa-apostas-cassino'
 import { Route as SistemasClassificadosDeVeiculosRouteImport } from './routes/sistemas.classificados-de-veiculos'
+import { Route as ServicosSistemasWebRouteImport } from './routes/servicos.sistemas-web'
+import { Route as ServicosIdentidadeVisualRouteImport } from './routes/servicos.identidade-visual'
+import { Route as ServicosGoogleAdsRouteImport } from './routes/servicos.google-ads'
+import { Route as ServicosFacebookAdsRouteImport } from './routes/servicos.facebook-ads'
+import { Route as ServicosDesenvolvimentoRouteImport } from './routes/servicos.desenvolvimento'
+import { Route as ServicosConsultoriaRouteImport } from './routes/servicos.consultoria'
+import { Route as ServicosAplicativosRouteImport } from './routes/servicos.aplicativos'
 import { Route as PortfolioSistemaDeCompraColetivaRouteImport } from './routes/portfolio.sistema-de-compra-coletiva'
 import { Route as PortfolioLojasVirtuaisCriadasRouteImport } from './routes/portfolio.lojas-virtuais-criadas'
 import { Route as PortfolioLogotiposCriadosRouteImport } from './routes/portfolio.logotipos-criados'
@@ -126,6 +139,38 @@ const SistemasIndexRoute = SistemasIndexRouteImport.update({
   path: '/sistemas/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SolucoesWebSeoGoogleRoute = SolucoesWebSeoGoogleRouteImport.update({
+  id: '/seo-google',
+  path: '/seo-google',
+  getParentRoute: () => SolucoesWebRoute,
+} as any)
+const SolucoesWebMarketingDigitalRoute =
+  SolucoesWebMarketingDigitalRouteImport.update({
+    id: '/marketing-digital',
+    path: '/marketing-digital',
+    getParentRoute: () => SolucoesWebRoute,
+  } as any)
+const SolucoesWebLojaVirtualRoute = SolucoesWebLojaVirtualRouteImport.update({
+  id: '/loja-virtual',
+  path: '/loja-virtual',
+  getParentRoute: () => SolucoesWebRoute,
+} as any)
+const SolucoesWebLandingPagesRoute = SolucoesWebLandingPagesRouteImport.update({
+  id: '/landing-pages',
+  path: '/landing-pages',
+  getParentRoute: () => SolucoesWebRoute,
+} as any)
+const SolucoesWebHospedagemRoute = SolucoesWebHospedagemRouteImport.update({
+  id: '/hospedagem',
+  path: '/hospedagem',
+  getParentRoute: () => SolucoesWebRoute,
+} as any)
+const SolucoesWebDesenvolvimentoDeSitesRoute =
+  SolucoesWebDesenvolvimentoDeSitesRouteImport.update({
+    id: '/desenvolvimento-de-sites',
+    path: '/desenvolvimento-de-sites',
+    getParentRoute: () => SolucoesWebRoute,
+  } as any)
 const SistemasSistemaDeRifasRoute = SistemasSistemaDeRifasRouteImport.update({
   id: '/sistemas/sistema-de-rifas',
   path: '/sistemas/sistema-de-rifas',
@@ -184,6 +229,42 @@ const SistemasClassificadosDeVeiculosRoute =
     path: '/sistemas/classificados-de-veiculos',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ServicosSistemasWebRoute = ServicosSistemasWebRouteImport.update({
+  id: '/servicos/sistemas-web',
+  path: '/servicos/sistemas-web',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicosIdentidadeVisualRoute =
+  ServicosIdentidadeVisualRouteImport.update({
+    id: '/servicos/identidade-visual',
+    path: '/servicos/identidade-visual',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ServicosGoogleAdsRoute = ServicosGoogleAdsRouteImport.update({
+  id: '/servicos/google-ads',
+  path: '/servicos/google-ads',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicosFacebookAdsRoute = ServicosFacebookAdsRouteImport.update({
+  id: '/servicos/facebook-ads',
+  path: '/servicos/facebook-ads',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicosDesenvolvimentoRoute = ServicosDesenvolvimentoRouteImport.update({
+  id: '/servicos/desenvolvimento',
+  path: '/servicos/desenvolvimento',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicosConsultoriaRoute = ServicosConsultoriaRouteImport.update({
+  id: '/servicos/consultoria',
+  path: '/servicos/consultoria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ServicosAplicativosRoute = ServicosAplicativosRouteImport.update({
+  id: '/servicos/aplicativos',
+  path: '/servicos/aplicativos',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PortfolioSistemaDeCompraColetivaRoute =
   PortfolioSistemaDeCompraColetivaRouteImport.update({
     id: '/portfolio/sistema-de-compra-coletiva',
@@ -241,7 +322,7 @@ export interface FileRoutesByFullPath {
   '/sistema-de-leilao': typeof SistemaDeLeilaoRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
   '/software': typeof SoftwareRoute
-  '/solucoes-web': typeof SolucoesWebRoute
+  '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
   '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
   '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
@@ -250,6 +331,13 @@ export interface FileRoutesByFullPath {
   '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
   '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
   '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
+  '/servicos/aplicativos': typeof ServicosAplicativosRoute
+  '/servicos/consultoria': typeof ServicosConsultoriaRoute
+  '/servicos/desenvolvimento': typeof ServicosDesenvolvimentoRoute
+  '/servicos/facebook-ads': typeof ServicosFacebookAdsRoute
+  '/servicos/google-ads': typeof ServicosGoogleAdsRoute
+  '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
+  '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
   '/sistemas/classificados-de-veiculos': typeof SistemasClassificadosDeVeiculosRoute
   '/sistemas/plataforma-chinesa-apostas-cassino': typeof SistemasPlataformaChinesaApostasCassinoRoute
   '/sistemas/sistema-de-cupom-descontos': typeof SistemasSistemaDeCupomDescontosRoute
@@ -260,6 +348,12 @@ export interface FileRoutesByFullPath {
   '/sistemas/sistema-de-raspadinha': typeof SistemasSistemaDeRaspadinhaRoute
   '/sistemas/sistema-de-revenda-de-veiculos': typeof SistemasSistemaDeRevendaDeVeiculosRoute
   '/sistemas/sistema-de-rifas': typeof SistemasSistemaDeRifasRoute
+  '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
+  '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
+  '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
+  '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
+  '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
+  '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
   '/sistemas/': typeof SistemasIndexRoute
 }
 export interface FileRoutesByTo {
@@ -276,7 +370,7 @@ export interface FileRoutesByTo {
   '/sistema-de-leilao': typeof SistemaDeLeilaoRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
   '/software': typeof SoftwareRoute
-  '/solucoes-web': typeof SolucoesWebRoute
+  '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
   '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
   '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
@@ -285,6 +379,13 @@ export interface FileRoutesByTo {
   '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
   '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
   '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
+  '/servicos/aplicativos': typeof ServicosAplicativosRoute
+  '/servicos/consultoria': typeof ServicosConsultoriaRoute
+  '/servicos/desenvolvimento': typeof ServicosDesenvolvimentoRoute
+  '/servicos/facebook-ads': typeof ServicosFacebookAdsRoute
+  '/servicos/google-ads': typeof ServicosGoogleAdsRoute
+  '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
+  '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
   '/sistemas/classificados-de-veiculos': typeof SistemasClassificadosDeVeiculosRoute
   '/sistemas/plataforma-chinesa-apostas-cassino': typeof SistemasPlataformaChinesaApostasCassinoRoute
   '/sistemas/sistema-de-cupom-descontos': typeof SistemasSistemaDeCupomDescontosRoute
@@ -295,6 +396,12 @@ export interface FileRoutesByTo {
   '/sistemas/sistema-de-raspadinha': typeof SistemasSistemaDeRaspadinhaRoute
   '/sistemas/sistema-de-revenda-de-veiculos': typeof SistemasSistemaDeRevendaDeVeiculosRoute
   '/sistemas/sistema-de-rifas': typeof SistemasSistemaDeRifasRoute
+  '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
+  '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
+  '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
+  '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
+  '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
+  '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
   '/sistemas': typeof SistemasIndexRoute
 }
 export interface FileRoutesById {
@@ -312,7 +419,7 @@ export interface FileRoutesById {
   '/sistema-de-leilao': typeof SistemaDeLeilaoRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
   '/software': typeof SoftwareRoute
-  '/solucoes-web': typeof SolucoesWebRoute
+  '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
   '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
   '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
@@ -321,6 +428,13 @@ export interface FileRoutesById {
   '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
   '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
   '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
+  '/servicos/aplicativos': typeof ServicosAplicativosRoute
+  '/servicos/consultoria': typeof ServicosConsultoriaRoute
+  '/servicos/desenvolvimento': typeof ServicosDesenvolvimentoRoute
+  '/servicos/facebook-ads': typeof ServicosFacebookAdsRoute
+  '/servicos/google-ads': typeof ServicosGoogleAdsRoute
+  '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
+  '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
   '/sistemas/classificados-de-veiculos': typeof SistemasClassificadosDeVeiculosRoute
   '/sistemas/plataforma-chinesa-apostas-cassino': typeof SistemasPlataformaChinesaApostasCassinoRoute
   '/sistemas/sistema-de-cupom-descontos': typeof SistemasSistemaDeCupomDescontosRoute
@@ -331,6 +445,12 @@ export interface FileRoutesById {
   '/sistemas/sistema-de-raspadinha': typeof SistemasSistemaDeRaspadinhaRoute
   '/sistemas/sistema-de-revenda-de-veiculos': typeof SistemasSistemaDeRevendaDeVeiculosRoute
   '/sistemas/sistema-de-rifas': typeof SistemasSistemaDeRifasRoute
+  '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
+  '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
+  '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
+  '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
+  '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
+  '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
   '/sistemas/': typeof SistemasIndexRoute
 }
 export interface FileRouteTypes {
@@ -358,6 +478,13 @@ export interface FileRouteTypes {
     | '/portfolio/logotipos-criados'
     | '/portfolio/lojas-virtuais-criadas'
     | '/portfolio/sistema-de-compra-coletiva'
+    | '/servicos/aplicativos'
+    | '/servicos/consultoria'
+    | '/servicos/desenvolvimento'
+    | '/servicos/facebook-ads'
+    | '/servicos/google-ads'
+    | '/servicos/identidade-visual'
+    | '/servicos/sistemas-web'
     | '/sistemas/classificados-de-veiculos'
     | '/sistemas/plataforma-chinesa-apostas-cassino'
     | '/sistemas/sistema-de-cupom-descontos'
@@ -368,6 +495,12 @@ export interface FileRouteTypes {
     | '/sistemas/sistema-de-raspadinha'
     | '/sistemas/sistema-de-revenda-de-veiculos'
     | '/sistemas/sistema-de-rifas'
+    | '/solucoes-web/desenvolvimento-de-sites'
+    | '/solucoes-web/hospedagem'
+    | '/solucoes-web/landing-pages'
+    | '/solucoes-web/loja-virtual'
+    | '/solucoes-web/marketing-digital'
+    | '/solucoes-web/seo-google'
     | '/sistemas/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -393,6 +526,13 @@ export interface FileRouteTypes {
     | '/portfolio/logotipos-criados'
     | '/portfolio/lojas-virtuais-criadas'
     | '/portfolio/sistema-de-compra-coletiva'
+    | '/servicos/aplicativos'
+    | '/servicos/consultoria'
+    | '/servicos/desenvolvimento'
+    | '/servicos/facebook-ads'
+    | '/servicos/google-ads'
+    | '/servicos/identidade-visual'
+    | '/servicos/sistemas-web'
     | '/sistemas/classificados-de-veiculos'
     | '/sistemas/plataforma-chinesa-apostas-cassino'
     | '/sistemas/sistema-de-cupom-descontos'
@@ -403,6 +543,12 @@ export interface FileRouteTypes {
     | '/sistemas/sistema-de-raspadinha'
     | '/sistemas/sistema-de-revenda-de-veiculos'
     | '/sistemas/sistema-de-rifas'
+    | '/solucoes-web/desenvolvimento-de-sites'
+    | '/solucoes-web/hospedagem'
+    | '/solucoes-web/landing-pages'
+    | '/solucoes-web/loja-virtual'
+    | '/solucoes-web/marketing-digital'
+    | '/solucoes-web/seo-google'
     | '/sistemas'
   id:
     | '__root__'
@@ -428,6 +574,13 @@ export interface FileRouteTypes {
     | '/portfolio/logotipos-criados'
     | '/portfolio/lojas-virtuais-criadas'
     | '/portfolio/sistema-de-compra-coletiva'
+    | '/servicos/aplicativos'
+    | '/servicos/consultoria'
+    | '/servicos/desenvolvimento'
+    | '/servicos/facebook-ads'
+    | '/servicos/google-ads'
+    | '/servicos/identidade-visual'
+    | '/servicos/sistemas-web'
     | '/sistemas/classificados-de-veiculos'
     | '/sistemas/plataforma-chinesa-apostas-cassino'
     | '/sistemas/sistema-de-cupom-descontos'
@@ -438,6 +591,12 @@ export interface FileRouteTypes {
     | '/sistemas/sistema-de-raspadinha'
     | '/sistemas/sistema-de-revenda-de-veiculos'
     | '/sistemas/sistema-de-rifas'
+    | '/solucoes-web/desenvolvimento-de-sites'
+    | '/solucoes-web/hospedagem'
+    | '/solucoes-web/landing-pages'
+    | '/solucoes-web/loja-virtual'
+    | '/solucoes-web/marketing-digital'
+    | '/solucoes-web/seo-google'
     | '/sistemas/'
   fileRoutesById: FileRoutesById
 }
@@ -455,7 +614,7 @@ export interface RootRouteChildren {
   SistemaDeLeilaoRoute: typeof SistemaDeLeilaoRoute
   SistemaSobDemandaNcBrasilRoute: typeof SistemaSobDemandaNcBrasilRoute
   SoftwareRoute: typeof SoftwareRoute
-  SolucoesWebRoute: typeof SolucoesWebRoute
+  SolucoesWebRoute: typeof SolucoesWebRouteWithChildren
   TrabalhosRealizadosRoute: typeof TrabalhosRealizadosRoute
   PortfolioCriacaoDeAplicativosRoute: typeof PortfolioCriacaoDeAplicativosRoute
   PortfolioCriacaoDeLogomarcasRoute: typeof PortfolioCriacaoDeLogomarcasRoute
@@ -464,6 +623,13 @@ export interface RootRouteChildren {
   PortfolioLogotiposCriadosRoute: typeof PortfolioLogotiposCriadosRoute
   PortfolioLojasVirtuaisCriadasRoute: typeof PortfolioLojasVirtuaisCriadasRoute
   PortfolioSistemaDeCompraColetivaRoute: typeof PortfolioSistemaDeCompraColetivaRoute
+  ServicosAplicativosRoute: typeof ServicosAplicativosRoute
+  ServicosConsultoriaRoute: typeof ServicosConsultoriaRoute
+  ServicosDesenvolvimentoRoute: typeof ServicosDesenvolvimentoRoute
+  ServicosFacebookAdsRoute: typeof ServicosFacebookAdsRoute
+  ServicosGoogleAdsRoute: typeof ServicosGoogleAdsRoute
+  ServicosIdentidadeVisualRoute: typeof ServicosIdentidadeVisualRoute
+  ServicosSistemasWebRoute: typeof ServicosSistemasWebRoute
   SistemasClassificadosDeVeiculosRoute: typeof SistemasClassificadosDeVeiculosRoute
   SistemasPlataformaChinesaApostasCassinoRoute: typeof SistemasPlataformaChinesaApostasCassinoRoute
   SistemasSistemaDeCupomDescontosRoute: typeof SistemasSistemaDeCupomDescontosRoute
@@ -591,6 +757,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SistemasIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/solucoes-web/seo-google': {
+      id: '/solucoes-web/seo-google'
+      path: '/seo-google'
+      fullPath: '/solucoes-web/seo-google'
+      preLoaderRoute: typeof SolucoesWebSeoGoogleRouteImport
+      parentRoute: typeof SolucoesWebRoute
+    }
+    '/solucoes-web/marketing-digital': {
+      id: '/solucoes-web/marketing-digital'
+      path: '/marketing-digital'
+      fullPath: '/solucoes-web/marketing-digital'
+      preLoaderRoute: typeof SolucoesWebMarketingDigitalRouteImport
+      parentRoute: typeof SolucoesWebRoute
+    }
+    '/solucoes-web/loja-virtual': {
+      id: '/solucoes-web/loja-virtual'
+      path: '/loja-virtual'
+      fullPath: '/solucoes-web/loja-virtual'
+      preLoaderRoute: typeof SolucoesWebLojaVirtualRouteImport
+      parentRoute: typeof SolucoesWebRoute
+    }
+    '/solucoes-web/landing-pages': {
+      id: '/solucoes-web/landing-pages'
+      path: '/landing-pages'
+      fullPath: '/solucoes-web/landing-pages'
+      preLoaderRoute: typeof SolucoesWebLandingPagesRouteImport
+      parentRoute: typeof SolucoesWebRoute
+    }
+    '/solucoes-web/hospedagem': {
+      id: '/solucoes-web/hospedagem'
+      path: '/hospedagem'
+      fullPath: '/solucoes-web/hospedagem'
+      preLoaderRoute: typeof SolucoesWebHospedagemRouteImport
+      parentRoute: typeof SolucoesWebRoute
+    }
+    '/solucoes-web/desenvolvimento-de-sites': {
+      id: '/solucoes-web/desenvolvimento-de-sites'
+      path: '/desenvolvimento-de-sites'
+      fullPath: '/solucoes-web/desenvolvimento-de-sites'
+      preLoaderRoute: typeof SolucoesWebDesenvolvimentoDeSitesRouteImport
+      parentRoute: typeof SolucoesWebRoute
+    }
     '/sistemas/sistema-de-rifas': {
       id: '/sistemas/sistema-de-rifas'
       path: '/sistemas/sistema-de-rifas'
@@ -661,6 +869,55 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SistemasClassificadosDeVeiculosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/servicos/sistemas-web': {
+      id: '/servicos/sistemas-web'
+      path: '/servicos/sistemas-web'
+      fullPath: '/servicos/sistemas-web'
+      preLoaderRoute: typeof ServicosSistemasWebRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicos/identidade-visual': {
+      id: '/servicos/identidade-visual'
+      path: '/servicos/identidade-visual'
+      fullPath: '/servicos/identidade-visual'
+      preLoaderRoute: typeof ServicosIdentidadeVisualRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicos/google-ads': {
+      id: '/servicos/google-ads'
+      path: '/servicos/google-ads'
+      fullPath: '/servicos/google-ads'
+      preLoaderRoute: typeof ServicosGoogleAdsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicos/facebook-ads': {
+      id: '/servicos/facebook-ads'
+      path: '/servicos/facebook-ads'
+      fullPath: '/servicos/facebook-ads'
+      preLoaderRoute: typeof ServicosFacebookAdsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicos/desenvolvimento': {
+      id: '/servicos/desenvolvimento'
+      path: '/servicos/desenvolvimento'
+      fullPath: '/servicos/desenvolvimento'
+      preLoaderRoute: typeof ServicosDesenvolvimentoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicos/consultoria': {
+      id: '/servicos/consultoria'
+      path: '/servicos/consultoria'
+      fullPath: '/servicos/consultoria'
+      preLoaderRoute: typeof ServicosConsultoriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/servicos/aplicativos': {
+      id: '/servicos/aplicativos'
+      path: '/servicos/aplicativos'
+      fullPath: '/servicos/aplicativos'
+      preLoaderRoute: typeof ServicosAplicativosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/portfolio/sistema-de-compra-coletiva': {
       id: '/portfolio/sistema-de-compra-coletiva'
       path: '/portfolio/sistema-de-compra-coletiva'
@@ -713,6 +970,29 @@ declare module '@tanstack/react-router' {
   }
 }
 
+interface SolucoesWebRouteChildren {
+  SolucoesWebDesenvolvimentoDeSitesRoute: typeof SolucoesWebDesenvolvimentoDeSitesRoute
+  SolucoesWebHospedagemRoute: typeof SolucoesWebHospedagemRoute
+  SolucoesWebLandingPagesRoute: typeof SolucoesWebLandingPagesRoute
+  SolucoesWebLojaVirtualRoute: typeof SolucoesWebLojaVirtualRoute
+  SolucoesWebMarketingDigitalRoute: typeof SolucoesWebMarketingDigitalRoute
+  SolucoesWebSeoGoogleRoute: typeof SolucoesWebSeoGoogleRoute
+}
+
+const SolucoesWebRouteChildren: SolucoesWebRouteChildren = {
+  SolucoesWebDesenvolvimentoDeSitesRoute:
+    SolucoesWebDesenvolvimentoDeSitesRoute,
+  SolucoesWebHospedagemRoute: SolucoesWebHospedagemRoute,
+  SolucoesWebLandingPagesRoute: SolucoesWebLandingPagesRoute,
+  SolucoesWebLojaVirtualRoute: SolucoesWebLojaVirtualRoute,
+  SolucoesWebMarketingDigitalRoute: SolucoesWebMarketingDigitalRoute,
+  SolucoesWebSeoGoogleRoute: SolucoesWebSeoGoogleRoute,
+}
+
+const SolucoesWebRouteWithChildren = SolucoesWebRoute._addFileChildren(
+  SolucoesWebRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContatoRoute: ContatoRoute,
@@ -727,7 +1007,7 @@ const rootRouteChildren: RootRouteChildren = {
   SistemaDeLeilaoRoute: SistemaDeLeilaoRoute,
   SistemaSobDemandaNcBrasilRoute: SistemaSobDemandaNcBrasilRoute,
   SoftwareRoute: SoftwareRoute,
-  SolucoesWebRoute: SolucoesWebRoute,
+  SolucoesWebRoute: SolucoesWebRouteWithChildren,
   TrabalhosRealizadosRoute: TrabalhosRealizadosRoute,
   PortfolioCriacaoDeAplicativosRoute: PortfolioCriacaoDeAplicativosRoute,
   PortfolioCriacaoDeLogomarcasRoute: PortfolioCriacaoDeLogomarcasRoute,
@@ -736,6 +1016,13 @@ const rootRouteChildren: RootRouteChildren = {
   PortfolioLogotiposCriadosRoute: PortfolioLogotiposCriadosRoute,
   PortfolioLojasVirtuaisCriadasRoute: PortfolioLojasVirtuaisCriadasRoute,
   PortfolioSistemaDeCompraColetivaRoute: PortfolioSistemaDeCompraColetivaRoute,
+  ServicosAplicativosRoute: ServicosAplicativosRoute,
+  ServicosConsultoriaRoute: ServicosConsultoriaRoute,
+  ServicosDesenvolvimentoRoute: ServicosDesenvolvimentoRoute,
+  ServicosFacebookAdsRoute: ServicosFacebookAdsRoute,
+  ServicosGoogleAdsRoute: ServicosGoogleAdsRoute,
+  ServicosIdentidadeVisualRoute: ServicosIdentidadeVisualRoute,
+  ServicosSistemasWebRoute: ServicosSistemasWebRoute,
   SistemasClassificadosDeVeiculosRoute: SistemasClassificadosDeVeiculosRoute,
   SistemasPlataformaChinesaApostasCassinoRoute:
     SistemasPlataformaChinesaApostasCassinoRoute,
