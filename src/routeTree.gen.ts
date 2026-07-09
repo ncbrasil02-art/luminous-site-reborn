@@ -48,6 +48,8 @@ import { Route as ServicosFacebookAdsRouteImport } from './routes/servicos.faceb
 import { Route as ServicosDesenvolvimentoRouteImport } from './routes/servicos.desenvolvimento'
 import { Route as ServicosConsultoriaRouteImport } from './routes/servicos.consultoria'
 import { Route as ServicosAplicativosRouteImport } from './routes/servicos.aplicativos'
+import { Route as PortfolioSitesCriadosRouteImport } from './routes/portfolio.sites-criados'
+import { Route as PortfolioSistemasCriadosRouteImport } from './routes/portfolio.sistemas-criados'
 import { Route as PortfolioSistemaDeCompraColetivaRouteImport } from './routes/portfolio.sistema-de-compra-coletiva'
 import { Route as PortfolioLojasVirtuaisCriadasRouteImport } from './routes/portfolio.lojas-virtuais-criadas'
 import { Route as PortfolioLogotiposCriadosRouteImport } from './routes/portfolio.logotipos-criados'
@@ -55,6 +57,10 @@ import { Route as PortfolioIdentidadeVisualRouteImport } from './routes/portfoli
 import { Route as PortfolioCriacaoDeSistemasRouteImport } from './routes/portfolio.criacao-de-sistemas'
 import { Route as PortfolioCriacaoDeLogomarcasRouteImport } from './routes/portfolio.criacao-de-logomarcas'
 import { Route as PortfolioCriacaoDeAplicativosRouteImport } from './routes/portfolio.criacao-de-aplicativos'
+import { Route as PortfolioAplicativosCriadosRouteImport } from './routes/portfolio.aplicativos-criados'
+import { Route as EmpresaQuemSomosRouteImport } from './routes/empresa.quem-somos'
+import { Route as EmpresaNossaHistoriaRouteImport } from './routes/empresa.nossa-historia'
+import { Route as EmpresaClientesRouteImport } from './routes/empresa.clientes'
 
 const TrabalhosRealizadosRoute = TrabalhosRealizadosRouteImport.update({
   id: '/trabalhos-realizados',
@@ -265,6 +271,17 @@ const ServicosAplicativosRoute = ServicosAplicativosRouteImport.update({
   path: '/servicos/aplicativos',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PortfolioSitesCriadosRoute = PortfolioSitesCriadosRouteImport.update({
+  id: '/portfolio/sites-criados',
+  path: '/portfolio/sites-criados',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PortfolioSistemasCriadosRoute =
+  PortfolioSistemasCriadosRouteImport.update({
+    id: '/portfolio/sistemas-criados',
+    path: '/portfolio/sistemas-criados',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const PortfolioSistemaDeCompraColetivaRoute =
   PortfolioSistemaDeCompraColetivaRouteImport.update({
     id: '/portfolio/sistema-de-compra-coletiva',
@@ -307,12 +324,33 @@ const PortfolioCriacaoDeAplicativosRoute =
     path: '/portfolio/criacao-de-aplicativos',
     getParentRoute: () => rootRouteImport,
   } as any)
+const PortfolioAplicativosCriadosRoute =
+  PortfolioAplicativosCriadosRouteImport.update({
+    id: '/portfolio/aplicativos-criados',
+    path: '/portfolio/aplicativos-criados',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const EmpresaQuemSomosRoute = EmpresaQuemSomosRouteImport.update({
+  id: '/quem-somos',
+  path: '/quem-somos',
+  getParentRoute: () => EmpresaRoute,
+} as any)
+const EmpresaNossaHistoriaRoute = EmpresaNossaHistoriaRouteImport.update({
+  id: '/nossa-historia',
+  path: '/nossa-historia',
+  getParentRoute: () => EmpresaRoute,
+} as any)
+const EmpresaClientesRoute = EmpresaClientesRouteImport.update({
+  id: '/clientes',
+  path: '/clientes',
+  getParentRoute: () => EmpresaRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
-  '/empresa': typeof EmpresaRoute
+  '/empresa': typeof EmpresaRouteWithChildren
   '/erros-na-criacao-de-um-aplicativo': typeof ErrosNaCriacaoDeUmAplicativoRoute
   '/instagram-para-empresas': typeof InstagramParaEmpresasRoute
   '/nossos-servicos': typeof NossosServicosRoute
@@ -324,6 +362,10 @@ export interface FileRoutesByFullPath {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/empresa/clientes': typeof EmpresaClientesRoute
+  '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
+  '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
+  '/portfolio/aplicativos-criados': typeof PortfolioAplicativosCriadosRoute
   '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
   '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
   '/portfolio/criacao-de-sistemas': typeof PortfolioCriacaoDeSistemasRoute
@@ -331,6 +373,8 @@ export interface FileRoutesByFullPath {
   '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
   '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
   '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
+  '/portfolio/sistemas-criados': typeof PortfolioSistemasCriadosRoute
+  '/portfolio/sites-criados': typeof PortfolioSitesCriadosRoute
   '/servicos/aplicativos': typeof ServicosAplicativosRoute
   '/servicos/consultoria': typeof ServicosConsultoriaRoute
   '/servicos/desenvolvimento': typeof ServicosDesenvolvimentoRoute
@@ -360,7 +404,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
-  '/empresa': typeof EmpresaRoute
+  '/empresa': typeof EmpresaRouteWithChildren
   '/erros-na-criacao-de-um-aplicativo': typeof ErrosNaCriacaoDeUmAplicativoRoute
   '/instagram-para-empresas': typeof InstagramParaEmpresasRoute
   '/nossos-servicos': typeof NossosServicosRoute
@@ -372,6 +416,10 @@ export interface FileRoutesByTo {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/empresa/clientes': typeof EmpresaClientesRoute
+  '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
+  '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
+  '/portfolio/aplicativos-criados': typeof PortfolioAplicativosCriadosRoute
   '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
   '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
   '/portfolio/criacao-de-sistemas': typeof PortfolioCriacaoDeSistemasRoute
@@ -379,6 +427,8 @@ export interface FileRoutesByTo {
   '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
   '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
   '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
+  '/portfolio/sistemas-criados': typeof PortfolioSistemasCriadosRoute
+  '/portfolio/sites-criados': typeof PortfolioSitesCriadosRoute
   '/servicos/aplicativos': typeof ServicosAplicativosRoute
   '/servicos/consultoria': typeof ServicosConsultoriaRoute
   '/servicos/desenvolvimento': typeof ServicosDesenvolvimentoRoute
@@ -409,7 +459,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
-  '/empresa': typeof EmpresaRoute
+  '/empresa': typeof EmpresaRouteWithChildren
   '/erros-na-criacao-de-um-aplicativo': typeof ErrosNaCriacaoDeUmAplicativoRoute
   '/instagram-para-empresas': typeof InstagramParaEmpresasRoute
   '/nossos-servicos': typeof NossosServicosRoute
@@ -421,6 +471,10 @@ export interface FileRoutesById {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/empresa/clientes': typeof EmpresaClientesRoute
+  '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
+  '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
+  '/portfolio/aplicativos-criados': typeof PortfolioAplicativosCriadosRoute
   '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
   '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
   '/portfolio/criacao-de-sistemas': typeof PortfolioCriacaoDeSistemasRoute
@@ -428,6 +482,8 @@ export interface FileRoutesById {
   '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
   '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
   '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
+  '/portfolio/sistemas-criados': typeof PortfolioSistemasCriadosRoute
+  '/portfolio/sites-criados': typeof PortfolioSitesCriadosRoute
   '/servicos/aplicativos': typeof ServicosAplicativosRoute
   '/servicos/consultoria': typeof ServicosConsultoriaRoute
   '/servicos/desenvolvimento': typeof ServicosDesenvolvimentoRoute
@@ -471,6 +527,10 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/empresa/clientes'
+    | '/empresa/nossa-historia'
+    | '/empresa/quem-somos'
+    | '/portfolio/aplicativos-criados'
     | '/portfolio/criacao-de-aplicativos'
     | '/portfolio/criacao-de-logomarcas'
     | '/portfolio/criacao-de-sistemas'
@@ -478,6 +538,8 @@ export interface FileRouteTypes {
     | '/portfolio/logotipos-criados'
     | '/portfolio/lojas-virtuais-criadas'
     | '/portfolio/sistema-de-compra-coletiva'
+    | '/portfolio/sistemas-criados'
+    | '/portfolio/sites-criados'
     | '/servicos/aplicativos'
     | '/servicos/consultoria'
     | '/servicos/desenvolvimento'
@@ -519,6 +581,10 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/empresa/clientes'
+    | '/empresa/nossa-historia'
+    | '/empresa/quem-somos'
+    | '/portfolio/aplicativos-criados'
     | '/portfolio/criacao-de-aplicativos'
     | '/portfolio/criacao-de-logomarcas'
     | '/portfolio/criacao-de-sistemas'
@@ -526,6 +592,8 @@ export interface FileRouteTypes {
     | '/portfolio/logotipos-criados'
     | '/portfolio/lojas-virtuais-criadas'
     | '/portfolio/sistema-de-compra-coletiva'
+    | '/portfolio/sistemas-criados'
+    | '/portfolio/sites-criados'
     | '/servicos/aplicativos'
     | '/servicos/consultoria'
     | '/servicos/desenvolvimento'
@@ -567,6 +635,10 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/empresa/clientes'
+    | '/empresa/nossa-historia'
+    | '/empresa/quem-somos'
+    | '/portfolio/aplicativos-criados'
     | '/portfolio/criacao-de-aplicativos'
     | '/portfolio/criacao-de-logomarcas'
     | '/portfolio/criacao-de-sistemas'
@@ -574,6 +646,8 @@ export interface FileRouteTypes {
     | '/portfolio/logotipos-criados'
     | '/portfolio/lojas-virtuais-criadas'
     | '/portfolio/sistema-de-compra-coletiva'
+    | '/portfolio/sistemas-criados'
+    | '/portfolio/sites-criados'
     | '/servicos/aplicativos'
     | '/servicos/consultoria'
     | '/servicos/desenvolvimento'
@@ -604,7 +678,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContatoRoute: typeof ContatoRoute
   DicasParaECommerceRoute: typeof DicasParaECommerceRoute
-  EmpresaRoute: typeof EmpresaRoute
+  EmpresaRoute: typeof EmpresaRouteWithChildren
   ErrosNaCriacaoDeUmAplicativoRoute: typeof ErrosNaCriacaoDeUmAplicativoRoute
   InstagramParaEmpresasRoute: typeof InstagramParaEmpresasRoute
   NossosServicosRoute: typeof NossosServicosRoute
@@ -616,6 +690,7 @@ export interface RootRouteChildren {
   SoftwareRoute: typeof SoftwareRoute
   SolucoesWebRoute: typeof SolucoesWebRouteWithChildren
   TrabalhosRealizadosRoute: typeof TrabalhosRealizadosRoute
+  PortfolioAplicativosCriadosRoute: typeof PortfolioAplicativosCriadosRoute
   PortfolioCriacaoDeAplicativosRoute: typeof PortfolioCriacaoDeAplicativosRoute
   PortfolioCriacaoDeLogomarcasRoute: typeof PortfolioCriacaoDeLogomarcasRoute
   PortfolioCriacaoDeSistemasRoute: typeof PortfolioCriacaoDeSistemasRoute
@@ -623,6 +698,8 @@ export interface RootRouteChildren {
   PortfolioLogotiposCriadosRoute: typeof PortfolioLogotiposCriadosRoute
   PortfolioLojasVirtuaisCriadasRoute: typeof PortfolioLojasVirtuaisCriadasRoute
   PortfolioSistemaDeCompraColetivaRoute: typeof PortfolioSistemaDeCompraColetivaRoute
+  PortfolioSistemasCriadosRoute: typeof PortfolioSistemasCriadosRoute
+  PortfolioSitesCriadosRoute: typeof PortfolioSitesCriadosRoute
   ServicosAplicativosRoute: typeof ServicosAplicativosRoute
   ServicosConsultoriaRoute: typeof ServicosConsultoriaRoute
   ServicosDesenvolvimentoRoute: typeof ServicosDesenvolvimentoRoute
@@ -918,6 +995,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ServicosAplicativosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/portfolio/sites-criados': {
+      id: '/portfolio/sites-criados'
+      path: '/portfolio/sites-criados'
+      fullPath: '/portfolio/sites-criados'
+      preLoaderRoute: typeof PortfolioSitesCriadosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio/sistemas-criados': {
+      id: '/portfolio/sistemas-criados'
+      path: '/portfolio/sistemas-criados'
+      fullPath: '/portfolio/sistemas-criados'
+      preLoaderRoute: typeof PortfolioSistemasCriadosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/portfolio/sistema-de-compra-coletiva': {
       id: '/portfolio/sistema-de-compra-coletiva'
       path: '/portfolio/sistema-de-compra-coletiva'
@@ -967,8 +1058,51 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PortfolioCriacaoDeAplicativosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/portfolio/aplicativos-criados': {
+      id: '/portfolio/aplicativos-criados'
+      path: '/portfolio/aplicativos-criados'
+      fullPath: '/portfolio/aplicativos-criados'
+      preLoaderRoute: typeof PortfolioAplicativosCriadosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/empresa/quem-somos': {
+      id: '/empresa/quem-somos'
+      path: '/quem-somos'
+      fullPath: '/empresa/quem-somos'
+      preLoaderRoute: typeof EmpresaQuemSomosRouteImport
+      parentRoute: typeof EmpresaRoute
+    }
+    '/empresa/nossa-historia': {
+      id: '/empresa/nossa-historia'
+      path: '/nossa-historia'
+      fullPath: '/empresa/nossa-historia'
+      preLoaderRoute: typeof EmpresaNossaHistoriaRouteImport
+      parentRoute: typeof EmpresaRoute
+    }
+    '/empresa/clientes': {
+      id: '/empresa/clientes'
+      path: '/clientes'
+      fullPath: '/empresa/clientes'
+      preLoaderRoute: typeof EmpresaClientesRouteImport
+      parentRoute: typeof EmpresaRoute
+    }
   }
 }
+
+interface EmpresaRouteChildren {
+  EmpresaClientesRoute: typeof EmpresaClientesRoute
+  EmpresaNossaHistoriaRoute: typeof EmpresaNossaHistoriaRoute
+  EmpresaQuemSomosRoute: typeof EmpresaQuemSomosRoute
+}
+
+const EmpresaRouteChildren: EmpresaRouteChildren = {
+  EmpresaClientesRoute: EmpresaClientesRoute,
+  EmpresaNossaHistoriaRoute: EmpresaNossaHistoriaRoute,
+  EmpresaQuemSomosRoute: EmpresaQuemSomosRoute,
+}
+
+const EmpresaRouteWithChildren =
+  EmpresaRoute._addFileChildren(EmpresaRouteChildren)
 
 interface SolucoesWebRouteChildren {
   SolucoesWebDesenvolvimentoDeSitesRoute: typeof SolucoesWebDesenvolvimentoDeSitesRoute
@@ -997,7 +1131,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContatoRoute: ContatoRoute,
   DicasParaECommerceRoute: DicasParaECommerceRoute,
-  EmpresaRoute: EmpresaRoute,
+  EmpresaRoute: EmpresaRouteWithChildren,
   ErrosNaCriacaoDeUmAplicativoRoute: ErrosNaCriacaoDeUmAplicativoRoute,
   InstagramParaEmpresasRoute: InstagramParaEmpresasRoute,
   NossosServicosRoute: NossosServicosRoute,
@@ -1009,6 +1143,7 @@ const rootRouteChildren: RootRouteChildren = {
   SoftwareRoute: SoftwareRoute,
   SolucoesWebRoute: SolucoesWebRouteWithChildren,
   TrabalhosRealizadosRoute: TrabalhosRealizadosRoute,
+  PortfolioAplicativosCriadosRoute: PortfolioAplicativosCriadosRoute,
   PortfolioCriacaoDeAplicativosRoute: PortfolioCriacaoDeAplicativosRoute,
   PortfolioCriacaoDeLogomarcasRoute: PortfolioCriacaoDeLogomarcasRoute,
   PortfolioCriacaoDeSistemasRoute: PortfolioCriacaoDeSistemasRoute,
@@ -1016,6 +1151,8 @@ const rootRouteChildren: RootRouteChildren = {
   PortfolioLogotiposCriadosRoute: PortfolioLogotiposCriadosRoute,
   PortfolioLojasVirtuaisCriadasRoute: PortfolioLojasVirtuaisCriadasRoute,
   PortfolioSistemaDeCompraColetivaRoute: PortfolioSistemaDeCompraColetivaRoute,
+  PortfolioSistemasCriadosRoute: PortfolioSistemasCriadosRoute,
+  PortfolioSitesCriadosRoute: PortfolioSitesCriadosRoute,
   ServicosAplicativosRoute: ServicosAplicativosRoute,
   ServicosConsultoriaRoute: ServicosConsultoriaRoute,
   ServicosDesenvolvimentoRoute: ServicosDesenvolvimentoRoute,
