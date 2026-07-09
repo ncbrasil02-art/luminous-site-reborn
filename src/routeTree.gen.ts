@@ -24,6 +24,17 @@ import { Route as EmpresaRouteImport } from './routes/empresa'
 import { Route as DicasParaECommerceRouteImport } from './routes/dicas-para-e-commerce'
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
+import { Route as SistemasSistemaDeRifasRouteImport } from './routes/sistemas.sistema-de-rifas'
+import { Route as SistemasSistemaDeRevendaDeVeiculosRouteImport } from './routes/sistemas.sistema-de-revenda-de-veiculos'
+import { Route as SistemasSistemaDeRaspadinhaRouteImport } from './routes/sistemas.sistema-de-raspadinha'
+import { Route as SistemasSistemaDeOfertasCupomMarketplaceRouteImport } from './routes/sistemas.sistema-de-ofertas-cupom-marketplace'
+import { Route as SistemasSistemaDeLeilaoRuralRouteImport } from './routes/sistemas.sistema-de-leilao-rural'
+import { Route as SistemasSistemaDeLeilaoDeCentavosRouteImport } from './routes/sistemas.sistema-de-leilao-de-centavos'
+import { Route as SistemasSistemaDeLeilaoRouteImport } from './routes/sistemas.sistema-de-leilao'
+import { Route as SistemasSistemaDeCupomDescontosRouteImport } from './routes/sistemas.sistema-de-cupom-descontos'
+import { Route as SistemasPlataformaChinesaApostasCassinoRouteImport } from './routes/sistemas.plataforma-chinesa-apostas-cassino'
+import { Route as SistemasClassificadosDeVeiculosRouteImport } from './routes/sistemas.classificados-de-veiculos'
 import { Route as PortfolioSistemaDeCompraColetivaRouteImport } from './routes/portfolio.sistema-de-compra-coletiva'
 import { Route as PortfolioLojasVirtuaisCriadasRouteImport } from './routes/portfolio.lojas-virtuais-criadas'
 import { Route as PortfolioLogotiposCriadosRouteImport } from './routes/portfolio.logotipos-criados'
@@ -110,6 +121,69 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SistemasIndexRoute = SistemasIndexRouteImport.update({
+  id: '/sistemas/',
+  path: '/sistemas/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SistemasSistemaDeRifasRoute = SistemasSistemaDeRifasRouteImport.update({
+  id: '/sistemas/sistema-de-rifas',
+  path: '/sistemas/sistema-de-rifas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SistemasSistemaDeRevendaDeVeiculosRoute =
+  SistemasSistemaDeRevendaDeVeiculosRouteImport.update({
+    id: '/sistemas/sistema-de-revenda-de-veiculos',
+    path: '/sistemas/sistema-de-revenda-de-veiculos',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SistemasSistemaDeRaspadinhaRoute =
+  SistemasSistemaDeRaspadinhaRouteImport.update({
+    id: '/sistemas/sistema-de-raspadinha',
+    path: '/sistemas/sistema-de-raspadinha',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SistemasSistemaDeOfertasCupomMarketplaceRoute =
+  SistemasSistemaDeOfertasCupomMarketplaceRouteImport.update({
+    id: '/sistemas/sistema-de-ofertas-cupom-marketplace',
+    path: '/sistemas/sistema-de-ofertas-cupom-marketplace',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SistemasSistemaDeLeilaoRuralRoute =
+  SistemasSistemaDeLeilaoRuralRouteImport.update({
+    id: '/sistemas/sistema-de-leilao-rural',
+    path: '/sistemas/sistema-de-leilao-rural',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SistemasSistemaDeLeilaoDeCentavosRoute =
+  SistemasSistemaDeLeilaoDeCentavosRouteImport.update({
+    id: '/sistemas/sistema-de-leilao-de-centavos',
+    path: '/sistemas/sistema-de-leilao-de-centavos',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SistemasSistemaDeLeilaoRoute = SistemasSistemaDeLeilaoRouteImport.update({
+  id: '/sistemas/sistema-de-leilao',
+  path: '/sistemas/sistema-de-leilao',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SistemasSistemaDeCupomDescontosRoute =
+  SistemasSistemaDeCupomDescontosRouteImport.update({
+    id: '/sistemas/sistema-de-cupom-descontos',
+    path: '/sistemas/sistema-de-cupom-descontos',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SistemasPlataformaChinesaApostasCassinoRoute =
+  SistemasPlataformaChinesaApostasCassinoRouteImport.update({
+    id: '/sistemas/plataforma-chinesa-apostas-cassino',
+    path: '/sistemas/plataforma-chinesa-apostas-cassino',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SistemasClassificadosDeVeiculosRoute =
+  SistemasClassificadosDeVeiculosRouteImport.update({
+    id: '/sistemas/classificados-de-veiculos',
+    path: '/sistemas/classificados-de-veiculos',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const PortfolioSistemaDeCompraColetivaRoute =
   PortfolioSistemaDeCompraColetivaRouteImport.update({
     id: '/portfolio/sistema-de-compra-coletiva',
@@ -176,6 +250,17 @@ export interface FileRoutesByFullPath {
   '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
   '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
   '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
+  '/sistemas/classificados-de-veiculos': typeof SistemasClassificadosDeVeiculosRoute
+  '/sistemas/plataforma-chinesa-apostas-cassino': typeof SistemasPlataformaChinesaApostasCassinoRoute
+  '/sistemas/sistema-de-cupom-descontos': typeof SistemasSistemaDeCupomDescontosRoute
+  '/sistemas/sistema-de-leilao': typeof SistemasSistemaDeLeilaoRoute
+  '/sistemas/sistema-de-leilao-de-centavos': typeof SistemasSistemaDeLeilaoDeCentavosRoute
+  '/sistemas/sistema-de-leilao-rural': typeof SistemasSistemaDeLeilaoRuralRoute
+  '/sistemas/sistema-de-ofertas-cupom-marketplace': typeof SistemasSistemaDeOfertasCupomMarketplaceRoute
+  '/sistemas/sistema-de-raspadinha': typeof SistemasSistemaDeRaspadinhaRoute
+  '/sistemas/sistema-de-revenda-de-veiculos': typeof SistemasSistemaDeRevendaDeVeiculosRoute
+  '/sistemas/sistema-de-rifas': typeof SistemasSistemaDeRifasRoute
+  '/sistemas/': typeof SistemasIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -200,6 +285,17 @@ export interface FileRoutesByTo {
   '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
   '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
   '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
+  '/sistemas/classificados-de-veiculos': typeof SistemasClassificadosDeVeiculosRoute
+  '/sistemas/plataforma-chinesa-apostas-cassino': typeof SistemasPlataformaChinesaApostasCassinoRoute
+  '/sistemas/sistema-de-cupom-descontos': typeof SistemasSistemaDeCupomDescontosRoute
+  '/sistemas/sistema-de-leilao': typeof SistemasSistemaDeLeilaoRoute
+  '/sistemas/sistema-de-leilao-de-centavos': typeof SistemasSistemaDeLeilaoDeCentavosRoute
+  '/sistemas/sistema-de-leilao-rural': typeof SistemasSistemaDeLeilaoRuralRoute
+  '/sistemas/sistema-de-ofertas-cupom-marketplace': typeof SistemasSistemaDeOfertasCupomMarketplaceRoute
+  '/sistemas/sistema-de-raspadinha': typeof SistemasSistemaDeRaspadinhaRoute
+  '/sistemas/sistema-de-revenda-de-veiculos': typeof SistemasSistemaDeRevendaDeVeiculosRoute
+  '/sistemas/sistema-de-rifas': typeof SistemasSistemaDeRifasRoute
+  '/sistemas': typeof SistemasIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -225,6 +321,17 @@ export interface FileRoutesById {
   '/portfolio/logotipos-criados': typeof PortfolioLogotiposCriadosRoute
   '/portfolio/lojas-virtuais-criadas': typeof PortfolioLojasVirtuaisCriadasRoute
   '/portfolio/sistema-de-compra-coletiva': typeof PortfolioSistemaDeCompraColetivaRoute
+  '/sistemas/classificados-de-veiculos': typeof SistemasClassificadosDeVeiculosRoute
+  '/sistemas/plataforma-chinesa-apostas-cassino': typeof SistemasPlataformaChinesaApostasCassinoRoute
+  '/sistemas/sistema-de-cupom-descontos': typeof SistemasSistemaDeCupomDescontosRoute
+  '/sistemas/sistema-de-leilao': typeof SistemasSistemaDeLeilaoRoute
+  '/sistemas/sistema-de-leilao-de-centavos': typeof SistemasSistemaDeLeilaoDeCentavosRoute
+  '/sistemas/sistema-de-leilao-rural': typeof SistemasSistemaDeLeilaoRuralRoute
+  '/sistemas/sistema-de-ofertas-cupom-marketplace': typeof SistemasSistemaDeOfertasCupomMarketplaceRoute
+  '/sistemas/sistema-de-raspadinha': typeof SistemasSistemaDeRaspadinhaRoute
+  '/sistemas/sistema-de-revenda-de-veiculos': typeof SistemasSistemaDeRevendaDeVeiculosRoute
+  '/sistemas/sistema-de-rifas': typeof SistemasSistemaDeRifasRoute
+  '/sistemas/': typeof SistemasIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -251,6 +358,17 @@ export interface FileRouteTypes {
     | '/portfolio/logotipos-criados'
     | '/portfolio/lojas-virtuais-criadas'
     | '/portfolio/sistema-de-compra-coletiva'
+    | '/sistemas/classificados-de-veiculos'
+    | '/sistemas/plataforma-chinesa-apostas-cassino'
+    | '/sistemas/sistema-de-cupom-descontos'
+    | '/sistemas/sistema-de-leilao'
+    | '/sistemas/sistema-de-leilao-de-centavos'
+    | '/sistemas/sistema-de-leilao-rural'
+    | '/sistemas/sistema-de-ofertas-cupom-marketplace'
+    | '/sistemas/sistema-de-raspadinha'
+    | '/sistemas/sistema-de-revenda-de-veiculos'
+    | '/sistemas/sistema-de-rifas'
+    | '/sistemas/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -275,6 +393,17 @@ export interface FileRouteTypes {
     | '/portfolio/logotipos-criados'
     | '/portfolio/lojas-virtuais-criadas'
     | '/portfolio/sistema-de-compra-coletiva'
+    | '/sistemas/classificados-de-veiculos'
+    | '/sistemas/plataforma-chinesa-apostas-cassino'
+    | '/sistemas/sistema-de-cupom-descontos'
+    | '/sistemas/sistema-de-leilao'
+    | '/sistemas/sistema-de-leilao-de-centavos'
+    | '/sistemas/sistema-de-leilao-rural'
+    | '/sistemas/sistema-de-ofertas-cupom-marketplace'
+    | '/sistemas/sistema-de-raspadinha'
+    | '/sistemas/sistema-de-revenda-de-veiculos'
+    | '/sistemas/sistema-de-rifas'
+    | '/sistemas'
   id:
     | '__root__'
     | '/'
@@ -299,6 +428,17 @@ export interface FileRouteTypes {
     | '/portfolio/logotipos-criados'
     | '/portfolio/lojas-virtuais-criadas'
     | '/portfolio/sistema-de-compra-coletiva'
+    | '/sistemas/classificados-de-veiculos'
+    | '/sistemas/plataforma-chinesa-apostas-cassino'
+    | '/sistemas/sistema-de-cupom-descontos'
+    | '/sistemas/sistema-de-leilao'
+    | '/sistemas/sistema-de-leilao-de-centavos'
+    | '/sistemas/sistema-de-leilao-rural'
+    | '/sistemas/sistema-de-ofertas-cupom-marketplace'
+    | '/sistemas/sistema-de-raspadinha'
+    | '/sistemas/sistema-de-revenda-de-veiculos'
+    | '/sistemas/sistema-de-rifas'
+    | '/sistemas/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -324,6 +464,17 @@ export interface RootRouteChildren {
   PortfolioLogotiposCriadosRoute: typeof PortfolioLogotiposCriadosRoute
   PortfolioLojasVirtuaisCriadasRoute: typeof PortfolioLojasVirtuaisCriadasRoute
   PortfolioSistemaDeCompraColetivaRoute: typeof PortfolioSistemaDeCompraColetivaRoute
+  SistemasClassificadosDeVeiculosRoute: typeof SistemasClassificadosDeVeiculosRoute
+  SistemasPlataformaChinesaApostasCassinoRoute: typeof SistemasPlataformaChinesaApostasCassinoRoute
+  SistemasSistemaDeCupomDescontosRoute: typeof SistemasSistemaDeCupomDescontosRoute
+  SistemasSistemaDeLeilaoRoute: typeof SistemasSistemaDeLeilaoRoute
+  SistemasSistemaDeLeilaoDeCentavosRoute: typeof SistemasSistemaDeLeilaoDeCentavosRoute
+  SistemasSistemaDeLeilaoRuralRoute: typeof SistemasSistemaDeLeilaoRuralRoute
+  SistemasSistemaDeOfertasCupomMarketplaceRoute: typeof SistemasSistemaDeOfertasCupomMarketplaceRoute
+  SistemasSistemaDeRaspadinhaRoute: typeof SistemasSistemaDeRaspadinhaRoute
+  SistemasSistemaDeRevendaDeVeiculosRoute: typeof SistemasSistemaDeRevendaDeVeiculosRoute
+  SistemasSistemaDeRifasRoute: typeof SistemasSistemaDeRifasRoute
+  SistemasIndexRoute: typeof SistemasIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -433,6 +584,83 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sistemas/': {
+      id: '/sistemas/'
+      path: '/sistemas'
+      fullPath: '/sistemas/'
+      preLoaderRoute: typeof SistemasIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/sistema-de-rifas': {
+      id: '/sistemas/sistema-de-rifas'
+      path: '/sistemas/sistema-de-rifas'
+      fullPath: '/sistemas/sistema-de-rifas'
+      preLoaderRoute: typeof SistemasSistemaDeRifasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/sistema-de-revenda-de-veiculos': {
+      id: '/sistemas/sistema-de-revenda-de-veiculos'
+      path: '/sistemas/sistema-de-revenda-de-veiculos'
+      fullPath: '/sistemas/sistema-de-revenda-de-veiculos'
+      preLoaderRoute: typeof SistemasSistemaDeRevendaDeVeiculosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/sistema-de-raspadinha': {
+      id: '/sistemas/sistema-de-raspadinha'
+      path: '/sistemas/sistema-de-raspadinha'
+      fullPath: '/sistemas/sistema-de-raspadinha'
+      preLoaderRoute: typeof SistemasSistemaDeRaspadinhaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/sistema-de-ofertas-cupom-marketplace': {
+      id: '/sistemas/sistema-de-ofertas-cupom-marketplace'
+      path: '/sistemas/sistema-de-ofertas-cupom-marketplace'
+      fullPath: '/sistemas/sistema-de-ofertas-cupom-marketplace'
+      preLoaderRoute: typeof SistemasSistemaDeOfertasCupomMarketplaceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/sistema-de-leilao-rural': {
+      id: '/sistemas/sistema-de-leilao-rural'
+      path: '/sistemas/sistema-de-leilao-rural'
+      fullPath: '/sistemas/sistema-de-leilao-rural'
+      preLoaderRoute: typeof SistemasSistemaDeLeilaoRuralRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/sistema-de-leilao-de-centavos': {
+      id: '/sistemas/sistema-de-leilao-de-centavos'
+      path: '/sistemas/sistema-de-leilao-de-centavos'
+      fullPath: '/sistemas/sistema-de-leilao-de-centavos'
+      preLoaderRoute: typeof SistemasSistemaDeLeilaoDeCentavosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/sistema-de-leilao': {
+      id: '/sistemas/sistema-de-leilao'
+      path: '/sistemas/sistema-de-leilao'
+      fullPath: '/sistemas/sistema-de-leilao'
+      preLoaderRoute: typeof SistemasSistemaDeLeilaoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/sistema-de-cupom-descontos': {
+      id: '/sistemas/sistema-de-cupom-descontos'
+      path: '/sistemas/sistema-de-cupom-descontos'
+      fullPath: '/sistemas/sistema-de-cupom-descontos'
+      preLoaderRoute: typeof SistemasSistemaDeCupomDescontosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/plataforma-chinesa-apostas-cassino': {
+      id: '/sistemas/plataforma-chinesa-apostas-cassino'
+      path: '/sistemas/plataforma-chinesa-apostas-cassino'
+      fullPath: '/sistemas/plataforma-chinesa-apostas-cassino'
+      preLoaderRoute: typeof SistemasPlataformaChinesaApostasCassinoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/classificados-de-veiculos': {
+      id: '/sistemas/classificados-de-veiculos'
+      path: '/sistemas/classificados-de-veiculos'
+      fullPath: '/sistemas/classificados-de-veiculos'
+      preLoaderRoute: typeof SistemasClassificadosDeVeiculosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/portfolio/sistema-de-compra-coletiva': {
       id: '/portfolio/sistema-de-compra-coletiva'
       path: '/portfolio/sistema-de-compra-coletiva'
@@ -508,16 +736,22 @@ const rootRouteChildren: RootRouteChildren = {
   PortfolioLogotiposCriadosRoute: PortfolioLogotiposCriadosRoute,
   PortfolioLojasVirtuaisCriadasRoute: PortfolioLojasVirtuaisCriadasRoute,
   PortfolioSistemaDeCompraColetivaRoute: PortfolioSistemaDeCompraColetivaRoute,
+  SistemasClassificadosDeVeiculosRoute: SistemasClassificadosDeVeiculosRoute,
+  SistemasPlataformaChinesaApostasCassinoRoute:
+    SistemasPlataformaChinesaApostasCassinoRoute,
+  SistemasSistemaDeCupomDescontosRoute: SistemasSistemaDeCupomDescontosRoute,
+  SistemasSistemaDeLeilaoRoute: SistemasSistemaDeLeilaoRoute,
+  SistemasSistemaDeLeilaoDeCentavosRoute:
+    SistemasSistemaDeLeilaoDeCentavosRoute,
+  SistemasSistemaDeLeilaoRuralRoute: SistemasSistemaDeLeilaoRuralRoute,
+  SistemasSistemaDeOfertasCupomMarketplaceRoute:
+    SistemasSistemaDeOfertasCupomMarketplaceRoute,
+  SistemasSistemaDeRaspadinhaRoute: SistemasSistemaDeRaspadinhaRoute,
+  SistemasSistemaDeRevendaDeVeiculosRoute:
+    SistemasSistemaDeRevendaDeVeiculosRoute,
+  SistemasSistemaDeRifasRoute: SistemasSistemaDeRifasRoute,
+  SistemasIndexRoute: SistemasIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { createStart } from '@tanstack/react-start'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-  }
-}
