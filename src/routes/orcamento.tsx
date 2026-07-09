@@ -3,6 +3,7 @@ import { useState } from "react";
 import { ArrowRight, CheckCircle2, FileText, Send } from "lucide-react";
 
 import { Reveal, SectionHeading } from "@/components/Section";
+import { trackLead } from "@/lib/analytics";
 
 const SITE_URL = "https://www.ncbrasil.com.br";
 const EMAIL = "contato@ncbrasil.com.br";
@@ -66,6 +67,7 @@ function OrcamentoPage() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
+    trackLead("form_orcamento", { tipo: form.tipo, prazo: form.prazo });
     const subject = encodeURIComponent(`Orçamento — ${form.tipo} — ${form.nome}`);
     const body = encodeURIComponent(
       `Tipo de projeto: ${form.tipo}\nPrazo: ${form.prazo}\n\nNome: ${form.nome}\nEmpresa: ${form.empresa}\nE-mail: ${form.email}\nTelefone: ${form.telefone}\n\nDetalhes:\n${form.detalhes}`,
