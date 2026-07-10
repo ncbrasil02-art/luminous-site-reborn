@@ -47,40 +47,49 @@ export const Route = createFileRoute("/sistemas/sistema-de-leilao")({
         { to: "/sistemas/sistema-de-leilao", label: "Sistema de Leilão" },
       ]}
       eyebrow="Sistema de Leilão"
-      h1={<>Plataforma completa para <span className="text-gradient">Leilões Online</span> com conformidade jurídica</>}
-      intro={<>Solução robusta para <strong className="text-foreground">leiloeiros oficiais</strong>, tribunais, bancos e empresas: gestão de lotes, lances simultâneos online e presenciais, transmissão ao vivo e total conformidade com o <strong className="text-foreground">Decreto 21.981/32</strong> e o <strong className="text-foreground">CPC art. 879-903</strong>.</>}
+      h1={<>Plataforma para <span className="text-gradient">Leilões Online</span> homologada em 27 Tribunais de Justiça</>}
+      intro={<>Sistema profissional para <strong className="text-foreground">leiloeiros oficiais</strong>, tribunais, bancos e cooperativas — usado por casas como <a href="https://www.ativeiloes.com.br" target="_blank" rel="noopener" className="text-primary underline underline-offset-4 hover:text-primary-glow">Ativ Leilões</a>. Realize <strong className="text-foreground">pregão eletrônico simultâneo</strong> (online + presencial) para leilões <strong className="text-foreground">judiciais (CPC art. 879–903)</strong>, <strong className="text-foreground">extrajudiciais (Decreto 21.981/32)</strong>, Detran, restritos e venda direta — com <strong className="text-foreground">plataforma própria, sem aluguel mensal e 0% de taxa por lance</strong>.</>}
       stats={[
+        { value: "27 TJs", label: "Tribunais homologados" },
+        { value: "0%", label: "Taxa por lance" },
         { value: "500K+", label: "Lances processados" },
-        { value: "99.9%", label: "Uptime garantido" },
         { value: "24/7", label: "Suporte em pregões" },
-        { value: "100%", label: "Conformidade legal" },
       ]}
       clients={[
-        "Prefeituras", "Tribunais de Justiça", "Bancos", "Cooperativas Rurais",
-        "Leiloeiros Oficiais", "Cartórios", "Concessionárias", "Seguradoras",
+        "Tribunais de Justiça", "Detran", "Bancos", "Cooperativas Rurais",
+        "Leiloeiros Oficiais", "Prefeituras", "Concessionárias", "Cartórios",
       ]}
       problem={{
-        title: <>Leiloeiros que ainda operam <span className="text-destructive">no manual</span> perdem receita</>,
+        title: <>Alugar plataforma de terceiros <span className="text-destructive">custa caro</span> e limita seu negócio</>,
         items: [
-          "**Planilhas e sites genéricos** não têm cronômetro sincronizado — resulta em contestação judicial.",
-          "Sem **transmissão ao vivo profissional**, o alcance fica restrito à sua região.",
-          "Cálculo manual de **comissão, ITBI e split** gera erro contábil e retrabalho.",
-          "Ausência de **KYC e trilha de auditoria** expõe o leiloeiro a fraudes e questionamentos.",
-          "Concorrentes com plataforma dedicada capturam **até 3x mais arrematantes**.",
+          "**Mensalidades de R$ 3.000 a R$ 15.000** + percentual sobre cada arrematação corroem sua margem.",
+          "Sites genéricos e planilhas **sem cronômetro sincronizado** geram contestação judicial e anulação de pregão.",
+          "Plataformas compartilhadas expõem sua **base de arrematantes** para o próprio concorrente do fornecedor.",
+          "Sem **app nativo com sua marca**, você perde autoridade e recompra do arrematante.",
+          "Sem **KYC integrado à Receita** e trilha LGPD, o risco de fraude e ação judicial recai sobre o leiloeiro.",
+          "Concorrentes que já operam com plataforma dedicada capturam **até 3x mais arrematantes por edital**.",
         ],
       }}
       solution={{
-        title: <>Uma plataforma que <span className="text-gradient">substitui 5 ferramentas</span> em um só ambiente</>,
-        desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> unifica cadastro de lotes, habilitação de arrematantes, pregão ao vivo, pagamento e prestação de contas — tudo com <strong className="text-foreground">assinatura digital, logs auditáveis e streaming HD</strong>. Pronto para escalar do pregão local ao alcance nacional.</>,
+        title: <>Uma plataforma <span className="text-gradient">100% sua</span> — homologada, escalável e sem mensalidade</>,
+        desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> é entregue como <strong className="text-foreground">licença perpétua com código-fonte</strong>, domínio próprio e apps iOS/Android publicados sob sua marca. Diferente de <strong className="text-foreground">Leilão PRO, Superbid e Sodré Santoro</strong> — que cobram assinatura + % por lance e mantêm sua base em servidor compartilhado — aqui você é dono do sistema, dos dados e do relacionamento com o arrematante. Homologada em <strong className="text-foreground">27 Tribunais de Justiça</strong> (AC → TO), TJ/SP, Detran e integrada ao <strong className="text-foreground">PJe</strong>, cobre pregão judicial, extrajudicial, restrito, venda direta, imóveis, rural, arte e veículos.</>,
         highlights: [
-          "**Multi-modalidade**: judicial, extrajudicial, rural, arte, veículos",
-          "**Anti-sniping** e lance automático nativos",
-          "**White-label** com domínio próprio",
-          "**API aberta** para ERP, TJ e contabilidade",
-          "**LGPD-ready** com trilha de auditoria",
-          "**PIX, boleto, cartão** e caução integrados",
+          "**Plataforma proprietária** — sem aluguel mensal, taxa 0% por lance",
+          "**Homologada em 27 TJs** + TJ/SP + Detran + PJe",
+          "**Multi-modalidade**: judicial, extrajudicial, Detran, rural, arte",
+          "**Anti-sniping + robô de lance** conforme jurisprudência STJ",
+          "**White-label completo**: domínio, apps iOS/Android com sua marca",
+          "**Assinatura ICP-Brasil** para autos de arrematação",
+          "**Split PIX automático** leiloeiro/comitente/plataforma",
+          "**Trilha LGPD** e backups 3x/dia em servidor dedicado",
         ],
       }}
+      benefits={[
+        { icon: Landmark, title: "Homologada em 27 TJs", desc: "Aceita em **AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO** + TJ/SP + Detran." },
+        { icon: Banknote, title: "Zero mensalidade", desc: "**Licença perpétua com código-fonte** — sem aluguel, sem taxa por lance, sem percentual sobre arrematação." },
+        { icon: ShieldCheck, title: "Segurança Jurídica", desc: "**Assinatura ICP-Brasil**, cronômetro sincronizado servidor, logs imutáveis e gravação do pregão como prova." },
+        { icon: Video, title: "Transmissão HD ao vivo", desc: "Streaming **WebRTC + HLS adaptativo**, chat moderado, cronômetro sincronizado e gravação jurídica." },
+      ]}
       benefits={[
         { icon: Gavel, title: "Multi-modalidade", desc: "**Judiciais, extrajudiciais, rurais e de arte** em uma única plataforma unificada." },
         { icon: ShieldCheck, title: "Segurança Jurídica", desc: "Assinatura digital, **logs auditáveis** e certificação de todos os lances conforme legislação." },
