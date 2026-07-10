@@ -33,7 +33,8 @@ export const Route = createFileRoute("/sistemas/sistema-de-revenda-de-veiculos")
       { name: "Revenda de Veículos", url: URL },
     ],
     faq: lpFaq,
-  }),
+    ogImage: "/og/revenda-veiculos.jpg",
+  },)
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/sistemas", label: "Sistemas" }, { to: "/sistemas/sistema-de-revenda-de-veiculos", label: "Revenda de Veículos" }]}
