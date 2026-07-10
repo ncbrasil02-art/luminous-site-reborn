@@ -91,37 +91,37 @@ export const Route = createFileRoute("/sistemas/sistema-de-leilao")({
         { icon: Lock, title: "LGPD & conformidade", desc: "Trilha de auditoria, backups e política de retenção." },
       ]}
       modules={[
-        { icon: ScrollText, title: "Módulo de Editais", desc: "", items: [
+        { icon: ScrollText, title: "Módulo de Editais", items: [
           "Editor rico com **modelos por tipo de leilão**",
           "Publicação automática em DOE e portais",
           "Versionamento e histórico de retificações",
           "Geração de PDF assinado digitalmente",
         ]},
-        { icon: Users, title: "Módulo de Arrematantes", desc: "", items: [
+        { icon: Users, title: "Módulo de Arrematantes", items: [
           "Cadastro com **KYC integrado à Receita**",
           "Upload de documentos com OCR",
           "Aprovação global ou por lote",
           "Blacklist e histórico de inadimplência",
         ]},
-        { icon: Video, title: "Módulo Pregão ao Vivo", desc: "", items: [
+        { icon: Video, title: "Módulo Pregão ao Vivo", items: [
           "Streaming **HD adaptativo** (WebRTC + HLS)",
           "Cronômetro sincronizado servidor",
           "Chat moderado e reações",
           "Gravação para prova jurídica",
         ]},
-        { icon: Wallet, title: "Módulo Financeiro", desc: "", items: [
+        { icon: Wallet, title: "Módulo Financeiro", items: [
           "**PIX, boleto e cartão** integrados",
           "Split automático leiloeiro/comitente",
           "Caução refundável",
           "Conciliação bancária automatizada",
         ]},
-        { icon: Landmark, title: "Módulo Prestação de Contas", desc: "", items: [
+        { icon: Landmark, title: "Módulo Prestação de Contas", items: [
           "Relatório oficial por leilão",
           "Exportação para **contabilidade e junta**",
           "Nota fiscal automática",
           "Auditoria completa de eventos",
         ]},
-        { icon: Smartphone, title: "App Mobile Arrematante", desc: "", items: [
+        { icon: Smartphone, title: "App Mobile Arrematante", items: [
           "Apps **iOS e Android nativos**",
           "Push de novos lotes e status",
           "Lance em 1 toque com biometria",
