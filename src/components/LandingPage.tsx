@@ -202,6 +202,80 @@ export function LandingPage({
         </div>
       </section>
 
+      {/* CLIENTS */}
+      {clients && clients.length > 0 && (
+        <section className="relative border-y border-border bg-surface/30 py-10">
+          <div className="mx-auto max-w-6xl px-4 md:px-6">
+            <p className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">
+              {clientsTitle ?? "Empresas que confiam na NC Brasil"}
+            </p>
+            <div className="marquee-mask mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+              {clients.map((c) => (
+                <span key={c} className="font-display text-lg font-semibold text-muted-foreground/70 transition-colors hover:text-foreground">
+                  {c}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* PROBLEM / SOLUTION */}
+      {(problem || solution) && (
+        <section className="relative py-20 md:py-28">
+          <div className="mx-auto grid max-w-6xl gap-8 px-4 md:grid-cols-2 md:px-6">
+            {problem && (
+              <Reveal>
+                <div className="h-full rounded-3xl border border-destructive/30 bg-destructive/5 p-8 backdrop-blur">
+                  <span className="inline-flex items-center gap-2 rounded-full bg-destructive/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-destructive">
+                    <X className="h-3.5 w-3.5" /> O problema
+                  </span>
+                  <h2 className="mt-4 font-display text-2xl font-bold md:text-3xl">
+                    {problem.title ?? <>Sem uma plataforma dedicada você <span className="text-destructive">perde receita</span></>}
+                  </h2>
+                  <ul className="mt-6 space-y-3">
+                    {problem.items.map((it) => (
+                      <li key={it} className="flex gap-3 text-sm text-muted-foreground">
+                        <X className="mt-0.5 h-4 w-4 shrink-0 text-destructive" />
+                        <span>{renderBold(it)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </Reveal>
+            )}
+            {solution && (
+              <Reveal delay={0.1}>
+                <div className="relative h-full overflow-hidden rounded-3xl border border-primary/40 bg-primary/5 p-8 backdrop-blur glow-sm">
+                  <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-primary/20 blur-3xl" />
+                  <span className="relative inline-flex items-center gap-2 rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary">
+                    <Check className="h-3.5 w-3.5" /> A solução NC Brasil
+                  </span>
+                  <h2 className="relative mt-4 font-display text-2xl font-bold md:text-3xl">
+                    {solution.title ?? <>Uma plataforma <span className="text-gradient">completa</span> e pronta para escalar</>}
+                  </h2>
+                  <p className="relative mt-4 text-sm text-muted-foreground md:text-base">
+                    {typeof solution.desc === "string" ? renderBold(solution.desc) : solution.desc}
+                  </p>
+                  {solution.highlights && (
+                    <ul className="relative mt-6 grid gap-3 sm:grid-cols-2">
+                      {solution.highlights.map((h) => (
+                        <li key={h} className="flex items-start gap-2 text-sm">
+                          <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                          <span>{renderBold(h)}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </Reveal>
+            )}
+          </div>
+        </section>
+      )}
+
+
+
       {/* BENEFITS */}
       {benefits && benefits.length > 0 && (
         <section className="relative py-20 md:py-28">
