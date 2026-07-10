@@ -90,12 +90,6 @@ export const Route = createFileRoute("/sistemas/sistema-de-leilao")({
         { icon: ShieldCheck, title: "Segurança Jurídica", desc: "**Assinatura ICP-Brasil**, cronômetro sincronizado servidor, logs imutáveis e gravação do pregão como prova." },
         { icon: Video, title: "Transmissão HD ao vivo", desc: "Streaming **WebRTC + HLS adaptativo**, chat moderado, cronômetro sincronizado e gravação jurídica." },
       ]}
-      benefits={[
-        { icon: Gavel, title: "Multi-modalidade", desc: "**Judiciais, extrajudiciais, rurais e de arte** em uma única plataforma unificada." },
-        { icon: ShieldCheck, title: "Segurança Jurídica", desc: "Assinatura digital, **logs auditáveis** e certificação de todos os lances conforme legislação." },
-        { icon: Video, title: "Transmissão HD", desc: "Streaming com **cronômetro sincronizado** e chat moderado em tempo real." },
-        { icon: Globe2, title: "Alcance Nacional", desc: "SEO técnico e integração com **portais oficiais** para atrair arrematantes de todo o Brasil." },
-      ]}
       features={[
         { icon: FileSignature, title: "Cadastro rico de lotes", desc: "Fotos ilimitadas, vídeo 360°, laudos, matrículas e edital anexos." },
         { icon: Users, title: "Habilitação com KYC", desc: "Validação de CPF/CNPJ na Receita e aprovação por lote." },
