@@ -1,24 +1,30 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
-  BadgeCheck, Banknote, Bell, Building2, Clock, FileSignature, Gavel, Globe2, Lock, ShieldCheck, Users, Video,
+  Banknote, Bell, Building2, Clock, CreditCard, FileSignature, Gavel, Globe2,
+  Landmark, Lock, Rocket, ScrollText, Search, ShieldCheck, Smartphone,
+  Sparkles, Target, TrendingUp, Users, Video, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-leilao";
 
 const lpFaq = [
-        { q: "O sistema atende leilões judiciais?", a: "Sim. Atendemos **leilões judiciais e extrajudiciais** com edital, publicações e integração para juntas oficiais." },
-        { q: "Vocês oferecem transmissão ao vivo?", a: "Sim. Streaming em HD com **cronômetro sincronizado**, chat e histórico gravado do pregão." },
-        { q: "Como funciona o cálculo de comissão?", a: "Configuramos por leilão: **comissão do leiloeiro, taxa administrativa e ITBI** são calculados automaticamente." },
-        { q: "É possível personalizar a identidade visual?", a: "Sim. Todo o sistema é **white-label** — cores, logotipo, domínio próprio e edital personalizado." },
-        { q: "Qual o prazo de implantação?", a: "A implantação típica leva de **30 a 60 dias**, incluindo treinamento e leilão-piloto." },
-      ];
+  { q: "O sistema atende leilões judiciais e extrajudiciais?", a: "Sim. A plataforma é homologada para **leilões judiciais (CPC art. 879)** e **extrajudiciais (Decreto 21.981/32)**, com fluxos separados de edital, publicações e prestação de contas." },
+  { q: "Como funciona a transmissão ao vivo do pregão?", a: "Streaming em **HD adaptativo** com cronômetro sincronizado servidor-cliente, chat moderado, histórico gravado do pregão e **gravação disponibilizada como prova jurídica**." },
+  { q: "O sistema calcula comissões e impostos automaticamente?", a: "Sim. **Comissão do leiloeiro, taxa administrativa, ITBI, ICMS e IR** são calculados por lote conforme regras configuráveis, com split automático para leiloeiro, comitente e plataforma." },
+  { q: "É possível personalizar a marca?", a: "**100% white-label**: logotipo, cores, tipografia, domínio próprio (`leiloes.suaempresa.com.br`), edital personalizado e templates de e-mail." },
+  { q: "Quanto tempo leva a implantação?", a: "De **30 a 60 dias**, incluindo configuração, integrações com meios de pagamento, treinamento da equipe e **leilão-piloto acompanhado**." },
+  { q: "Como funciona a habilitação de arrematantes?", a: "Cadastro com **KYC completo** (CPF/CNPJ na Receita, upload de documentos, comprovante de residência) e aprovação por lote ou global, com trilha de auditoria." },
+  { q: "Suporta lances automáticos e anti-sniping?", a: "Sim. Lance máximo programado, notificação em tempo real e **prorrogação automática de 3 minutos** quando há lance nos últimos segundos — evita lances de última hora." },
+  { q: "Vocês fornecem suporte após a implantação?", a: "**Suporte 24/7 durante pregões** e SLA de resposta de 1h em dias úteis. Planos incluem evolução mensal, monitoramento e backups automatizados." },
+  { q: "É possível integrar com meu ERP ou juntas judiciais?", a: "Sim. API REST + webhooks para integração com **ERPs, TJs, DOE, cartórios eletrônicos e sistemas contábeis**." },
+];
 
 export const Route = createFileRoute("/sistemas/sistema-de-leilao")({
   head: () => buildLPMeta({
-    title: "Sistema de Leilão Online | Plataforma Completa — NC Brasil",
-    description: "Sistema profissional para leilões judiciais e extrajudiciais: cadastro de lotes, lances online e presenciais, transmissão ao vivo, split de comissões e conformidade legal.",
-    keywords: "sistema de leilão, plataforma de leilão online, leilão judicial, leilão extrajudicial, software para leiloeiro, sistema de leilão eletrônico",
+    title: "Sistema de Leilão Online | Plataforma White-Label para Leiloeiros — NC Brasil",
+    description: "Sistema profissional para leilões judiciais e extrajudiciais: cadastro de lotes, lances online e presenciais, transmissão ao vivo, split de comissões e conformidade legal completa.",
+    keywords: "sistema de leilão, plataforma de leilão online, leilão judicial, leilão extrajudicial, software para leiloeiro, sistema de leilão eletrônico, leilão ao vivo, white label leilão",
     canonical: URL,
     h1: "Sistema Profissional para Leilões Judiciais e Extrajudiciais",
     breadcrumbs: [
@@ -36,30 +42,154 @@ export const Route = createFileRoute("/sistemas/sistema-de-leilao")({
         { to: "/sistemas/sistema-de-leilao", label: "Sistema de Leilão" },
       ]}
       eyebrow="Sistema de Leilão"
-      h1={<>Plataforma Completa para <span className="text-gradient">Leilões Online</span></>}
-      intro={<>Solução robusta para <strong className="text-foreground">leiloeiros oficiais</strong>, tribunais e empresas: gestão de lotes, lances simultâneos online e presenciais, transmissão ao vivo e total conformidade com o <strong className="text-foreground">Decreto 21.981/32</strong> e o <strong className="text-foreground">CPC</strong>.</>}
+      h1={<>Plataforma completa para <span className="text-gradient">Leilões Online</span> com conformidade jurídica</>}
+      intro={<>Solução robusta para <strong className="text-foreground">leiloeiros oficiais</strong>, tribunais, bancos e empresas: gestão de lotes, lances simultâneos online e presenciais, transmissão ao vivo e total conformidade com o <strong className="text-foreground">Decreto 21.981/32</strong> e o <strong className="text-foreground">CPC art. 879-903</strong>.</>}
       stats={[
         { value: "500K+", label: "Lances processados" },
         { value: "99.9%", label: "Uptime garantido" },
-        { value: "24/7", label: "Monitoramento" },
+        { value: "24/7", label: "Suporte em pregões" },
         { value: "100%", label: "Conformidade legal" },
       ]}
+      clients={[
+        "Prefeituras", "Tribunais de Justiça", "Bancos", "Cooperativas Rurais",
+        "Leiloeiros Oficiais", "Cartórios", "Concessionárias", "Seguradoras",
+      ]}
+      problem={{
+        title: <>Leiloeiros que ainda operam <span className="text-destructive">no manual</span> perdem receita</>,
+        items: [
+          "**Planilhas e sites genéricos** não têm cronômetro sincronizado — resulta em contestação judicial.",
+          "Sem **transmissão ao vivo profissional**, o alcance fica restrito à sua região.",
+          "Cálculo manual de **comissão, ITBI e split** gera erro contábil e retrabalho.",
+          "Ausência de **KYC e trilha de auditoria** expõe o leiloeiro a fraudes e questionamentos.",
+          "Concorrentes com plataforma dedicada capturam **até 3x mais arrematantes**.",
+        ],
+      }}
+      solution={{
+        title: <>Uma plataforma que <span className="text-gradient">substitui 5 ferramentas</span> em um só ambiente</>,
+        desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> unifica cadastro de lotes, habilitação de arrematantes, pregão ao vivo, pagamento e prestação de contas — tudo com <strong className="text-foreground">assinatura digital, logs auditáveis e streaming HD</strong>. Pronto para escalar do pregão local ao alcance nacional.</>,
+        highlights: [
+          "**Multi-modalidade**: judicial, extrajudicial, rural, arte, veículos",
+          "**Anti-sniping** e lance automático nativos",
+          "**White-label** com domínio próprio",
+          "**API aberta** para ERP, TJ e contabilidade",
+          "**LGPD-ready** com trilha de auditoria",
+          "**PIX, boleto, cartão** e caução integrados",
+        ],
+      }}
       benefits={[
-        { icon: Gavel, title: "Multi-modalidade", desc: "Leilões **judiciais, extrajudiciais, rurais e de arte** em uma única plataforma unificada." },
+        { icon: Gavel, title: "Multi-modalidade", desc: "**Judiciais, extrajudiciais, rurais e de arte** em uma única plataforma unificada." },
         { icon: ShieldCheck, title: "Segurança Jurídica", desc: "Assinatura digital, **logs auditáveis** e certificação de todos os lances conforme legislação." },
-        { icon: Video, title: "Transmissão ao Vivo", desc: "Streaming HD integrado com **cronômetro de lances** e chat moderado em tempo real." },
-        { icon: Globe2, title: "Alcance Nacional", desc: "SEO técnico e integrações com **portais oficiais** para atrair arrematantes de todo o Brasil." },
+        { icon: Video, title: "Transmissão HD", desc: "Streaming com **cronômetro sincronizado** e chat moderado em tempo real." },
+        { icon: Globe2, title: "Alcance Nacional", desc: "SEO técnico e integração com **portais oficiais** para atrair arrematantes de todo o Brasil." },
       ]}
       features={[
-        { icon: FileSignature, title: "Cadastro de Lotes Rico", desc: "Múltiplas fotos, vídeos, laudos, matrículas e edital anexos por lote." },
-        { icon: Users, title: "Gestão de Arrematantes", desc: "Habilitação com KYC, upload de documentos e aprovação por lote." },
-        { icon: Bell, title: "Lances Automáticos", desc: "Lance máximo pré-programado, notificações push, e-mail e SMS." },
-        { icon: Banknote, title: "Comissões e Pagamentos", desc: "Cálculo automático de comissão, taxa e split para leiloeiro." },
-        { icon: Clock, title: "Prorrogação Anti-Sniping", desc: "Extensão automática do prazo quando há lance nos últimos segundos." },
-        { icon: Lock, title: "LGPD & Conformidade", desc: "Trilha de auditoria completa, backups e política de retenção." },
+        { icon: FileSignature, title: "Cadastro rico de lotes", desc: "Fotos ilimitadas, vídeo 360°, laudos, matrículas e edital anexos." },
+        { icon: Users, title: "Habilitação com KYC", desc: "Validação de CPF/CNPJ na Receita e aprovação por lote." },
+        { icon: Bell, title: "Lances automáticos", desc: "Lance máximo programado com notificação push, e-mail e SMS." },
+        { icon: Banknote, title: "Comissões e split", desc: "Cálculo automático de comissão, taxa, ITBI e repasse ao leiloeiro." },
+        { icon: Clock, title: "Anti-sniping", desc: "Prorrogação automática quando há lance nos últimos segundos." },
+        { icon: Lock, title: "LGPD & conformidade", desc: "Trilha de auditoria, backups e política de retenção." },
+      ]}
+      modules={[
+        { icon: ScrollText, title: "Módulo de Editais", items: [
+          "Editor rico com **modelos por tipo de leilão**",
+          "Publicação automática em DOE e portais",
+          "Versionamento e histórico de retificações",
+          "Geração de PDF assinado digitalmente",
+        ]},
+        { icon: Users, title: "Módulo de Arrematantes", items: [
+          "Cadastro com **KYC integrado à Receita**",
+          "Upload de documentos com OCR",
+          "Aprovação global ou por lote",
+          "Blacklist e histórico de inadimplência",
+        ]},
+        { icon: Video, title: "Módulo Pregão ao Vivo", items: [
+          "Streaming **HD adaptativo** (WebRTC + HLS)",
+          "Cronômetro sincronizado servidor",
+          "Chat moderado e reações",
+          "Gravação para prova jurídica",
+        ]},
+        { icon: Wallet, title: "Módulo Financeiro", items: [
+          "**PIX, boleto e cartão** integrados",
+          "Split automático leiloeiro/comitente",
+          "Caução refundável",
+          "Conciliação bancária automatizada",
+        ]},
+        { icon: Landmark, title: "Módulo Prestação de Contas", items: [
+          "Relatório oficial por leilão",
+          "Exportação para **contabilidade e junta**",
+          "Nota fiscal automática",
+          "Auditoria completa de eventos",
+        ]},
+        { icon: Smartphone, title: "App Mobile Arrematante", items: [
+          "Apps **iOS e Android nativos**",
+          "Push de novos lotes e status",
+          "Lance em 1 toque com biometria",
+          "Assistir pregão pelo celular",
+        ]},
+      ]}
+      useCases={[
+        { icon: Gavel, title: "Leiloeiros Oficiais", desc: "Digitalize 100% do pregão — do edital ao **auto de arrematação**, com prestação de contas automática." },
+        { icon: Building2, title: "Tribunais de Justiça", desc: "Leilão judicial homologado, integração com **PJe** e edital publicado no DOE." },
+        { icon: Landmark, title: "Bancos e Financeiras", desc: "Recuperação de garantias (imóveis e veículos) com **compliance bancário**." },
+        { icon: Target, title: "Concessionárias e Frotistas", desc: "Leilão de veículos com laudo cautelar e **integração com Detran**." },
+        { icon: TrendingUp, title: "Cooperativas Rurais", desc: "Leilão de **gado, terras e maquinário** com pesagem integrada." },
+        { icon: Sparkles, title: "Galerias e Casas de Arte", desc: "Catálogo curado, **certificado de autenticidade** e pregão internacional." },
+      ]}
+      integrations={[
+        { name: "PIX", category: "Pagamento" },
+        { name: "Pagar.me", category: "Pagamento" },
+        { name: "Stripe", category: "Pagamento" },
+        { name: "PagSeguro", category: "Pagamento" },
+        { name: "Receita Federal", category: "KYC" },
+        { name: "Serasa", category: "KYC" },
+        { name: "PJe", category: "Judicial" },
+        { name: "DOE", category: "Publicação" },
+        { name: "Detran", category: "Veículos" },
+        { name: "SAP", category: "ERP" },
+        { name: "TOTVS", category: "ERP" },
+        { name: "Google Analytics", category: "Analytics" },
+        { name: "Meta Pixel", category: "Marketing" },
+        { name: "OneSignal", category: "Push" },
+        { name: "SendGrid", category: "E-mail" },
+      ]}
+      security={[
+        { icon: ShieldCheck, title: "LGPD Compliance", desc: "DPO dedicado, consentimento granular e **direito ao esquecimento** implementado." },
+        { icon: Lock, title: "Criptografia AES-256", desc: "Dados em repouso e em trânsito com **TLS 1.3** obrigatório." },
+        { icon: FileSignature, title: "Assinatura Digital", desc: "Integração com **ICP-Brasil** para autos e recibos." },
+        { icon: Search, title: "Trilha de Auditoria", desc: "Todo evento é logado — quem fez, quando, de onde e o que mudou." },
+      ]}
+      timeline={[
+        { step: "Semana 1-2", title: "Descoberta e Setup", desc: "Kick-off, mapeamento de regras de negócio, provisionamento da instância e **configuração white-label** (cores, domínio, logo)." },
+        { step: "Semana 3-4", title: "Configuração e Integrações", desc: "Meios de pagamento, KYC, e-mail transacional, DOE e **integrações com seu ERP/TJ**." },
+        { step: "Semana 5-6", title: "Treinamento", desc: "Capacitação da equipe: **operadores, moderadores e financeiro**, com manual e vídeos." },
+        { step: "Semana 7-8", title: "Leilão-piloto acompanhado", desc: "Primeiro pregão com **suporte in-loco em tempo real** e ajustes finos." },
+        { step: "Contínuo", title: "Evolução e Suporte", desc: "Sprints mensais de melhoria, **SLA 24/7 durante pregões** e monitoramento proativo." },
+      ]}
+      comparative={{
+        usLabel: "NC Brasil",
+        themLabel: "Plataformas genéricas",
+        rows: [
+          { feature: "White-label com domínio próprio", us: true, them: false },
+          { feature: "Cronômetro sincronizado servidor", us: true, them: false },
+          { feature: "Anti-sniping nativo", us: true, them: false },
+          { feature: "Split automático de comissão", us: true, them: false },
+          { feature: "Transmissão HD com gravação jurídica", us: true, them: "Básico" },
+          { feature: "Apps iOS e Android nativos", us: true, them: false },
+          { feature: "API aberta para ERP e TJ", us: true, them: false },
+          { feature: "Suporte 24/7 durante pregões", us: true, them: false },
+          { feature: "Taxa por lance", us: "0%", them: "1-3%" },
+          { feature: "Prazo de implantação", us: "30-60 dias", them: "90+ dias" },
+        ],
+      }}
+      testimonials={[
+        { quote: "Migramos do papel para a plataforma da NC Brasil e triplicamos o número de arrematantes em 6 meses. O suporte durante o pregão é impecável.", author: "Dr. Carlos Andrade", role: "Leiloeiro Oficial — SP" },
+        { quote: "A conformidade com o CPC e a assinatura ICP-Brasil eliminaram nossas contestações judiciais. Recomendo para qualquer tribunal.", author: "Juíza Marina Ferreira", role: "Vara Cível — MG" },
+        { quote: "O split automático e a integração com nosso ERP economizaram 40 horas/mês do time financeiro. ROI em 3 meses.", author: "Rafael Costa", role: "CFO — Cooperativa Rural" },
       ]}
       faq={lpFaq}
       finalCtaTitle={<>Pronto para <span className="text-gradient">digitalizar seus leilões</span>?</>}
+      finalCtaDesc={<>Agende uma <strong className="text-foreground">demonstração ao vivo</strong> — mostramos a plataforma com seus lotes reais e enviamos proposta em <strong className="text-foreground">até 24 horas</strong>.</>}
     />
   ),
 });
