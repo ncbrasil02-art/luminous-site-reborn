@@ -642,6 +642,7 @@ export function buildLPMeta({
   h1,
   breadcrumbs,
   faq,
+  ogImage,
 }: {
   title: string;
   description: string;
@@ -650,7 +651,12 @@ export function buildLPMeta({
   h1: string;
   breadcrumbs: { name: string; url: string }[];
   faq?: { q: string; a: string }[];
+  ogImage?: string;
 }) {
+  const OG_BASE = "https://luminous-site-reborn.lovable.app";
+  const ogImageUrl = ogImage
+    ? (ogImage.startsWith("http") ? ogImage : `${OG_BASE}${ogImage}`)
+    : undefined;
   const breadcrumbLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -683,10 +689,19 @@ export function buildLPMeta({
       { property: "og:type", content: "website" },
       { property: "og:url", content: canonical },
       { property: "og:locale", content: "pt_BR" },
+      ...(ogImageUrl
+        ? [
+            { property: "og:image", content: ogImageUrl },
+            { property: "og:image:width", content: "1200" },
+            { property: "og:image:height", content: "630" },
+            { name: "twitter:image", content: ogImageUrl },
+          ]
+        : []),
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
     ],
+
     links: [{ rel: "canonical", href: canonical }],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(breadcrumbLd) },

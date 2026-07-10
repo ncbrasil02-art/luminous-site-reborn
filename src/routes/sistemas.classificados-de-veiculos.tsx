@@ -33,6 +33,7 @@ export const Route = createFileRoute("/sistemas/classificados-de-veiculos")({
       { name: "Classificados de Veículos", url: URL },
     ],
     faq: lpFaq,
+    ogImage: "/og/classificados-veiculos.jpg",
   }),
   component: () => (
     <LandingPage
