@@ -5,9 +5,11 @@ import {
   Check,
   ChevronRight,
   MessageCircle,
+  Minus,
   Rocket,
   Sparkles,
   Star,
+  X,
   type LucideIcon,
 } from "lucide-react";
 
@@ -19,6 +21,13 @@ export type LPFaq = { q: string; a: string };
 export type LPStat = { value: string; label: string };
 export type LPTestimonial = { quote: string; author: string; role: string };
 export type LPBreadcrumb = { to: string; label: string };
+export type LPModule = { icon: LucideIcon; title: string; items: string[] };
+export type LPUseCase = { icon: LucideIcon; title: string; desc: string };
+export type LPIntegration = { name: string; category?: string };
+export type LPSecurityItem = { icon: LucideIcon; title: string; desc: string };
+export type LPTimelineStep = { step: string; title: string; desc: string };
+export type LPCompareRow = { feature: string; us: boolean | string; them: boolean | string };
+export type LPGalleryItem = { src: string; alt: string; caption?: string };
 
 export type LandingPageProps = {
   breadcrumbs: LPBreadcrumb[];
@@ -28,10 +37,28 @@ export type LandingPageProps = {
   primaryCta?: { to: string; label: string };
   secondaryCta?: { to: string; label: string };
   stats?: LPStat[];
+  clientsTitle?: React.ReactNode;
+  clients?: string[];
+  problem?: { title?: React.ReactNode; items: string[] };
+  solution?: { title?: React.ReactNode; desc: React.ReactNode; highlights?: string[] };
   benefitsTitle?: React.ReactNode;
   benefits?: LPBenefit[];
   featuresTitle?: React.ReactNode;
   features?: LPFeature[];
+  modulesTitle?: React.ReactNode;
+  modules?: LPModule[];
+  useCasesTitle?: React.ReactNode;
+  useCases?: LPUseCase[];
+  integrationsTitle?: React.ReactNode;
+  integrations?: LPIntegration[];
+  securityTitle?: React.ReactNode;
+  security?: LPSecurityItem[];
+  timelineTitle?: React.ReactNode;
+  timeline?: LPTimelineStep[];
+  comparativeTitle?: React.ReactNode;
+  comparative?: { usLabel?: string; themLabel?: string; rows: LPCompareRow[] };
+  galleryTitle?: React.ReactNode;
+  gallery?: LPGalleryItem[];
   testimonials?: LPTestimonial[];
   faqTitle?: React.ReactNode;
   faq?: LPFaq[];
