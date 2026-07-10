@@ -329,6 +329,222 @@ export function LandingPage({
         </section>
       )}
 
+      {/* MODULES */}
+      {modules && modules.length > 0 && (
+        <section className="relative py-20 md:py-28">
+          <div className="mx-auto max-w-6xl px-4 md:px-6">
+            <SectionHeading
+              eyebrow="Módulos"
+              title={modulesTitle ?? <>Módulos que compõem <span className="text-gradient">a plataforma</span></>}
+            />
+            <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {modules.map((m, i) => (
+                <Reveal key={m.title} delay={i * 0.05}>
+                  <div className="h-full rounded-2xl border border-border bg-card/40 p-6 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40">
+                    <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20">
+                      <m.icon className="h-5 w-5" />
+                    </div>
+                    <h3 className="font-display text-lg font-semibold">{m.title}</h3>
+                    <ul className="mt-3 space-y-1.5">
+                      {m.items.map((it) => (
+                        <li key={it} className="flex items-start gap-2 text-sm text-muted-foreground">
+                          <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-primary" />
+                          <span>{renderBold(it)}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* USE CASES */}
+      {useCases && useCases.length > 0 && (
+        <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
+          <div className="mx-auto max-w-6xl px-4 md:px-6">
+            <SectionHeading
+              eyebrow="Casos de uso"
+              title={useCasesTitle ?? <>Feito para <span className="text-gradient">quem faz acontecer</span></>}
+            />
+            <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {useCases.map((u, i) => (
+                <Reveal key={u.title} delay={i * 0.04}>
+                  <div className="group h-full rounded-2xl border border-border bg-card/60 p-6 backdrop-blur transition-all hover:border-primary/40 hover:glow-sm">
+                    <u.icon className="h-8 w-8 text-primary transition-transform group-hover:scale-110" />
+                    <h3 className="mt-4 font-display text-lg font-semibold">{u.title}</h3>
+                    <p className="mt-2 text-sm text-muted-foreground">{renderBold(u.desc)}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* INTEGRATIONS */}
+      {integrations && integrations.length > 0 && (
+        <section className="relative py-20 md:py-28">
+          <div className="mx-auto max-w-6xl px-4 md:px-6">
+            <SectionHeading
+              eyebrow="Integrações"
+              title={integrationsTitle ?? <>Conecta com <span className="text-gradient">seu ecossistema</span></>}
+            />
+            <div className="mt-12 flex flex-wrap justify-center gap-3">
+              {integrations.map((it, i) => (
+                <Reveal key={it.name} delay={i * 0.02}>
+                  <div className="rounded-full border border-border bg-card/60 px-5 py-2.5 text-sm font-medium backdrop-blur transition-all hover:border-primary/50 hover:text-primary">
+                    {it.name}
+                    {it.category && <span className="ml-2 text-xs text-muted-foreground">· {it.category}</span>}
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* SECURITY */}
+      {security && security.length > 0 && (
+        <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
+          <div className="absolute inset-0 grid-pattern opacity-20" />
+          <div className="relative mx-auto max-w-6xl px-4 md:px-6">
+            <SectionHeading
+              eyebrow="Segurança"
+              title={securityTitle ?? <>Segurança e <span className="text-gradient">conformidade</span> em primeiro lugar</>}
+            />
+            <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+              {security.map((s, i) => (
+                <Reveal key={s.title} delay={i * 0.04}>
+                  <div className="h-full rounded-2xl border border-border bg-card/60 p-6 text-center backdrop-blur">
+                    <div className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20">
+                      <s.icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="mt-4 font-semibold">{s.title}</h3>
+                    <p className="mt-2 text-sm text-muted-foreground">{renderBold(s.desc)}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* TIMELINE */}
+      {timeline && timeline.length > 0 && (
+        <section className="relative py-20 md:py-28">
+          <div className="mx-auto max-w-4xl px-4 md:px-6">
+            <SectionHeading
+              eyebrow="Linha do tempo"
+              title={timelineTitle ?? <>Como implantamos <span className="text-gradient">seu projeto</span></>}
+            />
+            <ol className="relative mt-14 space-y-8 border-l border-primary/30 pl-8">
+              {timeline.map((t, i) => (
+                <Reveal key={t.title} delay={i * 0.05}>
+                  <li className="relative">
+                    <span className="absolute -left-[42px] flex h-8 w-8 items-center justify-center rounded-full bg-gradient-primary text-xs font-bold text-primary-foreground glow-sm">
+                      {i + 1}
+                    </span>
+                    <div className="rounded-2xl border border-border bg-card/60 p-5 backdrop-blur">
+                      <div className="text-xs font-semibold uppercase tracking-wider text-primary">{t.step}</div>
+                      <h3 className="mt-1 font-display text-lg font-semibold">{t.title}</h3>
+                      <p className="mt-2 text-sm text-muted-foreground">{renderBold(t.desc)}</p>
+                    </div>
+                  </li>
+                </Reveal>
+              ))}
+            </ol>
+          </div>
+        </section>
+      )}
+
+      {/* COMPARATIVE */}
+      {comparative && comparative.rows.length > 0 && (
+        <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
+          <div className="mx-auto max-w-5xl px-4 md:px-6">
+            <SectionHeading
+              eyebrow="Comparativo"
+              title={comparativeTitle ?? <>Por que somos <span className="text-gradient">a melhor escolha</span></>}
+            />
+            <Reveal>
+              <div className="mt-14 overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-border bg-surface/60">
+                      <th className="px-4 py-4 text-left font-semibold md:px-6">Recurso</th>
+                      <th className="px-4 py-4 text-center font-semibold text-primary md:px-6">
+                        {comparative.usLabel ?? "NC Brasil"}
+                      </th>
+                      <th className="px-4 py-4 text-center font-semibold text-muted-foreground md:px-6">
+                        {comparative.themLabel ?? "Concorrência"}
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {comparative.rows.map((r, i) => (
+                      <tr key={r.feature} className={i % 2 === 0 ? "bg-transparent" : "bg-surface/30"}>
+                        <td className="px-4 py-3.5 md:px-6">{r.feature}</td>
+                        <td className="px-4 py-3.5 text-center md:px-6">
+                          {typeof r.us === "boolean"
+                            ? r.us
+                              ? <Check className="mx-auto h-5 w-5 text-primary" />
+                              : <Minus className="mx-auto h-5 w-5 text-muted-foreground" />
+                            : <span className="font-medium text-primary">{r.us}</span>}
+                        </td>
+                        <td className="px-4 py-3.5 text-center text-muted-foreground md:px-6">
+                          {typeof r.them === "boolean"
+                            ? r.them
+                              ? <Check className="mx-auto h-5 w-5 text-muted-foreground/70" />
+                              : <X className="mx-auto h-5 w-5 text-muted-foreground/50" />
+                            : <span>{r.them}</span>}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      )}
+
+      {/* GALLERY */}
+      {gallery && gallery.length > 0 && (
+        <section className="relative py-20 md:py-28">
+          <div className="mx-auto max-w-6xl px-4 md:px-6">
+            <SectionHeading
+              eyebrow="Galeria"
+              title={galleryTitle ?? <>Veja a plataforma <span className="text-gradient">em ação</span></>}
+            />
+            <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {gallery.map((g, i) => (
+                <Reveal key={g.src} delay={i * 0.05}>
+                  <figure className="group overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img
+                        src={g.src}
+                        alt={g.alt}
+                        loading="lazy"
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    {g.caption && (
+                      <figcaption className="border-t border-border px-4 py-3 text-xs text-muted-foreground">
+                        {g.caption}
+                      </figcaption>
+                    )}
+                  </figure>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+
+
       {/* TESTIMONIALS */}
       {testimonials && testimonials.length > 0 && (
         <section className="relative py-20 md:py-28">
