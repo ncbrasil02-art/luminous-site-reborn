@@ -34,19 +34,35 @@ export function Reveal({
   );
 }
 
+function slugify(input: unknown): string | undefined {
+  if (typeof input !== "string") return undefined;
+  return input
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 60) || undefined;
+}
+
 export function SectionHeading({
   eyebrow,
   title,
   description,
   align = "center",
   className,
+  id,
+  as: As = "h2",
 }: {
   eyebrow?: string;
   title: ReactNode;
   description?: ReactNode;
   align?: "center" | "left";
   className?: string;
+  id?: string;
+  as?: "h2" | "h3";
 }) {
+  const headingId = id ?? slugify(eyebrow) ?? slugify(typeof title === "string" ? title : undefined);
   return (
     <div
       className={cn(
@@ -64,10 +80,11 @@ export function SectionHeading({
         </Reveal>
       )}
       <Reveal delay={0.05}>
-        <h2 className="mt-4 font-display text-3xl font-bold leading-tight md:text-5xl">
+        <As id={headingId} className="mt-4 font-display text-3xl font-bold leading-tight md:text-5xl scroll-mt-24">
           {title}
-        </h2>
+        </As>
       </Reveal>
+
       {description && (
         <Reveal delay={0.1}>
           <p className="mt-4 text-base text-muted-foreground md:text-lg">
