@@ -206,9 +206,10 @@ export function LandingPage({
       {clients && clients.length > 0 && (
         <section className="relative border-y border-border bg-surface/30 py-10">
           <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <p className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">
+            <h2 className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">
               {clientsTitle ?? "Empresas que confiam na NC Brasil"}
-            </p>
+            </h2>
+
             <div className="marquee-mask mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
               {clients.map((c) => (
                 <span key={c} className="font-display text-lg font-semibold text-muted-foreground/70 transition-colors hover:text-foreground">
