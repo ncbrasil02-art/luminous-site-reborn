@@ -34,7 +34,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-leilao-rural")({
     ],
     faq: lpFaq,
     ogImage: "/og/leilao-rural.jpg",
-  },)
+  }),
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/sistemas", label: "Sistemas" }, { to: "/sistemas/sistema-de-leilao-rural", label: "Leilão Rural" }]}
