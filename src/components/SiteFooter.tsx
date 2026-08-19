@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone, Zap } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
+import { NewsDisplay } from "./NewsDisplay";
+
 
 const cols = [
   {
