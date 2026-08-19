@@ -31,7 +31,8 @@ function NewsIndex() {
         {featuredNews && (
           <Reveal>
             <Link 
-              to={`/noticias/${featuredNews.slug}`}
+              to="/noticias/$slug"
+              params={{ slug: featuredNews.slug }}
               className="relative mt-12 block overflow-hidden rounded-[2.5rem] border border-border bg-card group"
             >
               <div className="grid lg:grid-cols-2">
