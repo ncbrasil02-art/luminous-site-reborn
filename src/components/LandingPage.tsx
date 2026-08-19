@@ -1,6 +1,8 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { newsData } from "@/lib/news.data";
+import { NewsDisplay } from "./NewsDisplay";
 import { trackRedirect } from "@/lib/analytics";
 import {
   ArrowRight,
@@ -66,6 +68,7 @@ export type LandingPageProps = {
   faq?: LPFaq[];
   finalCtaTitle?: React.ReactNode;
   finalCtaDesc?: React.ReactNode;
+  relatedNewsTags?: string[]; // New prop for related news
 };
 
 function renderBold(text: string) {
@@ -116,6 +119,7 @@ export function LandingPage({
   faq,
   finalCtaTitle,
   finalCtaDesc,
+  relatedNewsTags = [],
 }: LandingPageProps) {
   const search = useRouterState({ select: (s) => s.location.search });
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -585,6 +589,17 @@ export function LandingPage({
           </div>
         </section>
       )}
+
+      {/* RELATED NEWS */}
+      <NewsDisplay 
+        filterTags={relatedNewsTags} 
+        title={
+          <>
+            Conteúdo <span className="text-gradient">Relacionado</span>
+          </>
+        }
+        eyebrow="Blog & Insights"
+      />
 
       {/* FAQ */}
       {faq && faq.length > 0 && (

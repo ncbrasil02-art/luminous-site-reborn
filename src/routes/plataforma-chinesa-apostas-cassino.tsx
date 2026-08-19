@@ -236,6 +236,7 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
       faq={lpFaq}
       finalCtaTitle={<>Pronto para lançar seu <span className="text-gradient">operador de iGaming</span>?</>}
       finalCtaDesc={<>Receba um <strong className="text-foreground">plano executivo em 24h</strong> com arquitetura, catálogo de jogos, orçamento, cronograma e roadmap de licenciamento SPA/MF. <strong className="text-foreground">Consultoria estratégica gratuita</strong> com nosso time de iGaming.</>}
+      relatedNewsTags={["Cassino","Jogos Online","Sistemas"]}
     />
   ),
 });

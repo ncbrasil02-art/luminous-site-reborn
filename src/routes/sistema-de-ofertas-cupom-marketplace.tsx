@@ -48,6 +48,7 @@ export const Route = createFileRoute("/sistema-de-ofertas-cupom-marketplace")({
         { icon: Truck, title: "Logística Integrada", desc: "Melhor Envio, Correios API e frete grátis condicional por lojista." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["Marketplace","Cupom","E-commerce"]}
     />
   ),
 });

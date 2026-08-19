@@ -153,6 +153,7 @@ export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
       faq={lpFaq}
       finalCtaTitle={<>Pronto para <span className="text-gradient">profissionalizar sua revenda</span> com tecnologia?</>}
       finalCtaDesc={<>Fale com nossa equipe automotiva. Fazemos <strong className="text-foreground">demonstração ao vivo com dados da sua operação</strong>, análise de ROI e proposta comercial em até 48h.</>}
+      relatedNewsTags={["Veículos","Revenda","Sistemas"]}
     />
   ),
 });

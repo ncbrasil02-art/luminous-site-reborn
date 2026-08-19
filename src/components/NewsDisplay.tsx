@@ -5,8 +5,23 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
-export function NewsDisplay() {
-  const latestNews = newsData.slice(0, 10); // Show top 10 for carousel
+export function NewsDisplay({ 
+  filterTags = [], 
+  title, 
+  eyebrow 
+}: { 
+  filterTags?: string[];
+  title?: React.ReactNode;
+  eyebrow?: string;
+}) {
+  const filteredNews = filterTags.length > 0 
+    ? newsData.filter(news => news.tags.some(tag => filterTags.includes(tag)))
+    : newsData;
+    
+  const latestNews = filteredNews.slice(0, 10);
+  
+  if (latestNews.length === 0 && filterTags.length > 0) return null;
+
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: 'start',
     loop: true,
@@ -53,7 +68,7 @@ export function NewsDisplay() {
               className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-[10px] font-black uppercase tracking-[0.2em] text-primary mb-4"
             >
               <Newspaper className="h-3.5 w-3.5" />
-              Notícias NC
+              {eyebrow || "Notícias NC"}
             </motion.span>
             <motion.h2 
               initial={{ opacity: 0, y: 10 }}
@@ -62,8 +77,12 @@ export function NewsDisplay() {
               transition={{ delay: 0.1 }}
               className="font-display text-4xl font-bold md:text-5xl leading-tight"
             >
-              Fique por dentro das <br />
-              <span className="text-gradient">Últimas Novidades</span>
+              {title || (
+                <>
+                  Fique por dentro das <br />
+                  <span className="text-gradient">Últimas Novidades</span>
+                </>
+              )}
             </motion.h2>
           </div>
           

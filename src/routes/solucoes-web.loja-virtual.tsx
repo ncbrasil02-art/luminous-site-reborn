@@ -48,6 +48,7 @@ export const Route = createFileRoute("/solucoes-web/loja-virtual")({
         { icon: ShieldCheck, title: "Antifraude", desc: "Análise automática de risco com **ClearSale, Konduto ou Cybersource**." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["E-commerce","Loja Virtual","Sistemas"]}
     />
   ),
 });

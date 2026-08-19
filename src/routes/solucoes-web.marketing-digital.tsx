@@ -48,6 +48,7 @@ export const Route = createFileRoute("/solucoes-web/marketing-digital")({
         { icon: Sparkles, title: "Copywriting", desc: "Criativos com **hooks virais e ganchos de conversão** testados A/B." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["Marketing Digital","Facebook Ads","Google Ads"]}
     />
   ),
 });

@@ -230,6 +230,7 @@ export const Route = createFileRoute("/sistema-de-raspadinha")({
       faq={lpFaq}
       finalCtaTitle={<>Pronto para lançar sua <span className="text-gradient">plataforma de raspadinhas</span>?</>}
       finalCtaDesc={<>Receba um <strong className="text-foreground">plano executivo em 24h</strong> com modelo legal, arquitetura, prazo, investimento e projeção de GGR. <strong className="text-foreground">Consultoria estratégica gratuita</strong>.</>}
+      relatedNewsTags={["Raspadinha","Sorteios","Sistemas"]}
     />
   ),
 });

@@ -48,6 +48,7 @@ export const Route = createFileRoute("/sistema-de-leilao-de-centavos")({
         { icon: ShieldCheck, title: "Antifraude Robusto", desc: "**Device fingerprint, KYC, limite diário e blacklist** — controle multicontas." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["Leilão","E-commerce","Sistemas"]}
     />
   ),
 });

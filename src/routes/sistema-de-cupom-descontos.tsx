@@ -48,6 +48,7 @@ export const Route = createFileRoute("/sistema-de-cupom-descontos")({
         { icon: Users, title: "White Label", desc: "Marca, cores, domínio e app próprios — 100% customizável." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["Cupom","E-commerce","Sistemas"]}
     />
   ),
 });

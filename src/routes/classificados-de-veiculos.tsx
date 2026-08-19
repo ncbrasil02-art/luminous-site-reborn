@@ -153,6 +153,7 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
       faq={lpFaq}
       finalCtaTitle={<>Pronto para lançar o <span className="text-gradient">próximo grande portal automotivo</span>?</>}
       finalCtaDesc={<>Fale com nossa equipe de produto. Enviamos <strong className="text-foreground">demo ao vivo, análise de mercado da sua região</strong> e proposta comercial em até 48h.</>}
+      relatedNewsTags={["Veículos","Classificados","Sistemas"]}
     />
   ),
 });
