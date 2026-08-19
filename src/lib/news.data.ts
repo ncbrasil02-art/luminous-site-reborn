@@ -34,7 +34,7 @@ export const newsData: NewsPost[] = [
       "Marketing",
       "Marketing Digital"
     ],
-    "image_url": "/news/instagram-para-empresas.jpg",
+    "image_url": "/news/instagram-b9-type-ss-1024x576.jpg",
     "thumb_id": "50995"
   },
   {
@@ -52,7 +52,7 @@ export const newsData: NewsPost[] = [
       "Software Personalizado",
       "Software único"
     ],
-    "image_url": "/news/software.jpeg",
+    "image_url": "/news/2014011315350452d407a830ca4-1024x427.jpeg",
     "thumb_id": "50991"
   },
   {
@@ -71,7 +71,7 @@ export const newsData: NewsPost[] = [
       "Sistemas Sob Demanda",
       "Software"
     ],
-    "image_url": "/news/programa-de-ordem-de-serviço.jpeg",
+    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
     "thumb_id": "50969"
   },
   {
