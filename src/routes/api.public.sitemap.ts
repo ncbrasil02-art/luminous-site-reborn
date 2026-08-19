@@ -80,13 +80,13 @@ export const Route = createFileRoute('/api/public/sitemap')({
           `;
         }).join('')
 
-        const sitemap = \`<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  \${staticUrls}
-  \${newsUrls}
-</urlset>\`.trim()
+        const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+          staticUrls +
+          newsUrls +
+          '</urlset>'
 
-        return new Response(sitemap, {
+        return new Response(sitemapXml.trim(), {
           headers: {
             'Content-Type': 'application/xml; charset=utf-8',
             'Cache-Control': 'public, max-age=86400'
