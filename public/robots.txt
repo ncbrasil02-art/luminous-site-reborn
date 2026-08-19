@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /admin
+Disallow: /sistemas/
 
-Sitemap: https://www.ncbrasil.com.br/api/public/sitemap
+Sitemap: https://www.ncbrasil.com.br/sitemap.xml

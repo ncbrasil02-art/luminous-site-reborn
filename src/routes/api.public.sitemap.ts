@@ -37,14 +37,27 @@ export const Route = createFileRoute('/api/public/sitemap')({
           { path: '/orcamento', priority: '0.9' }
         ]
 
-        const newsUrls = newsData.map(post => `
-          <url>
-            <loc>${baseUrl}/noticias/${post.slug}</loc>
-            <lastmod>${new Date(post.date).toISOString().split('T')[0]}</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.8</priority>
-          </url>
-        `).join('')
+        const newsUrls = newsData.map(post => {
+          // Parse WordPress-style date "Tue, 07 Aug 2018 15:56:10 +0000"
+          let dateStr = today;
+          try {
+            const date = new Date(post.date);
+            if (!isNaN(date.getTime())) {
+              dateStr = date.toISOString().split('T')[0];
+            }
+          } catch (e) {
+            // fallback to today if invalid
+          }
+
+          return `
+            <url>
+              <loc>${baseUrl}/noticias/${post.slug}</loc>
+              <lastmod>${dateStr}</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>0.8</priority>
+            </url>
+          `;
+        }).join('')
 
         const staticUrls = staticRoutes.map(route => `
           <url>
