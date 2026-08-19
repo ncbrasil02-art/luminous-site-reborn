@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { newsData } from "@/lib/news.data";
 import { NewsDisplay } from "./NewsDisplay";
 import { trackRedirect } from "@/lib/analytics";
-import { buildMeta } from "@/lib/seo";
 import {
   ArrowRight,
   Check,
