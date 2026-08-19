@@ -110,8 +110,8 @@ export const Route = createFileRoute("/programa-de-ordem-de-servico")({
               <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-card/50 p-2 backdrop-blur-sm shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-transparent opacity-50" />
                 <img 
-                  src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg" 
-                  alt="Interface do Sistema de Ordem de Serviço" 
+                  src="/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg" 
+                  alt="Interface do Sistema de Ordem de Serviço"
                   className="aspect-[4/3] w-full rounded-2xl object-cover"
                 />
                 <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between rounded-xl border border-white/10 bg-black/40 p-4 backdrop-blur-md">
