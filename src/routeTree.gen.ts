@@ -43,7 +43,6 @@ import { Route as SolucoesWebLojaVirtualRouteImport } from './routes/solucoes-we
 import { Route as SolucoesWebLandingPagesRouteImport } from './routes/solucoes-web.landing-pages'
 import { Route as SolucoesWebHospedagemRouteImport } from './routes/solucoes-web.hospedagem'
 import { Route as SolucoesWebDesenvolvimentoDeSitesRouteImport } from './routes/solucoes-web.desenvolvimento-de-sites'
-import { Route as SitemapXmlRouteImport } from './routes/sitemap.xml'
 import { Route as SistemasSlugRouteImport } from './routes/sistemas.$slug'
 import { Route as ServicosSistemasWebRouteImport } from './routes/servicos.sistemas-web'
 import { Route as ServicosIdentidadeVisualRouteImport } from './routes/servicos.identidade-visual'
@@ -70,6 +69,7 @@ import { Route as AdminNoticiasRouteImport } from './routes/admin.noticias'
 import { Route as AdminImportarRouteImport } from './routes/admin.importar'
 import { Route as NoticiasTagTagRouteImport } from './routes/noticias.tag.$tag'
 import { Route as NoticiasCategoriaCategoryRouteImport } from './routes/noticias.categoria.$category'
+import { Route as ApiPublicSitemapRouteImport } from './routes/api.public.sitemap'
 import { Route as ApiPublicRssRouteImport } from './routes/api.public.rss'
 import { Route as AdminNoticiasNovaRouteImport } from './routes/admin.noticias.nova'
 import { Route as AdminNoticiasIdRouteImport } from './routes/admin.noticias.$id'
@@ -253,11 +253,6 @@ const SolucoesWebDesenvolvimentoDeSitesRoute =
     path: '/desenvolvimento-de-sites',
     getParentRoute: () => SolucoesWebRoute,
   } as any)
-const SitemapXmlRoute = SitemapXmlRouteImport.update({
-  id: '/sitemap/xml',
-  path: '/sitemap/xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const SistemasSlugRoute = SistemasSlugRouteImport.update({
   id: '/sistemas/$slug',
   path: '/sistemas/$slug',
@@ -399,6 +394,11 @@ const NoticiasCategoriaCategoryRoute =
     path: '/noticias/categoria/$category',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiPublicSitemapRoute = ApiPublicSitemapRouteImport.update({
+  id: '/api/public/sitemap',
+  path: '/api/public/sitemap',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicRssRoute = ApiPublicRssRouteImport.update({
   id: '/api/public/rss',
   path: '/api/public/rss',
@@ -465,7 +465,6 @@ export interface FileRoutesByFullPath {
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
   '/sistemas/$slug': typeof SistemasSlugRoute
-  '/sitemap/xml': typeof SitemapXmlRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -478,6 +477,7 @@ export interface FileRoutesByFullPath {
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
+  '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
 }
@@ -530,7 +530,6 @@ export interface FileRoutesByTo {
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
   '/sistemas/$slug': typeof SistemasSlugRoute
-  '/sitemap/xml': typeof SitemapXmlRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -543,6 +542,7 @@ export interface FileRoutesByTo {
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
+  '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
 }
@@ -597,7 +597,6 @@ export interface FileRoutesById {
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
   '/sistemas/$slug': typeof SistemasSlugRoute
-  '/sitemap/xml': typeof SitemapXmlRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -610,6 +609,7 @@ export interface FileRoutesById {
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
+  '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
 }
@@ -665,7 +665,6 @@ export interface FileRouteTypes {
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
     | '/sistemas/$slug'
-    | '/sitemap/xml'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -678,6 +677,7 @@ export interface FileRouteTypes {
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
+    | '/api/public/sitemap'
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
   fileRoutesByTo: FileRoutesByTo
@@ -730,7 +730,6 @@ export interface FileRouteTypes {
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
     | '/sistemas/$slug'
-    | '/sitemap/xml'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -743,6 +742,7 @@ export interface FileRouteTypes {
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
+    | '/api/public/sitemap'
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
   id:
@@ -796,7 +796,6 @@ export interface FileRouteTypes {
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
     | '/sistemas/$slug'
-    | '/sitemap/xml'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -809,6 +808,7 @@ export interface FileRouteTypes {
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
+    | '/api/public/sitemap'
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
   fileRoutesById: FileRoutesById
@@ -858,10 +858,10 @@ export interface RootRouteChildren {
   ServicosIdentidadeVisualRoute: typeof ServicosIdentidadeVisualRoute
   ServicosSistemasWebRoute: typeof ServicosSistemasWebRoute
   SistemasSlugRoute: typeof SistemasSlugRoute
-  SitemapXmlRoute: typeof SitemapXmlRoute
   NoticiasIndexRoute: typeof NoticiasIndexRoute
   SistemasIndexRoute: typeof SistemasIndexRoute
   ApiPublicRssRoute: typeof ApiPublicRssRoute
+  ApiPublicSitemapRoute: typeof ApiPublicSitemapRoute
   NoticiasCategoriaCategoryRoute: typeof NoticiasCategoriaCategoryRoute
   NoticiasTagTagRoute: typeof NoticiasTagTagRoute
 }
@@ -1106,13 +1106,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SolucoesWebDesenvolvimentoDeSitesRouteImport
       parentRoute: typeof SolucoesWebRoute
     }
-    '/sitemap/xml': {
-      id: '/sitemap/xml'
-      path: '/sitemap/xml'
-      fullPath: '/sitemap/xml'
-      preLoaderRoute: typeof SitemapXmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/sistemas/$slug': {
       id: '/sistemas/$slug'
       path: '/sistemas/$slug'
@@ -1295,6 +1288,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NoticiasCategoriaCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/sitemap': {
+      id: '/api/public/sitemap'
+      path: '/api/public/sitemap'
+      fullPath: '/api/public/sitemap'
+      preLoaderRoute: typeof ApiPublicSitemapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/rss': {
       id: '/api/public/rss'
       path: '/api/public/rss'
@@ -1430,10 +1430,10 @@ const rootRouteChildren: RootRouteChildren = {
   ServicosIdentidadeVisualRoute: ServicosIdentidadeVisualRoute,
   ServicosSistemasWebRoute: ServicosSistemasWebRoute,
   SistemasSlugRoute: SistemasSlugRoute,
-  SitemapXmlRoute: SitemapXmlRoute,
   NoticiasIndexRoute: NoticiasIndexRoute,
   SistemasIndexRoute: SistemasIndexRoute,
   ApiPublicRssRoute: ApiPublicRssRoute,
+  ApiPublicSitemapRoute: ApiPublicSitemapRoute,
   NoticiasCategoriaCategoryRoute: NoticiasCategoriaCategoryRoute,
   NoticiasTagTagRoute: NoticiasTagTagRoute,
 }
