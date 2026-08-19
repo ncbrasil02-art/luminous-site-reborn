@@ -431,9 +431,9 @@ export function LandingPage({
             />
             <div className="mt-12 flex flex-wrap justify-center gap-3">
               {integrations.map((it, i) => (
-                <Reveal key={it.name} delay={i * 0.02}>
+                <Reveal key={it.label} delay={i * 0.02}>
                   <div className="rounded-full border border-border bg-card/60 px-5 py-2.5 text-sm font-medium backdrop-blur transition-all hover:border-primary/50 hover:text-primary">
-                    {it.name}
+                    {it.label}
                     {it.category && <span className="ml-2 text-xs text-muted-foreground">· {it.category}</span>}
                   </div>
                 </Reveal>
