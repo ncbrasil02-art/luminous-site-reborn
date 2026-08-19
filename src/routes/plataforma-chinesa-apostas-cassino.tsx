@@ -234,6 +234,10 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
         { quote: "A assessoria da NC no processo SPA/MF valeu o contrato. Saímos do zero à licença em 4 meses.", author: "Rafael Nunes", role: "Sport Real · PR" },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["Cassino", "Apostas", "iGaming", "Sistemas"]}
+    />
+  ),
+});
       finalCtaTitle={<>Pronto para lançar seu <span className="text-gradient">operador de iGaming</span>?</>}
       finalCtaDesc={<>Receba um <strong className="text-foreground">plano executivo em 24h</strong> com arquitetura, catálogo de jogos, orçamento, cronograma e roadmap de licenciamento SPA/MF. <strong className="text-foreground">Consultoria estratégica gratuita</strong> com nosso time de iGaming.</>}
       relatedNewsTags={["Cassino","Jogos Online","Sistemas"]}

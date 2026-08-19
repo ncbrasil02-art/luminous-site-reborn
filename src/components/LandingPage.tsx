@@ -601,6 +601,15 @@ export function LandingPage({
         eyebrow="Blog & Insights"
       />
 
+      {/* RELATED NEWS */}
+      {relatedNewsTags && relatedNewsTags.length > 0 && (
+        <NewsDisplay 
+          filterTags={relatedNewsTags} 
+          title={<>Conteúdo Relacionado e <span className="text-gradient">Insights</span></>}
+          eyebrow="Blog & Notícias"
+        />
+      )}
+
       {/* FAQ */}
       {faq && faq.length > 0 && (
         <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
