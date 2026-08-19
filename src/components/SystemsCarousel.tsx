@@ -11,7 +11,7 @@ const systems = [
     title: "Sistema de Leilão",
     description: "Plataformas completas para leilões judiciais e extrajudiciais com lances em tempo real.",
     to: "/sistema-de-leilao",
-    image: "https://www.ncbrasil.com.br/wp-content/uploads/2021/05/sistema-de-leilao-nc-brasil.jpg",
+    image: "/news/sistema-de-leilao-nc-brasil.jpg",
     features: ["Lances em Tempo Real", "Gestão de Lotes", "Auditagem"]
   },
   {
@@ -19,7 +19,7 @@ const systems = [
     title: "Marketplaces",
     description: "Soluções complexas para múltiplos vendedores com split de pagamentos automático.",
     to: "/portfolio/lojas-virtuais-criadas",
-    image: "https://www.ncbrasil.com.br/wp-content/uploads/2021/05/loja-virtual-nc-brasil.jpg",
+    image: "/news/loja-virtual-nc-brasil.jpg",
     features: ["Split de Pagamentos", "Painel Seller", "Logística"]
   },
   {
@@ -27,7 +27,7 @@ const systems = [
     title: "Compra Coletiva",
     description: "Plataformas de ofertas com gatilhos de escassez e gestão de cupons via QR Code.",
     to: "/portfolio/sistema-de-compra-coletiva",
-    image: "https://www.ncbrasil.com.br/wp-content/uploads/2021/05/compra-coletiva-nc-brasil.jpg",
+    image: "/news/compra-coletiva-nc-brasil.jpg",
     features: ["Controle de Cupons", "Validação App", "Escalabilidade"]
   },
   {
@@ -35,7 +35,7 @@ const systems = [
     title: "Sistemas Sob Demanda",
     description: "Engenharia de software personalizada para resolver desafios exclusivos do seu negócio.",
     to: "/nossos-sistemas",
-    image: "https://www.ncbrasil.com.br/wp-content/uploads/2021/05/sistemas-sob-demanda.jpg",
+    image: "/news/sistemas-sob-demanda.jpg",
     features: ["Arquitetura Custom", "Integração API", "Cloud Native"]
   }
 ];
