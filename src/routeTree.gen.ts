@@ -34,6 +34,7 @@ import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as ClassificadosDeVeiculosRouteImport } from './routes/classificados-de-veiculos'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
 import { Route as NoticiasIndexRouteImport } from './routes/noticias.index'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as SolucoesWebSeoGoogleRouteImport } from './routes/solucoes-web.seo-google'
@@ -42,6 +43,7 @@ import { Route as SolucoesWebLojaVirtualRouteImport } from './routes/solucoes-we
 import { Route as SolucoesWebLandingPagesRouteImport } from './routes/solucoes-web.landing-pages'
 import { Route as SolucoesWebHospedagemRouteImport } from './routes/solucoes-web.hospedagem'
 import { Route as SolucoesWebDesenvolvimentoDeSitesRouteImport } from './routes/solucoes-web.desenvolvimento-de-sites'
+import { Route as SistemasSlugRouteImport } from './routes/sistemas.$slug'
 import { Route as ServicosSistemasWebRouteImport } from './routes/servicos.sistemas-web'
 import { Route as ServicosIdentidadeVisualRouteImport } from './routes/servicos.identidade-visual'
 import { Route as ServicosGoogleAdsRouteImport } from './routes/servicos.google-ads'
@@ -204,6 +206,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SistemasIndexRoute = SistemasIndexRouteImport.update({
+  id: '/sistemas/',
+  path: '/sistemas/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const NoticiasIndexRoute = NoticiasIndexRouteImport.update({
   id: '/noticias/',
   path: '/noticias/',
@@ -246,6 +253,11 @@ const SolucoesWebDesenvolvimentoDeSitesRoute =
     path: '/desenvolvimento-de-sites',
     getParentRoute: () => SolucoesWebRoute,
   } as any)
+const SistemasSlugRoute = SistemasSlugRouteImport.update({
+  id: '/sistemas/$slug',
+  path: '/sistemas/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicosSistemasWebRoute = ServicosSistemasWebRouteImport.update({
   id: '/servicos/sistemas-web',
   path: '/servicos/sistemas-web',
@@ -452,6 +464,7 @@ export interface FileRoutesByFullPath {
   '/servicos/google-ads': typeof ServicosGoogleAdsRoute
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
+  '/sistemas/$slug': typeof SistemasSlugRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -460,6 +473,7 @@ export interface FileRoutesByFullPath {
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
   '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
+  '/sistemas/': typeof SistemasIndexRoute
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
@@ -515,6 +529,7 @@ export interface FileRoutesByTo {
   '/servicos/google-ads': typeof ServicosGoogleAdsRoute
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
+  '/sistemas/$slug': typeof SistemasSlugRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -523,6 +538,7 @@ export interface FileRoutesByTo {
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
   '/admin': typeof AdminIndexRoute
   '/noticias': typeof NoticiasIndexRoute
+  '/sistemas': typeof SistemasIndexRoute
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
@@ -580,6 +596,7 @@ export interface FileRoutesById {
   '/servicos/google-ads': typeof ServicosGoogleAdsRoute
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
+  '/sistemas/$slug': typeof SistemasSlugRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -588,6 +605,7 @@ export interface FileRoutesById {
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
   '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
+  '/sistemas/': typeof SistemasIndexRoute
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
@@ -646,6 +664,7 @@ export interface FileRouteTypes {
     | '/servicos/google-ads'
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
+    | '/sistemas/$slug'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -654,6 +673,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/seo-google'
     | '/admin/'
     | '/noticias/'
+    | '/sistemas/'
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
@@ -709,6 +729,7 @@ export interface FileRouteTypes {
     | '/servicos/google-ads'
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
+    | '/sistemas/$slug'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -717,6 +738,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/seo-google'
     | '/admin'
     | '/noticias'
+    | '/sistemas'
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
@@ -773,6 +795,7 @@ export interface FileRouteTypes {
     | '/servicos/google-ads'
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
+    | '/sistemas/$slug'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -781,6 +804,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/seo-google'
     | '/admin/'
     | '/noticias/'
+    | '/sistemas/'
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
@@ -833,7 +857,9 @@ export interface RootRouteChildren {
   ServicosGoogleAdsRoute: typeof ServicosGoogleAdsRoute
   ServicosIdentidadeVisualRoute: typeof ServicosIdentidadeVisualRoute
   ServicosSistemasWebRoute: typeof ServicosSistemasWebRoute
+  SistemasSlugRoute: typeof SistemasSlugRoute
   NoticiasIndexRoute: typeof NoticiasIndexRoute
+  SistemasIndexRoute: typeof SistemasIndexRoute
   ApiPublicRssRoute: typeof ApiPublicRssRoute
   ApiPublicSitemapRoute: typeof ApiPublicSitemapRoute
   NoticiasCategoriaCategoryRoute: typeof NoticiasCategoriaCategoryRoute
@@ -1017,6 +1043,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sistemas/': {
+      id: '/sistemas/'
+      path: '/sistemas'
+      fullPath: '/sistemas/'
+      preLoaderRoute: typeof SistemasIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/noticias/': {
       id: '/noticias/'
       path: '/noticias'
@@ -1072,6 +1105,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/solucoes-web/desenvolvimento-de-sites'
       preLoaderRoute: typeof SolucoesWebDesenvolvimentoDeSitesRouteImport
       parentRoute: typeof SolucoesWebRoute
+    }
+    '/sistemas/$slug': {
+      id: '/sistemas/$slug'
+      path: '/sistemas/$slug'
+      fullPath: '/sistemas/$slug'
+      preLoaderRoute: typeof SistemasSlugRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/servicos/sistemas-web': {
       id: '/servicos/sistemas-web'
@@ -1389,7 +1429,9 @@ const rootRouteChildren: RootRouteChildren = {
   ServicosGoogleAdsRoute: ServicosGoogleAdsRoute,
   ServicosIdentidadeVisualRoute: ServicosIdentidadeVisualRoute,
   ServicosSistemasWebRoute: ServicosSistemasWebRoute,
+  SistemasSlugRoute: SistemasSlugRoute,
   NoticiasIndexRoute: NoticiasIndexRoute,
+  SistemasIndexRoute: SistemasIndexRoute,
   ApiPublicRssRoute: ApiPublicRssRoute,
   ApiPublicSitemapRoute: ApiPublicSitemapRoute,
   NoticiasCategoriaCategoryRoute: NoticiasCategoriaCategoryRoute,
