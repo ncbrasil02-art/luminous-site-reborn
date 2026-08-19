@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Banknote, BarChart3, Clock, Coins, Gift, ShieldCheck, Sparkles, Timer, Trophy, Users, Wallet, Zap } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-leilao-de-centavos";
+const URL = "https://www.ncbrasil.com.br/sistema-de-leilao-de-centavos";
 
 const lpFaq = [
         { q: "Leilão de centavos é legal no Brasil?", a: "Sim, quando estruturado como **plataforma de skill/gaming, promoção comercial ou clube de compras** — orientamos o formato mais seguro." },
@@ -12,7 +12,7 @@ const lpFaq = [
         { q: "Aceita criptomoedas?", a: "Sim, opção de créditos comprados em **USDT/BTC** via gateway integrado." },
       ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-leilao-de-centavos")({
+export const Route = createFileRoute("/sistema-de-leilao-de-centavos")({
   head: () => buildLPMeta({
     title: "Sistema de Leilão de Centavos | Plataforma Penny Auction",
     description: "Plataforma completa para leilão de centavos (penny auction): créditos, timer anti-sniping, ranking de arrematantes, entrega de prêmios e Pix.",
@@ -21,14 +21,14 @@ export const Route = createFileRoute("/sistemas/sistema-de-leilao-de-centavos")(
     h1: "Plataforma Completa para Leilão de Centavos",
     breadcrumbs: [
       { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
+      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
       { name: "Leilão de Centavos", url: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/sistemas", label: "Sistemas" }, { to: "/sistemas/sistema-de-leilao-de-centavos", label: "Leilão de Centavos" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-leilao-de-centavos", label: "Leilão de Centavos" }]}
       eyebrow="Penny Auction"
       h1={<>Plataforma de <span className="text-gradient">Leilão de Centavos</span></>}
       intro={<>Sistema turnkey para operar leilões de centavos ao estilo <strong className="text-foreground">MadBid / QuiBids</strong>: pacotes de créditos, lances por 1 centavo, timer regressivo e entrega automatizada de prêmios.</>}

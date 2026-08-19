@@ -5,7 +5,7 @@ import {
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/sistemas/classificados-de-veiculos";
+const URL = "https://www.ncbrasil.com.br/classificados-de-veiculos";
 
 const lpFaq = [
   { q: "É possível integrar com o meu ERP de revenda ou concessionária?", a: "Sim. Temos **APIs prontas para AutoConf, Automotor, Boom Sistemas, Localiza Meu Carro, Revenda Mais, DealerBox** e integrações personalizadas via REST/XML." },
@@ -20,7 +20,7 @@ const lpFaq = [
   { q: "Quanto custa e qual o modelo comercial?", a: "**Licença perpétua** (sem mensalidade recorrente) ou SaaS com taxa por anúncio ativo — orçamento personalizado conforme volume." },
 ];
 
-export const Route = createFileRoute("/sistemas/classificados-de-veiculos")({
+export const Route = createFileRoute("/classificados-de-veiculos")({
   head: () => buildLPMeta({
     title: "Sistema de Classificados de Veículos | Portal Automotivo — NC Brasil",
     description: "Plataforma completa para portal de classificados de veículos: revendas, particulares, busca avançada, FIPE integrada, financiamento, comparador, app iOS/Android e SEO técnico.",
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/sistemas/classificados-de-veiculos")({
     h1: "Plataforma de Classificados Automotivos",
     breadcrumbs: [
       { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
+      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
       { name: "Classificados de Veículos", url: URL },
     ],
     faq: lpFaq,
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/sistemas/classificados-de-veiculos")({
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/sistemas", label: "Sistemas" }, { to: "/sistemas/classificados-de-veiculos", label: "Classificados de Veículos" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/classificados-de-veiculos", label: "Classificados de Veículos" }]}
       eyebrow="Portal Automotivo · Marketplace de Veículos"
       h1={<>Portal de <span className="text-gradient">Classificados Automotivos</span> — o próximo Webmotors/iCarros</>}
       intro={<>Sistema turnkey para lançar o <strong className="text-foreground">próximo grande portal de veículos</strong> do seu estado ou nicho. Busca avançada com <strong className="text-foreground">Tabela FIPE integrada</strong>, planos escaláveis para revendedores, financiamento em 1 clique, comparador lado-a-lado e SEO técnico premiado — tudo com nosso motor proprietário testado em milhões de anúncios.</>}

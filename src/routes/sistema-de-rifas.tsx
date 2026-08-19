@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-rifas";
+const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
 
 export const lpFaq = [
   { q: "É seguro e legal criar rifa online no Brasil?", a: "Sim. Existem **três caminhos legais** que orientamos você a adotar: **título de capitalização** (via seguradora parceira), **promoção comercial autorizada pela SECAP/Ministério da Fazenda** ou **rifa filantrópica de associação/ONG sem fins lucrativos**. O sistema já vem preparado com **termos, regulamento gerado automaticamente e prestação de contas transparente**." },
@@ -24,7 +24,7 @@ export const lpFaq = [
   { q: "Posso vender cotas em combos ou com desconto progressivo?", a: "Sim. Configure combos **'leve 10 pague 8'**, desconto progressivo, cotas bônus por indicação, cashback e **cupom promocional** por cliente ou por rifa." },
 ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-rifas")({
+export const Route = createFileRoute("/sistema-de-rifas")({
   head: () => buildLPMeta({
     title: "Sistema de Rifas Online | Criar Rifa Legalizada com Pix — NC Brasil",
     description: "Plataforma completa para criar rifa online legalizada: sorteio pela Loteria Federal, Pix instantâneo, cotas ilimitadas, sem taxa por cota, app do participante e painel do organizador. 15 anos de experiência.",
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-rifas")({
     h1: "Sistema de Rifas Online",
     breadcrumbs: [
       { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
+      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
       { name: "Sistema de Rifas", url: URL },
     ],
     faq: lpFaq,
@@ -42,8 +42,8 @@ export const Route = createFileRoute("/sistemas/sistema-de-rifas")({
     <LandingPage
       breadcrumbs={[
         { to: "/", label: "Home" },
-        { to: "/sistemas", label: "Sistemas" },
-        { to: "/sistemas/sistema-de-rifas", label: "Sistema de Rifas" },
+        { to: "/nossos-sistemas", label: "Sistemas" },
+        { to: "/sistema-de-rifas", label: "Sistema de Rifas" },
       ]}
       eyebrow="Rifas Online · Legalizadas · Pix Instantâneo"
       h1={<>Sistema para <span className="text-gradient">Criar Rifa Online</span> — Legalizado, Escalável e Sem Taxa por Cota</>}

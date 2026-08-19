@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-raspadinha";
+const URL = "https://www.ncbrasil.com.br/sistema-de-raspadinha";
 
 const lpFaq = [
   { q: "Raspadinha online valendo Pix é legal no Brasil?", a: "Depende do modelo. Operamos legalmente como **título de capitalização com sorteio incorporado** (via seguradora parceira), **promoção comercial autorizada pela SECAP** ou **jogo de skill / fantasy**. Nossa equipe orienta o formato ideal para sua operação — **regulamento e termos incluídos**." },
@@ -24,7 +24,7 @@ const lpFaq = [
   { q: "Aceita bônus, freespins, cashback e programa de fidelidade?", a: "Sim, engine de **promoções completa**: bônus de boas-vindas, raspadinhas grátis, cashback percentual, torneios, missões diárias e **programa VIP com níveis**." },
 ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-raspadinha")({
+export const Route = createFileRoute("/sistema-de-raspadinha")({
   head: () => buildLPMeta({
     title: "Sistema de Raspadinha Online | Plataforma White Label com Pix",
     description: "Plataforma completa de raspadinha online valendo Pix: RNG auditável, estoque de prêmios, KYC + antifraude, app iOS/Android white label e engine de bônus. Entrega em 30 dias.",
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-raspadinha")({
     h1: "Sistema de Raspadinha Online White Label",
     breadcrumbs: [
       { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
+      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
       { name: "Sistema de Raspadinha", url: URL },
     ],
     faq: lpFaq,
@@ -42,8 +42,8 @@ export const Route = createFileRoute("/sistemas/sistema-de-raspadinha")({
     <LandingPage
       breadcrumbs={[
         { to: "/", label: "Home" },
-        { to: "/sistemas", label: "Sistemas" },
-        { to: "/sistemas/sistema-de-raspadinha", label: "Sistema de Raspadinha" },
+        { to: "/nossos-sistemas", label: "Sistemas" },
+        { to: "/sistema-de-raspadinha", label: "Sistema de Raspadinha" },
       ]}
       eyebrow="Instant Win · Raspadinha Valendo Pix · White Label"
       h1={<>Sistema de <span className="text-gradient">Raspadinha Online</span> — Prêmio em Pix, RNG Auditável, App Próprio</>}

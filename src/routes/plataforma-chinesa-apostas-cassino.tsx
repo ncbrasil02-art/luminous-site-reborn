@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/sistemas/plataforma-chinesa-apostas-cassino";
+const URL = "https://www.ncbrasil.com.br/plataforma-chinesa-apostas-cassino";
 
 const lpFaq = [
   { q: "O que é uma plataforma chinesa de cassino / apostas?", a: "É uma **arquitetura de iGaming turnkey de origem asiática** (Filipinas, China, Malta), reconhecida por rodar **milhares de slots agregados, cassino ao vivo, sportsbook, mini-games e Pix** em uma única infra escalável. A NC Brasil oferece essa mesma tecnologia **tropicalizada para o Brasil** com Pix nativo, KYC BR e suporte 24/7 no fuso." },
@@ -26,7 +26,7 @@ const lpFaq = [
   { q: "Como é o suporte técnico?", a: "**24/7 em português** por WhatsApp, ticket e videoconferência. SLA de resposta em 15 minutos e resolução crítica em 2h para clientes enterprise." },
 ];
 
-export const Route = createFileRoute("/sistemas/plataforma-chinesa-apostas-cassino")({
+export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
   head: () => buildLPMeta({
     title: "Plataforma de Cassino Online White Label | Sportsbook + Slots + Pix",
     description: "Plataforma completa de cassino online e apostas esportivas white label: 8.000+ slots (Pragmatic, PG Soft, Aviator), cassino ao vivo, sportsbook, Pix instantâneo, KYC BR e licenciamento SPA. Deploy em 45 dias.",
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/sistemas/plataforma-chinesa-apostas-cassi
     h1: "Plataforma de Cassino Online e Apostas White Label",
     breadcrumbs: [
       { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
+      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
       { name: "Plataforma Cassino", url: URL },
     ],
     faq: lpFaq,
@@ -44,8 +44,8 @@ export const Route = createFileRoute("/sistemas/plataforma-chinesa-apostas-cassi
     <LandingPage
       breadcrumbs={[
         { to: "/", label: "Home" },
-        { to: "/sistemas", label: "Sistemas" },
-        { to: "/sistemas/plataforma-chinesa-apostas-cassino", label: "Plataforma Cassino" },
+        { to: "/nossos-sistemas", label: "Sistemas" },
+        { to: "/plataforma-chinesa-apostas-cassino", label: "Plataforma Cassino" },
       ]}
       eyebrow="iGaming · White Label · Pix + SPA/MF"
       h1={<>Plataforma de <span className="text-gradient">Cassino Online e Apostas</span> White Label — Sportsbook, Slots e Pix Nativo</>}

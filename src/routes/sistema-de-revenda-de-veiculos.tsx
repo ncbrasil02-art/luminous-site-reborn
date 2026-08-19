@@ -5,7 +5,7 @@ import {
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-revenda-de-veiculos";
+const URL = "https://www.ncbrasil.com.br/sistema-de-revenda-de-veiculos";
 
 const lpFaq = [
   { q: "Vocês entregam o portal com o meu domínio próprio?", a: "Sim. Portal com **domínio próprio, SSL wildcard, hospedagem otimizada AWS, CDN global e SEO técnico** — tudo incluído no plano." },
@@ -20,7 +20,7 @@ const lpFaq = [
   { q: "Qual o modelo comercial?", a: "**Licença perpétua sem mensalidade** ou SaaS com valor fixo por loja (sem taxa por veículo) — orçamento personalizado." },
 ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-revenda-de-veiculos")({
+export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
   head: () => buildLPMeta({
     title: "Sistema para Revenda de Veículos | ERP + Portal Automotivo — NC Brasil",
     description: "ERP completo para revendas de veículos: gestão de estoque, CRM WhatsApp, financiamento, portal com anúncios integrados a Webmotors/iCarros/OLX, DOC-fácil, NF-e e app da equipe.",
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-revenda-de-veiculos")
     h1: "Plataforma para Revenda de Veículos",
     breadcrumbs: [
       { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
+      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
       { name: "Revenda de Veículos", url: URL },
     ],
     faq: lpFaq,
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/sistemas/sistema-de-revenda-de-veiculos")
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/sistemas", label: "Sistemas" }, { to: "/sistemas/sistema-de-revenda-de-veiculos", label: "Revenda de Veículos" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-revenda-de-veiculos", label: "Revenda de Veículos" }]}
       eyebrow="ERP + Portal + CRM Automotivo"
       h1={<>ERP & Portal para <span className="text-gradient">Revenda de Veículos</span></>}
       intro={<>Solução <strong className="text-foreground">tudo-em-um</strong> para lojas de revenda que querem crescer: gestão completa de estoque, CRM com WhatsApp, simulador de financiamento, portal próprio com SEO e <strong className="text-foreground">publicação automática em Webmotors, iCarros, OLX e Mercado Livre</strong>. Menos retrabalho, mais leads, mais margem.</>}

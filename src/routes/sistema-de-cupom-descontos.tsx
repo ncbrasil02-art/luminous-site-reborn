@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { BarChart3, Bell, CreditCard, Gift, MapPin, Percent, QrCode, ShoppingBag, Store, Tag, Ticket, Users } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-cupom-descontos";
+const URL = "https://www.ncbrasil.com.br/sistema-de-cupom-descontos";
 
 const lpFaq = [
         { q: "É possível integrar com meu e-commerce?", a: "Sim, temos **plugins nativos para Shopify, VTEX, Nuvemshop, Tray, WooCommerce** e API REST." },
@@ -12,7 +12,7 @@ const lpFaq = [
         { q: "Posso operar em múltiplas cidades?", a: "Sim, arquitetura **multi-tenant e geodivisão** para franquias regionais." },
       ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-cupom-descontos")({
+export const Route = createFileRoute("/sistema-de-cupom-descontos")({
   head: () => buildLPMeta({
     title: "Sistema de Cupons de Desconto | Cashback e Ofertas — NC Brasil",
     description: "Plataforma completa de cupons de desconto, cashback e ofertas para varejo, marketplace e apps. Geolocalização, QR Code, painel para lojistas e app do cliente.",
@@ -21,14 +21,14 @@ export const Route = createFileRoute("/sistemas/sistema-de-cupom-descontos")({
     h1: "Plataforma de Cupons e Cashback",
     breadcrumbs: [
       { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
+      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
       { name: "Sistema de Cupom", url: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/sistemas", label: "Sistemas" }, { to: "/sistemas/sistema-de-cupom-descontos", label: "Cupons & Cashback" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-cupom-descontos", label: "Cupons & Cashback" }]}
       eyebrow="Cupons & Cashback"
       h1={<>Plataforma de <span className="text-gradient">Cupons e Cashback</span></>}
       intro={<>Crie a próxima <strong className="text-foreground">Cuponomia ou Méliuz</strong>: plataforma completa para gerar tráfego, engajar clientes e comissionar sobre vendas com <strong className="text-foreground">cupons, cashback e ofertas exclusivas</strong>.</>}
