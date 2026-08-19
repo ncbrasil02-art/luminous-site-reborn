@@ -34,7 +34,7 @@ export const newsData: NewsPost[] = [
       "Marketing",
       "Marketing Digital"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/08/instagram-b9-type-ss.jpg",
+    "image_url": "/news/instagram-para-empresas.jpg",
     "thumb_id": "50995"
   },
   {
@@ -52,7 +52,7 @@ export const newsData: NewsPost[] = [
       "Software Personalizado",
       "Software único"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/08/2014011315350452d407a830ca4.jpeg",
+    "image_url": "/news/software.jpeg",
     "thumb_id": "50991"
   },
   {
@@ -71,7 +71,7 @@ export const newsData: NewsPost[] = [
       "Sistemas Sob Demanda",
       "Software"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "/news/programa-de-ordem-de-serviço.jpeg",
     "thumb_id": "50969"
   },
   {
@@ -92,7 +92,7 @@ export const newsData: NewsPost[] = [
       "NC Brasil",
       "seo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/eCommerce-concch.jpg",
+    "image_url": "/news/dicas-para-e-commerce.jpg",
     "thumb_id": "50963"
   },
   {
@@ -110,7 +110,7 @@ export const newsData: NewsPost[] = [
       "Sistema on demand",
       "Sistema sob demanda"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/sistema-erp-sob-demanda-entenda-importancia-1000x642.jpg",
+    "image_url": "/news/sistema-sob-demanda-nc-brasil.jpg",
     "thumb_id": "50959"
   },
   {
@@ -138,7 +138,7 @@ export const newsData: NewsPost[] = [
       "Smartphones",
       "Software"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/20130731174543_660_420.jpg",
+    "image_url": "/news/erros-na-criação-de-um-aplicativo.jpg",
     "thumb_id": "50930"
   },
   {
@@ -159,7 +159,7 @@ export const newsData: NewsPost[] = [
       "rede Social",
       "Site"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/shutterstock_575844202-700x484.jpg",
+    "image_url": "/news/marketing-digital.jpg",
     "thumb_id": "50915"
   },
   {
@@ -178,7 +178,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Cabeleireiros",
       "Software"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/confira-4-softwares-para-salao-de-beleza-que-voce-deveria-usar.jpeg",
+    "image_url": "/news/sistema-de-cabeleireiros.jpeg",
     "thumb_id": "50881"
   },
   {
@@ -199,7 +199,7 @@ export const newsData: NewsPost[] = [
       "Sistemas",
       "Software"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Qual_emissor_de_nota_fiscal_devo_escolher_10_55_39.png",
+    "image_url": "/news/sistema-gerador-de-nota-fiscal.png",
     "thumb_id": "50870"
   },
   {
@@ -223,7 +223,7 @@ export const newsData: NewsPost[] = [
       "Site para Vender Imóveis",
       "site responsivo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/imóveis.jpg.jpeg",
+    "image_url": "/news/um-bom-site-para-vender-imóveis.jpeg",
     "thumb_id": "50846"
   },
   {
@@ -249,7 +249,7 @@ export const newsData: NewsPost[] = [
       "Planejamento",
       "Plataforma eletrônica"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/T-ecommerce-D-loja-Virtual.jpg",
+    "image_url": "/news/e-commerce-comércio-eletrônico.jpg",
     "thumb_id": "50854"
   },
   {
@@ -272,7 +272,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Gestão Integrada",
       "Software de Gestão Integrada"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/sistema-de-gestao-integrada-1-e1530023148898.jpg",
+    "image_url": "/news/sistema-de-gestão-integrada.jpg",
     "thumb_id": "50832"
   },
   {
@@ -302,7 +302,7 @@ export const newsData: NewsPost[] = [
       "Site",
       "Site Otimizado"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Learn-SEO-796x398.jpg",
+    "image_url": "/news/seo.jpg",
     "thumb_id": "50823"
   },
   {
@@ -327,7 +327,7 @@ export const newsData: NewsPost[] = [
       "Smartphones",
       "Tecnologia"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/mercado-de-criacao-de-aplicativos-mobile.jpg",
+    "image_url": "/news/criação-de-aplicativo-para-sua-empresa.jpg",
     "thumb_id": "50811"
   },
   {
@@ -350,7 +350,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "Web design responsivo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Site-Responsivo-Feira-de-Santana.jpg",
+    "image_url": "/news/4-vantagens-de-um-site-responsivo.jpg",
     "thumb_id": "50806"
   },
   {
@@ -371,7 +371,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "wordpress"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/site-responsivo-x-site-mobile.png",
+    "image_url": "/news/site-responsivo-x-site-mobile.png",
     "thumb_id": "50799"
   },
   {
@@ -391,7 +391,7 @@ export const newsData: NewsPost[] = [
       "Sistema Gerador de Relatórios",
       "Sistemas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/4-razoes-para-utilizar-a-automacao-de-email-marketing.jpeg",
+    "image_url": "/news/sistema-gerador-de-relatórios.jpeg",
     "thumb_id": "50784"
   },
   {
@@ -411,7 +411,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Automação de E-mail",
       "Sistemas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/email-marketing-automacao-pluga.png",
+    "image_url": "/news/sistema-de-automação-de-e-mail.png",
     "thumb_id": "50783"
   },
   {
@@ -432,7 +432,7 @@ export const newsData: NewsPost[] = [
       "Sistema",
       "Software Empresarial"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/86585-o-funcionario-nao-sai-do-celular-use-isso-a-favor-da-sua-empresa-900x365.jpg",
+    "image_url": "/news/aplicativo-para-gestão-empresarial.jpg",
     "thumb_id": "50773"
   },
   {
@@ -453,7 +453,7 @@ export const newsData: NewsPost[] = [
       "Sistema para Imobiliária",
       "Sistemas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/c4810d3a-0bd8-4486-bac4-dc744347392f.jpg",
+    "image_url": "/news/sistema-de-imobiliária.jpg",
     "thumb_id": "50770"
   },
   {
@@ -472,7 +472,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Locação de Carros",
       "Sistemas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/alamo.jpg",
+    "image_url": "/news/sistema-de-locação-de-carros.jpg",
     "thumb_id": "50762"
   },
   {
@@ -496,7 +496,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Leilão de Centavos",
       "Sistema de Leilão Virtual"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/25f-1.png",
+    "image_url": "/news/leilão-virtual.png",
     "thumb_id": "50753"
   },
   {
@@ -518,7 +518,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Estoque",
       "Sistema de Gestão de Estoque"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/ARTIGO-CONTROLE-DE-ESTOQUE-740x432.jpg",
+    "image_url": "/news/vantagens-de-um-sistema-de-estoque.jpg",
     "thumb_id": "50748"
   },
   {
@@ -546,7 +546,7 @@ export const newsData: NewsPost[] = [
       "Site",
       "Site de Leilão"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/download-scaled.jpg",
+    "image_url": "/news/entenda-os-leilões-eletrônicos.jpg",
     "thumb_id": "50741"
   },
   {
@@ -563,7 +563,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Contabilidade",
       "Sistema de Gestão Contábil"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/cacaroot.jpg",
+    "image_url": "/news/sistema-de-gestão-contábil.jpg",
     "thumb_id": "50728"
   },
   {
@@ -585,7 +585,7 @@ export const newsData: NewsPost[] = [
       "wordpress",
       "WP"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/520116_edf5_2.jpg",
+    "image_url": "/news/wordpress-para-sua-empresa.jpg",
     "thumb_id": "50719"
   },
   {
@@ -608,7 +608,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Inventário",
       "Sistemas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/X-motivos-para-fazer-o-inventário-do-seu-estoque.jpg",
+    "image_url": "/news/sistema-de-controle-de-estoque.jpg",
     "thumb_id": "50709"
   },
   {
@@ -633,7 +633,7 @@ export const newsData: NewsPost[] = [
       "Site de Leilão",
       "Usuários"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/1941243.jpg",
+    "image_url": "/news/sistema-de-leilão-de-centavos.jpg",
     "thumb_id": "50701"
   },
   {
@@ -659,7 +659,7 @@ export const newsData: NewsPost[] = [
       "Site",
       "Usuários"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/como-economizar-dinheiro-com-cupons-de-desconto.png.png",
+    "image_url": "/news/sistema-de-cupom-de-desconto.png",
     "thumb_id": "50691"
   },
   {
@@ -683,7 +683,7 @@ export const newsData: NewsPost[] = [
       "Site",
       "websites"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/sistemas-web.jpg",
+    "image_url": "/news/você-sabe-a-diferença-entre-site-e-sistema.jpg",
     "thumb_id": "50681"
   },
   {
@@ -707,7 +707,7 @@ export const newsData: NewsPost[] = [
       "Sistemas de Carros",
       "sistemas web"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/3-1.jpg",
+    "image_url": "/news/sistema-de-carros.jpg",
     "thumb_id": "50671"
   },
   {
@@ -729,7 +729,7 @@ export const newsData: NewsPost[] = [
       "sistemas web",
       "Software"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/2.jpg",
+    "image_url": "/news/sistemas-web.jpg",
     "thumb_id": "50665"
   },
   {
@@ -745,7 +745,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Sistema sob demanda"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/office-583841_960_720-e1510975970167.jpg",
+    "image_url": "/news/sistema-sob-demanda.jpg",
     "thumb_id": "50626"
   },
   {
@@ -762,7 +762,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Sistemas de Veículos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sistema-veiculos-scaled.jpg",
+    "image_url": "/news/sistema-de-veículos.jpg",
     "thumb_id": "50621"
   },
   {
@@ -777,7 +777,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Plataforma de leilão"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/leilão-e1510970985900.jpg",
+    "image_url": "/news/plataforma-de-leilão.jpg",
     "thumb_id": "50612"
   },
   {
@@ -793,7 +793,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Marketing Digital"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/marke-e1510967111661-scaled.jpg",
+    "image_url": "/news/o-que-é-marketing-digital.jpg",
     "thumb_id": "50602"
   },
   {
@@ -808,7 +808,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "seo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/o-que-e-seo-destaque.gif",
+    "image_url": "/news/o-que-é-seo.gif",
     "thumb_id": "50599"
   },
   {
@@ -826,7 +826,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Planejamento SEO"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sales-plannig-e1510279048728.jpg",
+    "image_url": "/news/planejamento-de-seo.jpg",
     "thumb_id": "50581"
   },
   {
@@ -846,7 +846,7 @@ export const newsData: NewsPost[] = [
       "tendência web design",
       "Tendência Web Design 2017"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/web-design-user-experience.jpg",
+    "image_url": "/news/tendências-web-design.jpg",
     "thumb_id": "50561"
   },
   {
@@ -871,7 +871,7 @@ export const newsData: NewsPost[] = [
       "Sistemas únicos",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/software-web.png",
+    "image_url": "/news/sistema-qual-é-o-melhor-tipo.png",
     "thumb_id": "50555"
   },
   {
@@ -898,7 +898,7 @@ export const newsData: NewsPost[] = [
       "website",
       "word press"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/site-alex-031.jpg",
+    "image_url": "/news/criação-de-sites.jpg",
     "thumb_id": "50548"
   },
   {
@@ -915,7 +915,7 @@ export const newsData: NewsPost[] = [
       "criar site responsivo",
       "site responsivo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/entenda-o-que-e-um-site-responsivo-1132x600.jpg",
+    "image_url": "/news/o-que-é-um-site-responsivo.jpg",
     "thumb_id": "50527"
   },
   {
@@ -938,7 +938,7 @@ export const newsData: NewsPost[] = [
       "Sites",
       "Web Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/criação-de-sites-responsivos-em-salvador-empresa.jpg",
+    "image_url": "/news/o-que-é-um-bom-site.jpg",
     "thumb_id": "50507"
   },
   {
@@ -964,7 +964,7 @@ export const newsData: NewsPost[] = [
       "Site de Cupom Online",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/b2b-vs-b2c-e-commerce-1024x579.jpg",
+    "image_url": "/news/sistema-de-cupom-de-desconto.jpg",
     "thumb_id": "50500"
   },
   {
@@ -985,7 +985,7 @@ export const newsData: NewsPost[] = [
       "Vendas de Veículos Online",
       "Web Carrão"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/10/Female-Accountant.jpg",
+    "image_url": "/news/vendas-de-veículos-online-web-carrão-nc-brasil.jpg",
     "thumb_id": "50487"
   },
   {
@@ -1013,7 +1013,7 @@ export const newsData: NewsPost[] = [
       "E-commerce",
       "Site Gerenciável"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/10/797059169-patio-da-general-motors-na-cidade-de-gravatai-no-rio-grande-do-sul-carros-16-1024x576.jpeg",
+    "image_url": "/news/sistema-de-venda-de-veículos-online-é-na-nc-brasil.jpeg",
     "thumb_id": "50445"
   },
   {
@@ -1034,7 +1034,7 @@ export const newsData: NewsPost[] = [
       "M-Commerce",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/09/melhores-celulares-chineses-baratos-2017.jpg",
+    "image_url": "/news/aplicativos-o-que-são-e-suas-vantagens.jpg",
     "thumb_id": "50276"
   },
   {
@@ -1055,7 +1055,7 @@ export const newsData: NewsPost[] = [
       "logomarca",
       "marca"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/design_internet.jpg",
+    "image_url": "/news/quando-devo-fazer-um-redesign-na-minha-marca.jpg",
     "thumb_id": "50097"
   },
   {
@@ -1073,7 +1073,7 @@ export const newsData: NewsPost[] = [
       "Planejamento",
       "Sites"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/Marketing-Digital.jpg",
+    "image_url": "/news/dicas-de-marketing-digital.jpg",
     "thumb_id": "50091"
   },
   {
@@ -1096,7 +1096,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "Site Responsivo ou Aplicativo?"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/imagem_topo-14-1170x429.png",
+    "image_url": "/news/site-responsivo-ou-aplicativo.png",
     "thumb_id": "50086"
   },
   {
@@ -1116,7 +1116,7 @@ export const newsData: NewsPost[] = [
       "logo",
       "marca"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/identidade-visual-design-grafico.jpg",
+    "image_url": "/news/identidade-visual-não-é-só-a-logo.jpg",
     "thumb_id": "50073"
   },
   {
@@ -1145,7 +1145,7 @@ export const newsData: NewsPost[] = [
       "seo",
       "site responsivo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/apps.png",
+    "image_url": "/news/métodos-para-atingir-seu-público-via-mobile.png",
     "thumb_id": "50066"
   },
   {
@@ -1168,7 +1168,7 @@ export const newsData: NewsPost[] = [
       "UX",
       "Web site"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/user_experience_design.jpg",
+    "image_url": "/news/user-experience-ux.jpg",
     "thumb_id": "50058"
   },
   {
@@ -1191,7 +1191,7 @@ export const newsData: NewsPost[] = [
       "Tendência Redutiva",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/web-design-concepts-with-blurred-background_1134-82.jpg",
+    "image_url": "/news/tendência-redutiva-no-web-design.jpg",
     "thumb_id": "50054"
   },
   {
@@ -1213,7 +1213,7 @@ export const newsData: NewsPost[] = [
       "Site de vendas",
       "Venda de veículos online"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/Zz03YTZlNTgxYTFhMGYwY2UwZmQ4Y2YyOTc2M2Y3ZjA5NA1-1024x1024.jpg",
+    "image_url": "/news/venda-de-veículos-online.jpg",
     "thumb_id": "50044"
   },
   {
@@ -1235,7 +1235,7 @@ export const newsData: NewsPost[] = [
       "marca",
       "público-alvo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/branding-concept.jpg",
+    "image_url": "/news/o-que-é-branding.jpg",
     "thumb_id": "50040"
   },
   {
@@ -1257,7 +1257,7 @@ export const newsData: NewsPost[] = [
       "Site para igreja",
       "Web Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/bibel_og_pc.jpg",
+    "image_url": "/news/sua-igreja-precisa-de-um-site.jpg",
     "thumb_id": "50028"
   },
   {
@@ -1277,7 +1277,7 @@ export const newsData: NewsPost[] = [
       "Plataforma de leilão",
       "Site de vendas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/article-iae-para-entrenar-caballos-de-terceros-56681cf144a2a.jpg",
+    "image_url": "/news/plataforma-de-leilão-é-na-nc-brasil.jpg",
     "thumb_id": "50019"
   },
   {
@@ -1299,7 +1299,7 @@ export const newsData: NewsPost[] = [
       "sites responsivos",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/site1.jpg",
+    "image_url": "/news/site-para-advogados.jpg",
     "thumb_id": "49999"
   },
   {
@@ -1322,7 +1322,7 @@ export const newsData: NewsPost[] = [
       "Interface",
       "sites responsivos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/Você-tem-um-bom-site-para-vender-seus-imóveis.png",
+    "image_url": "/news/interface-e-os-principais-atributos-para-seu-site.png",
     "thumb_id": "50001"
   },
   {
@@ -1342,7 +1342,7 @@ export const newsData: NewsPost[] = [
       "criação de sites",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/tendencias-design-sites.jpg",
+    "image_url": "/news/tendências-web-design-2017.jpg",
     "thumb_id": "49993"
   },
   {
@@ -1365,7 +1365,7 @@ export const newsData: NewsPost[] = [
       "Sites",
       "Web Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/Venda-de-Carros-site.jpg",
+    "image_url": "/news/sistema-de-gestão-de-veículos.jpg",
     "thumb_id": "49983"
   },
   {
@@ -1386,7 +1386,7 @@ export const newsData: NewsPost[] = [
       "Vantagens de um site",
       "website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/e29323b61ad9b563d74bf77628c18e0a5ed823b4.jpg",
+    "image_url": "/news/bons-motivos-para-ter-um-site.jpg",
     "thumb_id": "49964"
   },
   {
@@ -1407,7 +1407,7 @@ export const newsData: NewsPost[] = [
       "E-commerce",
       "M-Commerce"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/aplicativos.png",
+    "image_url": "/news/razões-para-sua-empresa-ter-um-aplicativo.png",
     "thumb_id": "49954"
   },
   {
@@ -1432,7 +1432,7 @@ export const newsData: NewsPost[] = [
       "seo",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/blog-reinos-unidos-SEO-a-importância-de-ter-um-site-otimizado.jpg",
+    "image_url": "/news/site-otimizado.jpg",
     "thumb_id": "49937"
   },
   {
@@ -1455,7 +1455,7 @@ export const newsData: NewsPost[] = [
       "tipografia",
       "Web Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/webdesign-courses-1.jpg",
+    "image_url": "/news/tendências-web-design.jpg",
     "thumb_id": "49891"
   },
   {
@@ -1477,7 +1477,7 @@ export const newsData: NewsPost[] = [
       "CSM",
       "Sistema de Gerenciamento de Conteúdo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/content-management-system-in-mumbai.jpg",
+    "image_url": "/news/o-que-é-cms.jpg",
     "thumb_id": "49873"
   },
   {
@@ -1503,7 +1503,7 @@ export const newsData: NewsPost[] = [
       "Site Gerenciável",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/loja_virtual_ecommerce_fornecedores.jpg",
+    "image_url": "/news/como-criar-uma-loja-virtual.jpg",
     "thumb_id": "49859"
   },
   {
@@ -1530,7 +1530,7 @@ export const newsData: NewsPost[] = [
       "E-commerce",
       "Infraestrutura profissional de loja virtual."
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/stockvault-online-marketing-concept-marketeer-working-at-the-desk176902-scaled.jpg",
+    "image_url": "/news/infraestrutura-profissional-de-loja-virtual.jpg",
     "thumb_id": "49848"
   },
   {
@@ -1553,7 +1553,7 @@ export const newsData: NewsPost[] = [
       "Tendência Web designer",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/credit-card1.jpg",
+    "image_url": "/news/glossário-e-commerce-parte-ii.jpg",
     "thumb_id": "49836"
   },
   {
@@ -1574,7 +1574,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/e-commerce-para-a-Black-Friday.jpg",
+    "image_url": "/news/glossário-e-commerce-parte-i.jpg",
     "thumb_id": "49829"
   },
   {
@@ -1595,7 +1595,7 @@ export const newsData: NewsPost[] = [
       "Erros de E-commerce",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/2016-e-commerce.png",
+    "image_url": "/news/4-erros-de-um-e-commerce.png",
     "thumb_id": "49789"
   },
   {
@@ -1621,7 +1621,7 @@ export const newsData: NewsPost[] = [
       "Web Designer",
       "Web Desing"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/web-designer.jpg",
+    "image_url": "/news/o-que-faz-um-web-designer.jpg",
     "thumb_id": "49773"
   },
   {
@@ -1643,7 +1643,7 @@ export const newsData: NewsPost[] = [
       "Sites para a igreja",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/pc-keyboard-thumb-large.jpg",
+    "image_url": "/news/site-para-a-igreja.jpg",
     "thumb_id": "49763"
   },
   {
@@ -1667,7 +1667,7 @@ export const newsData: NewsPost[] = [
       "Site Imobiliário",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/imgempresas.jpg",
+    "image_url": "/news/por-que-devo-ter-um-site-imobiliário.jpg",
     "thumb_id": "49750"
   },
   {
@@ -1691,7 +1691,7 @@ export const newsData: NewsPost[] = [
       "marca",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/identidade_visual.jpg",
+    "image_url": "/news/identidade-visual-logo.jpg",
     "thumb_id": "49721"
   },
   {
@@ -1721,7 +1721,7 @@ export const newsData: NewsPost[] = [
       "Search Engine Marketing",
       "SEM"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/que-e-marketing-de-busca.jpg",
+    "image_url": "/news/o-que-é-sem.jpg",
     "thumb_id": "49699"
   },
   {
@@ -1749,7 +1749,7 @@ export const newsData: NewsPost[] = [
       "M-Commerce",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Como-Criar-Uma-Loja-Virtual-Para-2015-01.jpg",
+    "image_url": "/news/dicas-para-lojas-virtuais.jpg",
     "thumb_id": "49633"
   },
   {
@@ -1779,7 +1779,7 @@ export const newsData: NewsPost[] = [
       "website",
       "wordpress"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/maxresdefault-scaled.jpg",
+    "image_url": "/news/site-gerenciável.jpg",
     "thumb_id": "49608"
   },
   {
@@ -1809,7 +1809,7 @@ export const newsData: NewsPost[] = [
       "M-Commerce",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Cv81ZQhWAAAmoTo.jpg",
+    "image_url": "/news/m-commerce.jpg",
     "thumb_id": "49576"
   },
   {
@@ -1835,7 +1835,7 @@ export const newsData: NewsPost[] = [
       "Web Designer",
       "website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/wdd2014.jpg",
+    "image_url": "/news/como-surgiu-o-web-designer.jpg",
     "thumb_id": "49552"
   },
   {
@@ -1858,7 +1858,7 @@ export const newsData: NewsPost[] = [
       "Sites Turbinados",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/full_xciWr5mV.jpg",
+    "image_url": "/news/o-que-é-seo.jpg",
     "thumb_id": "49544"
   },
   {
@@ -1892,7 +1892,7 @@ export const newsData: NewsPost[] = [
       "webdesign",
       "website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/quanto-custa-um-site-profissional-post-stavit-03.jpg",
+    "image_url": "/news/criação-de-sites-profissionais-para-sua-empresa.jpg",
     "thumb_id": "49482"
   },
   {
@@ -1911,7 +1911,7 @@ export const newsData: NewsPost[] = [
       "criar aplicativo",
       "criar loja virtual profissional"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/era-digital.png",
+    "image_url": "/news/por-que-devo-criar-um-aplicativo-para-minha-empresa.png",
     "thumb_id": "49442"
   },
   {
@@ -1932,7 +1932,7 @@ export const newsData: NewsPost[] = [
       "criar site para empresa",
       "hospedagem de sites"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/loja-vritual-Copia.jpg",
+    "image_url": "/news/devo-criar-site-e-emails-para-a-minha-empresa.jpg",
     "thumb_id": "49292"
   },
   {
@@ -1964,7 +1964,7 @@ export const newsData: NewsPost[] = [
       "Snapchat",
       "Twitter"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Imagem-blog.png-landing-page.png",
+    "image_url": "/news/ecommerce-aprenda-a-criar-uma-boa-loja-virtual-para-a-sua-empresa.png",
     "thumb_id": "49328"
   },
   {
@@ -1984,7 +1984,7 @@ export const newsData: NewsPost[] = [
       "criar loja virtual profissional",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Fotografia-cuidados-com-a-construC3A7C3A3o-da-sua-marca-na-internet-1.png",
+    "image_url": "/news/fotografia-cuidados-com-a-construção-da-sua-marca-na-internet.png",
     "thumb_id": "49345"
   },
   {
@@ -2010,7 +2010,7 @@ export const newsData: NewsPost[] = [
       "site para empresas",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/exibir-seu-site-nos-buscadores.jpg",
+    "image_url": "/news/como-faço-para-exibir-meu-site-nos-buscadores-google-yahoo-bing.jpg",
     "thumb_id": "49342"
   },
   {
@@ -2036,7 +2036,7 @@ export const newsData: NewsPost[] = [
       "design de conteúdo",
       "landing page"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/faca-a-criacao-de-site-anuncie-no-google-e-apareca-Copia.jpg",
+    "image_url": "/news/6-dicas-para-o-melhorar-o-design-de-conteúdo.jpg",
     "thumb_id": "49281"
   },
   {
@@ -2054,7 +2054,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital",
       "Vídeos corporativos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/05/criacao-de-sistes-sistemas-14.jpg",
+    "image_url": "/news/saiba-por-que-investir-em-vídeos-corporativos-para-sua-empresa.jpg",
     "thumb_id": "49078"
   },
   {
@@ -2076,7 +2076,7 @@ export const newsData: NewsPost[] = [
       "criar site responsivo",
       "criar website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/img-mokups-dbs.jpg",
+    "image_url": "/news/landing-page-o-que-é-e-como-fazer.jpg",
     "thumb_id": "49302"
   },
   {
@@ -2098,7 +2098,7 @@ export const newsData: NewsPost[] = [
       "desenvolvimento de sistemas",
       "loja virtual para celulares"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Erros-ao-criar-sites-3.png",
+    "image_url": "/news/erros-ao-criar-sites-veja-os-7-principais.png",
     "thumb_id": "49323"
   },
   {
@@ -2121,7 +2121,7 @@ export const newsData: NewsPost[] = [
       "identidade visual",
       "Marketing Digital"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/4-dicas-para-criar-um-C3B3timo-logo-1.png",
+    "image_url": "/news/4-dicas-para-criar-um-ótimo-logo.png",
     "thumb_id": "49318"
   },
   {
@@ -2147,7 +2147,7 @@ export const newsData: NewsPost[] = [
       "criação de sites",
       "marketing de conteúdo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Imagem-blog-landing-page-videos-sC3A3o-mais-chamativos.png",
+    "image_url": "/news/você-sabia-que-o-conteúdo-pode-alavancar-o-seu-negócio.png",
     "thumb_id": "49329"
   },
   {
@@ -2168,7 +2168,7 @@ export const newsData: NewsPost[] = [
       "redes socias",
       "website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/redes-sociais-Copia.png",
+    "image_url": "/news/aumentar-o-engajamento-das-suas-redes-sociais.png",
     "thumb_id": "49293"
   },
   {
@@ -2192,7 +2192,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "wordpress"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/4-dicas-para-criar-um-C3B3timo-logo-3.png",
+    "image_url": "/news/por-que-usar-o-wordpress-para-criação-de-seu-site.png",
     "thumb_id": "49320"
   },
   {
@@ -2218,7 +2218,7 @@ export const newsData: NewsPost[] = [
       "web designers",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Imagem-blog-vC3ADdeos-corporativos-3.png",
+    "image_url": "/news/por-que-contratar-profissionais-qualificados.png",
     "thumb_id": "49335"
   },
   {
@@ -2240,7 +2240,7 @@ export const newsData: NewsPost[] = [
       "Rio de Janeiro",
       "seo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Imagem-blog-landing-page-CTA.png",
+    "image_url": "/news/por-que-o-seo-é-importante-na-criação-de-sites.png",
     "thumb_id": "49331"
   },
   {
@@ -2263,7 +2263,7 @@ export const newsData: NewsPost[] = [
       "hospedagem de sites",
       "otimização de sites"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/por-que-que-e-seo-e-importante-na-criacao-de-sites-820x450-Copia.jpg",
+    "image_url": "/news/anuncie-no-google-e-apareça.jpg",
     "thumb_id": "49285"
   },
   {
@@ -2285,7 +2285,7 @@ export const newsData: NewsPost[] = [
       "criar sites reponsivos",
       "loja virtual para celulares"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/diferencial-em-criacao-de-sites-e-e-commerces-820x450-Copia.jpg",
+    "image_url": "/news/diferencial-em-criação-de-sites-e-e-commerce.jpg",
     "thumb_id": "49283"
   },
   {
@@ -2306,7 +2306,7 @@ export const newsData: NewsPost[] = [
       "criar sites reponsivos",
       "site para empresas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/shutterstock_528070915-820x490-Copia-300x179-1.jpg",
+    "image_url": "/news/por-que-ter-um-blog-corporativo.jpg",
     "thumb_id": "49308"
   },
   {
@@ -2329,7 +2329,7 @@ export const newsData: NewsPost[] = [
       "sites semânticos",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Imagem-blog.pngvC3ADdeos-corporativos-1.png",
+    "image_url": "/news/usabilidade-na-web-criação-de-sites.png",
     "thumb_id": "49336"
   },
   {
@@ -2357,7 +2357,7 @@ export const newsData: NewsPost[] = [
       "sites para celulares",
       "sites responsivos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/05/criacao-de-sistes-sistemas-1.jpg",
+    "image_url": "/news/o-que-um-bom-site-institucional-deve-ter-novabox.jpg",
     "thumb_id": "49080"
   },
   {
@@ -2379,7 +2379,7 @@ export const newsData: NewsPost[] = [
       "site para empresas",
       "Sites Institucionais"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-50.jpg",
+    "image_url": "/news/sites-institucionais-o-que-são-e-bons-motivos-para-ter-um.jpg",
     "thumb_id": "48586"
   },
   {
@@ -2402,7 +2402,7 @@ export const newsData: NewsPost[] = [
       "sites para celulares",
       "sites responsivos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-23.png",
+    "image_url": "/news/sites-responsivos-sites-que-se-adaptam-a-telas-de-celulares-e-tablets.png",
     "thumb_id": "48545"
   },
   {
@@ -2428,7 +2428,7 @@ export const newsData: NewsPost[] = [
       "loja virtual para facebook",
       "melhor servidor para loja virtual"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/05/criacao-de-sistes-sistemas-15.jpg",
+    "image_url": "/news/tecnologias-da-educação-o-que-é-b2b-b2c-c2b-c2c.jpg",
     "thumb_id": "49079"
   },
   {
@@ -2454,7 +2454,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital",
       "reformular website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/05/criacao-de-sistes-sistemas-13.jpg",
+    "image_url": "/news/um-bom-site-pode-trazer-vendas-para-minha-empresa.jpg",
     "thumb_id": "49077"
   },
   {
@@ -2475,7 +2475,7 @@ export const newsData: NewsPost[] = [
       "criar sites reponsivos",
       "desenvolvimento de sistemas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-77.jpg",
+    "image_url": "/news/10-razões-para-montar-um-bom-site-para-sua-empresa.jpg",
     "thumb_id": "48613"
   },
   {
@@ -2496,7 +2496,7 @@ export const newsData: NewsPost[] = [
       "sítio eletrônic",
       "website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-71.jpg",
+    "image_url": "/news/por-que-criar-um-site-para-o-meu-negócio.jpg",
     "thumb_id": "48607"
   },
   {
@@ -2516,7 +2516,7 @@ export const newsData: NewsPost[] = [
       "desenvolvimento de sistemas",
       "sites semânticos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/05/desenvolvimento-webdesign-109.jpg",
+    "image_url": "/news/tendências-evolução-na-internet.jpg",
     "thumb_id": "48648"
   },
   {
@@ -2537,7 +2537,7 @@ export const newsData: NewsPost[] = [
       "hospedagem para o seu site",
       "melhor servidor para loja virtual"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-64.jpg",
+    "image_url": "/news/saiba-como-escolher-a-melhor-hospedagem-para-o-seu-site.jpg",
     "thumb_id": "48600"
   },
   {
@@ -2560,7 +2560,7 @@ export const newsData: NewsPost[] = [
       "loja virtual para celulares",
       "loja virtual para facebook"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-26.jpg",
+    "image_url": "/news/criar-ou-abrir-um-negócio-e-commerce-no-brasil.jpg",
     "thumb_id": "48550"
   },
   {
@@ -2580,7 +2580,7 @@ export const newsData: NewsPost[] = [
       "fazer site",
       "reformular website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-75.jpg",
+    "image_url": "/news/qual-é-o-momento-ideal-para-reformular-o-website-da-empresa.jpg",
     "thumb_id": "48611"
   },
   {
@@ -2600,7 +2600,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-63.jpg",
+    "image_url": "/news/sua-empresa-precisa-ter-um-site-responsivo.jpg",
     "thumb_id": "48599"
   },
   {
@@ -2616,7 +2616,7 @@ export const newsData: NewsPost[] = [
       "fintech",
       "news"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-15.webp",
+    "image_url": "/news/start-your-first-week-of-a-new-job-like-a-boss.webp",
     "thumb_id": "3251"
   },
   {
@@ -2632,7 +2632,7 @@ export const newsData: NewsPost[] = [
       "fintech",
       "news"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-14.webp",
+    "image_url": "/news/pioneering-a-new-twist-on-coworking-models.webp",
     "thumb_id": "3250"
   },
   {
@@ -2648,7 +2648,7 @@ export const newsData: NewsPost[] = [
       "fintech",
       "news"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-13.webp",
+    "image_url": "/news/the-white-label-software-model-in-fintech.webp",
     "thumb_id": "3249"
   },
   {
@@ -2663,7 +2663,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "api"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/corporate-new3.webp",
+    "image_url": "/news/apple-macbook-air-2022-review-great-design-fast-performance.webp",
     "thumb_id": "1880"
   },
   {
@@ -2679,7 +2679,7 @@ export const newsData: NewsPost[] = [
       "Branding",
       "Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/corporate-new2.webp",
+    "image_url": "/news/the-revolution-is-alive-and-well-how-fintech-has-impacted-banking.webp",
     "thumb_id": "1879"
   },
   {
@@ -2695,7 +2695,7 @@ export const newsData: NewsPost[] = [
       "api",
       "Apps"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/corporate-new1.webp",
+    "image_url": "/news/4-things-you-must-do-before-you-e-meet-a-new-client-or-coworker.webp",
     "thumb_id": "1878"
   },
   {
@@ -2711,7 +2711,7 @@ export const newsData: NewsPost[] = [
       "development",
       "devops"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-12.webp",
+    "image_url": "/news/vietnamese-fintech-startup-raises-25-m-series-b-round-from-ospace-vietnam-investments-group.webp",
     "thumb_id": "1338"
   },
   {
@@ -2727,7 +2727,7 @@ export const newsData: NewsPost[] = [
       "Email",
       "shop"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-11.webp",
+    "image_url": "/news/tips-to-know-how-technology-can-help-bridge-the-gap-between-infrastructure-sustainability.webp",
     "thumb_id": "1337"
   },
   {
@@ -2743,7 +2743,7 @@ export const newsData: NewsPost[] = [
       "starups",
       "wordpress"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-10.webp",
+    "image_url": "/news/how-coworking-companies-like-the-wing-and-industrious-are-intersecting-with-retail.webp",
     "thumb_id": "1336"
   },
   {
@@ -2760,7 +2760,7 @@ export const newsData: NewsPost[] = [
       "api",
       "Apps"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-09.webp",
+    "image_url": "/news/5-more-questions-to-ask-during-your-project-kickoff-meeting.webp",
     "thumb_id": "1335"
   },
   {
@@ -2776,7 +2776,7 @@ export const newsData: NewsPost[] = [
       "Branding",
       "Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-08.webp",
+    "image_url": "/news/start-your-first-week-of-a-new-job-like-a-boss.webp",
     "thumb_id": "1334"
   },
   {
@@ -2792,7 +2792,7 @@ export const newsData: NewsPost[] = [
       "development",
       "devops"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-07.webp",
+    "image_url": "/news/pioneering-a-new-twist-on-coworking-models.webp",
     "thumb_id": "1333"
   },
   {
@@ -2808,7 +2808,7 @@ export const newsData: NewsPost[] = [
       "Email",
       "shop"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-06.webp",
+    "image_url": "/news/the-white-label-software-model-in-fintech.webp",
     "thumb_id": "1332"
   },
   {
@@ -2825,7 +2825,7 @@ export const newsData: NewsPost[] = [
       "startup",
       "wordpress"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-05.webp",
+    "image_url": "/news/10-secrets-to-connect-with-your-audience-through-your-website-and-blog.webp",
     "thumb_id": "1331"
   },
   {
@@ -2842,7 +2842,7 @@ export const newsData: NewsPost[] = [
       "api",
       "Apps"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-04.webp",
+    "image_url": "/news/which-wordpress-should-you-choose-wordpresscom-vs-wordpressorg.webp",
     "thumb_id": "1330"
   },
   {
@@ -2858,7 +2858,7 @@ export const newsData: NewsPost[] = [
       "Branding",
       "Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-03.webp",
+    "image_url": "/news/these-web-design-trends-will-help-inform-and-inspire-what-people-build-for-the-web.webp",
     "thumb_id": "1329"
   },
   {
@@ -2874,7 +2874,7 @@ export const newsData: NewsPost[] = [
       "development",
       "devops"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-02.webp",
+    "image_url": "/news/what-are-the-differences-between-google-analytics-and-analytics-360.webp",
     "thumb_id": "1328"
   },
   {
@@ -2891,7 +2891,7 @@ export const newsData: NewsPost[] = [
       "news",
       "technology"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-01.webp",
+    "image_url": "/news/niche-coworking-4-shared-workspaces-for-designers-and-developers.webp",
     "thumb_id": "1327"
   }
 ];
