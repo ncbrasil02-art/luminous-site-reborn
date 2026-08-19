@@ -20,19 +20,19 @@ export const Route = createFileRoute("/solucoes-web/loja-virtual")({
     canonical: URL,
     h1: "Criação de Loja Virtual Profissional",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
-      { name: "Loja Virtual", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
+      { label: "Loja Virtual", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/solucoes-web", name: "Soluções Web" }, { to: "/solucoes-web/loja-virtual", name: "Loja Virtual" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/loja-virtual", label: "Loja Virtual" }]}
       eyebrow="E-commerce"
       h1={<>Loja Virtual pronta para <span className="text-gradient">vender muito</span></>}
       intro={<>Plataforma de e-commerce completa com **checkout otimizado, integração com marketplaces e meios de pagamento**. De 0 a R$ 100 mil/mês com estrutura escalável.</>}
-      stats={[{ value: "300+", name: "Lojas ativas" }, { value: "R$ 50Mi", name: "GMV anual" }, { value: "3,2%", name: "Taxa conversão" }, { value: "99,9%", name: "Uptime" }]}
+      stats={[{ value: "300+", label: "Lojas ativas" }, { value: "R$ 50Mi", label: "GMV anual" }, { value: "3,2%", label: "Taxa conversão" }, { value: "99,9%", label: "Uptime" }]}
       benefits={[
         { icon: ShoppingCart, title: "Checkout Otimizado", desc: "Checkout **em uma página** com Pix, cartão e boleto — reduz abandono em 40%." },
         { icon: CreditCard, title: "Múltiplos Pagamentos", desc: "Integração com **Mercado Pago, PagSeguro, Cielo, Pagar.me, Stripe** e Pix." },

@@ -20,19 +20,19 @@ export const Route = createFileRoute("/servicos/facebook-ads")({
     canonical: URL,
     h1: "Gestão de Meta Ads (Facebook e Instagram)",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
-      { name: "Facebook Ads", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
+      { label: "Facebook Ads", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-servicos", name: "Serviços" }, { to: "/servicos/facebook-ads", name: "Facebook Ads" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/facebook-ads", label: "Facebook Ads" }]}
       eyebrow="Meta Ads"
       h1={<>Facebook e Instagram Ads com <span className="text-gradient">ROI real</span></>}
       intro={<>Gestão avançada de **Meta Ads com CBO, Advantage+, Lookalikes e criativos testados** — focada em escala com CAC saudável.</>}
-      stats={[{ value: "R$ 15Mi", name: "Investidos em Meta" }, { value: "4,6x", name: "ROAS médio" }, { value: "200+", name: "Contas ativas" }, { value: "Meta", name: "Business Partner" }]}
+      stats={[{ value: "R$ 15Mi", label: "Investidos em Meta" }, { value: "4,6x", label: "ROAS médio" }, { value: "200+", label: "Contas ativas" }, { value: "Meta", label: "Business Partner" }]}
       benefits={[
         { icon: Facebook, title: "Facebook Ads", desc: "Campanhas de **conversão, tráfego, engajamento e mensagens** otimizadas." },
         { icon: Instagram, title: "Instagram Ads", desc: "Feed, Stories, Reels, Explore e **collab ads** com influenciadores." },

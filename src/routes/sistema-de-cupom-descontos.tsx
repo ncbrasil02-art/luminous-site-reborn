@@ -20,19 +20,19 @@ export const Route = createFileRoute("/sistema-de-cupom-descontos")({
     canonical: URL,
     h1: "Plataforma de Cupons e Cashback",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Sistema de Cupom", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Sistema de Cupom", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-sistemas", name: "Sistemas" }, { to: "/sistema-de-cupom-descontos", name: "Cupons & Cashback" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-cupom-descontos", label: "Cupons & Cashback" }]}
       eyebrow="Cupons & Cashback"
       h1={<>Plataforma de <span className="text-gradient">Cupons e Cashback</span></>}
       intro={<>Crie a próxima <strong className="text-foreground">Cuponomia ou Méliuz</strong>: plataforma completa para gerar tráfego, engajar clientes e comissionar sobre vendas com <strong className="text-foreground">cupons, cashback e ofertas exclusivas</strong>.</>}
-      stats={[{ value: "10M+", name: "Cupons resgatados" }, { value: "500+", name: "Lojas parceiras" }, { value: "R$8Mi", name: "Cashback pago" }, { value: "4.8⭐", name: "App Store" }]}
+      stats={[{ value: "10M+", label: "Cupons resgatados" }, { value: "500+", label: "Lojas parceiras" }, { value: "R$8Mi", label: "Cashback pago" }, { value: "4.8⭐", label: "App Store" }]}
       benefits={[
         { icon: Ticket, title: "Cupons Multi-tipo", desc: "**Percentual, valor fixo, frete grátis, BOGO e primeira compra** — regras avançadas por segmento." },
         { icon: Percent, title: "Cashback Automático", desc: "Comissão da loja convertida em **saldo do usuário**, com saque via Pix ou crédito na próxima compra." },

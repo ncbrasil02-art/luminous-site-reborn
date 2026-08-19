@@ -19,19 +19,19 @@ export const Route = createFileRoute("/portfolio/sistemas-criados")({
     canonical: URL,
     h1: "Portfólio de Sistemas Web Desenvolvidos",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Portfólio", to: "https://www.ncbrasil.com.br/trabalhos-realizados" },
-      { name: "Sistemas Criados", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Portfólio", to: "https://www.ncbrasil.com.br/trabalhos-realizados" },
+      { label: "Sistemas Criados", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/trabalhos-realizados", name: "Portfólio" }, { to: "/portfolio/sistemas-criados", name: "Sistemas Criados" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/trabalhos-realizados", label: "Portfólio" }, { to: "/portfolio/sistemas-criados", label: "Sistemas Criados" }]}
       eyebrow="Portfólio Sistemas"
       h1={<>Sistemas que <span className="text-gradient">operam 24/7 sem falhar</span></>}
       intro={<>**Mais de 400 sistemas ativos** em produção: ERPs, CRMs, portais corporativos e plataformas SaaS multi-tenant com uptime 99,9%.</>}
-      stats={[{ value: "400+", name: "Sistemas ativos" }, { value: "99,9%", name: "SLA" }, { value: "Multi-tenant", name: "Arquitetura" }, { value: "24/7", name: "Suporte" }]}
+      stats={[{ value: "400+", label: "Sistemas ativos" }, { value: "99,9%", label: "SLA" }, { value: "Multi-tenant", label: "Arquitetura" }, { value: "24/7", label: "Suporte" }]}
       benefits={[
         { icon: LayoutDashboard, title: "Painéis Sob Medida", desc: "Dashboards com **KPIs em tempo real, gráficos e relatórios exportáveis**." },
         { icon: Cloud, title: "Arquitetura Cloud", desc: "**AWS, GCP e Cloudflare** com escala automática e alta disponibilidade." },

@@ -20,19 +20,19 @@ export const Route = createFileRoute("/sistema-de-ofertas-cupom-marketplace")({
     canonical: URL,
     h1: "Plataforma de Marketplace de Ofertas",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Marketplace de Ofertas", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Marketplace de Ofertas", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-sistemas", name: "Sistemas" }, { to: "/sistema-de-ofertas-cupom-marketplace", name: "Marketplace de Ofertas" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-ofertas-cupom-marketplace", label: "Marketplace de Ofertas" }]}
       eyebrow="Marketplace"
       h1={<>Marketplace de <span className="text-gradient">Ofertas & Cupons</span></>}
       intro={<>Plataforma <strong className="text-foreground">multi-lojista</strong> pronta para operar como **Peixe Urbano, Groupon ou ClickOn**: cupons, ofertas relâmpago, split de pagamento e comissionamento automático.</>}
-      stats={[{ value: "10K+", name: "Lojistas cadastráveis" }, { value: "1M+", name: "Ofertas ativas" }, { value: "R$50Mi", name: "GMV processado" }, { value: "40+", name: "Cidades atendidas" }]}
+      stats={[{ value: "10K+", label: "Lojistas cadastráveis" }, { value: "1M+", label: "Ofertas ativas" }, { value: "R$50Mi", label: "GMV processado" }, { value: "40+", label: "Cidades atendidas" }]}
       benefits={[
         { icon: Store, title: "Painel do Lojista", desc: "Autocadastro, upload de ofertas, gestão de estoque e **relatório de vendas em tempo real**." },
         { icon: CreditCard, title: "Split de Pagamento", desc: "Divisão automática entre marketplace, lojista, afiliado e taxas via **Pagar.me / Iugu**." },

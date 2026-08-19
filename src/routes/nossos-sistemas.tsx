@@ -18,8 +18,8 @@ export const Route = createFileRoute("/nossos-sistemas")({
     canonical: URL,
     h1: "Nossos Sistemas Web",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: URL },
     ],
   }),
   component: SistemasHub,

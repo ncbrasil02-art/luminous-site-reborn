@@ -28,7 +28,7 @@ const OG_IMAGE = `/og-home.jpg`;
 const homeJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "NC Brasil — Criação de Sites, Sistemas Web e Aplicativos",
+  label: "NC Brasil — Criação de Sites, Sistemas Web e Aplicativos",
   to: SITE_URL,
   image: `${SITE_URL}${OG_IMAGE}`,
   description:
@@ -104,10 +104,10 @@ const solutions = [
 ];
 
 const stats = [
-  { value: "745+", name: "Homepages criadas" },
-  { value: "525+", name: "Lojas online no ar" },
-  { value: "78+", name: "Projetos completos" },
-  { value: "15+", name: "Anos de mercado" },
+  { value: "745+", label: "Homepages criadas" },
+  { value: "525+", label: "Lojas online no ar" },
+  { value: "78+", label: "Projetos completos" },
+  { value: "15+", label: "Anos de mercado" },
 ];
 
 const steps = [
@@ -384,23 +384,23 @@ function HomePage() {
                   {[
                     {
                       to: "/portfolio/criacao-de-sistemas",
-                      name: "Criação de Sistemas",
+                      label: "Criação de Sistemas",
                     },
                     {
                       to: "/portfolio/sistema-de-compra-coletiva",
-                      name: "Sistema de Compra Coletiva",
+                      label: "Sistema de Compra Coletiva",
                     },
                     {
                       to: "/portfolio/lojas-virtuais-criadas",
-                      name: "Lojas Virtuais & Marketplaces",
+                      label: "Lojas Virtuais & Marketplaces",
                     },
                     {
                       to: "/portfolio/criacao-de-aplicativos",
-                      name: "Aplicativos Mobile iOS & Android",
+                      label: "Aplicativos Mobile iOS & Android",
                     },
                     {
                       to: "/portfolio/identidade-visual",
-                      name: "Identidade Visual & Branding",
+                      label: "Identidade Visual & Branding",
                     },
                   ].map((it) => (
                     <li key={it.to} className="flex items-center gap-3">

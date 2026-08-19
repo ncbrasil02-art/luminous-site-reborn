@@ -19,19 +19,19 @@ export const Route = createFileRoute("/empresa/nossa-historia")({
     canonical: URL,
     h1: "Nossa História — 20 Anos Transformando Negócios",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Empresa", to: "https://www.ncbrasil.com.br/empresa" },
-      { name: "Nossa História", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Empresa", to: "https://www.ncbrasil.com.br/empresa" },
+      { label: "Nossa História", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/empresa", name: "Empresa" }, { to: "/empresa/nossa-historia", name: "Nossa História" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/empresa", label: "Empresa" }, { to: "/empresa/nossa-historia", label: "Nossa História" }]}
       eyebrow="Nossa jornada"
       h1={<>Duas décadas <span className="text-gradient">construindo o futuro digital</span> do Brasil</>}
       intro={<>Da fundação em **2005** aos dias atuais, cada marco da NC Brasil foi construído com **suor de engenharia, criatividade e parceria** com nossos clientes.</>}
-      stats={[{ value: "2005", name: "Ano de fundação" }, { value: "1.500+", name: "Projetos" }, { value: "50+", name: "Colaboradores" }, { value: "R$ 500Mi", name: "GMV gerado" }]}
+      stats={[{ value: "2005", label: "Ano de fundação" }, { value: "1.500+", label: "Projetos" }, { value: "50+", label: "Colaboradores" }, { value: "R$ 500Mi", label: "GMV gerado" }]}
       benefits={[
         { icon: Milestone, title: "2005 — Fundação", desc: "Nascemos como **estúdio de desenvolvimento web** em São Paulo com 3 sócios engenheiros." },
         { icon: Rocket, title: "2010 — Expansão", desc: "Lançamento da divisão de **sistemas sob demanda** e primeiros grandes contratos B2B." },

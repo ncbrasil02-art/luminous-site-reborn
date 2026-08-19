@@ -29,32 +29,32 @@ const lpFaq = [
 export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
   head: () => buildLPMeta({
     title: "Plataforma de Cassino Online White Label | Sportsbook + Slots + Pix",
-    description: "Plataforma completa de cassino online e apostas esportivas white name: 8.000+ slots (Pragmatic, PG Soft, Aviator), cassino ao vivo, sportsbook, Pix instantâneo, KYC BR e licenciamento SPA. Deploy em 45 dias.",
+    description: "Plataforma completa de cassino online e apostas esportivas white label: 8.000+ slots (Pragmatic, PG Soft, Aviator), cassino ao vivo, sportsbook, Pix instantâneo, KYC BR e licenciamento SPA. Deploy em 45 dias.",
     keywords: "plataforma cassino online, white label cassino, sistema cassino online, plataforma chinesa cassino, plataforma apostas esportivas, sportsbook white label, sistema de apostas, plataforma iGaming, cassino com pix, plataforma slots online",
     canonical: URL,
     h1: "Plataforma de Cassino Online e Apostas White Label",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Plataforma Cassino", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Plataforma Cassino", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
       breadcrumbs={[
-        { to: "/", name: "Home" },
-        { to: "/nossos-sistemas", name: "Sistemas" },
-        { to: "/plataforma-chinesa-apostas-cassino", name: "Plataforma Cassino" },
+        { to: "/", label: "Home" },
+        { to: "/nossos-sistemas", label: "Sistemas" },
+        { to: "/plataforma-chinesa-apostas-cassino", label: "Plataforma Cassino" },
       ]}
       eyebrow="iGaming · White Label · Pix + SPA/MF"
       h1={<>Plataforma de <span className="text-gradient">Cassino Online e Apostas</span> White Label — Sportsbook, Slots e Pix Nativo</>}
       intro={<>Solução <strong className="text-foreground">iGaming turnkey</strong> com a mesma arquitetura das <strong className="text-foreground">plataformas chinesas / asiáticas de referência</strong>, tropicalizada para o Brasil: <strong className="text-foreground">8.000+ jogos agregados</strong> (Pragmatic Play, PG Soft, Evolution, Aviator), <strong className="text-foreground">sportsbook completo</strong> com odds ao vivo, cassino ao vivo com dealers BR, <strong className="text-foreground">Pix instantâneo</strong>, KYC brasileiro e conformidade com a <strong className="text-foreground">Lei 14.790/2023 e Portaria SPA/MF 1.475/2024</strong>. Sem % sobre GGR — <strong className="text-foreground">você é o operador</strong>.</>}
       stats={[
-        { value: "8.000+", name: "Jogos agregados" },
-        { value: "30+", name: "Provedores" },
-        { value: "<30s", name: "Pix depósito/saque" },
-        { value: "99.99%", name: "Uptime SLA" },
+        { value: "8.000+", label: "Jogos agregados" },
+        { value: "30+", label: "Provedores" },
+        { value: "<30s", label: "Pix depósito/saque" },
+        { value: "99.99%", label: "Uptime SLA" },
       ]}
       clients={["Bet BR", "GO Cassino", "Aposta VIP", "Casino Pix", "Sport Real", "Play Brasil", "Bet Pro", "Slot Fun"]}
       problem={{
@@ -176,26 +176,26 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
         { icon: Layers, title: "Rede de Franquias", desc: "Modelo **multi-tenant white label** com franqueados regionais operando marcas independentes." },
       ]}
       integrations={[
-        { name: "Pragmatic Play", category: "Slots + Live" },
-        { name: "PG Soft", category: "Slots" },
-        { name: "Evolution Gaming", category: "Live Casino" },
-        { name: "Spribe (Aviator)", category: "Crash Games" },
-        { name: "Endorphina", category: "Slots" },
-        { name: "BGaming", category: "Slots + Crash" },
-        { name: "Playtech", category: "Slots + Live" },
-        { name: "Ezugi", category: "Live Casino" },
-        { name: "Amatic", category: "Slots" },
-        { name: "Booongo", category: "Slots" },
-        { name: "Betradar", category: "Sportsbook Feed" },
-        { name: "Sportradar", category: "Sportsbook Feed" },
-        { name: "Efí (Pix)", category: "Pagamentos" },
-        { name: "Pagar.me", category: "Pagamentos" },
-        { name: "PagBank", category: "Pagamentos" },
-        { name: "CoinsPaid", category: "Cripto" },
-        { name: "Serpro / CPF", category: "KYC" },
-        { name: "Datavalid", category: "Biometria" },
-        { name: "Unico Check", category: "Face Match" },
-        { name: "AppsFlyer", category: "Attribution" },
+        { label: "Pragmatic Play", category: "Slots + Live" },
+        { label: "PG Soft", category: "Slots" },
+        { label: "Evolution Gaming", category: "Live Casino" },
+        { label: "Spribe (Aviator)", category: "Crash Games" },
+        { label: "Endorphina", category: "Slots" },
+        { label: "BGaming", category: "Slots + Crash" },
+        { label: "Playtech", category: "Slots + Live" },
+        { label: "Ezugi", category: "Live Casino" },
+        { label: "Amatic", category: "Slots" },
+        { label: "Booongo", category: "Slots" },
+        { label: "Betradar", category: "Sportsbook Feed" },
+        { label: "Sportradar", category: "Sportsbook Feed" },
+        { label: "Efí (Pix)", category: "Pagamentos" },
+        { label: "Pagar.me", category: "Pagamentos" },
+        { label: "PagBank", category: "Pagamentos" },
+        { label: "CoinsPaid", category: "Cripto" },
+        { label: "Serpro / CPF", category: "KYC" },
+        { label: "Datavalid", category: "Biometria" },
+        { label: "Unico Check", category: "Face Match" },
+        { label: "AppsFlyer", category: "Attribution" },
       ]}
       security={[
         { icon: FileCheck, title: "Conformidade SPA/MF", desc: "**Lei 14.790/2023, Portaria 1.475/2024, reports mensais automáticos** e trilha de auditoria completa." },

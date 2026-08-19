@@ -20,19 +20,19 @@ export const Route = createFileRoute("/solucoes-web/hospedagem")({
     canonical: URL,
     h1: "Hospedagem Cloud Gerenciada de Alta Performance",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
-      { name: "Hospedagem", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
+      { label: "Hospedagem", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/solucoes-web", name: "Soluções Web" }, { to: "/solucoes-web/hospedagem", name: "Hospedagem" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/hospedagem", label: "Hospedagem" }]}
       eyebrow="Infra Cloud"
       h1={<>Hospedagem <span className="text-gradient">cloud gerenciada</span> para quem não pode parar</>}
       intro={<>Infraestrutura em **AWS, Google Cloud e Cloudflare** com uptime 99,9%, SSL grátis, backup diário e monitoramento 24/7. Foque no seu negócio — nós cuidamos da tecnologia.</>}
-      stats={[{ value: "99,9%", name: "Uptime garantido" }, { value: "24/7", name: "Suporte técnico" }, { value: "<50ms", name: "Latência Brasil" }, { value: "SSL", name: "Grátis Let's Encrypt" }]}
+      stats={[{ value: "99,9%", label: "Uptime garantido" }, { value: "24/7", label: "Suporte técnico" }, { value: "<50ms", label: "Latência Brasil" }, { value: "SSL", label: "Grátis Let's Encrypt" }]}
       benefits={[
         { icon: Zap, title: "Performance Extrema", desc: "**SSD NVMe, HTTP/3, cache Redis** e CDN Cloudflare em 300+ pontos globais." },
         { icon: ShieldCheck, title: "Segurança Total", desc: "**WAF, anti-DDoS, malware scan** e firewall aplicacional inclusos." },

@@ -136,10 +136,10 @@ export const Route = createFileRoute("/portfolio/sistema-de-compra-coletiva")({
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { name: "Cupons Gerados", value: "2.5M+" },
-              { name: "Empresas Parceiras", value: "150+" },
-              { name: "Tempo de Resposta", value: "< 200ms" },
-              { name: "Disponibilidade", value: "99.9%" }
+              { label: "Cupons Gerados", value: "2.5M+" },
+              { label: "Empresas Parceiras", value: "150+" },
+              { label: "Tempo de Resposta", value: "< 200ms" },
+              { label: "Disponibilidade", value: "99.9%" }
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl font-bold text-gradient">{stat.value}</div>

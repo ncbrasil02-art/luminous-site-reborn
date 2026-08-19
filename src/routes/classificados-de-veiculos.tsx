@@ -28,24 +28,24 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
     canonical: URL,
     h1: "Plataforma de Classificados Automotivos",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Classificados de Veículos", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Classificados de Veículos", to: URL },
     ],
     faq: lpFaq,
     ogImage: "/og/classificados-veiculos.jpg",
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-sistemas", name: "Sistemas" }, { to: "/classificados-de-veiculos", name: "Classificados de Veículos" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/classificados-de-veiculos", label: "Classificados de Veículos" }]}
       eyebrow="Portal Automotivo · Marketplace de Veículos"
       h1={<>Portal de <span className="text-gradient">Classificados Automotivos</span> — o próximo Webmotors/iCarros</>}
       intro={<>Sistema turnkey para lançar o <strong className="text-foreground">próximo grande portal de veículos</strong> do seu estado ou nicho. Busca avançada com <strong className="text-foreground">Tabela FIPE integrada</strong>, planos escaláveis para revendedores, financiamento em 1 clique, comparador lado-a-lado e SEO técnico premiado — tudo com nosso motor proprietário testado em milhões de anúncios.</>}
       stats={[
-        { value: "50K+", name: "Anúncios ativos" },
-        { value: "2M", name: "Visitas mensais" },
-        { value: "800+", name: "Revendas conectadas" },
-        { value: "95", name: "PageSpeed médio" },
+        { value: "50K+", label: "Anúncios ativos" },
+        { value: "2M", label: "Visitas mensais" },
+        { value: "800+", label: "Revendas conectadas" },
+        { value: "95", label: "PageSpeed médio" },
       ]}
       clientsTitle={<>Portais e revendas que <span className="text-gradient">confiam na NC Brasil</span></>}
       clients={["AutoShow", "MegaCar Portal", "Revenda Fácil", "CarroBom", "AutoBrasil", "MercadoCar", "TopVeículos", "AutoRegional"]}
@@ -102,20 +102,20 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
         { icon: Car, title: "Grupo de Concessionárias", desc: "Multimarca que quer portal próprio com integração ERP e financiamento white label." },
       ]}
       integrations={[
-        { name: "Tabela FIPE", category: "Precificação" },
-        { name: "AutoConf", category: "ERP" },
-        { name: "Boom Sistemas", category: "ERP" },
-        { name: "DealerBox", category: "ERP" },
-        { name: "Webmotors XML", category: "Cross-post" },
-        { name: "iCarros XML", category: "Cross-post" },
-        { name: "OLX Autos", category: "Cross-post" },
-        { name: "Facebook Marketplace", category: "Cross-post" },
-        { name: "BV Financeira", category: "Financiamento" },
-        { name: "Santander Auto", category: "Financiamento" },
-        { name: "Creditas", category: "Financiamento" },
-        { name: "DETRAN (todos estados)", category: "Documentação" },
-        { name: "WhatsApp Business API", category: "Leads" },
-        { name: "Google Vehicle Ads", category: "Mídia" },
+        { label: "Tabela FIPE", category: "Precificação" },
+        { label: "AutoConf", category: "ERP" },
+        { label: "Boom Sistemas", category: "ERP" },
+        { label: "DealerBox", category: "ERP" },
+        { label: "Webmotors XML", category: "Cross-post" },
+        { label: "iCarros XML", category: "Cross-post" },
+        { label: "OLX Autos", category: "Cross-post" },
+        { label: "Facebook Marketplace", category: "Cross-post" },
+        { label: "BV Financeira", category: "Financiamento" },
+        { label: "Santander Auto", category: "Financiamento" },
+        { label: "Creditas", category: "Financiamento" },
+        { label: "DETRAN (todos estados)", category: "Documentação" },
+        { label: "WhatsApp Business API", category: "Leads" },
+        { label: "Google Vehicle Ads", category: "Mídia" },
       ]}
       security={[
         { icon: Lock, title: "LGPD + Antifraude", desc: "Consentimento explícito, validação de anunciante e proteção contra golpe do falso vendedor." },

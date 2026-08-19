@@ -20,19 +20,19 @@ export const Route = createFileRoute("/servicos/aplicativos")({
     canonical: URL,
     h1: "Desenvolvimento de Aplicativos iOS e Android",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
-      { name: "Aplicativos", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
+      { label: "Aplicativos", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-servicos", name: "Serviços" }, { to: "/servicos/aplicativos", name: "Aplicativos" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/aplicativos", label: "Aplicativos" }]}
       eyebrow="Mobile Apps"
       h1={<>Aplicativos <span className="text-gradient">iOS e Android</span> que encantam</>}
       intro={<>Do MVP ao app com milhões de downloads — construímos apps **nativos e cross-platform** com UX premium, performance nativa e publicação nas lojas.</>}
-      stats={[{ value: "200+", name: "Apps publicados" }, { value: "10Mi+", name: "Downloads acumulados" }, { value: "4,8⭐", name: "Nota média nas lojas" }, { value: "iOS+Android", name: "Nativo ou cross" }]}
+      stats={[{ value: "200+", label: "Apps publicados" }, { value: "10Mi+", label: "Downloads acumulados" }, { value: "4,8⭐", label: "Nota média nas lojas" }, { value: "iOS+Android", label: "Nativo ou cross" }]}
       benefits={[
         { icon: Smartphone, title: "iOS + Android", desc: "**React Native, Flutter, Swift ou Kotlin** — escolhemos o stack ideal para seu projeto." },
         { icon: Sparkles, title: "UX Premium", desc: "Design system próprio, **animações nativas** e conformidade com HIG e Material 3." },

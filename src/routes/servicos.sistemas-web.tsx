@@ -20,19 +20,19 @@ export const Route = createFileRoute("/servicos/sistemas-web")({
     canonical: URL,
     h1: "Sistemas Web Personalizados para Sua Operação",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
-      { name: "Sistemas Web", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
+      { label: "Sistemas Web", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-servicos", name: "Serviços" }, { to: "/servicos/sistemas-web", name: "Sistemas Web" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/sistemas-web", label: "Sistemas Web" }]}
       eyebrow="Sistemas Web"
       h1={<>Sistemas web <span className="text-gradient">sob medida</span> para gestão e operação</>}
       intro={<>Do **ERP ao CRM, do portal do cliente ao SaaS multi-tenant** — construímos sistemas web que automatizam processos e escalam com seu negócio.</>}
-      stats={[{ value: "400+", name: "Sistemas ativos" }, { value: "Multi-tenant", name: "Arquitetura" }, { value: "99,9%", name: "SLA" }, { value: "24/7", name: "Suporte" }]}
+      stats={[{ value: "400+", label: "Sistemas ativos" }, { value: "Multi-tenant", label: "Arquitetura" }, { value: "99,9%", label: "SLA" }, { value: "24/7", label: "Suporte" }]}
       benefits={[
         { icon: LayoutDashboard, title: "Painéis Sob Medida", desc: "Dashboards com **KPIs em tempo real, gráficos interativos e relatórios exportáveis**." },
         { icon: Lock, title: "Multi-Perfil", desc: "Controle granular de permissões por **usuário, cargo, departamento ou empresa**." },

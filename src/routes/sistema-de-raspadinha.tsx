@@ -32,27 +32,27 @@ export const Route = createFileRoute("/sistema-de-raspadinha")({
     canonical: URL,
     h1: "Sistema de Raspadinha Online White Label",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Sistema de Raspadinha", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Sistema de Raspadinha", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
       breadcrumbs={[
-        { to: "/", name: "Home" },
-        { to: "/nossos-sistemas", name: "Sistemas" },
-        { to: "/sistema-de-raspadinha", name: "Sistema de Raspadinha" },
+        { to: "/", label: "Home" },
+        { to: "/nossos-sistemas", label: "Sistemas" },
+        { to: "/sistema-de-raspadinha", label: "Sistema de Raspadinha" },
       ]}
       eyebrow="Instant Win · Raspadinha Valendo Pix · White Label"
       h1={<>Sistema de <span className="text-gradient">Raspadinha Online</span> — Prêmio em Pix, RNG Auditável, App Próprio</>}
       intro={<>Plataforma <strong className="text-foreground">turnkey white label</strong> para operar <strong className="text-foreground">raspadinha online valendo Pix</strong> com <strong className="text-foreground">RNG certificado</strong>, animação canvas premium, controle de estoque de prêmios, KYC + antifraude e app iOS/Android publicado com sua marca. <strong className="text-foreground">Mais de 5 milhões de raspadinhas processadas</strong>, R$3 milhões em prêmios distribuídos e infraestrutura preparada para <strong className="text-foreground">milhares de jogadas por segundo</strong>. Sem % sobre GGR — <strong className="text-foreground">você é dono da operação</strong>.</>}
       stats={[
-        { value: "5Mi+", name: "Raspadinhas jogadas" },
-        { value: "R$3Mi", name: "Prêmios distribuídos" },
-        { value: "<30s", name: "Saque Pix" },
-        { value: "99.99%", name: "Uptime SLA" },
+        { value: "5Mi+", label: "Raspadinhas jogadas" },
+        { value: "R$3Mi", label: "Prêmios distribuídos" },
+        { value: "<30s", label: "Saque Pix" },
+        { value: "99.99%", label: "Uptime SLA" },
       ]}
       clients={["Raspa BR", "PixWin", "Sorte na Mão", "Raspadinha VIP", "GO Raspa", "InstaWin", "Prêmio Fácil", "Raspaí"]}
       problem={{
@@ -174,22 +174,22 @@ export const Route = createFileRoute("/sistema-de-raspadinha")({
         { icon: Coins, title: "Plataforma Cripto", desc: "Raspadinhas com **depósito em USDT/BTC** e saque em Pix ou cripto." },
       ]}
       integrations={[
-        { name: "Mercado Pago", category: "Pix" },
-        { name: "Efí (Gerencianet)", category: "Pix" },
-        { name: "Pagar.me", category: "Pix / Split" },
-        { name: "PagBank", category: "Pix / Cartão" },
-        { name: "Iugu", category: "Cobrança" },
-        { name: "Serpro / Datavalid", category: "KYC" },
-        { name: "Unico Check", category: "Biometria" },
-        { name: "Idwall", category: "AML" },
-        { name: "Google Analytics 4", category: "Analytics" },
-        { name: "Meta Pixel", category: "Ads" },
-        { name: "TikTok Pixel", category: "Ads" },
-        { name: "AppsFlyer", category: "Mobile Attribution" },
-        { name: "WhatsApp Business", category: "Comunicação" },
-        { name: "Zendesk", category: "Suporte" },
-        { name: "Amplitude", category: "Product Analytics" },
-        { name: "Segment", category: "CDP" },
+        { label: "Mercado Pago", category: "Pix" },
+        { label: "Efí (Gerencianet)", category: "Pix" },
+        { label: "Pagar.me", category: "Pix / Split" },
+        { label: "PagBank", category: "Pix / Cartão" },
+        { label: "Iugu", category: "Cobrança" },
+        { label: "Serpro / Datavalid", category: "KYC" },
+        { label: "Unico Check", category: "Biometria" },
+        { label: "Idwall", category: "AML" },
+        { label: "Google Analytics 4", category: "Analytics" },
+        { label: "Meta Pixel", category: "Ads" },
+        { label: "TikTok Pixel", category: "Ads" },
+        { label: "AppsFlyer", category: "Mobile Attribution" },
+        { label: "WhatsApp Business", category: "Comunicação" },
+        { label: "Zendesk", category: "Suporte" },
+        { label: "Amplitude", category: "Product Analytics" },
+        { label: "Segment", category: "CDP" },
       ]}
       security={[
         { icon: Lock, title: "LGPD Compliant", desc: "**Consentimento granular, portabilidade, direito ao esquecimento** e DPO parceiro incluídos." },

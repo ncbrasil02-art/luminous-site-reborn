@@ -19,19 +19,19 @@ export const Route = createFileRoute("/empresa/quem-somos")({
     canonical: URL,
     h1: "Quem Somos — NC Brasil",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Empresa", to: "https://www.ncbrasil.com.br/empresa" },
-      { name: "Quem Somos", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Empresa", to: "https://www.ncbrasil.com.br/empresa" },
+      { label: "Quem Somos", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/empresa", name: "Empresa" }, { to: "/empresa/quem-somos", name: "Quem Somos" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/empresa", label: "Empresa" }, { to: "/empresa/quem-somos", label: "Quem Somos" }]}
       eyebrow="Sobre nós"
       h1={<>Somos uma <span className="text-gradient">agência de engenharia</span> apaixonada por resultado</>}
       intro={<>Há **20 anos** transformando negócios com **tecnologia sob medida, marketing digital e design**. Somos um time enxuto e sênior — sem intermediários, com foco absoluto em ROI.</>}
-      stats={[{ value: "20 anos", name: "De mercado" }, { value: "1.500+", name: "Projetos entregues" }, { value: "50+", name: "Especialistas" }, { value: "12", name: "Estados atendidos" }]}
+      stats={[{ value: "20 anos", label: "De mercado" }, { value: "1.500+", label: "Projetos entregues" }, { value: "50+", label: "Especialistas" }, { value: "12", label: "Estados atendidos" }]}
       benefits={[
         { icon: Award, title: "Experiência Comprovada", desc: "Duas décadas construindo **sistemas, sites e apps** para PMEs, startups e grandes marcas." },
         { icon: Users, title: "Time Sênior", desc: "**Engenheiros, designers, estrategistas e traffic managers** — todos in-house, sem terceirização." },

@@ -28,24 +28,24 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
     canonical: URL,
     h1: "Plataforma para Leilões Rurais e Agropecuários",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Leilão Rural", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Leilão Rural", to: URL },
     ],
     faq: lpFaq,
     ogImage: "/og/leilao-rural.jpg",
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-sistemas", name: "Sistemas" }, { to: "/sistema-de-leilao-rural", name: "Leilão Rural" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-leilao-rural", label: "Leilão Rural" }]}
       eyebrow="Agronegócio · Pecuária · Genética"
       h1={<>Plataforma completa para <span className="text-gradient">Leilões Rurais e Agropecuários</span></>}
       intro={<>A NC Brasil desenvolve o <strong className="text-foreground">software mais avançado do agronegócio brasileiro</strong> para leiloeiros rurais, cabanhas e associações de raça. Opere leilões de <strong className="text-foreground">bovinos, equinos, ovinos, propriedades e maquinário</strong> com transmissão HD, emissão automática de GTA, pesagem integrada e pagamento via Pix — tudo em uma plataforma proprietária, sem mensalidade abusiva.</>}
       stats={[
-        { value: "200+", name: "Leilões rurais realizados" },
-        { value: "1.2M", name: "Cabeças cadastradas" },
-        { value: "27", name: "Estados atendidos" },
-        { value: "R$0", name: "Aluguel mensal" },
+        { value: "200+", label: "Leilões rurais realizados" },
+        { value: "1.2M", label: "Cabeças cadastradas" },
+        { value: "27", label: "Estados atendidos" },
+        { value: "R$0", label: "Aluguel mensal" },
       ]}
       clientsTitle={<>Cabanhas, associações e leiloeiros que <span className="text-gradient">confiam na NC Brasil</span></>}
       clients={["Cabanha Elite", "Fazenda Guardião", "Nelore Premium", "Haras Vale Real", "ABCZ Certificada", "Compre Rural", "Canal do Boi", "Associação Brahman"]}
@@ -102,20 +102,20 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
         { icon: Truck, title: "Frigorífico e Confinamento", desc: "Compra programada de boi gordo com contratos futuros e integração com balança do abatedouro." },
       ]}
       integrations={[
-        { name: "SIGSIF/MAPA", category: "Sanidade" },
-        { name: "IDARON RO", category: "Defesa" },
-        { name: "ADAPAR PR", category: "Defesa" },
-        { name: "IAGRO MS", category: "Defesa" },
-        { name: "IMA MG", category: "Defesa" },
-        { name: "ABCZ", category: "Associação" },
-        { name: "ABQM", category: "Associação" },
-        { name: "ABCB Brahman", category: "Associação" },
-        { name: "Pix (BCB)", category: "Pagamento" },
-        { name: "WhatsApp Business", category: "Comunicação" },
-        { name: "Canal Rural", category: "Mídia" },
-        { name: "Compre Rural", category: "Mídia" },
-        { name: "Balanças Toledo/Coimma", category: "Hardware" },
-        { name: "Correios/Braspress", category: "Logística" },
+        { label: "SIGSIF/MAPA", category: "Sanidade" },
+        { label: "IDARON RO", category: "Defesa" },
+        { label: "ADAPAR PR", category: "Defesa" },
+        { label: "IAGRO MS", category: "Defesa" },
+        { label: "IMA MG", category: "Defesa" },
+        { label: "ABCZ", category: "Associação" },
+        { label: "ABQM", category: "Associação" },
+        { label: "ABCB Brahman", category: "Associação" },
+        { label: "Pix (BCB)", category: "Pagamento" },
+        { label: "WhatsApp Business", category: "Comunicação" },
+        { label: "Canal Rural", category: "Mídia" },
+        { label: "Compre Rural", category: "Mídia" },
+        { label: "Balanças Toledo/Coimma", category: "Hardware" },
+        { label: "Correios/Braspress", category: "Logística" },
       ]}
       security={[
         { icon: Lock, title: "LGPD Compliance", desc: "Consentimento, portabilidade e anonimização de dados de produtores e compradores." },

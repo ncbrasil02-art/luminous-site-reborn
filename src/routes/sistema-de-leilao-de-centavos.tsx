@@ -20,19 +20,19 @@ export const Route = createFileRoute("/sistema-de-leilao-de-centavos")({
     canonical: URL,
     h1: "Plataforma Completa para Leilão de Centavos",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Leilão de Centavos", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Leilão de Centavos", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-sistemas", name: "Sistemas" }, { to: "/sistema-de-leilao-de-centavos", name: "Leilão de Centavos" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-leilao-de-centavos", label: "Leilão de Centavos" }]}
       eyebrow="Penny Auction"
       h1={<>Plataforma de <span className="text-gradient">Leilão de Centavos</span></>}
       intro={<>Sistema turnkey para operar leilões de centavos ao estilo <strong className="text-foreground">MadBid / QuiBids</strong>: pacotes de créditos, lances por 1 centavo, timer regressivo e entrega automatizada de prêmios.</>}
-      stats={[{ value: "500K+", name: "Lances/mês" }, { value: "R$2Mi", name: "Prêmios entregues" }, { value: "97%", name: "Retenção 30d" }, { value: "1s", name: "Latência de lance" }]}
+      stats={[{ value: "500K+", label: "Lances/mês" }, { value: "R$2Mi", label: "Prêmios entregues" }, { value: "97%", label: "Retenção 30d" }, { value: "1s", label: "Latência de lance" }]}
       benefits={[
         { icon: Coins, title: "Pacotes de Créditos", desc: "Configuração de **pacotes promocionais, bônus por volume e cashback** em créditos." },
         { icon: Timer, title: "Timer Anti-Sniping", desc: "Prorrogação automática **10s a cada novo lance** — engajamento máximo até o fim." },

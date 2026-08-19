@@ -20,19 +20,19 @@ export const Route = createFileRoute("/servicos/desenvolvimento")({
     canonical: URL,
     h1: "Desenvolvimento de Software Sob Medida",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
-      { name: "Desenvolvimento", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
+      { label: "Desenvolvimento", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-servicos", name: "Serviços" }, { to: "/servicos/desenvolvimento", name: "Desenvolvimento" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/desenvolvimento", label: "Desenvolvimento" }]}
       eyebrow="Fábrica de Software"
       h1={<>Desenvolvimento de <span className="text-gradient">software sob medida</span></>}
       intro={<>Squads dedicadas de **engenheiros sênior** para construir web, mobile e APIs com metodologia ágil, code review rigoroso e entregas semanais.</>}
-      stats={[{ value: "1.200+", name: "Projetos entregues" }, { value: "20 anos", name: "De mercado" }, { value: "Squads", name: "Sênior dedicadas" }, { value: "Agile", name: "Scrum/Kanban" }]}
+      stats={[{ value: "1.200+", label: "Projetos entregues" }, { value: "20 anos", label: "De mercado" }, { value: "Squads", label: "Sênior dedicadas" }, { value: "Agile", label: "Scrum/Kanban" }]}
       benefits={[
         { icon: Code2, title: "Código de Qualidade", desc: "TypeScript, testes automatizados, **CI/CD e code review** em 100% dos commits." },
         { icon: Rocket, title: "Entregas Ágeis", desc: "**Sprints de 2 semanas** com demo, retrospectiva e roadmap sempre atualizado." },

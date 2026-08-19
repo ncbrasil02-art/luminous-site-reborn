@@ -19,19 +19,19 @@ export const Route = createFileRoute("/portfolio/aplicativos-criados")({
     canonical: URL,
     h1: "Portfólio de Aplicativos iOS e Android",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Portfólio", to: "https://www.ncbrasil.com.br/trabalhos-realizados" },
-      { name: "Aplicativos Criados", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Portfólio", to: "https://www.ncbrasil.com.br/trabalhos-realizados" },
+      { label: "Aplicativos Criados", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/trabalhos-realizados", name: "Portfólio" }, { to: "/portfolio/aplicativos-criados", name: "Aplicativos" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/trabalhos-realizados", label: "Portfólio" }, { to: "/portfolio/aplicativos-criados", label: "Aplicativos" }]}
       eyebrow="Portfólio Mobile"
       h1={<>Apps com <span className="text-gradient">milhões de downloads</span> e nota 4.8+</>}
       intro={<>**Mais de 200 aplicativos publicados** nas lojas iOS e Android — do MVP à escala com milhões de usuários ativos.</>}
-      stats={[{ value: "200+", name: "Apps publicados" }, { value: "10Mi+", name: "Downloads" }, { value: "4,8⭐", name: "Nota média" }, { value: "iOS+Android", name: "Nativo & Cross" }]}
+      stats={[{ value: "200+", label: "Apps publicados" }, { value: "10Mi+", label: "Downloads" }, { value: "4,8⭐", label: "Nota média" }, { value: "iOS+Android", label: "Nativo & Cross" }]}
       benefits={[
         { icon: Award, title: "Apps Premiados", desc: "Aplicativos destacados em **App Store Featured e Google Play Editor's Choice**." },
         { icon: Sparkles, title: "UX Premium", desc: "Design system próprio com **animações nativas e conformidade HIG + Material 3**." },

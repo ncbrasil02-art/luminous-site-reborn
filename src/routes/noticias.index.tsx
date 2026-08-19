@@ -10,7 +10,7 @@ export const Route = createFileRoute('/noticias/')({
   head: () => ({
     meta: [
       { title: 'Revista Digital NC Brasil · Tecnologia, Sistemas e Negócios' },
-      { name: 'description', content: 'Fique por dentro das últimas notícias sobre tecnologia, sistemas web, e-commerce e marketing digital. Artigos aprofundados e tendências.' },
+      { label: 'description', content: 'Fique por dentro das últimas notícias sobre tecnologia, sistemas web, e-commerce e marketing digital. Artigos aprofundados e tendências.' },
       { property: 'og:title', content: 'Revista Digital NC Brasil' },
       { property: 'og:type', content: 'website' },
     ],

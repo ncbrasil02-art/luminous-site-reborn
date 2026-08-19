@@ -33,27 +33,27 @@ export const Route = createFileRoute("/sistema-de-leilao")({
     canonical: URL,
     h1: "Sistema Profissional para Leilões Judiciais e Extrajudiciais",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Sistema de Leilão", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Sistema de Leilão", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
       breadcrumbs={[
-        { to: "/", name: "Home" },
-        { to: "/nossos-sistemas", name: "Sistemas" },
-        { to: "/sistema-de-leilao", name: "Sistema de Leilão" },
+        { to: "/", label: "Home" },
+        { to: "/nossos-sistemas", label: "Sistemas" },
+        { to: "/sistema-de-leilao", label: "Sistema de Leilão" },
       ]}
       eyebrow="Sistema de Leilão"
       h1={<>Plataforma para <span className="text-gradient">Leilões Online</span> homologada em 27 Tribunais de Justiça</>}
       intro={<>Sistema profissional para <strong className="text-foreground">leiloeiros oficiais</strong>, tribunais, bancos e cooperativas — usado por casas como <a href="https://www.ativeiloes.com.br" target="_blank" rel="noopener" className="text-primary underline underline-offset-4 hover:text-primary-glow">Ativ Leilões</a>. Realize <strong className="text-foreground">pregão eletrônico simultâneo</strong> (online + presencial) para leilões <strong className="text-foreground">judiciais (CPC art. 879–903)</strong>, <strong className="text-foreground">extrajudiciais (Decreto 21.981/32)</strong>, Detran, restritos e venda direta — com <strong className="text-foreground">plataforma própria, sem aluguel mensal e 0% de taxa por lance</strong>.</>}
       stats={[
-        { value: "27 TJs", name: "Tribunais homologados" },
-        { value: "0%", name: "Taxa por lance" },
-        { value: "500K+", name: "Lances processados" },
-        { value: "24/7", name: "Suporte em pregões" },
+        { value: "27 TJs", label: "Tribunais homologados" },
+        { value: "0%", label: "Taxa por lance" },
+        { value: "500K+", label: "Lances processados" },
+        { value: "24/7", label: "Suporte em pregões" },
       ]}
       clients={[
         "Tribunais de Justiça", "Detran", "Bancos", "Cooperativas Rurais",
@@ -145,21 +145,21 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         { icon: Sparkles, title: "Galerias e Casas de Arte", desc: "Catálogo curado, **certificado de autenticidade** e pregão internacional." },
       ]}
       integrations={[
-        { name: "PIX", category: "Pagamento" },
-        { name: "Pagar.me", category: "Pagamento" },
-        { name: "Stripe", category: "Pagamento" },
-        { name: "PagSeguro", category: "Pagamento" },
-        { name: "Receita Federal", category: "KYC" },
-        { name: "Serasa", category: "KYC" },
-        { name: "PJe", category: "Judicial" },
-        { name: "DOE", category: "Publicação" },
-        { name: "Detran", category: "Veículos" },
-        { name: "SAP", category: "ERP" },
-        { name: "TOTVS", category: "ERP" },
-        { name: "Google Analytics", category: "Analytics" },
-        { name: "Meta Pixel", category: "Marketing" },
-        { name: "OneSignal", category: "Push" },
-        { name: "SendGrid", category: "E-mail" },
+        { label: "PIX", category: "Pagamento" },
+        { label: "Pagar.me", category: "Pagamento" },
+        { label: "Stripe", category: "Pagamento" },
+        { label: "PagSeguro", category: "Pagamento" },
+        { label: "Receita Federal", category: "KYC" },
+        { label: "Serasa", category: "KYC" },
+        { label: "PJe", category: "Judicial" },
+        { label: "DOE", category: "Publicação" },
+        { label: "Detran", category: "Veículos" },
+        { label: "SAP", category: "ERP" },
+        { label: "TOTVS", category: "ERP" },
+        { label: "Google Analytics", category: "Analytics" },
+        { label: "Meta Pixel", category: "Marketing" },
+        { label: "OneSignal", category: "Push" },
+        { label: "SendGrid", category: "E-mail" },
       ]}
       security={[
         { icon: ShieldCheck, title: "LGPD Compliance", desc: "DPO dedicado, consentimento granular e **direito ao esquecimento** implementado." },

@@ -20,19 +20,19 @@ export const Route = createFileRoute("/servicos/google-ads")({
     canonical: URL,
     h1: "Gestão Profissional de Google Ads",
     breadcrumbs: [
-      { name: "Home", to: "https://www.ncbrasil.com.br/" },
-      { name: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
-      { name: "Google Ads", to: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
+      { label: "Google Ads", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-servicos", name: "Serviços" }, { to: "/servicos/google-ads", name: "Google Ads" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/google-ads", label: "Google Ads" }]}
       eyebrow="Google Ads"
       h1={<>Google Ads com <span className="text-gradient">ROAS previsível</span> e escalável</>}
       intro={<>Gestão avançada de **Search, Shopping, Performance Max, YouTube e Display** — com foco absoluto em conversão, CAC e ROAS.</>}
-      stats={[{ value: "R$ 20Mi", name: "Investidos em Ads" }, { value: "5,2x", name: "ROAS médio" }, { value: "Premier", name: "Google Partner" }, { value: "-38%", name: "CAC médio" }]}
+      stats={[{ value: "R$ 20Mi", label: "Investidos em Ads" }, { value: "5,2x", label: "ROAS médio" }, { value: "Premier", label: "Google Partner" }, { value: "-38%", label: "CAC médio" }]}
       benefits={[
         { icon: Search, title: "Campanhas de Search", desc: "Palavras-chave com **alta intenção de compra** e negativação diária de termos ruins." },
         { icon: ShoppingBag, title: "Google Shopping", desc: "Feed otimizado no **Merchant Center**, títulos ricos e segmentação por margem." },
