@@ -23,9 +23,11 @@ import { Route as ErrosNaCriacaoDeUmAplicativoRouteImport } from './routes/erros
 import { Route as EmpresaRouteImport } from './routes/empresa'
 import { Route as DicasParaECommerceRouteImport } from './routes/dicas-para-e-commerce'
 import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
 import { Route as NoticiasIndexRouteImport } from './routes/noticias.index'
+import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as SolucoesWebSeoGoogleRouteImport } from './routes/solucoes-web.seo-google'
 import { Route as SolucoesWebMarketingDigitalRouteImport } from './routes/solucoes-web.marketing-digital'
 import { Route as SolucoesWebLojaVirtualRouteImport } from './routes/solucoes-web.loja-virtual'
@@ -63,8 +65,13 @@ import { Route as NoticiasSlugRouteImport } from './routes/noticias.$slug'
 import { Route as EmpresaQuemSomosRouteImport } from './routes/empresa.quem-somos'
 import { Route as EmpresaNossaHistoriaRouteImport } from './routes/empresa.nossa-historia'
 import { Route as EmpresaClientesRouteImport } from './routes/empresa.clientes'
+import { Route as AdminNoticiasRouteImport } from './routes/admin.noticias'
 import { Route as NoticiasTagTagRouteImport } from './routes/noticias.tag.$tag'
 import { Route as NoticiasCategoriaCategoryRouteImport } from './routes/noticias.categoria.$category'
+import { Route as ApiPublicSitemapRouteImport } from './routes/api.public.sitemap'
+import { Route as ApiPublicRssRouteImport } from './routes/api.public.rss'
+import { Route as AdminNoticiasNovaRouteImport } from './routes/admin.noticias.nova'
+import { Route as AdminNoticiasIdRouteImport } from './routes/admin.noticias.$id'
 
 const TrabalhosRealizadosRoute = TrabalhosRealizadosRouteImport.update({
   id: '/trabalhos-realizados',
@@ -139,6 +146,11 @@ const ContatoRoute = ContatoRouteImport.update({
   path: '/contato',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -153,6 +165,11 @@ const NoticiasIndexRoute = NoticiasIndexRouteImport.update({
   id: '/noticias/',
   path: '/noticias/',
   getParentRoute: () => rootRouteImport,
+} as any)
+const AdminIndexRoute = AdminIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AdminRoute,
 } as any)
 const SolucoesWebSeoGoogleRoute = SolucoesWebSeoGoogleRouteImport.update({
   id: '/seo-google',
@@ -359,6 +376,11 @@ const EmpresaClientesRoute = EmpresaClientesRouteImport.update({
   path: '/clientes',
   getParentRoute: () => EmpresaRoute,
 } as any)
+const AdminNoticiasRoute = AdminNoticiasRouteImport.update({
+  id: '/noticias',
+  path: '/noticias',
+  getParentRoute: () => AdminRoute,
+} as any)
 const NoticiasTagTagRoute = NoticiasTagTagRouteImport.update({
   id: '/noticias/tag/$tag',
   path: '/noticias/tag/$tag',
@@ -370,9 +392,30 @@ const NoticiasCategoriaCategoryRoute =
     path: '/noticias/categoria/$category',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiPublicSitemapRoute = ApiPublicSitemapRouteImport.update({
+  id: '/api/public/sitemap',
+  path: '/api/public/sitemap',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicRssRoute = ApiPublicRssRouteImport.update({
+  id: '/api/public/rss',
+  path: '/api/public/rss',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminNoticiasNovaRoute = AdminNoticiasNovaRouteImport.update({
+  id: '/nova',
+  path: '/nova',
+  getParentRoute: () => AdminNoticiasRoute,
+} as any)
+const AdminNoticiasIdRoute = AdminNoticiasIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => AdminNoticiasRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRouteWithChildren
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRouteWithChildren
@@ -387,6 +430,7 @@ export interface FileRoutesByFullPath {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/admin/noticias': typeof AdminNoticiasRouteWithChildren
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
@@ -424,8 +468,13 @@ export interface FileRoutesByFullPath {
   '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
   '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
+  '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
+  '/admin/noticias/$id': typeof AdminNoticiasIdRoute
+  '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
+  '/api/public/rss': typeof ApiPublicRssRoute
+  '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
 }
@@ -445,6 +494,7 @@ export interface FileRoutesByTo {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/admin/noticias': typeof AdminNoticiasRouteWithChildren
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
@@ -482,14 +532,20 @@ export interface FileRoutesByTo {
   '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
   '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
+  '/admin': typeof AdminIndexRoute
   '/noticias': typeof NoticiasIndexRoute
   '/sistemas': typeof SistemasIndexRoute
+  '/admin/noticias/$id': typeof AdminNoticiasIdRoute
+  '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
+  '/api/public/rss': typeof ApiPublicRssRoute
+  '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRouteWithChildren
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRouteWithChildren
@@ -504,6 +560,7 @@ export interface FileRoutesById {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/admin/noticias': typeof AdminNoticiasRouteWithChildren
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
@@ -541,8 +598,13 @@ export interface FileRoutesById {
   '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
   '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
+  '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
+  '/admin/noticias/$id': typeof AdminNoticiasIdRoute
+  '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
+  '/api/public/rss': typeof ApiPublicRssRoute
+  '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
 }
@@ -550,6 +612,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/admin'
     | '/contato'
     | '/dicas-para-e-commerce'
     | '/empresa'
@@ -564,6 +627,7 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/admin/noticias'
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
     | '/empresa/quem-somos'
@@ -601,8 +665,13 @@ export interface FileRouteTypes {
     | '/solucoes-web/loja-virtual'
     | '/solucoes-web/marketing-digital'
     | '/solucoes-web/seo-google'
+    | '/admin/'
     | '/noticias/'
     | '/sistemas/'
+    | '/admin/noticias/$id'
+    | '/admin/noticias/nova'
+    | '/api/public/rss'
+    | '/api/public/sitemap'
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
   fileRoutesByTo: FileRoutesByTo
@@ -622,6 +691,7 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/admin/noticias'
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
     | '/empresa/quem-somos'
@@ -659,13 +729,19 @@ export interface FileRouteTypes {
     | '/solucoes-web/loja-virtual'
     | '/solucoes-web/marketing-digital'
     | '/solucoes-web/seo-google'
+    | '/admin'
     | '/noticias'
     | '/sistemas'
+    | '/admin/noticias/$id'
+    | '/admin/noticias/nova'
+    | '/api/public/rss'
+    | '/api/public/sitemap'
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
   id:
     | '__root__'
     | '/'
+    | '/admin'
     | '/contato'
     | '/dicas-para-e-commerce'
     | '/empresa'
@@ -680,6 +756,7 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/admin/noticias'
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
     | '/empresa/quem-somos'
@@ -717,14 +794,20 @@ export interface FileRouteTypes {
     | '/solucoes-web/loja-virtual'
     | '/solucoes-web/marketing-digital'
     | '/solucoes-web/seo-google'
+    | '/admin/'
     | '/noticias/'
     | '/sistemas/'
+    | '/admin/noticias/$id'
+    | '/admin/noticias/nova'
+    | '/api/public/rss'
+    | '/api/public/sitemap'
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRouteWithChildren
   ContatoRoute: typeof ContatoRoute
   DicasParaECommerceRoute: typeof DicasParaECommerceRoute
   EmpresaRoute: typeof EmpresaRouteWithChildren
@@ -769,6 +852,8 @@ export interface RootRouteChildren {
   SistemasSistemaDeRifasRoute: typeof SistemasSistemaDeRifasRoute
   NoticiasIndexRoute: typeof NoticiasIndexRoute
   SistemasIndexRoute: typeof SistemasIndexRoute
+  ApiPublicRssRoute: typeof ApiPublicRssRoute
+  ApiPublicSitemapRoute: typeof ApiPublicSitemapRoute
   NoticiasCategoriaCategoryRoute: typeof NoticiasCategoriaCategoryRoute
   NoticiasTagTagRoute: typeof NoticiasTagTagRoute
 }
@@ -873,6 +958,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContatoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -893,6 +985,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/noticias/'
       preLoaderRoute: typeof NoticiasIndexRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/admin/': {
+      id: '/admin/'
+      path: '/'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AdminIndexRouteImport
+      parentRoute: typeof AdminRoute
     }
     '/solucoes-web/seo-google': {
       id: '/solucoes-web/seo-google'
@@ -1153,6 +1252,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EmpresaClientesRouteImport
       parentRoute: typeof EmpresaRoute
     }
+    '/admin/noticias': {
+      id: '/admin/noticias'
+      path: '/noticias'
+      fullPath: '/admin/noticias'
+      preLoaderRoute: typeof AdminNoticiasRouteImport
+      parentRoute: typeof AdminRoute
+    }
     '/noticias/tag/$tag': {
       id: '/noticias/tag/$tag'
       path: '/noticias/tag/$tag'
@@ -1167,8 +1273,62 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NoticiasCategoriaCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/sitemap': {
+      id: '/api/public/sitemap'
+      path: '/api/public/sitemap'
+      fullPath: '/api/public/sitemap'
+      preLoaderRoute: typeof ApiPublicSitemapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/rss': {
+      id: '/api/public/rss'
+      path: '/api/public/rss'
+      fullPath: '/api/public/rss'
+      preLoaderRoute: typeof ApiPublicRssRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin/noticias/nova': {
+      id: '/admin/noticias/nova'
+      path: '/nova'
+      fullPath: '/admin/noticias/nova'
+      preLoaderRoute: typeof AdminNoticiasNovaRouteImport
+      parentRoute: typeof AdminNoticiasRoute
+    }
+    '/admin/noticias/$id': {
+      id: '/admin/noticias/$id'
+      path: '/$id'
+      fullPath: '/admin/noticias/$id'
+      preLoaderRoute: typeof AdminNoticiasIdRouteImport
+      parentRoute: typeof AdminNoticiasRoute
+    }
   }
 }
+
+interface AdminNoticiasRouteChildren {
+  AdminNoticiasIdRoute: typeof AdminNoticiasIdRoute
+  AdminNoticiasNovaRoute: typeof AdminNoticiasNovaRoute
+}
+
+const AdminNoticiasRouteChildren: AdminNoticiasRouteChildren = {
+  AdminNoticiasIdRoute: AdminNoticiasIdRoute,
+  AdminNoticiasNovaRoute: AdminNoticiasNovaRoute,
+}
+
+const AdminNoticiasRouteWithChildren = AdminNoticiasRoute._addFileChildren(
+  AdminNoticiasRouteChildren,
+)
+
+interface AdminRouteChildren {
+  AdminNoticiasRoute: typeof AdminNoticiasRouteWithChildren
+  AdminIndexRoute: typeof AdminIndexRoute
+}
+
+const AdminRouteChildren: AdminRouteChildren = {
+  AdminNoticiasRoute: AdminNoticiasRouteWithChildren,
+  AdminIndexRoute: AdminIndexRoute,
+}
+
+const AdminRouteWithChildren = AdminRoute._addFileChildren(AdminRouteChildren)
 
 interface EmpresaRouteChildren {
   EmpresaClientesRoute: typeof EmpresaClientesRoute
@@ -1210,6 +1370,7 @@ const SolucoesWebRouteWithChildren = SolucoesWebRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRouteWithChildren,
   ContatoRoute: ContatoRoute,
   DicasParaECommerceRoute: DicasParaECommerceRoute,
   EmpresaRoute: EmpresaRouteWithChildren,
@@ -1258,6 +1419,8 @@ const rootRouteChildren: RootRouteChildren = {
   SistemasSistemaDeRifasRoute: SistemasSistemaDeRifasRoute,
   NoticiasIndexRoute: NoticiasIndexRoute,
   SistemasIndexRoute: SistemasIndexRoute,
+  ApiPublicRssRoute: ApiPublicRssRoute,
+  ApiPublicSitemapRoute: ApiPublicSitemapRoute,
   NoticiasCategoriaCategoryRoute: NoticiasCategoriaCategoryRoute,
   NoticiasTagTagRoute: NoticiasTagTagRoute,
 }
