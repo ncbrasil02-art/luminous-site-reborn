@@ -808,7 +808,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "seo"
     ],
-    "image_url": null,
+    "image_url": "/news/o-que-e-seo.jpg",
     "thumb_id": "50599"
   },
   {
@@ -826,7 +826,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Planejamento SEO"
     ],
-    "image_url": null,
+    "image_url": "/news/Deep-Crawl_icon-icons.com_53720.png",
     "thumb_id": "50581"
   },
   {
@@ -1145,7 +1145,7 @@ export const newsData: NewsPost[] = [
       "seo",
       "site responsivo"
     ],
-    "image_url": null,
+    "image_url": "/news/mobile-trends.png",
     "thumb_id": "50066"
   },
   {
