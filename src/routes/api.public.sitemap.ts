@@ -9,7 +9,7 @@ export const Route = createFileRoute('/api/public/sitemap')({
         const today = new Date().toISOString().split('T')[0]
         
         const staticRoutes = [
-          { path: '', priority: '1.0' },
+          { path: '/', priority: '1.0' },
           { path: '/empresa/quem-somos', priority: '0.8' },
           { path: '/empresa/nossa-historia', priority: '0.7' },
           { path: '/empresa/clientes', priority: '0.7' },
@@ -33,13 +33,28 @@ export const Route = createFileRoute('/api/public/sitemap')({
           { path: '/sistema-de-ofertas-cupom-marketplace', priority: '0.9' },
           { path: '/sistema-de-revenda-de-veiculos', priority: '0.9' },
           { path: '/sistema-de-leilao-de-centavos', priority: '0.9' },
+          { path: '/programa-de-ordem-de-servico', priority: '0.9' },
+          { path: '/software', priority: '0.9' },
+          { path: '/sistema-sob-demanda-nc-brasil', priority: '0.9' },
+          { path: '/instagram-para-empresas', priority: '0.7' },
+          { path: '/dicas-para-e-commerce', priority: '0.7' },
+          { path: '/trabalhos-realizados', priority: '0.8' },
+          { path: '/portfolio/sites-criados', priority: '0.8' },
+          { path: '/portfolio/sistemas-criados', priority: '0.8' },
+          { path: '/portfolio/lojas-virtuais-criadas', priority: '0.8' },
+          { path: '/portfolio/logotipos-criados', priority: '0.8' },
+          { path: '/servicos/desenvolvimento', priority: '0.8' },
+          { path: '/servicos/sistemas-web', priority: '0.8' },
+          { path: '/servicos/aplicativos', priority: '0.8' },
+          { path: '/servicos/google-ads', priority: '0.8' },
+          { path: '/servicos/facebook-ads', priority: '0.8' },
           { path: '/contato', priority: '0.8' },
           { path: '/orcamento', priority: '0.9' }
         ]
 
         const staticUrls = staticRoutes.map(route => `
           <url>
-            <loc>${baseUrl}${route.path}</loc>
+            <loc>${baseUrl}${route.path === '/' ? '' : route.path}</loc>
             <lastmod>${today}</lastmod>
             <changefreq>weekly</changefreq>
             <priority>${route.priority}</priority>
@@ -65,13 +80,13 @@ export const Route = createFileRoute('/api/public/sitemap')({
           `;
         }).join('')
 
-        const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-          <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-            ${staticUrls}
-            ${newsUrls}
-          </urlset>`
+        const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+          staticUrls +
+          newsUrls +
+          '</urlset>'
 
-        return new Response(sitemap, {
+        return new Response(sitemapXml.trim(), {
           headers: {
             'Content-Type': 'application/xml; charset=utf-8',
             'Cache-Control': 'public, max-age=86400'
