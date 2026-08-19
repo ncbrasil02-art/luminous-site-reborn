@@ -152,7 +152,7 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
       faq={lpFaq}
       finalCtaTitle={<>Pronto para operar o leilão rural mais <span className="text-gradient">tecnológico do agronegócio</span>?</>}
       finalCtaDesc={<>Fale com nossa equipe especializada em agro. Enviamos <strong className="text-foreground">demonstração ao vivo com dados reais</strong>, proposta técnica e cronograma personalizado.</>}
-      relatedNewsTags={["Leilão","Agronegócio","Sistemas"]}
+      relatedNewsTags={["Leilão", "Leilão Rural", "Agronegócio", "Sistemas"]}
     />
   ),
 });
