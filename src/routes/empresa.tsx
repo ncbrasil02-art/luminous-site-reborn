@@ -13,40 +13,15 @@ import {
 import teamImg from "@/assets/team-empresa.jpg";
 import { Reveal, SectionHeading } from "@/components/Section";
 
-const SITE_URL = "https://www.ncbrasil.com.br";
+import { buildMeta, SITE_URL } from "@/lib/seo";
 
 export const Route = createFileRoute("/empresa")({
-  head: () => ({
-    meta: [
-      { title: "A Empresa · NC Brasil — Agência de Tecnologia em SP e RJ" },
-      {
-        name: "description",
-        content:
-          "Conheça a NC Brasil: agência de tecnologia com mais de 15 anos criando sites, sistemas web, lojas virtuais e aplicativos para marcas em São Paulo e Rio de Janeiro.",
-      },
-      {
-        name: "keywords",
-        content:
-          "NC Brasil empresa, agência de tecnologia SP, agência web RJ, equipe desenvolvimento, fábrica de software, criação de sistemas",
-      },
-      { property: "og:title", content: "A Empresa · NC Brasil" },
-      {
-        property: "og:description",
-        content:
-          "15+ anos transformando ideias em produtos digitais que vendem. Conheça nossa equipe, valores e processo.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: `${SITE_URL}/empresa` },
-      { property: "og:image", content: `${SITE_URL}/og-empresa.jpg` },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "A Empresa · NC Brasil" },
-      {
-        name: "twitter:description",
-        content: "Quem somos, no que acreditamos e como entregamos resultado.",
-      },
-      { name: "twitter:image", content: `${SITE_URL}/og-empresa.jpg` },
-    ],
-    links: [{ rel: "canonical", href: `${SITE_URL}/empresa` }],
+  head: () => buildMeta({
+    title: "A Empresa · NC Brasil — Agência de Tecnologia em SP e RJ",
+    description: "Conheça a NC Brasil: agência de tecnologia com mais de 15 anos de experiência criando sites, sistemas web, lojas virtuais e aplicativos de alta performance para empresas em São Paulo e Rio de Janeiro.",
+    keywords: "NC Brasil empresa, agência de tecnologia SP, agência web RJ, equipe desenvolvimento, fábrica de software, criação de sistemas personalizados, agência digital SP",
+    canonical: `${SITE_URL}/empresa`,
+    ogImage: "/og-empresa.jpg",
   }),
   component: EmpresaPage,
 });
