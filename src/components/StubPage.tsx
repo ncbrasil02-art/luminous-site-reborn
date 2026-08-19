@@ -35,7 +35,7 @@ export function buildStubMeta({
     keywords,
     canonical,
     faq,
-    breadcrumbs: breadcrumbs?.map(b => ({ name: b.label, url: b.to })),
+    breadcrumbs,
   });
 }
 
