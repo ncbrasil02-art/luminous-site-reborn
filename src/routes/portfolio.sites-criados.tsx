@@ -47,6 +47,7 @@ export const Route = createFileRoute("/portfolio/sites-criados")({
         { icon: ShieldCheck, title: "Seguros e Estáveis", desc: "SSL, WAF, backup diário e **uptime 99,9%**." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["Criação de Sites","Portfólio","Web Design"]}
     />
   ),
 });

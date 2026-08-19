@@ -48,6 +48,7 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
         { icon: LineChart, title: "Analytics Integrado", desc: "Google Analytics 4, Tag Manager, Meta Pixel e Search Console prontos." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["Criação de Sites","Web Design","Marketing Digital"]}
     />
   ),
 });

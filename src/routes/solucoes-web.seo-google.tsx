@@ -48,6 +48,7 @@ export const Route = createFileRoute("/solucoes-web/seo-google")({
         { icon: Sparkles, title: "SEO para IA", desc: "Otimização para **SGE, Perplexity e resultados de IA generativa**." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["SEO","Google","Marketing Digital"]}
     />
   ),
 });

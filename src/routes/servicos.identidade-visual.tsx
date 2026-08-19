@@ -48,6 +48,7 @@ export const Route = createFileRoute("/servicos/identidade-visual")({
         { icon: Eye, title: "Rebranding", desc: "Refresh ou reposicionamento completo com **plano de transição** para o mercado." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["Identidade Visual","Logotipos","Design"]}
     />
   ),
 });

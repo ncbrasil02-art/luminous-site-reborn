@@ -48,6 +48,7 @@ export const Route = createFileRoute("/servicos/google-ads")({
         { icon: Users, title: "Landing Pages", desc: "Criamos LPs otimizadas para **Quality Score 10/10** e conversão." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["Google Ads","Links Patrocinados","Marketing Digital"]}
     />
   ),
 });

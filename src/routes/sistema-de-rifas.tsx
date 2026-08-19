@@ -230,6 +230,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
       faq={lpFaq}
       finalCtaTitle={<>Pronto para criar sua <span className="text-gradient">plataforma de rifas</span>?</>}
       finalCtaDesc={<>Receba um <strong className="text-foreground">plano personalizado em 24h</strong> com escopo, prazo, valor e o modelo legal ideal para sua operação. <strong className="text-foreground">Consultoria inicial gratuita</strong>.</>}
+      relatedNewsTags={["Rifas","Sorteios","Sistemas"]}
     />
   ),
 });
