@@ -11,7 +11,7 @@ export function MagazineSection() {
   if (!featured) return null;
 
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden border-t border-border bg-background">
+    <section className="relative py-16 md:py-20 overflow-hidden border-t border-border bg-background">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <SectionHeading
           eyebrow="Revista Digital"

@@ -29,7 +29,7 @@ export function NewsDisplay() {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="relative overflow-hidden border-t border-border bg-background py-24 md:py-32">
+    <section className="relative overflow-hidden border-y border-border bg-card/20 py-16 md:py-24">
       {/* Background Effects */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[500px] w-[800px] bg-primary/5 blur-[120px] rounded-full" />
