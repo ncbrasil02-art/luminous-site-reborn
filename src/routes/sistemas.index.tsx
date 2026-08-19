@@ -5,6 +5,9 @@ export const Route = createFileRoute('/sistemas/')({
     throw redirect({
       to: '/nossos-sistemas',
       statusCode: 301,
+      search: {
+        from_redirect: 'sistemas_migration'
+      } as any
     })
   },
 })
