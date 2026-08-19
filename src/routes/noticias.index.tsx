@@ -128,6 +128,9 @@ function NewsIndex() {
                       <img 
                         src={featuredNews.image_url} 
                         alt={featuredNews.title} 
+                        loading="eager"
+                        fetchPriority="high"
+                        decoding="async"
                         className="h-full w-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105" 
                       />
                     ) : (
@@ -181,6 +184,9 @@ function NewsIndex() {
                       <img 
                         src={news.image_url} 
                         alt={news.title} 
+                        loading="lazy"
+                        decoding="async"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
                       />
                     ) : (

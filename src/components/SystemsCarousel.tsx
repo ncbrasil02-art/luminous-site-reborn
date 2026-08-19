@@ -77,6 +77,9 @@ export function SystemsCarousel() {
                   <img 
                     src={system.image} 
                     alt={system.title} 
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="h-full w-full object-cover opacity-30 transition-transform duration-700 group-hover:scale-110"
                     onError={(e) => {
                         (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80";
