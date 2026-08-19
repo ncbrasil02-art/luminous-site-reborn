@@ -635,6 +635,8 @@ export function LandingPage({
   );
 }
 
+import { buildMeta } from "@/lib/seo";
+
 export function buildLPMeta({
   title,
   description,
@@ -654,73 +656,13 @@ export function buildLPMeta({
   faq?: { q: string; a: string }[];
   ogImage?: string;
 }) {
-  const OG_BASE = "https://luminous-site-reborn.lovable.app";
-  const ogImageUrl = ogImage
-    ? (ogImage.startsWith("http") ? ogImage : `${OG_BASE}${ogImage}`)
-    : undefined;
-  const breadcrumbLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: breadcrumbs.map((b, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: b.name,
-      item: b.url,
-    })),
-  };
-  const serviceLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: h1,
+  return buildMeta({
+    title,
     description,
-    provider: {
-      "@type": "Organization",
-      name: "NC Brasil",
-      url: "https://www.ncbrasil.com.br",
-    },
-    areaServed: ["São Paulo", "Rio de Janeiro", "Brasil"],
-  };
-  return {
-    meta: [
-      { title },
-      { name: "description", content: description },
-      { name: "keywords", content: keywords },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: canonical },
-      { property: "og:locale", content: "pt_BR" },
-      ...(ogImageUrl
-        ? [
-            { property: "og:image", content: ogImageUrl },
-            { property: "og:image:width", content: "1200" },
-            { property: "og:image:height", content: "630" },
-            { name: "twitter:image", content: ogImageUrl },
-          ]
-        : []),
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: title },
-      { name: "twitter:description", content: description },
-    ],
-
-    links: [{ rel: "canonical", href: canonical }],
-    scripts: [
-      { type: "application/ld+json", children: JSON.stringify(breadcrumbLd) },
-      { type: "application/ld+json", children: JSON.stringify(serviceLd) },
-      ...(faq && faq.length
-        ? [{
-            type: "application/ld+json",
-            children: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: faq.map((f) => ({
-                "@type": "Question",
-                name: f.q,
-                acceptedAnswer: { "@type": "Answer", text: f.a },
-              })),
-            }),
-          }]
-        : []),
-    ],
-  };
+    keywords,
+    canonical,
+    ogImage,
+    faq,
+    breadcrumbs,
+  });
 }

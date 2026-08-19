@@ -4,6 +4,7 @@ import { Calendar, Tag, ArrowLeft, Share2, Clock, ChevronRight, BookOpen } from 
 import { Reveal } from '@/components/Section'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { useEffect, useState } from 'react'
+import { buildMeta, SITE_URL } from '@/lib/seo'
 
 export const Route = createFileRoute('/noticias/$slug')({
   loader: ({ params }) => {
@@ -11,15 +12,25 @@ export const Route = createFileRoute('/noticias/$slug')({
     if (!post) throw notFound()
     return post
   },
-  head: ({ loaderData }) => ({
-    meta: [
-      { title: `${loaderData?.title || 'Notícia'} · Revista Digital NC Brasil` },
-      { name: 'description', content: loaderData?.content.replace(/<[^>]*>/g, '').slice(0, 160) || '' },
-      { property: 'og:title', content: loaderData?.title || '' },
-      { property: 'og:type', content: 'article' },
-      { property: 'og:image', content: loaderData?.image_url || '' },
-    ],
-  }),
+  head: ({ loaderData }) => {
+    if (!loaderData) return {}
+    const plainText = loaderData.content.replace(/<[^>]*>/g, '').slice(0, 160)
+    
+    return buildMeta({
+      title: `${loaderData.title} | Revista Digital`,
+      description: plainText,
+      keywords: `notícia, nc brasil, ${loaderData.categories.join(', ')}, ${loaderData.tags.join(', ')}`,
+      ogImage: loaderData.image_url || undefined,
+      ogType: 'article',
+      canonical: `${SITE_URL}/noticias/${loaderData.slug}`,
+      article: {
+        publishedTime: loaderData.date,
+        section: loaderData.categories[0],
+        tags: loaderData.tags
+      }
+    })
+
+  },
   component: NewsPostPage,
 })
 

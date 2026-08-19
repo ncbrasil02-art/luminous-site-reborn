@@ -72,27 +72,23 @@ export function StubPage({
   );
 }
 
+import { buildMeta } from "@/lib/seo";
+
 export function buildStubMeta({
-  title, description, keywords, canonical,
+  title,
+  description,
+  keywords,
+  canonical,
 }: {
   title: string;
   description: string;
   keywords: string;
   canonical: string;
 }) {
-  return {
-    meta: [
-      { title },
-      { name: "description", content: description },
-      { name: "keywords", content: keywords },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: canonical },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: title },
-      { name: "twitter:description", content: description },
-    ],
-    links: [{ rel: "canonical", href: canonical }],
-  };
+  return buildMeta({
+    title,
+    description,
+    keywords,
+    canonical,
+  });
 }
