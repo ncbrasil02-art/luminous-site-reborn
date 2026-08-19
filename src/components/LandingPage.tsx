@@ -28,7 +28,7 @@ export type LPTestimonial = { quote: string; author: string; role: string };
 export type LPBreadcrumb = { to: string; label: string };
 export type LPModule = { icon: LucideIcon; title: string; items: string[] };
 export type LPUseCase = { icon: LucideIcon; title: string; desc: string };
-export type LPIntegration = { name: string; category?: string };
+export type LPIntegration = { label: string; to?: string; category?: string };
 export type LPSecurityItem = { icon: LucideIcon; title: string; desc: string };
 export type LPTimelineStep = { step: string; title: string; desc: string };
 export type LPCompareRow = { feature: string; us: boolean | string; them: boolean | string };
@@ -86,7 +86,7 @@ export function buildLPMeta(options: {
     ...options,
     ogType: "website",
     faq: options.faq?.map((f) => ({ q: f.q, a: f.a })),
-    breadcrumbs: options.breadcrumbs?.map((b) => ({ name: b.label, url: b.to })),
+    breadcrumbs: options.breadcrumbs,
   });
 }
 

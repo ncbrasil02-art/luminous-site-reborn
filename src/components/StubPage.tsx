@@ -80,12 +80,14 @@ export function buildStubMeta({
   keywords,
   canonical,
   faq,
+  breadcrumbs,
 }: {
   title: string;
   description: string;
   keywords: string;
   canonical: string;
   faq?: { q: string; a: string }[];
+  breadcrumbs?: { label: string; to: string }[];
 }) {
   return buildMeta({
     title,
@@ -93,5 +95,6 @@ export function buildStubMeta({
     keywords,
     canonical,
     faq,
+    breadcrumbs,
   });
 }
