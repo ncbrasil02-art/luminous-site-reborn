@@ -19,6 +19,9 @@ import { Reveal, SectionHeading } from "@/components/Section";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
 
 import { buildMeta, SITE_URL } from "@/lib/seo";
+import { MagazineSection } from "@/components/MagazineSection";
+import { NewsDisplay } from "@/components/NewsDisplay";
+
 
 const OG_IMAGE = `/og-home.jpg`;
 
