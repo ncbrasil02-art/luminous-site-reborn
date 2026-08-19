@@ -71,6 +71,7 @@ import { Route as NoticiasCategoriaCategoryRouteImport } from './routes/noticias
 import { Route as ApiPublicSitemapRouteImport } from './routes/api.public.sitemap'
 import { Route as ApiPublicRssRouteImport } from './routes/api.public.rss'
 import { Route as AdminNoticiasNovaRouteImport } from './routes/admin.noticias.nova'
+import { Route as AdminNoticiasIdRouteImport } from './routes/admin.noticias.$id'
 
 const TrabalhosRealizadosRoute = TrabalhosRealizadosRouteImport.update({
   id: '/trabalhos-realizados',
@@ -406,6 +407,11 @@ const AdminNoticiasNovaRoute = AdminNoticiasNovaRouteImport.update({
   path: '/nova',
   getParentRoute: () => AdminNoticiasRoute,
 } as any)
+const AdminNoticiasIdRoute = AdminNoticiasIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => AdminNoticiasRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -465,6 +471,7 @@ export interface FileRoutesByFullPath {
   '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
+  '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
   '/api/public/sitemap': typeof ApiPublicSitemapRoute
@@ -528,6 +535,7 @@ export interface FileRoutesByTo {
   '/admin': typeof AdminIndexRoute
   '/noticias': typeof NoticiasIndexRoute
   '/sistemas': typeof SistemasIndexRoute
+  '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
   '/api/public/sitemap': typeof ApiPublicSitemapRoute
@@ -593,6 +601,7 @@ export interface FileRoutesById {
   '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
+  '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
   '/api/public/sitemap': typeof ApiPublicSitemapRoute
@@ -659,6 +668,7 @@ export interface FileRouteTypes {
     | '/admin/'
     | '/noticias/'
     | '/sistemas/'
+    | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
     | '/api/public/sitemap'
@@ -722,6 +732,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/noticias'
     | '/sistemas'
+    | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
     | '/api/public/sitemap'
@@ -786,6 +797,7 @@ export interface FileRouteTypes {
     | '/admin/'
     | '/noticias/'
     | '/sistemas/'
+    | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
     | '/api/public/sitemap'
@@ -1282,14 +1294,23 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminNoticiasNovaRouteImport
       parentRoute: typeof AdminNoticiasRoute
     }
+    '/admin/noticias/$id': {
+      id: '/admin/noticias/$id'
+      path: '/$id'
+      fullPath: '/admin/noticias/$id'
+      preLoaderRoute: typeof AdminNoticiasIdRouteImport
+      parentRoute: typeof AdminNoticiasRoute
+    }
   }
 }
 
 interface AdminNoticiasRouteChildren {
+  AdminNoticiasIdRoute: typeof AdminNoticiasIdRoute
   AdminNoticiasNovaRoute: typeof AdminNoticiasNovaRoute
 }
 
 const AdminNoticiasRouteChildren: AdminNoticiasRouteChildren = {
+  AdminNoticiasIdRoute: AdminNoticiasIdRoute,
   AdminNoticiasNovaRoute: AdminNoticiasNovaRoute,
 }
 

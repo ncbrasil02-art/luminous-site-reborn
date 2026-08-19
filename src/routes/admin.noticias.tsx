@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { PlusCircle, Search, Edit, Trash2, CheckCircle } from 'lucide-react'
 import { useState } from 'react'
+import { newsData } from '@/lib/news.data'
 
 export const Route = createFileRoute('/admin/noticias')({
   component: AdminNewsList
@@ -45,35 +46,39 @@ function AdminNewsList() {
                   <th className="px-6 py-4 text-sm font-bold uppercase tracking-wider text-right">Ações</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-border">
-                {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
-                  <tr key={i} className="hover:bg-surface/30 transition-colors">
-                    <td className="px-6 py-4">
-                      <div className="font-semibold line-clamp-1">Notícia Migrada ou Cadastrada #{i}</div>
-                      <div className="text-xs text-muted-foreground">tecnologia, inovacao</div>
-                    </td>
-                    <td className="px-6 py-4 text-sm text-muted-foreground">
-                      19/08/2026
-                    </td>
-                    <td className="px-6 py-4">
-                      <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-500/10 text-green-500">
-                        <CheckCircle className="h-3 w-3" />
-                        Publicado
-                      </span>
-                    </td>
-                    <td className="px-6 py-4 text-right">
-                      <div className="flex items-center justify-end gap-2">
-                         <button className="p-2 rounded-lg hover:bg-surface text-muted-foreground transition-colors">
-                           <Edit className="h-4 w-4" />
-                         </button>
-                         <button className="p-2 rounded-lg hover:bg-destructive/10 text-destructive transition-colors">
-                           <Trash2 className="h-4 w-4" />
-                         </button>
-                      </div>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
+                <tbody className="divide-y divide-border">
+                  {newsData.slice(0, 10).map((post) => (
+                    <tr key={post.id} className="hover:bg-surface/30 transition-colors">
+                      <td className="px-6 py-4">
+                        <div className="font-semibold line-clamp-1">{post.title}</div>
+                        <div className="text-xs text-muted-foreground">{post.categories.join(', ')}</div>
+                      </td>
+                      <td className="px-6 py-4 text-sm text-muted-foreground">
+                        {new Date(post.date).toLocaleDateString('pt-BR')}
+                      </td>
+                      <td className="px-6 py-4">
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-green-500/10 text-green-500">
+                          <CheckCircle className="h-3 w-3" />
+                          Publicado
+                        </span>
+                      </td>
+                      <td className="px-6 py-4 text-right">
+                        <div className="flex items-center justify-end gap-2">
+                           <Link 
+                             to="/admin/noticias/$id"
+                             params={{ id: post.id }}
+                             className="p-2 rounded-lg hover:bg-surface text-muted-foreground transition-colors"
+                           >
+                             <Edit className="h-4 w-4" />
+                           </Link>
+                           <button className="p-2 rounded-lg hover:bg-destructive/10 text-destructive transition-colors">
+                             <Trash2 className="h-4 w-4" />
+                           </button>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
            </table>
         </div>
       </div>
