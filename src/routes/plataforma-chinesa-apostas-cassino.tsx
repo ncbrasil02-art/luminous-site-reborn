@@ -173,7 +173,7 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
         { icon: Globe, title: "Expansão LATAM", desc: "Operador BR que quer **entrar em México, Colômbia, Peru** com plataforma multi-jurisdicional." },
         { icon: Trophy, title: "Clube ou Federação", desc: "Time / federação esportiva com **base engajada** que quer sportsbook temático oficial." },
         { icon: Coins, title: "Plataforma Cripto-Native", desc: "Operação **cripto-first** com foco em USDT, BTC e público internacional." },
-        { icon: Layers, title: "Rede de Franquias", desc: "Modelo **multi-tenant** com franqueados regionais operando marcas independentes." },
+        { icon: Layers, title: "Rede de Franquias", desc: "Modelo **multi-tenant white label** com franqueados regionais operando marcas independentes." },
       ]}
       integrations={[
         { name: "Pragmatic Play", category: "Slots + Live" },
@@ -234,13 +234,9 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
         { quote: "A assessoria da NC no processo SPA/MF valeu o contrato. Saímos do zero à licença em 4 meses.", author: "Rafael Nunes", role: "Sport Real · PR" },
       ]}
       faq={lpFaq}
-      relatedNewsTags={["Cassino", "Apostas", "iGaming", "Sistemas"]}
-    />
-  ),
-});
       finalCtaTitle={<>Pronto para lançar seu <span className="text-gradient">operador de iGaming</span>?</>}
       finalCtaDesc={<>Receba um <strong className="text-foreground">plano executivo em 24h</strong> com arquitetura, catálogo de jogos, orçamento, cronograma e roadmap de licenciamento SPA/MF. <strong className="text-foreground">Consultoria estratégica gratuita</strong> com nosso time de iGaming.</>}
-      relatedNewsTags={["Cassino","Jogos Online","Sistemas"]}
+      relatedNewsTags={["Cassino", "Apostas", "iGaming", "Sistemas"]}
     />
   ),
 });
