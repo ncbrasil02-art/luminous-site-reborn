@@ -12,7 +12,7 @@ const lpFaq = [
         { q: "Posso operar em múltiplas cidades?", a: "Sim, arquitetura **multi-tenant e geodivisão** para franquias regionais." },
       ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-cupom-descontos")({
+export const Route = createFileRoute("/sistema-de-cupom-descontos")({
   head: () => buildLPMeta({
     title: "Sistema de Cupons de Desconto | Cashback e Ofertas — NC Brasil",
     description: "Plataforma completa de cupons de desconto, cashback e ofertas para varejo, marketplace e apps. Geolocalização, QR Code, painel para lojistas e app do cliente.",

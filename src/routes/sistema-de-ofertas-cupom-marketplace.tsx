@@ -12,7 +12,7 @@ const lpFaq = [
         { q: "Qual o prazo de implantação?", a: "**60 a 120 dias** para MVP completo com apps e infraestrutura escalável." },
       ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-ofertas-cupom-marketplace")({
+export const Route = createFileRoute("/sistema-de-ofertas-cupom-marketplace")({
   head: () => buildLPMeta({
     title: "Marketplace de Ofertas e Cupons | Plataforma Multi-Lojista",
     description: "Plataforma marketplace de ofertas: múltiplos lojistas, cupons, comissionamento, split de pagamento, avaliações e painel para vendedores.",

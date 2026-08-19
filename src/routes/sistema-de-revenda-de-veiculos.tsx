@@ -20,7 +20,7 @@ const lpFaq = [
   { q: "Qual o modelo comercial?", a: "**Licença perpétua sem mensalidade** ou SaaS com valor fixo por loja (sem taxa por veículo) — orçamento personalizado." },
 ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-revenda-de-veiculos")({
+export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
   head: () => buildLPMeta({
     title: "Sistema para Revenda de Veículos | ERP + Portal Automotivo — NC Brasil",
     description: "ERP completo para revendas de veículos: gestão de estoque, CRM WhatsApp, financiamento, portal com anúncios integrados a Webmotors/iCarros/OLX, DOC-fácil, NF-e e app da equipe.",

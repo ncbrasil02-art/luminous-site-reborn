@@ -20,7 +20,7 @@ const lpFaq = [
   { q: "Quanto custa e qual o modelo comercial?", a: "**Licença perpétua** (sem mensalidade recorrente) ou SaaS com taxa por anúncio ativo — orçamento personalizado conforme volume." },
 ];
 
-export const Route = createFileRoute("/sistemas/classificados-de-veiculos")({
+export const Route = createFileRoute("/classificados-de-veiculos")({
   head: () => buildLPMeta({
     title: "Sistema de Classificados de Veículos | Portal Automotivo — NC Brasil",
     description: "Plataforma completa para portal de classificados de veículos: revendas, particulares, busca avançada, FIPE integrada, financiamento, comparador, app iOS/Android e SEO técnico.",

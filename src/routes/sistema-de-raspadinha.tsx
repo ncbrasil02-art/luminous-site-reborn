@@ -24,7 +24,7 @@ const lpFaq = [
   { q: "Aceita bônus, freespins, cashback e programa de fidelidade?", a: "Sim, engine de **promoções completa**: bônus de boas-vindas, raspadinhas grátis, cashback percentual, torneios, missões diárias e **programa VIP com níveis**." },
 ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-raspadinha")({
+export const Route = createFileRoute("/sistema-de-raspadinha")({
   head: () => buildLPMeta({
     title: "Sistema de Raspadinha Online | Plataforma White Label com Pix",
     description: "Plataforma completa de raspadinha online valendo Pix: RNG auditável, estoque de prêmios, KYC + antifraude, app iOS/Android white label e engine de bônus. Entrega em 30 dias.",

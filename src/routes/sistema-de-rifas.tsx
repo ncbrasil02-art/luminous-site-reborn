@@ -24,7 +24,7 @@ export const lpFaq = [
   { q: "Posso vender cotas em combos ou com desconto progressivo?", a: "Sim. Configure combos **'leve 10 pague 8'**, desconto progressivo, cotas bônus por indicação, cashback e **cupom promocional** por cliente ou por rifa." },
 ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-rifas")({
+export const Route = createFileRoute("/sistema-de-rifas")({
   head: () => buildLPMeta({
     title: "Sistema de Rifas Online | Criar Rifa Legalizada com Pix — NC Brasil",
     description: "Plataforma completa para criar rifa online legalizada: sorteio pela Loteria Federal, Pix instantâneo, cotas ilimitadas, sem taxa por cota, app do participante e painel do organizador. 15 anos de experiência.",

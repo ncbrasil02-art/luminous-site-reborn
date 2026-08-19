@@ -12,7 +12,7 @@ const lpFaq = [
         { q: "Aceita criptomoedas?", a: "Sim, opção de créditos comprados em **USDT/BTC** via gateway integrado." },
       ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-leilao-de-centavos")({
+export const Route = createFileRoute("/sistema-de-leilao-de-centavos")({
   head: () => buildLPMeta({
     title: "Sistema de Leilão de Centavos | Plataforma Penny Auction",
     description: "Plataforma completa para leilão de centavos (penny auction): créditos, timer anti-sniping, ranking de arrematantes, entrega de prêmios e Pix.",

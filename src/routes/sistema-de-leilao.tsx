@@ -25,7 +25,7 @@ const lpFaq = [
   { q: "Qual o diferencial vs Leilão PRO e Superbid?", a: "**NC Brasil**: plataforma proprietária sem aluguel, taxa 0% por lance, homologação em 27 TJs, código-fonte disponível, apps nativos com sua marca. **Concorrentes**: cobram mensalidade + % por arrematação, plataforma compartilhada, sem acesso ao código, apps sob marca do fornecedor." },
 ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-leilao")({
+export const Route = createFileRoute("/sistema-de-leilao")({
   head: () => buildLPMeta({
     title: "Sistema de Leilão Online | Plataforma White-Label para Leiloeiros — NC Brasil",
     description: "Sistema profissional para leilões judiciais e extrajudiciais: cadastro de lotes, lances online e presenciais, transmissão ao vivo, split de comissões e conformidade legal completa.",

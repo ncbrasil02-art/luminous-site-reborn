@@ -13,8 +13,16 @@ import { Route as TrabalhosRealizadosRouteImport } from './routes/trabalhos-real
 import { Route as SolucoesWebRouteImport } from './routes/solucoes-web'
 import { Route as SoftwareRouteImport } from './routes/software'
 import { Route as SistemaSobDemandaNcBrasilRouteImport } from './routes/sistema-sob-demanda-nc-brasil'
+import { Route as SistemaDeRifasRouteImport } from './routes/sistema-de-rifas'
+import { Route as SistemaDeRevendaDeVeiculosRouteImport } from './routes/sistema-de-revenda-de-veiculos'
+import { Route as SistemaDeRaspadinhaRouteImport } from './routes/sistema-de-raspadinha'
+import { Route as SistemaDeOfertasCupomMarketplaceRouteImport } from './routes/sistema-de-ofertas-cupom-marketplace'
+import { Route as SistemaDeLeilaoRuralRouteImport } from './routes/sistema-de-leilao-rural'
+import { Route as SistemaDeLeilaoDeCentavosRouteImport } from './routes/sistema-de-leilao-de-centavos'
 import { Route as SistemaDeLeilaoRouteImport } from './routes/sistema-de-leilao'
+import { Route as SistemaDeCupomDescontosRouteImport } from './routes/sistema-de-cupom-descontos'
 import { Route as ProgramaDeOrdemDeServicoRouteImport } from './routes/programa-de-ordem-de-servico'
+import { Route as PlataformaChinesaApostasCassinoRouteImport } from './routes/plataforma-chinesa-apostas-cassino'
 import { Route as OrcamentoRouteImport } from './routes/orcamento'
 import { Route as NossosSistemasRouteImport } from './routes/nossos-sistemas'
 import { Route as NossosServicosRouteImport } from './routes/nossos-servicos'
@@ -23,6 +31,7 @@ import { Route as ErrosNaCriacaoDeUmAplicativoRouteImport } from './routes/erros
 import { Route as EmpresaRouteImport } from './routes/empresa'
 import { Route as DicasParaECommerceRouteImport } from './routes/dicas-para-e-commerce'
 import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as ClassificadosDeVeiculosRouteImport } from './routes/classificados-de-veiculos'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
@@ -34,16 +43,6 @@ import { Route as SolucoesWebLojaVirtualRouteImport } from './routes/solucoes-we
 import { Route as SolucoesWebLandingPagesRouteImport } from './routes/solucoes-web.landing-pages'
 import { Route as SolucoesWebHospedagemRouteImport } from './routes/solucoes-web.hospedagem'
 import { Route as SolucoesWebDesenvolvimentoDeSitesRouteImport } from './routes/solucoes-web.desenvolvimento-de-sites'
-import { Route as SistemasSistemaDeRifasRouteImport } from './routes/sistemas.sistema-de-rifas'
-import { Route as SistemasSistemaDeRevendaDeVeiculosRouteImport } from './routes/sistemas.sistema-de-revenda-de-veiculos'
-import { Route as SistemasSistemaDeRaspadinhaRouteImport } from './routes/sistemas.sistema-de-raspadinha'
-import { Route as SistemasSistemaDeOfertasCupomMarketplaceRouteImport } from './routes/sistemas.sistema-de-ofertas-cupom-marketplace'
-import { Route as SistemasSistemaDeLeilaoRuralRouteImport } from './routes/sistemas.sistema-de-leilao-rural'
-import { Route as SistemasSistemaDeLeilaoDeCentavosRouteImport } from './routes/sistemas.sistema-de-leilao-de-centavos'
-import { Route as SistemasSistemaDeLeilaoRouteImport } from './routes/sistemas.sistema-de-leilao'
-import { Route as SistemasSistemaDeCupomDescontosRouteImport } from './routes/sistemas.sistema-de-cupom-descontos'
-import { Route as SistemasPlataformaChinesaApostasCassinoRouteImport } from './routes/sistemas.plataforma-chinesa-apostas-cassino'
-import { Route as SistemasClassificadosDeVeiculosRouteImport } from './routes/sistemas.classificados-de-veiculos'
 import { Route as ServicosSistemasWebRouteImport } from './routes/servicos.sistemas-web'
 import { Route as ServicosIdentidadeVisualRouteImport } from './routes/servicos.identidade-visual'
 import { Route as ServicosGoogleAdsRouteImport } from './routes/servicos.google-ads'
@@ -95,15 +94,59 @@ const SistemaSobDemandaNcBrasilRoute =
     path: '/sistema-sob-demanda-nc-brasil',
     getParentRoute: () => rootRouteImport,
   } as any)
+const SistemaDeRifasRoute = SistemaDeRifasRouteImport.update({
+  id: '/sistema-de-rifas',
+  path: '/sistema-de-rifas',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SistemaDeRevendaDeVeiculosRoute =
+  SistemaDeRevendaDeVeiculosRouteImport.update({
+    id: '/sistema-de-revenda-de-veiculos',
+    path: '/sistema-de-revenda-de-veiculos',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SistemaDeRaspadinhaRoute = SistemaDeRaspadinhaRouteImport.update({
+  id: '/sistema-de-raspadinha',
+  path: '/sistema-de-raspadinha',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SistemaDeOfertasCupomMarketplaceRoute =
+  SistemaDeOfertasCupomMarketplaceRouteImport.update({
+    id: '/sistema-de-ofertas-cupom-marketplace',
+    path: '/sistema-de-ofertas-cupom-marketplace',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const SistemaDeLeilaoRuralRoute = SistemaDeLeilaoRuralRouteImport.update({
+  id: '/sistema-de-leilao-rural',
+  path: '/sistema-de-leilao-rural',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SistemaDeLeilaoDeCentavosRoute =
+  SistemaDeLeilaoDeCentavosRouteImport.update({
+    id: '/sistema-de-leilao-de-centavos',
+    path: '/sistema-de-leilao-de-centavos',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const SistemaDeLeilaoRoute = SistemaDeLeilaoRouteImport.update({
   id: '/sistema-de-leilao',
   path: '/sistema-de-leilao',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SistemaDeCupomDescontosRoute = SistemaDeCupomDescontosRouteImport.update({
+  id: '/sistema-de-cupom-descontos',
+  path: '/sistema-de-cupom-descontos',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProgramaDeOrdemDeServicoRoute =
   ProgramaDeOrdemDeServicoRouteImport.update({
     id: '/programa-de-ordem-de-servico',
     path: '/programa-de-ordem-de-servico',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PlataformaChinesaApostasCassinoRoute =
+  PlataformaChinesaApostasCassinoRouteImport.update({
+    id: '/plataforma-chinesa-apostas-cassino',
+    path: '/plataforma-chinesa-apostas-cassino',
     getParentRoute: () => rootRouteImport,
   } as any)
 const OrcamentoRoute = OrcamentoRouteImport.update({
@@ -145,6 +188,11 @@ const DicasParaECommerceRoute = DicasParaECommerceRouteImport.update({
 const ContatoRoute = ContatoRouteImport.update({
   id: '/contato',
   path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ClassificadosDeVeiculosRoute = ClassificadosDeVeiculosRouteImport.update({
+  id: '/classificados-de-veiculos',
+  path: '/classificados-de-veiculos',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AdminRoute = AdminRouteImport.update({
@@ -203,64 +251,6 @@ const SolucoesWebDesenvolvimentoDeSitesRoute =
     id: '/desenvolvimento-de-sites',
     path: '/desenvolvimento-de-sites',
     getParentRoute: () => SolucoesWebRoute,
-  } as any)
-const SistemasSistemaDeRifasRoute = SistemasSistemaDeRifasRouteImport.update({
-  id: '/sistemas/sistema-de-rifas',
-  path: '/sistemas/sistema-de-rifas',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SistemasSistemaDeRevendaDeVeiculosRoute =
-  SistemasSistemaDeRevendaDeVeiculosRouteImport.update({
-    id: '/sistemas/sistema-de-revenda-de-veiculos',
-    path: '/sistemas/sistema-de-revenda-de-veiculos',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const SistemasSistemaDeRaspadinhaRoute =
-  SistemasSistemaDeRaspadinhaRouteImport.update({
-    id: '/sistemas/sistema-de-raspadinha',
-    path: '/sistemas/sistema-de-raspadinha',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const SistemasSistemaDeOfertasCupomMarketplaceRoute =
-  SistemasSistemaDeOfertasCupomMarketplaceRouteImport.update({
-    id: '/sistemas/sistema-de-ofertas-cupom-marketplace',
-    path: '/sistemas/sistema-de-ofertas-cupom-marketplace',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const SistemasSistemaDeLeilaoRuralRoute =
-  SistemasSistemaDeLeilaoRuralRouteImport.update({
-    id: '/sistemas/sistema-de-leilao-rural',
-    path: '/sistemas/sistema-de-leilao-rural',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const SistemasSistemaDeLeilaoDeCentavosRoute =
-  SistemasSistemaDeLeilaoDeCentavosRouteImport.update({
-    id: '/sistemas/sistema-de-leilao-de-centavos',
-    path: '/sistemas/sistema-de-leilao-de-centavos',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const SistemasSistemaDeLeilaoRoute = SistemasSistemaDeLeilaoRouteImport.update({
-  id: '/sistemas/sistema-de-leilao',
-  path: '/sistemas/sistema-de-leilao',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SistemasSistemaDeCupomDescontosRoute =
-  SistemasSistemaDeCupomDescontosRouteImport.update({
-    id: '/sistemas/sistema-de-cupom-descontos',
-    path: '/sistemas/sistema-de-cupom-descontos',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const SistemasPlataformaChinesaApostasCassinoRoute =
-  SistemasPlataformaChinesaApostasCassinoRouteImport.update({
-    id: '/sistemas/plataforma-chinesa-apostas-cassino',
-    path: '/sistemas/plataforma-chinesa-apostas-cassino',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const SistemasClassificadosDeVeiculosRoute =
-  SistemasClassificadosDeVeiculosRouteImport.update({
-    id: '/sistemas/classificados-de-veiculos',
-    path: '/sistemas/classificados-de-veiculos',
-    getParentRoute: () => rootRouteImport,
   } as any)
 const ServicosSistemasWebRoute = ServicosSistemasWebRouteImport.update({
   id: '/servicos/sistemas-web',
@@ -422,6 +412,7 @@ const AdminNoticiasIdRoute = AdminNoticiasIdRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/admin': typeof AdminRouteWithChildren
+  '/classificados-de-veiculos': typeof ClassificadosDeVeiculosRoute
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRouteWithChildren
@@ -430,8 +421,16 @@ export interface FileRoutesByFullPath {
   '/nossos-servicos': typeof NossosServicosRoute
   '/nossos-sistemas': typeof NossosSistemasRoute
   '/orcamento': typeof OrcamentoRoute
+  '/plataforma-chinesa-apostas-cassino': typeof PlataformaChinesaApostasCassinoRoute
   '/programa-de-ordem-de-servico': typeof ProgramaDeOrdemDeServicoRoute
+  '/sistema-de-cupom-descontos': typeof SistemaDeCupomDescontosRoute
   '/sistema-de-leilao': typeof SistemaDeLeilaoRoute
+  '/sistema-de-leilao-de-centavos': typeof SistemaDeLeilaoDeCentavosRoute
+  '/sistema-de-leilao-rural': typeof SistemaDeLeilaoRuralRoute
+  '/sistema-de-ofertas-cupom-marketplace': typeof SistemaDeOfertasCupomMarketplaceRoute
+  '/sistema-de-raspadinha': typeof SistemaDeRaspadinhaRoute
+  '/sistema-de-revenda-de-veiculos': typeof SistemaDeRevendaDeVeiculosRoute
+  '/sistema-de-rifas': typeof SistemaDeRifasRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
@@ -459,16 +458,6 @@ export interface FileRoutesByFullPath {
   '/servicos/google-ads': typeof ServicosGoogleAdsRoute
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
-  '/sistemas/classificados-de-veiculos': typeof SistemasClassificadosDeVeiculosRoute
-  '/sistemas/plataforma-chinesa-apostas-cassino': typeof SistemasPlataformaChinesaApostasCassinoRoute
-  '/sistemas/sistema-de-cupom-descontos': typeof SistemasSistemaDeCupomDescontosRoute
-  '/sistemas/sistema-de-leilao': typeof SistemasSistemaDeLeilaoRoute
-  '/sistemas/sistema-de-leilao-de-centavos': typeof SistemasSistemaDeLeilaoDeCentavosRoute
-  '/sistemas/sistema-de-leilao-rural': typeof SistemasSistemaDeLeilaoRuralRoute
-  '/sistemas/sistema-de-ofertas-cupom-marketplace': typeof SistemasSistemaDeOfertasCupomMarketplaceRoute
-  '/sistemas/sistema-de-raspadinha': typeof SistemasSistemaDeRaspadinhaRoute
-  '/sistemas/sistema-de-revenda-de-veiculos': typeof SistemasSistemaDeRevendaDeVeiculosRoute
-  '/sistemas/sistema-de-rifas': typeof SistemasSistemaDeRifasRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -487,6 +476,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/classificados-de-veiculos': typeof ClassificadosDeVeiculosRoute
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRouteWithChildren
@@ -495,8 +485,16 @@ export interface FileRoutesByTo {
   '/nossos-servicos': typeof NossosServicosRoute
   '/nossos-sistemas': typeof NossosSistemasRoute
   '/orcamento': typeof OrcamentoRoute
+  '/plataforma-chinesa-apostas-cassino': typeof PlataformaChinesaApostasCassinoRoute
   '/programa-de-ordem-de-servico': typeof ProgramaDeOrdemDeServicoRoute
+  '/sistema-de-cupom-descontos': typeof SistemaDeCupomDescontosRoute
   '/sistema-de-leilao': typeof SistemaDeLeilaoRoute
+  '/sistema-de-leilao-de-centavos': typeof SistemaDeLeilaoDeCentavosRoute
+  '/sistema-de-leilao-rural': typeof SistemaDeLeilaoRuralRoute
+  '/sistema-de-ofertas-cupom-marketplace': typeof SistemaDeOfertasCupomMarketplaceRoute
+  '/sistema-de-raspadinha': typeof SistemaDeRaspadinhaRoute
+  '/sistema-de-revenda-de-veiculos': typeof SistemaDeRevendaDeVeiculosRoute
+  '/sistema-de-rifas': typeof SistemaDeRifasRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
@@ -524,16 +522,6 @@ export interface FileRoutesByTo {
   '/servicos/google-ads': typeof ServicosGoogleAdsRoute
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
-  '/sistemas/classificados-de-veiculos': typeof SistemasClassificadosDeVeiculosRoute
-  '/sistemas/plataforma-chinesa-apostas-cassino': typeof SistemasPlataformaChinesaApostasCassinoRoute
-  '/sistemas/sistema-de-cupom-descontos': typeof SistemasSistemaDeCupomDescontosRoute
-  '/sistemas/sistema-de-leilao': typeof SistemasSistemaDeLeilaoRoute
-  '/sistemas/sistema-de-leilao-de-centavos': typeof SistemasSistemaDeLeilaoDeCentavosRoute
-  '/sistemas/sistema-de-leilao-rural': typeof SistemasSistemaDeLeilaoRuralRoute
-  '/sistemas/sistema-de-ofertas-cupom-marketplace': typeof SistemasSistemaDeOfertasCupomMarketplaceRoute
-  '/sistemas/sistema-de-raspadinha': typeof SistemasSistemaDeRaspadinhaRoute
-  '/sistemas/sistema-de-revenda-de-veiculos': typeof SistemasSistemaDeRevendaDeVeiculosRoute
-  '/sistemas/sistema-de-rifas': typeof SistemasSistemaDeRifasRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -554,6 +542,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/admin': typeof AdminRouteWithChildren
+  '/classificados-de-veiculos': typeof ClassificadosDeVeiculosRoute
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRouteWithChildren
@@ -562,8 +551,16 @@ export interface FileRoutesById {
   '/nossos-servicos': typeof NossosServicosRoute
   '/nossos-sistemas': typeof NossosSistemasRoute
   '/orcamento': typeof OrcamentoRoute
+  '/plataforma-chinesa-apostas-cassino': typeof PlataformaChinesaApostasCassinoRoute
   '/programa-de-ordem-de-servico': typeof ProgramaDeOrdemDeServicoRoute
+  '/sistema-de-cupom-descontos': typeof SistemaDeCupomDescontosRoute
   '/sistema-de-leilao': typeof SistemaDeLeilaoRoute
+  '/sistema-de-leilao-de-centavos': typeof SistemaDeLeilaoDeCentavosRoute
+  '/sistema-de-leilao-rural': typeof SistemaDeLeilaoRuralRoute
+  '/sistema-de-ofertas-cupom-marketplace': typeof SistemaDeOfertasCupomMarketplaceRoute
+  '/sistema-de-raspadinha': typeof SistemaDeRaspadinhaRoute
+  '/sistema-de-revenda-de-veiculos': typeof SistemaDeRevendaDeVeiculosRoute
+  '/sistema-de-rifas': typeof SistemaDeRifasRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
@@ -591,16 +588,6 @@ export interface FileRoutesById {
   '/servicos/google-ads': typeof ServicosGoogleAdsRoute
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
-  '/sistemas/classificados-de-veiculos': typeof SistemasClassificadosDeVeiculosRoute
-  '/sistemas/plataforma-chinesa-apostas-cassino': typeof SistemasPlataformaChinesaApostasCassinoRoute
-  '/sistemas/sistema-de-cupom-descontos': typeof SistemasSistemaDeCupomDescontosRoute
-  '/sistemas/sistema-de-leilao': typeof SistemasSistemaDeLeilaoRoute
-  '/sistemas/sistema-de-leilao-de-centavos': typeof SistemasSistemaDeLeilaoDeCentavosRoute
-  '/sistemas/sistema-de-leilao-rural': typeof SistemasSistemaDeLeilaoRuralRoute
-  '/sistemas/sistema-de-ofertas-cupom-marketplace': typeof SistemasSistemaDeOfertasCupomMarketplaceRoute
-  '/sistemas/sistema-de-raspadinha': typeof SistemasSistemaDeRaspadinhaRoute
-  '/sistemas/sistema-de-revenda-de-veiculos': typeof SistemasSistemaDeRevendaDeVeiculosRoute
-  '/sistemas/sistema-de-rifas': typeof SistemasSistemaDeRifasRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -622,6 +609,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/admin'
+    | '/classificados-de-veiculos'
     | '/contato'
     | '/dicas-para-e-commerce'
     | '/empresa'
@@ -630,8 +618,16 @@ export interface FileRouteTypes {
     | '/nossos-servicos'
     | '/nossos-sistemas'
     | '/orcamento'
+    | '/plataforma-chinesa-apostas-cassino'
     | '/programa-de-ordem-de-servico'
+    | '/sistema-de-cupom-descontos'
     | '/sistema-de-leilao'
+    | '/sistema-de-leilao-de-centavos'
+    | '/sistema-de-leilao-rural'
+    | '/sistema-de-ofertas-cupom-marketplace'
+    | '/sistema-de-raspadinha'
+    | '/sistema-de-revenda-de-veiculos'
+    | '/sistema-de-rifas'
     | '/sistema-sob-demanda-nc-brasil'
     | '/software'
     | '/solucoes-web'
@@ -659,16 +655,6 @@ export interface FileRouteTypes {
     | '/servicos/google-ads'
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
-    | '/sistemas/classificados-de-veiculos'
-    | '/sistemas/plataforma-chinesa-apostas-cassino'
-    | '/sistemas/sistema-de-cupom-descontos'
-    | '/sistemas/sistema-de-leilao'
-    | '/sistemas/sistema-de-leilao-de-centavos'
-    | '/sistemas/sistema-de-leilao-rural'
-    | '/sistemas/sistema-de-ofertas-cupom-marketplace'
-    | '/sistemas/sistema-de-raspadinha'
-    | '/sistemas/sistema-de-revenda-de-veiculos'
-    | '/sistemas/sistema-de-rifas'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -687,6 +673,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/classificados-de-veiculos'
     | '/contato'
     | '/dicas-para-e-commerce'
     | '/empresa'
@@ -695,8 +682,16 @@ export interface FileRouteTypes {
     | '/nossos-servicos'
     | '/nossos-sistemas'
     | '/orcamento'
+    | '/plataforma-chinesa-apostas-cassino'
     | '/programa-de-ordem-de-servico'
+    | '/sistema-de-cupom-descontos'
     | '/sistema-de-leilao'
+    | '/sistema-de-leilao-de-centavos'
+    | '/sistema-de-leilao-rural'
+    | '/sistema-de-ofertas-cupom-marketplace'
+    | '/sistema-de-raspadinha'
+    | '/sistema-de-revenda-de-veiculos'
+    | '/sistema-de-rifas'
     | '/sistema-sob-demanda-nc-brasil'
     | '/software'
     | '/solucoes-web'
@@ -724,16 +719,6 @@ export interface FileRouteTypes {
     | '/servicos/google-ads'
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
-    | '/sistemas/classificados-de-veiculos'
-    | '/sistemas/plataforma-chinesa-apostas-cassino'
-    | '/sistemas/sistema-de-cupom-descontos'
-    | '/sistemas/sistema-de-leilao'
-    | '/sistemas/sistema-de-leilao-de-centavos'
-    | '/sistemas/sistema-de-leilao-rural'
-    | '/sistemas/sistema-de-ofertas-cupom-marketplace'
-    | '/sistemas/sistema-de-raspadinha'
-    | '/sistemas/sistema-de-revenda-de-veiculos'
-    | '/sistemas/sistema-de-rifas'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -753,6 +738,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/admin'
+    | '/classificados-de-veiculos'
     | '/contato'
     | '/dicas-para-e-commerce'
     | '/empresa'
@@ -761,8 +747,16 @@ export interface FileRouteTypes {
     | '/nossos-servicos'
     | '/nossos-sistemas'
     | '/orcamento'
+    | '/plataforma-chinesa-apostas-cassino'
     | '/programa-de-ordem-de-servico'
+    | '/sistema-de-cupom-descontos'
     | '/sistema-de-leilao'
+    | '/sistema-de-leilao-de-centavos'
+    | '/sistema-de-leilao-rural'
+    | '/sistema-de-ofertas-cupom-marketplace'
+    | '/sistema-de-raspadinha'
+    | '/sistema-de-revenda-de-veiculos'
+    | '/sistema-de-rifas'
     | '/sistema-sob-demanda-nc-brasil'
     | '/software'
     | '/solucoes-web'
@@ -790,16 +784,6 @@ export interface FileRouteTypes {
     | '/servicos/google-ads'
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
-    | '/sistemas/classificados-de-veiculos'
-    | '/sistemas/plataforma-chinesa-apostas-cassino'
-    | '/sistemas/sistema-de-cupom-descontos'
-    | '/sistemas/sistema-de-leilao'
-    | '/sistemas/sistema-de-leilao-de-centavos'
-    | '/sistemas/sistema-de-leilao-rural'
-    | '/sistemas/sistema-de-ofertas-cupom-marketplace'
-    | '/sistemas/sistema-de-raspadinha'
-    | '/sistemas/sistema-de-revenda-de-veiculos'
-    | '/sistemas/sistema-de-rifas'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -820,6 +804,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AdminRoute: typeof AdminRouteWithChildren
+  ClassificadosDeVeiculosRoute: typeof ClassificadosDeVeiculosRoute
   ContatoRoute: typeof ContatoRoute
   DicasParaECommerceRoute: typeof DicasParaECommerceRoute
   EmpresaRoute: typeof EmpresaRouteWithChildren
@@ -828,8 +813,16 @@ export interface RootRouteChildren {
   NossosServicosRoute: typeof NossosServicosRoute
   NossosSistemasRoute: typeof NossosSistemasRoute
   OrcamentoRoute: typeof OrcamentoRoute
+  PlataformaChinesaApostasCassinoRoute: typeof PlataformaChinesaApostasCassinoRoute
   ProgramaDeOrdemDeServicoRoute: typeof ProgramaDeOrdemDeServicoRoute
+  SistemaDeCupomDescontosRoute: typeof SistemaDeCupomDescontosRoute
   SistemaDeLeilaoRoute: typeof SistemaDeLeilaoRoute
+  SistemaDeLeilaoDeCentavosRoute: typeof SistemaDeLeilaoDeCentavosRoute
+  SistemaDeLeilaoRuralRoute: typeof SistemaDeLeilaoRuralRoute
+  SistemaDeOfertasCupomMarketplaceRoute: typeof SistemaDeOfertasCupomMarketplaceRoute
+  SistemaDeRaspadinhaRoute: typeof SistemaDeRaspadinhaRoute
+  SistemaDeRevendaDeVeiculosRoute: typeof SistemaDeRevendaDeVeiculosRoute
+  SistemaDeRifasRoute: typeof SistemaDeRifasRoute
   SistemaSobDemandaNcBrasilRoute: typeof SistemaSobDemandaNcBrasilRoute
   SoftwareRoute: typeof SoftwareRoute
   SolucoesWebRoute: typeof SolucoesWebRouteWithChildren
@@ -852,16 +845,6 @@ export interface RootRouteChildren {
   ServicosGoogleAdsRoute: typeof ServicosGoogleAdsRoute
   ServicosIdentidadeVisualRoute: typeof ServicosIdentidadeVisualRoute
   ServicosSistemasWebRoute: typeof ServicosSistemasWebRoute
-  SistemasClassificadosDeVeiculosRoute: typeof SistemasClassificadosDeVeiculosRoute
-  SistemasPlataformaChinesaApostasCassinoRoute: typeof SistemasPlataformaChinesaApostasCassinoRoute
-  SistemasSistemaDeCupomDescontosRoute: typeof SistemasSistemaDeCupomDescontosRoute
-  SistemasSistemaDeLeilaoRoute: typeof SistemasSistemaDeLeilaoRoute
-  SistemasSistemaDeLeilaoDeCentavosRoute: typeof SistemasSistemaDeLeilaoDeCentavosRoute
-  SistemasSistemaDeLeilaoRuralRoute: typeof SistemasSistemaDeLeilaoRuralRoute
-  SistemasSistemaDeOfertasCupomMarketplaceRoute: typeof SistemasSistemaDeOfertasCupomMarketplaceRoute
-  SistemasSistemaDeRaspadinhaRoute: typeof SistemasSistemaDeRaspadinhaRoute
-  SistemasSistemaDeRevendaDeVeiculosRoute: typeof SistemasSistemaDeRevendaDeVeiculosRoute
-  SistemasSistemaDeRifasRoute: typeof SistemasSistemaDeRifasRoute
   NoticiasIndexRoute: typeof NoticiasIndexRoute
   SistemasIndexRoute: typeof SistemasIndexRoute
   ApiPublicRssRoute: typeof ApiPublicRssRoute
@@ -900,6 +883,48 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SistemaSobDemandaNcBrasilRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sistema-de-rifas': {
+      id: '/sistema-de-rifas'
+      path: '/sistema-de-rifas'
+      fullPath: '/sistema-de-rifas'
+      preLoaderRoute: typeof SistemaDeRifasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistema-de-revenda-de-veiculos': {
+      id: '/sistema-de-revenda-de-veiculos'
+      path: '/sistema-de-revenda-de-veiculos'
+      fullPath: '/sistema-de-revenda-de-veiculos'
+      preLoaderRoute: typeof SistemaDeRevendaDeVeiculosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistema-de-raspadinha': {
+      id: '/sistema-de-raspadinha'
+      path: '/sistema-de-raspadinha'
+      fullPath: '/sistema-de-raspadinha'
+      preLoaderRoute: typeof SistemaDeRaspadinhaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistema-de-ofertas-cupom-marketplace': {
+      id: '/sistema-de-ofertas-cupom-marketplace'
+      path: '/sistema-de-ofertas-cupom-marketplace'
+      fullPath: '/sistema-de-ofertas-cupom-marketplace'
+      preLoaderRoute: typeof SistemaDeOfertasCupomMarketplaceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistema-de-leilao-rural': {
+      id: '/sistema-de-leilao-rural'
+      path: '/sistema-de-leilao-rural'
+      fullPath: '/sistema-de-leilao-rural'
+      preLoaderRoute: typeof SistemaDeLeilaoRuralRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistema-de-leilao-de-centavos': {
+      id: '/sistema-de-leilao-de-centavos'
+      path: '/sistema-de-leilao-de-centavos'
+      fullPath: '/sistema-de-leilao-de-centavos'
+      preLoaderRoute: typeof SistemaDeLeilaoDeCentavosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sistema-de-leilao': {
       id: '/sistema-de-leilao'
       path: '/sistema-de-leilao'
@@ -907,11 +932,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SistemaDeLeilaoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/sistema-de-cupom-descontos': {
+      id: '/sistema-de-cupom-descontos'
+      path: '/sistema-de-cupom-descontos'
+      fullPath: '/sistema-de-cupom-descontos'
+      preLoaderRoute: typeof SistemaDeCupomDescontosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/programa-de-ordem-de-servico': {
       id: '/programa-de-ordem-de-servico'
       path: '/programa-de-ordem-de-servico'
       fullPath: '/programa-de-ordem-de-servico'
       preLoaderRoute: typeof ProgramaDeOrdemDeServicoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plataforma-chinesa-apostas-cassino': {
+      id: '/plataforma-chinesa-apostas-cassino'
+      path: '/plataforma-chinesa-apostas-cassino'
+      fullPath: '/plataforma-chinesa-apostas-cassino'
+      preLoaderRoute: typeof PlataformaChinesaApostasCassinoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/orcamento': {
@@ -968,6 +1007,13 @@ declare module '@tanstack/react-router' {
       path: '/contato'
       fullPath: '/contato'
       preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/classificados-de-veiculos': {
+      id: '/classificados-de-veiculos'
+      path: '/classificados-de-veiculos'
+      fullPath: '/classificados-de-veiculos'
+      preLoaderRoute: typeof ClassificadosDeVeiculosRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/admin': {
@@ -1046,76 +1092,6 @@ declare module '@tanstack/react-router' {
       fullPath: '/solucoes-web/desenvolvimento-de-sites'
       preLoaderRoute: typeof SolucoesWebDesenvolvimentoDeSitesRouteImport
       parentRoute: typeof SolucoesWebRoute
-    }
-    '/sistemas/sistema-de-rifas': {
-      id: '/sistemas/sistema-de-rifas'
-      path: '/sistemas/sistema-de-rifas'
-      fullPath: '/sistemas/sistema-de-rifas'
-      preLoaderRoute: typeof SistemasSistemaDeRifasRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sistemas/sistema-de-revenda-de-veiculos': {
-      id: '/sistemas/sistema-de-revenda-de-veiculos'
-      path: '/sistemas/sistema-de-revenda-de-veiculos'
-      fullPath: '/sistemas/sistema-de-revenda-de-veiculos'
-      preLoaderRoute: typeof SistemasSistemaDeRevendaDeVeiculosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sistemas/sistema-de-raspadinha': {
-      id: '/sistemas/sistema-de-raspadinha'
-      path: '/sistemas/sistema-de-raspadinha'
-      fullPath: '/sistemas/sistema-de-raspadinha'
-      preLoaderRoute: typeof SistemasSistemaDeRaspadinhaRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sistemas/sistema-de-ofertas-cupom-marketplace': {
-      id: '/sistemas/sistema-de-ofertas-cupom-marketplace'
-      path: '/sistemas/sistema-de-ofertas-cupom-marketplace'
-      fullPath: '/sistemas/sistema-de-ofertas-cupom-marketplace'
-      preLoaderRoute: typeof SistemasSistemaDeOfertasCupomMarketplaceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sistemas/sistema-de-leilao-rural': {
-      id: '/sistemas/sistema-de-leilao-rural'
-      path: '/sistemas/sistema-de-leilao-rural'
-      fullPath: '/sistemas/sistema-de-leilao-rural'
-      preLoaderRoute: typeof SistemasSistemaDeLeilaoRuralRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sistemas/sistema-de-leilao-de-centavos': {
-      id: '/sistemas/sistema-de-leilao-de-centavos'
-      path: '/sistemas/sistema-de-leilao-de-centavos'
-      fullPath: '/sistemas/sistema-de-leilao-de-centavos'
-      preLoaderRoute: typeof SistemasSistemaDeLeilaoDeCentavosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sistemas/sistema-de-leilao': {
-      id: '/sistemas/sistema-de-leilao'
-      path: '/sistemas/sistema-de-leilao'
-      fullPath: '/sistemas/sistema-de-leilao'
-      preLoaderRoute: typeof SistemasSistemaDeLeilaoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sistemas/sistema-de-cupom-descontos': {
-      id: '/sistemas/sistema-de-cupom-descontos'
-      path: '/sistemas/sistema-de-cupom-descontos'
-      fullPath: '/sistemas/sistema-de-cupom-descontos'
-      preLoaderRoute: typeof SistemasSistemaDeCupomDescontosRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sistemas/plataforma-chinesa-apostas-cassino': {
-      id: '/sistemas/plataforma-chinesa-apostas-cassino'
-      path: '/sistemas/plataforma-chinesa-apostas-cassino'
-      fullPath: '/sistemas/plataforma-chinesa-apostas-cassino'
-      preLoaderRoute: typeof SistemasPlataformaChinesaApostasCassinoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sistemas/classificados-de-veiculos': {
-      id: '/sistemas/classificados-de-veiculos'
-      path: '/sistemas/classificados-de-veiculos'
-      fullPath: '/sistemas/classificados-de-veiculos'
-      preLoaderRoute: typeof SistemasClassificadosDeVeiculosRouteImport
-      parentRoute: typeof rootRouteImport
     }
     '/servicos/sistemas-web': {
       id: '/servicos/sistemas-web'
@@ -1392,6 +1368,7 @@ const SolucoesWebRouteWithChildren = SolucoesWebRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AdminRoute: AdminRouteWithChildren,
+  ClassificadosDeVeiculosRoute: ClassificadosDeVeiculosRoute,
   ContatoRoute: ContatoRoute,
   DicasParaECommerceRoute: DicasParaECommerceRoute,
   EmpresaRoute: EmpresaRouteWithChildren,
@@ -1400,8 +1377,16 @@ const rootRouteChildren: RootRouteChildren = {
   NossosServicosRoute: NossosServicosRoute,
   NossosSistemasRoute: NossosSistemasRoute,
   OrcamentoRoute: OrcamentoRoute,
+  PlataformaChinesaApostasCassinoRoute: PlataformaChinesaApostasCassinoRoute,
   ProgramaDeOrdemDeServicoRoute: ProgramaDeOrdemDeServicoRoute,
+  SistemaDeCupomDescontosRoute: SistemaDeCupomDescontosRoute,
   SistemaDeLeilaoRoute: SistemaDeLeilaoRoute,
+  SistemaDeLeilaoDeCentavosRoute: SistemaDeLeilaoDeCentavosRoute,
+  SistemaDeLeilaoRuralRoute: SistemaDeLeilaoRuralRoute,
+  SistemaDeOfertasCupomMarketplaceRoute: SistemaDeOfertasCupomMarketplaceRoute,
+  SistemaDeRaspadinhaRoute: SistemaDeRaspadinhaRoute,
+  SistemaDeRevendaDeVeiculosRoute: SistemaDeRevendaDeVeiculosRoute,
+  SistemaDeRifasRoute: SistemaDeRifasRoute,
   SistemaSobDemandaNcBrasilRoute: SistemaSobDemandaNcBrasilRoute,
   SoftwareRoute: SoftwareRoute,
   SolucoesWebRoute: SolucoesWebRouteWithChildren,
@@ -1424,20 +1409,6 @@ const rootRouteChildren: RootRouteChildren = {
   ServicosGoogleAdsRoute: ServicosGoogleAdsRoute,
   ServicosIdentidadeVisualRoute: ServicosIdentidadeVisualRoute,
   ServicosSistemasWebRoute: ServicosSistemasWebRoute,
-  SistemasClassificadosDeVeiculosRoute: SistemasClassificadosDeVeiculosRoute,
-  SistemasPlataformaChinesaApostasCassinoRoute:
-    SistemasPlataformaChinesaApostasCassinoRoute,
-  SistemasSistemaDeCupomDescontosRoute: SistemasSistemaDeCupomDescontosRoute,
-  SistemasSistemaDeLeilaoRoute: SistemasSistemaDeLeilaoRoute,
-  SistemasSistemaDeLeilaoDeCentavosRoute:
-    SistemasSistemaDeLeilaoDeCentavosRoute,
-  SistemasSistemaDeLeilaoRuralRoute: SistemasSistemaDeLeilaoRuralRoute,
-  SistemasSistemaDeOfertasCupomMarketplaceRoute:
-    SistemasSistemaDeOfertasCupomMarketplaceRoute,
-  SistemasSistemaDeRaspadinhaRoute: SistemasSistemaDeRaspadinhaRoute,
-  SistemasSistemaDeRevendaDeVeiculosRoute:
-    SistemasSistemaDeRevendaDeVeiculosRoute,
-  SistemasSistemaDeRifasRoute: SistemasSistemaDeRifasRoute,
   NoticiasIndexRoute: NoticiasIndexRoute,
   SistemasIndexRoute: SistemasIndexRoute,
   ApiPublicRssRoute: ApiPublicRssRoute,

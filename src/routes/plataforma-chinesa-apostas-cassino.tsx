@@ -26,7 +26,7 @@ const lpFaq = [
   { q: "Como é o suporte técnico?", a: "**24/7 em português** por WhatsApp, ticket e videoconferência. SLA de resposta em 15 minutos e resolução crítica em 2h para clientes enterprise." },
 ];
 
-export const Route = createFileRoute("/sistemas/plataforma-chinesa-apostas-cassino")({
+export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
   head: () => buildLPMeta({
     title: "Plataforma de Cassino Online White Label | Sportsbook + Slots + Pix",
     description: "Plataforma completa de cassino online e apostas esportivas white label: 8.000+ slots (Pragmatic, PG Soft, Aviator), cassino ao vivo, sportsbook, Pix instantâneo, KYC BR e licenciamento SPA. Deploy em 45 dias.",

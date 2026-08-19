@@ -20,7 +20,7 @@ const lpFaq = [
   { q: "Quanto custa?", a: "Modelo de **licença perpétua sem mensalidade recorrente** ou plano SaaS com taxa por lote — orçamento personalizado conforme volume e módulos." },
 ];
 
-export const Route = createFileRoute("/sistemas/sistema-de-leilao-rural")({
+export const Route = createFileRoute("/sistema-de-leilao-rural")({
   head: () => buildLPMeta({
     title: "Sistema de Leilão Rural Online | Gado, Cavalos, Fazendas — NC Brasil",
     description: "Plataforma completa para leilões rurais e agropecuários: bovinos, equinos, propriedades, maquinário. Transmissão HD, GTA automática, pesagem integrada, Pix e conta gráfica.",
