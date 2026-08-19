@@ -41,13 +41,13 @@ export function buildStubMeta({
 
 interface StubPageProps {
   title: React.ReactNode;
-  subtitle: string;
+  eyebrow: string;
   description: React.ReactNode;
   icon?: any;
   breadcrumbs?: { label: string; to: string }[];
 }
 
-export function StubPage({ title, subtitle, description, icon: Icon = Rocket, breadcrumbs }: StubPageProps) {
+export function StubPage({ title, eyebrow, description, icon: Icon = Rocket, breadcrumbs }: StubPageProps) {
   return (
     <div className="min-h-screen pt-32 pb-20 px-4">
       <div className="max-w-7xl mx-auto">
@@ -75,7 +75,7 @@ export function StubPage({ title, subtitle, description, icon: Icon = Rocket, br
               <div className="absolute -top-20 -left-20 w-64 h-64 bg-primary/20 rounded-full blur-[100px]" />
               <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary mb-8">
                 <Icon className="w-4 h-4" />
-                <span className="text-sm font-medium tracking-wide uppercase">{subtitle}</span>
+                <span className="text-sm font-medium tracking-wide uppercase">{eyebrow}</span>
               </div>
               <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
                 {title}
