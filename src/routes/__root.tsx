@@ -161,6 +161,12 @@ function RootComponent() {
     trackPageView(pathname);
   }, [pathname]);
 
+  const isAdmin = pathname.startsWith("/admin");
+  
+  if (isAdmin) {
+    return <Outlet />;
+  }
+
   return (
     <div className="relative min-h-screen bg-background text-foreground">
       <SiteHeader />
