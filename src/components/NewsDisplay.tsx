@@ -135,6 +135,9 @@ export function NewsDisplay({
                         <img 
                           src={news.image_url} 
                           alt={news.title} 
+                          loading="lazy"
+                          decoding="async"
+                          sizes="(max-width: 768px) 85vw, (max-width: 1024px) 40vw, 30vw"
                           className="h-full w-full object-cover transition-transform duration-[1.5s] group-hover:scale-110" 
                         />
                       ) : (

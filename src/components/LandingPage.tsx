@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { newsData } from "@/lib/news.data";
 import { NewsDisplay } from "./NewsDisplay";
 import { trackRedirect } from "@/lib/analytics";
+import { buildMeta } from "@/lib/seo";
 import {
   ArrowRight,
   Check,
@@ -70,6 +71,22 @@ export type LandingPageProps = {
   finalCtaDesc?: React.ReactNode;
   relatedNewsTags?: string[]; // New prop for related news
 };
+
+export function buildLPMeta(options: {
+  title: string;
+  description: string;
+  keywords: string;
+  canonical: string;
+  h1: string;
+  breadcrumbs?: { name: string; url: string }[];
+  faq?: LPFaq[];
+}) {
+  return buildMeta({
+    ...options,
+    ogType: "website",
+    faq: options.faq?.map(f => ({ q: f.q, a: f.a }))
+  });
+}
 
 function renderBold(text: string) {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
