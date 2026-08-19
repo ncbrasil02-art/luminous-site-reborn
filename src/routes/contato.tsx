@@ -14,40 +14,19 @@ import {
 import { Reveal, SectionHeading } from "@/components/Section";
 import { trackLead } from "@/lib/analytics";
 
-const SITE_URL = "https://www.ncbrasil.com.br";
 const EMAIL = "contato@ncbrasil.com.br";
 const WHATSAPP =
   "https://wa.me/5511940002000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20a%20NC%20Brasil.";
 
+
+import { buildMeta, SITE_URL } from "@/lib/seo";
+
 export const Route = createFileRoute("/contato")({
-  head: () => ({
-    meta: [
-      { title: "Contato · NC Brasil — Fale com Nossa Equipe" },
-      {
-        name: "description",
-        content:
-          "Entre em contato com a NC Brasil. Tire dúvidas, agende uma reunião ou envie sua demanda. Atendimento em São Paulo e Rio de Janeiro.",
-      },
-      {
-        name: "keywords",
-        content:
-          "contato NC Brasil, agência web SP, agência RJ, telefone NC Brasil, agendar reunião desenvolvimento",
-      },
-      { property: "og:title", content: "Contato · NC Brasil" },
-      {
-        property: "og:description",
-        content: "Fale com nossa equipe. Atendimento em SP e RJ.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: `${SITE_URL}/contato` },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Contato · NC Brasil" },
-      {
-        name: "twitter:description",
-        content: "Fale com nossa equipe. Atendimento em SP e RJ.",
-      },
-    ],
-    links: [{ rel: "canonical", href: `${SITE_URL}/contato` }],
+  head: () => buildMeta({
+    title: "Contato · NC Brasil — Fale com Nossa Equipe de Especialistas",
+    description: "Entre em contato com a NC Brasil. Tire dúvidas, agende uma reunião ou solicite um diagnóstico para seu projeto. Atendimento especializado em São Paulo e Rio de Janeiro.",
+    keywords: "contato NC Brasil, agência web SP, agência RJ, telefone NC Brasil, agendar reunião desenvolvimento, suporte técnico NC Brasil, orçamento tecnologia",
+    canonical: `${SITE_URL}/contato`,
   }),
   component: ContatoPage,
 });
