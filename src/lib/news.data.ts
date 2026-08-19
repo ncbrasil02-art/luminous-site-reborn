@@ -249,7 +249,7 @@ export const newsData: NewsPost[] = [
       "Planejamento",
       "Plataforma eletrônica"
     ],
-    "image_url": "/news/e-commerce-comercio-eletronico.jpg",
+    "image_url": null,
     "thumb_id": "50854"
   },
   {
@@ -272,7 +272,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Gestão Integrada",
       "Software de Gestão Integrada"
     ],
-    "image_url": "/news/sistema-de-gestao-integrada.jpg",
+    "image_url": null,
     "thumb_id": "50832"
   },
   {
@@ -411,7 +411,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Automação de E-mail",
       "Sistemas"
     ],
-    "image_url": "/news/sistema-de-automacao-de-e-mail.png",
+    "image_url": null,
     "thumb_id": "50783"
   },
   {
@@ -518,7 +518,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Estoque",
       "Sistema de Gestão de Estoque"
     ],
-    "image_url": "/news/vantagens-de-um-sistema-de-estoque.jpg",
+    "image_url": null,
     "thumb_id": "50748"
   },
   {
@@ -585,7 +585,7 @@ export const newsData: NewsPost[] = [
       "wordpress",
       "WP"
     ],
-    "image_url": "/news/wordpress-para-sua-empresa.jpg",
+    "image_url": null,
     "thumb_id": "50719"
   },
   {
@@ -729,7 +729,7 @@ export const newsData: NewsPost[] = [
       "sistemas web",
       "Software"
     ],
-    "image_url": "/news/sistemas-web.jpg",
+    "image_url": null,
     "thumb_id": "50665"
   },
   {
@@ -793,7 +793,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Marketing Digital"
     ],
-    "image_url": "/news/o-que-e-marketing-digital.jpg",
+    "image_url": null,
     "thumb_id": "50602"
   },
   {
@@ -808,7 +808,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "seo"
     ],
-    "image_url": "/news/o-que-e-seo.gif",
+    "image_url": null,
     "thumb_id": "50599"
   },
   {
@@ -826,7 +826,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Planejamento SEO"
     ],
-    "image_url": "/news/planejamento-de-seo.jpg",
+    "image_url": null,
     "thumb_id": "50581"
   },
   {
@@ -846,7 +846,7 @@ export const newsData: NewsPost[] = [
       "tendência web design",
       "Tendência Web Design 2017"
     ],
-    "image_url": "/news/tendencias-web-design.jpg",
+    "image_url": null,
     "thumb_id": "50561"
   },
   {
@@ -871,7 +871,7 @@ export const newsData: NewsPost[] = [
       "Sistemas únicos",
       "webdesign"
     ],
-    "image_url": "/news/sistema-qual-e-o-melhor-tipo.png",
+    "image_url": null,
     "thumb_id": "50555"
   },
   {
@@ -964,7 +964,7 @@ export const newsData: NewsPost[] = [
       "Site de Cupom Online",
       "Tendência Web designer"
     ],
-    "image_url": "/news/sistema-de-cupom-de-desconto.jpg",
+    "image_url": null,
     "thumb_id": "50500"
   },
   {
@@ -1055,7 +1055,7 @@ export const newsData: NewsPost[] = [
       "logomarca",
       "marca"
     ],
-    "image_url": "/news/quando-devo-fazer-um-redesign-na-minha-marca.jpg",
+    "image_url": null,
     "thumb_id": "50097"
   },
   {
@@ -1073,7 +1073,7 @@ export const newsData: NewsPost[] = [
       "Planejamento",
       "Sites"
     ],
-    "image_url": "/news/dicas-de-marketing-digital.jpg",
+    "image_url": null,
     "thumb_id": "50091"
   },
   {
@@ -1116,7 +1116,7 @@ export const newsData: NewsPost[] = [
       "logo",
       "marca"
     ],
-    "image_url": "/news/identidade-visual-nao-e-so-a-logo.jpg",
+    "image_url": null,
     "thumb_id": "50073"
   },
   {
@@ -1145,7 +1145,7 @@ export const newsData: NewsPost[] = [
       "seo",
       "site responsivo"
     ],
-    "image_url": "/news/metodos-para-atingir-seu-publico-via-mobile.png",
+    "image_url": null,
     "thumb_id": "50066"
   },
   {
@@ -1168,7 +1168,7 @@ export const newsData: NewsPost[] = [
       "UX",
       "Web site"
     ],
-    "image_url": "/news/user-experience-ux.jpg",
+    "image_url": null,
     "thumb_id": "50058"
   },
   {
@@ -1191,7 +1191,7 @@ export const newsData: NewsPost[] = [
       "Tendência Redutiva",
       "Tendência Web designer"
     ],
-    "image_url": "/news/tendencia-redutiva-no-web-design.jpg",
+    "image_url": null,
     "thumb_id": "50054"
   },
   {
@@ -1342,7 +1342,7 @@ export const newsData: NewsPost[] = [
       "criação de sites",
       "Tendência Web designer"
     ],
-    "image_url": "/news/tendencias-web-design-2017.jpg",
+    "image_url": null,
     "thumb_id": "49993"
   },
   {
@@ -1455,7 +1455,7 @@ export const newsData: NewsPost[] = [
       "tipografia",
       "Web Design"
     ],
-    "image_url": "/news/tendencias-web-design.jpg",
+    "image_url": null,
     "thumb_id": "49891"
   },
   {
@@ -1477,7 +1477,7 @@ export const newsData: NewsPost[] = [
       "CSM",
       "Sistema de Gerenciamento de Conteúdo"
     ],
-    "image_url": "/news/o-que-e-cms.jpg",
+    "image_url": null,
     "thumb_id": "49873"
   },
   {
@@ -1503,7 +1503,7 @@ export const newsData: NewsPost[] = [
       "Site Gerenciável",
       "Web Designer"
     ],
-    "image_url": "/news/como-criar-uma-loja-virtual.jpg",
+    "image_url": null,
     "thumb_id": "49859"
   },
   {
@@ -1530,7 +1530,7 @@ export const newsData: NewsPost[] = [
       "E-commerce",
       "Infraestrutura profissional de loja virtual."
     ],
-    "image_url": "/news/infraestrutura-profissional-de-loja-virtual.jpg",
+    "image_url": null,
     "thumb_id": "49848"
   },
   {
@@ -1553,7 +1553,7 @@ export const newsData: NewsPost[] = [
       "Tendência Web designer",
       "Web Designer"
     ],
-    "image_url": "/news/glossario-e-commerce-parte-ii.jpg",
+    "image_url": null,
     "thumb_id": "49836"
   },
   {
@@ -1574,7 +1574,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital",
       "Web Designer"
     ],
-    "image_url": "/news/glossario-e-commerce-parte-i.jpg",
+    "image_url": null,
     "thumb_id": "49829"
   },
   {
@@ -1595,7 +1595,7 @@ export const newsData: NewsPost[] = [
       "Erros de E-commerce",
       "Web Designer"
     ],
-    "image_url": "/news/4-erros-de-um-e-commerce.png",
+    "image_url": null,
     "thumb_id": "49789"
   },
   {
@@ -1621,7 +1621,7 @@ export const newsData: NewsPost[] = [
       "Web Designer",
       "Web Desing"
     ],
-    "image_url": "/news/o-que-faz-um-web-designer.jpg",
+    "image_url": null,
     "thumb_id": "49773"
   },
   {
@@ -1691,7 +1691,7 @@ export const newsData: NewsPost[] = [
       "marca",
       "Web Designer"
     ],
-    "image_url": "/news/identidade-visual-logo.jpg",
+    "image_url": null,
     "thumb_id": "49721"
   },
   {
@@ -1721,7 +1721,7 @@ export const newsData: NewsPost[] = [
       "Search Engine Marketing",
       "SEM"
     ],
-    "image_url": "/news/o-que-e-sem.jpg",
+    "image_url": null,
     "thumb_id": "49699"
   },
   {
@@ -1749,7 +1749,7 @@ export const newsData: NewsPost[] = [
       "M-Commerce",
       "Web Designer"
     ],
-    "image_url": "/news/dicas-para-lojas-virtuais.jpg",
+    "image_url": null,
     "thumb_id": "49633"
   },
   {
@@ -1809,7 +1809,7 @@ export const newsData: NewsPost[] = [
       "M-Commerce",
       "webdesign"
     ],
-    "image_url": "/news/m-commerce.jpg",
+    "image_url": null,
     "thumb_id": "49576"
   },
   {
@@ -1835,7 +1835,7 @@ export const newsData: NewsPost[] = [
       "Web Designer",
       "website"
     ],
-    "image_url": "/news/como-surgiu-o-web-designer.jpg",
+    "image_url": null,
     "thumb_id": "49552"
   },
   {
@@ -1964,7 +1964,7 @@ export const newsData: NewsPost[] = [
       "Snapchat",
       "Twitter"
     ],
-    "image_url": "/news/ecommerce-aprenda-a-criar-uma-boa-loja-virtual-para-a-sua-empresa.png",
+    "image_url": null,
     "thumb_id": "49328"
   },
   {
@@ -1984,7 +1984,7 @@ export const newsData: NewsPost[] = [
       "criar loja virtual profissional",
       "webdesign"
     ],
-    "image_url": "/news/fotografia-cuidados-com-a-construcao-da-sua-marca-na-internet.png",
+    "image_url": null,
     "thumb_id": "49345"
   },
   {
@@ -2036,7 +2036,7 @@ export const newsData: NewsPost[] = [
       "design de conteúdo",
       "landing page"
     ],
-    "image_url": "/news/6-dicas-para-o-melhorar-o-design-de-conteudo.jpg",
+    "image_url": null,
     "thumb_id": "49281"
   },
   {
@@ -2054,7 +2054,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital",
       "Vídeos corporativos"
     ],
-    "image_url": "/news/saiba-por-que-investir-em-videos-corporativos-para-sua-empresa.jpg",
+    "image_url": null,
     "thumb_id": "49078"
   },
   {
@@ -2076,7 +2076,7 @@ export const newsData: NewsPost[] = [
       "criar site responsivo",
       "criar website"
     ],
-    "image_url": "/news/landing-page-o-que-e-e-como-fazer.jpg",
+    "image_url": null,
     "thumb_id": "49302"
   },
   {
@@ -2121,7 +2121,7 @@ export const newsData: NewsPost[] = [
       "identidade visual",
       "Marketing Digital"
     ],
-    "image_url": "/news/4-dicas-para-criar-um-otimo-logo.png",
+    "image_url": null,
     "thumb_id": "49318"
   },
   {
@@ -2147,7 +2147,7 @@ export const newsData: NewsPost[] = [
       "criação de sites",
       "marketing de conteúdo"
     ],
-    "image_url": "/news/voce-sabia-que-o-conteudo-pode-alavancar-o-seu-negocio.png",
+    "image_url": null,
     "thumb_id": "49329"
   },
   {
@@ -2168,7 +2168,7 @@ export const newsData: NewsPost[] = [
       "redes socias",
       "website"
     ],
-    "image_url": "/news/aumentar-o-engajamento-das-suas-redes-sociais.png",
+    "image_url": null,
     "thumb_id": "49293"
   },
   {
@@ -2218,7 +2218,7 @@ export const newsData: NewsPost[] = [
       "web designers",
       "webdesign"
     ],
-    "image_url": "/news/por-que-contratar-profissionais-qualificados.png",
+    "image_url": null,
     "thumb_id": "49335"
   },
   {
@@ -2263,7 +2263,7 @@ export const newsData: NewsPost[] = [
       "hospedagem de sites",
       "otimização de sites"
     ],
-    "image_url": "/news/anuncie-no-google-e-apareca.jpg",
+    "image_url": null,
     "thumb_id": "49285"
   },
   {
@@ -2306,7 +2306,7 @@ export const newsData: NewsPost[] = [
       "criar sites reponsivos",
       "site para empresas"
     ],
-    "image_url": "/news/por-que-ter-um-blog-corporativo.jpg",
+    "image_url": null,
     "thumb_id": "49308"
   },
   {
@@ -2428,7 +2428,7 @@ export const newsData: NewsPost[] = [
       "loja virtual para facebook",
       "melhor servidor para loja virtual"
     ],
-    "image_url": "/news/tecnologias-da-educacao-o-que-e-b2b-b2c-c2b-c2c.jpg",
+    "image_url": null,
     "thumb_id": "49079"
   },
   {
@@ -2516,7 +2516,7 @@ export const newsData: NewsPost[] = [
       "desenvolvimento de sistemas",
       "sites semânticos"
     ],
-    "image_url": "/news/tendencias-evolucao-na-internet.jpg",
+    "image_url": null,
     "thumb_id": "48648"
   },
   {
@@ -2560,7 +2560,7 @@ export const newsData: NewsPost[] = [
       "loja virtual para celulares",
       "loja virtual para facebook"
     ],
-    "image_url": "/news/criar-ou-abrir-um-negocio-e-commerce-no-brasil.jpg",
+    "image_url": null,
     "thumb_id": "48550"
   },
   {
@@ -2616,7 +2616,7 @@ export const newsData: NewsPost[] = [
       "fintech",
       "news"
     ],
-    "image_url": "/news/start-your-first-week-of-a-new-job-like-a-boss.webp",
+    "image_url": null,
     "thumb_id": "3251"
   },
   {
@@ -2632,7 +2632,7 @@ export const newsData: NewsPost[] = [
       "fintech",
       "news"
     ],
-    "image_url": "/news/pioneering-a-new-twist-on-coworking-models.webp",
+    "image_url": null,
     "thumb_id": "3250"
   },
   {
@@ -2648,7 +2648,7 @@ export const newsData: NewsPost[] = [
       "fintech",
       "news"
     ],
-    "image_url": "/news/the-white-label-software-model-in-fintech.webp",
+    "image_url": null,
     "thumb_id": "3249"
   },
   {
@@ -2663,7 +2663,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "api"
     ],
-    "image_url": "/news/apple-macbook-air-2022-review-great-design-fast-performance.webp",
+    "image_url": null,
     "thumb_id": "1880"
   },
   {
@@ -2679,7 +2679,7 @@ export const newsData: NewsPost[] = [
       "Branding",
       "Design"
     ],
-    "image_url": "/news/the-revolution-is-alive-and-well-how-fintech-has-impacted-banking.webp",
+    "image_url": null,
     "thumb_id": "1879"
   },
   {
@@ -2695,7 +2695,7 @@ export const newsData: NewsPost[] = [
       "api",
       "Apps"
     ],
-    "image_url": "/news/4-things-you-must-do-before-you-e-meet-a-new-client-or-coworker.webp",
+    "image_url": null,
     "thumb_id": "1878"
   },
   {
@@ -2711,7 +2711,7 @@ export const newsData: NewsPost[] = [
       "development",
       "devops"
     ],
-    "image_url": "/news/vietnamese-fintech-startup-raises-25-m-series-b-round-from-ospace-vietnam-investments-group.webp",
+    "image_url": null,
     "thumb_id": "1338"
   },
   {
@@ -2727,7 +2727,7 @@ export const newsData: NewsPost[] = [
       "Email",
       "shop"
     ],
-    "image_url": "/news/tips-to-know-how-technology-can-help-bridge-the-gap-between-infrastructure-sustainability.webp",
+    "image_url": null,
     "thumb_id": "1337"
   },
   {
@@ -2743,7 +2743,7 @@ export const newsData: NewsPost[] = [
       "starups",
       "wordpress"
     ],
-    "image_url": "/news/how-coworking-companies-like-the-wing-and-industrious-are-intersecting-with-retail.webp",
+    "image_url": null,
     "thumb_id": "1336"
   },
   {
@@ -2760,7 +2760,7 @@ export const newsData: NewsPost[] = [
       "api",
       "Apps"
     ],
-    "image_url": "/news/5-more-questions-to-ask-during-your-project-kickoff-meeting.webp",
+    "image_url": null,
     "thumb_id": "1335"
   },
   {
@@ -2776,7 +2776,7 @@ export const newsData: NewsPost[] = [
       "Branding",
       "Design"
     ],
-    "image_url": "/news/start-your-first-week-of-a-new-job-like-a-boss.webp",
+    "image_url": null,
     "thumb_id": "1334"
   },
   {
@@ -2792,7 +2792,7 @@ export const newsData: NewsPost[] = [
       "development",
       "devops"
     ],
-    "image_url": "/news/pioneering-a-new-twist-on-coworking-models.webp",
+    "image_url": null,
     "thumb_id": "1333"
   },
   {
@@ -2808,7 +2808,7 @@ export const newsData: NewsPost[] = [
       "Email",
       "shop"
     ],
-    "image_url": "/news/the-white-label-software-model-in-fintech.webp",
+    "image_url": null,
     "thumb_id": "1332"
   },
   {
@@ -2842,7 +2842,7 @@ export const newsData: NewsPost[] = [
       "api",
       "Apps"
     ],
-    "image_url": "/news/which-wordpress-should-you-choose-wordpresscom-vs-wordpressorg.webp",
+    "image_url": null,
     "thumb_id": "1330"
   },
   {
@@ -2858,7 +2858,7 @@ export const newsData: NewsPost[] = [
       "Branding",
       "Design"
     ],
-    "image_url": "/news/these-web-design-trends-will-help-inform-and-inspire-what-people-build-for-the-web.webp",
+    "image_url": null,
     "thumb_id": "1329"
   },
   {
@@ -2874,7 +2874,7 @@ export const newsData: NewsPost[] = [
       "development",
       "devops"
     ],
-    "image_url": "/news/what-are-the-differences-between-google-analytics-and-analytics-360.webp",
+    "image_url": null,
     "thumb_id": "1328"
   },
   {
@@ -2891,7 +2891,7 @@ export const newsData: NewsPost[] = [
       "news",
       "technology"
     ],
-    "image_url": "/news/niche-coworking-4-shared-workspaces-for-designers-and-developers.webp",
+    "image_url": null,
     "thumb_id": "1327"
   }
 ];
