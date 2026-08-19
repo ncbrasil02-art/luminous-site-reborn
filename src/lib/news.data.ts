@@ -159,7 +159,7 @@ export const newsData: NewsPost[] = [
       "rede Social",
       "Site"
     ],
-    "image_url": "/news/shutterstock-575844202-700x484.jpg",
+    "image_url": "/news/shutterstock_575844202-700x484.jpg",
     "thumb_id": "50915"
   },
   {
@@ -199,7 +199,7 @@ export const newsData: NewsPost[] = [
       "Sistemas",
       "Software"
     ],
-    "image_url": "/news/sistema-gerador-de-nota-fiscal.png",
+    "image_url": "/news/NOTA-FISCAL.png",
     "thumb_id": "50870"
   },
   {
@@ -302,7 +302,7 @@ export const newsData: NewsPost[] = [
       "Site",
       "Site Otimizado"
     ],
-    "image_url": "/news/seo.jpg",
+    "image_url": "/news/Goomark-5-tecnicas-certeiras-para-criar-um-site-otimizado-para-SEO.jpg",
     "thumb_id": "50823"
   },
   {
@@ -608,7 +608,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Inventário",
       "Sistemas"
     ],
-    "image_url": "/news/sistema-de-controle-de-estoque.jpg",
+    "image_url": "/news/controle-de-estoque.jpg",
     "thumb_id": "50709"
   },
   {
@@ -745,7 +745,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Sistema sob demanda"
     ],
-    "image_url": "/news/sistema-sob-demanda.jpg",
+    "image_url": "/news/sob-demanda.jpg",
     "thumb_id": "50626"
   },
   {
@@ -777,7 +777,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Plataforma de leilão"
     ],
-    "image_url": "/news/plataforma-de-leilao.jpg",
+    "image_url": "/news/leilao.jpg",
     "thumb_id": "50612"
   },
   {
@@ -1235,7 +1235,7 @@ export const newsData: NewsPost[] = [
       "marca",
       "público-alvo"
     ],
-    "image_url": "/news/o-que-e-branding.jpg",
+    "image_url": "/news/branding.jpg",
     "thumb_id": "50040"
   },
   {
@@ -1299,7 +1299,7 @@ export const newsData: NewsPost[] = [
       "sites responsivos",
       "Tendência Web designer"
     ],
-    "image_url": "/news/site-para-advogados.jpg",
+    "image_url": "/news/como-deve-ser-um-bom-site-para-advogados.jpg",
     "thumb_id": "49999"
   },
   {
