@@ -24,10 +24,13 @@ function AdminNewsList() {
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
            </div>
-           <button className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2 hover:opacity-90 transition-opacity">
+           <Link 
+             to="/admin/noticias/nova"
+             className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-bold text-sm flex items-center gap-2 hover:opacity-90 transition-opacity"
+           >
               <PlusCircle className="h-4 w-4" />
               Nova Notícia
-           </button>
+           </Link>
         </div>
       </header>
 
