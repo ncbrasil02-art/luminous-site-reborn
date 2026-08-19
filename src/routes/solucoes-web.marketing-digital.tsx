@@ -29,7 +29,7 @@ export const Route = createFileRoute("/solucoes-web/marketing-digital")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/marketing-digital", label: "Marketing Digital" }]}
-      eyebrow="Marketing 360°"
+      subtitle="Marketing 360°"
       h1={<>Marketing digital que <span className="text-gradient">gera resultado real</span></>}
       intro={<>Estratégia completa de **aquisição, engajamento e conversão** — tráfego pago, orgânico, conteúdo e automação em uma única operação.</>}
       stats={[{ value: "R$ 30Mi", label: "Verba gerenciada" }, { value: "4,8x", label: "ROAS médio" }, { value: "150+", label: "Clientes ativos" }, { value: "24/7", label: "Monitoramento" }]}

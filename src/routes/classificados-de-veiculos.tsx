@@ -38,7 +38,7 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/classificados-de-veiculos", label: "Classificados de Veículos" }]}
-      eyebrow="Portal Automotivo · Marketplace de Veículos"
+      subtitle="Portal Automotivo · Marketplace de Veículos"
       h1={<>Portal de <span className="text-gradient">Classificados Automotivos</span> — o próximo Webmotors/iCarros</>}
       intro={<>Sistema turnkey para lançar o <strong className="text-foreground">próximo grande portal de veículos</strong> do seu estado ou nicho. Busca avançada com <strong className="text-foreground">Tabela FIPE integrada</strong>, planos escaláveis para revendedores, financiamento em 1 clique, comparador lado-a-lado e SEO técnico premiado — tudo com nosso motor proprietário testado em milhões de anúncios.</>}
       stats={[

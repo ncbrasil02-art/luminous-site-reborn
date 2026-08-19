@@ -37,7 +37,7 @@ function TagPage() {
         </Reveal>
 
         <SectionHeading
-          eyebrow="Tópico"
+          subtitle="Tópico"
           title={<>Explorando: <span className="text-gradient">#{tag}</span></>}
           description={`Exibindo ${posts.length} ${posts.length === 1 ? 'resultado' : 'resultados'} para este termo.`}
           align="left"

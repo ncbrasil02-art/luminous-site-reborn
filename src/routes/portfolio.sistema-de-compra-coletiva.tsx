@@ -154,7 +154,7 @@ export const Route = createFileRoute("/portfolio/sistema-de-compra-coletiva")({
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Funcionalidades"
+            subtitle="Funcionalidades"
             title={
               <>Tudo o que você precisa para <span className="text-gradient">liderar</span> o mercado</>
             }

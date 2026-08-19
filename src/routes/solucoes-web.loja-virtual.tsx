@@ -29,7 +29,7 @@ export const Route = createFileRoute("/solucoes-web/loja-virtual")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/loja-virtual", label: "Loja Virtual" }]}
-      eyebrow="E-commerce"
+      subtitle="E-commerce"
       h1={<>Loja Virtual pronta para <span className="text-gradient">vender muito</span></>}
       intro={<>Plataforma de e-commerce completa com **checkout otimizado, integração com marketplaces e meios de pagamento**. De 0 a R$ 100 mil/mês com estrutura escalável.</>}
       stats={[{ value: "300+", label: "Lojas ativas" }, { value: "R$ 50Mi", label: "GMV anual" }, { value: "3,2%", label: "Taxa conversão" }, { value: "99,9%", label: "Uptime" }]}

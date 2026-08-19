@@ -121,7 +121,7 @@ export const Route = createFileRoute("/portfolio/criacao-de-logomarcas")({
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Nossa Entrega"
+            subtitle="Nossa Entrega"
             title={
               <>Design focado em <span className="text-gradient">resultados</span></>
             }

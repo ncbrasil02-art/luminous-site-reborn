@@ -29,7 +29,7 @@ export const Route = createFileRoute("/servicos/identidade-visual")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/identidade-visual", label: "Identidade Visual" }]}
-      eyebrow="Branding"
+      subtitle="Branding"
       h1={<>Identidade visual que <span className="text-gradient">posiciona sua marca</span></>}
       intro={<>Da **pesquisa de mercado ao manual de marca** — criamos identidades visuais memoráveis que geram reconhecimento, desejo e diferenciação.</>}
       stats={[{ value: "1.500+", label: "Marcas criadas" }, { value: "20 anos", label: "De branding" }, { value: "100%", label: "Autoral" }, { value: "Manual", label: "De marca completo" }]}

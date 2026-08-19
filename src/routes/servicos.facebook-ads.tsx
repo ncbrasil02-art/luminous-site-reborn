@@ -29,7 +29,7 @@ export const Route = createFileRoute("/servicos/facebook-ads")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/facebook-ads", label: "Facebook Ads" }]}
-      eyebrow="Meta Ads"
+      subtitle="Meta Ads"
       h1={<>Facebook e Instagram Ads com <span className="text-gradient">ROI real</span></>}
       intro={<>Gestão avançada de **Meta Ads com CBO, Advantage+, Lookalikes e criativos testados** — focada em escala com CAC saudável.</>}
       stats={[{ value: "R$ 15Mi", label: "Investidos em Meta" }, { value: "4,6x", label: "ROAS médio" }, { value: "200+", label: "Contas ativas" }, { value: "Meta", label: "Business Partner" }]}

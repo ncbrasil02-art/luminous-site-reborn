@@ -132,7 +132,7 @@ export const Route = createFileRoute("/sistema-sob-demanda-nc-brasil")({
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Por que Sob Demanda?"
+            subtitle="Por que Sob Demanda?"
             title={
               <>A diferença entre <span className="text-gradient">se adaptar</span> e <span className="text-gradient">liderar</span></>
             }

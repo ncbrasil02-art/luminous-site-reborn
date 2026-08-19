@@ -29,7 +29,7 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/desenvolvimento-de-sites", label: "Desenvolvimento de Sites" }]}
-      eyebrow="Sites Profissionais"
+      subtitle="Sites Profissionais"
       h1={<>Sites que <span className="text-gradient">vendem</span> e posicionam sua marca</>}
       intro={<>Desenvolvemos <strong className="text-foreground">sites institucionais</strong> modernos, rápidos e otimizados para Google. Da estratégia à publicação, com foco em **conversão e autoridade digital**.</>}
       stats={[{ value: "800+", label: "Sites entregues" }, { value: "98", label: "Score PageSpeed" }, { value: "<2s", label: "LCP médio" }, { value: "20 anos", label: "De experiência" }]}

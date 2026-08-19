@@ -28,7 +28,7 @@ export const Route = createFileRoute("/portfolio/aplicativos-criados")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/trabalhos-realizados", label: "Portfólio" }, { to: "/portfolio/aplicativos-criados", label: "Aplicativos" }]}
-      eyebrow="Portfólio Mobile"
+      subtitle="Portfólio Mobile"
       h1={<>Apps com <span className="text-gradient">milhões de downloads</span> e nota 4.8+</>}
       intro={<>**Mais de 200 aplicativos publicados** nas lojas iOS e Android — do MVP à escala com milhões de usuários ativos.</>}
       stats={[{ value: "200+", label: "Apps publicados" }, { value: "10Mi+", label: "Downloads" }, { value: "4,8⭐", label: "Nota média" }, { value: "iOS+Android", label: "Nativo & Cross" }]}

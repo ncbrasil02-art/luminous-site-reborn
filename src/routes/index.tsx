@@ -257,7 +257,7 @@ function HomePage() {
         <div className="absolute inset-0 -z-10 bg-mesh opacity-60" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Nossos Serviços"
+            subtitle="Nossos Serviços"
             title={
               <>
                 Soluções <span className="text-gradient">360°</span> para o seu negócio
@@ -332,7 +332,7 @@ function HomePage() {
         <div className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
         <div className="relative mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Como trabalhamos"
+            subtitle="Como trabalhamos"
             title={
               <>
                 Um processo <span className="text-gradient">cinematográfico</span>, do briefing ao

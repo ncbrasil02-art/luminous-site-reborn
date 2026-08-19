@@ -61,7 +61,7 @@ function NewsIndex() {
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-16">
           <SectionHeading
-            eyebrow="Revista Digital"
+            subtitle="Revista Digital"
             title={<>Conhecimento que <span className="text-gradient">Transforma</span></>}
             description="Explore artigos técnicos, tendências de mercado e o futuro do desenvolvimento web."
             align="left"

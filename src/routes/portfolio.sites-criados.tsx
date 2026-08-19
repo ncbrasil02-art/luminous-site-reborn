@@ -28,7 +28,7 @@ export const Route = createFileRoute("/portfolio/sites-criados")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/trabalhos-realizados", label: "Portfólio" }, { to: "/portfolio/sites-criados", label: "Sites Criados" }]}
-      eyebrow="Portfólio Web"
+      subtitle="Portfólio Web"
       h1={<>Sites que <span className="text-gradient">encantam e convertem</span></>}
       intro={<>**Mais de 800 sites entregues** em 20 anos: institucionais, portais corporativos, landing pages e sites premiados com performance A+ no Google.</>}
       stats={[{ value: "800+", label: "Sites entregues" }, { value: "98", label: "Score PageSpeed" }, { value: "20 anos", label: "De experiência" }, { value: "Top 3", label: "SEO médio" }]}

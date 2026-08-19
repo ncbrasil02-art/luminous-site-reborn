@@ -29,7 +29,7 @@ export const Route = createFileRoute("/servicos/consultoria")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/consultoria", label: "Consultoria" }]}
-      eyebrow="Consultoria Estratégica"
+      subtitle="Consultoria Estratégica"
       h1={<>Consultoria que transforma <span className="text-gradient">estratégia em resultado</span></>}
       intro={<>**Diagnóstico, roadmap e mentoria** para líderes que precisam acelerar transformação digital, escalar operações ou reposicionar produto.</>}
       stats={[{ value: "500+", label: "Empresas atendidas" }, { value: "20 anos", label: "De experiência" }, { value: "C-Level", label: "Consultores sênior" }, { value: "ROI 10x", label: "Cases comprovados" }]}

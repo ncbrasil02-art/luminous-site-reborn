@@ -133,7 +133,7 @@ export const Route = createFileRoute("/nossos-servicos")({
         <div className="absolute inset-0 -z-10 grid-pattern opacity-20" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Engenharia Web"
+            subtitle="Engenharia Web"
             title={<>Sistemas que <span className="text-gradient">potencializam</span> seus serviços</>}
             description="Além de marketing e design, entregamos a inteligência de software necessária para escalar sua operação."
           />

@@ -160,7 +160,7 @@ function ContatoPage() {
       <section className="border-t border-border bg-surface py-20 md:py-24">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Nossos escritórios"
+            subtitle="Nossos escritórios"
             title={
               <>
                 Atuação em <span className="text-gradient">São Paulo</span> e{" "}

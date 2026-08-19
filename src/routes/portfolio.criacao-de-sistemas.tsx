@@ -145,7 +145,7 @@ export const Route = createFileRoute("/portfolio/criacao-de-sistemas")({
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Nossas Especialidades"
+            subtitle="Nossas Especialidades"
             title={
               <>Soluções de <span className="text-gradient">alta complexidade</span></>
             }

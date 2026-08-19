@@ -121,7 +121,7 @@ export const Route = createFileRoute("/portfolio/identidade-visual")({
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="O que compõe sua identidade"
+            subtitle="O que compõe sua identidade"
             title={
               <>Uma presença <span className="text-gradient">consistente</span> em todos os canais</>
             }

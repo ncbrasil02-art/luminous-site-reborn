@@ -37,7 +37,7 @@ function CategoryPage() {
         </Reveal>
 
         <SectionHeading
-          eyebrow="Categoria"
+          subtitle="Categoria"
           title={<>Assunto: <span className="text-gradient">{category}</span></>}
           description={`Encontramos ${posts.length} ${posts.length === 1 ? 'artigo relacionado' : 'artigos relacionados'} a esta categoria.`}
           align="left"

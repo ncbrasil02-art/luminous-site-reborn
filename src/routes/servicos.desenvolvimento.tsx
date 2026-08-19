@@ -29,7 +29,7 @@ export const Route = createFileRoute("/servicos/desenvolvimento")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/desenvolvimento", label: "Desenvolvimento" }]}
-      eyebrow="Fábrica de Software"
+      subtitle="Fábrica de Software"
       h1={<>Desenvolvimento de <span className="text-gradient">software sob medida</span></>}
       intro={<>Squads dedicadas de **engenheiros sênior** para construir web, mobile e APIs com metodologia ágil, code review rigoroso e entregas semanais.</>}
       stats={[{ value: "1.200+", label: "Projetos entregues" }, { value: "20 anos", label: "De mercado" }, { value: "Squads", label: "Sênior dedicadas" }, { value: "Agile", label: "Scrum/Kanban" }]}

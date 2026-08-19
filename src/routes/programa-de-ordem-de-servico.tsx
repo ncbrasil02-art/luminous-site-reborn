@@ -149,7 +149,7 @@ export const Route = createFileRoute("/programa-de-ordem-de-servico")({
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Funcionalidades Chave"
+            subtitle="Funcionalidades Chave"
             title={
               <>Tudo para uma gestão <span className="text-gradient">impecável</span></>
             }

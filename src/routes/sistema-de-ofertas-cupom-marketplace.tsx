@@ -29,7 +29,7 @@ export const Route = createFileRoute("/sistema-de-ofertas-cupom-marketplace")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-ofertas-cupom-marketplace", label: "Marketplace de Ofertas" }]}
-      eyebrow="Marketplace"
+      subtitle="Marketplace"
       h1={<>Marketplace de <span className="text-gradient">Ofertas & Cupons</span></>}
       intro={<>Plataforma <strong className="text-foreground">multi-lojista</strong> pronta para operar como **Peixe Urbano, Groupon ou ClickOn**: cupons, ofertas relâmpago, split de pagamento e comissionamento automático.</>}
       stats={[{ value: "10K+", label: "Lojistas cadastráveis" }, { value: "1M+", label: "Ofertas ativas" }, { value: "R$50Mi", label: "GMV processado" }, { value: "40+", label: "Cidades atendidas" }]}

@@ -47,7 +47,7 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
         { to: "/nossos-sistemas", label: "Sistemas" },
         { to: "/plataforma-chinesa-apostas-cassino", label: "Plataforma Cassino" },
       ]}
-      eyebrow="iGaming · White Label · Pix + SPA/MF"
+      subtitle="iGaming · White Label · Pix + SPA/MF"
       h1={<>Plataforma de <span className="text-gradient">Cassino Online e Apostas</span> White Label — Sportsbook, Slots e Pix Nativo</>}
       intro={<>Solução <strong className="text-foreground">iGaming turnkey</strong> com a mesma arquitetura das <strong className="text-foreground">plataformas chinesas / asiáticas de referência</strong>, tropicalizada para o Brasil: <strong className="text-foreground">8.000+ jogos agregados</strong> (Pragmatic Play, PG Soft, Evolution, Aviator), <strong className="text-foreground">sportsbook completo</strong> com odds ao vivo, cassino ao vivo com dealers BR, <strong className="text-foreground">Pix instantâneo</strong>, KYC brasileiro e conformidade com a <strong className="text-foreground">Lei 14.790/2023 e Portaria SPA/MF 1.475/2024</strong>. Sem % sobre GGR — <strong className="text-foreground">você é o operador</strong>.</>}
       stats={[

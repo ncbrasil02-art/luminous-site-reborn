@@ -29,7 +29,7 @@ export const Route = createFileRoute("/servicos/google-ads")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/google-ads", label: "Google Ads" }]}
-      eyebrow="Google Ads"
+      subtitle="Google Ads"
       h1={<>Google Ads com <span className="text-gradient">ROAS previsível</span> e escalável</>}
       intro={<>Gestão avançada de **Search, Shopping, Performance Max, YouTube e Display** — com foco absoluto em conversão, CAC e ROAS.</>}
       stats={[{ value: "R$ 20Mi", label: "Investidos em Ads" }, { value: "5,2x", label: "ROAS médio" }, { value: "Premier", label: "Google Partner" }, { value: "-38%", label: "CAC médio" }]}

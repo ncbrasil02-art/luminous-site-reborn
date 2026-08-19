@@ -38,7 +38,7 @@ export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-revenda-de-veiculos", label: "Revenda de Veículos" }]}
-      eyebrow="ERP + Portal + CRM Automotivo"
+      subtitle="ERP + Portal + CRM Automotivo"
       h1={<>ERP & Portal para <span className="text-gradient">Revenda de Veículos</span></>}
       intro={<>Solução <strong className="text-foreground">tudo-em-um</strong> para lojas de revenda que querem crescer: gestão completa de estoque, CRM com WhatsApp, simulador de financiamento, portal próprio com SEO e <strong className="text-foreground">publicação automática em Webmotors, iCarros, OLX e Mercado Livre</strong>. Menos retrabalho, mais leads, mais margem.</>}
       stats={[
