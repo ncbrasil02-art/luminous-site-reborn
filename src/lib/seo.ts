@@ -11,7 +11,7 @@ export type MetaOptions = {
   ogType?: "website" | "article";
   noIndex?: boolean;
   faq?: { q: string; a: string }[];
-  breadcrumbs?: { name: string; url: string }[];
+  breadcrumbs?: { label: string; to: string }[];
   article?: {
     publishedTime?: string;
     modifiedTime?: string;
@@ -82,8 +82,8 @@ export function buildMeta(options: MetaOptions) {
         itemListElement: breadcrumbs.map((b, i) => ({
           "@type": "ListItem",
           position: i + 1,
-          name: b.name,
-          item: b.url.startsWith("http") ? b.url : `${SITE_URL}${b.url}`,
+          name: b.label,
+          item: b.to.startsWith("http") ? b.to : `${SITE_URL}${b.to}`,
         })),
       }),
     });

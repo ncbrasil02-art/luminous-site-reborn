@@ -808,7 +808,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "seo"
     ],
-    "image_url": null,
+    "image_url": "/news/o-que-e-seo.jpg",
     "thumb_id": "50599"
   },
   {
@@ -826,7 +826,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Planejamento SEO"
     ],
-    "image_url": null,
+    "image_url": "/news/Deep-Crawl_icon-icons.com_53720.png",
     "thumb_id": "50581"
   },
   {
@@ -871,7 +871,7 @@ export const newsData: NewsPost[] = [
       "Sistemas únicos",
       "webdesign"
     ],
-    "image_url": null,
+    "image_url": "/news/sistema.jpg",
     "thumb_id": "50555"
   },
   {
@@ -1145,7 +1145,7 @@ export const newsData: NewsPost[] = [
       "seo",
       "site responsivo"
     ],
-    "image_url": null,
+    "image_url": "/news/mobile-trends.png",
     "thumb_id": "50066"
   },
   {
@@ -1477,7 +1477,7 @@ export const newsData: NewsPost[] = [
       "CSM",
       "Sistema de Gerenciamento de Conteúdo"
     ],
-    "image_url": null,
+    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
     "thumb_id": "49873"
   },
   {
@@ -1503,7 +1503,7 @@ export const newsData: NewsPost[] = [
       "Site Gerenciável",
       "Web Designer"
     ],
-    "image_url": null,
+    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
     "thumb_id": "49859"
   },
   {
@@ -1530,7 +1530,7 @@ export const newsData: NewsPost[] = [
       "E-commerce",
       "Infraestrutura profissional de loja virtual."
     ],
-    "image_url": null,
+    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
     "thumb_id": "49848"
   },
   {
@@ -1553,7 +1553,7 @@ export const newsData: NewsPost[] = [
       "Tendência Web designer",
       "Web Designer"
     ],
-    "image_url": null,
+    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
     "thumb_id": "49836"
   },
   {
@@ -1574,7 +1574,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital",
       "Web Designer"
     ],
-    "image_url": null,
+    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
     "thumb_id": "49829"
   },
   {
@@ -1595,7 +1595,7 @@ export const newsData: NewsPost[] = [
       "Erros de E-commerce",
       "Web Designer"
     ],
-    "image_url": null,
+    "image_url": "/news/4.jpg",
     "thumb_id": "49789"
   },
   {
@@ -1621,7 +1621,7 @@ export const newsData: NewsPost[] = [
       "Web Designer",
       "Web Desing"
     ],
-    "image_url": null,
+    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
     "thumb_id": "49773"
   },
   {
@@ -1721,7 +1721,7 @@ export const newsData: NewsPost[] = [
       "Search Engine Marketing",
       "SEM"
     ],
-    "image_url": null,
+    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
     "thumb_id": "49699"
   },
   {
@@ -1835,7 +1835,7 @@ export const newsData: NewsPost[] = [
       "Web Designer",
       "website"
     ],
-    "image_url": null,
+    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
     "thumb_id": "49552"
   },
   {
@@ -1984,7 +1984,7 @@ export const newsData: NewsPost[] = [
       "criar loja virtual profissional",
       "webdesign"
     ],
-    "image_url": null,
+    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
     "thumb_id": "49345"
   },
   {

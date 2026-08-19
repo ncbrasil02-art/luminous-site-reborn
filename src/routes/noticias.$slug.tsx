@@ -24,9 +24,9 @@ export const Route = createFileRoute('/noticias/$slug')({
       ogType: 'article',
       canonical: `${SITE_URL}/noticias/${loaderData.slug}`,
       breadcrumbs: [
-        { name: "Home", url: "/" },
-        { name: "Notícias", url: "/noticias" },
-        { name: loaderData.title, url: `/noticias/${loaderData.slug}` }
+        { label: "Home", to: "/" },
+        { label: "Notícias", to: "/noticias" },
+        { label: loaderData.title, to: `/noticias/${loaderData.slug}` }
       ],
       article: {
         publishedTime: loaderData.date,
