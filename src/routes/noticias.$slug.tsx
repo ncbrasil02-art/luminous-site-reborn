@@ -31,7 +31,9 @@ export const Route = createFileRoute('/noticias/$slug')({
       article: {
         publishedTime: loaderData.date,
         section: loaderData.categories[0],
-        tags: loaderData.tags
+        tags: loaderData.tags,
+        image: loaderData.image_url || undefined,
+        headline: loaderData.title
       }
     })
 
@@ -59,21 +61,8 @@ function NewsPostPage() {
     .filter(p => p.id !== post.id && p.categories.some(c => post.categories.includes(c)))
     .slice(0, 3)
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": post.title,
-    "image": post.image_url,
-    "datePublished": post.date,
-    "author": {
-      "@type": "Organization",
-      "name": "NC Brasil"
-    }
-  }
-
   return (
     <main className="relative pt-24 pb-20 overflow-hidden">
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       
       {/* Reading Progress Bar */}
       <motion.div
