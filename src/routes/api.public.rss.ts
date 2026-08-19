@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { newsData } from '@/lib/news.data'
 
-export const Route = createFileRoute('/api/public/rss/xml')({
+export const Route = createFileRoute('/api/public/rss')({
   server: {
     handlers: {
       GET: async () => {

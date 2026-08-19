@@ -68,8 +68,8 @@ import { Route as EmpresaClientesRouteImport } from './routes/empresa.clientes'
 import { Route as AdminNoticiasRouteImport } from './routes/admin.noticias'
 import { Route as NoticiasTagTagRouteImport } from './routes/noticias.tag.$tag'
 import { Route as NoticiasCategoriaCategoryRouteImport } from './routes/noticias.categoria.$category'
-import { Route as ApiPublicSitemapXmlRouteImport } from './routes/api.public.sitemap.xml'
-import { Route as ApiPublicRssXmlRouteImport } from './routes/api.public.rss.xml'
+import { Route as ApiPublicSitemapRouteImport } from './routes/api.public.sitemap'
+import { Route as ApiPublicRssRouteImport } from './routes/api.public.rss'
 
 const TrabalhosRealizadosRoute = TrabalhosRealizadosRouteImport.update({
   id: '/trabalhos-realizados',
@@ -390,14 +390,14 @@ const NoticiasCategoriaCategoryRoute =
     path: '/noticias/categoria/$category',
     getParentRoute: () => rootRouteImport,
   } as any)
-const ApiPublicSitemapXmlRoute = ApiPublicSitemapXmlRouteImport.update({
-  id: '/api/public/sitemap/xml',
-  path: '/api/public/sitemap/xml',
+const ApiPublicSitemapRoute = ApiPublicSitemapRouteImport.update({
+  id: '/api/public/sitemap',
+  path: '/api/public/sitemap',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiPublicRssXmlRoute = ApiPublicRssXmlRouteImport.update({
-  id: '/api/public/rss/xml',
-  path: '/api/public/rss/xml',
+const ApiPublicRssRoute = ApiPublicRssRouteImport.update({
+  id: '/api/public/rss',
+  path: '/api/public/rss',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -459,10 +459,10 @@ export interface FileRoutesByFullPath {
   '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
+  '/api/public/rss': typeof ApiPublicRssRoute
+  '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
-  '/api/public/rss/xml': typeof ApiPublicRssXmlRoute
-  '/api/public/sitemap/xml': typeof ApiPublicSitemapXmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -521,10 +521,10 @@ export interface FileRoutesByTo {
   '/admin': typeof AdminIndexRoute
   '/noticias': typeof NoticiasIndexRoute
   '/sistemas': typeof SistemasIndexRoute
+  '/api/public/rss': typeof ApiPublicRssRoute
+  '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
-  '/api/public/rss/xml': typeof ApiPublicRssXmlRoute
-  '/api/public/sitemap/xml': typeof ApiPublicSitemapXmlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -585,10 +585,10 @@ export interface FileRoutesById {
   '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
+  '/api/public/rss': typeof ApiPublicRssRoute
+  '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
-  '/api/public/rss/xml': typeof ApiPublicRssXmlRoute
-  '/api/public/sitemap/xml': typeof ApiPublicSitemapXmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -650,10 +650,10 @@ export interface FileRouteTypes {
     | '/admin/'
     | '/noticias/'
     | '/sistemas/'
+    | '/api/public/rss'
+    | '/api/public/sitemap'
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
-    | '/api/public/rss/xml'
-    | '/api/public/sitemap/xml'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -712,10 +712,10 @@ export interface FileRouteTypes {
     | '/admin'
     | '/noticias'
     | '/sistemas'
+    | '/api/public/rss'
+    | '/api/public/sitemap'
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
-    | '/api/public/rss/xml'
-    | '/api/public/sitemap/xml'
   id:
     | '__root__'
     | '/'
@@ -775,10 +775,10 @@ export interface FileRouteTypes {
     | '/admin/'
     | '/noticias/'
     | '/sistemas/'
+    | '/api/public/rss'
+    | '/api/public/sitemap'
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
-    | '/api/public/rss/xml'
-    | '/api/public/sitemap/xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -828,10 +828,10 @@ export interface RootRouteChildren {
   SistemasSistemaDeRifasRoute: typeof SistemasSistemaDeRifasRoute
   NoticiasIndexRoute: typeof NoticiasIndexRoute
   SistemasIndexRoute: typeof SistemasIndexRoute
+  ApiPublicRssRoute: typeof ApiPublicRssRoute
+  ApiPublicSitemapRoute: typeof ApiPublicSitemapRoute
   NoticiasCategoriaCategoryRoute: typeof NoticiasCategoriaCategoryRoute
   NoticiasTagTagRoute: typeof NoticiasTagTagRoute
-  ApiPublicRssXmlRoute: typeof ApiPublicRssXmlRoute
-  ApiPublicSitemapXmlRoute: typeof ApiPublicSitemapXmlRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -1249,18 +1249,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NoticiasCategoriaCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/sitemap/xml': {
-      id: '/api/public/sitemap/xml'
-      path: '/api/public/sitemap/xml'
-      fullPath: '/api/public/sitemap/xml'
-      preLoaderRoute: typeof ApiPublicSitemapXmlRouteImport
+    '/api/public/sitemap': {
+      id: '/api/public/sitemap'
+      path: '/api/public/sitemap'
+      fullPath: '/api/public/sitemap'
+      preLoaderRoute: typeof ApiPublicSitemapRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/rss/xml': {
-      id: '/api/public/rss/xml'
-      path: '/api/public/rss/xml'
-      fullPath: '/api/public/rss/xml'
-      preLoaderRoute: typeof ApiPublicRssXmlRouteImport
+    '/api/public/rss': {
+      id: '/api/public/rss'
+      path: '/api/public/rss'
+      fullPath: '/api/public/rss'
+      preLoaderRoute: typeof ApiPublicRssRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -1367,10 +1367,10 @@ const rootRouteChildren: RootRouteChildren = {
   SistemasSistemaDeRifasRoute: SistemasSistemaDeRifasRoute,
   NoticiasIndexRoute: NoticiasIndexRoute,
   SistemasIndexRoute: SistemasIndexRoute,
+  ApiPublicRssRoute: ApiPublicRssRoute,
+  ApiPublicSitemapRoute: ApiPublicSitemapRoute,
   NoticiasCategoriaCategoryRoute: NoticiasCategoriaCategoryRoute,
   NoticiasTagTagRoute: NoticiasTagTagRoute,
-  ApiPublicRssXmlRoute: ApiPublicRssXmlRoute,
-  ApiPublicSitemapXmlRoute: ApiPublicSitemapXmlRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
