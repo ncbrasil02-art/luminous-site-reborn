@@ -70,7 +70,6 @@ import { Route as AdminNoticiasRouteImport } from './routes/admin.noticias'
 import { Route as AdminImportarRouteImport } from './routes/admin.importar'
 import { Route as NoticiasTagTagRouteImport } from './routes/noticias.tag.$tag'
 import { Route as NoticiasCategoriaCategoryRouteImport } from './routes/noticias.categoria.$category'
-import { Route as ApiPublicSitemapRouteImport } from './routes/api.public.sitemap'
 import { Route as ApiPublicRssRouteImport } from './routes/api.public.rss'
 import { Route as AdminNoticiasNovaRouteImport } from './routes/admin.noticias.nova'
 import { Route as AdminNoticiasIdRouteImport } from './routes/admin.noticias.$id'
@@ -400,11 +399,6 @@ const NoticiasCategoriaCategoryRoute =
     path: '/noticias/categoria/$category',
     getParentRoute: () => rootRouteImport,
   } as any)
-const ApiPublicSitemapRoute = ApiPublicSitemapRouteImport.update({
-  id: '/api/public/sitemap',
-  path: '/api/public/sitemap',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ApiPublicRssRoute = ApiPublicRssRouteImport.update({
   id: '/api/public/rss',
   path: '/api/public/rss',
@@ -484,7 +478,6 @@ export interface FileRoutesByFullPath {
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
-  '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
 }
@@ -550,7 +543,6 @@ export interface FileRoutesByTo {
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
-  '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
 }
@@ -618,7 +610,6 @@ export interface FileRoutesById {
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
-  '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
 }
@@ -687,7 +678,6 @@ export interface FileRouteTypes {
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
-    | '/api/public/sitemap'
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
   fileRoutesByTo: FileRoutesByTo
@@ -753,7 +743,6 @@ export interface FileRouteTypes {
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
-    | '/api/public/sitemap'
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
   id:
@@ -820,7 +809,6 @@ export interface FileRouteTypes {
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
-    | '/api/public/sitemap'
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
   fileRoutesById: FileRoutesById
@@ -874,7 +862,6 @@ export interface RootRouteChildren {
   NoticiasIndexRoute: typeof NoticiasIndexRoute
   SistemasIndexRoute: typeof SistemasIndexRoute
   ApiPublicRssRoute: typeof ApiPublicRssRoute
-  ApiPublicSitemapRoute: typeof ApiPublicSitemapRoute
   NoticiasCategoriaCategoryRoute: typeof NoticiasCategoriaCategoryRoute
   NoticiasTagTagRoute: typeof NoticiasTagTagRoute
 }
@@ -1308,13 +1295,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NoticiasCategoriaCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/public/sitemap': {
-      id: '/api/public/sitemap'
-      path: '/api/public/sitemap'
-      fullPath: '/api/public/sitemap'
-      preLoaderRoute: typeof ApiPublicSitemapRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/api/public/rss': {
       id: '/api/public/rss'
       path: '/api/public/rss'
@@ -1454,7 +1434,6 @@ const rootRouteChildren: RootRouteChildren = {
   NoticiasIndexRoute: NoticiasIndexRoute,
   SistemasIndexRoute: SistemasIndexRoute,
   ApiPublicRssRoute: ApiPublicRssRoute,
-  ApiPublicSitemapRoute: ApiPublicSitemapRoute,
   NoticiasCategoriaCategoryRoute: NoticiasCategoriaCategoryRoute,
   NoticiasTagTagRoute: NoticiasTagTagRoute,
 }
