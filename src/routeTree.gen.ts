@@ -25,6 +25,7 @@ import { Route as DicasParaECommerceRouteImport } from './routes/dicas-para-e-co
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
+import { Route as NoticiasIndexRouteImport } from './routes/noticias.index'
 import { Route as SolucoesWebSeoGoogleRouteImport } from './routes/solucoes-web.seo-google'
 import { Route as SolucoesWebMarketingDigitalRouteImport } from './routes/solucoes-web.marketing-digital'
 import { Route as SolucoesWebLojaVirtualRouteImport } from './routes/solucoes-web.loja-virtual'
@@ -58,6 +59,7 @@ import { Route as PortfolioCriacaoDeSistemasRouteImport } from './routes/portfol
 import { Route as PortfolioCriacaoDeLogomarcasRouteImport } from './routes/portfolio.criacao-de-logomarcas'
 import { Route as PortfolioCriacaoDeAplicativosRouteImport } from './routes/portfolio.criacao-de-aplicativos'
 import { Route as PortfolioAplicativosCriadosRouteImport } from './routes/portfolio.aplicativos-criados'
+import { Route as NoticiasSlugRouteImport } from './routes/noticias.$slug'
 import { Route as EmpresaQuemSomosRouteImport } from './routes/empresa.quem-somos'
 import { Route as EmpresaNossaHistoriaRouteImport } from './routes/empresa.nossa-historia'
 import { Route as EmpresaClientesRouteImport } from './routes/empresa.clientes'
@@ -143,6 +145,11 @@ const IndexRoute = IndexRouteImport.update({
 const SistemasIndexRoute = SistemasIndexRouteImport.update({
   id: '/sistemas/',
   path: '/sistemas/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NoticiasIndexRoute = NoticiasIndexRouteImport.update({
+  id: '/noticias/',
+  path: '/noticias/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SolucoesWebSeoGoogleRoute = SolucoesWebSeoGoogleRouteImport.update({
@@ -330,6 +337,11 @@ const PortfolioAplicativosCriadosRoute =
     path: '/portfolio/aplicativos-criados',
     getParentRoute: () => rootRouteImport,
   } as any)
+const NoticiasSlugRoute = NoticiasSlugRouteImport.update({
+  id: '/noticias/$slug',
+  path: '/noticias/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EmpresaQuemSomosRoute = EmpresaQuemSomosRouteImport.update({
   id: '/quem-somos',
   path: '/quem-somos',
@@ -365,6 +377,7 @@ export interface FileRoutesByFullPath {
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
+  '/noticias/$slug': typeof NoticiasSlugRoute
   '/portfolio/aplicativos-criados': typeof PortfolioAplicativosCriadosRoute
   '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
   '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
@@ -398,6 +411,7 @@ export interface FileRoutesByFullPath {
   '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
   '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
+  '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
 }
 export interface FileRoutesByTo {
@@ -419,6 +433,7 @@ export interface FileRoutesByTo {
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
+  '/noticias/$slug': typeof NoticiasSlugRoute
   '/portfolio/aplicativos-criados': typeof PortfolioAplicativosCriadosRoute
   '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
   '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
@@ -452,6 +467,7 @@ export interface FileRoutesByTo {
   '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
   '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
+  '/noticias': typeof NoticiasIndexRoute
   '/sistemas': typeof SistemasIndexRoute
 }
 export interface FileRoutesById {
@@ -474,6 +490,7 @@ export interface FileRoutesById {
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
+  '/noticias/$slug': typeof NoticiasSlugRoute
   '/portfolio/aplicativos-criados': typeof PortfolioAplicativosCriadosRoute
   '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
   '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
@@ -507,6 +524,7 @@ export interface FileRoutesById {
   '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
   '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
+  '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
 }
 export interface FileRouteTypes {
@@ -530,6 +548,7 @@ export interface FileRouteTypes {
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
     | '/empresa/quem-somos'
+    | '/noticias/$slug'
     | '/portfolio/aplicativos-criados'
     | '/portfolio/criacao-de-aplicativos'
     | '/portfolio/criacao-de-logomarcas'
@@ -563,6 +582,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/loja-virtual'
     | '/solucoes-web/marketing-digital'
     | '/solucoes-web/seo-google'
+    | '/noticias/'
     | '/sistemas/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -584,6 +604,7 @@ export interface FileRouteTypes {
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
     | '/empresa/quem-somos'
+    | '/noticias/$slug'
     | '/portfolio/aplicativos-criados'
     | '/portfolio/criacao-de-aplicativos'
     | '/portfolio/criacao-de-logomarcas'
@@ -617,6 +638,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/loja-virtual'
     | '/solucoes-web/marketing-digital'
     | '/solucoes-web/seo-google'
+    | '/noticias'
     | '/sistemas'
   id:
     | '__root__'
@@ -638,6 +660,7 @@ export interface FileRouteTypes {
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
     | '/empresa/quem-somos'
+    | '/noticias/$slug'
     | '/portfolio/aplicativos-criados'
     | '/portfolio/criacao-de-aplicativos'
     | '/portfolio/criacao-de-logomarcas'
@@ -671,6 +694,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/loja-virtual'
     | '/solucoes-web/marketing-digital'
     | '/solucoes-web/seo-google'
+    | '/noticias/'
     | '/sistemas/'
   fileRoutesById: FileRoutesById
 }
@@ -690,6 +714,7 @@ export interface RootRouteChildren {
   SoftwareRoute: typeof SoftwareRoute
   SolucoesWebRoute: typeof SolucoesWebRouteWithChildren
   TrabalhosRealizadosRoute: typeof TrabalhosRealizadosRoute
+  NoticiasSlugRoute: typeof NoticiasSlugRoute
   PortfolioAplicativosCriadosRoute: typeof PortfolioAplicativosCriadosRoute
   PortfolioCriacaoDeAplicativosRoute: typeof PortfolioCriacaoDeAplicativosRoute
   PortfolioCriacaoDeLogomarcasRoute: typeof PortfolioCriacaoDeLogomarcasRoute
@@ -717,6 +742,7 @@ export interface RootRouteChildren {
   SistemasSistemaDeRaspadinhaRoute: typeof SistemasSistemaDeRaspadinhaRoute
   SistemasSistemaDeRevendaDeVeiculosRoute: typeof SistemasSistemaDeRevendaDeVeiculosRoute
   SistemasSistemaDeRifasRoute: typeof SistemasSistemaDeRifasRoute
+  NoticiasIndexRoute: typeof NoticiasIndexRoute
   SistemasIndexRoute: typeof SistemasIndexRoute
 }
 
@@ -832,6 +858,13 @@ declare module '@tanstack/react-router' {
       path: '/sistemas'
       fullPath: '/sistemas/'
       preLoaderRoute: typeof SistemasIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/noticias/': {
+      id: '/noticias/'
+      path: '/noticias'
+      fullPath: '/noticias/'
+      preLoaderRoute: typeof NoticiasIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/solucoes-web/seo-google': {
@@ -1065,6 +1098,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PortfolioAplicativosCriadosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/noticias/$slug': {
+      id: '/noticias/$slug'
+      path: '/noticias/$slug'
+      fullPath: '/noticias/$slug'
+      preLoaderRoute: typeof NoticiasSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/empresa/quem-somos': {
       id: '/empresa/quem-somos'
       path: '/quem-somos'
@@ -1143,6 +1183,7 @@ const rootRouteChildren: RootRouteChildren = {
   SoftwareRoute: SoftwareRoute,
   SolucoesWebRoute: SolucoesWebRouteWithChildren,
   TrabalhosRealizadosRoute: TrabalhosRealizadosRoute,
+  NoticiasSlugRoute: NoticiasSlugRoute,
   PortfolioAplicativosCriadosRoute: PortfolioAplicativosCriadosRoute,
   PortfolioCriacaoDeAplicativosRoute: PortfolioCriacaoDeAplicativosRoute,
   PortfolioCriacaoDeLogomarcasRoute: PortfolioCriacaoDeLogomarcasRoute,
@@ -1174,6 +1215,7 @@ const rootRouteChildren: RootRouteChildren = {
   SistemasSistemaDeRevendaDeVeiculosRoute:
     SistemasSistemaDeRevendaDeVeiculosRoute,
   SistemasSistemaDeRifasRoute: SistemasSistemaDeRifasRoute,
+  NoticiasIndexRoute: NoticiasIndexRoute,
   SistemasIndexRoute: SistemasIndexRoute,
 }
 export const routeTree = rootRouteImport

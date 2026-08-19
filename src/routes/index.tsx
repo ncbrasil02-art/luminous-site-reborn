@@ -21,6 +21,9 @@ import { SystemsCarousel } from "@/components/SystemsCarousel";
 const SITE_URL = "https://www.ncbrasil.com.br";
 const OG_IMAGE = `${SITE_URL}/og-home.jpg`;
 
+import { MagazineSection } from "@/components/MagazineSection";
+
+
 const homeJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
@@ -505,6 +508,8 @@ function HomePage() {
           </Reveal>
         </div>
       </section>
+      <MagazineSection />
     </>
   );
 }
+
