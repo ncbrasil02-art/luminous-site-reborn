@@ -66,6 +66,7 @@ import { Route as EmpresaQuemSomosRouteImport } from './routes/empresa.quem-somo
 import { Route as EmpresaNossaHistoriaRouteImport } from './routes/empresa.nossa-historia'
 import { Route as EmpresaClientesRouteImport } from './routes/empresa.clientes'
 import { Route as AdminNoticiasRouteImport } from './routes/admin.noticias'
+import { Route as AdminImportarRouteImport } from './routes/admin.importar'
 import { Route as NoticiasTagTagRouteImport } from './routes/noticias.tag.$tag'
 import { Route as NoticiasCategoriaCategoryRouteImport } from './routes/noticias.categoria.$category'
 import { Route as ApiPublicSitemapRouteImport } from './routes/api.public.sitemap'
@@ -381,6 +382,11 @@ const AdminNoticiasRoute = AdminNoticiasRouteImport.update({
   path: '/noticias',
   getParentRoute: () => AdminRoute,
 } as any)
+const AdminImportarRoute = AdminImportarRouteImport.update({
+  id: '/importar',
+  path: '/importar',
+  getParentRoute: () => AdminRoute,
+} as any)
 const NoticiasTagTagRoute = NoticiasTagTagRouteImport.update({
   id: '/noticias/tag/$tag',
   path: '/noticias/tag/$tag',
@@ -430,6 +436,7 @@ export interface FileRoutesByFullPath {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/admin/importar': typeof AdminImportarRoute
   '/admin/noticias': typeof AdminNoticiasRouteWithChildren
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
@@ -494,6 +501,7 @@ export interface FileRoutesByTo {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/admin/importar': typeof AdminImportarRoute
   '/admin/noticias': typeof AdminNoticiasRouteWithChildren
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
@@ -560,6 +568,7 @@ export interface FileRoutesById {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/admin/importar': typeof AdminImportarRoute
   '/admin/noticias': typeof AdminNoticiasRouteWithChildren
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
@@ -627,6 +636,7 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/admin/importar'
     | '/admin/noticias'
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
@@ -691,6 +701,7 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/admin/importar'
     | '/admin/noticias'
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
@@ -756,6 +767,7 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/admin/importar'
     | '/admin/noticias'
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
@@ -1259,6 +1271,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminNoticiasRouteImport
       parentRoute: typeof AdminRoute
     }
+    '/admin/importar': {
+      id: '/admin/importar'
+      path: '/importar'
+      fullPath: '/admin/importar'
+      preLoaderRoute: typeof AdminImportarRouteImport
+      parentRoute: typeof AdminRoute
+    }
     '/noticias/tag/$tag': {
       id: '/noticias/tag/$tag'
       path: '/noticias/tag/$tag'
@@ -1319,11 +1338,13 @@ const AdminNoticiasRouteWithChildren = AdminNoticiasRoute._addFileChildren(
 )
 
 interface AdminRouteChildren {
+  AdminImportarRoute: typeof AdminImportarRoute
   AdminNoticiasRoute: typeof AdminNoticiasRouteWithChildren
   AdminIndexRoute: typeof AdminIndexRoute
 }
 
 const AdminRouteChildren: AdminRouteChildren = {
+  AdminImportarRoute: AdminImportarRoute,
   AdminNoticiasRoute: AdminNoticiasRouteWithChildren,
   AdminIndexRoute: AdminIndexRoute,
 }

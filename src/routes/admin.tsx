@@ -1,5 +1,5 @@
 import { createFileRoute, Link, Outlet } from '@tanstack/react-router'
-import { LayoutDashboard, Newspaper, Settings, LogOut } from 'lucide-react'
+import { LayoutDashboard, Newspaper, Settings, LogOut, Import } from 'lucide-react'
 
 export const Route = createFileRoute('/admin')({
   component: AdminLayout
@@ -34,6 +34,14 @@ function AdminLayout() {
           >
             <Newspaper className="h-5 w-5" />
             Notícias
+          </Link>
+          <Link 
+            to="/admin/importar" 
+            activeProps={{ className: "bg-primary/10 text-primary font-medium" }}
+            className="flex items-center gap-3 px-4 py-3 rounded-xl text-muted-foreground hover:bg-surface transition-colors"
+          >
+            <Import className="h-5 w-5" />
+            Importar XML
           </Link>
           <Link 
             to="/admin" 
