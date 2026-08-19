@@ -53,9 +53,14 @@ function NewsIndex() {
                 <div className="p-8 lg:p-12 flex flex-col justify-center">
                   <div className="flex flex-wrap gap-2 mb-6">
                     {featuredNews.categories.map(cat => (
-                      <span key={cat} className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary uppercase tracking-wider">
+                      <Link 
+                        key={cat} 
+                        to="/noticias/categoria/$category"
+                        params={{ category: cat }}
+                        className="rounded-full bg-primary/10 px-3 py-1 text-[10px] font-bold text-primary uppercase tracking-wider hover:bg-primary/20 transition-colors"
+                      >
                         {cat}
-                      </span>
+                      </Link>
                     ))}
                   </div>
                   <h2 className="font-display text-3xl lg:text-4xl font-bold leading-tight group-hover:text-primary transition-colors">
@@ -100,9 +105,13 @@ function NewsIndex() {
                   )}
                 </div>
                 <div className="space-y-3">
-                  <div className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-primary">
+                  <Link 
+                    to="/noticias/categoria/$category"
+                    params={{ category: news.categories[0] || 'Geral' }}
+                    className="inline-block text-[10px] font-bold uppercase tracking-widest text-primary hover:underline"
+                  >
                     {news.categories[0] || 'Geral'}
-                  </div>
+                  </Link>
                   <h3 className="line-clamp-2 font-display text-xl font-bold group-hover:text-primary transition-colors">
                     {news.title}
                   </h3>

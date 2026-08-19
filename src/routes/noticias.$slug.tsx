@@ -49,9 +49,14 @@ function NewsPostPage() {
           <div className="space-y-6">
             <div className="flex flex-wrap gap-2">
               {post.categories.map(cat => (
-                <span key={cat} className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary uppercase tracking-wider">
+                <Link
+                  key={cat}
+                  to="/noticias/categoria/$category"
+                  params={{ category: cat }}
+                  className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary uppercase tracking-wider hover:bg-primary/20 transition-colors"
+                >
                   {cat}
-                </span>
+                </Link>
               ))}
             </div>
             <h1 className="font-display text-4xl md:text-5xl font-bold leading-tight">
@@ -96,10 +101,15 @@ function NewsPostPage() {
           <div className="mt-16 pt-8 border-t border-border">
             <div className="flex flex-wrap gap-2">
               {post.tags.map(tag => (
-                <span key={tag} className="flex items-center gap-1.5 rounded-lg bg-surface px-3 py-1.5 text-xs text-muted-foreground">
+                <Link
+                  key={tag}
+                  to="/noticias/tag/$tag"
+                  params={{ tag: tag }}
+                  className="flex items-center gap-1.5 rounded-lg bg-surface px-3 py-1.5 text-xs text-muted-foreground hover:text-primary transition-colors"
+                >
                   <Tag className="h-3 w-3" />
                   {tag}
-                </span>
+                </Link>
               ))}
             </div>
           </div>
