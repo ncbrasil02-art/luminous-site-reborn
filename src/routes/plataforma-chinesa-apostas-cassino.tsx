@@ -34,9 +34,9 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
     canonical: URL,
     h1: "Plataforma de Cassino Online e Apostas White Label",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Plataforma Cassino", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Plataforma Cassino", to: URL },
     ],
     faq: lpFaq,
   }),

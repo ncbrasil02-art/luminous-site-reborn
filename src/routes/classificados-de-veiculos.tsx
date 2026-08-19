@@ -28,9 +28,9 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
     canonical: URL,
     h1: "Plataforma de Classificados Automotivos",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Classificados de Veículos", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Classificados de Veículos", to: URL },
     ],
     faq: lpFaq,
     ogImage: "/og/classificados-veiculos.jpg",
