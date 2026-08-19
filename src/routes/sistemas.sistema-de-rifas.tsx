@@ -9,7 +9,7 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
 const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-rifas";
 
-const lpFaq = [
+export const lpFaq = [
   { q: "É seguro e legal criar rifa online no Brasil?", a: "Sim. Existem **três caminhos legais** que orientamos você a adotar: **título de capitalização** (via seguradora parceira), **promoção comercial autorizada pela SECAP/Ministério da Fazenda** ou **rifa filantrópica de associação/ONG sem fins lucrativos**. O sistema já vem preparado com **termos, regulamento gerado automaticamente e prestação de contas transparente**." },
   { q: "Como funciona o sorteio pela Loteria Federal?", a: "Definimos a extração da Loteria Federal (concurso, data) e o sistema **converte as 5 dezenas premiadas em uma cota vencedora** conforme regra escolhida (dezena por dezena, cota unificada, milhar invertida etc.). O resultado é **público, auditável e imutável** com hash blockchain." },
   { q: "Preciso pagar taxa por cota vendida ou comissão sobre a arrecadação?", a: "**Não. Diferente do Rifei, Rifana e Rifafy que cobram taxa por cota ou % sobre vendas**, na NC Brasil o sistema é **seu, com licença perpétua ou mensalidade fixa**. Você fica com **100% da arrecadação** e paga apenas a taxa do gateway de pagamento (Pix ~R$0,10)." },
