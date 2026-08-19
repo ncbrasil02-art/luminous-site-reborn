@@ -249,7 +249,7 @@ export const newsData: NewsPost[] = [
       "Planejamento",
       "Plataforma eletrônica"
     ],
-    "image_url": null,
+    "image_url": "/news/confira-4-softwares-para-salao-de-beleza-que-voce-deveria-usar.jpeg",
     "thumb_id": "50854"
   },
   {
@@ -272,7 +272,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Gestão Integrada",
       "Software de Gestão Integrada"
     ],
-    "image_url": null,
+    "image_url": "/news/sistema-de-gesto-integrada.gif",
     "thumb_id": "50832"
   },
   {
@@ -411,7 +411,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Automação de E-mail",
       "Sistemas"
     ],
-    "image_url": null,
+    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
     "thumb_id": "50783"
   },
   {
@@ -518,7 +518,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Estoque",
       "Sistema de Gestão de Estoque"
     ],
-    "image_url": null,
+    "image_url": "/news/estender-500-8-vantagens-ao-utilizar-um-sistema-de-administracao-de-imoveis-para-locacao-1024x512.jpeg",
     "thumb_id": "50748"
   },
   {
@@ -585,7 +585,7 @@ export const newsData: NewsPost[] = [
       "wordpress",
       "WP"
     ],
-    "image_url": null,
+    "image_url": "/news/Impulsine-sua-receita-de-fim-de-ano-com-gestão-através-de-aplicativos-para-celular-150x150.jpg",
     "thumb_id": "50719"
   },
   {
@@ -729,7 +729,7 @@ export const newsData: NewsPost[] = [
       "sistemas web",
       "Software"
     ],
-    "image_url": null,
+    "image_url": "/news/estender-500-8-vantagens-ao-utilizar-um-sistema-de-administracao-de-imoveis-para-locacao-1024x512.jpeg",
     "thumb_id": "50665"
   },
   {
@@ -793,7 +793,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Marketing Digital"
     ],
-    "image_url": null,
+    "image_url": "/news/Use-mídias-online-para-potencializar-a-venda-de-veículos.jpg",
     "thumb_id": "50602"
   },
   {
@@ -846,7 +846,7 @@ export const newsData: NewsPost[] = [
       "tendência web design",
       "Tendência Web Design 2017"
     ],
-    "image_url": null,
+    "image_url": "/news/Des1gn-ON-Tendencias-no-Design-em-2017-Parallax-03.gif",
     "thumb_id": "50561"
   },
   {
@@ -964,7 +964,7 @@ export const newsData: NewsPost[] = [
       "Site de Cupom Online",
       "Tendência Web designer"
     ],
-    "image_url": null,
+    "image_url": "/news/criacao-de-layout-para-sites.jpg",
     "thumb_id": "50500"
   },
   {
@@ -1055,7 +1055,7 @@ export const newsData: NewsPost[] = [
       "logomarca",
       "marca"
     ],
-    "image_url": null,
+    "image_url": "/news/Use-mídias-online-para-potencializar-a-venda-de-veículos.jpg",
     "thumb_id": "50097"
   },
   {
@@ -1073,7 +1073,7 @@ export const newsData: NewsPost[] = [
       "Planejamento",
       "Sites"
     ],
-    "image_url": null,
+    "image_url": "/news/62152-guest-post-x-dicas-para-comecar-o-marketing-digital-em-salao-de-beleza-1-1024x683.jpg",
     "thumb_id": "50091"
   },
   {
@@ -1116,7 +1116,7 @@ export const newsData: NewsPost[] = [
       "logo",
       "marca"
     ],
-    "image_url": null,
+    "image_url": "/news/Benefícios-e-Vantagens-de-um-site-responsivo.-300x200.jpg",
     "thumb_id": "50073"
   },
   {
@@ -1168,7 +1168,7 @@ export const newsData: NewsPost[] = [
       "UX",
       "Web site"
     ],
-    "image_url": null,
+    "image_url": "/news/Agile-Project-Management-and-User-Experience-UX-design.jpg",
     "thumb_id": "50058"
   },
   {
@@ -1191,7 +1191,7 @@ export const newsData: NewsPost[] = [
       "Tendência Redutiva",
       "Tendência Web designer"
     ],
-    "image_url": null,
+    "image_url": "/news/Des1gn-ON-Tendencias-no-Design-em-2017-Parallax-03.gif",
     "thumb_id": "50054"
   },
   {
@@ -1342,7 +1342,7 @@ export const newsData: NewsPost[] = [
       "criação de sites",
       "Tendência Web designer"
     ],
-    "image_url": null,
+    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
     "thumb_id": "49993"
   },
   {
@@ -1455,7 +1455,7 @@ export const newsData: NewsPost[] = [
       "tipografia",
       "Web Design"
     ],
-    "image_url": null,
+    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
     "thumb_id": "49891"
   },
   {
@@ -1691,7 +1691,7 @@ export const newsData: NewsPost[] = [
       "marca",
       "Web Designer"
     ],
-    "image_url": null,
+    "image_url": "/news/criacao-de-layout-para-sites.jpg",
     "thumb_id": "49721"
   },
   {
@@ -1749,7 +1749,7 @@ export const newsData: NewsPost[] = [
       "M-Commerce",
       "Web Designer"
     ],
-    "image_url": null,
+    "image_url": "/news/62152-guest-post-x-dicas-para-comecar-o-marketing-digital-em-salao-de-beleza-1-1024x683.jpg",
     "thumb_id": "49633"
   },
   {
@@ -1809,7 +1809,7 @@ export const newsData: NewsPost[] = [
       "M-Commerce",
       "webdesign"
     ],
-    "image_url": null,
+    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
     "thumb_id": "49576"
   },
   {
@@ -1964,7 +1964,7 @@ export const newsData: NewsPost[] = [
       "Snapchat",
       "Twitter"
     ],
-    "image_url": null,
+    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
     "thumb_id": "49328"
   },
   {
@@ -2036,7 +2036,7 @@ export const newsData: NewsPost[] = [
       "design de conteúdo",
       "landing page"
     ],
-    "image_url": null,
+    "image_url": "/news/criacao-de-layout-para-sites.jpg",
     "thumb_id": "49281"
   },
   {
@@ -2054,7 +2054,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital",
       "Vídeos corporativos"
     ],
-    "image_url": null,
+    "image_url": "/news/IMPORTÂNCIA-DE-UM-BOM-SITE-PARA-EMPRESA-1024x560.png",
     "thumb_id": "49078"
   },
   {
@@ -2076,7 +2076,7 @@ export const newsData: NewsPost[] = [
       "criar site responsivo",
       "criar website"
     ],
-    "image_url": null,
+    "image_url": "/news/como-fazer-um-plano-de-marketing-digital.jpg",
     "thumb_id": "49302"
   },
   {
@@ -2121,7 +2121,7 @@ export const newsData: NewsPost[] = [
       "identidade visual",
       "Marketing Digital"
     ],
-    "image_url": null,
+    "image_url": "/news/criacao-de-layout-para-sites.jpg",
     "thumb_id": "49318"
   },
   {
@@ -2147,7 +2147,7 @@ export const newsData: NewsPost[] = [
       "criação de sites",
       "marketing de conteúdo"
     ],
-    "image_url": null,
+    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
     "thumb_id": "49329"
   },
   {
@@ -2168,7 +2168,7 @@ export const newsData: NewsPost[] = [
       "redes socias",
       "website"
     ],
-    "image_url": null,
+    "image_url": "/news/beneficios-redes-sociais-capa.jpg",
     "thumb_id": "49293"
   },
   {
@@ -2218,7 +2218,7 @@ export const newsData: NewsPost[] = [
       "web designers",
       "webdesign"
     ],
-    "image_url": null,
+    "image_url": "/news/criacao-de-layout-para-sites.jpg",
     "thumb_id": "49335"
   },
   {
@@ -2263,7 +2263,7 @@ export const newsData: NewsPost[] = [
       "hospedagem de sites",
       "otimização de sites"
     ],
-    "image_url": null,
+    "image_url": "/news/criacao-de-layout-para-sites.jpg",
     "thumb_id": "49285"
   },
   {
@@ -2306,7 +2306,7 @@ export const newsData: NewsPost[] = [
       "criar sites reponsivos",
       "site para empresas"
     ],
-    "image_url": null,
+    "image_url": "/news/criacao-de-layout-para-sites.jpg",
     "thumb_id": "49308"
   },
   {
@@ -2428,7 +2428,7 @@ export const newsData: NewsPost[] = [
       "loja virtual para facebook",
       "melhor servidor para loja virtual"
     ],
-    "image_url": null,
+    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
     "thumb_id": "49079"
   },
   {
@@ -2516,7 +2516,7 @@ export const newsData: NewsPost[] = [
       "desenvolvimento de sistemas",
       "sites semânticos"
     ],
-    "image_url": null,
+    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
     "thumb_id": "48648"
   },
   {
@@ -2560,7 +2560,7 @@ export const newsData: NewsPost[] = [
       "loja virtual para celulares",
       "loja virtual para facebook"
     ],
-    "image_url": null,
+    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
     "thumb_id": "48550"
   },
   {
@@ -2616,7 +2616,7 @@ export const newsData: NewsPost[] = [
       "fintech",
       "news"
     ],
-    "image_url": null,
+    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
     "thumb_id": "3251"
   },
   {
@@ -2632,7 +2632,7 @@ export const newsData: NewsPost[] = [
       "fintech",
       "news"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "3250"
   },
   {
@@ -2648,7 +2648,7 @@ export const newsData: NewsPost[] = [
       "fintech",
       "news"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "3249"
   },
   {
@@ -2663,7 +2663,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "api"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1880"
   },
   {
@@ -2679,7 +2679,7 @@ export const newsData: NewsPost[] = [
       "Branding",
       "Design"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1879"
   },
   {
@@ -2695,7 +2695,7 @@ export const newsData: NewsPost[] = [
       "api",
       "Apps"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1878"
   },
   {
@@ -2711,7 +2711,7 @@ export const newsData: NewsPost[] = [
       "development",
       "devops"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1338"
   },
   {
@@ -2727,7 +2727,7 @@ export const newsData: NewsPost[] = [
       "Email",
       "shop"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1337"
   },
   {
@@ -2743,7 +2743,7 @@ export const newsData: NewsPost[] = [
       "starups",
       "wordpress"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1336"
   },
   {
@@ -2760,7 +2760,7 @@ export const newsData: NewsPost[] = [
       "api",
       "Apps"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1335"
   },
   {
@@ -2776,7 +2776,7 @@ export const newsData: NewsPost[] = [
       "Branding",
       "Design"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1334"
   },
   {
@@ -2792,7 +2792,7 @@ export const newsData: NewsPost[] = [
       "development",
       "devops"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1333"
   },
   {
@@ -2808,7 +2808,7 @@ export const newsData: NewsPost[] = [
       "Email",
       "shop"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1332"
   },
   {
@@ -2842,7 +2842,7 @@ export const newsData: NewsPost[] = [
       "api",
       "Apps"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1330"
   },
   {
@@ -2858,7 +2858,7 @@ export const newsData: NewsPost[] = [
       "Branding",
       "Design"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1329"
   },
   {
@@ -2874,7 +2874,7 @@ export const newsData: NewsPost[] = [
       "development",
       "devops"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1328"
   },
   {
@@ -2891,7 +2891,7 @@ export const newsData: NewsPost[] = [
       "news",
       "technology"
     ],
-    "image_url": null,
+    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
     "thumb_id": "1327"
   }
 ];
