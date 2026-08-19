@@ -34,7 +34,7 @@ export const newsData: NewsPost[] = [
       "Marketing",
       "Marketing Digital"
     ],
-    "image_url": "/news/instagram-b9-type-ss-1024x576.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50995"
   },
   {
@@ -52,7 +52,7 @@ export const newsData: NewsPost[] = [
       "Software Personalizado",
       "Software único"
     ],
-    "image_url": "/news/2014011315350452d407a830ca4-1024x427.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50991"
   },
   {
@@ -71,7 +71,7 @@ export const newsData: NewsPost[] = [
       "Sistemas Sob Demanda",
       "Software"
     ],
-    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50969"
   },
   {
@@ -92,7 +92,7 @@ export const newsData: NewsPost[] = [
       "NC Brasil",
       "seo"
     ],
-    "image_url": "/news/eCommerce-concch.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50963"
   },
   {
@@ -110,7 +110,7 @@ export const newsData: NewsPost[] = [
       "Sistema on demand",
       "Sistema sob demanda"
     ],
-    "image_url": "/news/sistema-erp-sob-demanda-entenda-importancia-1000x642.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50959"
   },
   {
@@ -138,7 +138,7 @@ export const newsData: NewsPost[] = [
       "Smartphones",
       "Software"
     ],
-    "image_url": "/news/Aplicativos-para-viagem-300x293.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50930"
   },
   {
@@ -159,7 +159,7 @@ export const newsData: NewsPost[] = [
       "rede Social",
       "Site"
     ],
-    "image_url": "/news/shutterstock_575844202-700x484.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50915"
   },
   {
@@ -178,7 +178,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Cabeleireiros",
       "Software"
     ],
-    "image_url": "/news/confira-4-softwares-para-salao-de-beleza-que-voce-deveria-usar.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50881"
   },
   {
@@ -199,7 +199,7 @@ export const newsData: NewsPost[] = [
       "Sistemas",
       "Software"
     ],
-    "image_url": "/news/NOTA-FISCAL.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50870"
   },
   {
@@ -223,7 +223,7 @@ export const newsData: NewsPost[] = [
       "Site para Vender Imóveis",
       "site responsivo"
     ],
-    "image_url": "/news/imóveis.jpg.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50846"
   },
   {
@@ -249,7 +249,7 @@ export const newsData: NewsPost[] = [
       "Planejamento",
       "Plataforma eletrônica"
     ],
-    "image_url": "/news/confira-4-softwares-para-salao-de-beleza-que-voce-deveria-usar.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50854"
   },
   {
@@ -272,7 +272,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Gestão Integrada",
       "Software de Gestão Integrada"
     ],
-    "image_url": "/news/sistema-de-gesto-integrada.gif",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50832"
   },
   {
@@ -302,7 +302,7 @@ export const newsData: NewsPost[] = [
       "Site",
       "Site Otimizado"
     ],
-    "image_url": "/news/Goomark-5-tecnicas-certeiras-para-criar-um-site-otimizado-para-SEO.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50823"
   },
   {
@@ -327,7 +327,7 @@ export const newsData: NewsPost[] = [
       "Smartphones",
       "Tecnologia"
     ],
-    "image_url": "/news/mercado-de-criacao-de-aplicativos-mobile-1024x731.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50811"
   },
   {
@@ -350,7 +350,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "Web design responsivo"
     ],
-    "image_url": "/news/Site-Responsivo-Feira-de-Santana.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50806"
   },
   {
@@ -371,7 +371,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "wordpress"
     ],
-    "image_url": "/news/site-responsivo-x-site-mobile.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50799"
   },
   {
@@ -391,7 +391,7 @@ export const newsData: NewsPost[] = [
       "Sistema Gerador de Relatórios",
       "Sistemas"
     ],
-    "image_url": "/news/4-razoes-para-utilizar-a-automacao-de-email-marketing.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50784"
   },
   {
@@ -411,7 +411,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Automação de E-mail",
       "Sistemas"
     ],
-    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50783"
   },
   {
@@ -432,7 +432,7 @@ export const newsData: NewsPost[] = [
       "Sistema",
       "Software Empresarial"
     ],
-    "image_url": "/news/Aplicativos-para-viagem-300x293.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50773"
   },
   {
@@ -453,7 +453,7 @@ export const newsData: NewsPost[] = [
       "Sistema para Imobiliária",
       "Sistemas"
     ],
-    "image_url": "/news/c4810d3a-0bd8-4486-bac4-dc744347392f.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50770"
   },
   {
@@ -472,7 +472,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Locação de Carros",
       "Sistemas"
     ],
-    "image_url": "/news/alamo.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50762"
   },
   {
@@ -496,7 +496,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Leilão de Centavos",
       "Sistema de Leilão Virtual"
     ],
-    "image_url": "/news/25f-1.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50753"
   },
   {
@@ -518,7 +518,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Estoque",
       "Sistema de Gestão de Estoque"
     ],
-    "image_url": "/news/estender-500-8-vantagens-ao-utilizar-um-sistema-de-administracao-de-imoveis-para-locacao-1024x512.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50748"
   },
   {
@@ -546,7 +546,7 @@ export const newsData: NewsPost[] = [
       "Site",
       "Site de Leilão"
     ],
-    "image_url": "/news/download-1024x689.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50741"
   },
   {
@@ -563,7 +563,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Contabilidade",
       "Sistema de Gestão Contábil"
     ],
-    "image_url": "/news/cacaroot-1024x645.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50728"
   },
   {
@@ -585,7 +585,7 @@ export const newsData: NewsPost[] = [
       "wordpress",
       "WP"
     ],
-    "image_url": "/news/Impulsine-sua-receita-de-fim-de-ano-com-gestão-através-de-aplicativos-para-celular-150x150.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50719"
   },
   {
@@ -608,7 +608,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Inventário",
       "Sistemas"
     ],
-    "image_url": "/news/controle-de-estoque.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50709"
   },
   {
@@ -633,7 +633,7 @@ export const newsData: NewsPost[] = [
       "Site de Leilão",
       "Usuários"
     ],
-    "image_url": "/news/Site-de-Leilão-Um-Centavo-R001-Como-se-beneficiar-dos-Links-Patrocinados-do-Google-AdWords.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50701"
   },
   {
@@ -659,7 +659,7 @@ export const newsData: NewsPost[] = [
       "Site",
       "Usuários"
     ],
-    "image_url": "/news/como-economizar-dinheiro-com-cupons-de-desconto.png-1024x390.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50691"
   },
   {
@@ -683,7 +683,7 @@ export const newsData: NewsPost[] = [
       "Site",
       "websites"
     ],
-    "image_url": "/news/sistemas-web-1024x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50681"
   },
   {
@@ -707,7 +707,7 @@ export const newsData: NewsPost[] = [
       "Sistemas de Carros",
       "sistemas web"
     ],
-    "image_url": "/news/3-1-1024x1024.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50671"
   },
   {
@@ -729,7 +729,7 @@ export const newsData: NewsPost[] = [
       "sistemas web",
       "Software"
     ],
-    "image_url": "/news/estender-500-8-vantagens-ao-utilizar-um-sistema-de-administracao-de-imoveis-para-locacao-1024x512.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50665"
   },
   {
@@ -745,7 +745,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Sistema sob demanda"
     ],
-    "image_url": "/news/sob-demanda.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50626"
   },
   {
@@ -762,7 +762,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Sistemas de Veículos"
     ],
-    "image_url": "/news/Use-mídias-online-para-potencializar-a-venda-de-veículos.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50621"
   },
   {
@@ -777,7 +777,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Plataforma de leilão"
     ],
-    "image_url": "/news/leilao.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50612"
   },
   {
@@ -793,7 +793,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Marketing Digital"
     ],
-    "image_url": "/news/Use-mídias-online-para-potencializar-a-venda-de-veículos.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50602"
   },
   {
@@ -808,7 +808,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "seo"
     ],
-    "image_url": "/news/o-que-e-seo.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50599"
   },
   {
@@ -826,7 +826,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Planejamento SEO"
     ],
-    "image_url": "/news/Deep-Crawl_icon-icons.com_53720.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50581"
   },
   {
@@ -846,7 +846,7 @@ export const newsData: NewsPost[] = [
       "tendência web design",
       "Tendência Web Design 2017"
     ],
-    "image_url": "/news/Des1gn-ON-Tendencias-no-Design-em-2017-Parallax-03.gif",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50561"
   },
   {
@@ -871,7 +871,7 @@ export const newsData: NewsPost[] = [
       "Sistemas únicos",
       "webdesign"
     ],
-    "image_url": "/news/sistema.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50555"
   },
   {
@@ -898,7 +898,7 @@ export const newsData: NewsPost[] = [
       "website",
       "word press"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50548"
   },
   {
@@ -915,7 +915,7 @@ export const newsData: NewsPost[] = [
       "criar site responsivo",
       "site responsivo"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50527"
   },
   {
@@ -938,7 +938,7 @@ export const newsData: NewsPost[] = [
       "Sites",
       "Web Design"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50507"
   },
   {
@@ -964,7 +964,7 @@ export const newsData: NewsPost[] = [
       "Site de Cupom Online",
       "Tendência Web designer"
     ],
-    "image_url": "/news/criacao-de-layout-para-sites.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50500"
   },
   {
@@ -985,7 +985,7 @@ export const newsData: NewsPost[] = [
       "Vendas de Veículos Online",
       "Web Carrão"
     ],
-    "image_url": "/news/Use-mídias-online-para-potencializar-a-venda-de-veículos.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50487"
   },
   {
@@ -1013,7 +1013,7 @@ export const newsData: NewsPost[] = [
       "E-commerce",
       "Site Gerenciável"
     ],
-    "image_url": "/news/Use-mídias-online-para-potencializar-a-venda-de-veículos.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50445"
   },
   {
@@ -1034,7 +1034,7 @@ export const newsData: NewsPost[] = [
       "M-Commerce",
       "Tendência Web designer"
     ],
-    "image_url": "/news/Aplicativos-para-viagem-300x293.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50276"
   },
   {
@@ -1055,7 +1055,7 @@ export const newsData: NewsPost[] = [
       "logomarca",
       "marca"
     ],
-    "image_url": "/news/Use-mídias-online-para-potencializar-a-venda-de-veículos.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50097"
   },
   {
@@ -1073,7 +1073,7 @@ export const newsData: NewsPost[] = [
       "Planejamento",
       "Sites"
     ],
-    "image_url": "/news/62152-guest-post-x-dicas-para-comecar-o-marketing-digital-em-salao-de-beleza-1-1024x683.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50091"
   },
   {
@@ -1096,7 +1096,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "Site Responsivo ou Aplicativo?"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50086"
   },
   {
@@ -1116,7 +1116,7 @@ export const newsData: NewsPost[] = [
       "logo",
       "marca"
     ],
-    "image_url": "/news/Benefícios-e-Vantagens-de-um-site-responsivo.-300x200.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50073"
   },
   {
@@ -1145,7 +1145,7 @@ export const newsData: NewsPost[] = [
       "seo",
       "site responsivo"
     ],
-    "image_url": "/news/mobile-trends.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50066"
   },
   {
@@ -1168,7 +1168,7 @@ export const newsData: NewsPost[] = [
       "UX",
       "Web site"
     ],
-    "image_url": "/news/Agile-Project-Management-and-User-Experience-UX-design.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50058"
   },
   {
@@ -1191,7 +1191,7 @@ export const newsData: NewsPost[] = [
       "Tendência Redutiva",
       "Tendência Web designer"
     ],
-    "image_url": "/news/Des1gn-ON-Tendencias-no-Design-em-2017-Parallax-03.gif",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50054"
   },
   {
@@ -1213,7 +1213,7 @@ export const newsData: NewsPost[] = [
       "Site de vendas",
       "Venda de veículos online"
     ],
-    "image_url": "/news/Use-mídias-online-para-potencializar-a-venda-de-veículos.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50044"
   },
   {
@@ -1235,7 +1235,7 @@ export const newsData: NewsPost[] = [
       "marca",
       "público-alvo"
     ],
-    "image_url": "/news/branding.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50040"
   },
   {
@@ -1257,7 +1257,7 @@ export const newsData: NewsPost[] = [
       "Site para igreja",
       "Web Design"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50028"
   },
   {
@@ -1277,7 +1277,7 @@ export const newsData: NewsPost[] = [
       "Plataforma de leilão",
       "Site de vendas"
     ],
-    "image_url": "/news/Site-de-Leilão-Um-Centavo-R001-Como-se-beneficiar-dos-Links-Patrocinados-do-Google-AdWords.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50019"
   },
   {
@@ -1299,7 +1299,7 @@ export const newsData: NewsPost[] = [
       "sites responsivos",
       "Tendência Web designer"
     ],
-    "image_url": "/news/como-deve-ser-um-bom-site-para-advogados.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49999"
   },
   {
@@ -1322,7 +1322,7 @@ export const newsData: NewsPost[] = [
       "Interface",
       "sites responsivos"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50001"
   },
   {
@@ -1342,7 +1342,7 @@ export const newsData: NewsPost[] = [
       "criação de sites",
       "Tendência Web designer"
     ],
-    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49993"
   },
   {
@@ -1365,7 +1365,7 @@ export const newsData: NewsPost[] = [
       "Sites",
       "Web Design"
     ],
-    "image_url": "/news/Use-mídias-online-para-potencializar-a-venda-de-veículos.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49983"
   },
   {
@@ -1386,7 +1386,7 @@ export const newsData: NewsPost[] = [
       "Vantagens de um site",
       "website"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49964"
   },
   {
@@ -1407,7 +1407,7 @@ export const newsData: NewsPost[] = [
       "E-commerce",
       "M-Commerce"
     ],
-    "image_url": "/news/Aplicativos-para-viagem-300x293.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49954"
   },
   {
@@ -1432,7 +1432,7 @@ export const newsData: NewsPost[] = [
       "seo",
       "Web Designer"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49937"
   },
   {
@@ -1455,7 +1455,7 @@ export const newsData: NewsPost[] = [
       "tipografia",
       "Web Design"
     ],
-    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49891"
   },
   {
@@ -1477,7 +1477,7 @@ export const newsData: NewsPost[] = [
       "CSM",
       "Sistema de Gerenciamento de Conteúdo"
     ],
-    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49873"
   },
   {
@@ -1503,7 +1503,7 @@ export const newsData: NewsPost[] = [
       "Site Gerenciável",
       "Web Designer"
     ],
-    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49859"
   },
   {
@@ -1530,7 +1530,7 @@ export const newsData: NewsPost[] = [
       "E-commerce",
       "Infraestrutura profissional de loja virtual."
     ],
-    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49848"
   },
   {
@@ -1553,7 +1553,7 @@ export const newsData: NewsPost[] = [
       "Tendência Web designer",
       "Web Designer"
     ],
-    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49836"
   },
   {
@@ -1574,7 +1574,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital",
       "Web Designer"
     ],
-    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49829"
   },
   {
@@ -1595,7 +1595,7 @@ export const newsData: NewsPost[] = [
       "Erros de E-commerce",
       "Web Designer"
     ],
-    "image_url": "/news/4.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49789"
   },
   {
@@ -1621,7 +1621,7 @@ export const newsData: NewsPost[] = [
       "Web Designer",
       "Web Desing"
     ],
-    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49773"
   },
   {
@@ -1643,7 +1643,7 @@ export const newsData: NewsPost[] = [
       "Sites para a igreja",
       "Tendência Web designer"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49763"
   },
   {
@@ -1667,7 +1667,7 @@ export const newsData: NewsPost[] = [
       "Site Imobiliário",
       "Tendência Web designer"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49750"
   },
   {
@@ -1691,7 +1691,7 @@ export const newsData: NewsPost[] = [
       "marca",
       "Web Designer"
     ],
-    "image_url": "/news/criacao-de-layout-para-sites.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49721"
   },
   {
@@ -1721,7 +1721,7 @@ export const newsData: NewsPost[] = [
       "Search Engine Marketing",
       "SEM"
     ],
-    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49699"
   },
   {
@@ -1749,7 +1749,7 @@ export const newsData: NewsPost[] = [
       "M-Commerce",
       "Web Designer"
     ],
-    "image_url": "/news/62152-guest-post-x-dicas-para-comecar-o-marketing-digital-em-salao-de-beleza-1-1024x683.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49633"
   },
   {
@@ -1779,7 +1779,7 @@ export const newsData: NewsPost[] = [
       "website",
       "wordpress"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49608"
   },
   {
@@ -1809,7 +1809,7 @@ export const newsData: NewsPost[] = [
       "M-Commerce",
       "webdesign"
     ],
-    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49576"
   },
   {
@@ -1835,7 +1835,7 @@ export const newsData: NewsPost[] = [
       "Web Designer",
       "website"
     ],
-    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49552"
   },
   {
@@ -1858,7 +1858,7 @@ export const newsData: NewsPost[] = [
       "Sites Turbinados",
       "Web Designer"
     ],
-    "image_url": "/news/o-que-e-seo.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49544"
   },
   {
@@ -1892,7 +1892,7 @@ export const newsData: NewsPost[] = [
       "webdesign",
       "website"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49482"
   },
   {
@@ -1911,7 +1911,7 @@ export const newsData: NewsPost[] = [
       "criar aplicativo",
       "criar loja virtual profissional"
     ],
-    "image_url": "/news/Aplicativos-para-viagem-300x293.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49442"
   },
   {
@@ -1932,7 +1932,7 @@ export const newsData: NewsPost[] = [
       "criar site para empresa",
       "hospedagem de sites"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49292"
   },
   {
@@ -1964,7 +1964,7 @@ export const newsData: NewsPost[] = [
       "Snapchat",
       "Twitter"
     ],
-    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49328"
   },
   {
@@ -1984,7 +1984,7 @@ export const newsData: NewsPost[] = [
       "criar loja virtual profissional",
       "webdesign"
     ],
-    "image_url": "/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49345"
   },
   {
@@ -2010,7 +2010,7 @@ export const newsData: NewsPost[] = [
       "site para empresas",
       "webdesign"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49342"
   },
   {
@@ -2036,7 +2036,7 @@ export const newsData: NewsPost[] = [
       "design de conteúdo",
       "landing page"
     ],
-    "image_url": "/news/criacao-de-layout-para-sites.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49281"
   },
   {
@@ -2054,7 +2054,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital",
       "Vídeos corporativos"
     ],
-    "image_url": "/news/IMPORTÂNCIA-DE-UM-BOM-SITE-PARA-EMPRESA-1024x560.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49078"
   },
   {
@@ -2076,7 +2076,7 @@ export const newsData: NewsPost[] = [
       "criar site responsivo",
       "criar website"
     ],
-    "image_url": "/news/como-fazer-um-plano-de-marketing-digital.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49302"
   },
   {
@@ -2098,7 +2098,7 @@ export const newsData: NewsPost[] = [
       "desenvolvimento de sistemas",
       "loja virtual para celulares"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49323"
   },
   {
@@ -2121,7 +2121,7 @@ export const newsData: NewsPost[] = [
       "identidade visual",
       "Marketing Digital"
     ],
-    "image_url": "/news/criacao-de-layout-para-sites.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49318"
   },
   {
@@ -2147,7 +2147,7 @@ export const newsData: NewsPost[] = [
       "criação de sites",
       "marketing de conteúdo"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49329"
   },
   {
@@ -2168,7 +2168,7 @@ export const newsData: NewsPost[] = [
       "redes socias",
       "website"
     ],
-    "image_url": "/news/beneficios-redes-sociais-capa.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49293"
   },
   {
@@ -2192,7 +2192,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "wordpress"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49320"
   },
   {
@@ -2218,7 +2218,7 @@ export const newsData: NewsPost[] = [
       "web designers",
       "webdesign"
     ],
-    "image_url": "/news/criacao-de-layout-para-sites.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49335"
   },
   {
@@ -2240,7 +2240,7 @@ export const newsData: NewsPost[] = [
       "Rio de Janeiro",
       "seo"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49331"
   },
   {
@@ -2263,7 +2263,7 @@ export const newsData: NewsPost[] = [
       "hospedagem de sites",
       "otimização de sites"
     ],
-    "image_url": "/news/criacao-de-layout-para-sites.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49285"
   },
   {
@@ -2285,7 +2285,7 @@ export const newsData: NewsPost[] = [
       "criar sites reponsivos",
       "loja virtual para celulares"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49283"
   },
   {
@@ -2306,7 +2306,7 @@ export const newsData: NewsPost[] = [
       "criar sites reponsivos",
       "site para empresas"
     ],
-    "image_url": "/news/criacao-de-layout-para-sites.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49308"
   },
   {
@@ -2329,7 +2329,7 @@ export const newsData: NewsPost[] = [
       "sites semânticos",
       "webdesign"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49336"
   },
   {
@@ -2357,7 +2357,7 @@ export const newsData: NewsPost[] = [
       "sites para celulares",
       "sites responsivos"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49080"
   },
   {
@@ -2379,7 +2379,7 @@ export const newsData: NewsPost[] = [
       "site para empresas",
       "Sites Institucionais"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48586"
   },
   {
@@ -2402,7 +2402,7 @@ export const newsData: NewsPost[] = [
       "sites para celulares",
       "sites responsivos"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48545"
   },
   {
@@ -2428,7 +2428,7 @@ export const newsData: NewsPost[] = [
       "loja virtual para facebook",
       "melhor servidor para loja virtual"
     ],
-    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49079"
   },
   {
@@ -2454,7 +2454,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital",
       "reformular website"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49077"
   },
   {
@@ -2475,7 +2475,7 @@ export const newsData: NewsPost[] = [
       "criar sites reponsivos",
       "desenvolvimento de sistemas"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48613"
   },
   {
@@ -2496,7 +2496,7 @@ export const newsData: NewsPost[] = [
       "sítio eletrônic",
       "website"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48607"
   },
   {
@@ -2516,7 +2516,7 @@ export const newsData: NewsPost[] = [
       "desenvolvimento de sistemas",
       "sites semânticos"
     ],
-    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48648"
   },
   {
@@ -2537,7 +2537,7 @@ export const newsData: NewsPost[] = [
       "hospedagem para o seu site",
       "melhor servidor para loja virtual"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48600"
   },
   {
@@ -2560,7 +2560,7 @@ export const newsData: NewsPost[] = [
       "loja virtual para celulares",
       "loja virtual para facebook"
     ],
-    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48550"
   },
   {
@@ -2580,7 +2580,7 @@ export const newsData: NewsPost[] = [
       "fazer site",
       "reformular website"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48611"
   },
   {
@@ -2600,7 +2600,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "webdesign"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48599"
   },
   {
@@ -2616,7 +2616,7 @@ export const newsData: NewsPost[] = [
       "fintech",
       "news"
     ],
-    "image_url": "/news/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "3251"
   },
   {
@@ -2632,7 +2632,7 @@ export const newsData: NewsPost[] = [
       "fintech",
       "news"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "3250"
   },
   {
@@ -2648,7 +2648,7 @@ export const newsData: NewsPost[] = [
       "fintech",
       "news"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "3249"
   },
   {
@@ -2663,7 +2663,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "api"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1880"
   },
   {
@@ -2679,7 +2679,7 @@ export const newsData: NewsPost[] = [
       "Branding",
       "Design"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1879"
   },
   {
@@ -2695,7 +2695,7 @@ export const newsData: NewsPost[] = [
       "api",
       "Apps"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1878"
   },
   {
@@ -2711,7 +2711,7 @@ export const newsData: NewsPost[] = [
       "development",
       "devops"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1338"
   },
   {
@@ -2727,7 +2727,7 @@ export const newsData: NewsPost[] = [
       "Email",
       "shop"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1337"
   },
   {
@@ -2743,7 +2743,7 @@ export const newsData: NewsPost[] = [
       "starups",
       "wordpress"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1336"
   },
   {
@@ -2760,7 +2760,7 @@ export const newsData: NewsPost[] = [
       "api",
       "Apps"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1335"
   },
   {
@@ -2776,7 +2776,7 @@ export const newsData: NewsPost[] = [
       "Branding",
       "Design"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1334"
   },
   {
@@ -2792,7 +2792,7 @@ export const newsData: NewsPost[] = [
       "development",
       "devops"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1333"
   },
   {
@@ -2808,7 +2808,7 @@ export const newsData: NewsPost[] = [
       "Email",
       "shop"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1332"
   },
   {
@@ -2825,7 +2825,7 @@ export const newsData: NewsPost[] = [
       "startup",
       "wordpress"
     ],
-    "image_url": "/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1331"
   },
   {
@@ -2842,7 +2842,7 @@ export const newsData: NewsPost[] = [
       "api",
       "Apps"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1330"
   },
   {
@@ -2858,7 +2858,7 @@ export const newsData: NewsPost[] = [
       "Branding",
       "Design"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1329"
   },
   {
@@ -2874,7 +2874,7 @@ export const newsData: NewsPost[] = [
       "development",
       "devops"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1328"
   },
   {
@@ -2891,7 +2891,7 @@ export const newsData: NewsPost[] = [
       "news",
       "technology"
     ],
-    "image_url": "/news/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1327"
   }
 ];
