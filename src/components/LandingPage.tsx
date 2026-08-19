@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { newsData } from "@/lib/news.data";
 import { NewsDisplay } from "./NewsDisplay";
 import { trackRedirect } from "@/lib/analytics";
+import { buildMeta } from "@/lib/seo";
 import {
   ArrowRight,
   Check,
@@ -79,6 +80,7 @@ export function buildLPMeta(options: {
   h1: string;
   breadcrumbs?: { name: string; url: string }[];
   faq?: LPFaq[];
+  ogImage?: string;
 }) {
   return buildMeta({
     ...options,
@@ -688,34 +690,3 @@ export function LandingPage({
   );
 }
 
-import { buildMeta } from "@/lib/seo";
-
-export function buildLPMeta({
-  title,
-  description,
-  keywords,
-  canonical,
-  h1,
-  breadcrumbs,
-  faq,
-  ogImage,
-}: {
-  title: string;
-  description: string;
-  keywords: string;
-  canonical: string;
-  h1: string;
-  breadcrumbs: { name: string; url: string }[];
-  faq?: { q: string; a: string }[];
-  ogImage?: string;
-}) {
-  return buildMeta({
-    title,
-    description,
-    keywords,
-    canonical,
-    ogImage,
-    faq,
-    breadcrumbs,
-  });
-}
