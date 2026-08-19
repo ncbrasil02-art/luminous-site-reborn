@@ -38,7 +38,7 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-leilao-rural", label: "Leilão Rural" }]}
-      subtitle="Agronegócio · Pecuária · Genética"
+      eyebrow="Agronegócio · Pecuária · Genética"
       h1={<>Plataforma completa para <span className="text-gradient">Leilões Rurais e Agropecuários</span></>}
       intro={<>A NC Brasil desenvolve o <strong className="text-foreground">software mais avançado do agronegócio brasileiro</strong> para leiloeiros rurais, cabanhas e associações de raça. Opere leilões de <strong className="text-foreground">bovinos, equinos, ovinos, propriedades e maquinário</strong> com transmissão HD, emissão automática de GTA, pesagem integrada e pagamento via Pix — tudo em uma plataforma proprietária, sem mensalidade abusiva.</>}
       stats={[

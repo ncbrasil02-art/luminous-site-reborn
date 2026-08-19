@@ -84,7 +84,7 @@ function SolucoesWebPage() {
       <section className="py-24 bg-surface/30">
         <div className="container mx-auto px-4 md:px-6">
           <SectionHeading
-            subtitle="O que entregamos"
+            eyebrow="O que entregamos"
             title="Especialidades em Desenvolvimento Web"
             description="Desde sites institucionais a sistemas complexos de gestão, temos o stack tecnológico ideal para o seu desafio."
           />
@@ -158,7 +158,7 @@ function SolucoesWebPage() {
           <div className="flex flex-col md:flex-row items-end justify-between gap-6 mb-12">
             <SectionHeading
               align="left"
-              subtitle="Casos de Uso"
+              eyebrow="Casos de Uso"
               title={<>Onde nossas <span className="text-gradient">soluções</span> se aplicam</>}
               description="Cenários reais onde a tecnologia NC Brasil transforma negócios e otimiza operações."
               className="max-w-2xl mb-0"
@@ -292,7 +292,7 @@ function SolucoesWebPage() {
       <section className="py-24">
         <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <SectionHeading
-            subtitle="FAQ"
+            eyebrow="FAQ"
             title="Dúvidas Frequentes"
             description="Tudo o que você precisa saber sobre como trabalhamos."
           />

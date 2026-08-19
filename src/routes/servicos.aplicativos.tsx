@@ -29,7 +29,7 @@ export const Route = createFileRoute("/servicos/aplicativos")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/aplicativos", label: "Aplicativos" }]}
-      subtitle="Mobile Apps"
+      eyebrow="Mobile Apps"
       h1={<>Aplicativos <span className="text-gradient">iOS e Android</span> que encantam</>}
       intro={<>Do MVP ao app com milhões de downloads — construímos apps **nativos e cross-platform** com UX premium, performance nativa e publicação nas lojas.</>}
       stats={[{ value: "200+", label: "Apps publicados" }, { value: "10Mi+", label: "Downloads acumulados" }, { value: "4,8⭐", label: "Nota média nas lojas" }, { value: "iOS+Android", label: "Nativo ou cross" }]}

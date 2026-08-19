@@ -28,7 +28,7 @@ export const Route = createFileRoute("/portfolio/sistemas-criados")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/trabalhos-realizados", label: "Portfólio" }, { to: "/portfolio/sistemas-criados", label: "Sistemas Criados" }]}
-      subtitle="Portfólio Sistemas"
+      eyebrow="Portfólio Sistemas"
       h1={<>Sistemas que <span className="text-gradient">operam 24/7 sem falhar</span></>}
       intro={<>**Mais de 400 sistemas ativos** em produção: ERPs, CRMs, portais corporativos e plataformas SaaS multi-tenant com uptime 99,9%.</>}
       stats={[{ value: "400+", label: "Sistemas ativos" }, { value: "99,9%", label: "SLA" }, { value: "Multi-tenant", label: "Arquitetura" }, { value: "24/7", label: "Suporte" }]}

@@ -28,7 +28,7 @@ export const Route = createFileRoute("/empresa/clientes")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/empresa", label: "Empresa" }, { to: "/empresa/clientes", label: "Clientes" }]}
-      subtitle="Nossos clientes"
+      eyebrow="Nossos clientes"
       h1={<>Marcas que <span className="text-gradient">confiam na NC Brasil</span></>}
       intro={<>De **startups em pré-seed a grandes corporações**, mais de 800 marcas ativas escolhem a NC Brasil como parceira estratégica de tecnologia e marketing.</>}
       stats={[{ value: "800+", label: "Clientes ativos" }, { value: "1.500+", label: "Projetos entregues" }, { value: "80%", label: "Retenção +3 anos" }, { value: "4,9⭐", label: "Satisfação" }]}

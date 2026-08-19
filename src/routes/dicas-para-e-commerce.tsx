@@ -12,7 +12,7 @@ export const Route = createFileRoute("/dicas-para-e-commerce")({
   }),
   component: () => (
     <StubPage
-      subtitle="Blog · E-commerce"
+      eyebrow="Blog · E-commerce"
       title={<>Dicas para <span className="text-gradient">E-Commerce</span></>}
       description={<>O que separa lojas virtuais que <strong className="text-foreground">vendem</strong> das que apenas <strong className="text-foreground">existem</strong>.</>}
     />

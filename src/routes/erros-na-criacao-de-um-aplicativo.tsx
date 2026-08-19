@@ -12,7 +12,7 @@ export const Route = createFileRoute("/erros-na-criacao-de-um-aplicativo")({
   }),
   component: () => (
     <StubPage
-      subtitle="Blog · Mobile"
+      eyebrow="Blog · Mobile"
       title={<>Erros na criação de um <span className="text-gradient">Aplicativo</span></>}
       description={<>O que separa apps que <strong className="text-foreground">engajam</strong> dos que são <strong className="text-foreground">desinstalados</strong> em 7 dias.</>}
     />

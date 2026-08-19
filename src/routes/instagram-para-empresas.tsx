@@ -12,7 +12,7 @@ export const Route = createFileRoute("/instagram-para-empresas")({
   }),
   component: () => (
     <StubPage
-      subtitle="Blog · Marketing"
+      eyebrow="Blog · Marketing"
       title={<>Instagram para <span className="text-gradient">Empresas</span></>}
       description={<>Como transformar o Instagram em uma <strong className="text-foreground">máquina de leads</strong> para o seu negócio.</>}
     />

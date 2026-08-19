@@ -15,7 +15,7 @@ export const Route = createFileRoute("/trabalhos-realizados")({
   }),
   component: () => (
     <StubPage
-      subtitle="Trabalhos Realizados"
+      eyebrow="Trabalhos Realizados"
       title={<>Mais de <span className="text-gradient">745 projetos</span> no ar</>}
       description={<>Conheça <strong className="text-foreground">cases reais</strong> de sites, sistemas, lojas e aplicativos que entregamos.</>}
       highlights={[

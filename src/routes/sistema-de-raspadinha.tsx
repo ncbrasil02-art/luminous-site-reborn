@@ -45,7 +45,7 @@ export const Route = createFileRoute("/sistema-de-raspadinha")({
         { to: "/nossos-sistemas", label: "Sistemas" },
         { to: "/sistema-de-raspadinha", label: "Sistema de Raspadinha" },
       ]}
-      subtitle="Instant Win · Raspadinha Valendo Pix · White Label"
+      eyebrow="Instant Win · Raspadinha Valendo Pix · White Label"
       h1={<>Sistema de <span className="text-gradient">Raspadinha Online</span> — Prêmio em Pix, RNG Auditável, App Próprio</>}
       intro={<>Plataforma <strong className="text-foreground">turnkey white label</strong> para operar <strong className="text-foreground">raspadinha online valendo Pix</strong> com <strong className="text-foreground">RNG certificado</strong>, animação canvas premium, controle de estoque de prêmios, KYC + antifraude e app iOS/Android publicado com sua marca. <strong className="text-foreground">Mais de 5 milhões de raspadinhas processadas</strong>, R$3 milhões em prêmios distribuídos e infraestrutura preparada para <strong className="text-foreground">milhares de jogadas por segundo</strong>. Sem % sobre GGR — <strong className="text-foreground">você é dono da operação</strong>.</>}
       stats={[

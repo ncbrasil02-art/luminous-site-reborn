@@ -12,7 +12,7 @@ export const Route = createFileRoute("/software")({
   }),
   component: () => (
     <StubPage
-      subtitle="Blog · Tecnologia"
+      eyebrow="Blog · Tecnologia"
       title={<>Software <span className="text-gradient">sob medida</span></>}
       description={<>Quando faz sentido desenvolver um <strong className="text-foreground">software customizado</strong> para sua operação.</>}
     />

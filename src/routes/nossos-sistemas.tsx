@@ -54,7 +54,7 @@ function SistemasHub() {
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />
         <div className="mx-auto max-w-5xl px-4 text-center md:px-6">
           <SectionHeading
-            subtitle="Engenharia de Elite"
+            eyebrow="Engenharia de Elite"
             title={<>Nossos <span className="text-gradient">Sistemas</span> Web</>}
             description={<><strong className="text-foreground">10 plataformas robustas</strong>, testadas em produção, prontas para escalar seu negócio ou serem 100% personalizadas.</>}
           />

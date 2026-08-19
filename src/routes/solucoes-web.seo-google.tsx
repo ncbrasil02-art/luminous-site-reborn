@@ -29,7 +29,7 @@ export const Route = createFileRoute("/solucoes-web/seo-google")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/seo-google", label: "SEO Google" }]}
-      subtitle="SEO Profissional"
+      eyebrow="SEO Profissional"
       h1={<>Chegue à <span className="text-gradient">primeira página do Google</span> com SEO técnico</>}
       intro={<>Auditoria técnica completa, **otimização on-page, link building white-hat e conteúdo estratégico** para dominar as palavras-chave do seu mercado.</>}
       stats={[{ value: "+340%", label: "Tráfego orgânico" }, { value: "Top 3", label: "Rankings alcançados" }, { value: "500+", label: "Palavras-chave" }, { value: "12 meses", label: "Resultado consistente" }]}

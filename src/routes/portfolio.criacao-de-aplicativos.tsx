@@ -159,7 +159,7 @@ export const Route = createFileRoute("/portfolio/criacao-de-aplicativos")({
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            subtitle="Nossos Diferenciais"
+            eyebrow="Nossos Diferenciais"
             title={
               <>Tecnologia que <span className="text-gradient">conecta</span> sua empresa ao futuro</>
             }

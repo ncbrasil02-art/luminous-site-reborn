@@ -29,7 +29,7 @@ export const Route = createFileRoute("/servicos/sistemas-web")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/sistemas-web", label: "Sistemas Web" }]}
-      subtitle="Sistemas Web"
+      eyebrow="Sistemas Web"
       h1={<>Sistemas web <span className="text-gradient">sob medida</span> para gestão e operação</>}
       intro={<>Do **ERP ao CRM, do portal do cliente ao SaaS multi-tenant** — construímos sistemas web que automatizam processos e escalam com seu negócio.</>}
       stats={[{ value: "400+", label: "Sistemas ativos" }, { value: "Multi-tenant", label: "Arquitetura" }, { value: "99,9%", label: "SLA" }, { value: "24/7", label: "Suporte" }]}

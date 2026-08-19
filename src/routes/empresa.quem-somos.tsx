@@ -28,7 +28,7 @@ export const Route = createFileRoute("/empresa/quem-somos")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/empresa", label: "Empresa" }, { to: "/empresa/quem-somos", label: "Quem Somos" }]}
-      subtitle="Sobre nós"
+      eyebrow="Sobre nós"
       h1={<>Somos uma <span className="text-gradient">agência de engenharia</span> apaixonada por resultado</>}
       intro={<>Há **20 anos** transformando negócios com **tecnologia sob medida, marketing digital e design**. Somos um time enxuto e sênior — sem intermediários, com foco absoluto em ROI.</>}
       stats={[{ value: "20 anos", label: "De mercado" }, { value: "1.500+", label: "Projetos entregues" }, { value: "50+", label: "Especialistas" }, { value: "12", label: "Estados atendidos" }]}

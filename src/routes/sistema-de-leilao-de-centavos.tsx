@@ -29,7 +29,7 @@ export const Route = createFileRoute("/sistema-de-leilao-de-centavos")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-leilao-de-centavos", label: "Leilão de Centavos" }]}
-      subtitle="Penny Auction"
+      eyebrow="Penny Auction"
       h1={<>Plataforma de <span className="text-gradient">Leilão de Centavos</span></>}
       intro={<>Sistema turnkey para operar leilões de centavos ao estilo <strong className="text-foreground">MadBid / QuiBids</strong>: pacotes de créditos, lances por 1 centavo, timer regressivo e entrega automatizada de prêmios.</>}
       stats={[{ value: "500K+", label: "Lances/mês" }, { value: "R$2Mi", label: "Prêmios entregues" }, { value: "97%", label: "Retenção 30d" }, { value: "1s", label: "Latência de lance" }]}

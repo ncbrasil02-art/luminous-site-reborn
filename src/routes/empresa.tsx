@@ -163,7 +163,7 @@ function EmpresaPage() {
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            subtitle="Nossos valores"
+            eyebrow="Nossos valores"
             title={
               <>
                 O que <span className="text-gradient">nos move</span> todos os dias
@@ -191,7 +191,7 @@ function EmpresaPage() {
         <div className="absolute inset-0 grid-pattern opacity-30" aria-hidden />
         <div className="relative mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            subtitle="Nosso time"
+            eyebrow="Nosso time"
             title={
               <>
                 Profissionais experientes em <span className="text-gradient">cada cena</span>

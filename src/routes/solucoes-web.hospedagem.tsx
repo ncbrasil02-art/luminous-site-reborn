@@ -29,7 +29,7 @@ export const Route = createFileRoute("/solucoes-web/hospedagem")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/hospedagem", label: "Hospedagem" }]}
-      subtitle="Infra Cloud"
+      eyebrow="Infra Cloud"
       h1={<>Hospedagem <span className="text-gradient">cloud gerenciada</span> para quem não pode parar</>}
       intro={<>Infraestrutura em **AWS, Google Cloud e Cloudflare** com uptime 99,9%, SSL grátis, backup diário e monitoramento 24/7. Foque no seu negócio — nós cuidamos da tecnologia.</>}
       stats={[{ value: "99,9%", label: "Uptime garantido" }, { value: "24/7", label: "Suporte técnico" }, { value: "<50ms", label: "Latência Brasil" }, { value: "SSL", label: "Grátis Let's Encrypt" }]}

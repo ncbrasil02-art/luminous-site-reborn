@@ -29,7 +29,7 @@ export const Route = createFileRoute("/solucoes-web/landing-pages")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/landing-pages", label: "Landing Pages" }]}
-      subtitle="LPs de Conversão"
+      eyebrow="LPs de Conversão"
       h1={<>Landing Pages que <span className="text-gradient">convertem visitantes em clientes</span></>}
       intro={<>Páginas de captação com **copywriting persuasivo, prova social e CTAs testados** — feitas para maximizar o ROI do seu tráfego pago.</>}
       stats={[{ value: "500+", label: "LPs entregues" }, { value: "12%", label: "Conversão média" }, { value: "72h", label: "Entrega expressa" }, { value: "A/B", label: "Testes inclusos" }]}

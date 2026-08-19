@@ -28,7 +28,7 @@ export const Route = createFileRoute("/empresa/nossa-historia")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/empresa", label: "Empresa" }, { to: "/empresa/nossa-historia", label: "Nossa História" }]}
-      subtitle="Nossa jornada"
+      eyebrow="Nossa jornada"
       h1={<>Duas décadas <span className="text-gradient">construindo o futuro digital</span> do Brasil</>}
       intro={<>Da fundação em **2005** aos dias atuais, cada marco da NC Brasil foi construído com **suor de engenharia, criatividade e parceria** com nossos clientes.</>}
       stats={[{ value: "2005", label: "Ano de fundação" }, { value: "1.500+", label: "Projetos" }, { value: "50+", label: "Colaboradores" }, { value: "R$ 500Mi", label: "GMV gerado" }]}

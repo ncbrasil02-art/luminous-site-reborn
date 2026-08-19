@@ -29,7 +29,7 @@ export const Route = createFileRoute("/sistema-de-cupom-descontos")({
   component: () => (
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-cupom-descontos", label: "Cupons & Cashback" }]}
-      subtitle="Cupons & Cashback"
+      eyebrow="Cupons & Cashback"
       h1={<>Plataforma de <span className="text-gradient">Cupons e Cashback</span></>}
       intro={<>Crie a próxima <strong className="text-foreground">Cuponomia ou Méliuz</strong>: plataforma completa para gerar tráfego, engajar clientes e comissionar sobre vendas com <strong className="text-foreground">cupons, cashback e ofertas exclusivas</strong>.</>}
       stats={[{ value: "10M+", label: "Cupons resgatados" }, { value: "500+", label: "Lojas parceiras" }, { value: "R$8Mi", label: "Cashback pago" }, { value: "4.8⭐", label: "App Store" }]}

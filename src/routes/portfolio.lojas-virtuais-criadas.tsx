@@ -151,7 +151,7 @@ export const Route = createFileRoute("/portfolio/lojas-virtuais-criadas")({
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            subtitle="Recursos Premium"
+            eyebrow="Recursos Premium"
             title={
               <>Engenharia focada em <span className="text-gradient">vendas</span></>
             }

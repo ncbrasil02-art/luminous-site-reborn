@@ -45,7 +45,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         { to: "/nossos-sistemas", label: "Sistemas" },
         { to: "/sistema-de-rifas", label: "Sistema de Rifas" },
       ]}
-      subtitle="Rifas Online · Legalizadas · Pix Instantâneo"
+      eyebrow="Rifas Online · Legalizadas · Pix Instantâneo"
       h1={<>Sistema para <span className="text-gradient">Criar Rifa Online</span> — Legalizado, Escalável e Sem Taxa por Cota</>}
       intro={<>Plataforma <strong className="text-foreground">turnkey</strong> para você <strong className="text-foreground">criar rifa online legalizada</strong> com sorteio pela <strong className="text-foreground">Loteria Federal</strong>, cotas de R$0,10 a R$1.000, <strong className="text-foreground">Pix em segundos</strong>, aplicativo iOS/Android e painel completo. <strong className="text-foreground">15 anos de mercado</strong>, mais de <strong className="text-foreground">50 milhões de cotas vendidas</strong> e clientes que faturam <strong className="text-foreground">R$500k por rifa</strong>. Diferente de Rifei, Rifana e Rifafy: <strong className="text-foreground">licença própria, sem % sobre vendas — você fica com 100% da arrecadação</strong>.</>}
       stats={[

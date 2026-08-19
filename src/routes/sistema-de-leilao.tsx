@@ -46,7 +46,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         { to: "/nossos-sistemas", label: "Sistemas" },
         { to: "/sistema-de-leilao", label: "Sistema de Leilão" },
       ]}
-      subtitle="Sistema de Leilão"
+      eyebrow="Sistema de Leilão"
       h1={<>Plataforma para <span className="text-gradient">Leilões Online</span> homologada em 27 Tribunais de Justiça</>}
       intro={<>Sistema profissional para <strong className="text-foreground">leiloeiros oficiais</strong>, tribunais, bancos e cooperativas — usado por casas como <a href="https://www.ativeiloes.com.br" target="_blank" rel="noopener" className="text-primary underline underline-offset-4 hover:text-primary-glow">Ativ Leilões</a>. Realize <strong className="text-foreground">pregão eletrônico simultâneo</strong> (online + presencial) para leilões <strong className="text-foreground">judiciais (CPC art. 879–903)</strong>, <strong className="text-foreground">extrajudiciais (Decreto 21.981/32)</strong>, Detran, restritos e venda direta — com <strong className="text-foreground">plataforma própria, sem aluguel mensal e 0% de taxa por lance</strong>.</>}
       stats={[
