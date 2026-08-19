@@ -104,7 +104,11 @@ export function buildMeta(options: MetaOptions) {
 
   return {
     meta,
-    links: [{ rel: "canonical", href: canonical || SITE_URL }],
+    links: [
+      { rel: "canonical", href: canonical || SITE_URL },
+      { rel: "alternate", hrefLang: "pt-BR", href: canonical || SITE_URL },
+      { rel: "alternate", hrefLang: "x-default", href: canonical || SITE_URL },
+    ],
     scripts,
   };
 }
