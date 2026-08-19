@@ -103,6 +103,7 @@ export const Route = createRootRoute({
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#0a1428" },
       { name: "author", content: "NC Brasil" },
+      { name: "google-site-verification", content: "verification_id_from_old_site_if_found" }, // Note: No specific ID found in current crawl, but structure is ready
       {
         name: "robots",
         content: "index, follow, max-image-preview:large, max-snippet:-1",
