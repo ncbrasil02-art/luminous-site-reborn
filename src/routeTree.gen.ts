@@ -65,6 +65,7 @@ import { Route as EmpresaNossaHistoriaRouteImport } from './routes/empresa.nossa
 import { Route as EmpresaClientesRouteImport } from './routes/empresa.clientes'
 import { Route as NoticiasTagTagRouteImport } from './routes/noticias.tag.$tag'
 import { Route as NoticiasCategoriaCategoryRouteImport } from './routes/noticias.categoria.$category'
+import { Route as ApiPublicSitemapXmlRouteImport } from './routes/api.public.sitemap.xml'
 import { Route as ApiPublicRssXmlRouteImport } from './routes/api.public.rss.xml'
 
 const TrabalhosRealizadosRoute = TrabalhosRealizadosRouteImport.update({
@@ -371,6 +372,11 @@ const NoticiasCategoriaCategoryRoute =
     path: '/noticias/categoria/$category',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ApiPublicSitemapXmlRoute = ApiPublicSitemapXmlRouteImport.update({
+  id: '/api/public/sitemap/xml',
+  path: '/api/public/sitemap/xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicRssXmlRoute = ApiPublicRssXmlRouteImport.update({
   id: '/api/public/rss/xml',
   path: '/api/public/rss/xml',
@@ -435,6 +441,7 @@ export interface FileRoutesByFullPath {
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
   '/api/public/rss/xml': typeof ApiPublicRssXmlRoute
+  '/api/public/sitemap/xml': typeof ApiPublicSitemapXmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -494,6 +501,7 @@ export interface FileRoutesByTo {
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
   '/api/public/rss/xml': typeof ApiPublicRssXmlRoute
+  '/api/public/sitemap/xml': typeof ApiPublicSitemapXmlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -554,6 +562,7 @@ export interface FileRoutesById {
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
   '/noticias/tag/$tag': typeof NoticiasTagTagRoute
   '/api/public/rss/xml': typeof ApiPublicRssXmlRoute
+  '/api/public/sitemap/xml': typeof ApiPublicSitemapXmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -615,6 +624,7 @@ export interface FileRouteTypes {
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
     | '/api/public/rss/xml'
+    | '/api/public/sitemap/xml'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -674,6 +684,7 @@ export interface FileRouteTypes {
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
     | '/api/public/rss/xml'
+    | '/api/public/sitemap/xml'
   id:
     | '__root__'
     | '/'
@@ -733,6 +744,7 @@ export interface FileRouteTypes {
     | '/noticias/categoria/$category'
     | '/noticias/tag/$tag'
     | '/api/public/rss/xml'
+    | '/api/public/sitemap/xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -784,6 +796,7 @@ export interface RootRouteChildren {
   NoticiasCategoriaCategoryRoute: typeof NoticiasCategoriaCategoryRoute
   NoticiasTagTagRoute: typeof NoticiasTagTagRoute
   ApiPublicRssXmlRoute: typeof ApiPublicRssXmlRoute
+  ApiPublicSitemapXmlRoute: typeof ApiPublicSitemapXmlRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -1180,6 +1193,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NoticiasCategoriaCategoryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/sitemap/xml': {
+      id: '/api/public/sitemap/xml'
+      path: '/api/public/sitemap/xml'
+      fullPath: '/api/public/sitemap/xml'
+      preLoaderRoute: typeof ApiPublicSitemapXmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/rss/xml': {
       id: '/api/public/rss/xml'
       path: '/api/public/rss/xml'
@@ -1281,6 +1301,7 @@ const rootRouteChildren: RootRouteChildren = {
   NoticiasCategoriaCategoryRoute: NoticiasCategoriaCategoryRoute,
   NoticiasTagTagRoute: NoticiasTagTagRoute,
   ApiPublicRssXmlRoute: ApiPublicRssXmlRoute,
+  ApiPublicSitemapXmlRoute: ApiPublicSitemapXmlRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
