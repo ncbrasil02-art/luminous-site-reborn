@@ -19,9 +19,9 @@ export const Route = createFileRoute("/empresa/clientes")({
     canonical: URL,
     h1: "Marcas que Confiam na NC Brasil",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Empresa", url: "https://www.ncbrasil.com.br/empresa" },
-      { name: "Clientes", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Empresa", to: "https://www.ncbrasil.com.br/empresa" },
+      { label: "Clientes", to: URL },
     ],
     faq: lpFaq,
   }),

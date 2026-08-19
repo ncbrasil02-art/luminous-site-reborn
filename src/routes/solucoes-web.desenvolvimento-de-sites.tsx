@@ -20,9 +20,9 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
     canonical: URL,
     h1: "Desenvolvimento de Sites Profissionais",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
-      { name: "Desenvolvimento de Sites", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
+      { label: "Desenvolvimento de Sites", to: URL },
     ],
     faq: lpFaq,
   }),

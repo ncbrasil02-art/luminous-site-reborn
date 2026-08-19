@@ -20,9 +20,9 @@ export const Route = createFileRoute("/sistema-de-cupom-descontos")({
     canonical: URL,
     h1: "Plataforma de Cupons e Cashback",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Sistema de Cupom", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Sistema de Cupom", to: URL },
     ],
     faq: lpFaq,
   }),

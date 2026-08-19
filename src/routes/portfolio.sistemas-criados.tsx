@@ -19,9 +19,9 @@ export const Route = createFileRoute("/portfolio/sistemas-criados")({
     canonical: URL,
     h1: "Portfólio de Sistemas Web Desenvolvidos",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Portfólio", url: "https://www.ncbrasil.com.br/trabalhos-realizados" },
-      { name: "Sistemas Criados", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Portfólio", to: "https://www.ncbrasil.com.br/trabalhos-realizados" },
+      { label: "Sistemas Criados", to: URL },
     ],
     faq: lpFaq,
   }),

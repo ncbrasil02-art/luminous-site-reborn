@@ -20,9 +20,9 @@ export const Route = createFileRoute("/servicos/identidade-visual")({
     canonical: URL,
     h1: "Identidade Visual e Branding Estratégico",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Serviços", url: "https://www.ncbrasil.com.br/servicos" },
-      { name: "Identidade Visual", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
+      { label: "Identidade Visual", to: URL },
     ],
     faq: lpFaq,
   }),
