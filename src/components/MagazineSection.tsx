@@ -58,6 +58,9 @@ export function MagazineSection() {
                   <img 
                     src={featured.image_url} 
                     alt={featured.title} 
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 1024px) 100vw, 66vw"
                     className="h-full w-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110" 
                   />
                 ) : (
@@ -106,6 +109,9 @@ export function MagazineSection() {
                       <img 
                         src={news.image_url} 
                         alt={news.title} 
+                        loading="lazy"
+                        decoding="async"
+                        sizes="(max-width: 768px) 30vw, 15vw"
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
                       />
                     ) : (
