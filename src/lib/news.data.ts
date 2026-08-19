@@ -871,7 +871,7 @@ export const newsData: NewsPost[] = [
       "Sistemas únicos",
       "webdesign"
     ],
-    "image_url": null,
+    "image_url": "/news/sistema.jpg",
     "thumb_id": "50555"
   },
   {
@@ -1595,7 +1595,7 @@ export const newsData: NewsPost[] = [
       "Erros de E-commerce",
       "Web Designer"
     ],
-    "image_url": null,
+    "image_url": "/news/4.jpg",
     "thumb_id": "49789"
   },
   {
