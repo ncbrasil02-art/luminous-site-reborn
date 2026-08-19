@@ -20,9 +20,9 @@ export const Route = createFileRoute("/solucoes-web/loja-virtual")({
     canonical: URL,
     h1: "Criação de Loja Virtual Profissional",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
-      { name: "Loja Virtual", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
+      { label: "Loja Virtual", to: URL },
     ],
     faq: lpFaq,
   }),

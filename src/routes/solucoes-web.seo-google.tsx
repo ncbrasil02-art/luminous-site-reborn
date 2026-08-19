@@ -20,9 +20,9 @@ export const Route = createFileRoute("/solucoes-web/seo-google")({
     canonical: URL,
     h1: "SEO Google — Da Estratégia ao Topo do Ranking",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
-      { name: "SEO Google", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
+      { label: "SEO Google", to: URL },
     ],
     faq: lpFaq,
   }),

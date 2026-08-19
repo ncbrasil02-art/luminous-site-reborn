@@ -20,9 +20,9 @@ export const Route = createFileRoute("/sistema-de-leilao-de-centavos")({
     canonical: URL,
     h1: "Plataforma Completa para Leilão de Centavos",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Leilão de Centavos", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Leilão de Centavos", to: URL },
     ],
     faq: lpFaq,
   }),

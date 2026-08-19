@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { newsData } from "@/lib/news.data";
 import { NewsDisplay } from "./NewsDisplay";
 import { trackRedirect } from "@/lib/analytics";
+import { buildMeta } from "@/lib/seo";
 import {
   ArrowRight,
   Check,
@@ -27,7 +28,7 @@ export type LPTestimonial = { quote: string; author: string; role: string };
 export type LPBreadcrumb = { to: string; label: string };
 export type LPModule = { icon: LucideIcon; title: string; items: string[] };
 export type LPUseCase = { icon: LucideIcon; title: string; desc: string };
-export type LPIntegration = { name: string; category?: string };
+export type LPIntegration = { label: string; category?: string };
 export type LPSecurityItem = { icon: LucideIcon; title: string; desc: string };
 export type LPTimelineStep = { step: string; title: string; desc: string };
 export type LPCompareRow = { feature: string; us: boolean | string; them: boolean | string };
@@ -70,6 +71,24 @@ export type LandingPageProps = {
   finalCtaDesc?: React.ReactNode;
   relatedNewsTags?: string[]; // New prop for related news
 };
+
+export function buildLPMeta(options: {
+  title: string;
+  description: string;
+  keywords: string;
+  canonical: string;
+  h1: string;
+  breadcrumbs?: { label: string; to: string }[];
+  faq?: LPFaq[];
+  ogImage?: string;
+}) {
+  return buildMeta({
+    ...options,
+    ogType: "website",
+    faq: options.faq?.map((f) => ({ q: f.q, a: f.a })),
+    breadcrumbs: options.breadcrumbs?.map((b) => ({ name: b.label, url: b.to })),
+  });
+}
 
 function renderBold(text: string) {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
@@ -412,9 +431,9 @@ export function LandingPage({
             />
             <div className="mt-12 flex flex-wrap justify-center gap-3">
               {integrations.map((it, i) => (
-                <Reveal key={it.name} delay={i * 0.02}>
+                <Reveal key={it.label} delay={i * 0.02}>
                   <div className="rounded-full border border-border bg-card/60 px-5 py-2.5 text-sm font-medium backdrop-blur transition-all hover:border-primary/50 hover:text-primary">
-                    {it.name}
+                    {it.label}
                     {it.category && <span className="ml-2 text-xs text-muted-foreground">· {it.category}</span>}
                   </div>
                 </Reveal>
@@ -672,34 +691,3 @@ export function LandingPage({
   );
 }
 
-import { buildMeta } from "@/lib/seo";
-
-export function buildLPMeta({
-  title,
-  description,
-  keywords,
-  canonical,
-  h1,
-  breadcrumbs,
-  faq,
-  ogImage,
-}: {
-  title: string;
-  description: string;
-  keywords: string;
-  canonical: string;
-  h1: string;
-  breadcrumbs: { name: string; url: string }[];
-  faq?: { q: string; a: string }[];
-  ogImage?: string;
-}) {
-  return buildMeta({
-    title,
-    description,
-    keywords,
-    canonical,
-    ogImage,
-    faq,
-    breadcrumbs,
-  });
-}

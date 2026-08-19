@@ -57,6 +57,7 @@ export const Route = createFileRoute("/nossos-servicos")({
     description: "Conheça os serviços da NC Brasil: criação de sites, sistemas web, lojas virtuais, aplicativos mobile, identidade visual e marketing digital.",
     keywords: "serviços de tecnologia, criação de sites, marketing digital, agência web SP RJ",
     canonical: URL,
+    faq: services.map(s => ({ q: `O que é ${s.title}?`, a: s.description })),
   }),
   component: () => (
     <div className="pt-20">

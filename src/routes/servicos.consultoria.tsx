@@ -20,9 +20,9 @@ export const Route = createFileRoute("/servicos/consultoria")({
     canonical: URL,
     h1: "Consultoria em Tecnologia e Marketing Digital",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Serviços", url: "https://www.ncbrasil.com.br/servicos" },
-      { name: "Consultoria", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
+      { label: "Consultoria", to: URL },
     ],
     faq: lpFaq,
   }),

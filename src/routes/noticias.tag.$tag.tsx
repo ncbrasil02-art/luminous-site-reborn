@@ -15,7 +15,7 @@ export const Route = createFileRoute('/noticias/tag/$tag')({
   head: ({ loaderData }) => ({
     meta: [
       { title: `Tag: ${loaderData?.tag || 'Notícias'} · NC Brasil` },
-      { name: 'description', content: `Explore conteúdos marcados com a tag "${loaderData?.tag}" na revista digital da NC Brasil.` },
+      { label: 'description', content: `Explore conteúdos marcados com a tag "${loaderData?.tag}" na revista digital da NC Brasil.` },
       { property: 'og:title', content: `Tag: ${loaderData?.tag} · NC Brasil` },
       { property: 'og:type', content: 'website' },
     ],

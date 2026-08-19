@@ -20,9 +20,9 @@ export const Route = createFileRoute("/sistema-de-ofertas-cupom-marketplace")({
     canonical: URL,
     h1: "Plataforma de Marketplace de Ofertas",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { name: "Marketplace de Ofertas", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Marketplace de Ofertas", to: URL },
     ],
     faq: lpFaq,
   }),

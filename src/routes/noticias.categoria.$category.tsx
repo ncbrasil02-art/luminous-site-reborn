@@ -15,7 +15,7 @@ export const Route = createFileRoute('/noticias/categoria/$category')({
   head: ({ loaderData }) => ({
     meta: [
       { title: `Categoria: ${loaderData?.category || 'Notícias'} · NC Brasil` },
-      { name: 'description', content: `Veja todas as notícias e artigos na categoria ${loaderData?.category} da NC Brasil.` },
+      { label: 'description', content: `Veja todas as notícias e artigos na categoria ${loaderData?.category} da NC Brasil.` },
       { property: 'og:title', content: `Categoria: ${loaderData?.category} · NC Brasil` },
       { property: 'og:type', content: 'website' },
     ],

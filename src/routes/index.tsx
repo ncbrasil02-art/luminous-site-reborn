@@ -28,8 +28,8 @@ const OG_IMAGE = `/og-home.jpg`;
 const homeJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "NC Brasil — Criação de Sites, Sistemas Web e Aplicativos",
-  url: SITE_URL,
+  label: "NC Brasil — Criação de Sites, Sistemas Web e Aplicativos",
+  to: SITE_URL,
   image: `${SITE_URL}${OG_IMAGE}`,
   description:
     "Empresa de criação de sites profissionais, sistemas web, lojas virtuais, aplicativos mobile e marketing digital em São Paulo e Rio de Janeiro.",

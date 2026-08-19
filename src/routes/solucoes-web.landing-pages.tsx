@@ -20,9 +20,9 @@ export const Route = createFileRoute("/solucoes-web/landing-pages")({
     canonical: URL,
     h1: "Landing Pages de Alta Conversão",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
-      { name: "Landing Pages", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
+      { label: "Landing Pages", to: URL },
     ],
     faq: lpFaq,
   }),

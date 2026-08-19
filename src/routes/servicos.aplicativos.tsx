@@ -20,9 +20,9 @@ export const Route = createFileRoute("/servicos/aplicativos")({
     canonical: URL,
     h1: "Desenvolvimento de Aplicativos iOS e Android",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Serviços", url: "https://www.ncbrasil.com.br/servicos" },
-      { name: "Aplicativos", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
+      { label: "Aplicativos", to: URL },
     ],
     faq: lpFaq,
   }),

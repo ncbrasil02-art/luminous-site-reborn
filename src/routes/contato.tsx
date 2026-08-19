@@ -27,6 +27,10 @@ export const Route = createFileRoute("/contato")({
     description: "Entre em contato com a NC Brasil. Tire dúvidas, agende uma reunião ou solicite um diagnóstico para seu projeto. Atendimento especializado em São Paulo e Rio de Janeiro.",
     keywords: "contato NC Brasil, agência web SP, agência RJ, telefone NC Brasil, agendar reunião desenvolvimento, suporte técnico NC Brasil, orçamento tecnologia",
     canonical: `${SITE_URL}/contato`,
+    faq: [
+      { q: "Como entrar em contato com a NC Brasil?", a: "Você pode nos contatar via formulário no site, e-mail (contato@ncbrasil.com.br), telefone ou WhatsApp comercial direto." },
+      { q: "Qual o horário de atendimento?", a: "Atendemos de segunda a sexta, das 9h às 18h. Sábados sob agendamento." }
+    ]
   }),
   component: ContatoPage,
 });

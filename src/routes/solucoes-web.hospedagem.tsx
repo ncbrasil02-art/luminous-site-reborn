@@ -20,9 +20,9 @@ export const Route = createFileRoute("/solucoes-web/hospedagem")({
     canonical: URL,
     h1: "Hospedagem Cloud Gerenciada de Alta Performance",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
-      { name: "Hospedagem", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
+      { label: "Hospedagem", to: URL },
     ],
     faq: lpFaq,
   }),
