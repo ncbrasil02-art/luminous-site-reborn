@@ -7,6 +7,7 @@ export interface NewsPost {
   categories: string[];
   tags: string[];
   image_url: string | null;
+  thumb_id: string | null;
 }
 
 export const newsData: NewsPost[] = [
