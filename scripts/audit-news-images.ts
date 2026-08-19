@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { newsData } from './src/lib/news.data';
+import { newsData } from '../src/lib/news.data';
 
 const PUBLIC_NEWS_DIR = path.join(process.cwd(), 'public', 'news');
 
