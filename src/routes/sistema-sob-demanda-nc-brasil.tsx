@@ -109,7 +109,7 @@ export const Route = createFileRoute("/sistema-sob-demanda-nc-brasil")({
               <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-card/50 p-2 backdrop-blur-sm shadow-2xl">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 via-transparent to-transparent opacity-50" />
                 <img 
-                  src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/m_11-3.png" 
+                  src="/news/m_11-3.png" 
                   alt="Desenvolvimento de Sistema Sob Demanda" 
                   className="aspect-[4/3] w-full rounded-2xl object-cover"
                 />
