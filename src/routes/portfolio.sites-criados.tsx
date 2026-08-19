@@ -19,19 +19,19 @@ export const Route = createFileRoute("/portfolio/sites-criados")({
     canonical: URL,
     h1: "Portfólio de Sites Criados pela NC Brasil",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Portfólio", to: "https://www.ncbrasil.com.br/trabalhos-realizados" },
-      { label: "Sites Criados", to: URL },
+      { name: "Home", to: "https://www.ncbrasil.com.br/" },
+      { name: "Portfólio", to: "https://www.ncbrasil.com.br/trabalhos-realizados" },
+      { name: "Sites Criados", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/trabalhos-realizados", label: "Portfólio" }, { to: "/portfolio/sites-criados", label: "Sites Criados" }]}
+      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/trabalhos-realizados", name: "Portfólio" }, { to: "/portfolio/sites-criados", name: "Sites Criados" }]}
       eyebrow="Portfólio Web"
       h1={<>Sites que <span className="text-gradient">encantam e convertem</span></>}
       intro={<>**Mais de 800 sites entregues** em 20 anos: institucionais, portais corporativos, landing pages e sites premiados com performance A+ no Google.</>}
-      stats={[{ value: "800+", label: "Sites entregues" }, { value: "98", label: "Score PageSpeed" }, { value: "20 anos", label: "De experiência" }, { value: "Top 3", label: "SEO médio" }]}
+      stats={[{ value: "800+", name: "Sites entregues" }, { value: "98", name: "Score PageSpeed" }, { value: "20 anos", name: "De experiência" }, { value: "Top 3", name: "SEO médio" }]}
       benefits={[
         { icon: Award, title: "Design Premiado", desc: "Layouts autorais reconhecidos por **Wave Festival, ADG e Behance Featured**." },
         { icon: Gauge, title: "Performance A+", desc: "**Core Web Vitals 100/100** em Lighthouse — sites que carregam em <2s." },

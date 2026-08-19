@@ -32,27 +32,27 @@ export const Route = createFileRoute("/sistema-de-rifas")({
     canonical: URL,
     h1: "Sistema de Rifas Online",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { label: "Sistema de Rifas", to: URL },
+      { name: "Home", to: "https://www.ncbrasil.com.br/" },
+      { name: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { name: "Sistema de Rifas", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
       breadcrumbs={[
-        { to: "/", label: "Home" },
-        { to: "/nossos-sistemas", label: "Sistemas" },
-        { to: "/sistema-de-rifas", label: "Sistema de Rifas" },
+        { to: "/", name: "Home" },
+        { to: "/nossos-sistemas", name: "Sistemas" },
+        { to: "/sistema-de-rifas", name: "Sistema de Rifas" },
       ]}
       eyebrow="Rifas Online · Legalizadas · Pix Instantâneo"
       h1={<>Sistema para <span className="text-gradient">Criar Rifa Online</span> — Legalizado, Escalável e Sem Taxa por Cota</>}
       intro={<>Plataforma <strong className="text-foreground">turnkey</strong> para você <strong className="text-foreground">criar rifa online legalizada</strong> com sorteio pela <strong className="text-foreground">Loteria Federal</strong>, cotas de R$0,10 a R$1.000, <strong className="text-foreground">Pix em segundos</strong>, aplicativo iOS/Android e painel completo. <strong className="text-foreground">15 anos de mercado</strong>, mais de <strong className="text-foreground">50 milhões de cotas vendidas</strong> e clientes que faturam <strong className="text-foreground">R$500k por rifa</strong>. Diferente de Rifei, Rifana e Rifafy: <strong className="text-foreground">licença própria, sem % sobre vendas — você fica com 100% da arrecadação</strong>.</>}
       stats={[
-        { value: "50Mi+", label: "Cotas vendidas" },
-        { value: "3.000+", label: "Rifas realizadas" },
-        { value: "R$500k", label: "Ticket médio por rifa" },
-        { value: "0%", label: "Taxa sobre vendas" },
+        { value: "50Mi+", name: "Cotas vendidas" },
+        { value: "3.000+", name: "Rifas realizadas" },
+        { value: "R$500k", name: "Ticket médio por rifa" },
+        { value: "0%", name: "Taxa sobre vendas" },
       ]}
       clients={["Ativ Rifas", "Rifa da Sorte BR", "Sorte Premiada", "Rifa Solidária", "Meu Prêmio", "GO Rifas", "Rifa VIP", "Sorteios Brasil"]}
       problem={{
@@ -174,22 +174,22 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         { icon: Rocket, title: "Startups & Marketplaces", desc: "Plataformas SaaS que querem entrar no **mercado de rifas white label** com marca própria." },
       ]}
       integrations={[
-        { label: "Mercado Pago", category: "Pix / Cartão" },
-        { label: "Pagar.me", category: "Pix / Split" },
-        { label: "Efí (Gerencianet)", category: "Pix" },
-        { label: "PagBank", category: "Pix / Cartão" },
-        { label: "Iugu", category: "Boleto / Split" },
-        { label: "Asaas", category: "Cobrança" },
-        { label: "WhatsApp Business", category: "Comunicação" },
-        { label: "Google Analytics 4", category: "Analytics" },
-        { label: "Meta Pixel", category: "Ads" },
-        { label: "TikTok Pixel", category: "Ads" },
-        { label: "Google Tag Manager", category: "Tags" },
-        { label: "Loteria Federal API", category: "Sorteio" },
-        { label: "Serpro/CPF", category: "KYC" },
-        { label: "Melhor Envio", category: "Logística" },
-        { label: "Correios", category: "Logística" },
-        { label: "Zendesk", category: "Suporte" },
+        { name: "Mercado Pago", category: "Pix / Cartão" },
+        { name: "Pagar.me", category: "Pix / Split" },
+        { name: "Efí (Gerencianet)", category: "Pix" },
+        { name: "PagBank", category: "Pix / Cartão" },
+        { name: "Iugu", category: "Boleto / Split" },
+        { name: "Asaas", category: "Cobrança" },
+        { name: "WhatsApp Business", category: "Comunicação" },
+        { name: "Google Analytics 4", category: "Analytics" },
+        { name: "Meta Pixel", category: "Ads" },
+        { name: "TikTok Pixel", category: "Ads" },
+        { name: "Google Tag Manager", category: "Tags" },
+        { name: "Loteria Federal API", category: "Sorteio" },
+        { name: "Serpro/CPF", category: "KYC" },
+        { name: "Melhor Envio", category: "Logística" },
+        { name: "Correios", category: "Logística" },
+        { name: "Zendesk", category: "Suporte" },
       ]}
       security={[
         { icon: Lock, title: "LGPD Compliant", desc: "**Consentimento granular, portabilidade de dados, DPO parceiro** e política de privacidade auditada." },

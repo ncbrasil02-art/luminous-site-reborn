@@ -12,7 +12,7 @@ const SITE_URL = "https://www.ncbrasil.com.br";
 const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  label: "NC Brasil — Sistemas & Marketing",
+  name: "NC Brasil — Sistemas & Marketing",
   to: SITE_URL,
   logo: `${SITE_URL}/favicon.ico`,
   sameAs: [
@@ -57,10 +57,10 @@ const orgJsonLd = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  label: "NC Brasil",
+  name: "NC Brasil",
   to: SITE_URL,
   inLanguage: "pt-BR",
-  publisher: { "@type": "Organization", label: "NC Brasil", to: SITE_URL },
+  publisher: { "@type": "Organization", name: "NC Brasil", to: SITE_URL },
   potentialAction: {
     "@type": "SearchAction",
     target: `${SITE_URL}/buscar?q={search_term_string}`,
@@ -100,20 +100,20 @@ export const Route = createRootRoute({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
-      { label: "viewport", content: "width=device-width, initial-scale=1" },
-      { label: "theme-color", content: "#0a1428" },
-      { label: "author", content: "NC Brasil" },
-      { label: "google-site-verification", content: "verification_id_from_old_site_if_found" }, // Note: No specific ID found in current crawl, but structure is ready
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "theme-color", content: "#0a1428" },
+      { name: "author", content: "NC Brasil" },
+      { name: "google-site-verification", content: "verification_id_from_old_site_if_found" }, // Note: No specific ID found in current crawl, but structure is ready
       {
-        label: "robots",
+        name: "robots",
         content: "index, follow, max-image-preview:large, max-snippet:-1",
       },
       { title: "NC Brasil — Sistemas Web, Sites & Marketing Digital" },
       { property: "og:site_name", content: "NC Brasil" },
-      { label: "description", content: "Desenvolvimento de sistemas web sob demanda, sites profissionais, apps e marketing digital. +800 clientes ativos em todo o Brasil." },
+      { name: "description", content: "Desenvolvimento de sistemas web sob demanda, sites profissionais, apps e marketing digital. +800 clientes ativos em todo o Brasil." },
       { property: "og:description", content: "Desenvolvimento de sistemas web sob demanda, sites profissionais, apps e marketing digital. +800 clientes ativos em todo o Brasil." },
-      { label: "twitter:description", content: "Desenvolvimento de sistemas web sob demanda, sites profissionais, apps e marketing digital. +800 clientes ativos em todo o Brasil." },
-      { label: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:description", content: "Desenvolvimento de sistemas web sob demanda, sites profissionais, apps e marketing digital. +800 clientes ativos em todo o Brasil." },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
     ],

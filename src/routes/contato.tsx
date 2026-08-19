@@ -193,7 +193,7 @@ function Field({
   type = "text",
   required,
 }: {
-  label: string;
+  name: string;
   value: string;
   onChange: (v: string) => void;
   type?: string;

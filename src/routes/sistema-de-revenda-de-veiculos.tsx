@@ -28,24 +28,24 @@ export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
     canonical: URL,
     h1: "Plataforma para Revenda de Veículos",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { label: "Revenda de Veículos", to: URL },
+      { name: "Home", to: "https://www.ncbrasil.com.br/" },
+      { name: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { name: "Revenda de Veículos", to: URL },
     ],
     faq: lpFaq,
     ogImage: "/og/revenda-veiculos.jpg",
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-revenda-de-veiculos", label: "Revenda de Veículos" }]}
+      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-sistemas", name: "Sistemas" }, { to: "/sistema-de-revenda-de-veiculos", name: "Revenda de Veículos" }]}
       eyebrow="ERP + Portal + CRM Automotivo"
       h1={<>ERP & Portal para <span className="text-gradient">Revenda de Veículos</span></>}
       intro={<>Solução <strong className="text-foreground">tudo-em-um</strong> para lojas de revenda que querem crescer: gestão completa de estoque, CRM com WhatsApp, simulador de financiamento, portal próprio com SEO e <strong className="text-foreground">publicação automática em Webmotors, iCarros, OLX e Mercado Livre</strong>. Menos retrabalho, mais leads, mais margem.</>}
       stats={[
-        { value: "800+", label: "Revendas ativas" },
-        { value: "150K", label: "Veículos gerenciados" },
-        { value: "40%", label: "Aumento em leads" },
-        { value: "R$0", label: "Setup inicial" },
+        { value: "800+", name: "Revendas ativas" },
+        { value: "150K", name: "Veículos gerenciados" },
+        { value: "40%", name: "Aumento em leads" },
+        { value: "R$0", name: "Setup inicial" },
       ]}
       clientsTitle={<>Revendas e concessionárias que <span className="text-gradient">confiam na NC Brasil</span></>}
       clients={["MegaCar", "AutoShow", "Revenda Premium", "CarPlus", "TopCar", "AutoBrasil", "Multimarcas SP", "Grupo Veículos MG"]}
@@ -102,20 +102,20 @@ export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
         { icon: Wrench, title: "Loja com Retífica/Reforma", desc: "Revenda que compra veículo para reformar e revender — controle de custos, prazos e OS integrada." },
       ]}
       integrations={[
-        { label: "Tabela FIPE", category: "Precificação" },
-        { label: "Webmotors XML", category: "Cross-post" },
-        { label: "iCarros XML", category: "Cross-post" },
-        { label: "OLX Autos", category: "Cross-post" },
-        { label: "MercadoLivre", category: "Cross-post" },
-        { label: "Facebook Marketplace", category: "Cross-post" },
-        { label: "BV Financeira", category: "Financiamento" },
-        { label: "Santander Auto", category: "Financiamento" },
-        { label: "Bradesco Finance", category: "Financiamento" },
-        { label: "DETRAN nacional", category: "Documentação" },
-        { label: "WhatsApp Business API", category: "Leads" },
-        { label: "Domínio Contábil", category: "Contabilidade" },
-        { label: "Google Analytics 4", category: "Analytics" },
-        { label: "Meta Ads / Google Ads", category: "Mídia" },
+        { name: "Tabela FIPE", category: "Precificação" },
+        { name: "Webmotors XML", category: "Cross-post" },
+        { name: "iCarros XML", category: "Cross-post" },
+        { name: "OLX Autos", category: "Cross-post" },
+        { name: "MercadoLivre", category: "Cross-post" },
+        { name: "Facebook Marketplace", category: "Cross-post" },
+        { name: "BV Financeira", category: "Financiamento" },
+        { name: "Santander Auto", category: "Financiamento" },
+        { name: "Bradesco Finance", category: "Financiamento" },
+        { name: "DETRAN nacional", category: "Documentação" },
+        { name: "WhatsApp Business API", category: "Leads" },
+        { name: "Domínio Contábil", category: "Contabilidade" },
+        { name: "Google Analytics 4", category: "Analytics" },
+        { name: "Meta Ads / Google Ads", category: "Mídia" },
       ]}
       security={[
         { icon: Lock, title: "LGPD Compliance", desc: "Consentimento, portabilidade, anonimização e log de acesso a dados do cliente." },

@@ -20,19 +20,19 @@ export const Route = createFileRoute("/solucoes-web/landing-pages")({
     canonical: URL,
     h1: "Landing Pages de Alta Conversão",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
-      { label: "Landing Pages", to: URL },
+      { name: "Home", to: "https://www.ncbrasil.com.br/" },
+      { name: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
+      { name: "Landing Pages", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/landing-pages", label: "Landing Pages" }]}
+      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/solucoes-web", name: "Soluções Web" }, { to: "/solucoes-web/landing-pages", name: "Landing Pages" }]}
       eyebrow="LPs de Conversão"
       h1={<>Landing Pages que <span className="text-gradient">convertem visitantes em clientes</span></>}
       intro={<>Páginas de captação com **copywriting persuasivo, prova social e CTAs testados** — feitas para maximizar o ROI do seu tráfego pago.</>}
-      stats={[{ value: "500+", label: "LPs entregues" }, { value: "12%", label: "Conversão média" }, { value: "72h", label: "Entrega expressa" }, { value: "A/B", label: "Testes inclusos" }]}
+      stats={[{ value: "500+", name: "LPs entregues" }, { value: "12%", name: "Conversão média" }, { value: "72h", name: "Entrega expressa" }, { value: "A/B", name: "Testes inclusos" }]}
       benefits={[
         { icon: MousePointerClick, title: "CTA Estratégico", desc: "**Botões testados A/B**, contraste otimizado e microcopy que aumenta cliques em 30%." },
         { icon: Zap, title: "Carregamento < 1s", desc: "Estrutura leve otimizada para **Google Ads Quality Score 10/10**." },

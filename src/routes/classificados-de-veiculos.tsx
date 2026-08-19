@@ -28,24 +28,24 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
     canonical: URL,
     h1: "Plataforma de Classificados Automotivos",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { label: "Classificados de Veículos", to: URL },
+      { name: "Home", to: "https://www.ncbrasil.com.br/" },
+      { name: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { name: "Classificados de Veículos", to: URL },
     ],
     faq: lpFaq,
     ogImage: "/og/classificados-veiculos.jpg",
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/classificados-de-veiculos", label: "Classificados de Veículos" }]}
+      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-sistemas", name: "Sistemas" }, { to: "/classificados-de-veiculos", name: "Classificados de Veículos" }]}
       eyebrow="Portal Automotivo · Marketplace de Veículos"
       h1={<>Portal de <span className="text-gradient">Classificados Automotivos</span> — o próximo Webmotors/iCarros</>}
       intro={<>Sistema turnkey para lançar o <strong className="text-foreground">próximo grande portal de veículos</strong> do seu estado ou nicho. Busca avançada com <strong className="text-foreground">Tabela FIPE integrada</strong>, planos escaláveis para revendedores, financiamento em 1 clique, comparador lado-a-lado e SEO técnico premiado — tudo com nosso motor proprietário testado em milhões de anúncios.</>}
       stats={[
-        { value: "50K+", label: "Anúncios ativos" },
-        { value: "2M", label: "Visitas mensais" },
-        { value: "800+", label: "Revendas conectadas" },
-        { value: "95", label: "PageSpeed médio" },
+        { value: "50K+", name: "Anúncios ativos" },
+        { value: "2M", name: "Visitas mensais" },
+        { value: "800+", name: "Revendas conectadas" },
+        { value: "95", name: "PageSpeed médio" },
       ]}
       clientsTitle={<>Portais e revendas que <span className="text-gradient">confiam na NC Brasil</span></>}
       clients={["AutoShow", "MegaCar Portal", "Revenda Fácil", "CarroBom", "AutoBrasil", "MercadoCar", "TopVeículos", "AutoRegional"]}

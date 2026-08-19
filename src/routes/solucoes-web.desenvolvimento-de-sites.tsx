@@ -20,19 +20,19 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
     canonical: URL,
     h1: "Desenvolvimento de Sites Profissionais",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
-      { label: "Desenvolvimento de Sites", to: URL },
+      { name: "Home", to: "https://www.ncbrasil.com.br/" },
+      { name: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
+      { name: "Desenvolvimento de Sites", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/desenvolvimento-de-sites", label: "Desenvolvimento de Sites" }]}
+      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/solucoes-web", name: "Soluções Web" }, { to: "/solucoes-web/desenvolvimento-de-sites", name: "Desenvolvimento de Sites" }]}
       eyebrow="Sites Profissionais"
       h1={<>Sites que <span className="text-gradient">vendem</span> e posicionam sua marca</>}
       intro={<>Desenvolvemos <strong className="text-foreground">sites institucionais</strong> modernos, rápidos e otimizados para Google. Da estratégia à publicação, com foco em **conversão e autoridade digital**.</>}
-      stats={[{ value: "800+", label: "Sites entregues" }, { value: "98", label: "Score PageSpeed" }, { value: "<2s", label: "LCP médio" }, { value: "20 anos", label: "De experiência" }]}
+      stats={[{ value: "800+", name: "Sites entregues" }, { value: "98", name: "Score PageSpeed" }, { value: "<2s", name: "LCP médio" }, { value: "20 anos", name: "De experiência" }]}
       benefits={[
         { icon: Gauge, title: "Performance Extrema", desc: "Sites com **carregamento em menos de 2s**, otimizados para Core Web Vitals do Google." },
         { icon: Search, title: "SEO Nativo", desc: "Estrutura semântica, meta tags, schema.org e sitemap — **prontos para ranquear**." },

@@ -20,19 +20,19 @@ export const Route = createFileRoute("/servicos/identidade-visual")({
     canonical: URL,
     h1: "Identidade Visual e Branding Estratégico",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
-      { label: "Identidade Visual", to: URL },
+      { name: "Home", to: "https://www.ncbrasil.com.br/" },
+      { name: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
+      { name: "Identidade Visual", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/identidade-visual", label: "Identidade Visual" }]}
+      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-servicos", name: "Serviços" }, { to: "/servicos/identidade-visual", name: "Identidade Visual" }]}
       eyebrow="Branding"
       h1={<>Identidade visual que <span className="text-gradient">posiciona sua marca</span></>}
       intro={<>Da **pesquisa de mercado ao manual de marca** — criamos identidades visuais memoráveis que geram reconhecimento, desejo e diferenciação.</>}
-      stats={[{ value: "1.500+", label: "Marcas criadas" }, { value: "20 anos", label: "De branding" }, { value: "100%", label: "Autoral" }, { value: "Manual", label: "De marca completo" }]}
+      stats={[{ value: "1.500+", name: "Marcas criadas" }, { value: "20 anos", name: "De branding" }, { value: "100%", name: "Autoral" }, { value: "Manual", name: "De marca completo" }]}
       benefits={[
         { icon: Sparkles, title: "Conceito Estratégico", desc: "Marca com **propósito, arquétipos e posicionamento** definidos por estrategistas." },
         { icon: Palette, title: "Sistema Visual", desc: "Paleta, tipografia, grafismos e **grid de aplicações consistentes**." },

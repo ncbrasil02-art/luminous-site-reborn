@@ -20,19 +20,19 @@ export const Route = createFileRoute("/solucoes-web/seo-google")({
     canonical: URL,
     h1: "SEO Google — Da Estratégia ao Topo do Ranking",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
-      { label: "SEO Google", to: URL },
+      { name: "Home", to: "https://www.ncbrasil.com.br/" },
+      { name: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
+      { name: "SEO Google", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/seo-google", label: "SEO Google" }]}
+      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/solucoes-web", name: "Soluções Web" }, { to: "/solucoes-web/seo-google", name: "SEO Google" }]}
       eyebrow="SEO Profissional"
       h1={<>Chegue à <span className="text-gradient">primeira página do Google</span> com SEO técnico</>}
       intro={<>Auditoria técnica completa, **otimização on-page, link building white-hat e conteúdo estratégico** para dominar as palavras-chave do seu mercado.</>}
-      stats={[{ value: "+340%", label: "Tráfego orgânico" }, { value: "Top 3", label: "Rankings alcançados" }, { value: "500+", label: "Palavras-chave" }, { value: "12 meses", label: "Resultado consistente" }]}
+      stats={[{ value: "+340%", name: "Tráfego orgânico" }, { value: "Top 3", name: "Rankings alcançados" }, { value: "500+", name: "Palavras-chave" }, { value: "12 meses", name: "Resultado consistente" }]}
       benefits={[
         { icon: Search, title: "Keyword Research", desc: "Mapeamento com **Ahrefs, SEMrush e Google Search Console** — foco em intenção de busca." },
         { icon: Gauge, title: "SEO Técnico", desc: "Core Web Vitals, schema.org, sitemap, robots.txt e **crawl budget otimizado**." },

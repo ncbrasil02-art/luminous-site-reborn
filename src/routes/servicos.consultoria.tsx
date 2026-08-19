@@ -20,19 +20,19 @@ export const Route = createFileRoute("/servicos/consultoria")({
     canonical: URL,
     h1: "Consultoria em Tecnologia e Marketing Digital",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
-      { label: "Consultoria", to: URL },
+      { name: "Home", to: "https://www.ncbrasil.com.br/" },
+      { name: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
+      { name: "Consultoria", to: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/consultoria", label: "Consultoria" }]}
+      breadcrumbs={[{ to: "/", name: "Home" }, { to: "/nossos-servicos", name: "Serviços" }, { to: "/servicos/consultoria", name: "Consultoria" }]}
       eyebrow="Consultoria Estratégica"
       h1={<>Consultoria que transforma <span className="text-gradient">estratégia em resultado</span></>}
       intro={<>**Diagnóstico, roadmap e mentoria** para líderes que precisam acelerar transformação digital, escalar operações ou reposicionar produto.</>}
-      stats={[{ value: "500+", label: "Empresas atendidas" }, { value: "20 anos", label: "De experiência" }, { value: "C-Level", label: "Consultores sênior" }, { value: "ROI 10x", label: "Cases comprovados" }]}
+      stats={[{ value: "500+", name: "Empresas atendidas" }, { value: "20 anos", name: "De experiência" }, { value: "C-Level", name: "Consultores sênior" }, { value: "ROI 10x", name: "Cases comprovados" }]}
       benefits={[
         { icon: Compass, title: "Diagnóstico 360°", desc: "Análise profunda de **produto, operação, tech, marketing e financeiro**." },
         { icon: Target, title: "Roadmap Prático", desc: "Plano de **90/180/365 dias** com metas, responsáveis e KPIs claros." },

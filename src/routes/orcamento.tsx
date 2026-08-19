@@ -165,7 +165,7 @@ function OrcamentoPage() {
 
 function Field({
   label, value, onChange, type = "text", required,
-}: { label: string; value: string; onChange: (v: string) => void; type?: string; required?: boolean }) {
+}: { name: string; value: string; onChange: (v: string) => void; type?: string; required?: boolean }) {
   return (
     <div>
       <label className="block text-xs font-medium uppercase tracking-wider text-muted-foreground">{label}</label>
@@ -182,7 +182,7 @@ function Field({
 
 function Select({
   label, value, options, onChange,
-}: { label: string; value: string; options: readonly string[]; onChange: (v: string) => void }) {
+}: { name: string; value: string; options: readonly string[]; onChange: (v: string) => void }) {
   return (
     <div>
       <label className="block text-xs font-medium uppercase tracking-wider text-muted-foreground">{label}</label>
