@@ -40,6 +40,27 @@ export function trackPageView(path: string, title?: string) {
   });
 }
 
+/**
+ * Tracks a 404 (Not Found) event to identify dead links or missing redirects.
+ */
+export function trackNotFound(path: string) {
+  trackEvent("404_not_found", {
+    path,
+    referrer: typeof document !== "undefined" ? document.referrer : undefined,
+  });
+}
+
+/**
+ * Tracks a 301/Permanent Redirect event (captured client-side).
+ */
+export function trackRedirect(from: string, to: string) {
+  trackEvent("url_redirection", {
+    from,
+    to,
+    type: "301_permanent",
+  });
+}
+
 export function trackEvent(name: string, params: Record<string, unknown> = {}) {
   if (typeof window === "undefined") return;
   window.gtag?.("event", name, params);

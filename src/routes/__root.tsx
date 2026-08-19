@@ -1,11 +1,11 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts, useRouterState } from "@tanstack/react-router";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 
 import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { WhatsappFab } from "@/components/WhatsappFab";
-import { initAnalytics, trackPageView } from "@/lib/analytics";
+import { initAnalytics, trackPageView, trackNotFound } from "@/lib/analytics";
 
 const SITE_URL = "https://www.ncbrasil.com.br";
 
@@ -69,6 +69,12 @@ const websiteJsonLd = {
 };
 
 function NotFoundComponent() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+
+  useEffect(() => {
+    trackNotFound(pathname);
+  }, [pathname]);
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-background bg-mesh px-4">
       <div className="max-w-md text-center">

@@ -1,5 +1,7 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { trackRedirect } from "@/lib/analytics";
 import {
   ArrowRight,
   Check,
@@ -115,6 +117,17 @@ export function LandingPage({
   finalCtaTitle,
   finalCtaDesc,
 }: LandingPageProps) {
+  const search = useRouterState({ select: (s) => s.location.search });
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+
+  useEffect(() => {
+    // If the user arrived here from a migration redirect, track it.
+    // We check the 'from_redirect' search param added in the redirect route.
+    if (search && (search as any).from_redirect === "sistemas_migration") {
+      trackRedirect(`/sistemas${pathname}`, pathname);
+    }
+  }, [search, pathname]);
+
   return (
     <>
       {/* HERO */}

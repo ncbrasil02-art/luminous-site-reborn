@@ -1,7 +1,9 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
+import { useEffect } from "react";
 import {
   Car, CarFront, Coins, Dice5, Gavel, Gift, ScanLine, ShoppingBag, Store, Ticket, Tractor,
 } from "lucide-react";
+import { trackRedirect } from "@/lib/analytics";
 
 import { Reveal, SectionHeading } from "@/components/Section";
 import { buildLPMeta } from "@/components/LandingPage";
@@ -37,6 +39,14 @@ const systems = [
 ];
 
 function SistemasHub() {
+  const search = useRouterState({ select: (s) => s.location.search });
+
+  useEffect(() => {
+    if (search && (search as any).from_redirect === 'sistemas_migration') {
+      trackRedirect('/sistemas/', '/nossos-sistemas');
+    }
+  }, [search]);
+
   return (
     <>
       <section className="relative isolate overflow-hidden pt-24 pb-16">
