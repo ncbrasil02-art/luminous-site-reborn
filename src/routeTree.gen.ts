@@ -42,6 +42,7 @@ import { Route as SolucoesWebLojaVirtualRouteImport } from './routes/solucoes-we
 import { Route as SolucoesWebLandingPagesRouteImport } from './routes/solucoes-web.landing-pages'
 import { Route as SolucoesWebHospedagemRouteImport } from './routes/solucoes-web.hospedagem'
 import { Route as SolucoesWebDesenvolvimentoDeSitesRouteImport } from './routes/solucoes-web.desenvolvimento-de-sites'
+import { Route as SistemasSlugRouteImport } from './routes/sistemas.$slug'
 import { Route as ServicosSistemasWebRouteImport } from './routes/servicos.sistemas-web'
 import { Route as ServicosIdentidadeVisualRouteImport } from './routes/servicos.identidade-visual'
 import { Route as ServicosGoogleAdsRouteImport } from './routes/servicos.google-ads'
@@ -246,6 +247,11 @@ const SolucoesWebDesenvolvimentoDeSitesRoute =
     path: '/desenvolvimento-de-sites',
     getParentRoute: () => SolucoesWebRoute,
   } as any)
+const SistemasSlugRoute = SistemasSlugRouteImport.update({
+  id: '/sistemas/$slug',
+  path: '/sistemas/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ServicosSistemasWebRoute = ServicosSistemasWebRouteImport.update({
   id: '/servicos/sistemas-web',
   path: '/servicos/sistemas-web',
@@ -452,6 +458,7 @@ export interface FileRoutesByFullPath {
   '/servicos/google-ads': typeof ServicosGoogleAdsRoute
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
+  '/sistemas/$slug': typeof SistemasSlugRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -515,6 +522,7 @@ export interface FileRoutesByTo {
   '/servicos/google-ads': typeof ServicosGoogleAdsRoute
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
+  '/sistemas/$slug': typeof SistemasSlugRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -580,6 +588,7 @@ export interface FileRoutesById {
   '/servicos/google-ads': typeof ServicosGoogleAdsRoute
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
+  '/sistemas/$slug': typeof SistemasSlugRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -646,6 +655,7 @@ export interface FileRouteTypes {
     | '/servicos/google-ads'
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
+    | '/sistemas/$slug'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -709,6 +719,7 @@ export interface FileRouteTypes {
     | '/servicos/google-ads'
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
+    | '/sistemas/$slug'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -773,6 +784,7 @@ export interface FileRouteTypes {
     | '/servicos/google-ads'
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
+    | '/sistemas/$slug'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -833,6 +845,7 @@ export interface RootRouteChildren {
   ServicosGoogleAdsRoute: typeof ServicosGoogleAdsRoute
   ServicosIdentidadeVisualRoute: typeof ServicosIdentidadeVisualRoute
   ServicosSistemasWebRoute: typeof ServicosSistemasWebRoute
+  SistemasSlugRoute: typeof SistemasSlugRoute
   NoticiasIndexRoute: typeof NoticiasIndexRoute
   ApiPublicRssRoute: typeof ApiPublicRssRoute
   ApiPublicSitemapRoute: typeof ApiPublicSitemapRoute
@@ -1072,6 +1085,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/solucoes-web/desenvolvimento-de-sites'
       preLoaderRoute: typeof SolucoesWebDesenvolvimentoDeSitesRouteImport
       parentRoute: typeof SolucoesWebRoute
+    }
+    '/sistemas/$slug': {
+      id: '/sistemas/$slug'
+      path: '/sistemas/$slug'
+      fullPath: '/sistemas/$slug'
+      preLoaderRoute: typeof SistemasSlugRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/servicos/sistemas-web': {
       id: '/servicos/sistemas-web'
@@ -1389,6 +1409,7 @@ const rootRouteChildren: RootRouteChildren = {
   ServicosGoogleAdsRoute: ServicosGoogleAdsRoute,
   ServicosIdentidadeVisualRoute: ServicosIdentidadeVisualRoute,
   ServicosSistemasWebRoute: ServicosSistemasWebRoute,
+  SistemasSlugRoute: SistemasSlugRoute,
   NoticiasIndexRoute: NoticiasIndexRoute,
   ApiPublicRssRoute: ApiPublicRssRoute,
   ApiPublicSitemapRoute: ApiPublicSitemapRoute,
