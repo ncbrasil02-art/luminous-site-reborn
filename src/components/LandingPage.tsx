@@ -78,14 +78,15 @@ export function buildLPMeta(options: {
   keywords: string;
   canonical: string;
   h1: string;
-  breadcrumbs?: { name: string; url: string }[];
+  breadcrumbs?: { label: string; to: string }[];
   faq?: LPFaq[];
   ogImage?: string;
 }) {
   return buildMeta({
     ...options,
     ogType: "website",
-    faq: options.faq?.map(f => ({ q: f.q, a: f.a }))
+    faq: options.faq?.map((f) => ({ q: f.q, a: f.a })),
+    breadcrumbs: options.breadcrumbs?.map((b) => ({ name: b.label, url: b.to })),
   });
 }
 
