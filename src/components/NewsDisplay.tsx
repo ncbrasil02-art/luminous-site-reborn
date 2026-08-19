@@ -16,8 +16,9 @@ export function NewsDisplay() {
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {latestNews.map((news) => (
-            <Link key={news.id} to={`/noticias/${news.slug}`} className="group block space-y-3">
+            <Link key={news.id} to="/noticias/$slug" params={{ slug: news.slug }} className="group block space-y-3">
               <div className="h-40 overflow-hidden rounded-xl bg-surface">
+
                 {news.image_url ? (
                   <img src={news.image_url} alt={news.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 ) : (
