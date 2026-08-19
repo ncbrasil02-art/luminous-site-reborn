@@ -40,9 +40,9 @@ export function buildStubMeta({
 }
 
 interface StubPageProps {
-  title: string;
+  title: React.ReactNode;
   subtitle: string;
-  description: string;
+  description: React.ReactNode;
   icon?: any;
   breadcrumbs?: { label: string; to: string }[];
 }
