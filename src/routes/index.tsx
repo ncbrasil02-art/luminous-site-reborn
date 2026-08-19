@@ -509,6 +509,7 @@ function HomePage() {
           </Reveal>
         </div>
       </section>
+      <NewsDisplay />
       <MagazineSection />
     </>
   );
