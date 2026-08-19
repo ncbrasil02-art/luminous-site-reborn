@@ -18,6 +18,9 @@ function NewsIndex() {
   const featuredNews = newsData[0]
   const otherNews = newsData.slice(1, 13)
 
+  const allCategories = Array.from(new Set(newsData.flatMap(p => p.categories))).sort()
+  const allTags = Array.from(new Set(newsData.flatMap(p => p.tags))).sort()
+
   return (
     <main className="pt-24 pb-20">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
@@ -126,6 +129,49 @@ function NewsIndex() {
             </Reveal>
           ))}
         </div>
+        {/* Categorias e Tags para SEO */}
+        <Reveal delay={0.2}>
+          <div className="mt-24 rounded-[2rem] border border-border bg-card/30 p-8 lg:p-12">
+            <div className="grid gap-12 lg:grid-cols-2">
+              <div>
+                <h3 className="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                  <ArrowRight className="h-5 w-5 text-primary" />
+                  Categorias
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {allCategories.map(cat => (
+                    <Link
+                      key={cat}
+                      to="/noticias/categoria/$category"
+                      params={{ category: cat }}
+                      className="rounded-xl border border-border bg-surface/50 px-4 py-2 text-sm font-medium transition-all hover:border-primary/50 hover:bg-card hover:text-primary"
+                    >
+                      {cat}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h3 className="font-display text-2xl font-bold mb-6 flex items-center gap-2">
+                  <Tag className="h-5 w-5 text-primary" />
+                  Tags Populares
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {allTags.slice(0, 20).map(tag => (
+                    <Link
+                      key={tag}
+                      to="/noticias/tag/$tag"
+                      params={{ tag: tag }}
+                      className="rounded-lg bg-surface px-3 py-1.5 text-xs text-muted-foreground transition-all hover:bg-primary/10 hover:text-primary"
+                    >
+                      #{tag}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </Reveal>
         
         {/* Pagination placeholder */}
         <div className="mt-16 flex justify-center">

@@ -63,6 +63,8 @@ import { Route as NoticiasSlugRouteImport } from './routes/noticias.$slug'
 import { Route as EmpresaQuemSomosRouteImport } from './routes/empresa.quem-somos'
 import { Route as EmpresaNossaHistoriaRouteImport } from './routes/empresa.nossa-historia'
 import { Route as EmpresaClientesRouteImport } from './routes/empresa.clientes'
+import { Route as NoticiasTagTagRouteImport } from './routes/noticias.tag.$tag'
+import { Route as NoticiasCategoriaCategoryRouteImport } from './routes/noticias.categoria.$category'
 
 const TrabalhosRealizadosRoute = TrabalhosRealizadosRouteImport.update({
   id: '/trabalhos-realizados',
@@ -357,6 +359,17 @@ const EmpresaClientesRoute = EmpresaClientesRouteImport.update({
   path: '/clientes',
   getParentRoute: () => EmpresaRoute,
 } as any)
+const NoticiasTagTagRoute = NoticiasTagTagRouteImport.update({
+  id: '/noticias/tag/$tag',
+  path: '/noticias/tag/$tag',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NoticiasCategoriaCategoryRoute =
+  NoticiasCategoriaCategoryRouteImport.update({
+    id: '/noticias/categoria/$category',
+    path: '/noticias/categoria/$category',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -413,6 +426,8 @@ export interface FileRoutesByFullPath {
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
+  '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
+  '/noticias/tag/$tag': typeof NoticiasTagTagRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -469,6 +484,8 @@ export interface FileRoutesByTo {
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
   '/noticias': typeof NoticiasIndexRoute
   '/sistemas': typeof SistemasIndexRoute
+  '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
+  '/noticias/tag/$tag': typeof NoticiasTagTagRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -526,6 +543,8 @@ export interface FileRoutesById {
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
+  '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
+  '/noticias/tag/$tag': typeof NoticiasTagTagRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -584,6 +603,8 @@ export interface FileRouteTypes {
     | '/solucoes-web/seo-google'
     | '/noticias/'
     | '/sistemas/'
+    | '/noticias/categoria/$category'
+    | '/noticias/tag/$tag'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -640,6 +661,8 @@ export interface FileRouteTypes {
     | '/solucoes-web/seo-google'
     | '/noticias'
     | '/sistemas'
+    | '/noticias/categoria/$category'
+    | '/noticias/tag/$tag'
   id:
     | '__root__'
     | '/'
@@ -696,6 +719,8 @@ export interface FileRouteTypes {
     | '/solucoes-web/seo-google'
     | '/noticias/'
     | '/sistemas/'
+    | '/noticias/categoria/$category'
+    | '/noticias/tag/$tag'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -744,6 +769,8 @@ export interface RootRouteChildren {
   SistemasSistemaDeRifasRoute: typeof SistemasSistemaDeRifasRoute
   NoticiasIndexRoute: typeof NoticiasIndexRoute
   SistemasIndexRoute: typeof SistemasIndexRoute
+  NoticiasCategoriaCategoryRoute: typeof NoticiasCategoriaCategoryRoute
+  NoticiasTagTagRoute: typeof NoticiasTagTagRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -1126,6 +1153,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EmpresaClientesRouteImport
       parentRoute: typeof EmpresaRoute
     }
+    '/noticias/tag/$tag': {
+      id: '/noticias/tag/$tag'
+      path: '/noticias/tag/$tag'
+      fullPath: '/noticias/tag/$tag'
+      preLoaderRoute: typeof NoticiasTagTagRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/noticias/categoria/$category': {
+      id: '/noticias/categoria/$category'
+      path: '/noticias/categoria/$category'
+      fullPath: '/noticias/categoria/$category'
+      preLoaderRoute: typeof NoticiasCategoriaCategoryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -1217,6 +1258,8 @@ const rootRouteChildren: RootRouteChildren = {
   SistemasSistemaDeRifasRoute: SistemasSistemaDeRifasRoute,
   NoticiasIndexRoute: NoticiasIndexRoute,
   SistemasIndexRoute: SistemasIndexRoute,
+  NoticiasCategoriaCategoryRoute: NoticiasCategoriaCategoryRoute,
+  NoticiasTagTagRoute: NoticiasTagTagRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
