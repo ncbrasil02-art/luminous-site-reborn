@@ -33,9 +33,9 @@ export const Route = createFileRoute("/sistema-de-leilao")({
     canonical: URL,
     h1: "Sistema Profissional para Leilões Judiciais e Extrajudiciais",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { label: "Sistema de Leilão", to: URL },
+      { name: "Home", url: "https://www.ncbrasil.com.br/" },
+      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { name: "Sistema de Leilão", url: URL },
     ],
     faq: lpFaq,
   }),
