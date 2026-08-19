@@ -18,6 +18,8 @@ export type MetaOptions = {
     author?: string;
     section?: string;
     tags?: string[];
+    image?: string;
+    headline?: string;
   };
 };
 
@@ -98,6 +100,33 @@ export function buildMeta(options: MetaOptions) {
           name: f.q,
           acceptedAnswer: { "@type": "Answer", text: f.a },
         })),
+      }),
+    });
+  }
+
+  if (article && ogType === "article") {
+    scripts.push({
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        headline: article.headline || title,
+        image: article.image || absoluteOgImage,
+        datePublished: article.publishedTime,
+        dateModified: article.modifiedTime || article.publishedTime,
+        author: {
+          "@type": "Organization",
+          name: SITE_NAME,
+          url: SITE_URL,
+        },
+        publisher: {
+          "@type": "Organization",
+          name: SITE_NAME,
+          logo: {
+            "@type": "ImageObject",
+            url: `${SITE_URL}/favicon.ico`,
+          },
+        },
       }),
     });
   }
