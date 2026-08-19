@@ -65,7 +65,6 @@ function NewsIndex() {
             title={<>Conhecimento que <span className="text-gradient">Transforma</span></>}
             description="Explore artigos técnicos, tendências de mercado e o futuro do desenvolvimento web."
             align="left"
-            noPadding
           />
           
           <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
