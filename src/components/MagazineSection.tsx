@@ -34,7 +34,6 @@ export function MagazineSection() {
               title={<>A <span className="text-gradient">Revista Digital</span> da Tecnologia</>}
               description="Conteúdo exclusivo sobre leilões, sistemas e o futuro do mercado digital brasileiro."
               align="left"
-              noPadding
             />
           </div>
           <Link 
