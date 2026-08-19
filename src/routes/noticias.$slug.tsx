@@ -16,7 +16,7 @@ export const Route = createFileRoute('/noticias/$slug')({
     if (!loaderData) return {}
     const plainText = loaderData.content.replace(/<[^>]*>/g, '').slice(0, 160)
     
-    return buildMeta({
+    const meta = buildMeta({
       title: `${loaderData.title} | Revista Digital`,
       description: plainText,
       keywords: `notícia, nc brasil, ${loaderData.categories.join(', ')}, ${loaderData.tags.join(', ')}`,
@@ -24,9 +24,9 @@ export const Route = createFileRoute('/noticias/$slug')({
       ogType: 'article',
       canonical: `${SITE_URL}/noticias/${loaderData.slug}`,
       breadcrumbs: [
-        { name: "Home", url: SITE_URL },
-        { name: "Notícias", url: `${SITE_URL}/noticias` },
-        { name: loaderData.title, url: `${SITE_URL}/noticias/${loaderData.slug}` }
+        { label: "Home", to: "/" },
+        { label: "Notícias", to: "/noticias" },
+        { label: loaderData.title, to: `/noticias/${loaderData.slug}` }
       ],
       article: {
         publishedTime: loaderData.date,
@@ -37,6 +37,27 @@ export const Route = createFileRoute('/noticias/$slug')({
       }
     })
 
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": loaderData.title,
+      "image": loaderData.image_url ? [`${SITE_URL}${loaderData.image_url}`] : [],
+      "datePublished": loaderData.date,
+      "dateModified": loaderData.date,
+      "author": [{
+        "@type": "Organization",
+        "name": "Agência NC Brasil",
+        "url": SITE_URL
+      }]
+    };
+
+    return {
+      ...meta,
+      scripts: [
+        ...(meta.scripts || []),
+        { type: "application/ld+json", children: JSON.stringify(jsonLd) }
+      ]
+    }
   },
   component: NewsPostPage,
 })
