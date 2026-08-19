@@ -79,16 +79,19 @@ export function buildStubMeta({
   description,
   keywords,
   canonical,
+  faq,
 }: {
   title: string;
   description: string;
   keywords: string;
   canonical: string;
+  faq?: { q: string; a: string }[];
 }) {
   return buildMeta({
     title,
     description,
     keywords,
     canonical,
+    faq,
   });
 }

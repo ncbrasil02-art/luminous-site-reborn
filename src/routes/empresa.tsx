@@ -22,6 +22,7 @@ export const Route = createFileRoute("/empresa")({
     keywords: "NC Brasil empresa, agência de tecnologia SP, agência web RJ, equipe desenvolvimento, fábrica de software, criação de sistemas personalizados, agência digital SP",
     canonical: `${SITE_URL}/empresa`,
     ogImage: "/og-empresa.jpg",
+    faq: values.map(v => ({ q: `Qual o valor da NC Brasil: ${v.title}?`, a: v.desc })),
   }),
   component: EmpresaPage,
 });
