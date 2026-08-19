@@ -45,9 +45,10 @@ interface StubPageProps {
   description: React.ReactNode;
   icon?: any;
   breadcrumbs?: { label: string; to: string }[];
+  highlights?: { label: string; to: string }[];
 }
 
-export function StubPage({ title, eyebrow, description, icon: Icon = Rocket, breadcrumbs }: StubPageProps) {
+export function StubPage({ title, eyebrow, description, icon: Icon = Rocket, breadcrumbs, highlights }: StubPageProps) {
   return (
     <div className="min-h-screen pt-32 pb-20 px-4">
       <div className="max-w-7xl mx-auto">
@@ -102,44 +103,62 @@ export function StubPage({ title, eyebrow, description, icon: Icon = Rocket, bre
           </Reveal>
 
           <Reveal delay={0.2}>
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-[3rem] blur-3xl opacity-50 group-hover:opacity-100 transition-opacity" />
-              <div className="relative bg-white/5 border border-white/10 rounded-[3rem] p-12 backdrop-blur-sm">
-                <div className="grid grid-cols-2 gap-8">
-                  {[
-                    { icon: Shield, title: "Segurança", desc: "Protocolos avançados" },
-                    { icon: Zap, title: "Velocidade", desc: "Performance extrema" },
-                    { icon: Globe, title: "Escalável", desc: "Cresça sem limites" },
-                    { icon: Users, title: "Suporte", desc: "24/7 Dedicado" },
-                  ].map((item, i) => (
-                    <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-colors">
-                      <item.icon className="w-8 h-8 text-primary mb-4" />
-                      <h3 className="font-semibold text-white mb-2">{item.title}</h3>
-                      <p className="text-sm text-gray-400">{item.desc}</p>
+            {highlights ? (
+              <div className="grid grid-cols-1 gap-4">
+                {highlights.map((item, i) => (
+                  <Link
+                    key={i}
+                    to={item.to}
+                    className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all flex items-center justify-between group"
+                  >
+                    <div>
+                      <h3 className="font-semibold text-white group-hover:text-primary transition-colors">{item.label}</h3>
+                      <p className="text-sm text-gray-400">Ver detalhes do portfólio</p>
                     </div>
-                  ))}
-                </div>
-                
-                <div className="mt-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className="flex -space-x-2">
-                      {[1,2,3].map(i => (
-                        <div key={i} className="w-8 h-8 rounded-full border-2 border-[#0B0F1A] bg-gray-700" />
+                    <ChevronRight className="w-5 h-5 text-gray-500 group-hover:text-primary transition-colors" />
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <div className="relative group">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-[3rem] blur-3xl opacity-50 group-hover:opacity-100 transition-opacity" />
+                <div className="relative bg-white/5 border border-white/10 rounded-[3rem] p-12 backdrop-blur-sm">
+                  <div className="grid grid-cols-2 gap-8">
+                    {[
+                      { icon: Shield, title: "Segurança", desc: "Protocolos avançados" },
+                      { icon: Zap, title: "Velocidade", desc: "Performance extrema" },
+                      { icon: Globe, title: "Escalável", desc: "Cresça sem limites" },
+                      { icon: Users, title: "Suporte", desc: "24/7 Dedicado" },
+                    ].map((item, i) => (
+                      <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-colors">
+                        <item.icon className="w-8 h-8 text-primary mb-4" />
+                        <h3 className="font-semibold text-white mb-2">{item.title}</h3>
+                        <p className="text-sm text-gray-400">{item.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  <div className="mt-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <div className="flex -space-x-2">
+                        {[1,2,3].map(i => (
+                          <div key={i} className="w-8 h-8 rounded-full border-2 border-[#0B0F1A] bg-gray-700" />
+                        ))}
+                      </div>
+                      <div className="text-sm">
+                        <div className="font-semibold text-white">+500 Clientes</div>
+                        <div className="text-gray-400 text-xs">Confiando em nossa tecnologia</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      {[1,2,3,4,5].map(i => (
+                        <Star key={i} className="w-3 h-3 text-yellow-500 fill-yellow-500" />
                       ))}
                     </div>
-                    <div className="text-sm">
-                      <div className="font-semibold text-white">+500 Clientes</div>
-                      <div className="text-gray-400 text-xs">Confiando em nossa tecnologia</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-1">
-                    {[1,2,3,4,5].map(i => (
-                      <Star key={i} className="w-3 h-3 text-yellow-500 fill-yellow-500" />
-                    ))}
                   </div>
                 </div>
               </div>
-            </div>
+            )}
           </Reveal>
         </div>
       </div>
