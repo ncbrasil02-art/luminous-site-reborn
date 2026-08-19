@@ -25,7 +25,7 @@ Saiba mais sobre, lendo nosso artigo!
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50996" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/08/instagram-logo-gradient2-ss-1920-1024x576.jpg" alt="instagram" width="840" height="473" />
+<img class="aligncenter size-large wp-image-50996" src="/news/default-nc.jpg" alt="instagram" width="840" height="473" />
 <h2>Instagram</h2>
 O <strong>Instagram</strong> surgiu em 2010, inicialmente como um aplicativo de compartilhamento de fotos. Com o passar dos anos e a eventual compra pelo Facebook, tornou-se uma das principais redes sociais da atualidade. Hoje, suporta diversos formatos de conteúdo e possui uma robusta plataforma de anúncios que oferece possibilidades bem estratégicas às marcas.
 
@@ -35,7 +35,7 @@ Há ainda a possibilidade de postar essas imagens em outras redes sociais, como 
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50997" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/08/Instagram-Shopping-.jpg" alt="instagram" width="800" height="450" />
+<img class="aligncenter size-full wp-image-50997" src="/news/default-nc.jpg" alt="instagram" width="800" height="450" />
 <h2>Marketing no Instagram</h2>
 “Uma imagem vale mais que mil palavras”, essa frase nunca teve tanta força nas redes sociais quanto no <b>Instagram</b>."
 
@@ -53,7 +53,7 @@ Outro passo importante é entender como o público usa a rede. No caso do Facebo
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50995" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/08/instagram-b9-type-ss-1024x576.jpg" alt="instagram" width="840" height="473" />
+<img class="aligncenter size-large wp-image-50995" src="/news/default-nc.jpg" alt="instagram" width="840" height="473" />
 
 Gostaria de ter profissionais atuando no <strong>marketing digital</strong> da sua empresa, utilizando o <strong>Instagram</strong> como ferramenta?
 
@@ -81,7 +81,7 @@ Você está no lugar certo. A <strong>NC Brasil</strong> possui uma equipe prepa
       "Marketing",
       "Marketing Digital"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/08/instagram-b9-type-ss.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50995"
   },
   {
@@ -96,7 +96,7 @@ Estas e outras perguntas serão as bases desse nosso artigo. Conheça mais sobre
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50991" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/08/2014011315350452d407a830ca4-1024x427.jpeg" alt="Software" width="840" height="350" />
+<img class="aligncenter size-large wp-image-50991" src="/news/default-nc.jpg" alt="Software" width="840" height="350" />
 <h2>O que é?</h2>
 Se buscar a frase <em>"o que é um Software?"</em> no <strong>Google,</strong> você encontrará essa seguinte definição:
 
@@ -110,7 +110,7 @@ Você, caro leitor, lida com <strong>software</strong> o dia inteiro. Agora, por
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50989" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/08/desenvolvimento-de-softwares-1024x533.jpg" alt="Software" width="840" height="437" />
+<img class="aligncenter size-large wp-image-50989" src="/news/default-nc.jpg" alt="Software" width="840" height="437" />
 <h2>Vantagens?</h2>
 <strong>1. Foco nas necessidades específicas da empresa</strong>
 
@@ -142,7 +142,7 @@ Além disso, é possível economizar tanto na contratação de funcionários de
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50990" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/08/wordpress-1600x800-e1514233849780-1024x576.jpg" alt="Software" width="840" height="473" />
+<img class="aligncenter size-large wp-image-50990" src="/news/default-nc.jpg" alt="Software" width="840" height="473" />
 <h2>Como obter<strong>?</strong></h2>
 Para obter um <strong>Software,</strong> basta entrar em contato conosco!
 
@@ -161,7 +161,7 @@ Nós da <strong>NC Brasil</strong> possuímos uma equipe única e especializada 
       "Software Personalizado",
       "Software único"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/08/2014011315350452d407a830ca4.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50991"
   },
   {
@@ -174,7 +174,7 @@ Nós da <strong>NC Brasil</strong> possuímos uma equipe única e especializada 
 
 <div class="text-1">Além de organizar os serviços prestados, você pode controlar as receitas geradas pelas Ordens de Serviço emitidas, podendo saber qual sua previsão de faturamento, quais pagamentos estão pendentes e até mesmo emitir boletos de cobrança (caso o plano escolhido tenha o módulo de cobrança).</div>
 <div></div>
-<div><img class="aligncenter wp-image-50969 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg" alt="Programa de Ordem de Serviço" width="750" height="410" /></div>
+<div><img class="aligncenter wp-image-50969 size-full" src="/news/default-nc.jpg" alt="Programa de Ordem de Serviço" width="750" height="410" /></div>
 <div>
 <h2>Programa de Ordem de Serviço / Definição</h2>
 O <strong>Programa de Ordem de Serviço </strong>da<strong> NC Brasil</strong> é um sistema para controle e administração de ordens de serviços de empresas.
@@ -183,7 +183,7 @@ Pode ser utilizado na área de assistência técnica, mecânica, suporte, e muit
 
 O sistema dispõe de vários cadastros, como clientes e produtos. Além da ordem de serviço, orçamentos, vendas, recibos, fluxo de caixa, diversos relatórios, gráficos e muito mais.
 
-<img class="alignright size-full wp-image-50971" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/ordem_servico.png" alt="Programa de Ordem de Serviço" width="250" height="250" />O grande diferencial do <strong>Programa de Ordem de Serviço</strong> é o módulo de consulta online das ordens de serviços. Os clientes poderão visualizar dados da sua ordem de serviço e saber quando esta pronta de qualquer celular, tablet ou computador através da Internet. Após habilitar este módulo, o usuário poderá consultar as ordens de serviços em qualquer lugar.
+<img class="alignright size-full wp-image-50971" src="/news/default-nc.jpg" alt="Programa de Ordem de Serviço" width="250" height="250" />O grande diferencial do <strong>Programa de Ordem de Serviço</strong> é o módulo de consulta online das ordens de serviços. Os clientes poderão visualizar dados da sua ordem de serviço e saber quando esta pronta de qualquer celular, tablet ou computador através da Internet. Após habilitar este módulo, o usuário poderá consultar as ordens de serviços em qualquer lugar.
 <blockquote><a href="https://www.ncbrasil.com.br/sistema-sob-demanda-nc-brasil/">Um<strong> Sistema Sob Demanda</strong>, supera todos os pacotes! Saiba mais sobre <strong>Sistemas Sob Demanda</strong> clicando aqui!</a></blockquote>
 </div>
 <div>
@@ -194,7 +194,7 @@ O software é destinado a pequenas e médias empresas que desejam controlar seus
 
 </div>
 <div>
-<h2><img class="aligncenter size-full wp-image-50972" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/fluxo-etapas-servico-475x270.png" alt="Programa de Ordem de Serviço" width="475" height="270" /></h2>
+<h2><img class="aligncenter size-full wp-image-50972" src="/news/default-nc.jpg" alt="Programa de Ordem de Serviço" width="475" height="270" /></h2>
 <h2>Programa de Ordem de Serviço / Vantagens</h2>
 <ul>
  	<li>Não tem Limite de Cadastro</li>
@@ -214,7 +214,7 @@ O software é destinado a pequenas e médias empresas que desejam controlar seus
 </div>
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50970" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/assistencia.jpg" alt="Programa de Ordem de Serviço" width="423" height="289" />
+<img class="aligncenter size-full wp-image-50970" src="/news/default-nc.jpg" alt="Programa de Ordem de Serviço" width="423" height="289" />
 <blockquote>
 <h2>Deseja ter seu próprio <strong>Programa de Ordem de Serviço?</strong></h2>
 <h1><a href="https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/">Clique aqui e faça um orçamento!</a></h1>
@@ -230,7 +230,7 @@ O software é destinado a pequenas e médias empresas que desejam controlar seus
       "Sistemas Sob Demanda",
       "Software"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50969"
   },
   {
@@ -247,7 +247,7 @@ Se você ainda deseja criar uma loja virtual, leia outro <a href="http://ncbrasi
 <h3>Agora, se você construiu a sua <strong>loja virtual,</strong> já começou a vender e tem encontrado o desafio de poucas vendas, este artigo é para você! Continue lendo.</h3>
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50963" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/eCommerce-concch.jpg" alt="E-Commerce" width="670" height="441" />
+<img class="aligncenter size-full wp-image-50963" src="/news/default-nc.jpg" alt="E-Commerce" width="670" height="441" />
 <h2>E-Commerce / Geral</h2>
 Para melhorar as vendas da sua <strong>loja virtual,</strong> você deve ter em mente que este processo é similar a uma loja física. Um erro bem comum é tratar a <strong>loja virtual</strong> diferente de uma loja física! Enfim, você deve traçar uma estratégia visando aumentar o número de visitas no seu site.
 
@@ -255,7 +255,7 @@ Para aumentar essa taxa você deve oferecer ao visitante do seu <strong>e-commer
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50964" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/E-commerce-web-development-1024x333.png" alt="E-Commerce" width="840" height="273" />
+<img class="aligncenter size-large wp-image-50964" src="/news/default-nc.jpg" alt="E-Commerce" width="840" height="273" />
 <h2>E-Commerce / Dica 1</h2>
 A maioria dos clientes de <strong>e-commerce</strong> faz somente uma <strong>compra virtual.</strong>
 
@@ -269,7 +269,7 @@ Leia um artigo específico sobre e-mails personalizados, <a href="http://ncbrasi
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50965" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/O-que-é-e-commerce.png" alt="E-Commerce" width="768" height="450" />
+<img class="aligncenter size-full wp-image-50965" src="/news/default-nc.jpg" alt="E-Commerce" width="768" height="450" />
 <h2>E-Commerce / Dica 3</h2>
 Além dessas opções, um a estratégia muito importante para a sua divulgação é a otimização da loja para site de buscas, o chamado <strong>SEO (Search Engine Optimization).</strong> Esse é um procedimento a médio e longo prazo, que demora de 6 a 9 meses para surtir resultado. Sugerimos que os lojistas busquem consultoria de empresas especializadas em <strong>SEO,</strong> como a <strong>NC Brasil!</strong>
 
@@ -281,7 +281,7 @@ Também é importante criar e desenvolver o <strong>relacionamento</strong> com 
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50966" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/o-que-e-e-commerce-1024x538.png" alt="E-Commerce" width="840" height="441" />
+<img class="aligncenter size-large wp-image-50966" src="/news/default-nc.jpg" alt="E-Commerce" width="840" height="441" />
 <h2>Gostou das dicas?</h2>
 <h1>Entre em contato conosco e faça um<a href="http://ncbrasil.com.br/pages/orcamento-criacao-de-sites/"> orçamento para criar uma ótima loja virtual! </a></h1>
 &nbsp;
@@ -300,7 +300,7 @@ Também é importante criar e desenvolver o <strong>relacionamento</strong> com 
       "NC Brasil",
       "seo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/eCommerce-concch.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50963"
   },
   {
@@ -315,7 +315,7 @@ Inicialmente, a compra de um software de prateleira pode parecer uma boa, levand
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50956" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/m_11-3.png" alt="Sistema Sob Demanda" width="960" height="640" />
+<img class="aligncenter size-full wp-image-50956" src="/news/default-nc.jpg" alt="Sistema Sob Demanda" width="960" height="640" />
 <h2>Sistema Sob Demanda / Sobre</h2>
 Por isso, a cada dia que passa, mais e mais empresas abandonam os sistemas antigos, e optam pelo serviço de <strong>sistemas sob demanda</strong> (também chamados de <strong>sistemas</strong> <strong>on demand</strong>)<strong>.</strong>
 
@@ -327,7 +327,7 @@ A criação de um <strong>sistema on demand</strong> leva em consideração vár
 
 O sistema é desenvolvimento conforme suas necessidades. Sem precisar se adaptar a um sistema pronto!
 <h2></h2>
-<img class="aligncenter size-full wp-image-50958" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/sistema-corporativos.jpg" alt="Sistema Sob Demanda" width="451" height="371" />
+<img class="aligncenter size-full wp-image-50958" src="/news/default-nc.jpg" alt="Sistema Sob Demanda" width="451" height="371" />
 <h2>Sistema Sob Demanda / Vantagens</h2>
 Além de obter um sistema personalizado e único para a sua empresa, como se essa já não bastasse, há outras vantagens em obter esse <strong>sistema on demand,</strong> como por exemplo; um tempo menor de implementação.
 
@@ -339,7 +339,7 @@ Depois desse pouco que você leu, ainda vai preferir comprar um software de prat
 
 &nbsp;
 <ul>
- 	<li><strong>Redução de resistências: <img class="alignright size-medium wp-image-50957" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/sistema-sob-demanda-300x300.jpg" alt="Sistema Sob Demanda" width="300" height="300" /></strong></li>
+ 	<li><strong>Redução de resistências: <img class="alignright size-medium wp-image-50957" src="/news/default-nc.jpg" alt="Sistema Sob Demanda" width="300" height="300" /></strong></li>
 </ul>
 O usuário tende a resistir a qualquer tipo de mudança. Para contornar essa situação, o desenvolvimento de <strong>sistemas sob demanda</strong> incorpora a participação de todos aqueles que trabalharão com o software. A ideia é incorporar sugestões das equipes e tornar a ferramenta mais fácil de ser utilizada e, consequentemente, aceita.
 
@@ -356,7 +356,7 @@ O <strong>sistema sob medida</strong> se mostra uma excelente opção de investi
 Por tais motivos, a decisão de investir no próprio <strong>sistemas sob demanda</strong> coloca a empresa em um novo patamar de atuação.
 
 Software prontos, de prateleira, não dão conta de especificidades e tendem a gerar problemas no fluxo de trabalho. Em um ambiente econômico caracterizado pela busca constante por eficiência e redução de custos, manter-se limitado por um software de antiquado pode colocar em risco a saúde financeira do negócio.
-<h2><img class="aligncenter size-full wp-image-50959" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/sistema-erp-sob-demanda-entenda-importancia-1000x642.jpg" alt="Sistema Sob Demanda" width="1000" height="642" /></h2>
+<h2><img class="aligncenter size-full wp-image-50959" src="/news/default-nc.jpg" alt="Sistema Sob Demanda" width="1000" height="642" /></h2>
 <h2><strong>Precisando de um sistema sob demanda profissional? </strong></h2>
 A <strong>NC Brasil</strong> possui uma equipe profissional e especialista em análise de negócios e de sistemas únicas, sob medida.
 
@@ -379,7 +379,7 @@ O resultado sempre será um <strong>software customizado,</strong> que irá aten
       "Sistema on demand",
       "Sistema sob demanda"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/sistema-erp-sob-demanda-entenda-importancia-1000x642.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50959"
   },
   {
@@ -392,7 +392,7 @@ Se você é um empreendedor e deseja que sua empresa esteja nos parâmetros de t
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50919" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/criacao-de-layout-para-sites.jpg" alt="Criação de um Aplicativo" width="472" height="404" />
+<img class="aligncenter size-full wp-image-50919" src="/news/default-nc.jpg" alt="Criação de um Aplicativo" width="472" height="404" />
 <h2>Erros na Criação de um Aplicativo / Sobre os Aplicativos</h2>
 Em meio aos avanços tecnológicos, a diversidade e a facilidade ao acesso do universo virtual se da pela invenção do <strong>Smartphone.</strong>
 
@@ -404,7 +404,7 @@ Por isso é tão importante <strong>Criação de um Aplicativo</strong> perfeito
 <blockquote><a href="https://www.ncbrasil.com.br/criacao-de-aplicativo-para-sua-empresa/"><strong>Para saber mais sobre A Importância de um aplicativo, leia outro artigo nosso clicando aqui!</strong></a></blockquote>
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50918" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/Criacao-de-site-em-Curitiba-3.png" alt="Criação de um Aplicativo" width="464" height="316" />
+<img class="aligncenter size-full wp-image-50918" src="/news/default-nc.jpg" alt="Criação de um Aplicativo" width="464" height="316" />
 <h2>Erros na Criação de um Aplicativo / Erro 1</h2>
 <strong>Não ache que quanto mais funcionalidade, melhor será seu Aplicativo!</strong>
 
@@ -416,7 +416,7 @@ Condensar da melhor maneira os usos de seu <strong>aplicativo,</strong> o torna 
 
 Além disso, muitas funções podem fazer com que o seu <strong>aplicativo</strong> perca o foco da empresa.
 <h2>Erros na Criação de um Aplicativo / Erro 2</h2>
-<strong>Defina antes o Layout!<img class="alignright size-medium wp-image-50920" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/aplicaitivo-264x300.jpg" alt="Criação de um Aplicativo" width="264" height="300" /></strong>
+<strong>Defina antes o Layout!<img class="alignright size-medium wp-image-50920" src="/news/default-nc.jpg" alt="Criação de um Aplicativo" width="264" height="300" /></strong>
 
 Por mais que a aparência pareça uma preocupação para depois, a verdade é que um <strong>aplicativo</strong> não depende de um único fator.
 
@@ -434,7 +434,7 @@ O público está bastante fragmentado e, como em qualquer outro trabalho de <str
 
 &nbsp;
 
-<img class="size-full wp-image-50922 aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/espiritismo-brasil-criacao-de-aplicativo-501651.jpg" alt="Criação de um Aplicativo" width="620" height="393" />
+<img class="size-full wp-image-50922 aligncenter" src="/news/default-nc.jpg" alt="Criação de um Aplicativo" width="620" height="393" />
 <h2></h2>
 <h2>Erros na Criação de um Aplicativo / Sem Erro!</h2>
 Se você deseja ter um <strong>Aplicativo</strong> profissional e único, busque por uma agência de <strong>Webdesign</strong> como a<strong> NC Brasil!</strong>
@@ -464,7 +464,7 @@ Aqui temos todos os recursos e profissionais especializados para atender as exig
       "Smartphones",
       "Software"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/20130731174543_660_420.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50930"
   },
   {
@@ -478,11 +478,11 @@ Diferente do <strong>Marketing</strong> comum, o <strong>Digital</strong> envolv
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50915" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/shutterstock_575844202-700x484.jpg" alt="marketing digital" width="700" height="484" />
+<img class="aligncenter size-full wp-image-50915" src="/news/default-nc.jpg" alt="marketing digital" width="700" height="484" />
 <h2><strong>Marketing Digital / Definição</strong></h2>
 Atualmente, a internet é o meio de comunicação mais utilizado na vida do ser humano. Ela está tão incorporada, que arriscamos dizer que é quase impossível viver sem ela nos dias de hoje. Da mais simples atividade, como procurar o telefone de um fast food, até coisas mais complexas como realizar pagamentos e pesquisas, ou até então desenvolver um novo software de uso.
 
-<img class="alignleft size-medium wp-image-50912" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/5-coisas-que-você-deve-saber-antes-de-investido-no-Marketing-Digital.-250x300.jpg" alt="marketing digital" width="250" height="300" />
+<img class="alignleft size-medium wp-image-50912" src="/news/default-nc.jpg" alt="marketing digital" width="250" height="300" />
 
 Por estas e mais que fica cada vez mais difícil ver pessoas desconectadas de seus Smartphones. O mundo está a um dedo de distância. Dessa forma, os meios de compras e vendas não ficam de fora dessa evolução.
 
@@ -498,7 +498,7 @@ Esta ferramenta é uma oportunidade imperdível para as empresas reforçarem sua
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50914" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/marketing-digital-1024x670.jpg" alt="marketing digital" width="840" height="550" />
+<img class="aligncenter size-large wp-image-50914" src="/news/default-nc.jpg" alt="marketing digital" width="840" height="550" />
 <h2><strong>Marketing Digital / Como Fazer</strong></h2>
 Apesar do grande número de possibilidades de aplicações do Marketing Digital, existem aquelas estratégias/técnicas que se destacam por serem usadas pela grande maioria e trazerem normalmente resultados positivos. São elas:
 <ul>
@@ -510,7 +510,7 @@ Apesar do grande número de possibilidades de aplicações do Marketing Digital,
 </ul>
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50913" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/redes-sociais-900x500.jpg" alt="marketing digital" width="900" height="500" />
+<img class="aligncenter size-full wp-image-50913" src="/news/default-nc.jpg" alt="marketing digital" width="900" height="500" />
 
 Para um resultado imediato, é necessário a busca de profissionais qualificados!
 
@@ -532,7 +532,7 @@ Na <strong>NC Brasil</strong> você encontra eles!
       "rede Social",
       "Site"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/shutterstock_575844202-700x484.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50915"
   },
   {
@@ -544,7 +544,7 @@ Na <strong>NC Brasil</strong> você encontra eles!
 Sistema de Cabeleireiros para deixar os salões de beleza, cabeleireiros e barbeiros ainda melhores!
 
 &nbsp;
-<h2><img class="aligncenter size-full wp-image-50881" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/confira-4-softwares-para-salao-de-beleza-que-voce-deveria-usar.jpeg" alt="Sistema de Cabeleireiros " width="1000" height="667" /></h2>
+<h2><img class="aligncenter size-full wp-image-50881" src="/news/default-nc.jpg" alt="Sistema de Cabeleireiros " width="1000" height="667" /></h2>
 <h2>Sistema de Cabeleireiros / O que é?</h2>
 Sabemos que todo tipo de gerenciamento de empresas é uma guerra para organização de horários. Não seria diferente a administração de um salão de beleza ou uma barbearia!
 
@@ -562,7 +562,7 @@ Os <strong>Sistema de Cabeleireiros</strong> são voltados para os salões que 
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50879" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/62152-guest-post-x-dicas-para-comecar-o-marketing-digital-em-salao-de-beleza-1-1024x683.jpg" alt="Sistema de Cabeleireiros " width="840" height="560" />
+<img class="aligncenter size-large wp-image-50879" src="/news/default-nc.jpg" alt="Sistema de Cabeleireiros " width="840" height="560" />
 <h2>Sistema de Cabeleireiros / Vantagens</h2>
 <div id="pg-7520-1" class="panel-grid panel-has-style">
 <div class="siteorigin-panels-stretch panel-row-style panel-row-style-for-7520-1" data-stretch-type="full">
@@ -590,7 +590,7 @@ Os <strong>Sistema de Cabeleireiros</strong> são voltados para os salões que 
 </div>
 </div>
 &nbsp;
-<p style="text-align: left;"><img class="aligncenter size-full wp-image-50880" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/07/1.png" alt="Sistema de Cabeleireiros " width="761" height="507" /></p>
+<p style="text-align: left;"><img class="aligncenter size-full wp-image-50880" src="/news/default-nc.jpg" alt="Sistema de Cabeleireiros " width="761" height="507" /></p>
 
 <h2>Sistema de Cabeleireiros / Adquira já!</h2>
 O <strong>Sistema de Cabeleireiros</strong> para Salão de Beleza e Barbearias é um grande auxiliar em sua vida cotidiana.
@@ -612,7 +612,7 @@ Não hesite em fazer um orçamento grátis!
       "Sistema de Cabeleireiros",
       "Software"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/confira-4-softwares-para-salao-de-beleza-que-voce-deveria-usar.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50881"
   },
   {
@@ -625,7 +625,7 @@ A <strong>Nota Fiscal</strong> eletrônica (NF-e) é o documento de existência
 
 Leia mais sobre!
 
-<img class="aligncenter size-full wp-image-50867" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/1507046448_image2.jpg" alt="Sistema Gerador de Nota Fiscal" width="944" height="715" />
+<img class="aligncenter size-full wp-image-50867" src="/news/default-nc.jpg" alt="Sistema Gerador de Nota Fiscal" width="944" height="715" />
 <h2>Sistema Gerador de Nota Fiscal / Sobre</h2>
 A emissão de <strong>Nota Fiscal</strong> é um requisito obrigatório para grande parte dos empreendimentos, e para isso, é necessário obter um <strong>Sistema Gerador de Nota Fiscal.</strong>
 
@@ -650,7 +650,7 @@ Um design próprio e adaptável à sua empresa, suporte técnico especializado, 
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50866" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/NOTA-FISCAL.png" alt="Sistema Gerador de Nota Fiscal" width="350" height="200" />
+<img class="aligncenter size-full wp-image-50866" src="/news/default-nc.jpg" alt="Sistema Gerador de Nota Fiscal" width="350" height="200" />
 <p class="col-md-8 col-md-offset-2 tc bl-spacing">Emita todos os tipos de<strong> Notas Fiscais Eletrônicas</strong> com o<strong> Sistema Gerador de Notas Fiscais</strong> da <strong>NC Brasil</strong></p>
 
 <div class="col-md-12">
@@ -689,7 +689,7 @@ Totalmente integrado, nosso <strong>Sistema Gerador de Notas Fiscais</strong> r
 O <strong>Sistema Gerador de Notas Fiscais</strong> também colabora para a diminuição de gastos, trazendo praticidade e eficiência para sua empresa. Emitindo nota fiscal do consumidor e enviando por e-mail ou imprimindo na hora!
 <div></div>
 <div></div>
-<div><img class="aligncenter size-full wp-image-50869" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/nota-fiscal-certifique-eua.png" alt="Sistema Gerador de Nota Fiscal" width="256" height="256" /></div>
+<div><img class="aligncenter size-full wp-image-50869" src="/news/default-nc.jpg" alt="Sistema Gerador de Nota Fiscal" width="256" height="256" /></div>
 <div class="col-md-12">
 <div class="row tl-spacing">
 <div class="col-md-6">
@@ -723,7 +723,7 @@ O <strong>Sistema Gerador de Notas Fiscais</strong> também colabora para a dim
       "Sistemas",
       "Software"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Qual_emissor_de_nota_fiscal_devo_escolher_10_55_39.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50870"
   },
   {
@@ -738,7 +738,7 @@ Saiba mais sobre à seguir!
 
 &nbsp;
 
-<img class="aligncenter wp-image-50846 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/imóveis.jpg.jpeg" alt="Site para Vender Imóveis" width="792" height="350" />
+<img class="aligncenter wp-image-50846 size-full" src="/news/default-nc.jpg" alt="Site para Vender Imóveis" width="792" height="350" />
 <h2>Site para Vender Imóveis / Sobre</h2>
 Cerca de 100 milhões de brasileiros estão nesse exato momento conectado à internet, e essa estatística cresce a cada dia. A internet faz parte da rotina das pessoas e elas a usam tanto para socializar, quanto para pesquisar produtos, serviços, comentários e reputação.
 
@@ -748,12 +748,12 @@ Milhões de brasileiros ascenderam de classe, aumentaram sua renda e tiveram cr�
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50845" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/estender-500-8-vantagens-ao-utilizar-um-sistema-de-administracao-de-imoveis-para-locacao-1024x512.jpeg" alt="Site para Vender Imóveis" width="840" height="420" />
+<img class="aligncenter size-large wp-image-50845" src="/news/default-nc.jpg" alt="Site para Vender Imóveis" width="840" height="420" />
 <h2>Site para Vender Imóveis / Bom Site</h2>
 <h3>1) A primeira impressão, é a que fica!</h3>
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50847" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/economizar-venda-imovel-1024x678.jpg" alt="Site para Vender Imóveis" width="840" height="556" />
+<img class="aligncenter size-large wp-image-50847" src="/news/default-nc.jpg" alt="Site para Vender Imóveis" width="840" height="556" />
 
 Todos conhecem esse famoso ditado, certo? Ele também é usado para o mundo virtual.
 
@@ -766,7 +766,7 @@ Além disso, é de extrema importância a criação de um <strong>Site para Vend
 <h3>2) Era da Velocidade</h3>
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50848" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/loading-bar-scribble-animation-doodle-white-background-4k_s7gmksp_g_thumbnail-full04-1024x576.png" alt="Site para Vender Imóveis" width="840" height="473" />
+<img class="aligncenter size-large wp-image-50848" src="/news/default-nc.jpg" alt="Site para Vender Imóveis" width="840" height="473" />
 
 Já acessou alguma página em que passou minutos esperando as imagens carregarem? Ou então esperou mais do que queria pra abrir uma página dentro do site? Pois é, não existe ser humano que goste de esperar.
 
@@ -776,7 +776,7 @@ O ideal é que as páginas levem, no máximo, três segundo para carregar as inf
 <h3>3) Site Intuitivo</h3>
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50850" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/intuitive.png" alt="Site para Vender Imóveis" width="720" height="376" />
+<img class="aligncenter size-full wp-image-50850" src="/news/default-nc.jpg" alt="Site para Vender Imóveis" width="720" height="376" />
 
 As funções do seu <strong>Site para Vender Imóveis </strong>necessitam estar dispostas de forma lógica, para que o cliente não se sinta perdido ao navegar.
 
@@ -790,7 +790,7 @@ Essas soluções são benéficas para seu possível cliente e para você. Uma bo
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50849" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/blog-3.jpg" alt="Site para Vender Imóveis" width="531" height="306" />
+<img class="aligncenter size-full wp-image-50849" src="/news/default-nc.jpg" alt="Site para Vender Imóveis" width="531" height="306" />
 
 </div>
 Manter contato com o cliente a partir do primeiro acesso ao seu site é primordial. E quanto mais opções você disponibilizar para alcançar esse objetivo, melhor. O “fale conosco” é uma opção. Contudo, você também pode oferecer alternativas de atendimento online, como um sistema de chat.
@@ -820,7 +820,7 @@ Dessa forma, você pode esclarecer qualquer dúvida de imediato, lá no site mes
       "Site para Vender Imóveis",
       "site responsivo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/imóveis.jpg.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50846"
   },
   {
@@ -834,7 +834,7 @@ Dessa forma, você pode esclarecer qualquer dúvida de imediato, lá no site mes
 Trata-se, portanto, de um modelo de comércio que utiliza como pilar as <strong>plataformas eletrônicas</strong>, como Smartphones; computadores e etc, para veicular as vendas.
 
 Assim, o comércio eletrônico se refere a qualquer transação comercial que envolva a cadeira de valor dos processos de negócios no ambiente eletrônico, como a<strong> internet</strong>.
-<h2><strong><img class="wp-image-50843 aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/download-1.png" alt="E-Commerce" width="664" height="346" /></strong></h2>
+<h2><strong><img class="wp-image-50843 aligncenter" src="/news/default-nc.jpg" alt="E-Commerce" width="664" height="346" /></strong></h2>
 <h2><span class="font-134980 font-377884"><strong>E-Commerce</strong> </span>/ Sobre</h2>
 Assim, <strong>E-Commerce </strong>é basicamente um meio de comércio virtual - uma estratégia de marketing - que possibilita que sua empresa venha alavancar nas vendas por vias eletrônicas.
 
@@ -847,13 +847,13 @@ Baseado na possibilidade de criar uma empresa nos moldes do <strong>E-Commerce</
  	<li>Possibilidade de conciliar, paralelamente com seu emprego atual</li>
 </ol>
 Bom, se o seu objetivo é fazer renda e ganhar o mercado com grandes chances de ascensão no comércio virtual, invista no <strong>E-Commerce</strong>!
-<h2><img class="aligncenter wp-image-50844 " src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/th-1.jpg" alt="E-Commerce" width="534" height="320" /></h2>
+<h2><img class="aligncenter wp-image-50844 " src="/news/default-nc.jpg" alt="E-Commerce" width="534" height="320" /></h2>
 <h2> E-Commerce / Por que ter?</h2>
 Além das vantagens acima mencionadas, é importante ter em mente que o <strong>comércio virtual</strong> está em constante expansão, e por se tratar de uma plataforma eletrônica, a possibilidade de <strong>atrair clientes</strong><span style="font-size: 16px;"> se torna cada vez maior.</span>
 
 Isso pelo fato do público alvo ter a possibilidade de efetuar suas compras com apenas alguns "clicks", no conforto de sua casa.
 
-Ainda vale ressaltar que sua loja virtual irá <strong>funcionar 24 horas por dia</strong>, o que é incrível para o seu <img class="alignright wp-image-50840 " src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/download-3.jpg" alt="E-Commerce" width="274" height="171" />cliente e para você, já que irá vender a todo momento.
+Ainda vale ressaltar que sua loja virtual irá <strong>funcionar 24 horas por dia</strong>, o que é incrível para o seu <img class="alignright wp-image-50840 " src="/news/default-nc.jpg" alt="E-Commerce" width="274" height="171" />cliente e para você, já que irá vender a todo momento.
 
 Sem contar o baixo custo para manutenção do seu <strong>E-Commerce</strong>, ao compará-lo ao de uma loja física.
 
@@ -897,7 +897,7 @@ Ele possibilita a <strong>otimização</strong> e a praticidade que o seu client
       "Planejamento",
       "Plataforma eletrônica"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/T-ecommerce-D-loja-Virtual.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50854"
   },
   {
@@ -912,7 +912,7 @@ Além disso, um software de gestão também possui recursos que possibilitam a r
 
 Veja mais a seguir!
 
-<img class="aligncenter size-full wp-image-50833" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/sistema-de-gesto-integrada.gif" alt="Sistema de Gestão Integrada" width="600" height="244" />
+<img class="aligncenter size-full wp-image-50833" src="/news/default-nc.jpg" alt="Sistema de Gestão Integrada" width="600" height="244" />
 
 &nbsp;
 <h2>Sistema de Gestão Integrada / O que é?</h2>
@@ -924,7 +924,7 @@ Por meio de sistemas de gestão individuais para cada processo de uma organizaç
 <div class="col-md-4 col-sm-4">
 <div class="single-item text-center">
 <div class="single-item-text">
-<h4 style="text-align: left;">1. Controle Financeiro<img class="alignright size-medium wp-image-50831" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/FCC_photo_tools-267x300.png" alt="Sistema de Gestão Integrada" width="267" height="300" /></h4>
+<h4 style="text-align: left;">1. Controle Financeiro<img class="alignright size-medium wp-image-50831" src="/news/default-nc.jpg" alt="Sistema de Gestão Integrada" width="267" height="300" /></h4>
 <p style="text-align: left;">Com um Sistema de Gestão Integrada, você pode ter em mãos o controle financeiro empresarial, que realiza procedimentos com inúmeros recursos, além de ferramentas de rotinas que vão lhe auxiliar no dia-a-dia de sua empresa para realizar a gestão financeira.</p>
 
 </div>
@@ -998,7 +998,7 @@ Emita boletos bancários e reduza o trabalho de ter que digitar os mesmo dados
 <div class="col-md-4 col-sm-4">
 <div class="single-item-icon">
 <h2 style="text-align: left;">Sistema de Gestão Integrada / Tenha o seu!</h2>
-<img class="alignleft size-medium wp-image-50830" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/integracao1-300x225.jpg" alt="Sistema de Gestão Integrada" width="300" height="225" />Além de todas as vantagens apresentadas, nós também oferecemos <strong>Segurança</strong> para os nossos clientes. Nosso <strong>Sistema de Gestão Integrada</strong> utiliza a mesma segurança que os bancos online, garantindo o tráfego e armazenamento seguro de todos os dados de sua empresa.
+<img class="alignleft size-medium wp-image-50830" src="/news/default-nc.jpg" alt="Sistema de Gestão Integrada" width="300" height="225" />Além de todas as vantagens apresentadas, nós também oferecemos <strong>Segurança</strong> para os nossos clientes. Nosso <strong>Sistema de Gestão Integrada</strong> utiliza a mesma segurança que os bancos online, garantindo o tráfego e armazenamento seguro de todos os dados de sua empresa.
 
 </div>
 </div>
@@ -1033,7 +1033,7 @@ Não acabou, a <strong>Privacidade</strong> é fundamental para nós. Não iremo
       "Sistema de Gestão Integrada",
       "Software de Gestão Integrada"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/sistema-de-gestao-integrada-1-e1530023148898.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50832"
   },
   {
@@ -1046,7 +1046,7 @@ O <strong>Search Engine Optimization (SEO)</strong>, em outras palavras "Otimiz
 
 &nbsp;
 
-<img class="aligncenter wp-image-50820 size-large" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/seo-em-lojas-virtuais-1068x580-1024x556.jpg" alt="SEO" width="840" height="456" />
+<img class="aligncenter wp-image-50820 size-large" src="/news/default-nc.jpg" alt="SEO" width="840" height="456" />
 <h2>SEO / Sobre</h2>
 Como dito acima, o <strong>SEO</strong> compreende várias técnicas que possuem como função deixar um site “otimizado” para que os mecanismos de busca identifiquem mais facilmente os pontos fortes desse site e o coloque nas primeiras posições do ranking.
 
@@ -1058,7 +1058,7 @@ Você provavelmente já deve ter buscado um produto na internet e clicou apenas 
 
 &nbsp;
 
-<img class="aligncenter wp-image-50819 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/SEO1.jpg" alt="SEO" width="500" height="388" />
+<img class="aligncenter wp-image-50819 size-full" src="/news/default-nc.jpg" alt="SEO" width="500" height="388" />
 <h2>SEO / Por que ter?</h2>
 <ol>
  	<li>Poder de Alcance</li>
@@ -1085,7 +1085,7 @@ Quanto mais pessoas comprarem, mais sua marca será conhecida. Quanto mais conhe
 
 &nbsp;
 <h3>3. Referência</h3>
-Bom, se sua marca está fortalecida e seu poder de alcance é inimaginável, logo sua empresa se tornará referência <img class="wp-image-50822 size-full alignright" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/download.png" alt="SEO" width="267" height="189" />para as outras do mesmo ramo e para as empresas que também visam crescimento em larga escala.
+Bom, se sua marca está fortalecida e seu poder de alcance é inimaginável, logo sua empresa se tornará referência <img class="wp-image-50822 size-full alignright" src="/news/default-nc.jpg" alt="SEO" width="267" height="189" />para as outras do mesmo ramo e para as empresas que também visam crescimento em larga escala.
 
 Quanto mais buscas você estiver nas primeiras páginas maior será a sua autoridade na área em que atua.
 <p dir="ltr">Pessoas buscam por dados relevantes, soluções de problemas, dicas para melhorar o seu dia a dia e muitas outras informações. E se nesses casos as buscas foram referentes a temas que sua empresa atua com certeza a marca que ela irá ver como referência de mercado será a sua.</p>
@@ -1098,7 +1098,7 @@ Para conhecer melhor as técnicas e estratégias adotadas na otimização de sit
 
 &nbsp;
 
-<img class="aligncenter wp-image-50821 size-large" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/seo2-1024x767.jpg" alt="SEO" width="840" height="629" />
+<img class="aligncenter wp-image-50821 size-large" src="/news/default-nc.jpg" alt="SEO" width="840" height="629" />
 <blockquote>
 <h2>Deseja ter um projeto de SEO para sua empresa?</h2>
 <h1><a href="https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/">Clique aqui e faça já um orçamento!</a></h1>
@@ -1125,7 +1125,7 @@ Para conhecer melhor as técnicas e estratégias adotadas na otimização de sit
       "Site",
       "Site Otimizado"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Learn-SEO-796x398.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50823"
   },
   {
@@ -1138,7 +1138,7 @@ Sabia que cerca de 80% dos usuários preferem acessar as suas lojas preferidas a
 <blockquote><a href="https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/">Clique aqui e faça um orçamento!</a></blockquote>
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50810" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/MobilePlatforms.jpg" alt="Aplicativo para sua Empresa" width="950" height="534" />
+<img class="aligncenter size-full wp-image-50810" src="/news/default-nc.jpg" alt="Aplicativo para sua Empresa" width="950" height="534" />
 <h2>Aplicativo para sua Empresa / Sobre</h2>
 Atualmente vivemos em constantes avanços tecnológicos, e na era da facilidade de acesso ao mundo virtual, em virtude do <strong>Smartphone.</strong>
 
@@ -1152,7 +1152,7 @@ Qualquer empresa, de pequeno, médio ou grande porte deve estar atenta a esses c
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50811" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/mercado-de-criacao-de-aplicativos-mobile-1024x731.jpg" alt="Aplicativo para sua Empresa" width="840" height="600" />
+<img class="aligncenter size-large wp-image-50811" src="/news/default-nc.jpg" alt="Aplicativo para sua Empresa" width="840" height="600" />
 
 Com base nessas informações, você também deve estar se perguntando: <strong>será que chegou a hora de criar um aplicativo para a minha empresa?</strong> A seguir confira alguns motivos para a <strong>Criação de Aplicativos para sua Empresa!</strong>
 
@@ -1164,7 +1164,7 @@ Podemos garantir que certamente, os usuários que fizerem o download do <strong>
 Sendo assim, a <strong>Criação de um Aplicativo para sua Empresa</strong> é fundamental para o crescimento, já que fidelização é um dos principais pontos para o sucesso de uma empresa!
 <p class="blog_mat_post_artigo_texto">Quando os usuários tiverem dúvidas, quiserem economizar tempo ou resolver seus problemas, adivinha? O <strong>Aplicativo da sua empresa</strong> estará lá de prontidão, pronto para auxiliá-lo.</p>
 
-<h3>2. Relacionamento<img class="alignright size-medium wp-image-50812" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Aplicativos-para-viagem-300x293.jpg" alt="Aplicativo para sua Empresa" width="300" height="293" /></h3>
+<h3>2. Relacionamento<img class="alignright size-medium wp-image-50812" src="/news/default-nc.jpg" alt="Aplicativo para sua Empresa" width="300" height="293" /></h3>
 <p class="blog_mat_post_artigo_texto">Com um <strong>Aplicativo,</strong> você fortalece os laços entre você e o seu cliente. Isso torna o relacionamento mais intenso e, consequentemente, faz com que o usuário prefira confiar em você do que em um concorrente, por exemplo.</p>
 <p class="blog_mat_post_artigo_texto">A <strong>Criação de Aplicativo para sua Empresa</strong> faz com que o usuário veja em você tudo o que ele precisa naquele segmento do mercado. Ele verá a sua empresa como parceira!</p>
 
@@ -1180,7 +1180,7 @@ Se sua empresa visa o crescimento, certamente terá um planejamento onde há uma
 <p class="blog_mat_post_artigo_texto">Essa é a sua chance de inovar antes dos concorrentes, tornando-se uma referência no seu segmento de atuação!</p>
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50813" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Fique-alerta-e-fuja-dos-aplicativos-falsos.jpg" alt="Aplicativo para sua Empresa" width="800" height="435" />
+<img class="aligncenter size-full wp-image-50813" src="/news/default-nc.jpg" alt="Aplicativo para sua Empresa" width="800" height="435" />
 <h2></h2>
 <h2>É preciso marcar presença digital e apenas um site já não é mais suficiente. As empresas precisam estar nas redes sociais e também na palma da mão das pessoas!</h2>
 <h2>Crie já um Aplicativo para sua Empresa!</h2>
@@ -1188,7 +1188,7 @@ Se sua empresa visa o crescimento, certamente terá um planejamento onde há uma
 <h2>Aplicativo para sua Empresa / Como obter um?</h2>
 <p class="p1"><span class="s1">A <strong>NC Brasil</strong> é especialista na<strong> Criação de Aplicativos</strong> que correspondam à necessidade da sua empresa, capazes de oferecerem a<span class="Apple-converted-space"> </span>seu negócio entretenimento e utilidade! </span></p>
 <p class="p1"><span class="s1">Afim de sua empresa possa proporcionar mais acessibilidade e prestar melhor atendimento a seus clientes.</span></p>
-<img class="alignleft wp-image-50814 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/aplicativos-ico.jpg" alt="Aplicativo para sua Empresa" width="220" height="220" />
+<img class="alignleft wp-image-50814 size-full" src="/news/default-nc.jpg" alt="Aplicativo para sua Empresa" width="220" height="220" />
 <p class="p1"><span class="s1">O fator da comodidade tem permitido que os usuários acessem os aplicativos, seja no ônibus, em um restaurante, e até mesmo no trabalho.</span></p>
 <p class="p1"><span class="s1">Como dito, graças ao crescimento do uso de smartphones, iPads, tablets, etc, é de extrema importância que as empresas garantam a seus clientes um bom atendimento por meio desses dispositivos. Se eles têm um bom acesso móvel às informações de sua empresa, o seu negócio passa a gerar mais lucratividade.</span></p>
 <p class="p1">Nosso desenvolvimento é único com um framework que permite utilizar praticamente o mesmo código para ambas as principais plataformas móveis do mercado (Android e iOS).</p>
@@ -1216,7 +1216,7 @@ Se sua empresa visa o crescimento, certamente terá um planejamento onde há uma
       "Smartphones",
       "Tecnologia"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/mercado-de-criacao-de-aplicativos-mobile.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50811"
   },
   {
@@ -1227,7 +1227,7 @@ Se sua empresa visa o crescimento, certamente terá um planejamento onde há uma
     "content": `<h1>5 Vantagens de um Site Responsivo</h1>
 Você está navegando por essa página através de um computador, um smartphone ou de um tablet? Isso é possível graças ao <strong>Site Responsivo</strong>!
 
-<img class="aligncenter size-full wp-image-50806" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Site-Responsivo-Feira-de-Santana.jpg" alt="Site Responsivo" width="800" height="400" />
+<img class="aligncenter size-full wp-image-50806" src="/news/default-nc.jpg" alt="Site Responsivo" width="800" height="400" />
 <h2>Site Responsivo / Sobre</h2>
 O <strong>web design responsivo (Site Responsivo)</strong> é uma ótima solução na hora de resolver problemas de multi-telas, mas resolver isso a partir da perspectiva de impressões é um pouco mais difícil.
 
@@ -1241,7 +1241,7 @@ Também ajusta as dimensões das imagens, das fontes e dos demais elementos de u
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50807" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Outdated-Browsers_gdwxre.jpg" alt="Site Responsivo" width="1600" height="934" />
+<img class="aligncenter size-full wp-image-50807" src="/news/default-nc.jpg" alt="Site Responsivo" width="1600" height="934" />
 
 &nbsp;
 <h2>Site Responsivo / Vantagens</h2>
@@ -1258,7 +1258,7 @@ Em contrapartida, se ele fica satisfeito com o seu site, com uma experiência po
 
 Pegue você mesmo como exemplo. Sempre que você abre um site pelo celular e percebe que ele está desalinhado, você fica satisfeito?
 <ul>
- 	<li><strong>Layout</strong><img class="alignright size-medium wp-image-50804" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/responsive-1622825_1280-1030x579-300x169.png" alt="Site Responsivo" width="300" height="169" /></li>
+ 	<li><strong>Layout</strong><img class="alignright size-medium wp-image-50804" src="/news/default-nc.jpg" alt="Site Responsivo" width="300" height="169" /></li>
 </ul>
 Às vezes é ótimo que o conteúdo ocupe toda a largura de uma tela,
 
@@ -1282,7 +1282,7 @@ Além disso, a estrutura de URL permanecerá a mesma em todos os dispositivos, o
 <ul>
  	<li><strong>Mais compartilhamentos nas mídias sociais</strong></li>
 </ul>
-<img class="alignleft size-full wp-image-50805" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/images.jpg" alt="Site Responsivo" width="287" height="175" />O Brasil possui 78 milhões de contas em<strong> redes sociais</strong> que são acessadas por dispositivos móveis, número que equivale a 38% da população total. Esse número não significa usuários únicos, uma vez que uma pessoa pode ter várias contas em diferentes redes sociais, por exemplo.
+<img class="alignleft size-full wp-image-50805" src="/news/default-nc.jpg" alt="Site Responsivo" width="287" height="175" />O Brasil possui 78 milhões de contas em<strong> redes sociais</strong> que são acessadas por dispositivos móveis, número que equivale a 38% da população total. Esse número não significa usuários únicos, uma vez que uma pessoa pode ter várias contas em diferentes redes sociais, por exemplo.
 
 Porém, não deixa de ser um número expressivo. Como o acesso às redes sociais via celulares e tablets é a cada dia mais frequente, nada mais inteligente do que seu site ser um <strong>site responsivo</strong>. As chances de suas páginas serem compartilhadas em <strong>redes sociais</strong> por esses usuários são muito maiores se eles tiverem uma experiência agradável de navegação.
 
@@ -1306,7 +1306,7 @@ Além do mais, ter apenas uma única página responsiva deixa a experiência mai
       "site responsivo",
       "Web design responsivo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Site-Responsivo-Feira-de-Santana.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50806"
   },
   {
@@ -1319,7 +1319,7 @@ Atualmente temos dois modelos de sites para dispositivos móveis, como smartphon
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50799" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/site-responsivo-x-site-mobile.png" alt="Site Responsivo" width="760" height="420" />
+<img class="aligncenter size-full wp-image-50799" src="/news/default-nc.jpg" alt="Site Responsivo" width="760" height="420" />
 <h2>Site</h2>
 O <strong>site</strong> de sua empresa já está preparado para a navegação <strong>mobile?</strong> Todas as informações, interações e funções podem ser facilmente acessadas por smartphones e tablets? Nunca foi tão importante se perguntar isso. Por quê?
 
@@ -1331,34 +1331,34 @@ Portanto, é de extrema importância possuir um site com interatividades <strong
 
 &nbsp;
 
-<img class="alignnone size-full wp-image-50795" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/blog-site-responsivo.jpg" alt="" width="1000" height="500" />
+<img class="alignnone size-full wp-image-50795" src="/news/default-nc.jpg" alt="" width="1000" height="500" />
 <h2>Site Responsivo / O que é?</h2>
 Um <strong>Site Responsivo</strong>, é quando o <strong>site</strong> automaticamente se adapta em qualquer dispositivo que o usuário esteja visualizando com base no tamanho da tela em que o <strong>site</strong> é exibido.
 
 Ou seja não importa em qual tipo de dispositivo o <strong>site</strong> seja acessado sejam eles computadores desktops, notebooks, smartphones, tablets, o <strong>site</strong> será exibido da melhor maneira para aquele dispositivo.
 <h2></h2>
 <h2>Site Responsivo / Como funciona?</h2>
-<img class="wp-image-50796 size-medium alignleft" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Benefícios-e-Vantagens-de-um-site-responsivo.-300x200.jpg" alt="Site Responsivo" width="300" height="200" />
+<img class="wp-image-50796 size-medium alignleft" src="/news/default-nc.jpg" alt="Site Responsivo" width="300" height="200" />
 
 Em um <strong>site</strong> sem essa tecnologia quanto menor o tamanho da tela maior será o zoom para podermos visualizar melhor o conteúdo do site.
 
 No <strong>site responsivo</strong> todos os elementos são reorganizados através de css utilizando um sistema conhecido como <strong>“media queries</strong>” aonde podemos alterar as propriedades dos elementos em um ou mais tamanhos de tela especificados pelo programador. Por exemplo:
 
 Através do media queries podemos programar que uma "div" que tenha um banner apareça num Ipad mas não num Iphone, ou que um menu seja vertical em um celular de tela de 3 polegadas e seja horizontal em um tablet de 7 polegadas.
-<h2><img class="aligncenter size-full wp-image-50798" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/site-mobile-vs-site-de-desktop.png" alt="site mobile" width="950" height="350" /></h2>
+<h2><img class="aligncenter size-full wp-image-50798" src="/news/default-nc.jpg" alt="site mobile" width="950" height="350" /></h2>
 <h2>Site mobile / O que é?</h2>
 <p class="blog_mat_post_artigo_texto">Criar um<strong> site mobile</strong> significa possuir um site “totalmente” diferente, com linhas de código, imagens, e estrutura feitas pensadas somente para dispositivos móveis.</p>
 <p class="blog_mat_post_artigo_texto">Esta foi a primeira solução criada por grandes empresas que perceberam a importância deste tipo de acesso. Quem utiliza <strong>site mobile</strong> geralmente cria um subdomínio ao qual os usuários são redirecionados na hora que acessar através de celulares ou tablets.</p>
 
 <h2>Site mobile / Como Funciona?</h2>
-<img class="alignright wp-image-50797 size-medium" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/how-to-make-your-site-mobile-ready-in-just-30-seconds-71f44df579-300x169.jpg" alt="site mobile" width="300" height="169" />
+<img class="alignright wp-image-50797 size-medium" src="/news/default-nc.jpg" alt="site mobile" width="300" height="169" />
 <p class="blog_mat_post_artigo_texto">As vantagens do<strong> site mobile</strong>: apesar de ter perdido espaço para os <strong>sites responsivos</strong>, os <strong>sites mobile</strong> possuem algumas vantagens e ainda são a principal escolha de grandes empresas.</p>
 <p class="blog_mat_post_artigo_texto">Primeiramente, por ser essencialmente desenvolvido para dispositivos móveis, este tipo de site pode permitir uma melhor experiência de usuário e maiores taxas de conversão.</p>
 <p class="blog_mat_post_artigo_texto">Em segundo lugar, o custo de criação de um site mobile pode ser inferior a uma readaptação do site atual para ser responsivo.</p>
 <p class="blog_mat_post_artigo_texto">Por fim, os <strong>Sites Mobiles</strong> tendem a ser mais rápidos do que o <strong>Site Responsivo,</strong> pois há menos códigos e informações a serem trabalhadas.</p>
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50800" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/site-responsivo-x-site-mobile.jpg" alt="Site Responsivo" width="661" height="372" />
+<img class="aligncenter size-full wp-image-50800" src="/news/default-nc.jpg" alt="Site Responsivo" width="661" height="372" />
 <h2>Site Responsivo x Site Mobile</h2>
 O tipo de site que devemos utilizar depende muito do projeto que vamos trabalhar.
 
@@ -1390,7 +1390,7 @@ Sendo muito interessante, pois você só precisa trabalhar nesses sistemas como 
       "site responsivo",
       "wordpress"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/site-responsivo-x-site-mobile.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50799"
   },
   {
@@ -1403,13 +1403,13 @@ Facilite sua análise, monitoramento e organização das informações de sua em
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50788" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Post-blog-Relatório-fácil-e-acessível-gera-insights-positivos-para-a-marca.png" alt="Sistema Gerador de Relatórios" width="670" height="300" />
+<img class="aligncenter size-full wp-image-50788" src="/news/default-nc.jpg" alt="Sistema Gerador de Relatórios" width="670" height="300" />
 <h2>Sistema Gerador de Relatórios / Sobre</h2>
 Sempre haverá vezes em que as páginas formatadas e relatórios dos sistemas de informação será insuficiente para o suporte e realização de análises nas decisões das empresas.
 
 É preciso buscar informações, realizar correlações e simular situações que não são possíveis prever antecipadamente. E frequentemente, num período de tempo muito curto para que o processo seja concluído.
 
-<img class="alignleft size-full wp-image-50791" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/relatorios.jpg" alt="Sistema Gerador de Relatórios" width="240" height="210" />O<strong> Sistema Gerador de Relatórios</strong> – Gerador de Relatórios é a resposta para esse cenário!
+<img class="alignleft size-full wp-image-50791" src="/news/default-nc.jpg" alt="Sistema Gerador de Relatórios" width="240" height="210" />O<strong> Sistema Gerador de Relatórios</strong> – Gerador de Relatórios é a resposta para esse cenário!
 
 A <strong>NC Brasil</strong> produziu com alta tecnologia e com procedimentos rigorosos um <strong>Sistema Gerador de Relatórios </strong>que possibilita os seus clientes acessar de forma amigável e intuitiva os dados mantidos.
 
@@ -1420,7 +1420,7 @@ O acesso e tratamento das informações assemelham-se ao das planilhas eletrôni
 &nbsp;
 <div class="esquerda_infosolucoes">
 <h2>Sistema Gerador de Relatórios / Customização de relatórios</h2>
-<img class="alignright size-full wp-image-50792" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/gerador-relatorio.jpg" alt="Sistema Gerador de Relatórios" width="415" height="260" />A <strong>NC Brasil</strong> disponibiliza, no <strong>Gerador de Relatórios</strong>, opções que podem ser customizados de acordo com sua necessidade e demanda, podendo inclusive serem exportados e salvos em planilhas Excel. Os relatórios têm opções inspiradas nos mais populares e funcionais Sistemas de BI do mundo, incluindo a possibilidade de salvar o modelo de consulta para tornar sua próxima busca mais rápida. Além de características como:
+<img class="alignright size-full wp-image-50792" src="/news/default-nc.jpg" alt="Sistema Gerador de Relatórios" width="415" height="260" />A <strong>NC Brasil</strong> disponibiliza, no <strong>Gerador de Relatórios</strong>, opções que podem ser customizados de acordo com sua necessidade e demanda, podendo inclusive serem exportados e salvos em planilhas Excel. Os relatórios têm opções inspiradas nos mais populares e funcionais Sistemas de BI do mundo, incluindo a possibilidade de salvar o modelo de consulta para tornar sua próxima busca mais rápida. Além de características como:
 <ul>
  	<li>Mobilidade</li>
  	<li>Conectividade</li>
@@ -1439,7 +1439,7 @@ O acesso e tratamento das informações assemelham-se ao das planilhas eletrôni
  	<li>Todas as modalidades de delivery</li>
  	<li>Autonomia total do usuário</li>
 </ul>
-<img class="alignnone size-full wp-image-50790" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/relatorios-sap-b1.jpg" alt="Sistema Gerador de Relatórios" width="670" height="300" />
+<img class="alignnone size-full wp-image-50790" src="/news/default-nc.jpg" alt="Sistema Gerador de Relatórios" width="670" height="300" />
 <h2>Sistema Gerador de Relatórios / Tecnologia líder</h2>
 <ul>
  	<li>Concebido de forma completa e integrada | Software único e modular</li>
@@ -1466,7 +1466,7 @@ O acesso e tratamento das informações assemelham-se ao das planilhas eletrôni
       "Sistema Gerador de Relatórios",
       "Sistemas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/4-razoes-para-utilizar-a-automacao-de-email-marketing.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50784"
   },
   {
@@ -1496,7 +1496,7 @@ Leia mais para saber sobre <strong>Sistema de Automação de E-mail</strong>!
 </div>
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50781" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/automacao-de-e-mail-marketing.png" alt="Sistema de Automação de E-mail" width="760" height="280" />
+<img class="aligncenter size-full wp-image-50781" src="/news/default-nc.jpg" alt="Sistema de Automação de E-mail" width="760" height="280" />
 <div class="row">
 <div id="post-area" class="col span_9"><article id="post-7570" class="regular post-7570 post type-post status-publish format-standard has-post-thumbnail hentry category-sem-categoria">
 <div class="inner-wrap animated">
@@ -1514,7 +1514,7 @@ Isso fazia com que o cliente em potencial ficasse até mesmo com raiva da empres
 
 &nbsp;
 <h2><strong>Sistema de Automação de E-mail / Pra que serve?</strong></h2>
-<img class="alignleft size-medium wp-image-50780" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/6-melhores-ferramentas-de-automação-de-e-mail-marketing-300x214.png" alt="Sistema de Automação de E-mail" width="300" height="214" />Um <strong>Sistema de Automação de E-mail</strong> determina quais serão os alvos que receberão determinada comunicação para torná-la cada vez mais adequada. Isso acontece a partir de características de comportamento. Com a ferramenta certa, as empresas conseguem enviar automaticamente um prospecto de maneira ágil e com um conteúdo relevante aos interesses de determinado grupo.
+<img class="alignleft size-medium wp-image-50780" src="/news/default-nc.jpg" alt="Sistema de Automação de E-mail" width="300" height="214" />Um <strong>Sistema de Automação de E-mail</strong> determina quais serão os alvos que receberão determinada comunicação para torná-la cada vez mais adequada. Isso acontece a partir de características de comportamento. Com a ferramenta certa, as empresas conseguem enviar automaticamente um prospecto de maneira ágil e com um conteúdo relevante aos interesses de determinado grupo.
 
 <b>Em resumo, vai atingir a pessoa certa, no momento certo!</b>
 
@@ -1540,7 +1540,7 @@ Utilizar as ferramentas de automação de e-mail proporciona baixo custo e alta 
 </div>
 &nbsp;
 
-<img class="aligncenter wp-image-50784 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/4-razoes-para-utilizar-a-automacao-de-email-marketing.jpeg" alt="Sistema de Automação de E-mail" width="1000" height="818" />
+<img class="aligncenter wp-image-50784 size-full" src="/news/default-nc.jpg" alt="Sistema de Automação de E-mail" width="1000" height="818" />
 <div class="row">
 <div id="post-area" class="col span_9"><article id="post-7570" class="regular post-7570 post type-post status-publish format-standard has-post-thumbnail hentry category-sem-categoria">
 <div class="inner-wrap animated">
@@ -1549,7 +1549,7 @@ Utilizar as ferramentas de automação de e-mail proporciona baixo custo e alta 
 <h2><strong>Sistema de Automação de E-mail / Clientes</strong></h2>
 Os clientes também estão em constante evolução e, a cada dia mais, ganham segurança a respeito do que gostam e querem. É justamente por isso que a automação é necessária para atingi-los no momento certo e no canal certo, apesar da gama de possibilidades e atrativos da concorrência. Um <strong>Sistema de Automação de E-mail </strong>resolve os problemas!
 
-<img class="alignright size-full wp-image-50782" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/e-mail-marketing-automacao-thunder-mustard-300x300.jpg" alt="Sistema de Automação de E-mail" width="300" height="300" />A principal maneira de chegar ao cliente é criar mensagens específicas para cada tipo de perfil, considerando as necessidades e solucionando os problemas para aumentar a chance de conversão. Além disso, a automação permite, ainda, o contato na hora certa, sem encher o e-mail da pessoa de spam.
+<img class="alignright size-full wp-image-50782" src="/news/default-nc.jpg" alt="Sistema de Automação de E-mail" width="300" height="300" />A principal maneira de chegar ao cliente é criar mensagens específicas para cada tipo de perfil, considerando as necessidades e solucionando os problemas para aumentar a chance de conversão. Além disso, a automação permite, ainda, o contato na hora certa, sem encher o e-mail da pessoa de spam.
 
 Ao receber mensagens direcionadas em intervalos personalizados, o cliente percebe que a empresa se concentra em ajudá-lo, dando uma solução personalizada.
 
@@ -1586,7 +1586,7 @@ Ao receber mensagens direcionadas em intervalos personalizados, o cliente perceb
       "Sistema de Automação de E-mail",
       "Sistemas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/email-marketing-automacao-pluga.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50783"
   },
   {
@@ -1601,7 +1601,7 @@ Está precisando de foco, quer dar um gás na produtividade ou controlar a gest�
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50776" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/gestao-talentos.jpg" alt="Aplicativo para Gestão Empresarial" width="500" height="301" />
+<img class="aligncenter size-full wp-image-50776" src="/news/default-nc.jpg" alt="Aplicativo para Gestão Empresarial" width="500" height="301" />
 <h2></h2>
 <h2><strong>Aplicativo para Gestão Empresarial / Sobre</strong></h2>
 Gerir um negócio é muito mais do que calcular o faturamento, definir preços e pagar os funcionários. A gestão de uma empresa de qualquer porte envolve dinheiro, burocracia, contabilidade, processos e muito mais. É por essa razão que muitos empreendedores têm recorrido cada vez mais ao <strong>Aplicativo para Gestão Empresarial.</strong>
@@ -1616,7 +1616,7 @@ Ele permite analisar situações financeiras, além de apontar os caminhos para 
 
 &nbsp;
 <h2><strong>Aplicativo para Gestão Empresarial / Lembrete</strong></h2>
-<h2><strong><img class="alignright wp-image-50774 size-thumbnail" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Impulsine-sua-receita-de-fim-de-ano-com-gestão-através-de-aplicativos-para-celular-150x150.jpg" alt="Aplicativo para Gestão Empresarial" width="150" height="150" /></strong></h2>
+<h2><strong><img class="alignright wp-image-50774 size-thumbnail" src="/news/default-nc.jpg" alt="Aplicativo para Gestão Empresarial" width="150" height="150" /></strong></h2>
 Com o <strong>Aplicativo para Gestão Empresarial </strong> torna mais fácil: escrever e elaborar
 
 questionários e pesquisas em poucos minutos; enviar questionários para qualquer pessoa pela web, e-mail ou através das mídias sociais.
@@ -1635,7 +1635,7 @@ Com objetivo de facilitar reuniões e otimizar o tempo, agilizando o compartilh
 
 &nbsp;
 
-<img class="size-full wp-image-50775 aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/gestao-de-empresas-825x541.png" alt="Aplicativo para Gestão Empresarial" width="825" height="541" />
+<img class="size-full wp-image-50775 aligncenter" src="/news/default-nc.jpg" alt="Aplicativo para Gestão Empresarial" width="825" height="541" />
 
 Nosso <strong>software de gestão</strong> vai te ajudar a poupar tempo e dinheiro, facilitando a organização de informações fiscais e contábeis, além dos dados relativos aos clientes e às vendas, cadastro de produtos etc.
 
@@ -1660,7 +1660,7 @@ Seja qual for o seu negócio, o app é uma ótima solução para aprimorar o des
       "Sistema",
       "Software Empresarial"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/86585-o-funcionario-nao-sai-do-celular-use-isso-a-favor-da-sua-empresa-900x365.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50773"
   },
   {
@@ -1677,7 +1677,7 @@ Use o <strong>Sistema de Imobiliária</strong> da<strong> NC Brasil</strong> e g
 &nbsp;
 
 </div>
-<img class="aligncenter size-full wp-image-50770" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/c4810d3a-0bd8-4486-bac4-dc744347392f.jpg" alt="Sistema para Imobiliária" width="680" height="453" />
+<img class="aligncenter size-full wp-image-50770" src="/news/default-nc.jpg" alt="Sistema para Imobiliária" width="680" height="453" />
 
 &nbsp;
 
@@ -1708,7 +1708,7 @@ Use o <strong>Sistema de Imobiliária</strong> da<strong> NC Brasil</strong> e g
 <div class="container">
 <div class="row">
 <div class="col-md-6 coluna-texto">
-<h3><img class="wp-image-50769 size-medium alignright" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/FUTURO-MERCADO-IMOBILIARIO-300x200.jpg" alt="Sistema para Imobiliária" width="300" height="200" /></h3>
+<h3><img class="wp-image-50769 size-medium alignright" src="/news/default-nc.jpg" alt="Sistema para Imobiliária" width="300" height="200" /></h3>
 <h3>Sistema de Imobiliária / Gestão Financeira</h3>
 <p class="lead"><span class="text-bold">Contas a Pagar</span> e<span class="text-bold"> Contas a Receber</span> de forma simples, com lembretes para contas vencidas e contratos a serem reajustados ou renovados. E você não apenas os contratos: as contas da sua imobiliária como salário de funcionários, comissões e pagamentos à fornecedores também são gerenciadas no <strong>Sistema de Imobiliária</strong> da<strong> NC Brasil</strong>.</p>
 <p class="lead">O <span class="text-bold">Fluxo de Caixa ajuda</span> a garantir a saúde financeira da sua imobiliária, projetando o valor que seu caixa vai dispor no futuro, levando em conta o seu saldo no banco, seus recebimentos e pagamentos.</p>
@@ -1740,7 +1740,7 @@ Use o <strong>Sistema de Imobiliária</strong> da<strong> NC Brasil</strong> e g
 <div class="container text-center block-center">
 <div class="row">
 <div class="col-md-3 col-sm-6">
-<div class="text-block style4"><img class="alignleft size-medium wp-image-50767" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Portal-Mercado-Imobiliario-300x200.jpg" alt="Sistema para Imobiliária" width="300" height="200" /><strong>Cadastro de Imóveis</strong>: Crie novas características para o imóvel, além das padrões do sistema. Inclua vídeos, fotos e links do Google Drive ou Dropbox
+<div class="text-block style4"><img class="alignleft size-medium wp-image-50767" src="/news/default-nc.jpg" alt="Sistema para Imobiliária" width="300" height="200" /><strong>Cadastro de Imóveis</strong>: Crie novas características para o imóvel, além das padrões do sistema. Inclua vídeos, fotos e links do Google Drive ou Dropbox
 
 <strong>CRM – Gestão de contato</strong>: Monitore seus leads, cruze perfil com imóveis, faça anotações, agende visitas, envie e-mails e tenha o histórico da interação com o cliente
 
@@ -1752,7 +1752,7 @@ Use o <strong>Sistema de Imobiliária</strong> da<strong> NC Brasil</strong> e g
 
 </div>
 </div>
-<div class="icone-imagem"><img class="aligncenter size-full wp-image-50768" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Um-terreno-de-oportunidades-no-setor-imobiliário-e1477085675217.jpg" alt="Sistema para Imobiliária" width="664" height="354" /></div>
+<div class="icone-imagem"><img class="aligncenter size-full wp-image-50768" src="/news/default-nc.jpg" alt="Sistema para Imobiliária" width="664" height="354" /></div>
 </div>
 </div>
 </section>
@@ -1774,7 +1774,7 @@ Use o <strong>Sistema de Imobiliária</strong> da<strong> NC Brasil</strong> e g
       "Sistema para Imobiliária",
       "Sistemas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/c4810d3a-0bd8-4486-bac4-dc744347392f.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50770"
   },
   {
@@ -1790,7 +1790,7 @@ Sendo assim, é válido utilizar um <strong>Sistema de Locação de Carros</str
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50761" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/resd-848x413.jpg" alt="Sistema de Locação de Carros" width="848" height="413" />
+<img class="aligncenter size-full wp-image-50761" src="/news/default-nc.jpg" alt="Sistema de Locação de Carros" width="848" height="413" />
 <h2>Sistema de Locação de Carros / Sobre o Sistema</h2>
 Sendo assim, a <strong>NC Brasil</strong> possui um <strong>Sistema de Locação de Carros</strong> ideal, pois o mesmo oferece grande tecnologia com funções administrativas.
 
@@ -1802,7 +1802,7 @@ O nosso software é o ideal para a sua empresa de locação de carros, já que t
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50762" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/alamo.jpg" alt="Sistema de Locação de Carros" width="1920" height="850" />
+<img class="aligncenter size-full wp-image-50762" src="/news/default-nc.jpg" alt="Sistema de Locação de Carros" width="1920" height="850" />
 <h2>Sistema de Locação de Carros / Segurança</h2>
 Um <strong>Sistema de Locação de Carros </strong>disponibiliza inúmeras ferramentas para proteção de informações do negócio, como consultas aos Órgãos de Proteção ao Crédito, Google Maps, Busca de CEP.
 
@@ -1812,7 +1812,7 @@ Nosso Sistema de Gestão para Locadoras de Carros foi desenvolvido com a mais av
 
 &nbsp;
 <h2>Sistema de Locação de Carros / Personalizado</h2>
-<img class="alignleft size-medium wp-image-50760" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/download-2-300x145.jpg" alt="Sistema de Locação de Carros" width="300" height="145" />
+<img class="alignleft size-medium wp-image-50760" src="/news/default-nc.jpg" alt="Sistema de Locação de Carros" width="300" height="145" />
 
 O <strong>Sistema de Gestão de Locadoras de Veículos</strong> da <strong>NC Brasil</strong>, coloca sua empresa em suas mãos quando e aonde você estiver.
 
@@ -1836,7 +1836,7 @@ O <strong>Sistema de Locação de Carros</strong> possui controle completo sobre
 <h2>Sistema de Locação de Carros / Gestão de Reservas</h2>
 <strong>Contas a Receber:</strong> Tenha total controle sobre recebíveis, como Faturamentos e Cartões de Crédito. O <strong>Sistema de</strong>
 
-<img class="alignright wp-image-50763 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/download-1.jpg" alt="Sistema de Locação de Carros" width="275" height="183" />
+<img class="alignright wp-image-50763 size-full" src="/news/default-nc.jpg" alt="Sistema de Locação de Carros" width="275" height="183" />
 
 <strong>Locação de Carros</strong>, da<strong> NC Brasil </strong>trabalha com o processo de Leitura de Arquivo Digital Cielo. Fornecemos todos os documentos necessários para o lançamento. Além de recebimento de valores e emissão de boletos.
 
@@ -1870,7 +1870,7 @@ O <strong>Sistema de Locação de Carros</strong> possui controle completo sobre
       "Sistema de Locação de Carros",
       "Sistemas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/alamo.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50762"
   },
   {
@@ -1885,13 +1885,13 @@ Não sabe como funciona um <strong>leilão virtual?</strong> É muito mais simpl
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50753" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/25f-1.png" alt="Leilão Virtual" width="1200" height="630" />
+<img class="aligncenter size-full wp-image-50753" src="/news/default-nc.jpg" alt="Leilão Virtual" width="1200" height="630" />
 <h2>Leilão Virtual / Sobre</h2>
 O comércio eletrônico é hoje uma das mais importantes formas de compra dos consumidores brasileiros. De acordo com um relatório divulgado neste ano pela E-bit, empresa que fornece informações sobre o e-commerce nacional, 61,6 milhões de brasileiros já realizaram algum tipo de compra online.
 
 Acompanhando esse fenômeno, os <strong>sites</strong> de <strong>leilões virtuais</strong> têm crescido e compreendem um mecanismo muito procurado por quem quer adquirir algo sem ter que deixar o conforto de casa e ainda conseguir um melhor preço arrematando bons itens.
 
-<img class="alignleft size-full wp-image-50755" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/leilao-on-line-6.jpg" alt="Leilão Virtual" width="300" height="253" />Semelhante a um leilão comum, o <strong>leilão virtual</strong> funciona da seguinte forma: na página do lote, em que está um ou mais itens que serão leiloados, a pessoa poderá ver fotos e uma descrição detalhada sobre o produto. Assim, é possível decidir se tem interesse ou não naquele lote e enviar seu lance.
+<img class="alignleft size-full wp-image-50755" src="/news/default-nc.jpg" alt="Leilão Virtual" width="300" height="253" />Semelhante a um leilão comum, o <strong>leilão virtual</strong> funciona da seguinte forma: na página do lote, em que está um ou mais itens que serão leiloados, a pessoa poderá ver fotos e uma descrição detalhada sobre o produto. Assim, é possível decidir se tem interesse ou não naquele lote e enviar seu lance.
 
 No Auditório Virtual é possível acompanhar o desenvolvimento em tempo real, ver imagens dos lotes, assistir arremates e lances e ainda enviar o seu lance para o item que tem interesse em adquirir.
 
@@ -1911,7 +1911,7 @@ Para os lotes mais disputados há uma opção interessante no <strong>leilão on
 
 &nbsp;
 <h2><strong>Leilão Virtual / Sistema</strong></h2>
-Um <strong>Sistema de Leilão Virtual</strong> <strong>da NC Brasil</strong>, oferece em tempo real grandes características, tanto para <img class="alignleft size-full wp-image-50754" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/mh_interna_compraromovelleilao-1.jpg" alt="Leilão Virtual" width="390" height="300" />Leiloeiros, quanto para as Galerias. Um exemplo é opotencial em adquirir em massa novos clientes e o aumento de preços, alcançados devido as disputas ocorridas entre os arrematantes.
+Um <strong>Sistema de Leilão Virtual</strong> <strong>da NC Brasil</strong>, oferece em tempo real grandes características, tanto para <img class="alignleft size-full wp-image-50754" src="/news/default-nc.jpg" alt="Leilão Virtual" width="390" height="300" />Leiloeiros, quanto para as Galerias. Um exemplo é opotencial em adquirir em massa novos clientes e o aumento de preços, alcançados devido as disputas ocorridas entre os arrematantes.
 <blockquote><a href="https://www.ncbrasil.com.br/sistema-de-leilao-de-centavos/">Clique aqui e saiba melhor sobre <strong>Sistema de Leilão de Centavos</strong></a></blockquote>
 Ao utilizar a <strong>plataforma para leilões online</strong> <strong>da NC Brasil</strong>, você pode melhorar e/ou ampliar o desempenho de seus leilões e, ao mesmo tempo, obter um maior proveito deste mercado através das visitações e tráfegos gerados.
 
@@ -1938,7 +1938,7 @@ Além do recurso de Lances em Tempo Real, que permite o arrematante ofertar seu 
       "Sistema de Leilão de Centavos",
       "Sistema de Leilão Virtual"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/25f-1.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50753"
   },
   {
@@ -1952,7 +1952,7 @@ O Controle de Estoque é tarefa de extrema importância para o sucesso do negó
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50747" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/PLANEJAR_ESTOQUE.jpg" alt="Sistema de Estoque" width="580" height="400" />
+<img class="aligncenter size-full wp-image-50747" src="/news/default-nc.jpg" alt="Sistema de Estoque" width="580" height="400" />
 <h2>Sistema de Estoque / Sobre</h2>
 Como dito anteriormente, por mais importante que seja fazer o controle do estoque, essa tarefa pode consumir muito tempo de trabalho, inviabilizando a realização de outras atividades que são igualmente importantes para o negócio.
 
@@ -1967,7 +1967,7 @@ Com o passar do tempo, esses pequenos erros podem trazer grandes transtornos par
 Investir em um <strong>Sistema de Estoque</strong> único e adaptável, em que você pode criar um checklist de verificação customizado para atender as necessidades da sua empresa, certamente ajudará a prevenir esse tipo de problema e reduzir o índice de erros.
 
 &nbsp;
-<h2><img class="alignleft size-full wp-image-50746" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/estoques-logistica-e1291490308716.jpg" alt="Sistema de Estoque" width="212" height="289" />Sistema de Estoque / Otimização dos processos</h2>
+<h2><img class="alignleft size-full wp-image-50746" src="/news/default-nc.jpg" alt="Sistema de Estoque" width="212" height="289" />Sistema de Estoque / Otimização dos processos</h2>
 Com um <strong>Sistema de Estoque</strong>, você informatiza seus processos internos e elimina processos arcaicos, que demandam uso de papel ou planilhas.
 
 Com todos os processos de verificação e controle de estoque organizados em forma de checklist no sistema, você ganhará tempo na gestão. Afinal, os processos estarão centralizados, padronizados e de fácil acesso para a equipe.
@@ -1984,7 +1984,7 @@ O controle de estoque bem feito é extremamente relevante para o negócio, é o 
 
 &nbsp;
 
-<img class="size-full wp-image-50749 aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/controle-de-estoque.jpg" alt="Sistema de Estoque" width="957" height="580" />
+<img class="size-full wp-image-50749 aligncenter" src="/news/default-nc.jpg" alt="Sistema de Estoque" width="957" height="580" />
 
 Pronto para adotar um <strong>Sistema de Estoque</strong>? Opte por um sistema de checklist inteligente, que permite a customização dos itens que você precisa para controlar o estoque. Com um checklist criado especialmente para o seu negócio, você vai realizar uma gestão rápida, eficiente e com resultados.
 
@@ -2007,7 +2007,7 @@ Pronto para adotar um <strong>Sistema de Estoque</strong>? Opte por um sistema d
       "Sistema de Estoque",
       "Sistema de Gestão de Estoque"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/ARTIGO-CONTROLE-DE-ESTOQUE-740x432.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50748"
   },
   {
@@ -2019,11 +2019,11 @@ Pronto para adotar um <strong>Sistema de Estoque</strong>? Opte por um sistema d
 <h3>Primeiramente, saiba que todos e qualquer Leilões Eletrônicos são público.</h3>
 Podendo participar pessoas físicas maiores de 18 anos e jurídicas, ambas, de acordo com as normas e condições do <strong>Leilões Eletrônicos.</strong> O leilão é realizado em data, hora e local divulgados nas mídia eletrônica, seja site ou mídia social.
 
-<img class="aligncenter size-full wp-image-50737" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/leilao.jpg" alt="Leilões Eletrônicos" width="800" height="445" />
+<img class="aligncenter size-full wp-image-50737" src="/news/default-nc.jpg" alt="Leilões Eletrônicos" width="800" height="445" />
 <h2>Leilões Eletrônicos / Como Funciona?</h2>
 No início de todos os sites, o leiloeiro deixará as condições do leilão descritas no catálogo. Em seguida, o usuário deve verificar quais serão os lotes anunciados um a um, que possuem fotos ilustrativas publicadas. Quando o lote for de seu interesse, entre na sala no horário aberto, e dispute pelo seu objeto de interesse. Vence a disputa pelo lote quem ofertar o maior lance, ou último lance, como no caso de <strong>Leilões Eletrônicos</strong> <strong>de Centavos</strong>.
 
-<img class="size-full wp-image-50739 alignleft" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/cronometro.png" alt="Leilões Eletrônicos" width="200" height="167" />
+<img class="size-full wp-image-50739 alignleft" src="/news/default-nc.jpg" alt="Leilões Eletrônicos" width="200" height="167" />
 <h2>Leilões Eletrônicos / Cronômetro</h2>
 Nos<strong> Leilões Eletrônicos</strong> os cadastrados do site farão suas ofertas, no painel virtual, observando sempre o cronômetro para encerramento dos lances, acompanhando, desta forma, o leilão em tempo real.
 
@@ -2037,7 +2037,7 @@ Nos<strong> Leilões Eletrônicos</strong> os cadastrados do site farão suas of
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50738" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/pregao-eletronico-390x205.jpg" alt="Leilões Eletrônicos" width="390" height="205" />
+<img class="aligncenter size-full wp-image-50738" src="/news/default-nc.jpg" alt="Leilões Eletrônicos" width="390" height="205" />
 <h2>Leilões Eletrônicos / Termos comuns</h2>
 <strong>Leiloeiro:</strong> Os leiloeiros são as pessoas físicas proprietárias dos Leilões Eletrônicos. Eles são registrado na junta comercial do estado em que situa conforme o Decreto Nº 21.981 de 19 de Outubro de 1932. Realizam a comercialização dos bens que estão sendo leiloados e recebe uma comissão (geralmente de 5% do valor arrematado).
 
@@ -2056,7 +2056,7 @@ Neste documento são apresentadas todas as “regras do leilão”, como por exe
 Fiquem atentos nesses termos utilizados nos <strong>Leilões Eletrônicos</strong> (e demais) e boa sorte com os seus lances!
 
 &nbsp;
-<h2><img class="aligncenter size-large wp-image-50741" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/download-1024x689.jpg" alt="Leilões Eletrônicos" width="840" height="565" /></h2>
+<h2><img class="aligncenter size-large wp-image-50741" src="/news/default-nc.jpg" alt="Leilões Eletrônicos" width="840" height="565" /></h2>
 <blockquote>
 <h2>Deseja ter um Sistema de Leilões Eletrônicos?</h2>
 <h1>Faça contato e um <a href="https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/">orçamento no nosso site</a>!</h1>
@@ -2081,7 +2081,7 @@ Fiquem atentos nesses termos utilizados nos <strong>Leilões Eletrônicos</stron
       "Site",
       "Site de Leilão"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/download-scaled.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50741"
   },
   {
@@ -2093,7 +2093,7 @@ Fiquem atentos nesses termos utilizados nos <strong>Leilões Eletrônicos</stron
 <h4>A NC Brasil oferece um Sistema de Contabilidade para soluções com o segmento de Contabilidade através dos sistemas Folha de Pagamento, Contabilidade, Escrituração Fiscal, Controle Patrimonial e NF-e.</h4>
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50728" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/cacaroot-1024x645.jpg" alt="Sistema de Gestão Contábil" width="840" height="529" />
+<img class="aligncenter size-large wp-image-50728" src="/news/default-nc.jpg" alt="Sistema de Gestão Contábil" width="840" height="529" />
 <h2>Sistema de Gestão Contábil / Sobre</h2>
 Toda contabilidade hoje certamente usa um <strong>Sistema de Gestão Contábil</strong>. Seja dos mais sofisticados ou, até mesmo, os gratuitos.
 
@@ -2105,14 +2105,14 @@ Portanto, um <strong>Sistema de Gestão Contábil</strong> tem a função princi
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50730" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/escritório-de-contabilidade.jpg" alt="Sistema de Gestão Contábil" width="1000" height="900" />
+<img class="aligncenter size-full wp-image-50730" src="/news/default-nc.jpg" alt="Sistema de Gestão Contábil" width="1000" height="900" />
 <h2></h2>
 <h2>Sistema de Gestão Contábil é na NC Brasil!</h2>
 Faça uma gestão de clientes mais eficiente com os processamentos agrupados, consultoria financeira e integração financeira e contábil - tudo em um só lugar! O <strong>Sistema de Gestão Contábil</strong> da <strong>NC Brasil</strong> atende a legislação e importa todas as notas para dentro do sistema para que você sempre tenha controle do seu cliente. Comece hoje a fazer parte da rede de empresários contábeis de sucesso que confiam nos sistemas da <strong>NC Brasil</strong>!
 
 &nbsp;
 <h2>Sistema de Gestão Contábil / Vantagens</h2>
-<h3><img class="size-medium wp-image-50729 alignright" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/contabilidade-em-otacílio-costa-300x200.jpg" alt="Sistema de Gestão Contábil" width="300" height="200" />Sistema modular e integrado</h3>
+<h3><img class="size-medium wp-image-50729 alignright" src="/news/default-nc.jpg" alt="Sistema de Gestão Contábil" width="300" height="200" />Sistema modular e integrado</h3>
 O software é separado por módulos, dessa forma você pode escolher quantos deseja para atender as necessidades da sua empresa - e ainda é possível integrá-los para facilitar os processos.
 <div class="span span4 no-margin">
 <h3><strong>Folha de Pagamento</strong></h3>
@@ -2168,7 +2168,7 @@ O software é separado por módulos, dessa forma você pode escolher quantos des
 </div>
 </div>
 </div>
-<img class="aligncenter size-full wp-image-50731" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/tendencias-da-contabilidade.jpg" alt="Sistema de Gestão Contábil" width="640" height="430" />
+<img class="aligncenter size-full wp-image-50731" src="/news/default-nc.jpg" alt="Sistema de Gestão Contábil" width="640" height="430" />
 
 &nbsp;
 <blockquote>
@@ -2184,7 +2184,7 @@ O software é separado por módulos, dessa forma você pode escolher quantos des
       "Sistema de Contabilidade",
       "Sistema de Gestão Contábil"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/cacaroot.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50728"
   },
   {
@@ -2197,7 +2197,7 @@ O software é separado por módulos, dessa forma você pode escolher quantos des
 <h3><a href="https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/">Faça um orçamento conosco!</a></h3>
 &nbsp;
 
-<img class="wp-image-50715 size-full alignnone" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/wordpress.jpg" alt="" width="700" height="300" />
+<img class="wp-image-50715 size-full alignnone" src="/news/default-nc.jpg" alt="" width="700" height="300" />
 <div class="blog-textoresumo blog-textoresumo-interna">
 <h2>WordPress / Sobre</h2>
 O <strong>WordPress,</strong> atualmente, representa quase 60% do mercado de CMS (<em>Content Management System</em>), segundo dados da <em>W3 Tech.</em> Superando sistemas como Joomla e Drupal.
@@ -2206,7 +2206,7 @@ Inclusive, apresenta um portfólio de dar inveja, com grandes marcas que utili
 
 Agora, quais os motivos que o tornam referência no meio digital? Listamos abaixo as principais vantagens que podem ser muito úteis para sua empresa.
 <h2>WordPress / <strong>Fácil Manuseio</strong></h2>
-<img class="alignleft size-medium wp-image-50718" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/el-poder-de-wordpress-300x172.jpg" alt="wordpress" width="300" height="172" />Para começar, o <strong>WordPress</strong> não exige nenhum conhecimento avançado de programação para poder editar partes do site, como áreas de vendas e artigos. Logo, o cliente pode atualizar seu site, sem depender de um programador
+<img class="alignleft size-medium wp-image-50718" src="/news/default-nc.jpg" alt="wordpress" width="300" height="172" />Para começar, o <strong>WordPress</strong> não exige nenhum conhecimento avançado de programação para poder editar partes do site, como áreas de vendas e artigos. Logo, o cliente pode atualizar seu site, sem depender de um programador
 
 O <strong>"WP"</strong><strong> </strong>surgiu como uma plataforma de blog, que necessitava de um sistema simples e fácil de usar para que blogueiros atualizassem seus posts. Atualmente, apresenta recursos bem mais completos, inclusive para o gerenciamento de sites e lojas virtuais, mas com a mesma praticidade de gerenciamento.
 <h2>WordPress / <strong>Disponibilidade de plugins</strong></h2>
@@ -2217,7 +2217,7 @@ Seja para integrar a página a newsletter, criar integração com redes sociais 
 &nbsp;
 
 </div>
-<img class="aligncenter size-full wp-image-50716" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/wordpress-logo-stacked-rgb.png" alt="wordpress" width="499" height="310" />
+<img class="aligncenter size-full wp-image-50716" src="/news/default-nc.jpg" alt="wordpress" width="499" height="310" />
 
 &nbsp;
 <div class="blog-textoresumo blog-textoresumo-interna">
@@ -2228,7 +2228,7 @@ Já que falamos de plugins, uma ótima opção para a sua página é o <strong>
 <h2>Responsividade</h2>
 <p class="p2"><span class="s1">Um <strong>site responsivo</strong> muda a sua aparência e disposição com base no tamanho da tela em que o site é exibido. Então, se o usuário tem uma tela pequena, os elementos se reorganizam para lhe mostrar as coisas principais em primeiro lugar.</span></p>
 <p class="p2"><span class="s1">Em smartphones a navegação e experiência do usuário fica difícil e limitada tendo que usar recursos de zoom in e out para ler a página na integra. Outros detalhes como botões e menus ficam desformatados pois não foram feitos para esse dispositivo ou resolução. E esta é mais uma das vantagens da tecnologia.</span></p>
-<img class="aligncenter size-full wp-image-50717" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/wordpress-responsive-web-design-1.jpg" alt="wordpress" width="739" height="516" />
+<img class="aligncenter size-full wp-image-50717" src="/news/default-nc.jpg" alt="wordpress" width="739" height="516" />
 
 </div>
 &nbsp;
@@ -2248,7 +2248,7 @@ Já que falamos de plugins, uma ótima opção para a sua página é o <strong>
       "wordpress",
       "WP"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/520116_edf5_2.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50719"
   },
   {
@@ -2260,7 +2260,7 @@ Já que falamos de plugins, uma ótima opção para a sua página é o <strong>
 <h4>Com o Sistema de Controle de Estoque da NC Brasil, você vai administrar seu estoque sem complicação! Poderá mantê-lo organizado e facilitar o controle de produtos para atender melhor!</h4>
 &nbsp;
 
-<img class="aligncenter wp-image-50710 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/erros_estoque-858x400.jpg" alt="Sistema de Controle de Estoque" width="858" height="400" />
+<img class="aligncenter wp-image-50710 size-full" src="/news/default-nc.jpg" alt="Sistema de Controle de Estoque" width="858" height="400" />
 <h2>Sistema de Controle de Estoque / Introdução</h2>
 Cuidar do estoque, principalmente no caso dos empreendedores do varejo, é fundamental.
 
@@ -2273,7 +2273,7 @@ Para facilitar todo esse trabalho de gestão, a <strong>NC Brasil</strong> desen
 Você conhece os benefícios de um <strong>Sistema de Controle de Estoque</strong>? Continue a leitura e descubra como as vantagens da utilização de um software pode contribuir para aumentar seus lucros!
 
 &nbsp;
-<h2><img class="alignleft size-medium wp-image-50706" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/controle-estoque1-300x250.jpg" alt="Sistema de Controle de Estoque" width="300" height="250" />Sistema de Controle de Estoque / Sobre</h2>
+<h2><img class="alignleft size-medium wp-image-50706" src="/news/default-nc.jpg" alt="Sistema de Controle de Estoque" width="300" height="250" />Sistema de Controle de Estoque / Sobre</h2>
 O <strong>Sistema de Controle de Estoque</strong> da <strong>NC Brasil</strong> é um <strong>programa de controle de estoque</strong> completo e essencial, que cisa melhorar a gestão de compras, controlar a entrada e saída de produtos e garantir que não haja prejuízo por excesso de estoque.
 
 Com o <strong>Sistema de Controle de Estoque</strong> você pode gerenciar produtos, pedidos, compras, movimentações, transferências, relatórios, fornecedores e muito mais.
@@ -2291,7 +2291,7 @@ Este módulo está diretamente ligado ao controle de estoque, sendo assim possí
 Além da emissão de notas fiscais de entrada, o <strong>Sistema de Controle de Estoque</strong> da <strong>NC Brasil</strong> também é um sistema que oferece a importação dos XML's que são enviados pelos fornecedores, que estão diretamente ligados ao gerenciamento de estoque da empresa.
 <div class="">
 <h3>6. Cadastro de Produtos</h3>
-<img class="alignright size-medium wp-image-50707" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/modelos-de-gestão-de-estoque-ecommerce-1024x1024-300x300.gif" alt="Sistema de Controle de Estoque" width="300" height="300" />
+<img class="alignright size-medium wp-image-50707" src="/news/default-nc.jpg" alt="Sistema de Controle de Estoque" width="300" height="300" />
 
 </div>
 <div class="">
@@ -2314,7 +2314,7 @@ Pode-se acompanhar esses dados e organizá-los de várias formas, inclusive com 
 
 Para facilitar o trabalho e manter a organização de forma simples, sugerimos aqui cinco programas de controle de estoque que podem se adequar às necessidades do seu negócio.
 
-<img class="aligncenter wp-image-50708 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/inventory-management.png" alt="Sistema de Controle de Estoque" width="800" height="486" />
+<img class="aligncenter wp-image-50708 size-full" src="/news/default-nc.jpg" alt="Sistema de Controle de Estoque" width="800" height="486" />
 
 &nbsp;
 <h2>Deseja ter um Sistema de Controle de Estoque?</h2>
@@ -2334,7 +2334,7 @@ Para facilitar o trabalho e manter a organização de forma simples, sugerimos a
       "Sistema de Inventário",
       "Sistemas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/X-motivos-para-fazer-o-inventário-do-seu-estoque.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50709"
   },
   {
@@ -2345,15 +2345,15 @@ Para facilitar o trabalho e manter a organização de forma simples, sugerimos a
     "content": `<p>Clientes </p>		
 			<h4>Depoimento de empresários</h4>		
 						melhor empresa do mercado para plataforma de leilões de centavos, sabem tudo! Contratamos o sistema e a divulgação com eles nossa empresa faturou bastante com a venda dos pacotes de lances e hoje estamos com o marketingplace feito por eles também, agradeço especialmente ao Leandro B. que foi super atencioso e profissional.					
-						<img src="https://www.ncbrasil.com.br/wp-content/uploads/2024/07/ava1.png" alt="Amanda Lee">
+						<img src="/news/default-nc.jpg" alt="Amanda Lee">
 								<cite>Amanda LeeCEO & Founder Crix</cite>			
 						Fantásticos , realizaram um super template profissional e se dedicaram as nossas redes sociais com tudo isso nossa plataforma esta operando a todo vapor.					
-						<img src="https://www.ncbrasil.com.br/wp-content/uploads/2024/07/y11.png" alt="Adam Felix">
+						<img src="/news/default-nc.jpg" alt="Adam Felix">
 								<cite>Adam FelixGraphic Designer</cite>			
 						Amei todos os detalhes e o processo de compra, super dedicados a plataforma profissional fez toda a diferença nas vendas.					
-						<img src="https://www.ncbrasil.com.br/wp-content/uploads/2024/07/y12.png" alt="Reinaldo Cezar">
+						<img src="/news/default-nc.jpg" alt="Reinaldo Cezar">
 								<cite>Reinaldo CezarEmpresário</cite>			
-		<h1>Sistema de Leilão de Centavos</h1><p>Uma das inovações "boom" que encontraram um vasto mercado no Brasil, são os chamados <strong>Sites de Leilão de Centavos</strong>.</p><p>Mesmo com todo o preconceito e mistério de como estes funcionam, os mesmos são uma fonte de economia para os usuários e de lucro para comerciantes.</p><h4>Para isso, o empreendedor necessita de um Sistema de Leilão de Centavos. Saiba mais sobre esse mundo a seguir!</h4><p><img src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Site-de-Leilão-Um-Centavo-R001-Como-se-beneficiar-dos-Links-Patrocinados-do-Google-AdWords.png" alt="Sistema de Leilão de Centavos" width="652" height="184" /></p><h2>Sistema de Leilão de Centavos / O que é?</h2><p>Imagina levar um produto mega caro, por alguns centavos? Essa é a proposta dos Sites de <em>Leilão de Centavos</em>.</p><p>Você compra um "pacote" de centavos e disputa centavo à centavo com outros navegantes. Pois no <strong>Leilão de Centavos</strong>, o usuário que leva o produto não é aquele que dá o maior lance, mas sim o que dá o último.</p><p>Para cada lance dado, o valor do produto é acrescido de um centavo, e uma unidade é descontada do seu <strong>pacote de lances</strong>.</p><h2>Sistema de Leilão de Centavos / Como funciona?</h2><p><img src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/chamada-leilao-de-centavos-300x300-1342742226410_300x300-150x150.jpg" alt="Sistema de Leilão de Centavos" width="200" height="200" />O Sistema de Leilão de Centavos realiza essa distribuição, citada no parágrafo acima, dos pacotes e programa as salas para as disputas, com sua contagem até o último lance.</p><p>O tempo de duração do leilão vai depender do número de usuários que estiverem disputando o produto. Cada lance dado aumenta o tempo em dez segundos (Ou mais, varia com o desejo do cliente).</p><p>Ou seja, quanto mais gente quiser arrematar a mercadoria, mais tempo o leilão fica aberto e menores são as chances de ganhar.</p><h2>Sistema de Leilão de Centavos / Sobre os Pacotes</h2><p>O Pacote de Lance nada mais é do que comprar a quantidade de lances que você poderá dar no site. É necessário ter <img src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/leilao-de-centavos-ligado-no-leilao-300x210.gif" alt="Sistema de Leilão de Centavos" width="300" height="210" />um pacote com lances para concorrer a uma mercadoria.</p><p>O valor desse pacote varia de acordo com o site, bem como o número mínimo de lances que o usuário deve adquirir.</p><p>Alguns portais de leilão de centavo não vendem pacotes com menos de 100 lances. Outros, normalmente os serviços menores, permitem que o usuário compre 10 ou 20 lances. É justamente na ideia do pacote de lances que mora o lucro dos sites.</p><h2>Sistema de Leilão de Centavos / Sobre o Sistema</h2><p>O <strong>Sistema de Leilão de Centavos </strong>da <strong>NC Brasil</strong> tem capacidade de dar acesso de administrador limitado através da criação de sub-admins. Assim, você pode criar uma equipe de <strong>leiloeiros</strong>, atualizando<strong> status de leilão</strong>, quando os produtos são enviados, contas etc.</p><p>Além disso, nosso <strong>Sistema de Leilão de Centavos</strong> possuem um sistema de estoque e controle integrado, onde o Administrador pode organizar todo o desempenho do seu negócio.</p><p><img src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/money-pig.jpg" alt="Sistema de Leilão de Centavos" width="650" height="300" /></p><h1>Nosso <strong>Sistema de Leilão de Centavos</strong> possuem várias características, confira algumas delas:</h1><p><a href="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/637d72896f2a91669165705.jpg"><img src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/637d72896f2a91669165705-300x153.jpg" alt="leilão centavos" width="300" height="153" /></a>– Painel de Administração Geral;<br />– Configurações Gerais do Site;<br />– Configurar lances grátis por depoimento;<br />– Configurar lances grátis por cadastro;</p><p>– Gestor de Pacotes de Lances;<br />– Gestor de Usuários;<br />– Gestor de Administradores;<br />– <strong>Gestor de Leilões</strong>;<br />– Cancelar Leilão (os lances efetuados são automaticamente reembolsados aos usuários e os usuários são notificados por e-mail);<br />– Gestor de Leilões Ganhos;<br />– Gestor de Códigos Identificador de Objetos dos Correios;<br />– Gestor de Produtos;<br />– Gestor de Categorias, Criar, Editar, Apagar;<br />– Gestor de Banners no site;<br />– Gestor de Faturamento, Lances vendidos, Leilões Pagos, Pendentes;</p><p>– Relatório Financeiro em Gráficos, Ganhos, Perdas, Vendas;<br />– Painel do Usuário;<br />– Editar Perfil, alterar senha, endereço;<br />– Histórico de lances;<br />– Histórico de pagamentos;<br />– Lista de leilões participando com lances automáticos;<br />– Lista de leilões ganhos;<br />– Lista de leilões não pagos a pagar;<br />– Ativação de Conta;</p><p>– Recuperação de Senha Automático;<br />– Motores de buscas (Gera Url´s amigáveis);<br />– Página de Leilões;<br />– Página de Leilões Finalizados com Paginação;<br />– Página de Detalhes do Leilão;<br />– Página de Contatos;<br />– Leilão para Iniciantes, Somente usuários que nunca ganharam poderão participar;<br />– Opção de compra do produto com desconto dos lances gastos no leilão;</p><p>– Módulo Cupons;<br />– Módulo Depoimentos integrado com Youtube;<br />– Módulo Newsletter;<br />– Módulo Notícias;<br />– Módulo Lances Automáticos;<br />– Módulo Leilões em Destaque;<br />– Módulo Rastreamento de Encomendas nos Correios;<br />– Módulo Geração de nota Fiscal Eletrônica;<br />– Módulo Top10 Usuários que mais deram lances no site;</p><p>– CMS Gerenciador de páginas de conteúdo;<br />– Formulário de Cadastro com validação de CPF, E-mail e CPF único para cadastro;<br />– Auto Preenchimento de Endereço através do CEP;<br />– Busca por produto no site;<br />– Métodos de Pagamentos Pag-seguro e Mercado Pago;</p><blockquote><h2>Gostaria de ter um <strong>Sistema de Leilão de Centavos</strong>?</h2><h1><a href="https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/">Entre em contato conosco e faça um orçamento agora!</a></h1></blockquote>		
+		<h1>Sistema de Leilão de Centavos</h1><p>Uma das inovações "boom" que encontraram um vasto mercado no Brasil, são os chamados <strong>Sites de Leilão de Centavos</strong>.</p><p>Mesmo com todo o preconceito e mistério de como estes funcionam, os mesmos são uma fonte de economia para os usuários e de lucro para comerciantes.</p><h4>Para isso, o empreendedor necessita de um Sistema de Leilão de Centavos. Saiba mais sobre esse mundo a seguir!</h4><p><img src="/news/default-nc.jpg" alt="Sistema de Leilão de Centavos" width="652" height="184" /></p><h2>Sistema de Leilão de Centavos / O que é?</h2><p>Imagina levar um produto mega caro, por alguns centavos? Essa é a proposta dos Sites de <em>Leilão de Centavos</em>.</p><p>Você compra um "pacote" de centavos e disputa centavo à centavo com outros navegantes. Pois no <strong>Leilão de Centavos</strong>, o usuário que leva o produto não é aquele que dá o maior lance, mas sim o que dá o último.</p><p>Para cada lance dado, o valor do produto é acrescido de um centavo, e uma unidade é descontada do seu <strong>pacote de lances</strong>.</p><h2>Sistema de Leilão de Centavos / Como funciona?</h2><p><img src="/news/default-nc.jpg" alt="Sistema de Leilão de Centavos" width="200" height="200" />O Sistema de Leilão de Centavos realiza essa distribuição, citada no parágrafo acima, dos pacotes e programa as salas para as disputas, com sua contagem até o último lance.</p><p>O tempo de duração do leilão vai depender do número de usuários que estiverem disputando o produto. Cada lance dado aumenta o tempo em dez segundos (Ou mais, varia com o desejo do cliente).</p><p>Ou seja, quanto mais gente quiser arrematar a mercadoria, mais tempo o leilão fica aberto e menores são as chances de ganhar.</p><h2>Sistema de Leilão de Centavos / Sobre os Pacotes</h2><p>O Pacote de Lance nada mais é do que comprar a quantidade de lances que você poderá dar no site. É necessário ter <img src="/news/default-nc.jpg" alt="Sistema de Leilão de Centavos" width="300" height="210" />um pacote com lances para concorrer a uma mercadoria.</p><p>O valor desse pacote varia de acordo com o site, bem como o número mínimo de lances que o usuário deve adquirir.</p><p>Alguns portais de leilão de centavo não vendem pacotes com menos de 100 lances. Outros, normalmente os serviços menores, permitem que o usuário compre 10 ou 20 lances. É justamente na ideia do pacote de lances que mora o lucro dos sites.</p><h2>Sistema de Leilão de Centavos / Sobre o Sistema</h2><p>O <strong>Sistema de Leilão de Centavos </strong>da <strong>NC Brasil</strong> tem capacidade de dar acesso de administrador limitado através da criação de sub-admins. Assim, você pode criar uma equipe de <strong>leiloeiros</strong>, atualizando<strong> status de leilão</strong>, quando os produtos são enviados, contas etc.</p><p>Além disso, nosso <strong>Sistema de Leilão de Centavos</strong> possuem um sistema de estoque e controle integrado, onde o Administrador pode organizar todo o desempenho do seu negócio.</p><p><img src="/news/default-nc.jpg" alt="Sistema de Leilão de Centavos" width="650" height="300" /></p><h1>Nosso <strong>Sistema de Leilão de Centavos</strong> possuem várias características, confira algumas delas:</h1><p><a href="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/637d72896f2a91669165705.jpg"><img src="/news/default-nc.jpg" alt="leilão centavos" width="300" height="153" /></a>– Painel de Administração Geral;<br />– Configurações Gerais do Site;<br />– Configurar lances grátis por depoimento;<br />– Configurar lances grátis por cadastro;</p><p>– Gestor de Pacotes de Lances;<br />– Gestor de Usuários;<br />– Gestor de Administradores;<br />– <strong>Gestor de Leilões</strong>;<br />– Cancelar Leilão (os lances efetuados são automaticamente reembolsados aos usuários e os usuários são notificados por e-mail);<br />– Gestor de Leilões Ganhos;<br />– Gestor de Códigos Identificador de Objetos dos Correios;<br />– Gestor de Produtos;<br />– Gestor de Categorias, Criar, Editar, Apagar;<br />– Gestor de Banners no site;<br />– Gestor de Faturamento, Lances vendidos, Leilões Pagos, Pendentes;</p><p>– Relatório Financeiro em Gráficos, Ganhos, Perdas, Vendas;<br />– Painel do Usuário;<br />– Editar Perfil, alterar senha, endereço;<br />– Histórico de lances;<br />– Histórico de pagamentos;<br />– Lista de leilões participando com lances automáticos;<br />– Lista de leilões ganhos;<br />– Lista de leilões não pagos a pagar;<br />– Ativação de Conta;</p><p>– Recuperação de Senha Automático;<br />– Motores de buscas (Gera Url´s amigáveis);<br />– Página de Leilões;<br />– Página de Leilões Finalizados com Paginação;<br />– Página de Detalhes do Leilão;<br />– Página de Contatos;<br />– Leilão para Iniciantes, Somente usuários que nunca ganharam poderão participar;<br />– Opção de compra do produto com desconto dos lances gastos no leilão;</p><p>– Módulo Cupons;<br />– Módulo Depoimentos integrado com Youtube;<br />– Módulo Newsletter;<br />– Módulo Notícias;<br />– Módulo Lances Automáticos;<br />– Módulo Leilões em Destaque;<br />– Módulo Rastreamento de Encomendas nos Correios;<br />– Módulo Geração de nota Fiscal Eletrônica;<br />– Módulo Top10 Usuários que mais deram lances no site;</p><p>– CMS Gerenciador de páginas de conteúdo;<br />– Formulário de Cadastro com validação de CPF, E-mail e CPF único para cadastro;<br />– Auto Preenchimento de Endereço através do CEP;<br />– Busca por produto no site;<br />– Métodos de Pagamentos Pag-seguro e Mercado Pago;</p><blockquote><h2>Gostaria de ter um <strong>Sistema de Leilão de Centavos</strong>?</h2><h1><a href="https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/">Entre em contato conosco e faça um orçamento agora!</a></h1></blockquote>		
 			<h4>Sistema de Leilão Centavos Profissional</h4>		
 			<h5>Nossa plataforma de leilões centavos é a mais completa e rubustada internet, trabalhamos para as maiores empresas de leilões centavos do mercado como <b>lance24h</b> e <b>superbird</b>.</h5>`,
 
@@ -2373,7 +2373,7 @@ Para facilitar o trabalho e manter a organização de forma simples, sugerimos a
       "Site de Leilão",
       "Usuários"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/1941243.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50701"
   },
   {
@@ -2387,7 +2387,7 @@ Todos os consumidores possuem o interesse de adquirir produtos de qualidade pelo
 
 &nbsp;
 
-<img class="size-large wp-image-50691 aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/como-economizar-dinheiro-com-cupons-de-desconto.png-1024x390.png" alt="Cupom de Desconto" width="840" height="320" />
+<img class="size-large wp-image-50691 aligncenter" src="/news/default-nc.jpg" alt="Cupom de Desconto" width="840" height="320" />
 <h2>Sistema de Cupom de Desconto / Sobre</h2>
 O <strong>Cupom de Desconto</strong> se tornou foco em meados do anos 2000 no Estados Unidos. Já pelo Brasil, a prática apareceu aproximadamente em 2010, onde gerou uma grande popularidade.
 Além de ser mega prática, o <strong>Cupom de Desconto</strong> é seguro e aceito por muitas lojas virtuais, logo as mais conhecidas do público já aderiram à tecnologia.
@@ -2398,7 +2398,7 @@ Para ter um site especializado em <strong>Cupom de Desconto</strong>, é necess
 
 É simples, o usuário acessa o site, anota o código promocional e digita no campo específico ao concluir a compra na loja virtual. Geralmente o campo está disponível na página de finalização da compra.
 
-<img class="alignleft size-full wp-image-50688" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/cupons-de-desconto-300x286.jpg" alt="Cupom de Desconto" width="300" height="286" />Passo a passo padrão:
+<img class="alignleft size-full wp-image-50688" src="/news/default-nc.jpg" alt="Cupom de Desconto" width="300" height="286" />Passo a passo padrão:
 
 <strong>1.</strong> acessando a página dos <strong>cupons</strong> da loja deseja, você deve escolher um código válido e clicar em “Pegar Cupom” para revelar o código promocional.
 
@@ -2425,7 +2425,7 @@ O frete será grátis para esse tipo de <strong>cupom.</strong></li>
 </ul>
 &nbsp;
 
-<img class="size-full wp-image-50687 aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/cupons-de-desconto.png" alt="Cupom de Desconto" width="680" height="356" />
+<img class="size-full wp-image-50687 aligncenter" src="/news/default-nc.jpg" alt="Cupom de Desconto" width="680" height="356" />
 <h2>Sistema de Cupom de Desconto / O Sistema</h2>
 O <strong>Sistema de Cupom de Desconto</strong> é simples, fácil de manusear e eficaz. Este disponibiliza vários cupons de inúmeras empresas para se associarem ao site.
 
@@ -2435,7 +2435,7 @@ Este processo inovador garante inúmeras vantagens, dentre elas é atender o que
 
 O <strong>Sistema de Cupom de Descontos</strong> da <strong>NC Brasil</strong> funciona de forma simples. Para conhecer melhor, entre em contato conosco e faça um orçamento rápido!
 <h2>Sistema de Cupom de Desconto / Benefícios</h2>
-Existe uma séria de vantagens em se utilizar os cupons de descontos:<img class="alignright size-medium wp-image-50686" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/cupons-de-desconto-300x300.jpg" alt="Cupom de Desconto" width="300" height="300" />
+Existe uma séria de vantagens em se utilizar os cupons de descontos:<img class="alignright size-medium wp-image-50686" src="/news/default-nc.jpg" alt="Cupom de Desconto" width="300" height="300" />
 <ul>
  	<li>são seguros;</li>
  	<li>são práticos;</li>
@@ -2469,7 +2469,7 @@ Como visto, não há motivos para não comprar com os <strong>cupons de desconto
       "Site",
       "Usuários"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/como-economizar-dinheiro-com-cupons-de-desconto.png.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50691"
   },
   {
@@ -2482,7 +2482,7 @@ Como visto, não há motivos para não comprar com os <strong>cupons de desconto
 <h4>Continue lendo este artigo e saiba melhor!</h4>
 &nbsp;
 
-<img class="size-full wp-image-50680 aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/Sistemas-Web-Cloud-Market-Criação-de-Sites.png" alt="Sistema" width="500" height="371" />
+<img class="size-full wp-image-50680 aligncenter" src="/news/default-nc.jpg" alt="Sistema" width="500" height="371" />
 
 &nbsp;
 <h2>Site</h2>
@@ -2496,7 +2496,7 @@ Basicamente, hoje em dia os <strong>websites</strong> podem ser classificados co
 
 &nbsp;
 
-<img class="size-large wp-image-50682 aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/team-1-1024x682.jpg" alt="Sistema" width="840" height="559" />
+<img class="size-large wp-image-50682 aligncenter" src="/news/default-nc.jpg" alt="Sistema" width="840" height="559" />
 <h1>Sistema</h1>
 Um <strong>sistema,</strong> ou <strong>aplicação web</strong>, é toda a interação de um ou mais usuários com um servidor. É uma página que se comporta de maneira automática e definida, interagindo com as ações permitidas aos seus usuários, apresentando características dinâmicas e personalizáveis em tempo de execução.
 
@@ -2512,7 +2512,7 @@ A personalização do <strong>sistema</strong> também é outra vantagem. O <str
 
 &nbsp;
 
-<img class="size-large wp-image-50681 aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/sistemas-web-1024x370.jpg" alt="Sistema" width="840" height="304" />
+<img class="size-large wp-image-50681 aligncenter" src="/news/default-nc.jpg" alt="Sistema" width="840" height="304" />
 
 &nbsp;
 <h2>Deseja ter um sistema e um site para a sua empresa?</h2>
@@ -2533,7 +2533,7 @@ A personalização do <strong>sistema</strong> também é outra vantagem. O <str
       "Site",
       "websites"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/sistemas-web.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50681"
   },
   {
@@ -2546,7 +2546,7 @@ A personalização do <strong>sistema</strong> também é outra vantagem. O <str
 <h4>Para fazer orçamentos de sites e sistemas, principalmente <strong>Sistema de Carros</strong>, basta <a href="https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/">clicar aqui</a>!</h4>
 &nbsp;
 
-<img class="alignleft size-large wp-image-50672" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/4-1-1024x576.jpg" alt="Sistema de Carros" width="840" height="473" />
+<img class="alignleft size-large wp-image-50672" src="/news/default-nc.jpg" alt="Sistema de Carros" width="840" height="473" />
 <h2></h2>
 <h2></h2>
 <h2></h2>
@@ -2564,7 +2564,7 @@ Esse avanço virtual não podia ficar de fora das grandes empresas e dos grandes
 
 &nbsp;
 
-<img class="alignleft size-full wp-image-50670" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/2-1.jpg" alt="Sistema de Carros" width="1000" height="879" />
+<img class="alignleft size-full wp-image-50670" src="/news/default-nc.jpg" alt="Sistema de Carros" width="1000" height="879" />
 <h2></h2>
 <h2></h2>
 <h2></h2>
@@ -2594,7 +2594,7 @@ A interface e as programações são feitas sob medida e demanda. De acordo com 
 
 Deixando tudo mais simples, nossos <strong>Sistemas de Carros</strong> são "cleans". Basta o cliente registrar o automóvel, colocar a descrição completa - para uma melhor legibilidade -, adicionar fotos e por fim, valores e formas de pagamentos! Pronto, o automóvel estará nas listas do sistema com todos os "feedbacks" dos usuários.
 <h2></h2>
-<img class="aligncenter wp-image-50674 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/5.jpg" alt="Sistema de Carros" width="259" height="194" />
+<img class="aligncenter wp-image-50674 size-full" src="/news/default-nc.jpg" alt="Sistema de Carros" width="259" height="194" />
 <h2></h2>
 <h2></h2>
 <h2>Sistemas de Carros / Por que na NC Brasil é melhor?</h2>
@@ -2604,7 +2604,7 @@ Está é uma estratégia de marketing onde lidamos com palavras chaves para rank
 
 Para isso, lidamos com autenticidade e sistema de limpeza de página, para uma navegação leve e mansa. Os usuários costumam procurar por sites que sejam leves e tranquilos de se navegarem!
 
-<img class="alignleft size-large wp-image-50671" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/3-1-1024x1024.jpg" alt="Sistema de Carros" width="840" height="840" />
+<img class="alignleft size-large wp-image-50671" src="/news/default-nc.jpg" alt="Sistema de Carros" width="840" height="840" />
 <h2></h2>
 <h2></h2>
 <h2></h2>
@@ -2628,7 +2628,7 @@ A implantação de <strong>Sistemas de Carros</strong> em uma empresa levará a 
 <h3>Mais segurança</h3>
 Sim,<strong> Sistemas Web</strong> são geralmente hospedados em servidores dedicados. Esses servidores são constantemente monitorados por administradores. A segurança que essas empresas de hospedagem oferecem é avançada e feita de forma simples. Não é preciso instalação manual de software, uma vez que as atualizações são feitas diariamente, sem custo adicional.
 
-<img class="alignleft size-large wp-image-50673" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/1-1024x680.jpg" alt="Sistema de Carros" width="840" height="558" />
+<img class="alignleft size-large wp-image-50673" src="/news/default-nc.jpg" alt="Sistema de Carros" width="840" height="558" />
 
 &nbsp;
 <h2>Sistemas de Carros / Por que adquirir um agora?</h2>
@@ -2655,7 +2655,7 @@ Nos últimos anos houveram um avanço significativo em segurança e tecnologia, 
       "Sistemas de Carros",
       "sistemas web"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/3-1.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50671"
   },
   {
@@ -2670,7 +2670,7 @@ Saiba mais sobre <strong>Sistemas Web</strong> e faça um <a href="https://www.n
 
 &nbsp;
 
-<img class="alignleft size-large wp-image-50661" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/1-1-1024x576.png" alt="Sistemas Web" width="840" height="473" />
+<img class="alignleft size-large wp-image-50661" src="/news/default-nc.jpg" alt="Sistemas Web" width="840" height="473" />
 <h2></h2>
 <h2></h2>
 <h2></h2>
@@ -2690,7 +2690,7 @@ Este foi um avanço significativo do uso de <strong>Aplicações Web</strong> n
 
 &nbsp;
 
-<img class="alignleft size-large wp-image-50662" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/3-1024x683.jpg" alt="Sistemas Web" width="840" height="560" />
+<img class="alignleft size-large wp-image-50662" src="/news/default-nc.jpg" alt="Sistemas Web" width="840" height="560" />
 <h2>Sistemas Web - Por que é melhor?</h2>
 A batalha entre os defensores do desenvolvimento de <strong>Sistemas Web</strong> e de software tem-se estendidos desde os últimos tempos. Mas, é fato que existem algumas vantagens que são exclusivas de uma empresa que desenvolve seu <strong>Sistema baseado em Web</strong>.
 
@@ -2706,7 +2706,7 @@ Os <strong>Sistemas Web</strong> são acessíveis em qualquer lugar, a qualquer 
 
 &nbsp;
 
-<img class="alignleft wp-image-50663 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/4.jpg" alt="Sistemas Web" width="600" height="321" />
+<img class="alignleft wp-image-50663 size-full" src="/news/default-nc.jpg" alt="Sistemas Web" width="600" height="321" />
 
 &nbsp;
 
@@ -2734,7 +2734,7 @@ A<strong> NC Brasil</strong> trabalha com criação de <strong>Sistemas de Leil�
 
 &nbsp;
 
-<img class="alignleft size-large wp-image-50664" src="https://www.ncbrasil.com.br/wp-content/uploads/2018/06/5-1024x682.jpeg" alt="Sistemas Web" width="840" height="559" />
+<img class="alignleft size-large wp-image-50664" src="/news/default-nc.jpg" alt="Sistemas Web" width="840" height="559" />
 
 &nbsp;
 
@@ -2767,7 +2767,7 @@ A<strong> NC Brasil</strong> trabalha com criação de <strong>Sistemas de Leil�
       "sistemas web",
       "Software"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/2.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50665"
   },
   {
@@ -2783,7 +2783,7 @@ A cada dia que passa, mais e mais empresas abandonam os sistemas antigos, e opta
 A criação de um <strong>sistema sob demanda</strong> leva em consideração vários fatores, como: o ramo de negócio, metodologias de trabalho, rotinas de cada área e preferências do usuário final.
 
 <a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sob-demanda.jpg">
-<img class="wp-image-50624 alignleft" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sob-demanda.jpg" alt="" width="320" height="206" /></a>
+<img class="wp-image-50624 alignleft" src="/news/default-nc.jpg" alt="" width="320" height="206" /></a>
 <h1>Vantagens de um sistema sob demanda</h1>
 Além de obter um sistema personalizado e único para a sua empresa, há outras vantagens em obter um <strong>sistema sob demanda,</strong> como por exemplo; um tempo menor de implementação. Outro aspecto interessante consiste na oportunidade de realizar-se ajustes no decorrer do processo.
 <h3>Aproveitamento mais eficiente</h3>
@@ -2791,7 +2791,7 @@ Geralmente, as pequenas e médias empresas têm uma equipe reduzida para cuidar 
 <h3><b>Custos reduzidos</b></h3>
 O <strong>sistema sob medida</strong> se mostra uma excelente opção de investimento no médio e longo prazos. A empresa passa a contar com os recursos necessários para adaptações e complementações do sistema. Além disso, o <strong>software sob demanda</strong> apresenta vida útil maior.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/NC.jpg"><img class=" wp-image-50589 alignleft" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/NC.jpg" alt="" width="223" height="223" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/NC.jpg"><img class=" wp-image-50589 alignleft" src="/news/default-nc.jpg" alt="" width="223" height="223" /></a>
 
 &nbsp;
 
@@ -2806,7 +2806,7 @@ Os projetos começam através do levantamento de requisitos e do mapeamento dos 
     "tags": [
       "Sistema sob demanda"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/office-583841_960_720-e1510975970167.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50626"
   },
   {
@@ -2816,7 +2816,7 @@ Os projetos começam através do levantamento de requisitos e do mapeamento dos 
     "date": "Sat, 18 Nov 2017 03:10:49 +0000",
     "content": `<h1>Sistema de Veículos</h1>
 O <strong>Sistema </strong>de Venda<strong> de Veículos</strong> Online é voltado para empreendedores que desejam um negócio de vendas de veículos próspero no mercado financeiro atual.<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/NC.jpg">
-<img class=" wp-image-50589 alignleft" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/NC.jpg" alt="" width="134" height="134" /></a>
+<img class=" wp-image-50589 alignleft" src="/news/default-nc.jpg" alt="" width="134" height="134" /></a>
 
 A <strong>NC Brasil</strong> é uma Agência Web Designer que está há mais de 10 anos no mercado com ótimas produções.  Aqui, nós temos o <strong>Melhor Sistema </strong><strong>de Veículos. </strong>Nosso <strong>Sistema de Veículos </strong>facilita os empreendedores que desejam vender veículos no mundo virtual, já que o sistema é dinâmico e organizado.
 
@@ -2832,7 +2832,7 @@ A <strong>NC Brasil</strong> é uma Agência Web Designer que está há mai
 
 <strong>Sem surpresas:</strong> Você sabe exatamente quanto pagará pelos nossos serviços. Trabalhamos com os preços abertos em nosso site. Temos diversas opções para você encontrar a melhor delas para sua loja de veículos.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sistema.jpg"><img class="aligncenter size-full wp-image-50620" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sistema.jpg" alt="" width="678" height="470" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sistema.jpg"><img class="aligncenter size-full wp-image-50620" src="/news/default-nc.jpg" alt="" width="678" height="470" /></a>
 
 Entre em contato com <a href="https://www.ncbrasil.com.br/solucoes/contato-criacao-de-sites/">NC Brasil </a>e faça já um orçamento do seu sistema de veículos.`,
 
@@ -2844,7 +2844,7 @@ Entre em contato com <a href="https://www.ncbrasil.com.br/solucoes/contato-criac
     "tags": [
       "Sistemas de Veículos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sistema-veiculos-scaled.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50621"
   },
   {
@@ -2859,7 +2859,7 @@ A <strong>plataforma de leilão</strong> deve apresentar recursos para melhorar 
 
 Os licitantes também devem ler comentários e avaliações apresentadas por outros que ganharam <strong>leilões </strong>realizados pelo vendedor. Isso faz com que os interessados conheçam antecipadamente a reputação dos ofertantes.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/leilao-n.jpg"><img class="aligncenter size-full wp-image-50614" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/leilao-n.jpg" alt="" width="620" height="300" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/leilao-n.jpg"><img class="aligncenter size-full wp-image-50614" src="/news/default-nc.jpg" alt="" width="620" height="300" /></a>
 <h2>Uma plataforma de leilão deve ter:</h2>
 <h3>Estrutura</h3>
 A <strong>plataforma </strong><b>de leilão </b>da<b> <a href="https://www.ncbrasil.com.br/">NC Brasil</a></b> é dividida em diversos módulos (entrada e saída de bens, loteamento, administração de usuários, atendimento a clientes, cobranças e finanças, telões de visualização, pós leilão, relatórios gerenciais, estatísticas, prestação de contas, etc).
@@ -2872,7 +2872,7 @@ Menos custos aos compradores online, com a possibilidade de participar dos leil�
 <h3>Horários</h3>
 Os lotes ficam disponíveis por tempo determinado no dia, dessa forma qualquer pessoa com cadastro liberado tem a oportunidade de dar suas ofertas no momento mais apropriado.
 <h3>Divulgação</h3>
-Com o uso do leilão online a visibilidade é maior, potencializando o público de interessados. A divulgação dos eventos é otimizada através de campanhas diretas, via email, notificações e sms.<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/leilao-.jpg"><img class="aligncenter  wp-image-50615" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/leilao-.jpg" alt="" width="331" height="279" /></a>
+Com o uso do leilão online a visibilidade é maior, potencializando o público de interessados. A divulgação dos eventos é otimizada através de campanhas diretas, via email, notificações e sms.<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/leilao-.jpg"><img class="aligncenter  wp-image-50615" src="/news/default-nc.jpg" alt="" width="331" height="279" /></a>
 <h2>Tipos de Leilões Online</h2>
 <h3>Interno</h3>
 Caso em que o <strong>leilão</strong> não é público; onde os interessados pertencem a um determinado grupo de usuários, como por exemplo <strong>leilão </strong>interno para funcionários ou fornecedores.
@@ -2883,7 +2883,7 @@ Nessa opção de <strong>leilão,</strong> não é utilizado o leiloeiro, tend
 <h3>Judicial</h3>
 <strong>Leilão </strong>judicial é a venda de bens penhorados através de mandado judicial. Essa modalidade tem diversas particularidades para um perfeito funcionamento de <strong>leilões</strong> com lotes judiciais e extra-judiciais.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/leilao-online-3.gif"><img class="aligncenter size-full wp-image-50617" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/leilao-online-3.gif" alt="" width="343" height="240" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/leilao-online-3.gif"><img class="aligncenter size-full wp-image-50617" src="/news/default-nc.jpg" alt="" width="343" height="240" /></a>
 
 A <a href="https://www.ncbrasil.com.br/solucoes/contato-criacao-de-sites/"><strong>NC Brasil</strong></a> é uma agência web design especialista em soluções tecnológicas para projetos de <strong>leilões</strong>, e também na criação de uma <strong>plataforma de leilão</strong>.
 
@@ -2895,7 +2895,7 @@ Criamos plataformas completas para a realização de todos tipos de <strong>lei
     "tags": [
       "Plataforma de leilão"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/leilão-e1510970985900.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50612"
   },
   {
@@ -2910,12 +2910,12 @@ Resumidamente, <strong>marketing digital</strong> é promover produtos ou marc
 
 Apesar da maioria das modalidades de marketing só serem adotadas por empresas grandes, o <strong>marketing digital </strong>é disponível para empresas de todos os portes, pois não precisa de muito orçamento para gerar bons resultados.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/market-e1510967540811.jpg"><img class="aligncenter size-full wp-image-50604" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/market-e1510967540811.jpg" alt="" width="888" height="553" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/market-e1510967540811.jpg"><img class="aligncenter size-full wp-image-50604" src="/news/default-nc.jpg" alt="" width="888" height="553" /></a>
 <h2>Vantagens do marketing digital</h2>
 <h3>Comunicação e Interatividade</h3>
 O <strong style="font-size: 16px;">marketing digital</strong><span style="font-size: 16px;"> possibilita a comunicação entre empresas e consumidores de forma fácil, 24 horas por dia e muitas vezes em tempo real.</span>
 
-[caption id="attachment_50605" align="aligncenter" width="578"]<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/ma.png"><img class="size-full wp-image-50605" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/ma.png" alt="" width="578" height="345" /></a> Netflix.[/caption]
+[caption id="attachment_50605" align="aligncenter" width="578"]<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/ma.png"><img class="size-full wp-image-50605" src="/news/default-nc.jpg" alt="" width="578" height="345" /></a> Netflix.[/caption]
 
 Dessa forma, a solução de problemas se torna muito mais fácil, e a marca cria uma boa reputação e uma relação mais afetiva com seus consumidores.
 <h3>Alcance Global</h3>
@@ -2929,11 +2929,11 @@ Além dos dados sobre a idade e localização do seu público, há também sobre
 
 O real benefício de utilizar dados no <strong>marketing digital</strong> é economia de tempo e dinheiro.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/tempo-dinheiro.jpg"><img class="aligncenter size-full wp-image-50606" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/tempo-dinheiro.jpg" alt="" width="800" height="523" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/tempo-dinheiro.jpg"><img class="aligncenter size-full wp-image-50606" src="/news/default-nc.jpg" alt="" width="800" height="523" /></a>
 <h3>Tempo Real</h3>
 Um anúncio de jornal não pode ser mudado depois de impresso e é complicado medir sua performance. O texto de uma campanha no <em>AdWords</em> pode se ajustar várias vezes ao dia e gerar dados para saber se os objetivos estão sendo alcançados ou não, e o que é preciso mudar para gerar os resultados esperados.
 <h2>Os 8 P's do Marketing Digital</h2>
-Um dos conceitos mais básicos do marketing <strong>tradicional</strong> é o “mix de Marketing”, que é composto pelos 4P's: <strong>Produto</strong>,<strong> Preço</strong>,<strong> Praça </strong>e<strong> Promoção</strong>. <a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/ps.png"><img class="aligncenter size-full wp-image-50608" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/ps.png" alt="" width="575" height="337" /></a>
+Um dos conceitos mais básicos do marketing <strong>tradicional</strong> é o “mix de Marketing”, que é composto pelos 4P's: <strong>Produto</strong>,<strong> Preço</strong>,<strong> Praça </strong>e<strong> Promoção</strong>. <a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/ps.png"><img class="aligncenter size-full wp-image-50608" src="/news/default-nc.jpg" alt="" width="575" height="337" /></a>
 
 O <strong>marketing digital</strong> possui outros elementos que influenciam a percepção dos consumidores, além dos 4 P´s.
 
@@ -2951,7 +2951,7 @@ Cada uma delas possui um formato diferente, o objetivo das marcas nestas platafo
 
 Ao contrário dos blogs, nas redes sociais você <strong>NÃO</strong> tem 100% do controle. Acontece porque os usuários têm a capacidade de comentar publicamente nas suas postagens.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/mark.jpg"><img class="aligncenter size-full wp-image-50609" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/mark.jpg" alt="" width="800" height="350" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/mark.jpg"><img class="aligncenter size-full wp-image-50609" src="/news/default-nc.jpg" alt="" width="800" height="350" /></a>
 
 Há muito espaço para o <strong>marketing digital</strong> crescer. Aos poucos, a verba de marketing das empresas está abandonando o offline e indo para a Internet.
 
@@ -2964,7 +2964,7 @@ Se a sua empresa ainda não investe em marketing digital é hora começar a cons
     "tags": [
       "Marketing Digital"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/marke-e1510967111661-scaled.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50602"
   },
   {
@@ -2979,11 +2979,11 @@ Com a otimização de site e blogs com o uso do<strong> SEO</strong>, por exempl
 
 Existem diversos objetivos em um site. Para um e-commerce, o principal é gerar vendas. Para um blog, é que seus visitantes leiam seus posts. Esses objetivos podem ser muito variados, como vendas, cadastro, downloads ou até mesmo cliques em determinadas partes do site. Independente de seus objetivos, a otimização de seu site permitirá que chegue a ele um público segmentado de acordo com suas expectativas.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/o-que-e-seo.jpg"><img class="aligncenter size-full wp-image-50594" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/o-que-e-seo.jpg" alt="" width="620" height="350" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/o-que-e-seo.jpg"><img class="aligncenter size-full wp-image-50594" src="/news/default-nc.jpg" alt="" width="620" height="350" /></a>
 <h2>Público-alvo</h2>
 Defina seu público-alvo. Por exemplo: se o seu negócio é vender livros usados, as palavras-chave utilizadas na otimização não podem ser livros, <em>best-sellers</em>, ou lançamentos – pois atrairiam todo o público de livros. Você precisaria utilizar as palavras “livros usados”, “sebos”, “livros de segunda mão”, entre outras. Usando o <strong>SEO</strong> dessa forma, restringiria o número de acessos ao site, mas iria atrair um acesso mais qualificado, gerando uma experiência positiva.
 
-O <strong>SEO</strong> trabalha, antes de tudo, a relevância de seu site, seja para o usuário que o visita (otimização interna), seja para a comunidade digital em torno dele (otimização externa).<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/flat_seo.gif"><img class="aligncenter size-full wp-image-50595" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/flat_seo.gif" alt="" width="700" height="261" /></a>
+O <strong>SEO</strong> trabalha, antes de tudo, a relevância de seu site, seja para o usuário que o visita (otimização interna), seja para a comunidade digital em torno dele (otimização externa).<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/flat_seo.gif"><img class="aligncenter size-full wp-image-50595" src="/news/default-nc.jpg" alt="" width="700" height="261" /></a>
 <h2>Tamanho do conteúdo</h2>
 O tamanho influencia diretamente nos rankings do Google. Em uma pesquisa feita pela SearchIQ, a média de tamanho dos conteúdos nas primeiras posições era de 2.500 palavras. Isto porque o Google procura os conteúdos mais completos, que esclareçam as dúvidas dos leitores.
 <h2>URLs</h2>
@@ -2993,7 +2993,7 @@ Os links patrocinados são uma forma mais fácil e rápida de aparecer no topo
 
 A prática de técnicas de <strong>SEO</strong>, o site só aparecerá em primeiro para aquela palavra que ele for realmente relevante. o trabalho de <strong>SEO</strong> está relacionado à credibilidade e relevância de uma página ou um site.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Sem-título.png"><img class="aligncenter size-full wp-image-50598" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Sem-título.png" alt="" width="619" height="601" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Sem-título.png"><img class="aligncenter size-full wp-image-50598" src="/news/default-nc.jpg" alt="" width="619" height="601" /></a>
 
 &nbsp;
 
@@ -3005,7 +3005,7 @@ Caso precise de ajuda profissional para fazer com que seu site, entre em contato
     "tags": [
       "seo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/o-que-e-seo-destaque.gif",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50599"
   },
   {
@@ -3018,7 +3018,7 @@ Caso precise de ajuda profissional para fazer com que seu site, entre em contato
 
 O Processo de <strong>SEO</strong> pode ser dividido em 6 fases, <strong>planejamento</strong> e estratégia, implementação, monitoramento, (re)avaliação e manutenção.
 <h2>Pesquisa</h2>
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Deep-Crawl_icon-icons.com_53720.png"><img class="alignleft  wp-image-50582" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Deep-Crawl_icon-icons.com_53720.png" alt="" width="90" height="90" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Deep-Crawl_icon-icons.com_53720.png"><img class="alignleft  wp-image-50582" src="/news/default-nc.jpg" alt="" width="90" height="90" /></a>
 
 &nbsp;
 
@@ -3026,7 +3026,7 @@ O Processo de <strong>SEO</strong> pode ser dividido em 6 fases, <strong>plane
 <h2>Planejamento do SEO e estratégia</h2>
 Essa fase responde a algumas questões fundamentais, com base no resultado da fase de pesquisa. Você terá de aplainar diversas estratégias nessa fase, incluindo aquelas para lidar com conteúdo, criação de links, mídia social e SEM, bem como estratégias técnicas. Estas estratégias formarão o plano de <strong>SEO</strong>.
 <h2>Implementação</h2>
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/seo2.png"><img class="alignleft  wp-image-50585" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/seo2.png" alt="" width="91" height="88" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/seo2.png"><img class="alignleft  wp-image-50585" src="/news/default-nc.jpg" alt="" width="91" height="88" /></a>
 
 &nbsp;
 
@@ -3034,7 +3034,7 @@ A Fase de implementação de <strong>SEO</strong> é onde todo o <strong>planeja
 <h2><strong>Monitoramento</strong></h2>
 Nesta fase você deverá monitorar todos os dados do site, navegadores e<strong> </strong>mecanismos de busca.
 <h2><strong>Avaliação do planejamento do SEO</strong></h2>
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/conf.png"><img class="alignleft  wp-image-50586" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/conf.png" alt="" width="99" height="99" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/conf.png"><img class="alignleft  wp-image-50586" src="/news/default-nc.jpg" alt="" width="99" height="99" /></a>
 
 &nbsp;
 
@@ -3046,7 +3046,7 @@ A Fase de manutenção cuida dos problemas encontrados na fase de avaliação. E
 <h2>Quem faz o SEO?</h2>
 Agências profissionais de Web Design.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/NC.jpg"><img class="alignleft  wp-image-50589" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/NC.jpg" alt="" width="169" height="169" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/NC.jpg"><img class="alignleft  wp-image-50589" src="/news/default-nc.jpg" alt="" width="169" height="169" /></a>
 
 Os algoritmos do Google estão sempre mudando e evoluindo e a maioria das empresas possuem outras prioridades primordiais, tornando mais complicado manter-se por dentro de todas as novidades no mundo <strong>SEO</strong>. Essas empresas contratam então agências especializadas e profissionais em <strong>SEO</strong>, que oferecem manutenção ou implementação do sistema <strong>SEO </strong>em seu site, como a <a href="https://www.ncbrasil.com.br/solucoes/contato-criacao-de-sites/"><strong>NC Brasil</strong></a>. Entre em contato conosco.`,
 
@@ -3059,7 +3059,7 @@ Os algoritmos do Google estão sempre mudando e evoluindo e a maioria das empre
     "tags": [
       "Planejamento SEO"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sales-plannig-e1510279048728.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50581"
   },
   {
@@ -3076,7 +3076,7 @@ Micro interações são animações sutis que interagem com o usuário. Para 
 <p class="selectionShareable"><strong>Por exemplo:</strong> a ação de um botão quando clicado, que interage com diferentes movimentos (e, algumas vezes, sons). Preste atenção no que acontece quando você dá um <em>like</em> no Facebook ou quando clica no menu no Gmail (<em>app</em>).</p>
 São essas pequenas interações que são <strong>tendência</strong> no <strong>web design</strong> e fazem as suas navegação e experiência serem mais agradáveis e naturais.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/web-gif.gif"><img class="aligncenter size-full wp-image-50565" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/web-gif.gif" alt="" width="800" height="600" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/web-gif.gif"><img class="aligncenter size-full wp-image-50565" src="/news/default-nc.jpg" alt="" width="800" height="600" /></a>
 <h2>Gradiente</h2>
 O gradiente está de volta ás <strong>tendências</strong> do <strong>web design</strong>, mas de uma forma mais elegante e sutil aos olhos.
 
@@ -3084,9 +3084,9 @@ O gradiente está de volta ás <strong>tendências</strong> do <strong>web desig
 
 Podemos exemplificar com algumas grandes marcas que estão usando essa nova <strong>tendência</strong>: iTunes, Spotify e, o mais falado,<strong> </strong>Instagram, que mudou drasticamente seu <strong>design</strong> no último ano.
 
-[caption id="attachment_50569" align="aligncenter" width="540"]<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/instagram.jpg"><img class="wp-image-50569 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/instagram.jpg" alt="" width="540" height="189" /></a> Instagram[/caption]
+[caption id="attachment_50569" align="aligncenter" width="540"]<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/instagram.jpg"><img class="wp-image-50569 size-full" src="/news/default-nc.jpg" alt="" width="540" height="189" /></a> Instagram[/caption]
 
-[caption id="attachment_50568" align="aligncenter" width="800"]<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/spotify.png"><img class="wp-image-50568 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/spotify.png" alt="" width="800" height="332" /></a> Spotify[/caption]
+[caption id="attachment_50568" align="aligncenter" width="800"]<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/spotify.png"><img class="wp-image-50568 size-full" src="/news/default-nc.jpg" alt="" width="800" height="332" /></a> Spotify[/caption]
 
 &nbsp;
 <h2>Vídeos</h2>
@@ -3094,7 +3094,7 @@ Os vídeos estão cada vez mais no auge da <strong>tendência</strong> e parece 
 
 Enquanto a imagem é estática, o vídeo é dinâmico. Além de mais fácil de prender a atenção do usuário, serve como um meio de contar uma história, de se conectar com o usuário.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/video.gif"><img class="aligncenter size-full wp-image-50571" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/video.gif" alt="" width="800" height="490" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/video.gif"><img class="aligncenter size-full wp-image-50571" src="/news/default-nc.jpg" alt="" width="800" height="490" /></a>
 
 &nbsp;
 <h2>Scroll "infinito"</h2>
@@ -3104,23 +3104,23 @@ Por que vale a pena pensar nessa <strong>tendência</strong> para seu site?
 
 É mais fácil contar uma história se você não tiver interrupções. Ou seja: se você tem muito para falar sobre sua empresa ou seus produtos, e quer que as pessoas fiquem focadas no seu discurso, concentre e organize toda a informação em uma só página com o<strong> design</strong> de scroll “infinito”.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/scroll-infinito.jpg"><img class="aligncenter size-full wp-image-50572" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/scroll-infinito.jpg" alt="" width="847" height="506" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/scroll-infinito.jpg"><img class="aligncenter size-full wp-image-50572" src="/news/default-nc.jpg" alt="" width="847" height="506" /></a>
 <h2>Tipografia grande e Bold</h2>
 Algo que é <strong>tendência no web design</strong> é o tamanho bem grande em fontes, criando um contraste forte entre o título e o restante do conteúdo. Usado, principalmente, em <em>homepages</em>.
 
-[caption id="attachment_50573" align="aligncenter" width="800"]<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/tendencia-web-design.png"><img class="size-full wp-image-50573" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/tendencia-web-design.png" alt="" width="800" height="414" /></a> Nike[/caption]
+[caption id="attachment_50573" align="aligncenter" width="800"]<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/tendencia-web-design.png"><img class="size-full wp-image-50573" src="/news/default-nc.jpg" alt="" width="800" height="414" /></a> Nike[/caption]
 <h2>GIF</h2>
 O Gif era uma coisa dos anos 90, e foi considerado brega por muito tempo. Hoje em dia é uma <strong>tendência</strong> no <strong>web design</strong> muito forte, principalmente nas mídias sociais, nos dando um novo jeito de expressar as emoções.
 
 É o que dizem: “uma imagem vale mais que mil palavras”.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Gatos-Gifs-Engraçados-Baixar.gif"><img class="aligncenter size-full wp-image-50574" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Gatos-Gifs-Engraçados-Baixar.gif" alt="" width="440" height="320" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Gatos-Gifs-Engraçados-Baixar.gif"><img class="aligncenter size-full wp-image-50574" src="/news/default-nc.jpg" alt="" width="440" height="320" /></a>
 
 &nbsp;
 <h2>Parallax</h2>
 É uma <strong>tendência</strong> que permite que o primeiro plano e o fundo se movimentem em velocidades diferentes, criando, para o <strong>design</strong>,  uma ilusão de profundidade e imersão. Se aplicado corretamente, terá uma bela dinâmica e um visual diferenciado.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Des1gn-ON-Tendencias-no-Design-em-2017-Parallax-03.gif"><img class="aligncenter size-full wp-image-50575" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Des1gn-ON-Tendencias-no-Design-em-2017-Parallax-03.gif" alt="" width="800" height="600" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Des1gn-ON-Tendencias-no-Design-em-2017-Parallax-03.gif"><img class="aligncenter size-full wp-image-50575" src="/news/default-nc.jpg" alt="" width="800" height="600" /></a>
 <h2>Conclusão</h2>
 <p class="selectionShareable">Algumas <strong>tendências</strong> no <strong>web design</strong> ficam, algumas se vão. O importante é saber como e até que ponto usá-las.</p>
 <p class="selectionShareable">Pense que não é somente porque algo é <strong>tendência</strong>, que irá servir para todo produto ou usuário. Você deve levar as características do determinado projeto em consideração e tirar suas conclusões de qual <strong>design</strong> é melhor usar, ou não.</p>`,
@@ -3136,7 +3136,7 @@ O Gif era uma coisa dos anos 90, e foi considerado brega por muito tempo. Hoje e
       "tendência web design",
       "Tendência Web Design 2017"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/web-design-user-experience.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50561"
   },
   {
@@ -3147,7 +3147,7 @@ O Gif era uma coisa dos anos 90, e foi considerado brega por muito tempo. Hoje e
     "content": `<h1>O que é um Sistema?</h1>
 Um <strong>Sistema,</strong> em poucas palavras, é um produto único que atende as necessidades do empreendedor em sua plataforma eletrônica.
 
-Há muitos tipos de <strong>Sistemas</strong> <strong>Operacionais</strong>, cuja complexidade varia e depende de que tipo de funções é provido, e para que computador esteja sendo usado. Alguns <strong>sistemas</strong> são responsáveis pela gerência de muitos usuários, outros já são responsáveis pelo cálculo e organização de vendas de um empresa.<img class="aligncenter size-full wp-image-50554" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/4post.jpg" alt="sistema" width="1000" height="645" />
+Há muitos tipos de <strong>Sistemas</strong> <strong>Operacionais</strong>, cuja complexidade varia e depende de que tipo de funções é provido, e para que computador esteja sendo usado. Alguns <strong>sistemas</strong> são responsáveis pela gerência de muitos usuários, outros já são responsáveis pelo cálculo e organização de vendas de um empresa.<img class="aligncenter size-full wp-image-50554" src="/news/default-nc.jpg" alt="sistema" width="1000" height="645" />
 
 O <strong>sistema </strong>funciona com a iniciação de processos que este irá precisar para funcionar corretamente. Esses processos poderão ser arquivos que necessitam de ser frequentemente atualizados, ou arquivos que processam dados úteis para o <strong>sistema.</strong> Poderemos ter acesso a vários processos do <strong>sistema operacional</strong> a partir do gerenciador de tarefas, onde se encontram todos os processos que estão em funcionamento desde a inicialização do <strong>sistema</strong> até a sua utilização atual.
 
@@ -3158,14 +3158,14 @@ Um <strong>Sistema sob demanda</strong> é o desenvolvimento de um software excl
 A criação de um <strong>sistema </strong>leva em consideração vários fatores. A equipe de <a href="https://www.ncbrasil.com.br/criacao-de-site/desenvolvedores/">desenvolvedores</a> analisará aspectos como o ramo de negócio da empresa, metodologias de trabalho utilizadas, rotinas de cada área e preferências do usuário final.
 <blockquote>Saiba mais em outro artigo da NC Brasil! <a href="https://www.ncbrasil.com.br/por-que-um-sistema-sob-demanda-e-melhor/">Clique aqui</a>!</blockquote>
 O <strong>sistema</strong> é desenvolvimento conforme suas necessidades. Sem precisar se adaptar a um <strong>sistema</strong> pronto!
-<h1><img class="aligncenter size-full wp-image-50557" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sistema-corporativos.jpg" alt="sistema" width="451" height="371" /></h1>
+<h1><img class="aligncenter size-full wp-image-50557" src="/news/default-nc.jpg" alt="sistema" width="451" height="371" /></h1>
 <h1>Por que devo ter um Sistema?</h1>
 Inicialmente, a compra de um software de prateleira pode parecer uma boa, levando em conta o lado financeiro. Portanto, é bom tomar cuidados, pois pode acabar que em troca de um preço menor, o cliente deixe de aproveitar uma série de benefícios que só os <strong>sistemas sob demanda</strong> oferece.
 
 Por isso, a cada dia que passa, mais e mais empresas abandonam os sistemas antigos, e optam pelo serviço de <strong>sistemas</strong> <strong>on demand.</strong>
 
 A troca de um programa antigo por um novo, único e com a cara do seu negócio, na certa será a diferença entre maior produtividade, ou prejuízos financeiros. Por isso, os gestores passaram a avaliar com mais atenção a possibilidade de contratar um parceiro para o desenvolvimento de <strong>sistemas</strong><strong> </strong>feitos sob medida, para as necessidades de seu negócio.
-<h2><img class="alignleft size-medium wp-image-50556" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sistemas2-300x225.png" alt="sistema" width="300" height="225" />Vantagens de um Sistema</h2>
+<h2><img class="alignleft size-medium wp-image-50556" src="/news/default-nc.jpg" alt="sistema" width="300" height="225" />Vantagens de um Sistema</h2>
 <ul>
  	<li>
 <h3><b>Redução de resistências: </b></h3>
@@ -3184,7 +3184,7 @@ O <strong>sistema sob medida</strong> se mostra uma excelente opção de inves
 <h1>Sistema de gestão de veículos?</h1>
 Com a grande demanda de fabricação, os veículos hoje ocupam grande parte do mercado brasileiro. Para estar a frente da concorrência, é necessário saber se adaptar as <strong>tendências web <a href="https://www.ncbrasil.com.br/criacao-de-sites/">designers</a></strong>. Algo que não pode faltar é a criação de um <strong>site</strong> com um <strong><a href="https://www.ncbrasil.com.br/criacao-de-site/sistema-de-gestao-de-veiculos/">sistema de gestão de veículos</a></strong> único com a cara desejada. Este fará com que sua empresa fique à frente das pesquisas e converta acessos ao <strong>site</strong> em vendas de veículos.
 <blockquote><a href="https://www.ncbrasil.com.br/sistema-de-venda-de-veiculos-online-e-na-nc-brasil/">Leia mais no artigo específico!</a></blockquote>
-[caption id="attachment_50046" align="aligncenter" width="600"]<img class="wp-image-50046 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/uma-burocracia-congestionando-a-compra-e-venda-de-veiculos.jpg" alt="sistema " width="600" height="335" /> sistema[/caption]
+[caption id="attachment_50046" align="aligncenter" width="600"]<img class="wp-image-50046 size-full" src="/news/default-nc.jpg" alt="sistema " width="600" height="335" /> sistema[/caption]
 
 &nbsp;
 <h2>Onde fazer um Sistema para sua empresa?</h2>
@@ -3216,7 +3216,7 @@ O resultado sempre será um <strong>software customizado,</strong> que irá at
       "Sistemas únicos",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/software-web.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50555"
   },
   {
@@ -3230,7 +3230,7 @@ O resultado sempre será um <strong>software customizado,</strong> que irá at
 <h2>Criação de sites de nível alto para investidores como você!</h2>
 <div></div>
 <div>
-<h2><a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/bonito-homem-apresentando-algo_1368-87.jpg"><img class="alignleft wp-image-50538" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/bonito-homem-apresentando-algo_1368-87.jpg" alt="Criação de Sites" width="400" height="600" /></a>Resultado</h2>
+<h2><a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/bonito-homem-apresentando-algo_1368-87.jpg"><img class="alignleft wp-image-50538" src="/news/default-nc.jpg" alt="Criação de Sites" width="400" height="600" /></a>Resultado</h2>
 Sabemos exatamente o que, e como fazer para que você tenha retornos.
 <strong>Confie na NC Brasil - Criação de Sites</strong>.
 
@@ -3266,7 +3266,7 @@ A<strong> NC Brasil</strong> desenvolve sites personalizados de acordo com as ne
 Esse processo de <strong>Criação de Sites</strong> é completo, desde a criação do layout até as diversas formas de promovê-lo na internet. Para isso trabalhamos o design em perfeita harmonia com a programação e a arquitetura de informações para a usabilidade do cliente.
 
 Nossa missão é aliar um visual agradável com aplicações rápidas e confiáveis, tornando o site uma ótima ferramenta de relacionamento e divulgação de sua empresa ou marca pela internet.
-<h2 class="widget-title"><img class="alignleft wp-image-50542 size-medium" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/Wordpress-start-image-300x214.jpg" alt="Criação de Sites" width="300" height="214" /></h2>
+<h2 class="widget-title"><img class="alignleft wp-image-50542 size-medium" src="/news/default-nc.jpg" alt="Criação de Sites" width="300" height="214" /></h2>
 <h2 class="widget-title">Criação de Sites em WordPress</h2>
 <div class="textwidget">
 <p align="justify">O <strong>WordPress</strong> é uma plataforma (CMS) para criar tanto sites quanto blogs gratuitamente. Sua flexibilidade permite que você administre seu conteúdo mesmo sem nenhum conhecimento de HTML ou PHP. Além de uma cara super amigável, a plataforma trabalha com um sistema de acoplações que permite instalar módulos separadamente. Esses são os chamados plugins <strong>WordPress</strong>.</p>
@@ -3292,7 +3292,7 @@ Nossa missão é aliar um visual agradável com aplicações rápidas e confiáv
 <div></div>
 <h2>Objetivo - Criação de Sites</h2>
 &nbsp;
-<div><img class="aligncenter size-full wp-image-50545" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/5-sites-para-conseguir-mais-rendimento-nos-estudos-.png" alt="Criação de Sites" width="712" height="350" /></div>
+<div><img class="aligncenter size-full wp-image-50545" src="/news/default-nc.jpg" alt="Criação de Sites" width="712" height="350" /></div>
 <div></div>
 Nosso objetivo é <strong>criar sites</strong><em><strong> </strong></em>autênticos, com layout limpo e com um toque a mais. Não importa a dimensão do seu negócio. <strong>Criamos sites</strong> para profissionais liberais, pequenas, médias e grandes empresas. O cliente acompanha todo o processo de criação do início ao fim no processo de <strong>desenvolvimento de site</strong>.
 
@@ -3327,7 +3327,7 @@ Por fim, o mais importante. O nosso trabalho não termina com a entrega do <stro
       "website",
       "word press"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/site-alex-031.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50548"
   },
   {
@@ -3342,7 +3342,7 @@ Sabe aquela página que você abre no celular e a tela fica com letras tão peq
 
 O<strong> site responsivo</strong> é o projetado para ser adaptado a qualquer tipo de resolução, sem distorções.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/tend1.jpg"><img class=" wp-image-50521 aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/tend1-300x181.jpg" alt="" width="454" height="274" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/tend1.jpg"><img class=" wp-image-50521 aligncenter" src="/news/default-nc.jpg" alt="" width="454" height="274" /></a>
 <h2>Site responsivo X Versão Mobile</h2>
 <strong>Responsivo</strong> é o que é adaptado para qualquer tipo de tela. É uma única estrutura de códigos que funciona em diferentes resoluções.
 
@@ -3350,7 +3350,7 @@ Um mobile é diferente, é uma segunda página separado, feito somente para ser
 
 O mais vantajoso é o<strong> site responsivo</strong> porque utiliza-se sempre o mesmo código e as mesmas imagens para todos os tamanhos de tela.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/site-responsivo-x-site-mobile.png"><img class=" wp-image-50528 aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/site-responsivo-x-site-mobile-300x166.png" alt="" width="480" height="266" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/site-responsivo-x-site-mobile.png"><img class=" wp-image-50528 aligncenter" src="/news/default-nc.jpg" alt="" width="480" height="266" /></a>
 <h2>Motivos para ter um <strong>site responsivo</strong></h2>
 <h3>- Melhora a experiência do usuário do site<span style="font-size: 16px;">: </span></h3>
 <span style="font-size: 16px;">A experiência do usuário da página</span><span style="font-size: 16px;"> traz resultados concretos. Segundo o </span><em style="font-size: 16px;">Google Think Insights</em><span style="font-size: 16px;">, se um usuário acessar sua página por dispositivo móvel e não encontrar o que procura, há 61% de chances de ele desistir e acessar outro site.</span>
@@ -3361,7 +3361,7 @@ Uma página responsiva é mais leve e otimizada para os dispositivos móveis, e
 <h3>- Aumentar as vendas:</h3>
 A tendência de compras online por dispositivos móveis está em pleno desenvolvimento. Ter um aplicativo ou uma página para um <em>ecommerce</em>, por exemplo, é uma maneira de aumentar as suas vendas.
 
-<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sindico-profissional-e-morador1.png"><img class=" wp-image-50532 aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sindico-profissional-e-morador1-300x154.png" alt="" width="471" height="242" /></a>
+<a href="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/sindico-profissional-e-morador1.png"><img class=" wp-image-50532 aligncenter" src="/news/default-nc.jpg" alt="" width="471" height="242" /></a>
 
 O acesso às redes sociais via celulares e <em>tablets</em> é cada dia mais frequente. Um<strong> site responsivo </strong>aumenta as chances das páginas serem compartilhadas nas redes se os usuários tiverem uma boa experiência com ela.
 
@@ -3379,7 +3379,7 @@ Isso é um benefício para dispositivos futuros, que poderão ser lançados com 
       "criar site responsivo",
       "site responsivo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/entenda-o-que-e-um-site-responsivo-1132x600.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50527"
   },
   {
@@ -3397,7 +3397,7 @@ Todo <strong>bom site</strong> possui alguns fatores primordiais e padrões, den
 <h2>Tenha um <strong>bom site</strong> também! Leia nosso artigo e saiba mais!</h2>
 &nbsp;
 
-<img class="aligncenter size-large wp-image-50506" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/IMPORTÂNCIA-DE-UM-BOM-SITE-PARA-EMPRESA-1024x560.png" alt="Bom site" width="840" height="459" />
+<img class="aligncenter size-large wp-image-50506" src="/news/default-nc.jpg" alt="Bom site" width="840" height="459" />
 
 &nbsp;
 <h2>Qual a importância de um bom site para sua empresa?</h2>
@@ -3409,7 +3409,7 @@ A criação de<strong> sites</strong> gerenciadas por uma agência web profissi
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50513" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/prestanto-bom-atendimento-ao-cliente.jpg" alt="bom site" width="870" height="418" />
+<img class="aligncenter size-full wp-image-50513" src="/news/default-nc.jpg" alt="bom site" width="870" height="418" />
 <h2></h2>
 <h2>Site Profissional</h2>
 Sem dúvidas, um <strong>bom site</strong> é um <strong>site profissional</strong>. Então, do contrário do que muitos pensam, ter um <strong>bom site</strong> é sim essencial para o sucesso de qualquer negócio, já que eles servem não apenas como um meio de divulgação do produto ou serviço, mas também cumprem a função de comunicar os valores inerentes à empresa.
@@ -3422,13 +3422,13 @@ Sua maior vantagem, sem dúvidas, é a <strong>praticidade! </strong>Além de e
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50510" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg" alt="bom site" width="770" height="370" />
+<img class="aligncenter size-full wp-image-50510" src="/news/default-nc.jpg" alt="bom site" width="770" height="370" />
 <h2>Sua empresa precisa de um <strong>bom site</strong>!</h2>
 Ter um bom site ativo é importante, mesmo para as pequenas empresas. De acordo com um estudo, cerca de 85% dos consumidores usam a internet para encontrar uma empresa ou um negócio local. Os motores de busca sempre estarão atrás de resultados próximos aos clientes, sendo assim, ter um site é de extrema importância para sua empresa, sendo pequena ou grande!
 <p style="margin: 13.5pt 0cm .0001pt 0cm;">Um negócio com um bom site, pode passar a ter presença global! Capte clientes de todo o Brasil e do mundo!</p>
 
 <blockquote>
-<h1><img class="size-full wp-image-48868 alignleft" src="https://www.ncbrasil.com.br/wp-content/uploads/2016/05/logo-criacao-de-sites-e1475583609553.jpg" alt="Criação de sites" width="150" height="138" />Deseja ter um bom site?</h1>
+<h1><img class="size-full wp-image-48868 alignleft" src="/news/default-nc.jpg" alt="Criação de sites" width="150" height="138" />Deseja ter um bom site?</h1>
 <h2>Entre em contato conosco e faça um <a href="https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/">orçamento!</a></h2>
 </blockquote>
 &nbsp;`,
@@ -3447,7 +3447,7 @@ Ter um bom site ativo é importante, mesmo para as pequenas empresas. De acordo 
       "Sites",
       "Web Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/criação-de-sites-responsivos-em-salvador-empresa.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50507"
   },
   {
@@ -3458,12 +3458,12 @@ Ter um bom site ativo é importante, mesmo para as pequenas empresas. De acordo 
     "content": `<h1>Sistema de Cupom de Desconto</h1>
 <h2 class="entry-title">A NC Brasil disponibiliza Sistemas de Cupons de Desconto para lojistas virtuais!</h2>
 <h3>De olho nos consumidores que estão em busca de bons negócios na internet, está surgindo uma uma nova modalidade de vendas com desconto na rede: a distribuição de cupons de desconto.</h3>
-<img class="aligncenter size-full wp-image-50490" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/5853da12e9a55-noticia_cupom_de_desconto_atrai_clientela_on_line.jpg" alt="Sistema de Cupom de Desconto" width="733" height="458" />
+<img class="aligncenter size-full wp-image-50490" src="/news/default-nc.jpg" alt="Sistema de Cupom de Desconto" width="733" height="458" />
 <h2>Sistema de Cupom de Descontos e a NC Brasil</h2>
 Acompanhando as principais tendências no setor de comércio eletrônico, a<strong> NC Brasil</strong>, agência Web Design, passa a oferecer a funcionalidade de um <strong>Sistema de Cupom de Desconto</strong> para quem possui loja virtual na rede social.
 <h2>Como funcionam os cupons de descontos?</h2>
 Nossos <strong>Sistemas de Cupom de Desconto</strong> são especializados! Basta o usuário acessar o site, anotar o código promocional e digitar no campo específico ao concluir a compra na<strong> loja virtual</strong> desejada. E pronto, o cliente pode ter seu<strong> Cupom de Desconto</strong>!
-<h2><img class="alignleft wp-image-50491" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/depositphotos_5253409-stock-photo-young-woman-talking-by-phone.jpg" alt="Sistemas de Cupom de Desconto" width="281" height="420" />Funcionalidade do Sistema de Cupom de Desconto!</h2>
+<h2><img class="alignleft wp-image-50491" src="/news/default-nc.jpg" alt="Sistemas de Cupom de Desconto" width="281" height="420" />Funcionalidade do Sistema de Cupom de Desconto!</h2>
 Na prática, nossos sistemas disponibilizam uma série de <strong>cupons</strong> de diferentes empresas que se associaram ao site. Ao cliente, basta imprimir o <strong>cupom</strong> e levar ao estabelecimento comercial para adquirir o produto ou o serviço com o <strong>desconto</strong> especificado.
 
 Este processo inovador garante inúmeras vantagens, dentre elas é atender o que todo cliente procura: <strong>BOM PREÇO!</strong>
@@ -3472,7 +3472,7 @@ Este processo inovador garante inúmeras vantagens, dentre elas é atender o que
 
 Eles se tornaram febre, nos Estados Unidos, em meados dos anos 2000. No Brasil, a prática chegou aproximadamente em 2010, talvez um pouco antes, mas logo ganhou popularidade. Além de ser prático, os <strong>cupons de desconto</strong> são seguros e aceitos em muitas lojas virtuais, inclusive as mais conhecidas pelo público. Em poucos segundos, o internauta obtém seu desconto.
 <h2></h2>
-<img class="wp-image-50493 alignright" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/11/download.jpg" alt="Sistema de Cupom de Desconto" width="215" height="215" />
+<img class="wp-image-50493 alignright" src="/news/default-nc.jpg" alt="Sistema de Cupom de Desconto" width="215" height="215" />
 <h2>Tenha um Sistema de Cupom de Desconto também!</h2>
 Como a nova funcionalidade, o usuário que conta com um perfil cadastrado no site pode criar descontos de 0,1% até 99%, o qual poderá ser enviado para parceiros (amigos), enviado por email ou postado no mural para que a promoção seja visualizada por todos!
 
@@ -3504,7 +3504,7 @@ Para utilização do <strong>sistema</strong>, o usuário investe em uma taxa ú
       "Site de Cupom Online",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/b2b-vs-b2c-e-commerce-1024x579.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50500"
   },
   {
@@ -3514,7 +3514,7 @@ Para utilização do <strong>sistema</strong>, o usuário investe em uma taxa ú
     "date": "Sat, 28 Oct 2017 01:11:25 +0000",
     "content": `<h1>Vendas de Veículos Online</h1>
 &nbsp;
-<h2><img class="aligncenter wp-image-50482 size-large" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/10/Mercado-automotivo-1024x670.jpg" alt="Vendas de Veículos Online" width="840" height="550" /></h2>
+<h2><img class="aligncenter wp-image-50482 size-large" src="/news/default-nc.jpg" alt="Vendas de Veículos Online" width="840" height="550" /></h2>
 <h2></h2>
 <h2>Mercado Automobilístico</h2>
 O pior momento do <strong>setor automotivo</strong> passou e o mercado começa a se <strong>recuperar já em 2017</strong>. Esta foi a previsão feita pelos consultores Guido Vildozo (IHS Markit), Vitor Klizas (Jato Dynamics) e Carlos Reis (Carcon Automotive) no primeiro painel do VIII Fórum da Indústria Automobilística, realizado por <b>Automotive Business</b> no Golden Hall do WTC, em São Paulo.
@@ -3522,14 +3522,14 @@ O pior momento do <strong>setor automotivo</strong> passou e o mercado começa
 Esse crescimento, entretanto, ocorrerá de forma lenta e gradual. “Nossas previsões não são tão otimistas quanto as de outras consultorias, mas sim conservadoras”, disse Vildozo. “O volume de vendas e produção crescerá a partir de 2020 se houver um governo que tenha apoio do Congresso.”
 
 Então, como podemos notar, o crescimento da venda de veículos está voltando a ser um bom negócio. Mas como sair na frente, gastando pouco e tendo um ótimo modo de venda? E então entra os Sistemas de <strong>Venda de Veículos Online</strong>!
-<h2><img class="aligncenter wp-image-50483 size-large" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/10/How-to-Keep-Your-E-Commerce-System-Funtioning-at-Optimum-Capacity-1024x640.png" alt="Vendas de Veículos Online" width="840" height="525" /></h2>
+<h2><img class="aligncenter wp-image-50483 size-large" src="/news/default-nc.jpg" alt="Vendas de Veículos Online" width="840" height="525" /></h2>
 <h2></h2>
 <h2>O E-Commerce</h2>
 <strong>E-commerce</strong> pode ser traduzido como comércio eletrônico. Ou seja, consiste em uma loja virtual que só vende produtos de uma única empresa. E como a internet é o meio de vendas que mais cresce no mundo, por que não usa-la para o seu sucesso?
 <h1></h1>
 <h1>Web Carrão</h1>
 &nbsp;
-<h2><img class="aligncenter wp-image-50484 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/10/noticias_11_comprar-carro-no-rio-de-janeiro_www.webcarrao.com_.br_zz70e17f1434.png" alt="Vendas de Veículos Online" width="900" height="528" /></h2>
+<h2><img class="aligncenter wp-image-50484 size-full" src="/news/default-nc.jpg" alt="Vendas de Veículos Online" width="900" height="528" /></h2>
 <h2></h2>
 <h2>O que é a Web Carrão?</h2>
 A<strong> Web Carrão</strong> foi o primeiro grande sucesso da <strong>NC Brasil</strong>. O <strong>Sistema de Vendas de Veículos Online</strong> da <strong>Web Carrão </strong>teve uma ascensão admirável!
@@ -3538,7 +3538,7 @@ Nela, vemos claramente como funciona, como é eficaz e como é totalmente gerenc
 <blockquote>
 <h3><a href="https://site.webcarrao.com.br/home/">Clique aqui e acesse nosso Sistema de Vendas de Veículos Online (Web Carrão)</a></h3>
 </blockquote>
-<h2><img class="alignleft size-full wp-image-50485" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/10/4iNnOiOO_400x400.jpg" alt="Vendas de Veículos Online" width="250" height="250" /></h2>
+<h2><img class="alignleft size-full wp-image-50485" src="/news/default-nc.jpg" alt="Vendas de Veículos Online" width="250" height="250" /></h2>
 <h2>Por que a Web Carrão é tão boa?</h2>
 Os sistemas de <strong>Vendas de Veículos Online</strong> da <strong>NC Brasil</strong> são desenvolvidos com o que há de mais moderno em tecnologia e totalmente preparados e otimizados para o <a href="https://www.ncbrasil.com.br/otimizacao-de-sites/">Google</a>. Eles também são <strong>responsivos</strong>, ou seja, se adaptam tanto em telas de desktop, tablet ou celular.
 
@@ -3569,7 +3569,7 @@ Nosso sistema foi desenvolvido 100% em nossa agência visando a realidade do mer
       "Vendas de Veículos Online",
       "Web Carrão"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/10/Female-Accountant.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50487"
   },
   {
@@ -3584,7 +3584,7 @@ Além disso tudo, há vantagens como ter uma listagem de todos os <strong>veíc
 
 &nbsp;
 
-<img class="aligncenter wp-image-50443 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/10/Use-mídias-online-para-potencializar-a-venda-de-veículos.jpg" alt="Sistema de Veículos Online" width="1000" height="667" />
+<img class="aligncenter wp-image-50443 size-full" src="/news/default-nc.jpg" alt="Sistema de Veículos Online" width="1000" height="667" />
 
 &nbsp;
 <h2>Por que escolher a NC Brasil?</h2>
@@ -3592,7 +3592,7 @@ A <strong>NC Brasil</strong> é uma <strong>Agência</strong> <strong>Web Design
 
 &nbsp;
 
-<img class="aligncenter size-full wp-image-50446" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/10/uma-burocracia-congestionando-a-compra-e-venda-de-veiculos.jpg" alt="Sistema de Veículos Online" width="600" height="335" />
+<img class="aligncenter size-full wp-image-50446" src="/news/default-nc.jpg" alt="Sistema de Veículos Online" width="600" height="335" />
 
 &nbsp;
 <h2>Vantagens do Sistema <strong>de Venda de Veículos Online</strong></h2>
@@ -3607,7 +3607,7 @@ A <strong>NC Brasil</strong> é uma <strong>Agência</strong> <strong>Web Design
 <strong>Sem surpresas:</strong> Você sabe exatamente quanto pagará pelos nossos serviços. Trabalhamos com os preços abertos em nosso site, são diversas opções para você encontrar a melhor opção para sua loja de veículos.
 
 &nbsp;
-<h2><img class="wp-image-50447 size-full aligncenter" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/10/EMAILMKT.jpg" alt="Sistema de Veículos Online" width="678" height="470" /></h2>
+<h2><img class="wp-image-50447 size-full aligncenter" src="/news/default-nc.jpg" alt="Sistema de Veículos Online" width="678" height="470" /></h2>
 &nbsp;
 <h2>E-mail Marketing</h2>
 Já imaginou todos os e-mails que você recebe de propostas online e todos os cliente cadastrados no seu banco de dados, receberem promoções de forma simples e prática por e-mail? No <strong>Sistema de Veículos Online</strong> da <strong>NC Brasil v</strong>ocê possui um plano que você poderá ter toda a gestão deste envio, tudo de forma sincronizada.
@@ -3624,7 +3624,7 @@ Já imaginou todos os e-mails que você recebe de propostas online e todos os cl
 Além disto, você poderá contar com nossos profissionais, que poderão analisar e criar campanhas de marketing para ampliar a visibilidade de seus serviços e produtos!
 
 &nbsp;
-<h2><img class="alignleft size-medium wp-image-50045" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/novo-carro-300x153.jpg" sizes="(max-width: 300px) 100vw, 300px" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/novo-carro-300x153.jpg 300w, https://www.ncbrasil.com.br/wp-content/uploads/2017/01/novo-carro.jpg 540w" alt="Venda de veículos" width="300" height="153" />Sistema Único</h2>
+<h2><img class="alignleft size-medium wp-image-50045" src="/news/default-nc.jpg" sizes="(max-width: 300px) 100vw, 300px" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/novo-carro-300x153.jpg 300w, https://www.ncbrasil.com.br/wp-content/uploads/2017/01/novo-carro.jpg 540w" alt="Venda de veículos" width="300" height="153" />Sistema Único</h2>
 Algo que não se pode faltar em um <strong>site de vendas</strong> <strong>de veículos</strong>, é um <strong>sistema de gestão</strong> único e adaptável! Nós da <strong>NC Brasil </strong>escrevemos um artigo especialmente para este tópico!
 <blockquote><a href="https://www.ncbrasil.com.br/sistema-de-gestao-de-veiculos/">Clique aqui e leia o artigo sobre sistema de gestão de veículos!</a></blockquote>
 &nbsp;
@@ -3653,7 +3653,7 @@ Algo que não se pode faltar em um <strong>site de vendas</strong> <strong>de 
       "E-commerce",
       "Site Gerenciável"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/10/797059169-patio-da-general-motors-na-cidade-de-gravatai-no-rio-grande-do-sul-carros-16-1024x576.jpeg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50445"
   },
   {
@@ -3664,7 +3664,7 @@ Algo que não se pode faltar em um <strong>site de vendas</strong> <strong>de 
     "content": `<h1>O que são <strong>Aplicativos</strong>?</h1>
 Se você até hoje não conheceu uma pessoa que não tiram os dedos e os olhos de telas brilhantes de <em>"smartphones"</em>, você não é deste mundo! Todos os dias vemos pessoas de todos os tamanhos e idades deslizando nas telas <em>"touch screen"</em> para todos os lados, nos infinitos <strong>aplicativos</strong> disponíveis neste universo. Resumindo de uma forma simples e até poética, os "<strong>apps</strong>" são aqueles quadradinhos que estão espalhados no celular. São a porta que com um único toque te conecta a um universo inteiro de possibilidades.
 
-<img class="aligncenter size-large wp-image-50267" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/09/1-1024x751.jpg" alt="Aplicativos" width="840" height="616" />
+<img class="aligncenter size-large wp-image-50267" src="/news/default-nc.jpg" alt="Aplicativos" width="840" height="616" />
 <h2>Definindo melhor...</h2>
 Navegando pela vasta web, achei uma explicação sensacional. Leia e entenda de uma vez por todas o que são os <strong>aplicativos</strong>!
 
@@ -3674,7 +3674,7 @@ Ligue o celular. Cada quadradinho que você vê aí na tela é um <strong>aplica
 Os <strong>apps</strong> são ferramentas que você pode carregar dentro do seu celular. E exatamente como no canivete, tem ferramenta que você usa mais, outras que usa menos, e tem aquelas também que você nem sabe direito para que precisa".
 
 &nbsp;
-<h2><img class="alignright wp-image-50270" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/09/3-300x225.jpg" alt="Aplicativo" width="400" height="300" />Por que minha empresa precisa de um Aplicativo?</h2>
+<h2><img class="alignright wp-image-50270" src="/news/default-nc.jpg" alt="Aplicativo" width="400" height="300" />Por que minha empresa precisa de um Aplicativo?</h2>
 Então, você pensa que os <strong>aplicativos móveis</strong> são para empresas mega grandes, como a Netshoes? Techmundo? Kanui?
 Se pensa assim, você está errado!
 Mais e mais as pequenas e médias empresas estão seguindo a <strong>tendência móvel,</strong> entendendo que uma estratégia eficaz envolve mais do que apenas um site mobile.
@@ -3691,7 +3691,7 @@ Estas empresas que estão se inserindo nesse mercado, estão à frente do jogo, 
  	<li><strong>Promoções:</strong> Disponibilizar cupons de desconto para quem baixa o <strong>aplicativo</strong> é uma boa estratégia para que os clientes decidam baixá-lo. Notificações de promoções momentâneas também é interessante para impulsionar decisões, pois o cliente entende que ele tem vantagens recorrentes de manter o aplicativo em seu celular. Notifique seus clientes em primeira mão do lançamento de produtos ou serviços. Convide-os para conhecer a novidade pessoalmente ou informe seus atributos e vantagens pelo próprio aplicativo!</li>
 </ul>
 &nbsp;
-<h2><img class="alignleft wp-image-50268" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/09/2.jpg" alt="Aplicativo" width="400" height="400" />Como faço para ter um Aplicativo Profissional?</h2>
+<h2><img class="alignleft wp-image-50268" src="/news/default-nc.jpg" alt="Aplicativo" width="400" height="400" />Como faço para ter um Aplicativo Profissional?</h2>
 Agora que você já conhece a importância e as vantagens de um <strong>aplicativo </strong>no mundo de hoje, deve estar doido para ter o seu <strong>próprio aplicativo profissional</strong> e provavelmente está pensando: <em>“Onde posso contratar bons <a href="https://www.ncbrasil.com.br/criacao-de-site/desenvolvedores/">desenvolvedores</a>?”. </em>Pois bem, nós estamos aqui!
 
 &nbsp;
@@ -3724,7 +3724,7 @@ Agora que você já conhece a importância e as vantagens de um <strong>aplic
       "M-Commerce",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/09/melhores-celulares-chineses-baratos-2017.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50276"
   },
   {
@@ -3746,7 +3746,7 @@ Por isso, pensar em como você está se posicionando no mercado e o que a sua <s
 Então, quando saber que esse momento chegou?
 <blockquote><a href="https://www.ncbrasil.com.br/o-que-e-branding/">Confira mais sobre planejamento da <strong>identidade visual,</strong> ou <em><strong>branding,</strong></em> da sua empresa, clicando aqui e lendo outro artigo nosso!</a></blockquote>
 </div>
-<h3><img class="aligncenter size-full wp-image-50095" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/marca2.jpg" alt="Marca" width="545" height="230" /></h3>
+<h3><img class="aligncenter size-full wp-image-50095" src="/news/default-nc.jpg" alt="Marca" width="545" height="230" /></h3>
 <h3>Adaptação</h3>
 <div class="motopress-text-obj">
 
@@ -3759,7 +3759,7 @@ Antigamente, as empresas precisam se preocupar em sua imagem no papel. Já hoje,
 O que era moda há 20 anos, é ultrapassado hoje. Um exemplo claro, é que algum tempo atrás era lindo, brilhante, colocar sombras e muitos detalhe, além da aparência de relevo na fonte. Hoje, a tendência está no <em>clean,</em> quanto menos é mais. Um dos grandes fatores de sucesso da Apple, por exemplo, é o seu design simples e limpo e, até eles, passaram por esse processo de simplificação da logo. De uma olhada!
 
 </div>
-<h3><img class="aligncenter size-full wp-image-50096" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/branding_apple.png" alt="Marca" width="769" height="249" /></h3>
+<h3><img class="aligncenter size-full wp-image-50096" src="/news/default-nc.jpg" alt="Marca" width="769" height="249" /></h3>
 <h3>Comunicação</h3>
 <div class="motopress-text-obj">
 
@@ -3794,7 +3794,7 @@ E, se precisar de uma ajuda nesse processo, converse com um de nossos designers.
       "logomarca",
       "marca"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/design_internet.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50097"
   },
   {
@@ -3810,7 +3810,7 @@ Visando isso, nós da <strong>NC Brasil</strong> decidimos criar um artigo com a
 Enfim, para o seu negócio alavancar, é importante adotar estratégia de <strong>marketing digital,</strong> que não se aplica somente ao seu <strong>site.</strong>
 
 De acordo com os especialistas, é preciso realizar uma estratégia real, que possa ser posta em prática com os recursos disponíveis. As possibilidades do <strong>marketing digital</strong> são infinitas, permitindo as empresas, mesmo com pouco investimentos, consigam entrar na disputa de "<em>gente grande</em>", ou seja, com seus grandes concorrentes!
-<h2><strong><img class="aligncenter size-full wp-image-50089" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/agencia-de-marketing-digital-tera-alta-significativa-para-2016-770x300.jpg" alt="Marketing Digital" width="770" height="300" /></strong></h2>
+<h2><strong><img class="aligncenter size-full wp-image-50089" src="/news/default-nc.jpg" alt="Marketing Digital" width="770" height="300" /></strong></h2>
 <h2><strong>Planejamento</strong></h2>
 Para qualquer ação, é necessário um <strong>plano tático.</strong> Você precisa saber onde quer chegar (em qualquer área, seja financeiro, objetivo ou posicionamento) para conseguir montar um bom plano, e isso não pode faltar no seu <strong>Marketing Digital.</strong> Pontos que devem estar em evidência:
 <ol>
@@ -3825,7 +3825,7 @@ Para qualquer ação, é necessário um <strong>plano tático.</strong> Você p
 O registro e as informações de um cliente não se resumem apenas a informações básicas. O nome e o endereço, por exemplo, são apenas o ponta pé inicial para uma série de informações adicionais, que podem, e vão, aprimorar seu relacionamento e ajudar a se comunicar com os clientes de uma forma eficaz.
 
 Lembrando, todo cliente prefere um contato personalizado (ser chamado por um nome ou apelido e até mesmo receber uma informação específica).
-<h2><strong><img class="aligncenter size-full wp-image-50090" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/como-fazer-um-plano-de-marketing-digital.jpg" alt="Marketing Digital" width="1001" height="529" /></strong></h2>
+<h2><strong><img class="aligncenter size-full wp-image-50090" src="/news/default-nc.jpg" alt="Marketing Digital" width="1001" height="529" /></strong></h2>
 <h2><strong>Conheça e segmente a base de clientes</strong></h2>
 Conheça sua clientela para atingi-los de forma eficaz. Você pode utilizar informações externas para conseguir novas informações dos consumidores. É possível adquirir dados a partir de ferramentas do mercado.
 
@@ -3834,7 +3834,7 @@ Outra dica é separar seus clientes em três bases: clientes fiéis (alto ticket
 Agora que identificou o perfil do público-alvo é necessário buscar novos clientes para aumentar sua base de atuação e também para evitar a estagnação de vendas. Você precisa ter essas informações em seu <strong>planejamento</strong> para conseguir atuar no momento certo.
 
 É muito importante reduzir custos direcionando sua campanha de prospecção para os perfis corretos. A dica é não sair falando com todo mundo, é preciso escolher as pessoas certas para não perder munição, já que vivemos em um mercado muito competitivo. Não deixe isso de fora do seu <strong>marketing digital!</strong>
-<h2><strong><img class=" wp-image-50092 alignleft" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/ferramentas-marketing-digital-marcelosales.jpg" alt="Marketing Digital" width="414" height="259" />Relacione-se com seus clientes e mensure</strong></h2>
+<h2><strong><img class=" wp-image-50092 alignleft" src="/news/default-nc.jpg" alt="Marketing Digital" width="414" height="259" />Relacione-se com seus clientes e mensure</strong></h2>
 Um ciclo de vida bem planejado é a garantia de que o cliente se sentirá bem acolhido. Nesse ciclo existem alguns desafios: planejamento, formas de comunicação e tratar os dados para agregar no relacionamento com o cliente.
 
 Use <strong>emails personalizados</strong> também, para facilitar a comunicação!
@@ -3858,7 +3858,7 @@ Com relação aos dados fique atento, pois as informações perdem valor ao long
       "Planejamento",
       "Sites"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/Marketing-Digital.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50091"
   },
   {
@@ -3872,7 +3872,7 @@ Grandes e pequenas empresas já estão conscientes da necessidade de se adaptar
 Porém, apesar da evidente necessidade no investimento na área mobile, adaptar um negócio para o mundo do celular é um processo que pode ser confuso. Não só em termos de marketing, mas também de uma perspectiva técnica.
 
 E quando um empreendedor decide aceitar esse desafio, sempre aparece a mesma e cruel dúvida: Devo usar um <strong>Site Responsivo</strong> ou <strong>Aplicativo?</strong> Pois bem, ambas opções trazem vantagens e desvantagens. Neste artigo, você verá alguns detalhes que possam te ajudar!
-<h2><strong><img class="aligncenter size-large wp-image-50083" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/Curso-Superior-de-Tecnologia-em-GestC3A3o-Financeira-E28093-Unisociesc-2-1024x683.jpg" alt="Site Responsivo ou Aplicativo?" width="840" height="560" /></strong></h2>
+<h2><strong><img class="aligncenter size-large wp-image-50083" src="/news/default-nc.jpg" alt="Site Responsivo ou Aplicativo?" width="840" height="560" /></strong></h2>
 <h2><strong>Site responsivo</strong></h2>
 Um <strong>site responsivo</strong> é o tipo de website que se adapta a diferentes tipos de telas. Ou seja, ao acessá-lo de dispositivos mobile, como smartphones e tablets, as informações são colocadas de outra forma, para o tamanho da tela sem perder o design ou sem que haja a necessidade de ampliar as informações.
 
@@ -3887,7 +3887,7 @@ Sua maior vantagem, sem dúvidas, é a <strong>praticidade!</strong>
  	<li>São limitados ao browser do aparelho e não conseguem utilizar recursos do dispositivo.</li>
  	<li>São mais lentos</li>
 </ul>
-<h2><strong><img class="aligncenter size-full wp-image-50085" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/site_responsivo1-e1482785261744.jpg" alt="Site Responsivo ou Aplicativo?" width="611" height="406" /></strong></h2>
+<h2><strong><img class="aligncenter size-full wp-image-50085" src="/news/default-nc.jpg" alt="Site Responsivo ou Aplicativo?" width="611" height="406" /></strong></h2>
 <h2><strong>Aplicativo</strong></h2>
 Apesar das vantagens, existem certas funcionalidade que um <strong>site responsivo</strong> não é capaz de criar e, neste caso, o uso de <strong>aplicativo</strong> acaba se tornando a melhor opção.
 
@@ -3906,7 +3906,7 @@ Diferente de um site responsivo, os aplicativos possibilitam o acesso a diversas
  	<li>Requer uma versão para cada tipo de sistema operacional</li>
  	<li>Diferente de um site responsivo, eles não podem ser encontrados diretamente nas buscas dos usuários, sendo necessário baixá-los em lojas como App Store, Google Play, entre outros.</li>
 </ul>
-<img class="aligncenter size-full wp-image-50082" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/img.png" alt="Site Responsivo ou Aplicativo?" width="910" height="440" />
+<img class="aligncenter size-full wp-image-50082" src="/news/default-nc.jpg" alt="Site Responsivo ou Aplicativo?" width="910" height="440" />
 <h2>Conclusão</h2>
 Ainda sim com dúvidas? Quer saber uma opinião profissional?
 
@@ -3936,7 +3936,7 @@ Dizer que você deve optar por uma ou por outra, seria aconselhá-lo a deixar o
       "site responsivo",
       "Site Responsivo ou Aplicativo?"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/imagem_topo-14-1170x429.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50086"
   },
   {
@@ -3952,7 +3952,7 @@ E isso é bom? Nem tanto. Pois <strong>logo</strong> não é <strong>Identidade 
 Prosseguindo, grande parte desses clientes buscam apenas um <strong>ícone</strong> que represente o seu negócio e não um <strong>logo</strong> de verdade. Normalmente esse <strong>ícone</strong> é escolhido baseado no gosto pessoal do empreendedor, ou na sua própria percepção do negócio. Estes acham que uma <strong>logo simples, inovadora</strong> e <strong>bonita,</strong> para eles, é tudo o que precisam para realizar seu sonho de ver seu negócio crescer.
 
 Mas não é por aí, a <strong>Identidade Visual</strong> é muito mais que uma simples <strong>logo!</strong> <strong>Continue lendo para entender.</strong>
-<h2><img class="aligncenter size-large wp-image-50072" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/identidade-visual-1024x652.png" alt="Identidade Visual" width="840" height="535" /></h2>
+<h2><img class="aligncenter size-large wp-image-50072" src="/news/default-nc.jpg" alt="Identidade Visual" width="840" height="535" /></h2>
 <h2>Logo não é marca!</h2>
 A <strong>marca</strong> são todas as percepções do público com relação a sua empresa, produto ou serviço. A <strong>marca</strong> ganha vida na mente do consumidor. As emoções que provoca e as ações que estimula. Tudo.
 
@@ -3966,7 +3966,7 @@ Ter um <strong>logo</strong> bacana e expressivo aplicado em materiais diferente
 
 A partir do momento que os pontos de contato com o consumidor estiverem padronizados visualmente, a comunicação converge de forma natural.
 Aí reside a importância da unificação visual através da <strong>identidade de marca.</strong>
-<h2><img class="aligncenter size-large wp-image-50074" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/xdesign.jpg.pagespeed.ic_.xtovjMDOjz-1024x640.jpg" alt="Identidade Visual" width="840" height="525" />Sendo assim:</h2>
+<h2><img class="aligncenter size-large wp-image-50074" src="/news/default-nc.jpg" alt="Identidade Visual" width="840" height="525" />Sendo assim:</h2>
 <b>Atente-se! </b>Um logo bonitinho não faz mágica. Invista um pouco mais em uma identidade visual pois os ganhos em termos de credibilidade e valor de mercado são óbvios. Uma identidade visual consistente transparece profissionalismo e respeito com o consumidor.
 O diferencial da sua empresa pode estar no design!
 <blockquote>
@@ -3985,7 +3985,7 @@ O diferencial da sua empresa pode estar no design!
       "logo",
       "marca"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/identidade-visual-design-grafico.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50073"
   },
   {
@@ -4002,13 +4002,13 @@ E entender as necessidades dos clientes é um mega desafio da área de marketin
 
 Leia abaixo algumas dicas de como você pode alcança seu público via <strong>mobile</strong>!
 
-<img class="aligncenter size-full wp-image-50065" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/mobile-trends.png" alt="Mobile" width="700" height="470" />
+<img class="aligncenter size-full wp-image-50065" src="/news/default-nc.jpg" alt="Mobile" width="700" height="470" />
 <h2>Design responsivo</h2>
 Atualmente, é esperado por todo consumidor que a experiência no computador/notebook, tablet e celular sejam igualmente agradáveis e eficazes. Independentemente do dispositivo que seu cliente esteja utilizando, o site deve se adequar ao tamanho da tela, e não o contrário.
 
 Um <strong>site responsivo</strong> se adapta a tela de acordo com o tamanho desta, mantendo a linha de design. Por exemplo: no <strong>design responsivo</strong> um conteúdo que é apresentado em 3 colunas em uma tela de computador, é transformado em uma coluna no celular. Dessa forma. as letras ficam mais visíveis, ou um menu é transformado em uma caixa de seleção do tipo <em>dropdown,</em> facilita<em>ndo</em> a seleção do item desejado.
 <blockquote><a href="https://www.ncbrasil.com.br/sites-responsivos-sites-que-se-adaptam-a-telas-de-celulares-e-tablets/">Leia mais em nosso artigo específico sobre responsividade em sites!</a></blockquote>
-<strong><img class="aligncenter size-full wp-image-50067" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/imagem-1_responsividade.jpg" alt="Mobile" width="620" height="251" /></strong>
+<strong><img class="aligncenter size-full wp-image-50067" src="/news/default-nc.jpg" alt="Mobile" width="620" height="251" /></strong>
 <h2>Interação</h2>
 Apesar de navegar em diferentes dispositivos, a <strong>transição</strong> e a <strong>interação</strong> entre eles deve ser orgânica, para o consumidor. Ou seja, quanto mais <strong>integradas</strong> forem as plataformas, maiores as chances de reter e fidelizar aquele cliente.
 
@@ -4021,11 +4021,11 @@ Quanto mais informações você tiver sobre aquele cliente, mais assertiva será
 Como falar de <strong>interação</strong> e <strong>personalização,</strong> sem levarmos em conta as <strong>redes sociais?</strong>
 
 O acesso às <strong>redes sociais</strong> via <strong>mobile</strong> é cada vez maior, e não há estatísticas que digam que este crescimento terá um fim. Algumas <strong>redes sociais,</strong> como o Snapchat, são de uso exclusivo em smartphones. Por isso, a presença digital nestes canais é essencial para falar e atrair o consumidor para o seu site, além de abrir um local em que eles possam compartilhar com seus amigos/seguidores sobre a experiência com sua marca.
-<h2><img class="aligncenter size-full wp-image-50069" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/beneficios-redes-sociais-capa.jpg" alt="mobile" width="610" height="250" /></h2>
+<h2><img class="aligncenter size-full wp-image-50069" src="/news/default-nc.jpg" alt="mobile" width="610" height="250" /></h2>
 <h2>SEO</h2>
 Assim como nos desktops, o Google é a principal ferramenta de busca por informações. Por isso é necessário trabalhar o SEO do seu site também para as buscas por <strong>mobile.</strong> Palavras-chave para a mesma busca podem variar de acordo com o dispositivo utilizado, por isso a estratégia de SEO deve ser dedicada para este tipo de navegação.
 <blockquote><a href="https://www.ncbrasil.com.br/o-que-e-seo/">Saiba mais sobre SEO clicando aqui!</a></blockquote>
-<h2><img class="aligncenter size-full wp-image-50068" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/wordpress-seo.jpg" alt="mobile" width="600" height="235" /></h2>
+<h2><img class="aligncenter size-full wp-image-50068" src="/news/default-nc.jpg" alt="mobile" width="600" height="235" /></h2>
 <h2></h2>
 <h1>Conclusão</h1>
 É importante ter em mente também que a experiência física e a virtual são complementares e igualmente fundamentais para a decisão de compra.
@@ -4057,7 +4057,7 @@ Tudo isso porque enquanto estão dentro da loja, assistindo a um comercial na TV
       "seo",
       "site responsivo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/apps.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50066"
   },
   {
@@ -4072,7 +4072,7 @@ Muitos dizem que a <strong>User Experience</strong> sempre existiu, porém, dev
 
 Confira a seguir tudo sobre <strong>User Experience!</strong>
 
-<img class="aligncenter size-full wp-image-50060" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/Agile-Project-Management-and-User-Experience-UX-design.jpg" alt="" width="537" height="341" />
+<img class="aligncenter size-full wp-image-50060" src="/news/default-nc.jpg" alt="" width="537" height="341" />
 <h2>Sobre User Experience</h2>
 Antes de tudo, é de extrema importância levar em questão que o <strong>UX</strong> existe desde sempre. Desde que o humano começou utilizar algum objeto para fazer alguma coisa. Isto é: ele é usuário daquele objeto e obtém uma experiência com isso. Entendeu?
 
@@ -4089,7 +4089,7 @@ Hoje em dia, a ênfase está no <strong>design</strong> centrado no agrado do us
 Antigamente, nas indústria de <strong>web design</strong> (antes de um conceito de foco no usuário, usabilidade e acessibilidade) era comum fazer sites de formas diferentes. Abusando e espremendo toda a criatividade do designer. Era construído uma interação baseada no que era bom para o designer e para o empreendedor. O foco estava na estética e na marca, com pouca ou nenhuma ideia de como as pessoas se sentiriam ao usar o site. Não havia ciência por trás dessa área.
 
 Mas agora há! E é de extrema importância, pois como já foi dito, o site é para o usuário! Então é ele que precisa se sentir confortável.
-<h2><b><img class="aligncenter size-full wp-image-50059" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/happy-user-experience-design.jpg" alt="" width="816" height="200" /></b></h2>
+<h2><b><img class="aligncenter size-full wp-image-50059" src="/news/default-nc.jpg" alt="" width="816" height="200" /></b></h2>
 <h2><b>UX é User Interface (UI)?</b></h2>
 Quando alguém pede para que seja dado um <em>“tapa na UX”</em>, na verdade ele está pedindo pra que seja trabalhada a <strong>UI (Interface com Usuário).</strong> A questão é que: deixar a interface do produto “bonitinha e coloridinha” está longe de ser todo o trabalho de <strong>User Experience</strong>, porque tem vários processos de desenvolvimento, técnicas e etapas para fazer isso. Por isso é importante e interessante uma publicidade, falando o que é de fato e de como ter um <strong>UX.</strong>
 
@@ -4114,7 +4114,7 @@ Quando alguém pede para que seja dado um <em>“tapa na UX”</em>, na verdade 
       "UX",
       "Web site"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/user_experience_design.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50058"
   },
   {
@@ -4126,7 +4126,7 @@ Quando alguém pede para que seja dado um <em>“tapa na UX”</em>, na verdade 
 Atualmente, os mais inovadores <strong>designers gráficos</strong> tem apresentado um estilo de "<em>design minimalista</em>" no mercado <strong>web design.</strong> Mas o que é isso? O que é essa tal <strong>tendência redutiva?</strong> Essa nova tendência foca em apenas simplificaras interfaces dos produtos.
 
 <strong>Leia mais a seguir! </strong>
-<h2><img class="aligncenter size-large wp-image-50053" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/2016-06-25-1466835058-3172856-DKCWebDesignBanner-1024x517.jpg" alt="Tendência Redutiva no Web Design" width="840" height="424" /></h2>
+<h2><img class="aligncenter size-large wp-image-50053" src="/news/default-nc.jpg" alt="Tendência Redutiva no Web Design" width="840" height="424" /></h2>
 <h2>O que é essa tal Tendência Redutiva?</h2>
 O conceito é simples. A <strong>tendência redutiva</strong> é a explicação para o fato de que as interfaces de nossos apps favoritos, tem se tornado cada dia mais parecidas. É como se fossem criadas ou gerenciadas por uma mesma marca. Parece tudo a mesma coisa. Tudo parte de uma grande <strong>identidade visual</strong> que tomou de assalto as lojas de <strong>aplicativos</strong> do mercado.
 <blockquote><a href="https://www.ncbrasil.com.br/6-razoes-para-sua-empresa-ter-um-aplicativo/">Quer saber mais sobre os aplicativos? Clique aqui e leia outro artigo! </a></blockquote>
@@ -4157,7 +4157,7 @@ Essa tendência só evidência que o <strong>Design de Aplicativos </strong>vem
       "Tendência Redutiva",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/web-design-concepts-with-blurred-background_1134-82.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50054"
   },
   {
@@ -4170,7 +4170,7 @@ Ter um <strong>site</strong> de qualidade é fundamental para o crescimento de q
 
 Muitas pessoas usam a internet para buscar as informações de que precisam. Por isso, ter uma <strong>bom site</strong> pode se tornar altamente vantajoso, já que aumenta a presença da empresa no mercado e eleva o nível de confiança do cliente. No entanto, é preciso se atentar à algumas características essenciais para ter um site de venda de veículos que de sucesso. Existem alguns diferenciais que você não pode abrir mão em seu <strong>site de venda de veículos!</strong>
 <h3>Descubra quais são neste post! Continue lendo.</h3>
-<img class="aligncenter size-full wp-image-50046" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/uma-burocracia-congestionando-a-compra-e-venda-de-veiculos.jpg" alt="Venda de veículos" width="600" height="335" />
+<img class="aligncenter size-full wp-image-50046" src="/news/default-nc.jpg" alt="Venda de veículos" width="600" height="335" />
 <h2><strong>Design UX – User Experience</strong></h2>
 A cada dia que passa, o consumidor fica mais e mais exigente. Por tal motivo, agradar o cliente se mostra cada vez mais essencial para quem quer focar na satisfação de seu público. E uma das formas de fazer isso no seu site é aderindo o<strong> Design User Experience</strong> (ou <strong>UX</strong>)<strong>.</strong>
 
@@ -4190,7 +4190,7 @@ Isso quer dizer que o seu <strong>endereço virtual</strong> deve ser <strong>ad
 O público moderno quer agilidade e é isso que seu site de venda de veículos deve oferecer.
 
 &nbsp;
-<h2><img class="alignleft size-medium wp-image-50045" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/novo-carro-300x153.jpg" alt="Venda de veículos" width="300" height="153" />Sistema Único</h2>
+<h2><img class="alignleft size-medium wp-image-50045" src="/news/default-nc.jpg" alt="Venda de veículos" width="300" height="153" />Sistema Único</h2>
 Algo que não se pode faltar em um <strong>site de vendas</strong> <strong>de veículos</strong>, é um <strong>sistema de gestão</strong> único e adaptável! Nós da <strong>NC Brasil</strong> escrevemos um artigo especialmente para este tópico!
 <blockquote><a href="https://www.ncbrasil.com.br/sistema-de-gestao-de-veiculos/">Clique aqui e leia o artigo sobre sistema de gestão de veículos!</a></blockquote>
 &nbsp;
@@ -4213,7 +4213,7 @@ Algo que não se pode faltar em um <strong>site de vendas</strong> <strong>de ve
       "Site de vendas",
       "Venda de veículos online"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/Zz03YTZlNTgxYTFhMGYwY2UwZmQ4Y2YyOTc2M2Y3ZjA5NA1-1024x1024.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50044"
   },
   {
@@ -4221,18 +4221,18 @@ Algo que não se pode faltar em um <strong>site de vendas</strong> <strong>de ve
     "title": "O que é Branding?",
     "slug": "o-que-e-branding",
     "date": "Wed, 11 Jan 2017 12:45:59 +0000",
-    "content": `<h1><em><img class="aligncenter size-full wp-image-50034" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/download-1.png" alt="O que é Branding?" width="410" height="123" /></em></h1>
+    "content": `<h1><em><img class="aligncenter size-full wp-image-50034" src="/news/default-nc.jpg" alt="O que é Branding?" width="410" height="123" /></em></h1>
 Antes de iniciarmos esse assunto nesse artigo, precisamos entender de uma vez por todas o que significa "<strong><em>branding</em></strong>". Fazendo aquela pesquisa básica no <em>brother</em> Google, encontramos o seguinte:
 
 <strong>“<em>Branding</em></strong> é uma atividade estratégica de conceituação e planejamento. Vai muito além do <strong>logotipo</strong> ou da <strong>identidade visual</strong> da empresa. O objetivo de um projeto integral de <strong><em>branding</em></strong> é alcançar uma posição única na mente e no coração do consumidor da marca.”
 
-<img class="aligncenter size-full wp-image-50035" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/branding.jpg" alt="O que é Branding?" width="1000" height="686" />
+<img class="aligncenter size-full wp-image-50035" src="/news/default-nc.jpg" alt="O que é Branding?" width="1000" height="686" />
 
 Sendo assim, <strong>branding</strong> é a definição de um conjunto de soluções para que a sua marca consiga crescer e aparecer no mercado. Basicamente, ele abrange desde a criação de uma nova <strong>marca</strong> até a sua <strong>gestão publicitária.</strong>
 
 Para nada dar errado e fugir do planejado, é necessário focar em algumas etapas, como: <em><strong>público-alvo, posicionamento</strong> e <strong>construção multissensorial,</strong></em> ou seja, só uma simples e bela <strong>logo</strong> não salvará ou turbinará seu negócio. Óbvio, adiante de nada ter uma ótima gestão de <em><strong>branding</strong></em> se sua empresa não possui uma <strong>logomarca</strong> única e chamativa!
 <blockquote><a href="https://www.ncbrasil.com.br/identidade-visual-logo/">Quer saber mais sobre <strong>logomarca?</strong> Clique aqui e vá para outro artigo da <strong>NC Brasil</strong></a></blockquote>
-<img class="aligncenter size-large wp-image-50033" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/o-BRANDING-facebook-1024x683.jpg" alt="O que é Branding?" width="840" height="560" />
+<img class="aligncenter size-large wp-image-50033" src="/news/default-nc.jpg" alt="O que é Branding?" width="840" height="560" />
 <h2><strong>Público-alvo
 </strong></h2>
 Pesquise, pesquise muito, e não se esqueça; PESQUISE quem é o seu<strong> público-alvo.</strong> Do que adianta investir se você não sabe quem irá se atrair para consumir o seus produtos ou serviços.
@@ -4259,7 +4259,7 @@ Agora é hora de fato de se <strong>aproximar do seu público</strong> e mostrar
 
 Assim, seguindo por base esses fatores, sua gestão de <em><strong>branding</strong></em> terá sucesso!
 
-<img class="aligncenter size-full wp-image-50036" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/brand.jpg" alt="O que é Branding?" width="700" height="400" />
+<img class="aligncenter size-full wp-image-50036" src="/news/default-nc.jpg" alt="O que é Branding?" width="700" height="400" />
 <blockquote>
 <h1>Precisando de uma gestão de <em><strong>branding</strong></em> ou precisa criar sua logo?</h1>
 <h3>Entre em contato conosco e faça um orçamento para criação de logo ou gestão de <em><strong>branding</strong></em> da sua empresa!</h3>
@@ -4279,7 +4279,7 @@ Assim, seguindo por base esses fatores, sua gestão de <em><strong>branding</str
       "marca",
       "público-alvo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/branding-concept.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50040"
   },
   {
@@ -4295,7 +4295,7 @@ Continue lendo este artigo e conheça os benefícios que um <strong>site</strong
 &nbsp;
 
 &nbsp;
-<h1><img class="aligncenter size-full wp-image-50030" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/biblia.jpg" alt="Sua igreja precisa de um site!" width="1118" height="922" /></h1>
+<h1><img class="aligncenter size-full wp-image-50030" src="/news/default-nc.jpg" alt="Sua igreja precisa de um site!" width="1118" height="922" /></h1>
 <h1>Plataforma</h1>
 Aqui na <strong>NC Brasil,</strong> sua igreja pode ter um <strong>site</strong> com <strong>painel</strong> <strong>de controle gerenciável</strong>, onde você mesmo atualiza todo o conteúdo, quando quiser, de qualquer lugar e sem pagar manutenção para ninguém!
 <blockquote><a href="https://www.ncbrasil.com.br/site-gerenciavel/">Leia mais sobre sites gerenciáveis, clicando aqui!</a></blockquote>
@@ -4371,7 +4371,7 @@ Exiba notícias da sua <strong>Igreja</strong> e do mundo. Cadastre novas notíc
       "Site para igreja",
       "Web Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/bibel_og_pc.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50028"
   },
   {
@@ -4390,7 +4390,7 @@ Criamos plataformas completas para a realização de todos tipos de <strong>leil
 Para saber mais, continue lendo nosso artigo sobre <strong>plataforma de leilão</strong>!
 
 &nbsp;
-<h1><img class="aligncenter wp-image-50020 size-large" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/15-Usamos-1024x686.jpg" alt="Plataforma de leilão" width="840" height="563" /></h1>
+<h1><img class="aligncenter wp-image-50020 size-large" src="/news/default-nc.jpg" alt="Plataforma de leilão" width="840" height="563" /></h1>
 <h1>Leilão Online</h1>
 <div class="span3">
 
@@ -4416,7 +4416,7 @@ Com o uso do leilão online a visibilidade é maior, potencializando o público 
 <h2><strong>6) Disputa</strong></h2>
 Durante a disputa do lote, o valor de venda aumentará, com uma previsão proposta pelo leiloeiro, sob o valor médio de venda e a quantidade de lotes vendidos também será maior, pois existe mais interessados disputando.
 
-<img class="aligncenter wp-image-50018 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/79506-3.jpg" alt="Plataforma de leilão" width="602" height="307" />
+<img class="aligncenter wp-image-50018 size-full" src="/news/default-nc.jpg" alt="Plataforma de leilão" width="602" height="307" />
 <h1>Tipos de leilões online</h1>
 <h2>1) Interno</h2>
 Essa modalidade é muito interessante para os casos em que o <strong>leilão</strong> que não é público, onde os interessados pertencem a um determinado grupo de usuários, como por exemplo <strong>leilão interno</strong> para funcionários ou fornecedores. Nessa modalidade não se faz necessária a presença do leiloeiro que por sua vez disponibilizará a ferramenta e o próprio sistema tomará as ações automaticamente de acordo com os parâmetros pré estabelecidos pelo Comitente.
@@ -4446,7 +4446,7 @@ Nessa opção de <strong>leilão,</strong> não é utilizado o leiloeiro, tendo 
       "Plataforma de leilão",
       "Site de vendas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/article-iae-para-entrenar-caballos-de-terceros-56681cf144a2a.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50019"
   },
   {
@@ -4462,7 +4462,7 @@ E essa história se repete também no <strong>marketing jurídico.</strong> Em f
 
 Toda ação virtual deve ser baseada em uma estratégia bem definida e clara. Ter um <strong>site de advocacia</strong> é fundamental e indispensável para criar oportunidades de negócio. Mas é muito importante que você saiba quais são os objetivos que quer atingir com a página, para que os resultados sejam satisfatórios. Neste artigo da <strong>NC Brasil,</strong> você pode clarear suas ideias, e ter exemplos e sugestões de como melhorar sua atuação online para atrair os clientes certos! Veja como ter um ótimo <strong>site para advogados!</strong>
 
-<img class="aligncenter size-full wp-image-50003" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/como-deve-ser-um-bom-site-para-advogados.jpg" alt="Site para advogados" width="800" height="533" />
+<img class="aligncenter size-full wp-image-50003" src="/news/default-nc.jpg" alt="Site para advogados" width="800" height="533" />
 <h1></h1>
 <h1>Para que serve um site para advogados?</h1>
 <h2>1) Atrair clientes</h2>
@@ -4474,7 +4474,7 @@ Pois é. A ferramenta soma nada menos do que 3 bilhões de buscas diárias. Faze
 <blockquote>Não sabe o que é SEO? <a href="https://www.ncbrasil.com.br/o-que-e-seo/">Leia este artigo, clicando aqui!</a></blockquote>
 <h2>3) Atuação</h2>
 Por falar em <strong>conteúdo</strong> e <strong>tecnologia SEO</strong>, produzir material relevante sobre o seu nicho de atuação informa, educa e prepara seu cliente para o atendimento. Além disso, ainda pode ajudá-lo a perceber a importância do auxílio jurídico para resolver determinadas questões.
-<h2><img class="aligncenter size-full wp-image-50004" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/bom-site-para-seu-negocio.jpg" alt="Site para advogados" width="947" height="500" /></h2>
+<h2><img class="aligncenter size-full wp-image-50004" src="/news/default-nc.jpg" alt="Site para advogados" width="947" height="500" /></h2>
 <h2>4) Vitrine</h2>
 O seu <strong>site jurídico</strong> é o ambiente ideal para você compartilhar informações sobre a sua área de atuação, os seus métodos de trabalho, seus valores morais e mostrar para o cliente como você e sua equipe estão qualificados e preparados para atendê-lo da melhor forma possível.
 <h2>5) Relacionamento</h2>
@@ -4514,7 +4514,7 @@ De nada adianta um visual bonito, textos bem produzidos, fotos bem selecionadas,
       "sites responsivos",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/site1.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49999"
   },
   {
@@ -4528,7 +4528,7 @@ De nada adianta um visual bonito, textos bem produzidos, fotos bem selecionadas,
 
 <strong><span class="s1">Mas o que faz uma interface de usuário de qualidade? Que atributo pode mudar a cara de um site?
 Continue lendo esse artigo exclusivo da NC Brasil! </span></strong>
-<p class="fixed-empty-p"> <img class="aligncenter size-full wp-image-50002" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/Dicas-para-um-criacao-de-bom-site-corporativo.jpg" alt="Atributos para site" width="800" height="541" /></p>
+<p class="fixed-empty-p"> <img class="aligncenter size-full wp-image-50002" src="/news/default-nc.jpg" alt="Atributos para site" width="800" height="541" /></p>
 
 <h1><span class="s1">Simplicidade</span></h1>
 <span class="s1">O principal <strong>atributo para um bom site</strong>, é a <strong>simplicidade.</strong> Grandes <strong>interfaces</strong> de usuário tendem a ser quase invisíveis. Eles não são feitos de adornos ou elementos desnecessários. Uma <strong>ótima interface</strong> é composta de elementos necessários que são lógicos e concisos. </span>
@@ -4544,7 +4544,7 @@ Continue lendo esse artigo exclusivo da NC Brasil! </span></strong>
 <span class="s1">Lembre-se, porém, que o <strong>primeiro atributo</strong> era a <strong>simplicidade;</strong> Você quer manter isso em mente com seus rótulos, definições e explicações. Evite desordenar sua <strong>interface</strong> com longas explicações. Um usuário não vai querer ler um site "poluído", e eles só vão ficar no caminho da experiência do usuário.</span>
 
 <span class="s1">Por mais que manter os texto claros e concisos podem exigir algum esforço, vale bem mais a pena, para melhorar a experiência do usuário em sua <strong>interface.</strong></span>
-<h1 class="p3"><span class="s1"><img class="alignleft wp-image-50005 " src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/consistencia-low-600x340-web-600x340.jpg" alt="Interface e os principais atributos para seu site!" width="415" height="231" />Consistência </span></h1>
+<h1 class="p3"><span class="s1"><img class="alignleft wp-image-50005 " src="/news/default-nc.jpg" alt="Interface e os principais atributos para seu site!" width="415" height="231" />Consistência </span></h1>
 <span class="s1">Com sua <strong>interface de usuário,</strong> você vai querer manter a consistência em toda a experiência. <strong>Interfaces</strong> consistentes permitirão que seus usuários confiem e desenvolvam padrões de uso que melhorarão a experiência. As pessoas anseiam consistência e você deve dar aos seus usuários a oportunidade de ter um <strong>site confiável.</strong><span class="Apple-converted-space">   </span></span>
 
 <span class="s1">Todo usuário deseja uma experiência onde poderão contar com o site funcionando da mesma maneira, em outras telas. Mantenha o idioma, layout e design em toda a sua <strong>interface</strong>. Em outras palavras, um <strong>site responsivo! </strong>Ao fazê-lo, tornará mais fácil aos seus utilizadores, compreenderem como tudo funciona, aumentando a sua eficiência e melhorando a experiência do utilizador.</span>
@@ -4588,7 +4588,7 @@ Continue lendo esse artigo exclusivo da NC Brasil! </span></strong>
       "Interface",
       "sites responsivos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/Você-tem-um-bom-site-para-vender-seus-imóveis.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "50001"
   },
   {
@@ -4597,7 +4597,7 @@ Continue lendo esse artigo exclusivo da NC Brasil! </span></strong>
     "slug": "tendencias-web-design-2017",
     "date": "Wed, 04 Jan 2017 17:49:29 +0000",
     "content": `Uma das grandes coisas sobre <strong>web design</strong> é o fato de que ele está sempre evoluindo. E como entramos em um ano novo, logo, novas <strong>tendências</strong> estão por aí! Confira a seguir algumas destas para o mundo do <strong>web design</strong> em 2017:
-<h2 class="p1"><span class="s1"><img class="aligncenter size-full wp-image-49988" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/37E04518-6F75-6141-799D-E7C0E2D53043.jpg" alt="Tendências web design 2017" width="810" height="517" /></span></h2>
+<h2 class="p1"><span class="s1"><img class="aligncenter size-full wp-image-49988" src="/news/default-nc.jpg" alt="Tendências web design 2017" width="810" height="517" /></span></h2>
 <h2 class="p1"></h2>
 <h2 class="p1"><span class="s1">1) USO EXAGERADO DO ESPAÇO</span></h2>
 A quantidade certa dos espaços podem alavancar ou quebrar um site. Se temos uma <em>background</em> branco, temos que por obrigação o envolver com textos ou imagens, pois um espaço "vazio" destrói o layout!
@@ -4610,7 +4610,7 @@ A quantidade certa dos espaços podem alavancar ou quebrar um site. Se temos uma
 
 &nbsp;
 
-<img class="aligncenter size-large wp-image-49989" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/2017-01-04-1024x452.png" alt="Tendências web design 2017" width="840" height="371" />
+<img class="aligncenter size-large wp-image-49989" src="/news/default-nc.jpg" alt="Tendências web design 2017" width="840" height="371" />
 <h2 class="p1"></h2>
 <h2 class="p1"><span class="s1">2) COMPRAS EXPERIÊNCIAS</span></h2>
 Quando falamos de compras online, há dois tipos de faces de reclamação: O site disponibiliza poucas imagens (ou imagens ruims, de baixa qualidade), ou o site coloca as imagens dos produtos com muitas informações escritas, gerando uma confusão enorme.
@@ -4621,13 +4621,13 @@ Quando falamos de compras online, há dois tipos de faces de reclamação: O si
 
 <span class="s1">Por enquanto, esta <strong>tendência</strong> tem funcionado muito bem para pequenas lojas online, já que não possuem tantas opções e inventário. </span>
 <div class="finline-large"></div>
-<p class="fixed-empty-p"><img class="aligncenter size-large wp-image-49991" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/color-sound-1024x706.jpg" alt="Tendências web design 2017" width="840" height="579" /></p>
+<p class="fixed-empty-p"><img class="aligncenter size-large wp-image-49991" src="/news/default-nc.jpg" alt="Tendências web design 2017" width="840" height="579" /></p>
 
 <h2 class="p1"><span class="s1">3) PALETAS DE CORES</span></h2>
 <span class="s1">Cores mais suaves estão voltando para a liderança das <strong>tendências.</strong> Enquanto paletas mais brilhantes, e ousadas estão deixando de ser o padrão a ser seguido. </span>
 
 <span class="s1">Muitos designers estão puxando as paletas de cores com os tons suaves para <em>backgrounds,</em> imagens e fotos, com o intuito de deixar o site mais legível e tranquilo. Buscando encontrar uma forma de deixar o site mais confortável para o visitante.</span>
-<h2 class="p1"><span class="s1"><img class="aligncenter size-large wp-image-49992" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/Tendências-web-design-2017-1024x706.jpg" alt="Tendências web design 2017" width="840" height="579" /></span></h2>
+<h2 class="p1"><span class="s1"><img class="aligncenter size-large wp-image-49992" src="/news/default-nc.jpg" alt="Tendências web design 2017" width="840" height="579" /></span></h2>
 <h2 class="p1"><span class="s1">CONCLUSÃO</span></h2>
 <span class="s1">E aí, qual dessas <strong>tendências</strong> você acha que é a mais aplicável ao seu site? </span>Aqui na <strong>NC Brasil</strong> você encontra <strong>web</strong> <strong>designers profissionais</strong> que estão sempre a procura de novas <strong>tendências</strong> e melhorias para seus clientes!
 <blockquote>
@@ -4647,7 +4647,7 @@ Quando falamos de compras online, há dois tipos de faces de reclamação: O si
       "criação de sites",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/tendencias-design-sites.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49993"
   },
   {
@@ -4660,7 +4660,7 @@ Com a grande demanda de fabricação, os veículos hoje ocupam grande parte do m
 
 A <strong>NC Brasil</strong> é especialista no desenvolvimento de um<strong> sistemas de gestão de veículos</strong> exclusivos para sua lojas. Com um sistema desses, o dia a dia das lojas de carros, motos, caminhões e barcos fica muito mais fácil, dinâmico e organizado. Nosso sistema permite que você cadastre os seus veículos com todas as suas informações, podendo adicionar opcionais, fotos, custos, etc. Tudo isso de forma fácil, rápida e organizada!
 <h2>Saiba mais!</h2>
-<img class="aligncenter size-full wp-image-49973" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/111110_dividas_dicas_f_005.jpg" alt="Sistema de gestão de veículos" width="956" height="500" />
+<img class="aligncenter size-full wp-image-49973" src="/news/default-nc.jpg" alt="Sistema de gestão de veículos" width="956" height="500" />
 <h1>Controle total</h1>
 Nosso <strong>Sistema de gestão de veículos</strong> permite que você cadastre os seus clientes e veículos de forma muito completa, permitindo que todas as informações possam ser inseridas. Nestas duas áreas em especial, você pode armazenar documentos e imagens, eliminando assim muitos papéis que não precisarão mais ser guardados pela sua loja.
 
@@ -4670,7 +4670,7 @@ Nosso <strong>Sistema de gestão de veículos</strong> permite que você cadast
 &nbsp;
 <h1 class="h4-collapse-funcionalidades tit-pergunta">Aumento de Vendas</h1>
 <p class="cont-pergunta">Os vendedores da sua loja conseguirão aumentar as suas vendas, já que nosso<strong> sistema de gestão de veículos</strong> permite realizar um acompanhamento de todos os contatos.</p>
-<p class="cont-pergunta"><img class="aligncenter wp-image-49974 size-full" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/wyper-wide-phone.jpg" alt="Sistema de gestão de veículos" width="620" height="465" /></p>
+<p class="cont-pergunta"><img class="aligncenter wp-image-49974 size-full" src="/news/default-nc.jpg" alt="Sistema de gestão de veículos" width="620" height="465" /></p>
 <p class="cont-pergunta">Nosso <strong>sistema de gestão de veículos</strong> possuem o controle das ações realizadas de forma simples, prática, completa, segura e organizada, oferecendo a listagem de todos os veículos em estoque, vendidos e consignados com seus respectivos valores de compra e venda, despesas gerais, comissões, custo total, lucro, tempo em que o veículo se encontra na loja, entre tantos outros benefícios! Além disso:</p>
 
 <h1>Estoque</h1>
@@ -4711,7 +4711,7 @@ Nosso <strong>Sistema de gestão de veículos</strong> permite que você cadast
  	<li>Carta Correção</li>
 </ul>
 </div>
-<h1><img class="aligncenter size-full wp-image-49978" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/banner-compras.jpg" alt="Sistema de gestão de veículos" width="800" height="600" /></h1>
+<h1><img class="aligncenter size-full wp-image-49978" src="/news/default-nc.jpg" alt="Sistema de gestão de veículos" width="800" height="600" /></h1>
 <h1>Clientes e Fornecedores</h1>
 <ul>
  	<li>Cadastro de Clientes e Fornecedores</li>
@@ -4811,7 +4811,7 @@ Nosso <strong>Sistema de gestão de veículos</strong> permite que você cadast
       "Sites",
       "Web Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/Venda-de-Carros-site.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49983"
   },
   {
@@ -4823,7 +4823,7 @@ Nosso <strong>Sistema de gestão de veículos</strong> permite que você cadast
 <p class="lead mt25">A internet causou uma mudança total na forma como muitas pessoas fazem compras e procuram informação de que necessitam.</p>
 <p class="lead mt25">Desde a criação da internet, a forma com que as pessoas fazem compras e buscam informações foi alterada e "monopolizada". Segundo pesquisas, em 2012 os consumidores gastaram cerca de $289.000.000.000 em compras online. Além disso, 80% das pessoas que usam a internet já fizeram pelo menos uma compra em sua vida.</p>
 <p class="lead mt25">Com este poder de consumo muito alto, é de extrema importância, para qualquer empresa, independente do tamanho, ter uma presença no mundo virtual. Com a criação de um <strong>site,</strong> a empresa pode se manter competitivo dentro de seu ramo.</p>
-<p class="lead mt25"><img class="aligncenter size-large wp-image-49962" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/conceito-cricao-site-1024x392.png" alt="Site" width="840" height="322" /></p>
+<p class="lead mt25"><img class="aligncenter size-large wp-image-49962" src="/news/default-nc.jpg" alt="Site" width="840" height="322" /></p>
 
 <h1 class="mt25 mb25">Território</h1>
 Ter um <strong>site</strong> ativo é importante, mesmo para as pequenas empresas, locais. De acordo com um estudo feito, 85% dos consumidores usam a Internet para encontrar uma empresa ou negócio local. Os motores de busca sempre buscarão resultados locais, sendo assim, ter um <strong>site</strong> é ainda mais importante se você tem um negócio local.
@@ -4839,7 +4839,7 @@ A forma com que você gera conteúdo pode ajudar uma perspectiva, que você pode
 Geralmente, uma empresa com um <strong>site</strong> irá incluir uma seção de contate-nos, dando aos seus clientes o acesso imediato a uma pergunta, orçamento, ou notificá-lo sobre um problema com seus produtos ou serviços. Isso lhe dá a capacidade de fornecer feedback imediato para o cliente e melhorar a sua taxa de satisfação de atendimento ao cliente.
 
 Há muitas maneiras criativas que você pode melhorar a experiência dos clientes, incluindo um simples formulário de contato para que eles possam contatá-lo com perguntas, um blog ou fórum que podem deixar perguntas ou até mesmo um bate-papo ao vivo para satisfação imediata.
-<h1 class="mt25 mb25"><img class="wp-image-49961 size-medium alignleft" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/desenvolvimento-de-site-300x169.png" alt="Site" width="300" height="169" /></h1>
+<h1 class="mt25 mb25"><img class="wp-image-49961 size-medium alignleft" src="/news/default-nc.jpg" alt="Site" width="300" height="169" /></h1>
 <h1 class="mt25 mb25"></h1>
 <h1 class="mt25 mb25">Email@meusite.com.br</h1>
 Sim, existem outras maneiras de fazer isso, mas por ter um <strong>site</strong> que você pode ter seu próprio e-mail: email@seusite.com.br.
@@ -4857,7 +4857,7 @@ A internet abriu um novo mundo de marketing que não existia antes. Seu <strong>
 </div>
 &nbsp;
 <blockquote>
-<h1><img class="wp-image-49713 alignright" src="https://www.ncbrasil.com.br/wp-content/uploads/2016/12/63071798@N06_r.jpg" alt="NC Brasil - criação de sites" width="204" height="191" />Precisando de um bom site?</h1>
+<h1><img class="wp-image-49713 alignright" src="/news/default-nc.jpg" alt="NC Brasil - criação de sites" width="204" height="191" />Precisando de um bom site?</h1>
 <h3>Entre em contato conosco da NC Brasil e faça um<a href="https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/"> orçamento para criação de sites!</a></h3>
 </blockquote>`,
 
@@ -4873,7 +4873,7 @@ A internet abriu um novo mundo de marketing que não existia antes. Seu <strong>
       "Vantagens de um site",
       "website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/e29323b61ad9b563d74bf77628c18e0a5ed823b4.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49964"
   },
   {
@@ -4888,7 +4888,7 @@ Mais e mais as pequenas e médias empresas estão seguindo a <strong>tendência 
 Estas empresas que estão se inserindo nesse mercado, estão à frente do jogo, quando se trata de tomar o seu marketing para o próximo nível.</p>
 
 <h3 class="lead mt25">Continue lendo para ver as vantagens!</h3>
-<h1 class="lead mt25"><img class="aligncenter size-large wp-image-49953" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/aplicativos-smartphone-1024x683.jpg" alt="Aplicativos" width="840" height="560" /></h1>
+<h1 class="lead mt25"><img class="aligncenter size-large wp-image-49953" src="/news/default-nc.jpg" alt="Aplicativos" width="840" height="560" /></h1>
 <h1 class="lead mt25">Evidência</h1>
 De acordo com as estatísticas, atualmente as pessoas gastam mais de 3 horas por dia em seu <strong>dispositivo</strong> móvel.
 
@@ -4912,7 +4912,7 @@ Ter um recurso de mensagens (ou help desk) dentro de seu <strong>aplicativo</str
 Em vez de chamar um restaurante para uma mesa, você pode reservar-lo com menos de cinco cliques em sua plataforma.
 
 <strong>Pense:</strong> Quantos clientes preferem se comunicar com você através de texto no <strong>aplicativo</strong> do que através do telefone?
-<h1><img class="alignleft size-full wp-image-49955" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/aplicativos-uteis-para-escrever-redacoes-noticias.jpg" alt="Aplicativos" width="340" height="195" />Linha de Frente</h1>
+<h1><img class="alignleft size-full wp-image-49955" src="/news/default-nc.jpg" alt="Aplicativos" width="340" height="195" />Linha de Frente</h1>
 Ainda, os <strong>aplicativos móveis</strong> são raros em pequenas empresas, fazendo deste o lugar onde você pode dar um grande salto à frente dos seus concorrentes.
 Seja o primeiro em sua vizinhança para oferecer um <strong>aplicativo</strong> para seus clientes. Eles vão se surpreender com a sua abordagem com visão de futuro!
 <h1 class="mt25 mb25">Lealdade</h1>
@@ -4938,7 +4938,7 @@ Não estou dizendo que um <strong>aplicativo </strong>vai salvar o seu negócio,
       "E-commerce",
       "M-Commerce"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2017/01/aplicativos.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49954"
   },
   {
@@ -4957,7 +4957,7 @@ Não estou dizendo que um <strong>aplicativo </strong>vai salvar o seu negócio,
 <p class="lead mt25">A causa destes problemas de <strong>SEO</strong> é que a maioria das empresas de web design não realizam (ou não sabe como conduzir) a investigação palavra-chave e não criam uma estratégia de palavra-chave. Um <strong>Site otimizado</strong> é o diferencial para estar entre os primeiros na lista dos maiores buscadores!</p>
 <p class="lead mt25">Portanto, antes de contratar uma empresa de design do site para construir o seu novo site, verifique se ele entendem e fazem <strong>otimização SEO. </strong>Verifique as suas capacidades nas seguintes áreas:</p>
 &nbsp;
-<p class="lead mt25"><img class="aligncenter size-full wp-image-49936" src="https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Goomark-5-tecnicas-certeiras-para-criar-um-site-otimizado-para-SEO.jpg" alt="Site Otimizado" width="435" height="305" /></p>
+<p class="lead mt25"><img class="aligncenter size-full wp-image-49936" src="/news/default-nc.jpg" alt="Site Otimizado" width="435" height="305" /></p>
 
 <h2 class="lead mt25"><b>Design do site responsivo</b></h2>
 <p class="lead mt25">Design do site Responsivo permite que um site possa se ajustar automaticamente para uma exibição ideal em monitores de desktop, tablets e smartphones.
@@ -4970,7 +4970,7 @@ Tão importante quanto isso, o Google da maior importância a sites responsivos 
 <h2 class="lead mt25"><b>Título Tag</b></h2>
 <p class="lead mt25">Tag do título com base em pesquisa de palavra-chave sólida bem composta continuam a ser um importante para a criação de um <strong>site otimizado.</strong> Este é o fator chave de classificação para os motores de busca como o Google, yahoo e Bing.</p>
 
-<h2 class="lead mt25"><b><img class=" wp-image-49948 alignleft" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/criacao-site-otimizado-sites-de-busca.jpg" alt="Site Otimizado" width="353" height="306" />Conteúdo otimizado</b></h2>
+<h2 class="lead mt25"><b><img class=" wp-image-49948 alignleft" src="/news/default-nc.jpg" alt="Site Otimizado" width="353" height="306" />Conteúdo otimizado</b></h2>
 <p class="lead mt25">Os motores de busca são extremamente hábeis em identificar e classificar conteúdo que é autoritário, relevante, útil e envolvente.</p>
 Os atalhos de conteúdo e deficiências não são mais permitidas.
 Além disso, o conteúdo deve ser escrito em torno das palavras-chave específicas que têm volume de pesquisa nos motores de busca
@@ -5021,7 +5021,7 @@ Confira essas estatísticas:
 Com o design do site responsivo, você pode codificar um site para que ele funcione em qualquer dispositivo (desktop, tablet, celular), sem a criação de vários sites.
 Esta é uma grande notícia para sites de comércio eletrônico.
 <h4 class="mt25 mb25"></h4>
-<img class="aligncenter size-full wp-image-49949" src="https://www.ncbrasil.com.br/wp-content/uploads/2017/01/site-otimizado-para-gerar-resultados-620x415.jpg" alt="Site Otimizado" width="620" height="415" />
+<img class="aligncenter size-full wp-image-49949" src="/news/default-nc.jpg" alt="Site Otimizado" width="620" height="415" />
 
 &nbsp;
 <h2>Há muitas razões que você deve otimizar seu site para motores de busca, mas a prioridade é aumentar as vendas.</h2>
@@ -5051,7 +5051,7 @@ Não há dúvida de que o trabalho de <strong>SEO</strong> exige muito tempo e d
       "seo",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/blog-reinos-unidos-SEO-a-importância-de-ter-um-site-otimizado.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49937"
   },
   {
@@ -5113,7 +5113,7 @@ O objetivo: oferecer aos internautas uma navegação na vertical, similar à que
       "tipografia",
       "Web Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/webdesign-courses-1.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49891"
   },
   {
@@ -5171,7 +5171,7 @@ A <strong>NC Brasil</strong> está neste mercado e trabalha com <strong>CMS</s
       "CSM",
       "Sistema de Gerenciamento de Conteúdo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/content-management-system-in-mumbai.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49873"
   },
   {
@@ -5268,7 +5268,7 @@ Acompanhe sites de referência no segmento como a <strong>NC Brasil! </strong>Al
       "Site Gerenciável",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/loja_virtual_ecommerce_fornecedores.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49859"
   },
   {
@@ -5343,7 +5343,7 @@ Felizmente, meu caro leitor, você está no site perfeito para cumprir com as su
       "E-commerce",
       "Infraestrutura profissional de loja virtual."
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/stockvault-online-marketing-concept-marketeer-working-at-the-desk176902-scaled.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49848"
   },
   {
@@ -5398,7 +5398,7 @@ A<strong> NC Brasil</strong> está aqui pra te ajudar!
       "Tendência Web designer",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/credit-card1.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49836"
   },
   {
@@ -5466,7 +5466,7 @@ Iniciais em inglês de <strong>linguagem de marcação de hipertexto,</strong> �
       "Marketing Digital",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/e-commerce-para-a-Black-Friday.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49829"
   },
   {
@@ -5525,7 +5525,7 @@ Fique atento as opções de contrato com os correios, planeje subsídios, faça 
       "Erros de E-commerce",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/2016-e-commerce.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49789"
   },
   {
@@ -5601,7 +5601,7 @@ Mas, é possível aprender todas as teorias sozinho e praticar também. Basta en
       "Web Designer",
       "Web Desing"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/web-designer.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49773"
   },
   {
@@ -5656,7 +5656,7 @@ Em um site, a igreja pode disponibilizar livros, pregações, vídeos motivacion
       "Sites para a igreja",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/pc-keyboard-thumb-large.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49763"
   },
   {
@@ -5725,7 +5725,7 @@ Ainda tem dúvidas se vale a pena ou não ter o seu próprio <strong>site imobil
       "Site Imobiliário",
       "Tendência Web designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/imgempresas.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49750"
   },
   {
@@ -5826,7 +5826,7 @@ Até as próprias formas despertam diferentes sensações. O <strong>círculo</s
       "marca",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/identidade_visual.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49721"
   },
   {
@@ -5892,7 +5892,7 @@ Nós focamos muito na área de <strong>SEO</strong> aqui na nossa agência, mas 
       "Search Engine Marketing",
       "SEM"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/que-e-marketing-de-busca.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49699"
   },
   {
@@ -5969,7 +5969,7 @@ Contamos com uma equipe profissional que busca constantemente o aprimoramento e 
       "M-Commerce",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Como-Criar-Uma-Loja-Virtual-Para-2015-01.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49633"
   },
   {
@@ -6027,7 +6027,7 @@ Somos uma empresa especializada em<strong> sites gerenciáveis</strong> e conta
       "website",
       "wordpress"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/maxresdefault-scaled.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49608"
   },
   {
@@ -6117,7 +6117,7 @@ Pouquíssimas agências estão preparadas para essa nova era de tecnologia. Mas 
       "M-Commerce",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Cv81ZQhWAAAmoTo.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49576"
   },
   {
@@ -6171,7 +6171,7 @@ Para saber mais razões para montar um <strong>site</strong>, leia outro artigo 
       "Web Designer",
       "website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/wdd2014.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49552"
   },
   {
@@ -6234,7 +6234,7 @@ Muitas empresas não possuem profissionais qualificados ou recursos para tocar p
       "Sites Turbinados",
       "Web Designer"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/full_xciWr5mV.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49544"
   },
   {
@@ -6304,7 +6304,7 @@ A tecnologia 4G permite às operadoras de telefonia oferecerem o serviço de int
       "webdesign",
       "website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/quanto-custa-um-site-profissional-post-stavit-03.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49482"
   },
   {
@@ -6351,7 +6351,7 @@ Agora que você já conhece a importância e as vantagens de um <strong>aplica
       "criar aplicativo",
       "criar loja virtual profissional"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/era-digital.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49442"
   },
   {
@@ -6414,7 +6414,7 @@ Entre em contato conosco, <a href="http://ncbrasil.com.br/pages/orcamento-criaca
       "criar site para empresa",
       "hospedagem de sites"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/loja-vritual-Copia.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49292"
   },
   {
@@ -6536,7 +6536,7 @@ Aja com profissionalismo e não saia tentando fazer tudo sozinho, lembre-se que 
       "Snapchat",
       "Twitter"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Imagem-blog.png-landing-page.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49328"
   },
   {
@@ -6626,7 +6626,7 @@ E você, como cuida dos processos fotográficos do seu site? Quais são as suas 
       "criar loja virtual profissional",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Fotografia-cuidados-com-a-construC3A7C3A3o-da-sua-marca-na-internet-1.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49345"
   },
   {
@@ -6713,7 +6713,7 @@ Quer rankear seu site no Google? A Agência Evonline pode lhe ajudar, com o SEO.
       "site para empresas",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/exibir-seu-site-nos-buscadores.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49342"
   },
   {
@@ -6851,7 +6851,7 @@ E para finalizar…
       "design de conteúdo",
       "landing page"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/faca-a-criacao-de-site-anuncie-no-google-e-apareca-Copia.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49281"
   },
   {
@@ -6967,7 +6967,7 @@ Queremos saber o que você pensa sobre o assunto. Deixe aqui o seu comentário.
       "Marketing Digital",
       "Vídeos corporativos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/05/criacao-de-sistes-sistemas-14.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49078"
   },
   {
@@ -7081,7 +7081,7 @@ O teste A/B baseia- se na análise das estatísticas da versão (A) converter ma
       "criar site responsivo",
       "criar website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/img-mokups-dbs.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49302"
   },
   {
@@ -7170,7 +7170,7 @@ Relevância é palavra de ordem na web. Um site com conteúdo raso, com excesso 
       "desenvolvimento de sistemas",
       "loja virtual para celulares"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Erros-ao-criar-sites-3.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49323"
   },
   {
@@ -7266,7 +7266,7 @@ Entre em contato conosco, <a href="http://ncbrasil.com.br/pages/orcamento-criaca
       "identidade visual",
       "Marketing Digital"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/4-dicas-para-criar-um-C3B3timo-logo-1.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49318"
   },
   {
@@ -7343,7 +7343,7 @@ Para obter conhecimento de marca, há algumas métricas que podem ser acompanhad
       "criação de sites",
       "marketing de conteúdo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Imagem-blog-landing-page-videos-sC3A3o-mais-chamativos.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49329"
   },
   {
@@ -7438,7 +7438,7 @@ E aí, alguma dúvida? Siga nossas dicas simples e perceba que muitas estratégi
       "redes socias",
       "website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/redes-sociais-Copia.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49293"
   },
   {
@@ -7516,7 +7516,7 @@ Sua principal característica que fez com que fosse líder no mercado: foram as 
       "site responsivo",
       "wordpress"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/4-dicas-para-criar-um-C3B3timo-logo-3.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49320"
   },
   {
@@ -7600,7 +7600,7 @@ O acompanhamento da supervisão garante que o projeto seja entregue na data prev
       "web designers",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Imagem-blog-vC3ADdeos-corporativos-3.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49335"
   },
   {
@@ -7672,7 +7672,7 @@ Com ferramentas Google é possível fazer uma analise de quantas pessoas entrara
       "Rio de Janeiro",
       "seo"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Imagem-blog-landing-page-CTA.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49331"
   },
   {
@@ -7730,7 +7730,7 @@ Permite também ajustar as campanhas em tempo real, possuindo uma grande quantid
       "hospedagem de sites",
       "otimização de sites"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/por-que-que-e-seo-e-importante-na-criacao-de-sites-820x450-Copia.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49285"
   },
   {
@@ -7802,7 +7802,7 @@ Com base em todas essas informações é possível que a criação do site ou do
       "criar sites reponsivos",
       "loja virtual para celulares"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/diferencial-em-criacao-de-sites-e-e-commerces-820x450-Copia.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49283"
   },
   {
@@ -7849,7 +7849,7 @@ Se a sua empresa ainda não possui um blog corporativo, agora pode ser um ótimo
       "criar sites reponsivos",
       "site para empresas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/shutterstock_528070915-820x490-Copia-300x179-1.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49308"
   },
   {
@@ -7932,7 +7932,7 @@ Agora que você já sabe o que é usabilidade e como utilizá-la ao seu favor, g
       "sites semânticos",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/12/Imagem-blog.pngvC3ADdeos-corporativos-1.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49336"
   },
   {
@@ -8021,7 +8021,7 @@ A NC Brasil faz o seu institucional, auxilia você a identificar o que é realm
       "sites para celulares",
       "sites responsivos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/05/criacao-de-sistes-sistemas-1.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49080"
   },
   {
@@ -8107,7 +8107,7 @@ Manter o <strong>site atualizado reflete positivamente</strong> na imagem de neg
       "site para empresas",
       "Sites Institucionais"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-50.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48586"
   },
   {
@@ -8149,7 +8149,7 @@ A opção por um site responsivo também é recomendada pelo Google, já que per
       "sites para celulares",
       "sites responsivos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-23.png",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48545"
   },
   {
@@ -8222,7 +8222,7 @@ Veja como era a questão:
       "loja virtual para facebook",
       "melhor servidor para loja virtual"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/05/criacao-de-sistes-sistemas-15.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49079"
   },
   {
@@ -8274,7 +8274,7 @@ Se você já tem um bom site, mas não está tendo resultados, pode ser que voc�
       "Marketing Digital",
       "reformular website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/05/criacao-de-sistes-sistemas-13.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "49077"
   },
   {
@@ -8318,7 +8318,7 @@ Se você já tem um bom site, mas não está tendo resultados, pode ser que voc�
       "criar sites reponsivos",
       "desenvolvimento de sistemas"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-77.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48613"
   },
   {
@@ -8360,7 +8360,7 @@ Até ontem nenhuma empresa havia apresentado soluções completas para você obt
       "sítio eletrônic",
       "website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-71.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48607"
   },
   {
@@ -8396,7 +8396,7 @@ Então, cabe ao <strong>desenvolvedor de sites</strong> reconhecer a tendênci
       "desenvolvimento de sistemas",
       "sites semânticos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/05/desenvolvimento-webdesign-109.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48648"
   },
   {
@@ -8445,7 +8445,7 @@ A escolha do tipo de hospedagem deve levar em consideração as seguintes variá
       "hospedagem para o seu site",
       "melhor servidor para loja virtual"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-64.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48600"
   },
   {
@@ -8491,7 +8491,7 @@ Para aproveitar ao máximo dessa vantagem é preciso uma plataforma que disponib
       "loja virtual para celulares",
       "loja virtual para facebook"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-26.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48550"
   },
   {
@@ -8534,7 +8534,7 @@ Se você considera que o site de sua empresa se enquadra em uma ou mais das ques
       "fazer site",
       "reformular website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-75.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48611"
   },
   {
@@ -8571,7 +8571,7 @@ Uma pesquisa recente<span class="apple-converted-space"> </span>mostrou que ap
       "site responsivo",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2016/02/criacao-de-sites-rj-63.jpg",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "48599"
   },
   {
@@ -8581,10 +8581,10 @@ Uma pesquisa recente<span class="apple-converted-space"> </span>mostrou que ap
     "date": "Wed, 10 Aug 2022 10:00:22 +0000",
     "content": `<p>Vietnamese fintech startup Finhay has raised a $25 million Series B round led by Singapore-based Openspace Ventures, an early backer of Indonesia's GoTo Group and 30 Under 30 Asia honoree Rexy Josh Dorado's Manila-based social media site Kumu, and private firm Vietnam Investments Group.</p><p>Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.</p>		
 			<style>/*! elementor - v3.7.0 - 08-08-2022 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px" />															
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px" />															
 		The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.<br><br>
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.		
-															<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px" />															
+															<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px" />															
 		The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly. <br><br>
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -8599,7 +8599,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "fintech",
       "news"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-15.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "3251"
   },
   {
@@ -8609,10 +8609,10 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
     "date": "Wed, 10 Aug 2022 09:59:38 +0000",
     "content": `<p>Vietnamese fintech startup Finhay has raised a $25 million Series B round led by Singapore-based Openspace Ventures, an early backer of Indonesia's GoTo Group and 30 Under 30 Asia honoree Rexy Josh Dorado's Manila-based social media site Kumu, and private firm Vietnam Investments Group.</p><p>Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.</p>		
 			<style>/*! elementor - v3.7.0 - 08-08-2022 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px" />															
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px" />															
 		The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.<br><br>
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.		
-															<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px" />															
+															<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px" />															
 		The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly. <br><br>
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -8627,7 +8627,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "fintech",
       "news"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-14.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "3250"
   },
   {
@@ -8637,10 +8637,10 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
     "date": "Wed, 10 Aug 2022 09:58:24 +0000",
     "content": `<p>Vietnamese fintech startup Finhay has raised a $25 million Series B round led by Singapore-based Openspace Ventures, an early backer of Indonesia's GoTo Group and 30 Under 30 Asia honoree Rexy Josh Dorado's Manila-based social media site Kumu, and private firm Vietnam Investments Group.</p><p>Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.</p>		
 			<style>/*! elementor - v3.7.0 - 08-08-2022 */
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px" />															
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px" />															
 		The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.<br><br>
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.		
-															<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px" />															
+															<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px" />															
 		The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly. <br><br>
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -8655,7 +8655,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "fintech",
       "news"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-13.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "3249"
   },
   {
@@ -8668,11 +8668,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -8689,7 +8689,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
     "tags": [
       "api"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/corporate-new3.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1880"
   },
   {
@@ -8702,11 +8702,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -8724,7 +8724,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "Branding",
       "Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/corporate-new2.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1879"
   },
   {
@@ -8737,11 +8737,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -8759,7 +8759,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "api",
       "Apps"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/corporate-new1.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1878"
   },
   {
@@ -8772,11 +8772,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -8794,7 +8794,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "development",
       "devops"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-12.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1338"
   },
   {
@@ -8807,11 +8807,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -8829,7 +8829,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "Email",
       "shop"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-11.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1337"
   },
   {
@@ -8842,11 +8842,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -8864,7 +8864,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "starups",
       "wordpress"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-10.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1336"
   },
   {
@@ -8877,11 +8877,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -8900,7 +8900,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "api",
       "Apps"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-09.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1335"
   },
   {
@@ -8913,11 +8913,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -8935,7 +8935,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "Branding",
       "Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-08.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1334"
   },
   {
@@ -8948,11 +8948,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -8970,7 +8970,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "development",
       "devops"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-07.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1333"
   },
   {
@@ -8983,11 +8983,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -9005,7 +9005,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "Email",
       "shop"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-06.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1332"
   },
   {
@@ -9018,11 +9018,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -9041,7 +9041,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "startup",
       "wordpress"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-05.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1331"
   },
   {
@@ -9054,11 +9054,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -9077,7 +9077,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "api",
       "Apps"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-04.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1330"
   },
   {
@@ -9090,11 +9090,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -9112,7 +9112,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "Branding",
       "Design"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-03.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1329"
   },
   {
@@ -9125,11 +9125,11 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
 Other investors in the round included Singapore-based Insignia Ventures Partners, TVS, Headline,TNB Aura and IVC, Finhay said in a statement. Earlier this month, Insignia, whose other investments include GoTo and Singapore-based used-car unicorn Carro, led a pre-Series A funding round for Bluesheets, a financial data startup in Singapore.
 
 <style>/*! elementor - v3.7.0 - 08-08-2022 */<br />
-.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>												<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-1.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-1-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The funds will be used to invest in business expansion, talent acquisition and technology develop- ment. Finhay also bought a securities brokerage, making it the only licensed digital investment platform in Vietnam, according to the startup.
 
 Finhay was founded in 2017 by Huy Nghiem, a Vietnamese-Australian who quit his finance job in Australia. The startup operates a micro-investment platform for Millennials and has more than 2.7 million registered users in the country of almost 100 million people. It recommends multiple micro-financial products including saving, investment and insurance based on the customer's personal information and risk assessment.
-<img width="755" height="500" src="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
+<img width="755" height="500" src="/news/default-nc.jpg" alt="" loading="lazy" srcset="https://www.ncbrasil.com.br/wp-content/uploads/2022/08/news-detail-2.webp 755w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-300x199.webp 300w, http://localhost/pollock2/wp-content/uploads/2022/08/news-detail-2-600x397.webp 600w" sizes="(max-width: 755px) 100vw, 755px">
 The customers can then start building their wealth through Finhay with as little as $3. Nghiem, who made the 30 Under 30 Asia list in 2020, envisions Finhay as a one-stop solution where customers
 can manage their wealth seamlessly.
 <blockquote>"Finhay is already emerging as the clear frontrunner in Vietnam’s booming investment space," Jessica Huang Pouleur, partner at Openspace, said in the statement. "We believe a massive opportunity exists in Vietnam, which has
@@ -9147,7 +9147,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "development",
       "devops"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-02.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1328"
   },
   {
@@ -9164,7 +9164,7 @@ Other rising fintech platforms in Vietnam include MoMo, which has raised money f
       "news",
       "technology"
     ],
-    "image_url": "https://www.ncbrasil.com.br/wp-content/uploads/2022/08/blog-01.webp",
+    "image_url": "/news/default-nc.jpg",
     "thumb_id": "1327"
   }
 ];
