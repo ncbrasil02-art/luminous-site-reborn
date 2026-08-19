@@ -18,19 +18,16 @@ import heroTech from "@/assets/hero-tech.jpg";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
 
-const SITE_URL = "https://www.ncbrasil.com.br";
-const OG_IMAGE = `${SITE_URL}/og-home.jpg`;
+import { buildMeta, SITE_URL } from "@/lib/seo";
 
-import { MagazineSection } from "@/components/MagazineSection";
-import { NewsDisplay } from "@/components/NewsDisplay";
-
+const OG_IMAGE = `/og-home.jpg`;
 
 const homeJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "NC Brasil — Criação de Sites, Sistemas Web e Aplicativos",
   url: SITE_URL,
-  image: OG_IMAGE,
+  image: `${SITE_URL}${OG_IMAGE}`,
   description:
     "Empresa de criação de sites profissionais, sistemas web, lojas virtuais, aplicativos mobile e marketing digital em São Paulo e Rio de Janeiro.",
   areaServed: ["São Paulo", "Rio de Janeiro", "Brasil"],
@@ -44,41 +41,23 @@ const homeJsonLd = {
 };
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "NC Brasil · Criação de Sites, Sistemas Web e Aplicativos" },
-      {
-        name: "description",
-        content:
-          "Agência de tecnologia especializada em criação de sites, sistemas web, lojas virtuais, aplicativos mobile e marketing digital em SP e RJ. Solicite seu orçamento.",
-      },
-      {
-        name: "keywords",
-        content:
-          "criação de sites, criação de sistemas, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, sistema de cupons",
-      },
-      { property: "og:title", content: "NC Brasil · Sistemas, Sites e Marketing Digital" },
-      {
-        property: "og:description",
-        content:
-          "Criação de sites profissionais, sistemas web sob demanda, lojas virtuais, aplicativos e campanhas digitais. Atuação em São Paulo e Rio de Janeiro.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: SITE_URL },
-      { property: "og:image", content: OG_IMAGE },
-      { property: "og:locale", content: "pt_BR" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "NC Brasil · Sistemas, Sites e Marketing Digital" },
-      {
-        name: "twitter:description",
-        content:
-          "Sites, sistemas, lojas virtuais e apps que vendem. Tecnologia de ponta com design premium.",
-      },
-      { name: "twitter:image", content: OG_IMAGE },
-    ],
-    links: [{ rel: "canonical", href: `${SITE_URL}/` }],
-    scripts: [{ type: "application/ld+json", children: JSON.stringify(homeJsonLd) }],
-  }),
+  head: () => {
+    const meta = buildMeta({
+      title: "NC Brasil · Criação de Sites, Sistemas Web e Aplicativos em SP e RJ",
+      description: "Agência de tecnologia especializada em criação de sites profissionais, sistemas web sob demanda, e-commerce e aplicativos mobile. Tecnologia premium para escalar seu negócio.",
+      keywords: "criação de sites, criação de sistemas web, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, NC Brasil",
+      ogImage: OG_IMAGE,
+      canonical: `${SITE_URL}/`,
+    });
+
+    return {
+      ...meta,
+      scripts: [
+        ...meta.scripts!,
+        { type: "application/ld+json", children: JSON.stringify(homeJsonLd) }
+      ],
+    };
+  },
   component: HomePage,
 });
 
