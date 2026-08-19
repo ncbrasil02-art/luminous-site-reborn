@@ -92,7 +92,7 @@ export const newsData: NewsPost[] = [
       "NC Brasil",
       "seo"
     ],
-    "image_url": "/news/ecommerce-concch.jpg",
+    "image_url": "/news/eCommerce-concch.jpg",
     "thumb_id": "50963"
   },
   {
@@ -223,7 +223,7 @@ export const newsData: NewsPost[] = [
       "Site para Vender Imóveis",
       "site responsivo"
     ],
-    "image_url": "/news/imoveis.jpg.jpeg",
+    "image_url": "/news/imóveis.jpg.jpeg",
     "thumb_id": "50846"
   },
   {
@@ -350,7 +350,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "Web design responsivo"
     ],
-    "image_url": "/news/site-responsivo-feira-de-santana.jpg",
+    "image_url": "/news/Site-Responsivo-Feira-de-Santana.jpg",
     "thumb_id": "50806"
   },
   {
