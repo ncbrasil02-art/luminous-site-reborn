@@ -6,7 +6,7 @@ import {
 import { Reveal, SectionHeading } from "@/components/Section";
 import { buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/sistemas";
+const URL = "https://www.ncbrasil.com.br/nossos-sistemas";
 
 export const Route = createFileRoute("/nossos-sistemas")({
   head: () => buildLPMeta({
