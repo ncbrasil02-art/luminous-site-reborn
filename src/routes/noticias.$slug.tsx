@@ -20,7 +20,7 @@ export const Route = createFileRoute('/noticias/$slug')({
       title: `${loaderData.title} | Revista Digital`,
       description: plainText,
       keywords: `notícia, nc brasil, ${loaderData.categories.join(', ')}, ${loaderData.tags.join(', ')}`,
-      ogImage: loaderData.image_url,
+      ogImage: loaderData.image_url || undefined,
       ogType: 'article',
       canonical: `${SITE_URL}/noticias/${loaderData.slug}`,
       article: {
@@ -29,6 +29,7 @@ export const Route = createFileRoute('/noticias/$slug')({
         tags: loaderData.tags
       }
     })
+
   },
   component: NewsPostPage,
 })
