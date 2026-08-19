@@ -71,6 +71,7 @@ import { Route as NoticiasTagTagRouteImport } from './routes/noticias.tag.$tag'
 import { Route as NoticiasCategoriaCategoryRouteImport } from './routes/noticias.categoria.$category'
 import { Route as ApiPublicSitemapRouteImport } from './routes/api.public.sitemap'
 import { Route as ApiPublicRssRouteImport } from './routes/api.public.rss'
+import { Route as ApiPublicAuditSeoRouteImport } from './routes/api.public.audit-seo'
 import { Route as AdminNoticiasNovaRouteImport } from './routes/admin.noticias.nova'
 import { Route as AdminNoticiasIdRouteImport } from './routes/admin.noticias.$id'
 
@@ -404,6 +405,11 @@ const ApiPublicRssRoute = ApiPublicRssRouteImport.update({
   path: '/api/public/rss',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicAuditSeoRoute = ApiPublicAuditSeoRouteImport.update({
+  id: '/api/public/audit-seo',
+  path: '/api/public/audit-seo',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminNoticiasNovaRoute = AdminNoticiasNovaRouteImport.update({
   id: '/nova',
   path: '/nova',
@@ -476,6 +482,7 @@ export interface FileRoutesByFullPath {
   '/sistemas/': typeof SistemasIndexRoute
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
+  '/api/public/audit-seo': typeof ApiPublicAuditSeoRoute
   '/api/public/rss': typeof ApiPublicRssRoute
   '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
@@ -541,6 +548,7 @@ export interface FileRoutesByTo {
   '/sistemas': typeof SistemasIndexRoute
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
+  '/api/public/audit-seo': typeof ApiPublicAuditSeoRoute
   '/api/public/rss': typeof ApiPublicRssRoute
   '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
@@ -608,6 +616,7 @@ export interface FileRoutesById {
   '/sistemas/': typeof SistemasIndexRoute
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
+  '/api/public/audit-seo': typeof ApiPublicAuditSeoRoute
   '/api/public/rss': typeof ApiPublicRssRoute
   '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
@@ -676,6 +685,7 @@ export interface FileRouteTypes {
     | '/sistemas/'
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
+    | '/api/public/audit-seo'
     | '/api/public/rss'
     | '/api/public/sitemap'
     | '/noticias/categoria/$category'
@@ -741,6 +751,7 @@ export interface FileRouteTypes {
     | '/sistemas'
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
+    | '/api/public/audit-seo'
     | '/api/public/rss'
     | '/api/public/sitemap'
     | '/noticias/categoria/$category'
@@ -807,6 +818,7 @@ export interface FileRouteTypes {
     | '/sistemas/'
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
+    | '/api/public/audit-seo'
     | '/api/public/rss'
     | '/api/public/sitemap'
     | '/noticias/categoria/$category'
@@ -860,6 +872,7 @@ export interface RootRouteChildren {
   SistemasSlugRoute: typeof SistemasSlugRoute
   NoticiasIndexRoute: typeof NoticiasIndexRoute
   SistemasIndexRoute: typeof SistemasIndexRoute
+  ApiPublicAuditSeoRoute: typeof ApiPublicAuditSeoRoute
   ApiPublicRssRoute: typeof ApiPublicRssRoute
   ApiPublicSitemapRoute: typeof ApiPublicSitemapRoute
   NoticiasCategoriaCategoryRoute: typeof NoticiasCategoriaCategoryRoute
@@ -1302,6 +1315,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicRssRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/audit-seo': {
+      id: '/api/public/audit-seo'
+      path: '/api/public/audit-seo'
+      fullPath: '/api/public/audit-seo'
+      preLoaderRoute: typeof ApiPublicAuditSeoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin/noticias/nova': {
       id: '/admin/noticias/nova'
       path: '/nova'
@@ -1432,6 +1452,7 @@ const rootRouteChildren: RootRouteChildren = {
   SistemasSlugRoute: SistemasSlugRoute,
   NoticiasIndexRoute: NoticiasIndexRoute,
   SistemasIndexRoute: SistemasIndexRoute,
+  ApiPublicAuditSeoRoute: ApiPublicAuditSeoRoute,
   ApiPublicRssRoute: ApiPublicRssRoute,
   ApiPublicSitemapRoute: ApiPublicSitemapRoute,
   NoticiasCategoriaCategoryRoute: NoticiasCategoriaCategoryRoute,
