@@ -27,6 +27,7 @@ import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
 import { Route as NoticiasIndexRouteImport } from './routes/noticias.index'
+import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as SolucoesWebSeoGoogleRouteImport } from './routes/solucoes-web.seo-google'
 import { Route as SolucoesWebMarketingDigitalRouteImport } from './routes/solucoes-web.marketing-digital'
 import { Route as SolucoesWebLojaVirtualRouteImport } from './routes/solucoes-web.loja-virtual'
@@ -64,6 +65,7 @@ import { Route as NoticiasSlugRouteImport } from './routes/noticias.$slug'
 import { Route as EmpresaQuemSomosRouteImport } from './routes/empresa.quem-somos'
 import { Route as EmpresaNossaHistoriaRouteImport } from './routes/empresa.nossa-historia'
 import { Route as EmpresaClientesRouteImport } from './routes/empresa.clientes'
+import { Route as AdminNoticiasRouteImport } from './routes/admin.noticias'
 import { Route as NoticiasTagTagRouteImport } from './routes/noticias.tag.$tag'
 import { Route as NoticiasCategoriaCategoryRouteImport } from './routes/noticias.categoria.$category'
 import { Route as ApiPublicSitemapXmlRouteImport } from './routes/api.public.sitemap.xml'
@@ -161,6 +163,11 @@ const NoticiasIndexRoute = NoticiasIndexRouteImport.update({
   id: '/noticias/',
   path: '/noticias/',
   getParentRoute: () => rootRouteImport,
+} as any)
+const AdminIndexRoute = AdminIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => AdminRoute,
 } as any)
 const SolucoesWebSeoGoogleRoute = SolucoesWebSeoGoogleRouteImport.update({
   id: '/seo-google',
@@ -367,6 +374,11 @@ const EmpresaClientesRoute = EmpresaClientesRouteImport.update({
   path: '/clientes',
   getParentRoute: () => EmpresaRoute,
 } as any)
+const AdminNoticiasRoute = AdminNoticiasRouteImport.update({
+  id: '/noticias',
+  path: '/noticias',
+  getParentRoute: () => AdminRoute,
+} as any)
 const NoticiasTagTagRoute = NoticiasTagTagRouteImport.update({
   id: '/noticias/tag/$tag',
   path: '/noticias/tag/$tag',
@@ -391,7 +403,7 @@ const ApiPublicRssXmlRoute = ApiPublicRssXmlRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/admin': typeof AdminRoute
+  '/admin': typeof AdminRouteWithChildren
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRouteWithChildren
@@ -406,6 +418,7 @@ export interface FileRoutesByFullPath {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/admin/noticias': typeof AdminNoticiasRoute
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
@@ -443,6 +456,7 @@ export interface FileRoutesByFullPath {
   '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
   '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
+  '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
@@ -452,7 +466,6 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/admin': typeof AdminRoute
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRouteWithChildren
@@ -467,6 +480,7 @@ export interface FileRoutesByTo {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/admin/noticias': typeof AdminNoticiasRoute
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
@@ -504,6 +518,7 @@ export interface FileRoutesByTo {
   '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
   '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
+  '/admin': typeof AdminIndexRoute
   '/noticias': typeof NoticiasIndexRoute
   '/sistemas': typeof SistemasIndexRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
@@ -514,7 +529,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/admin': typeof AdminRoute
+  '/admin': typeof AdminRouteWithChildren
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRouteWithChildren
@@ -529,6 +544,7 @@ export interface FileRoutesById {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/admin/noticias': typeof AdminNoticiasRoute
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
@@ -566,6 +582,7 @@ export interface FileRoutesById {
   '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
   '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
+  '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
@@ -592,6 +609,7 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/admin/noticias'
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
     | '/empresa/quem-somos'
@@ -629,6 +647,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/loja-virtual'
     | '/solucoes-web/marketing-digital'
     | '/solucoes-web/seo-google'
+    | '/admin/'
     | '/noticias/'
     | '/sistemas/'
     | '/noticias/categoria/$category'
@@ -638,7 +657,6 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/admin'
     | '/contato'
     | '/dicas-para-e-commerce'
     | '/empresa'
@@ -653,6 +671,7 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/admin/noticias'
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
     | '/empresa/quem-somos'
@@ -690,6 +709,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/loja-virtual'
     | '/solucoes-web/marketing-digital'
     | '/solucoes-web/seo-google'
+    | '/admin'
     | '/noticias'
     | '/sistemas'
     | '/noticias/categoria/$category'
@@ -714,6 +734,7 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/admin/noticias'
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
     | '/empresa/quem-somos'
@@ -751,6 +772,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/loja-virtual'
     | '/solucoes-web/marketing-digital'
     | '/solucoes-web/seo-google'
+    | '/admin/'
     | '/noticias/'
     | '/sistemas/'
     | '/noticias/categoria/$category'
@@ -761,7 +783,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  AdminRoute: typeof AdminRoute
+  AdminRoute: typeof AdminRouteWithChildren
   ContatoRoute: typeof ContatoRoute
   DicasParaECommerceRoute: typeof DicasParaECommerceRoute
   EmpresaRoute: typeof EmpresaRouteWithChildren
@@ -939,6 +961,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/noticias/'
       preLoaderRoute: typeof NoticiasIndexRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/admin/': {
+      id: '/admin/'
+      path: '/'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AdminIndexRouteImport
+      parentRoute: typeof AdminRoute
     }
     '/solucoes-web/seo-google': {
       id: '/solucoes-web/seo-google'
@@ -1199,6 +1228,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EmpresaClientesRouteImport
       parentRoute: typeof EmpresaRoute
     }
+    '/admin/noticias': {
+      id: '/admin/noticias'
+      path: '/noticias'
+      fullPath: '/admin/noticias'
+      preLoaderRoute: typeof AdminNoticiasRouteImport
+      parentRoute: typeof AdminRoute
+    }
     '/noticias/tag/$tag': {
       id: '/noticias/tag/$tag'
       path: '/noticias/tag/$tag'
@@ -1229,6 +1265,18 @@ declare module '@tanstack/react-router' {
     }
   }
 }
+
+interface AdminRouteChildren {
+  AdminNoticiasRoute: typeof AdminNoticiasRoute
+  AdminIndexRoute: typeof AdminIndexRoute
+}
+
+const AdminRouteChildren: AdminRouteChildren = {
+  AdminNoticiasRoute: AdminNoticiasRoute,
+  AdminIndexRoute: AdminIndexRoute,
+}
+
+const AdminRouteWithChildren = AdminRoute._addFileChildren(AdminRouteChildren)
 
 interface EmpresaRouteChildren {
   EmpresaClientesRoute: typeof EmpresaClientesRoute
@@ -1270,7 +1318,7 @@ const SolucoesWebRouteWithChildren = SolucoesWebRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  AdminRoute: AdminRoute,
+  AdminRoute: AdminRouteWithChildren,
   ContatoRoute: ContatoRoute,
   DicasParaECommerceRoute: DicasParaECommerceRoute,
   EmpresaRoute: EmpresaRouteWithChildren,
