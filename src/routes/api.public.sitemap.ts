@@ -14,6 +14,16 @@ export const Route = createFileRoute('/api/public/sitemap')({
           '/nossos-servicos',
           '/nossos-sistemas',
           '/noticias',
+          '/sistema-de-leilao',
+          '/sistema-de-leilao-rural',
+          '/classificados-de-veiculos',
+          '/sistema-de-cupom-descontos',
+          '/plataforma-chinesa-apostas-cassino',
+          '/sistema-de-raspadinha',
+          '/sistema-de-rifas',
+          '/sistema-de-ofertas-cupom-marketplace',
+          '/sistema-de-revenda-de-veiculos',
+          '/sistema-de-leilao-de-centavos',
           '/contato',
           '/orcamento'
         ]
