@@ -34,6 +34,7 @@ import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as ClassificadosDeVeiculosRouteImport } from './routes/classificados-de-veiculos'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
 import { Route as NoticiasIndexRouteImport } from './routes/noticias.index'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as SolucoesWebSeoGoogleRouteImport } from './routes/solucoes-web.seo-google'
@@ -203,6 +204,11 @@ const AdminRoute = AdminRouteImport.update({
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SistemasIndexRoute = SistemasIndexRouteImport.update({
+  id: '/sistemas/',
+  path: '/sistemas/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NoticiasIndexRoute = NoticiasIndexRouteImport.update({
@@ -467,6 +473,7 @@ export interface FileRoutesByFullPath {
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
   '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
+  '/sistemas/': typeof SistemasIndexRoute
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
@@ -531,6 +538,7 @@ export interface FileRoutesByTo {
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
   '/admin': typeof AdminIndexRoute
   '/noticias': typeof NoticiasIndexRoute
+  '/sistemas': typeof SistemasIndexRoute
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
@@ -597,6 +605,7 @@ export interface FileRoutesById {
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
   '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
+  '/sistemas/': typeof SistemasIndexRoute
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
@@ -664,6 +673,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/seo-google'
     | '/admin/'
     | '/noticias/'
+    | '/sistemas/'
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
@@ -728,6 +738,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/seo-google'
     | '/admin'
     | '/noticias'
+    | '/sistemas'
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
@@ -793,6 +804,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/seo-google'
     | '/admin/'
     | '/noticias/'
+    | '/sistemas/'
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/api/public/rss'
@@ -847,6 +859,7 @@ export interface RootRouteChildren {
   ServicosSistemasWebRoute: typeof ServicosSistemasWebRoute
   SistemasSlugRoute: typeof SistemasSlugRoute
   NoticiasIndexRoute: typeof NoticiasIndexRoute
+  SistemasIndexRoute: typeof SistemasIndexRoute
   ApiPublicRssRoute: typeof ApiPublicRssRoute
   ApiPublicSitemapRoute: typeof ApiPublicSitemapRoute
   NoticiasCategoriaCategoryRoute: typeof NoticiasCategoriaCategoryRoute
@@ -1028,6 +1041,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sistemas/': {
+      id: '/sistemas/'
+      path: '/sistemas'
+      fullPath: '/sistemas/'
+      preLoaderRoute: typeof SistemasIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/noticias/': {
@@ -1411,6 +1431,7 @@ const rootRouteChildren: RootRouteChildren = {
   ServicosSistemasWebRoute: ServicosSistemasWebRoute,
   SistemasSlugRoute: SistemasSlugRoute,
   NoticiasIndexRoute: NoticiasIndexRoute,
+  SistemasIndexRoute: SistemasIndexRoute,
   ApiPublicRssRoute: ApiPublicRssRoute,
   ApiPublicSitemapRoute: ApiPublicSitemapRoute,
   NoticiasCategoriaCategoryRoute: NoticiasCategoriaCategoryRoute,
