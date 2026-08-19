@@ -70,6 +70,7 @@ import { Route as NoticiasTagTagRouteImport } from './routes/noticias.tag.$tag'
 import { Route as NoticiasCategoriaCategoryRouteImport } from './routes/noticias.categoria.$category'
 import { Route as ApiPublicSitemapRouteImport } from './routes/api.public.sitemap'
 import { Route as ApiPublicRssRouteImport } from './routes/api.public.rss'
+import { Route as AdminNoticiasNovaRouteImport } from './routes/admin.noticias.nova'
 
 const TrabalhosRealizadosRoute = TrabalhosRealizadosRouteImport.update({
   id: '/trabalhos-realizados',
@@ -400,6 +401,11 @@ const ApiPublicRssRoute = ApiPublicRssRouteImport.update({
   path: '/api/public/rss',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminNoticiasNovaRoute = AdminNoticiasNovaRouteImport.update({
+  id: '/nova',
+  path: '/nova',
+  getParentRoute: () => AdminNoticiasRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -418,7 +424,7 @@ export interface FileRoutesByFullPath {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
-  '/admin/noticias': typeof AdminNoticiasRoute
+  '/admin/noticias': typeof AdminNoticiasRouteWithChildren
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
@@ -459,6 +465,7 @@ export interface FileRoutesByFullPath {
   '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
+  '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
   '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
@@ -480,7 +487,7 @@ export interface FileRoutesByTo {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
-  '/admin/noticias': typeof AdminNoticiasRoute
+  '/admin/noticias': typeof AdminNoticiasRouteWithChildren
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
@@ -521,6 +528,7 @@ export interface FileRoutesByTo {
   '/admin': typeof AdminIndexRoute
   '/noticias': typeof NoticiasIndexRoute
   '/sistemas': typeof SistemasIndexRoute
+  '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
   '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
@@ -544,7 +552,7 @@ export interface FileRoutesById {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
-  '/admin/noticias': typeof AdminNoticiasRoute
+  '/admin/noticias': typeof AdminNoticiasRouteWithChildren
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
@@ -585,6 +593,7 @@ export interface FileRoutesById {
   '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
+  '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/api/public/rss': typeof ApiPublicRssRoute
   '/api/public/sitemap': typeof ApiPublicSitemapRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
@@ -650,6 +659,7 @@ export interface FileRouteTypes {
     | '/admin/'
     | '/noticias/'
     | '/sistemas/'
+    | '/admin/noticias/nova'
     | '/api/public/rss'
     | '/api/public/sitemap'
     | '/noticias/categoria/$category'
@@ -712,6 +722,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/noticias'
     | '/sistemas'
+    | '/admin/noticias/nova'
     | '/api/public/rss'
     | '/api/public/sitemap'
     | '/noticias/categoria/$category'
@@ -775,6 +786,7 @@ export interface FileRouteTypes {
     | '/admin/'
     | '/noticias/'
     | '/sistemas/'
+    | '/admin/noticias/nova'
     | '/api/public/rss'
     | '/api/public/sitemap'
     | '/noticias/categoria/$category'
@@ -1263,16 +1275,35 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicRssRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/noticias/nova': {
+      id: '/admin/noticias/nova'
+      path: '/nova'
+      fullPath: '/admin/noticias/nova'
+      preLoaderRoute: typeof AdminNoticiasNovaRouteImport
+      parentRoute: typeof AdminNoticiasRoute
+    }
   }
 }
 
+interface AdminNoticiasRouteChildren {
+  AdminNoticiasNovaRoute: typeof AdminNoticiasNovaRoute
+}
+
+const AdminNoticiasRouteChildren: AdminNoticiasRouteChildren = {
+  AdminNoticiasNovaRoute: AdminNoticiasNovaRoute,
+}
+
+const AdminNoticiasRouteWithChildren = AdminNoticiasRoute._addFileChildren(
+  AdminNoticiasRouteChildren,
+)
+
 interface AdminRouteChildren {
-  AdminNoticiasRoute: typeof AdminNoticiasRoute
+  AdminNoticiasRoute: typeof AdminNoticiasRouteWithChildren
   AdminIndexRoute: typeof AdminIndexRoute
 }
 
 const AdminRouteChildren: AdminRouteChildren = {
-  AdminNoticiasRoute: AdminNoticiasRoute,
+  AdminNoticiasRoute: AdminNoticiasRouteWithChildren,
   AdminIndexRoute: AdminIndexRoute,
 }
 
