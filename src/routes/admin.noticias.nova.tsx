@@ -15,7 +15,7 @@ function NewsEditor() {
     content: '',
     categories: '',
     tags: '',
-    image_to: '',
+    image_url: '',
     status: 'published'
   })
 
@@ -136,7 +136,7 @@ function NewsEditor() {
               className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm outline-none"
               placeholder="https://exemplo.com/imagem.jpg"
               value={formData.image_url}
-              onChange={e => setFormData({...formData, image_to: e.target.value})}
+              onChange={e => setFormData({...formData, image_url: e.target.value})}
             />
           </div>
 
