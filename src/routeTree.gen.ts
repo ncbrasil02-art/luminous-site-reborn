@@ -59,6 +59,7 @@ import { Route as PortfolioCriacaoDeSistemasRouteImport } from './routes/portfol
 import { Route as PortfolioCriacaoDeLogomarcasRouteImport } from './routes/portfolio.criacao-de-logomarcas'
 import { Route as PortfolioCriacaoDeAplicativosRouteImport } from './routes/portfolio.criacao-de-aplicativos'
 import { Route as PortfolioAplicativosCriadosRouteImport } from './routes/portfolio.aplicativos-criados'
+import { Route as NoticiasSlugRouteImport } from './routes/noticias.$slug'
 import { Route as EmpresaQuemSomosRouteImport } from './routes/empresa.quem-somos'
 import { Route as EmpresaNossaHistoriaRouteImport } from './routes/empresa.nossa-historia'
 import { Route as EmpresaClientesRouteImport } from './routes/empresa.clientes'
@@ -336,6 +337,11 @@ const PortfolioAplicativosCriadosRoute =
     path: '/portfolio/aplicativos-criados',
     getParentRoute: () => rootRouteImport,
   } as any)
+const NoticiasSlugRoute = NoticiasSlugRouteImport.update({
+  id: '/noticias/$slug',
+  path: '/noticias/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EmpresaQuemSomosRoute = EmpresaQuemSomosRouteImport.update({
   id: '/quem-somos',
   path: '/quem-somos',
@@ -371,6 +377,7 @@ export interface FileRoutesByFullPath {
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
+  '/noticias/$slug': typeof NoticiasSlugRoute
   '/portfolio/aplicativos-criados': typeof PortfolioAplicativosCriadosRoute
   '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
   '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
@@ -426,6 +433,7 @@ export interface FileRoutesByTo {
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
+  '/noticias/$slug': typeof NoticiasSlugRoute
   '/portfolio/aplicativos-criados': typeof PortfolioAplicativosCriadosRoute
   '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
   '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
@@ -482,6 +490,7 @@ export interface FileRoutesById {
   '/empresa/clientes': typeof EmpresaClientesRoute
   '/empresa/nossa-historia': typeof EmpresaNossaHistoriaRoute
   '/empresa/quem-somos': typeof EmpresaQuemSomosRoute
+  '/noticias/$slug': typeof NoticiasSlugRoute
   '/portfolio/aplicativos-criados': typeof PortfolioAplicativosCriadosRoute
   '/portfolio/criacao-de-aplicativos': typeof PortfolioCriacaoDeAplicativosRoute
   '/portfolio/criacao-de-logomarcas': typeof PortfolioCriacaoDeLogomarcasRoute
@@ -539,6 +548,7 @@ export interface FileRouteTypes {
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
     | '/empresa/quem-somos'
+    | '/noticias/$slug'
     | '/portfolio/aplicativos-criados'
     | '/portfolio/criacao-de-aplicativos'
     | '/portfolio/criacao-de-logomarcas'
@@ -594,6 +604,7 @@ export interface FileRouteTypes {
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
     | '/empresa/quem-somos'
+    | '/noticias/$slug'
     | '/portfolio/aplicativos-criados'
     | '/portfolio/criacao-de-aplicativos'
     | '/portfolio/criacao-de-logomarcas'
@@ -649,6 +660,7 @@ export interface FileRouteTypes {
     | '/empresa/clientes'
     | '/empresa/nossa-historia'
     | '/empresa/quem-somos'
+    | '/noticias/$slug'
     | '/portfolio/aplicativos-criados'
     | '/portfolio/criacao-de-aplicativos'
     | '/portfolio/criacao-de-logomarcas'
@@ -702,6 +714,7 @@ export interface RootRouteChildren {
   SoftwareRoute: typeof SoftwareRoute
   SolucoesWebRoute: typeof SolucoesWebRouteWithChildren
   TrabalhosRealizadosRoute: typeof TrabalhosRealizadosRoute
+  NoticiasSlugRoute: typeof NoticiasSlugRoute
   PortfolioAplicativosCriadosRoute: typeof PortfolioAplicativosCriadosRoute
   PortfolioCriacaoDeAplicativosRoute: typeof PortfolioCriacaoDeAplicativosRoute
   PortfolioCriacaoDeLogomarcasRoute: typeof PortfolioCriacaoDeLogomarcasRoute
@@ -1085,6 +1098,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PortfolioAplicativosCriadosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/noticias/$slug': {
+      id: '/noticias/$slug'
+      path: '/noticias/$slug'
+      fullPath: '/noticias/$slug'
+      preLoaderRoute: typeof NoticiasSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/empresa/quem-somos': {
       id: '/empresa/quem-somos'
       path: '/quem-somos'
@@ -1163,6 +1183,7 @@ const rootRouteChildren: RootRouteChildren = {
   SoftwareRoute: SoftwareRoute,
   SolucoesWebRoute: SolucoesWebRouteWithChildren,
   TrabalhosRealizadosRoute: TrabalhosRealizadosRoute,
+  NoticiasSlugRoute: NoticiasSlugRoute,
   PortfolioAplicativosCriadosRoute: PortfolioAplicativosCriadosRoute,
   PortfolioCriacaoDeAplicativosRoute: PortfolioCriacaoDeAplicativosRoute,
   PortfolioCriacaoDeLogomarcasRoute: PortfolioCriacaoDeLogomarcasRoute,

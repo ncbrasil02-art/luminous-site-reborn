@@ -11,11 +11,11 @@ export const Route = createFileRoute('/noticias/$slug')({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: `${loaderData.title} · NC Brasil` },
-      { name: 'description', content: loaderData.content.replace(/<[^>]*>/g, '').slice(0, 160) },
-      { property: 'og:title', content: loaderData.title },
+      { title: `${loaderData?.title || 'Notícia'} · NC Brasil` },
+      { name: 'description', content: loaderData?.content.replace(/<[^>]*>/g, '').slice(0, 160) || '' },
+      { property: 'og:title', content: loaderData?.title || '' },
       { property: 'og:type', content: 'article' },
-      { property: 'og:image', content: loaderData.image_url || '' },
+      { property: 'og:image', content: loaderData?.image_url || '' },
     ],
   }),
   component: NewsPostPage,
