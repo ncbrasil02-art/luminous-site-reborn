@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { BarChart3, CreditCard, MapPin, Package, Percent, Search, ShieldCheck, Store, Tag, Truck, Users, Zap } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-ofertas-cupom-marketplace";
+const URL = "https://www.ncbrasil.com.br/sistema-de-ofertas-cupom-marketplace";
 
 const lpFaq = [
         { q: "Aceita produtos físicos e serviços?", a: "Sim, arquitetura flexível para **produtos, serviços, ingressos, cursos e cupons** — cada tipo com fluxo próprio." },
@@ -21,14 +21,14 @@ export const Route = createFileRoute("/sistema-de-ofertas-cupom-marketplace")({
     h1: "Plataforma de Marketplace de Ofertas",
     breadcrumbs: [
       { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
+      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
       { name: "Marketplace de Ofertas", url: URL },
     ],
     faq: lpFaq,
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/sistemas", label: "Sistemas" }, { to: "/sistemas/sistema-de-ofertas-cupom-marketplace", label: "Marketplace de Ofertas" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-ofertas-cupom-marketplace", label: "Marketplace de Ofertas" }]}
       eyebrow="Marketplace"
       h1={<>Marketplace de <span className="text-gradient">Ofertas & Cupons</span></>}
       intro={<>Plataforma <strong className="text-foreground">multi-lojista</strong> pronta para operar como **Peixe Urbano, Groupon ou ClickOn**: cupons, ofertas relâmpago, split de pagamento e comissionamento automático.</>}

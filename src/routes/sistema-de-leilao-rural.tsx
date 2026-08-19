@@ -5,7 +5,7 @@ import {
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-leilao-rural";
+const URL = "https://www.ncbrasil.com.br/sistema-de-leilao-rural";
 
 const lpFaq = [
   { q: "O sistema emite GTA (Guia de Trânsito Animal) automaticamente?", a: "Sim. Integramos com **SIGSIF/MAPA e as Defesas Agropecuárias estaduais (IDARON, ADAPAR, IAGRO, IMA, IDAF, ADAF)** para emissão automática da GTA por lote arrematado, com validação de TAG, vacinas e brucelose/tuberculose." },
@@ -29,7 +29,7 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
     h1: "Plataforma para Leilões Rurais e Agropecuários",
     breadcrumbs: [
       { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
+      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
       { name: "Leilão Rural", url: URL },
     ],
     faq: lpFaq,
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
   }),
   component: () => (
     <LandingPage
-      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/sistemas", label: "Sistemas" }, { to: "/sistemas/sistema-de-leilao-rural", label: "Leilão Rural" }]}
+      breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-leilao-rural", label: "Leilão Rural" }]}
       eyebrow="Agronegócio · Pecuária · Genética"
       h1={<>Plataforma completa para <span className="text-gradient">Leilões Rurais e Agropecuários</span></>}
       intro={<>A NC Brasil desenvolve o <strong className="text-foreground">software mais avançado do agronegócio brasileiro</strong> para leiloeiros rurais, cabanhas e associações de raça. Opere leilões de <strong className="text-foreground">bovinos, equinos, ovinos, propriedades e maquinário</strong> com transmissão HD, emissão automática de GTA, pesagem integrada e pagamento via Pix — tudo em uma plataforma proprietária, sem mensalidade abusiva.</>}

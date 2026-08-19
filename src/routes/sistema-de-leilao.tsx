@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-leilao";
+const URL = "https://www.ncbrasil.com.br/sistema-de-leilao";
 
 const lpFaq = [
   { q: "A plataforma é homologada nos Tribunais de Justiça?", a: "Sim. A plataforma NC Brasil é **homologada em 27 Tribunais de Justiça** (AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO), além de atender **TJ/SP, Detran, leilões judiciais, extrajudiciais, restritos e venda direta**." },
@@ -34,7 +34,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
     h1: "Sistema Profissional para Leilões Judiciais e Extrajudiciais",
     breadcrumbs: [
       { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
+      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
       { name: "Sistema de Leilão", url: URL },
     ],
     faq: lpFaq,
@@ -43,8 +43,8 @@ export const Route = createFileRoute("/sistema-de-leilao")({
     <LandingPage
       breadcrumbs={[
         { to: "/", label: "Home" },
-        { to: "/sistemas", label: "Sistemas" },
-        { to: "/sistemas/sistema-de-leilao", label: "Sistema de Leilão" },
+        { to: "/nossos-sistemas", label: "Sistemas" },
+        { to: "/sistema-de-leilao", label: "Sistema de Leilão" },
       ]}
       eyebrow="Sistema de Leilão"
       h1={<>Plataforma para <span className="text-gradient">Leilões Online</span> homologada em 27 Tribunais de Justiça</>}

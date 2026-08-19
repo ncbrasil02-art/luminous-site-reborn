@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/sistemas/sistema-de-rifas";
+const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
 
 export const lpFaq = [
   { q: "É seguro e legal criar rifa online no Brasil?", a: "Sim. Existem **três caminhos legais** que orientamos você a adotar: **título de capitalização** (via seguradora parceira), **promoção comercial autorizada pela SECAP/Ministério da Fazenda** ou **rifa filantrópica de associação/ONG sem fins lucrativos**. O sistema já vem preparado com **termos, regulamento gerado automaticamente e prestação de contas transparente**." },
@@ -33,7 +33,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
     h1: "Sistema de Rifas Online",
     breadcrumbs: [
       { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Sistemas", url: "https://www.ncbrasil.com.br/sistemas" },
+      { name: "Sistemas", url: "https://www.ncbrasil.com.br/nossos-sistemas" },
       { name: "Sistema de Rifas", url: URL },
     ],
     faq: lpFaq,
@@ -42,8 +42,8 @@ export const Route = createFileRoute("/sistema-de-rifas")({
     <LandingPage
       breadcrumbs={[
         { to: "/", label: "Home" },
-        { to: "/sistemas", label: "Sistemas" },
-        { to: "/sistemas/sistema-de-rifas", label: "Sistema de Rifas" },
+        { to: "/nossos-sistemas", label: "Sistemas" },
+        { to: "/sistema-de-rifas", label: "Sistema de Rifas" },
       ]}
       eyebrow="Rifas Online · Legalizadas · Pix Instantâneo"
       h1={<>Sistema para <span className="text-gradient">Criar Rifa Online</span> — Legalizado, Escalável e Sem Taxa por Cota</>}
