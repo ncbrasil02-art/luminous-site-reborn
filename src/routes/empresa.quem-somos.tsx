@@ -19,9 +19,9 @@ export const Route = createFileRoute("/empresa/quem-somos")({
     canonical: URL,
     h1: "Quem Somos — NC Brasil",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Empresa", url: "https://www.ncbrasil.com.br/empresa" },
-      { name: "Quem Somos", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Empresa", to: "https://www.ncbrasil.com.br/empresa" },
+      { label: "Quem Somos", to: URL },
     ],
     faq: lpFaq,
   }),
