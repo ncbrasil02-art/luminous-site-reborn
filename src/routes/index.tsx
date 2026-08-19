@@ -22,6 +22,7 @@ const SITE_URL = "https://www.ncbrasil.com.br";
 const OG_IMAGE = `${SITE_URL}/og-home.jpg`;
 
 import { MagazineSection } from "@/components/MagazineSection";
+import { NewsDisplay } from "@/components/NewsDisplay";
 
 
 const homeJsonLd = {
@@ -508,6 +509,7 @@ function HomePage() {
           </Reveal>
         </div>
       </section>
+      <NewsDisplay />
       <MagazineSection />
     </>
   );
