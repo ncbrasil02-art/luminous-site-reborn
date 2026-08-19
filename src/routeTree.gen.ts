@@ -25,6 +25,7 @@ import { Route as DicasParaECommerceRouteImport } from './routes/dicas-para-e-co
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
+import { Route as NoticiasIndexRouteImport } from './routes/noticias.index'
 import { Route as SolucoesWebSeoGoogleRouteImport } from './routes/solucoes-web.seo-google'
 import { Route as SolucoesWebMarketingDigitalRouteImport } from './routes/solucoes-web.marketing-digital'
 import { Route as SolucoesWebLojaVirtualRouteImport } from './routes/solucoes-web.loja-virtual'
@@ -143,6 +144,11 @@ const IndexRoute = IndexRouteImport.update({
 const SistemasIndexRoute = SistemasIndexRouteImport.update({
   id: '/sistemas/',
   path: '/sistemas/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NoticiasIndexRoute = NoticiasIndexRouteImport.update({
+  id: '/noticias/',
+  path: '/noticias/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SolucoesWebSeoGoogleRoute = SolucoesWebSeoGoogleRouteImport.update({
@@ -398,6 +404,7 @@ export interface FileRoutesByFullPath {
   '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
   '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
+  '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
 }
 export interface FileRoutesByTo {
@@ -452,6 +459,7 @@ export interface FileRoutesByTo {
   '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
   '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
+  '/noticias': typeof NoticiasIndexRoute
   '/sistemas': typeof SistemasIndexRoute
 }
 export interface FileRoutesById {
@@ -507,6 +515,7 @@ export interface FileRoutesById {
   '/solucoes-web/loja-virtual': typeof SolucoesWebLojaVirtualRoute
   '/solucoes-web/marketing-digital': typeof SolucoesWebMarketingDigitalRoute
   '/solucoes-web/seo-google': typeof SolucoesWebSeoGoogleRoute
+  '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
 }
 export interface FileRouteTypes {
@@ -563,6 +572,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/loja-virtual'
     | '/solucoes-web/marketing-digital'
     | '/solucoes-web/seo-google'
+    | '/noticias/'
     | '/sistemas/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -617,6 +627,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/loja-virtual'
     | '/solucoes-web/marketing-digital'
     | '/solucoes-web/seo-google'
+    | '/noticias'
     | '/sistemas'
   id:
     | '__root__'
@@ -671,6 +682,7 @@ export interface FileRouteTypes {
     | '/solucoes-web/loja-virtual'
     | '/solucoes-web/marketing-digital'
     | '/solucoes-web/seo-google'
+    | '/noticias/'
     | '/sistemas/'
   fileRoutesById: FileRoutesById
 }
@@ -717,6 +729,7 @@ export interface RootRouteChildren {
   SistemasSistemaDeRaspadinhaRoute: typeof SistemasSistemaDeRaspadinhaRoute
   SistemasSistemaDeRevendaDeVeiculosRoute: typeof SistemasSistemaDeRevendaDeVeiculosRoute
   SistemasSistemaDeRifasRoute: typeof SistemasSistemaDeRifasRoute
+  NoticiasIndexRoute: typeof NoticiasIndexRoute
   SistemasIndexRoute: typeof SistemasIndexRoute
 }
 
@@ -832,6 +845,13 @@ declare module '@tanstack/react-router' {
       path: '/sistemas'
       fullPath: '/sistemas/'
       preLoaderRoute: typeof SistemasIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/noticias/': {
+      id: '/noticias/'
+      path: '/noticias'
+      fullPath: '/noticias/'
+      preLoaderRoute: typeof NoticiasIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/solucoes-web/seo-google': {
@@ -1174,6 +1194,7 @@ const rootRouteChildren: RootRouteChildren = {
   SistemasSistemaDeRevendaDeVeiculosRoute:
     SistemasSistemaDeRevendaDeVeiculosRoute,
   SistemasSistemaDeRifasRoute: SistemasSistemaDeRifasRoute,
+  NoticiasIndexRoute: NoticiasIndexRoute,
   SistemasIndexRoute: SistemasIndexRoute,
 }
 export const routeTree = rootRouteImport
