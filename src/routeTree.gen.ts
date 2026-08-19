@@ -23,6 +23,7 @@ import { Route as ErrosNaCriacaoDeUmAplicativoRouteImport } from './routes/erros
 import { Route as EmpresaRouteImport } from './routes/empresa'
 import { Route as DicasParaECommerceRouteImport } from './routes/dicas-para-e-commerce'
 import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
 import { Route as NoticiasIndexRouteImport } from './routes/noticias.index'
@@ -139,6 +140,11 @@ const DicasParaECommerceRoute = DicasParaECommerceRouteImport.update({
 const ContatoRoute = ContatoRouteImport.update({
   id: '/contato',
   path: '/contato',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -385,6 +391,7 @@ const ApiPublicRssXmlRoute = ApiPublicRssXmlRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRouteWithChildren
@@ -445,6 +452,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRouteWithChildren
@@ -506,6 +514,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/contato': typeof ContatoRoute
   '/dicas-para-e-commerce': typeof DicasParaECommerceRoute
   '/empresa': typeof EmpresaRouteWithChildren
@@ -568,6 +577,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/admin'
     | '/contato'
     | '/dicas-para-e-commerce'
     | '/empresa'
@@ -628,6 +638,7 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/admin'
     | '/contato'
     | '/dicas-para-e-commerce'
     | '/empresa'
@@ -688,6 +699,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/admin'
     | '/contato'
     | '/dicas-para-e-commerce'
     | '/empresa'
@@ -749,6 +761,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRoute
   ContatoRoute: typeof ContatoRoute
   DicasParaECommerceRoute: typeof DicasParaECommerceRoute
   EmpresaRoute: typeof EmpresaRouteWithChildren
@@ -897,6 +910,13 @@ declare module '@tanstack/react-router' {
       path: '/contato'
       fullPath: '/contato'
       preLoaderRoute: typeof ContatoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -1250,6 +1270,7 @@ const SolucoesWebRouteWithChildren = SolucoesWebRoute._addFileChildren(
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRoute,
   ContatoRoute: ContatoRoute,
   DicasParaECommerceRoute: DicasParaECommerceRoute,
   EmpresaRoute: EmpresaRouteWithChildren,
