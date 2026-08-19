@@ -80,7 +80,7 @@ export function buildStubMeta({
   keywords,
   canonical,
   faq,
-  breadcrumbs,
+    breadcrumbs: breadcrumbs?.map(b => ({ name: b.label, url: b.to })),
 }: {
   title: string;
   description: string;
