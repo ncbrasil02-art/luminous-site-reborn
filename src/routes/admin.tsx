@@ -1,5 +1,5 @@
 import { createFileRoute, Link, Outlet } from '@tanstack/react-router'
-import { LayoutDashboard, Newspaper, Settings, LogOut } from 'lucide-react'
+import { LayoutDashboard, Newspaper, Settings, LogOut, Import } from 'lucide-react'
 
 export const Route = createFileRoute('/admin')({
   component: AdminLayout
