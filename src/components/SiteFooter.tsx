@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Instagram, Mail, MapPin, Phone, Clock } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Clock } from "lucide-react";
 import { NewsDisplay } from "./NewsDisplay";
 import { trackClick } from "@/lib/analytics";
 
@@ -105,6 +105,16 @@ export function SiteFooter() {
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/new-commerce-brasil"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackClick("LinkedIn", "Footer Social")}
+                className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
               </a>
             </div>
           </div>

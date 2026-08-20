@@ -21,6 +21,7 @@ import {
   Target,
   Facebook,
   Instagram,
+  Linkedin,
   Lightbulb,
   Gavel,
   Tractor,
@@ -194,6 +195,16 @@ export function SiteHeader() {
               aria-label="Instagram"
             >
               <Instagram className="h-4 w-4" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/new-commerce-brasil"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackClick("LinkedIn", "Header Social")}
+              className="text-muted-foreground transition-colors hover:text-primary"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-4 w-4" />
             </a>
           </div>
           <Link
