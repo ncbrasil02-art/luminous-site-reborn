@@ -113,6 +113,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           "**Cotas ilimitadas** — de 100 a 10 milhões por campanha",
           "**Módulo de afiliados** com comissão automática",
         ],
+        image: rifasLogoAsset.url
       }}
       benefits={[
         { icon: Trophy, title: "Sorteio Loteria Federal", desc: "Extração oficial pela **Loteria Federal ou por cota premiada instantânea** — hash público e auditável para cada bilhete." },
