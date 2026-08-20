@@ -1,45 +1,33 @@
-import json
 import os
-from pathlib import Path
+import json
 
-# Mapping current asset filenames to user uploads
-# We need to map the imports in sistema-de-leilao.tsx to the correct user uploads
-mapping = {
-    "sistema-de-leilao-logo.png": "Azul_e_Vermelho_Moderno_Anúncio_de_Motocicleta_Post_para_Instagram_8.png",
-    "sistema-de-leilao-configuracoes.png": "transferir_11.png",
-    "sistema-de-leilao-dashboard-premium.png": "transferir_15_dd.png",
-    "sistema-de-leilao-cards.png": "transferir_15.png",
-    "sistema-de-leilao-home-premium.png": "FireShot_Capture_167_-_Leilão_Plus_-_Leilões_Judiciais_e_Extrajudiciais_Premium_-_id-preview--320651e5-d640-45d2-ae47-9a5eadd052a3.lovable.app.png",
-    "sistema-de-leilao-vitrine.png": "FireShot_Capture_159_-_Leilão_Plus_-_Leilões_Judiciais_e_Extrajudiciais_-_id-preview--320651e5-d640-45d2-ae47-9a5eadd052a3.lovable.app.png",
-    "sistema-de-leilao-card-detalhe.png": "transferir_8.png",
-    "sistema-de-leilao-painel-rifas.png": "dashboard-pc.png",
-    "sistema-de-leilao-pagina-lote.png": "transferir_7.png"
-}
+asset_files = [
+    "src/assets/sistema-de-leilao-logo.png.asset.json",
+    "src/assets/sistema-de-leilao-home-premium.png.asset.json",
+    "src/assets/sistema-de-leilao-vitrine.png.asset.json",
+    "src/assets/sistema-de-leilao-dashboard-premium.png.asset.json",
+    "src/assets/sistema-de-leilao-cards.png.asset.json",
+    "src/assets/sistema-de-leilao-configuracoes.png.asset.json",
+    "src/assets/sistema-de-leilao-card-detalhe.png.asset.json",
+    "src/assets/sistema-de-leilao-painel-rifas.png.asset.json",
+    "src/assets/sistema-de-leilao-pagina-lote.png.asset.json"
+]
 
-assets_dir = Path("src/assets")
-uploads_dir = Path("/mnt/user-uploads")
-
-for asset_name, upload_name in mapping.items():
-    asset_json_path = assets_dir / f"{asset_name}.asset.json"
-    upload_path = uploads_dir / upload_name
-    
-    if not upload_path.exists():
-        print(f"Upload not found: {upload_name}")
+for file_path in asset_files:
+    if not os.path.exists(file_path):
+        print(f"File {file_path} not found.")
         continue
-
-    # Use a relative URL for local development/preview that maps to user uploads
-    # In this environment, /mnt/user-uploads/ is mounted at /user-uploads/ in the browser
-    # But for asset JSONs, we usually need a specific format.
-    # However, for immediate fix, we can point directly to the user upload path
-    # which is accessible via the static file server.
     
-    asset_data = {
-        "version": 1,
-        "url": f"/user-uploads/{upload_name}",
-        "original_filename": upload_name,
-        "content_type": "image/png" if upload_name.endswith(".png") else "image/jpeg"
-    }
+    with open(file_path, 'r') as f:
+        data = json.load(f)
     
-    with open(asset_json_path, "w") as f:
-        json.dump(asset_data, f, indent=2)
-    print(f"Updated {asset_json_path}")
+    # URL Decode the path if it contains escaped characters like \u00f3
+    # The JSON loader already handled the \u escapes, but the browser might 
+    # need them encoded for the URL if the server doesn't handle literal UTF-8 in paths.
+    # However, /user-uploads/ is usually handled by the dev server.
+    
+    print(f"Checking {file_path}: {data['url']}")
+    
+    # If the URL looks okay but isn't loading, it might be due to the spaces or special chars 
+    # not being correctly handled in the JSON URL field vs the actual file system.
+    
