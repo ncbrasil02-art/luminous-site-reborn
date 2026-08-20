@@ -38,6 +38,7 @@ export function buildMeta(options: MetaOptions) {
   } = options;
 
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} · ${SITE_NAME}`;
+  const absoluteCanonical = canonical ? (canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical.startsWith("/") ? "" : "/"}${canonical}`) : SITE_URL;
   const absoluteOgImage = ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`;
 
   const meta = [
@@ -47,7 +48,7 @@ export function buildMeta(options: MetaOptions) {
     { property: "og:title", content: fullTitle },
     { property: "og:description", content: description },
     { property: "og:type", content: ogType },
-    { property: "og:url", content: canonical || SITE_URL },
+    { property: "og:url", content: absoluteCanonical },
     { property: "og:image", content: absoluteOgImage },
     { property: "og:image:width", content: "1200" },
     { property: "og:image:height", content: "630" },
@@ -141,9 +142,9 @@ export function buildMeta(options: MetaOptions) {
   return {
     meta,
     links: [
-      { rel: "canonical", href: canonical ? (canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical}`) : SITE_URL },
-      { rel: "alternate", hrefLang: "pt-BR", href: canonical ? (canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical}`) : SITE_URL },
-      { rel: "alternate", hrefLang: "x-default", href: canonical ? (canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical}`) : SITE_URL },
+      { rel: "canonical", href: absoluteCanonical },
+      { rel: "alternate", hrefLang: "pt-BR", href: absoluteCanonical },
+      { rel: "alternate", hrefLang: "x-default", href: absoluteCanonical },
       { rel: "icon", type: "image/png", href: `${SITE_URL}/favicon.png` },
       { rel: "shortcut icon", href: `${SITE_URL}/favicon.png` },
       { rel: "apple-touch-icon", href: `${SITE_URL}/favicon.png` },

@@ -18,14 +18,12 @@ export const loader = async () => {
     "/nossos-sistemas",
     "/cases",
     "/trabalhos-realizados",
-    // Services
     "/servicos/desenvolvimento",
     "/servicos/sistemas-web",
     "/servicos/aplicativos",
     "/servicos/identidade-visual",
     "/servicos/google-ads",
     "/servicos/consultoria",
-    // Systems
     "/sistema-de-leilao",
     "/sistema-de-leilao-rural",
     "/sistema-de-leilao-de-centavos",
@@ -35,19 +33,15 @@ export const loader = async () => {
     "/sistema-de-revenda-de-veiculos",
     "/classificados-de-veiculos",
     "/plataforma-chinesa-apostas-cassino",
-    // Portfolio
     "/portfolio/sites-criados",
     "/portfolio/lojas-virtuais-criadas",
     "/portfolio/criacao-de-aplicativos",
     "/portfolio/sistemas-criados",
     "/portfolio/identidade-visual",
-    // Blog
     "/noticias",
   ];
 
   const newsRoutes = newsData.map((post) => `/noticias/${post.slug}`);
-
-  // Unique categories
   const categories = Array.from(new Set(newsData.flatMap(p => p.categories)));
   const categoryRoutes = categories.map(cat => `/noticias/categoria/${cat.toLowerCase().replace(/\s+/g, '-')}`);
 
@@ -58,12 +52,13 @@ export const loader = async () => {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${allRoutes
     .map((route) => {
+      const loc = `${SITE_URL}${route.startsWith("/") ? "" : "/"}${route}`;
       return `
   <url>
-    <loc>${SITE_URL}${route}</loc>
+    <loc>${loc}</loc>
     <lastmod>${date}</lastmod>
-    <changefreq>${route === "" ? "daily" : "weekly"}</changefreq>
-    <priority>${route === "" ? "1.0" : route.startsWith("/noticias/") ? "0.6" : "0.8"}</priority>
+    <changefreq>${route === "" || route === "/" ? "daily" : "weekly"}</changefreq>
+    <priority>${route === "" || route === "/" ? "1.0" : route.includes("sistema-de-") ? "0.9" : "0.7"}</priority>
   </url>`;
     })
     .join("")}
