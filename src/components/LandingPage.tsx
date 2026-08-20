@@ -12,6 +12,7 @@ import {
   MessageCircle,
   Minus,
   Rocket,
+  Search,
   Sparkles,
   Star,
   X,
@@ -381,7 +382,8 @@ export function LandingPage({
                     <div className="relative group perspective-1000">
                       <motion.div 
                         whileHover={{ rotateY: i % 2 === 0 ? 5 : -5, rotateX: 2, scale: 1.02 }}
-                        className="relative overflow-hidden rounded-3xl border border-primary/30 shadow-2xl transition-all duration-500"
+                        className="relative overflow-hidden rounded-3xl border border-primary/30 shadow-2xl transition-all duration-500 cursor-zoom-in"
+                        onClick={() => window.open(img, '_blank')}
                       >
                         <img 
                           src={img} 
@@ -394,7 +396,11 @@ export function LandingPage({
                             }
                           }}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                          <div className="bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium flex items-center gap-2">
+                            <Search className="h-4 w-4" /> Ampliar imagem
+                          </div>
+                        </div>
                       </motion.div>
                       <div className="absolute -inset-4 -z-10 bg-primary/10 blur-3xl rounded-full opacity-50 group-hover:opacity-100 transition-opacity" />
                     </div>
