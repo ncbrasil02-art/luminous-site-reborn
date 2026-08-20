@@ -7,27 +7,6 @@ import {
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
 import { SITE_URL } from "@/lib/seo";
-import configUrl from "@/assets/sistema-de-leilao-configuracoes.png.asset.json";
-import dashboardUrl from "@/assets/sistema-de-leilao-dashboard-premium.png.asset.json";
-import cardsUrl from "@/assets/sistema-de-leilao-cards.png.asset.json";
-import homeUrl from "@/assets/sistema-de-leilao-home-premium.png.asset.json";
-import vitrineUrl from "@/assets/sistema-de-leilao-vitrine.png.asset.json";
-import mobileUrl from "@/assets/sistema-de-leilao-card-detalhe.png.asset.json";
-import painelUrl from "@/assets/sistema-de-leilao-painel-online.png.asset.json";
-import dashDetailUrl from "@/assets/sistema-de-leilao-dashboard-detalhe.png.asset.json";
-
-// Partner Logos
-import tjrsLogo from "@/assets/partners/tjrs.webp.asset.json";
-import uniprimeLogo from "@/assets/partners/uniprime.webp.asset.json";
-import unicredLogo from "@/assets/partners/unicred.webp.asset.json";
-import sicrediLogo from "@/assets/partners/sicredi.webp.asset.json";
-import sicoobLogo from "@/assets/partners/sicoob.webp.asset.json";
-import cresolLogo from "@/assets/partners/cresol.webp.asset.json";
-import caixaLogo from "@/assets/partners/caixa.webp.asset.json";
-import embassyLogo from "@/assets/partners/embaixada_usa.webp.asset.json";
-import detranmsLogo from "@/assets/partners/detranms.webp.asset.json";
-import detranscLogo from "@/assets/partners/detransc.webp.asset.json";
-
 import { testimonialsData } from "@/lib/testimonials.data";
 
 
@@ -73,12 +52,12 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       imageKeyword="sistema de leilão"
       showParallaxshowcase
       showcaseImages={[
-        (homeUrl as any).url,
-        (vitrineUrl as any).url,
-        (dashboardUrl as any).url,
-        (dashDetailUrl as any).url,
-        (cardsUrl as any).url,
-        (painelUrl as any).url,
+        "/sistema-de-leilao/home-premium.png",
+        "/sistema-de-leilao/vitrine.png",
+        "/sistema-de-leilao/dashboard-premium.png",
+        "/sistema-de-leilao/dashboard-detalhe.png",
+        "/sistema-de-leilao/cards.png",
+        "/sistema-de-leilao/painel-online.png",
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
@@ -133,16 +112,16 @@ export const Route = createFileRoute("/sistema-de-leilao")({
           <PartnerCarousel 
             title="Sistema Homologado e Utilizado por Grandes Órgãos"
             logos={[
-              { name: "TJRS", url: "/__l5e/assets-v1/2e0a84c2-380f-4712-9511-2b7311d62af0/tjrs.webp", link: "https://www.tjrs.jus.br/" },
-              { name: "Caixa", url: "/__l5e/assets-v1/ced62ae3-afba-4a61-809f-97d79ab23244/caixa.webp", link: "https://www.caixa.gov.br/" },
-              { name: "Detran-MS", url: "/__l5e/assets-v1/451608d1-5be9-4ab4-aae6-17f4c33598a6/detranms.webp", link: "https://www.detran.ms.gov.br/" },
-              { name: "Detran-SC", url: "/__l5e/assets-v1/fd087bbc-be89-48a1-924c-d4da50604d8a/detransc.webp", link: "https://www.detran.sc.gov.br/" },
-              { name: "Embaixada EUA", url: "/__l5e/assets-v1/8e37ba94-62ba-49a8-8ec5-ea6eb02e0867/embaixada_usa.webp" },
-              { name: "Sicoob", url: "/__l5e/assets-v1/c8817572-891e-4a1d-b994-28f556886fc1/sicoob.webp", link: "https://www.sicoob.com.br/" },
-              { name: "Sicredi", url: "/__l5e/assets-v1/f4c7db95-719b-440c-8cf4-f0ece8706ef6/sicredi.webp", link: "https://www.sicredi.com.br/" },
-              { name: "Unicred", url: "/__l5e/assets-v1/15c3b6cb-8e09-4bbd-a776-600ffa7a4c1d/unicred.webp", link: "https://www.unicred.com.br/" },
-              { name: "Uniprime", url: "/__l5e/assets-v1/4804342e-1788-4a01-bf5a-c3a43ccee735/uniprime.webp", link: "https://www.uniprimebr.com.br/" },
-              { name: "Cresol", url: "/__l5e/assets-v1/09b7bbe8-553b-4d13-82b7-42878ac830fa/cresol.webp", link: "https://cresol.com.br/" },
+              { name: "TJRS", url: "/partners/tjrs.webp", link: "https://www.tjrs.jus.br/" },
+              { name: "Caixa", url: "/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
+              { name: "Detran-MS", url: "/partners/detranms.webp", link: "https://www.detran.ms.gov.br/" },
+              { name: "Detran-SC", url: "/partners/detransc.webp", link: "https://www.detran.sc.gov.br/" },
+              { name: "Embaixada EUA", url: "/partners/embaixada_usa.webp" },
+              { name: "Sicoob", url: "/partners/sicoob.webp", link: "https://www.sicoob.com.br/" },
+              { name: "Sicredi", url: "/partners/sicredi.webp", link: "https://www.sicredi.com.br/" },
+              { name: "Unicred", url: "/partners/unicred.webp", link: "https://www.unicred.com.br/" },
+              { name: "Uniprime", url: "/partners/uniprime.webp", link: "https://www.uniprimebr.com.br/" },
+              { name: "Cresol", url: "/partners/cresol.webp", link: "https://cresol.com.br/" },
             ]}
           />
         </div>
@@ -151,7 +130,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
 
         title: <>Sua <span className="text-gradient">Plataforma de Leilão Online</span> — Homologada e Sem Mensalidade</>,
         desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> é a ferramenta ideal para quem deseja <strong className="text-foreground">ver o site de leilões</strong> operando com máxima performance. Entregamos um <strong className="text-foreground">sistema online para leiloeiro</strong> com licença perpétua e código-fonte. Nossa <strong className="text-foreground">plataforma de pregões online</strong> é robusta, white-label e preparada para leilões judiciais e extrajudiciais. Diferente de soluções como <strong className="text-foreground">sas leilão</strong> genéricas, oferecemos personalização total para o seu negócio.</>,
-        image: (configUrl as any).url,
+        image: "/sistema-de-leilao/configuracoes.png",
         highlights: [
           "**Plataforma proprietária** — sem aluguel mensal, taxa 0% por lance",
           "**Homologada em 27 TJs** + TJ/SP + Detran + PJe",
@@ -271,9 +250,9 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       }}
       galleryTitle={<>Interface do <span className="text-gradient">Sistema para Leiloeiro</span></>}
       gallery={[
-        { src: (cardsUrl as any).url, alt: "Sistema de Leilão - Modelos de Cards", caption: "Escolha entre diversos modelos de cards para seus lotes." },
-        { src: (mobileUrl as any).url, alt: "Sistema de Leilão - Visualização Mobile", caption: "Experiência mobile fluida para arrematantes." },
-        { src: (painelUrl as any).url, alt: "Sistema de Leilão - Painel Financeiro", caption: "Controle total de faturamento e lances." },
+        { src: "/sistema-de-leilao/cards.png", alt: "Sistema de Leilão - Modelos de Cards", caption: "Escolha entre diversos modelos de cards para seus lotes." },
+        { src: "/sistema-de-leilao/card-detalhe.png", alt: "Sistema de Leilão - Visualização Mobile", caption: "Experiência mobile fluida para arrematantes." },
+        { src: "/sistema-de-leilao/painel-online.png", alt: "Sistema de Leilão - Painel Financeiro", caption: "Controle total de faturamento e lances." },
       ]}
       testimonials={testimonialsData.slice(0, 3)}
       faq={lpFaq}
