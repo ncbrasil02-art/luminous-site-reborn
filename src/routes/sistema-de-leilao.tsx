@@ -52,12 +52,12 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       imageKeyword="sistema de leilão"
       showParallaxshowcase
       showcaseImages={[
-        "/sistema-de-leilao/home-premium.png",
-        "/sistema-de-leilao/vitrine.png",
-        "/sistema-de-leilao/dashboard-premium.png",
-        "/sistema-de-leilao/dashboard-detalhe.png",
-        "/sistema-de-leilao/cards.png",
-        "/sistema-de-leilao/painel-online.png",
+        "/img-sistema-de-leilao/home-premium.png",
+        "/img-sistema-de-leilao/vitrine.png",
+        "/img-sistema-de-leilao/dashboard-premium.png",
+        "/img-sistema-de-leilao/dashboard-detalhe.png",
+        "/img-sistema-de-leilao/cards.png",
+        "/img-sistema-de-leilao/painel-online.png",
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
@@ -130,7 +130,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
 
         title: <>Sua <span className="text-gradient">Plataforma de Leilão Online</span> — Homologada e Sem Mensalidade</>,
         desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> é a ferramenta ideal para quem deseja <strong className="text-foreground">ver o site de leilões</strong> operando com máxima performance. Entregamos um <strong className="text-foreground">sistema online para leiloeiro</strong> com licença perpétua e código-fonte. Nossa <strong className="text-foreground">plataforma de pregões online</strong> é robusta, white-label e preparada para leilões judiciais e extrajudiciais. Diferente de soluções como <strong className="text-foreground">sas leilão</strong> genéricas, oferecemos personalização total para o seu negócio.</>,
-        image: "/sistema-de-leilao/configuracoes.png",
+        image: "/img-sistema-de-leilao/configuracoes.png",
         highlights: [
           "**Plataforma proprietária** — sem aluguel mensal, taxa 0% por lance",
           "**Homologada em 27 TJs** + TJ/SP + Detran + PJe",
@@ -250,9 +250,9 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       }}
       galleryTitle={<>Interface do <span className="text-gradient">Sistema para Leiloeiro</span></>}
       gallery={[
-        { src: "/sistema-de-leilao/cards.png", alt: "Sistema de Leilão - Modelos de Cards", caption: "Escolha entre diversos modelos de cards para seus lotes." },
-        { src: "/sistema-de-leilao/card-detalhe.png", alt: "Sistema de Leilão - Visualização Mobile", caption: "Experiência mobile fluida para arrematantes." },
-        { src: "/sistema-de-leilao/painel-online.png", alt: "Sistema de Leilão - Painel Financeiro", caption: "Controle total de faturamento e lances." },
+        { src: "/img-sistema-de-leilao/cards.png", alt: "Sistema de Leilão - Modelos de Cards", caption: "Escolha entre diversos modelos de cards para seus lotes." },
+        { src: "/img-sistema-de-leilao/card-detalhe.png", alt: "Sistema de Leilão - Visualização Mobile", caption: "Experiência mobile fluida para arrematantes." },
+        { src: "/img-sistema-de-leilao/painel-online.png", alt: "Sistema de Leilão - Painel Financeiro", caption: "Controle total de faturamento e lances." },
       ]}
       testimonials={testimonialsData.slice(0, 3)}
       faq={lpFaq}
