@@ -65,3 +65,27 @@ export const testimonialsData = [
     rating: 5
   }
 ];
+
+export const rifasTestimonials = [
+  {
+    quote: "A plataforma NC Rifas mudou minha vida. No primeiro mês faturei o que levava um ano no meu antigo emprego. O sistema de cotas premiadas é o que mais vende.",
+    author: "Marcos Oliveira",
+    role: "Influenciador & Organizador",
+    image: (eder as any).url,
+    rating: 5
+  },
+  {
+    quote: "Já usei outras plataformas, mas a NC Brasil é a única que não cobra taxa por cota. Economizo mais de R$ 10 mil por rifa só em taxas.",
+    author: "Juliana Santos",
+    role: "Empreendedora Digital",
+    image: (carla as any).url,
+    rating: 5
+  },
+  {
+    quote: "O suporte é nota 10. Precisei de uma integração rápida com meu gateway e resolveram em poucas horas. Meus clientes adoram a velocidade do Pix.",
+    author: "Ricardo Lima",
+    role: "Portal de Sorteios",
+    image: (hugo as any).url,
+    rating: 5
+  }
+];
