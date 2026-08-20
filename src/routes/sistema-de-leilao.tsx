@@ -5,6 +5,14 @@ import {
   Sparkles, Target, TrendingUp, Users, Video, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import logoUrl from "@/assets/sistema-de-leilao-logo.png.asset.json";
+import configUrl from "@/assets/sistema-de-leilao-configuracoes.png.asset.json";
+import dashboardUrl from "@/assets/sistema-de-leilao-dashboard-premium.png.asset.json";
+import cardsUrl from "@/assets/sistema-de-leilao-cards.png.asset.json";
+import homeUrl from "@/assets/sistema-de-leilao-home-premium.png.asset.json";
+import vitrineUrl from "@/assets/sistema-de-leilao-vitrine.png.asset.json";
+import mobileUrl from "@/assets/sistema-de-leilao-card-detalhe.png.asset.json";
+import painelUrl from "@/assets/sistema-de-leilao-painel-rifas.png.asset.json";
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao";
 
@@ -42,13 +50,28 @@ export const Route = createFileRoute("/sistema-de-leilao")({
   component: () => (
     <LandingPage
       imageKeyword="sistema de leilão"
+      showParallaxshowcase
+      showcaseImages={[
+        (homeUrl as any).url,
+        (vitrineUrl as any).url,
+        (dashboardUrl as any).url,
+      ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
         { to: "/nossos-sistemas", label: "Sistemas" },
         { to: "/sistema-de-leilao", label: "Sistema de Leilão" },
       ]}
       eyebrow="Sistema para Leiloeiro"
-      h1={<>Sistema de Leilão <span className="text-gradient">NC Brasil</span>: Sua Plataforma de Leilão Online</>}
+      h1={
+        <div className="flex flex-col items-center gap-8">
+          <img 
+            src={(logoUrl as any).url} 
+            alt="NC Leilões - Plataforma de Leilão" 
+            className="h-20 md:h-28 w-auto filter drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]"
+          />
+          <span>Sistema de Leilão <span className="text-gradient">NC Brasil</span>: Sua Plataforma de Leilão Online</span>
+        </div>
+      }
       intro={<>Aumente seus pregões com a melhor <strong className="text-foreground">plataforma de leilões</strong> do mercado. O nosso <strong className="text-foreground">sistema de leilão online</strong> é homologado em 27 Tribunais de Justiça e utilizado por grandes <strong className="text-foreground">leiloeiros oficiais</strong>. Se você busca um <strong className="text-foreground">sistema para leiloeiro</strong> completo, com pregão eletrônico simultâneo e <strong className="text-foreground">plataforma de pregões online</strong>, a NC Brasil oferece a solução definitiva: <strong className="text-foreground">seu site de leilão</strong> próprio, sem aluguel mensal e com tecnologia de ponta.</>}
       primaryCta={{ to: "/orcamento", label: "Solicitar orçamento" }}
       secondaryCta={{ to: "#features", label: "Saiba mais" }}
@@ -78,6 +101,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       solution={{
         title: <>Sua <span className="text-gradient">Plataforma de Leilão Online</span> — Homologada e Sem Mensalidade</>,
         desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> é a ferramenta ideal para quem deseja <strong className="text-foreground">ver o site de leilões</strong> operando com máxima performance. Entregamos um <strong className="text-foreground">sistema online para leiloeiro</strong> com licença perpétua e código-fonte. Nossa <strong className="text-foreground">plataforma de pregões online</strong> é robusta, white-label e preparada para leilões judiciais e extrajudiciais. Diferente de soluções como <strong className="text-foreground">sas leilão</strong> genéricas, oferecemos personalização total para o seu negócio.</>,
+        image: (configUrl as any).url,
         highlights: [
           "**Plataforma proprietária** — sem aluguel mensal, taxa 0% por lance",
           "**Homologada em 27 TJs** + TJ/SP + Detran + PJe",
@@ -195,6 +219,12 @@ export const Route = createFileRoute("/sistema-de-leilao")({
           { feature: "Prazo de implantação", us: "30-60 dias", them: "90+ dias" },
         ],
       }}
+      galleryTitle={<>Interface do <span className="text-gradient">Sistema para Leiloeiro</span></>}
+      gallery={[
+        { src: (cardsUrl as any).url, alt: "Sistema de Leilão - Modelos de Cards", caption: "Escolha entre diversos modelos de cards para seus lotes." },
+        { src: (mobileUrl as any).url, alt: "Sistema de Leilão - Visualização Mobile", caption: "Experiência mobile fluida para arrematantes." },
+        { src: (painelUrl as any).url, alt: "Sistema de Leilão - Painel Financeiro", caption: "Controle total de faturamento e lances." },
+      ]}
       testimonials={[
         { quote: "Migramos do papel para a plataforma da NC Brasil e triplicamos o número de arrematantes em 6 meses. O suporte durante o pregão é impecável.", author: "Dr. Carlos Andrade", role: "Leiloeiro Oficial — SP" },
         { quote: "A conformidade com o CPC e a assinatura ICP-Brasil eliminaram nossas contestações judiciais. Recomendo para qualquer tribunal.", author: "Juíza Marina Ferreira", role: "Vara Cível — MG" },
