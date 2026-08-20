@@ -139,7 +139,12 @@ export function NewsDisplay({
                         sizes="(max-width: 768px) 85vw, (max-width: 1024px) 40vw, 30vw"
                         className="h-full w-full object-cover transition-transform duration-[1.5s] group-hover:scale-110" 
                         onError={(e) => {
-                          (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
+                          const target = e.target as HTMLImageElement;
+                          if (target.src.endsWith('.webp')) {
+                            target.src = target.src.replace('.webp', '.jpg');
+                          } else {
+                            target.src = "/news/default-nc.jpg";
+                          }
                         }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
