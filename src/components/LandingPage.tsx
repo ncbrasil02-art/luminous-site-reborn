@@ -71,7 +71,8 @@ export type LandingPageProps = {
   finalCtaDesc?: React.ReactNode;
   finalPrimaryCta?: { to: string; label: string };
   finalSecondaryCta?: { to: string; label: string };
-  relatedNewsTags?: string[]; // New prop for related news
+  relatedNewsTags?: string[];
+  imageKeyword?: string;
 };
 
 export function buildLPMeta(options: {
@@ -143,6 +144,7 @@ export function LandingPage({
   finalPrimaryCta = { to: "/orcamento", label: "Solicitar orçamento" },
   finalSecondaryCta = { to: "/contato", label: "Falar com especialista" },
   relatedNewsTags = [],
+  imageKeyword,
 }: LandingPageProps) {
   const search = useRouterState({ select: (s) => s.location.search });
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -161,6 +163,16 @@ export function LandingPage({
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30 pointer-events-none" aria-hidden="true" />
+        <div className="absolute inset-0 -z-10 bg-black/40" />
+        <div className="absolute inset-0 -z-20">
+          <img 
+            src={newsData[0]?.image_url || "/og-main.jpg"} 
+            alt={imageKeyword || eyebrow} 
+            className="h-full w-full object-cover opacity-20"
+            loading="eager"
+            fetchPriority="high"
+          />
+        </div>
         <div className="absolute -top-24 left-1/2 -z-10 h-96 w-[42rem] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl pointer-events-none" aria-hidden="true" />
 
         <div className="mx-auto max-w-6xl px-4 pt-14 md:px-6 md:pt-20">
@@ -249,7 +261,7 @@ export function LandingPage({
         <section className="relative border-y border-border bg-surface/30 py-10">
           <div className="mx-auto max-w-6xl px-4 md:px-6">
             <h2 className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">
-              {clientsTitle ?? "Empresas que confiam na NC Brasil"}
+              {clientsTitle ?? `Empresas que confiam no ${eyebrow} NC Brasil`}
             </h2>
 
             <div className="marquee-mask mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">

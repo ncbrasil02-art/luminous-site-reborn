@@ -27,11 +27,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/sistema-de-leilao")({
   head: () => buildLPMeta({
-    title: "Sistema de Leilão Online | Plataforma White-Label para Leiloeiros — NC Brasil",
-    description: "Sistema profissional para leilões judiciais e extrajudiciais: cadastro de lotes, lances online e presenciais, transmissão ao vivo, split de comissões e conformidade legal completa.",
-    keywords: "sistema de leilão, plataforma de leilão online, leilão judicial, leilão extrajudicial, software para leiloeiro, sistema de leilão eletrônico, leilão ao vivo, white label leilão",
+    title: "Sistema de Leilão NC Brasil | Sistema para Leilões Online",
+    description: "Plataforma de leilões online profissional para leiloeiros oficiais e tribunais. Sistema para leiloeiro com pregão eletrônico, transmissão ao vivo e split de comissões.",
+    keywords: "sistema de leilão, plataforma de leilões, sistema para leiloeiro, plataforma de pregões online, sas leilão, site de leilão, sistema de leilão online, plataforma de leilão online, sistema online para leiloeiro",
     canonical: URL,
-    h1: "Sistema Profissional para Leilões Judiciais e Extrajudiciais",
+    h1: "Sistema de Leilão NC Brasil: Plataforma de Leilões Online e Pregões",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
@@ -41,14 +41,15 @@ export const Route = createFileRoute("/sistema-de-leilao")({
   }),
   component: () => (
     <LandingPage
+      imageKeyword="sistema de leilão"
       breadcrumbs={[
         { to: "/", label: "Home" },
         { to: "/nossos-sistemas", label: "Sistemas" },
         { to: "/sistema-de-leilao", label: "Sistema de Leilão" },
       ]}
-      eyebrow="Sistema de Leilão"
-      h1={<>Plataforma para <span className="text-gradient">Leilões Online</span> homologada em 27 Tribunais de Justiça</>}
-      intro={<>Sistema profissional para <strong className="text-foreground">leiloeiros oficiais</strong>, tribunais, bancos e cooperativas — usado por casas como <a href="https://www.ativeiloes.com.br" target="_blank" rel="noopener" className="text-primary underline underline-offset-4 hover:text-primary-glow">Ativ Leilões</a>. Realize <strong className="text-foreground">pregão eletrônico simultâneo</strong> (online + presencial) para leilões <strong className="text-foreground">judiciais (CPC art. 879–903)</strong>, <strong className="text-foreground">extrajudiciais (Decreto 21.981/32)</strong>, Detran, restritos e venda direta — com <strong className="text-foreground">plataforma própria, sem aluguel mensal e 0% de taxa por lance</strong>.</>}
+      eyebrow="Sistema para Leiloeiro"
+      h1={<>Sistema de Leilão <span className="text-gradient">NC Brasil</span>: Sua Plataforma de Leilão Online</>}
+      intro={<>Aumente seus pregões com a melhor <strong className="text-foreground">plataforma de leilões</strong> do mercado. O nosso <strong className="text-foreground">sistema de leilão online</strong> é homologado em 27 Tribunais de Justiça e utilizado por grandes <strong className="text-foreground">leiloeiros oficiais</strong>. Se você busca um <strong className="text-foreground">sistema para leiloeiro</strong> completo, com pregão eletrônico simultâneo e <strong className="text-foreground">plataforma de pregões online</strong>, a NC Brasil oferece a solução definitiva: <strong className="text-foreground">seu site de leilão</strong> próprio, sem aluguel mensal e com tecnologia de ponta.</>}
       primaryCta={{ to: "/orcamento", label: "Solicitar orçamento" }}
       secondaryCta={{ to: "#features", label: "Saiba mais" }}
       finalPrimaryCta={{ to: "/orcamento", label: "Solicitar orçamento" }}
@@ -75,8 +76,8 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         ],
       }}
       solution={{
-        title: <>Uma plataforma <span className="text-gradient">100% sua</span> — homologada, escalável e sem mensalidade</>,
-        desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> é entregue como <strong className="text-foreground">licença perpétua com código-fonte</strong>, domínio próprio e apps iOS/Android publicados sob sua marca. Diferente de <strong className="text-foreground">Leilão PRO, Superbid e Sodré Santoro</strong> — que cobram assinatura + % por lance e mantêm sua base em servidor compartilhado — aqui você é dono do sistema, dos dados e do relacionamento com o arrematante. Homologada em <strong className="text-foreground">27 Tribunais de Justiça</strong> (AC → TO), TJ/SP, Detran e integrada ao <strong className="text-foreground">PJe</strong>, cobre pregão judicial, extrajudicial, restrito, venda direta, imóveis, rural, arte e veículos.</>,
+        title: <>Sua <span className="text-gradient">Plataforma de Leilão Online</span> — Homologada e Sem Mensalidade</>,
+        desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> é a ferramenta ideal para quem deseja <strong className="text-foreground">ver o site de leilões</strong> operando com máxima performance. Entregamos um <strong className="text-foreground">sistema online para leiloeiro</strong> com licença perpétua e código-fonte. Nossa <strong className="text-foreground">plataforma de pregões online</strong> é robusta, white-label e preparada para leilões judiciais e extrajudiciais. Diferente de soluções como <strong className="text-foreground">sas leilão</strong> genéricas, oferecemos personalização total para o seu negócio.</>,
         highlights: [
           "**Plataforma proprietária** — sem aluguel mensal, taxa 0% por lance",
           "**Homologada em 27 TJs** + TJ/SP + Detran + PJe",
@@ -89,10 +90,10 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         ],
       }}
       benefits={[
-        { icon: Landmark, title: "Homologada em 27 TJs", desc: "Aceita em **AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO** + TJ/SP + Detran." },
-        { icon: Banknote, title: "Zero mensalidade", desc: "**Licença perpétua com código-fonte** — sem aluguel, sem taxa por lance, sem percentual sobre arrematação." },
-        { icon: ShieldCheck, title: "Segurança Jurídica", desc: "**Assinatura ICP-Brasil**, cronômetro sincronizado servidor, logs imutáveis e gravação do pregão como prova." },
-        { icon: Video, title: "Transmissão HD ao vivo", desc: "Streaming **WebRTC + HLS adaptativo**, chat moderado, cronômetro sincronizado e gravação jurídica." },
+        { icon: Landmark, title: "Plataforma de Leilões Homologada", desc: "Aceita em **27 TJs** + TJ/SP + Detran. O melhor **sistema online para leiloeiro** jurídico." },
+        { icon: Banknote, title: "Sem taxas extras", desc: "**Sistema de leilão online** com 0% de taxa por lance. O lucro do **pregão online** é todo seu." },
+        { icon: ShieldCheck, title: "Segurança Jurídica", desc: "**Assinatura ICP-Brasil**, cronômetro sincronizado e logs imutáveis para seu **site de leilão**." },
+        { icon: Video, title: "Pregão ao Vivo HD", desc: "Transmissão **WebRTC** em tempo real. Sua **plataforma de pregões online** com zero delay." },
       ]}
       features={[
         { icon: FileSignature, title: "Cadastro rico de lotes", desc: "Fotos ilimitadas, vídeo 360°, laudos, matrículas e edital anexos." },

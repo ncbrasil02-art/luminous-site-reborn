@@ -184,9 +184,9 @@ function HomePage() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="mt-6 max-w-5xl font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-7xl"
           >
-            Tecnologia que <span className="text-gradient">vende</span>.
+            Sistemas Web e <span className="text-gradient">Sites de Leilão</span>.
             <br className="hidden md:block" />
-            Design que <span className="text-gradient">encanta</span>.
+            Design que <span className="text-gradient">Impulsiona Vendas</span>.
           </motion.h1>
 
           <motion.p
@@ -195,19 +195,19 @@ function HomePage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-6 max-w-2xl text-base text-muted-foreground md:text-lg"
           >
-            Somos a <strong className="text-foreground">NC Brasil</strong> — agência de{" "}
-            <Link to="/nossos-sistemas" className="story-link text-foreground">
-              <strong>sistemas web sob demanda</strong>
+            A <strong className="text-foreground">NC Brasil</strong> é especialista em{" "}
+            <Link to="/sistema-de-leilao" className="story-link text-foreground">
+              <strong>plataforma de leilão online</strong>
             </Link>
             ,{" "}
-            <Link to="/portfolio/lojas-virtuais-criadas" className="story-link text-foreground">
-              <strong>lojas virtuais</strong>
+            <Link to="/nossos-sistemas" className="story-link text-foreground">
+              <strong>sistemas web sob demanda</strong>
             </Link>{" "}
             e{" "}
-            <Link to="/portfolio/criacao-de-aplicativos" className="story-link text-foreground">
-              <strong>aplicativos mobile</strong>
+            <Link to="/portfolio/lojas-virtuais-criadas" className="story-link text-foreground">
+              <strong>e-commerce premium</strong>
             </Link>{" "}
-            para empresas em <strong className="text-foreground">SP</strong> e{" "}
+            em <strong className="text-foreground">SP</strong> e{" "}
             <strong className="text-foreground">RJ</strong>.
           </motion.p>
 
@@ -218,10 +218,10 @@ function HomePage() {
             className="mt-10 flex flex-col items-center gap-3 sm:flex-row"
           >
             <Link
-              to="/orcamento"
+              to="/sistema-de-leilao"
               className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md transition-transform hover:scale-105"
             >
-              Quero um orçamento
+              Conhecer Sistema de Leilão
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
