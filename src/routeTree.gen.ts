@@ -43,7 +43,6 @@ import { Route as SolucoesWebLojaVirtualRouteImport } from './routes/solucoes-we
 import { Route as SolucoesWebLandingPagesRouteImport } from './routes/solucoes-web.landing-pages'
 import { Route as SolucoesWebHospedagemRouteImport } from './routes/solucoes-web.hospedagem'
 import { Route as SolucoesWebDesenvolvimentoDeSitesRouteImport } from './routes/solucoes-web.desenvolvimento-de-sites'
-import { Route as SitemapXmlRouteImport } from './routes/sitemap.xml'
 import { Route as SistemasSlugRouteImport } from './routes/sistemas.$slug'
 import { Route as ServicosSistemasWebRouteImport } from './routes/servicos.sistemas-web'
 import { Route as ServicosIdentidadeVisualRouteImport } from './routes/servicos.identidade-visual'
@@ -252,11 +251,6 @@ const SolucoesWebDesenvolvimentoDeSitesRoute =
     path: '/desenvolvimento-de-sites',
     getParentRoute: () => SolucoesWebRoute,
   } as any)
-const SitemapXmlRoute = SitemapXmlRouteImport.update({
-  id: '/sitemap/xml',
-  path: '/sitemap/xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const SistemasSlugRoute = SistemasSlugRouteImport.update({
   id: '/sistemas/$slug',
   path: '/sistemas/$slug',
@@ -459,7 +453,6 @@ export interface FileRoutesByFullPath {
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
   '/sistemas/$slug': typeof SistemasSlugRoute
-  '/sitemap/xml': typeof SitemapXmlRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -523,7 +516,6 @@ export interface FileRoutesByTo {
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
   '/sistemas/$slug': typeof SistemasSlugRoute
-  '/sitemap/xml': typeof SitemapXmlRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -589,7 +581,6 @@ export interface FileRoutesById {
   '/servicos/identidade-visual': typeof ServicosIdentidadeVisualRoute
   '/servicos/sistemas-web': typeof ServicosSistemasWebRoute
   '/sistemas/$slug': typeof SistemasSlugRoute
-  '/sitemap/xml': typeof SitemapXmlRoute
   '/solucoes-web/desenvolvimento-de-sites': typeof SolucoesWebDesenvolvimentoDeSitesRoute
   '/solucoes-web/hospedagem': typeof SolucoesWebHospedagemRoute
   '/solucoes-web/landing-pages': typeof SolucoesWebLandingPagesRoute
@@ -656,7 +647,6 @@ export interface FileRouteTypes {
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
     | '/sistemas/$slug'
-    | '/sitemap/xml'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -720,7 +710,6 @@ export interface FileRouteTypes {
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
     | '/sistemas/$slug'
-    | '/sitemap/xml'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -785,7 +774,6 @@ export interface FileRouteTypes {
     | '/servicos/identidade-visual'
     | '/servicos/sistemas-web'
     | '/sistemas/$slug'
-    | '/sitemap/xml'
     | '/solucoes-web/desenvolvimento-de-sites'
     | '/solucoes-web/hospedagem'
     | '/solucoes-web/landing-pages'
@@ -846,7 +834,6 @@ export interface RootRouteChildren {
   ServicosIdentidadeVisualRoute: typeof ServicosIdentidadeVisualRoute
   ServicosSistemasWebRoute: typeof ServicosSistemasWebRoute
   SistemasSlugRoute: typeof SistemasSlugRoute
-  SitemapXmlRoute: typeof SitemapXmlRoute
   NoticiasIndexRoute: typeof NoticiasIndexRoute
   SistemasIndexRoute: typeof SistemasIndexRoute
   NoticiasCategoriaCategoryRoute: typeof NoticiasCategoriaCategoryRoute
@@ -1092,13 +1079,6 @@ declare module '@tanstack/react-router' {
       fullPath: '/solucoes-web/desenvolvimento-de-sites'
       preLoaderRoute: typeof SolucoesWebDesenvolvimentoDeSitesRouteImport
       parentRoute: typeof SolucoesWebRoute
-    }
-    '/sitemap/xml': {
-      id: '/sitemap/xml'
-      path: '/sitemap/xml'
-      fullPath: '/sitemap/xml'
-      preLoaderRoute: typeof SitemapXmlRouteImport
-      parentRoute: typeof rootRouteImport
     }
     '/sistemas/$slug': {
       id: '/sistemas/$slug'
@@ -1410,7 +1390,6 @@ const rootRouteChildren: RootRouteChildren = {
   ServicosIdentidadeVisualRoute: ServicosIdentidadeVisualRoute,
   ServicosSistemasWebRoute: ServicosSistemasWebRoute,
   SistemasSlugRoute: SistemasSlugRoute,
-  SitemapXmlRoute: SitemapXmlRoute,
   NoticiasIndexRoute: NoticiasIndexRoute,
   SistemasIndexRoute: SistemasIndexRoute,
   NoticiasCategoriaCategoryRoute: NoticiasCategoriaCategoryRoute,
