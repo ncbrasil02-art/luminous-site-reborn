@@ -301,9 +301,9 @@ export const newsData: NewsPost[] = [
   },
   {
     "id": "50452",
-    "title": null,
+    "title": "",
     "slug": "",
-    "date": null,
+    "date": "",
     "content": "<h2>leandro</h2>",
     "categories": [
       "Sem categoria"
@@ -314,9 +314,9 @@ export const newsData: NewsPost[] = [
   },
   {
     "id": "50453",
-    "title": null,
+    "title": "",
     "slug": "",
-    "date": null,
+    "date": "",
     "content": "[vc_row row_height_percent=\"50\" override_padding=\"yes\" h_padding=\"2\" top_padding=\"3\" bottom_padding=\"3\" back_color=\"color-wayh\" overlay_color=\"color-vyce\" overlay_alpha=\"90\" gutter_size=\"3\" shift_y=\"0\"][vc_column width=\"1/1\"][vc_column_text]\n\nI am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.\n\n[/vc_column_text][/vc_column][/vc_row]",
     "categories": [
       "Sem categoria"

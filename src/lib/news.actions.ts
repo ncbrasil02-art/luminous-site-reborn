@@ -44,9 +44,9 @@ export const saveNews = createServerFn({ method: "POST" })
       content: data.content,
       categories: data.categories,
       tags: data.tags,
-      image_url: data.image_url,
+      image_url: data.image_url || "",
       date: new Date().toISOString(),
-      thumb_id: null
+      thumb_id: ""
     };
 
     if (isNew) {
