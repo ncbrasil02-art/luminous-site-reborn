@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { useEffect, useState, useRef } from "react";
+import { Link, useLocation } from "@tanstack/react-router";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   Menu,
   X,
@@ -32,10 +33,11 @@ import {
   Gift,
   Store,
   CarFront,
-  CarFront as CarFrontIcon,
   Coins,
+  ChevronRight,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
