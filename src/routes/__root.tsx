@@ -74,6 +74,29 @@ function NotFoundComponent() {
 
   useEffect(() => {
     trackNotFound(pathname);
+    
+    // Auto-redirect logic for legacy nested URLs
+    const parts = pathname.split('/').filter(Boolean);
+    if (parts.length >= 2) {
+      const slug = parts[parts.length - 1];
+      
+      // 1. Try to find if the last part is a news slug
+      const newsPost = newsData.find(p => p.slug === slug);
+      if (newsPost) {
+        window.location.replace(`/noticias/${newsPost.slug}`);
+        return;
+      }
+
+      // 2. Specialized redirects
+      if (pathname.includes('/criar-sites/criacao-de-aplicativos')) {
+        window.location.replace('/servicos/aplicativos');
+        return;
+      }
+
+      // 3. Try to redirect to the last segment as a flat URL
+      // (This handles /category/title -> /title migration)
+      window.location.replace(`/${slug}`);
+    }
   }, [pathname]);
 
   return (
