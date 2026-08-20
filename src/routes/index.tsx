@@ -22,17 +22,32 @@ import { buildMeta, SITE_URL } from "@/lib/seo";
 import { MagazineSection } from "@/components/MagazineSection";
 import { NewsDisplay } from "@/components/NewsDisplay";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { testimonialsData } from "@/lib/testimonials.data";
 
 const OG_IMAGE = `/og-home.jpg`;
 
 const homeJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  label: "NC Brasil — Criação de Sites, Sistemas Web e Aplicativos",
-  to: SITE_URL,
+  name: "NC Brasil — Criação de Sites, Sistemas Web e Aplicativos",
+  url: SITE_URL,
+  logo: `${SITE_URL}/logo-nc-brasil.png`,
   image: `${SITE_URL}${OG_IMAGE}`,
   description:
     "Empresa de criação de sites profissionais, sistemas web, lojas virtuais, aplicativos mobile e marketing digital em São Paulo e Rio de Janeiro.",
+  address: {
+    "@type": "PostalAddress",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    "latitude": -23.55052,
+    "longitude": -46.633308
+  },
+  telephone: "+55-11-99999-9999",
+  priceRange: "$$$",
   areaServed: ["São Paulo", "Rio de Janeiro", "Brasil"],
   serviceType: [
     "Criação de Sites",
@@ -41,6 +56,24 @@ const homeJsonLd = {
     "Aplicativos Mobile",
     "Marketing Digital",
   ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": testimonialsData.length.toString()
+  },
+  review: testimonialsData.map(t => ({
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": t.author
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": t.rating.toString(),
+      "bestRating": "5"
+    },
+    "reviewBody": t.quote
+  }))
 };
 
 export const Route = createFileRoute("/")({
