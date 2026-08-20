@@ -790,7 +790,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/Ecommerce-Aprenda-a-criar-uma-boa-loja-virtual-para-a-sua-empresa-1-150x150.png",
     "thumb_id": ""
   },
   {
@@ -914,7 +914,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/Mcommerce.png",
     "thumb_id": ""
   },
   {
@@ -1521,7 +1521,7 @@ export const newsData: NewsPost[] = [
     "content": "<h1>O que é um <strong>bom site</strong>?</h1>\n<span class=\"sumo_twilighter_highlighted twilighter-7ec5ee3e\">Um <strong>bom site</strong> é um <strong>endereço virtual</strong> acessado através da internet em um navegador. Mas isso todo mundo já sabe!\n</span>\n\n<span class=\"sumo_twilighter_highlighted twilighter-7ec5ee3e\">Mas o que um <strong>bom site</strong>? Um <strong>bom site</strong> deve fazer bem o que é proposto, que é divulgar os serviços ou produtos da empresa. Muito mais que um \"catálogo eletrônico\", ele deve ser um canal de relacionamento 24 horas com</span> os clientes. Cada segmento de negócios possui características que definem o tipo de conteúdo que o cliente procura no <strong>site</strong>.\n\nTodo <strong>bom site</strong> possui alguns fatores primordiais e padrões, dentre eles; Legibilidade, navegabilidade, rapidez, manutenção constante, foco no cliente, interatividade, funcionalidade e um bom design.\n<h2>Tenha um <strong>bom site</strong> também! Leia nosso artigo e saiba mais!</h2>\n&nbsp;\n\n<img class=\"aligncenter size-large wp-image-50506\" src=\"/news/default-nc.jpg\" alt=\"Bom site\" width=\"840\" height=\"459\" />\n\n&nbsp;\n<h2>Qual a importância de um bom site para sua empresa?</h2>\nDentre todos os meios de comunicação, os <strong>sites</strong> são os meios mais usados em todo o mundo. Não só pelo seu caráter quase ilimitado, como também pela facilidade com que pode ser desenvolvido e disponibilizado para o mundo todo, um<strong> bom site</strong> alavanca negócios e amplia as paredes de sua empresa, seu programa ou seus serviços.\n\nDe longe, é a melhor forma de impulsionar o seu negócio é com a criação de um <strong>bom site profissional</strong>.\n\nA criação de<strong> sites</strong> gerenciadas por uma agência web profissional, comprometida e experiente, como a <strong>NC Brasil</strong>, pode ser desenvolvida com uma combinação rara no mercado! Uma mistura de custos inferiores, se comparado a outras mídias, com qualidade de atendimento, designer e acabamentos!\n\n&nbsp;\n\n<img class=\"aligncenter size-full wp-image-50513\" src=\"/news/prestanto-bom-atendimento-ao-cliente.jpg\" alt=\"bom site\" width=\"870\" height=\"418\" />\n<h2></h2>\n<h2>Site Profissional</h2>\nSem dúvidas, um <strong>bom site</strong> é um <strong>site profissional</strong>. Então, do contrário do que muitos pensam, ter um <strong>bom site</strong> é sim essencial para o sucesso de qualquer negócio, já que eles servem não apenas como um meio de divulgação do produto ou serviço, mas também cumprem a função de comunicar os valores inerentes à empresa.\n\nA partir do momento em que você tem uma “vitrine” institucional online, as expectativas em relação aos resultados se tornam mais otimistas. Um <strong>bom site</strong> será capazes de atrair tráfego e, consequentemente, contribuirão para o aumento das vendas.\n<h2><strong>Site responsivo</strong></h2>\nOutro o fator importante para um <strong>bom site</strong>, é ter um <strong><a href=\"https://www.ncbrasil.com.br/sua-empresa-precisa-ter-um-site-responsivo/\">site responsivo</a>. </strong>Este é o tipo de website que se adapta a diferentes tipos de telas, ou seja, ao acessá-lo de dispositivos mobile, como smartphones e tablets. Todas as informações são colocadas de outra forma, para o tamanho da tela sem perder o design ou sem que haja a necessidade de ampliar as informações.\n\nSua maior vantagem, sem dúvidas, é a <strong>praticidade! </strong>Além de estar dentro das tendências do ano, seu site estará dentro dos padrões do <a href=\"http://www.google.com.br\"><strong>Google</strong></a>!\n\n&nbsp;\n\n<img class=\"aligncenter size-full wp-image-50510\" src=\"/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg\" alt=\"bom site\" width=\"770\" height=\"370\" />\n<h2>Sua empresa precisa de um <strong>bom site</strong>!</h2>\nTer um bom site ativo é importante, mesmo para as pequenas empresas. De acordo com um estudo, cerca de 85% dos consumidores usam a internet para encontrar uma empresa ou um negócio local. Os motores de busca sempre estarão atrás de resultados próximos aos clientes, sendo assim, ter um site é de extrema importância para sua empresa, sendo pequena ou grande!\n<p style=\"margin: 13.5pt 0cm .0001pt 0cm;\">Um negócio com um bom site, pode passar a ter presença global! Capte clientes de todo o Brasil e do mundo!</p>\n\n<blockquote>\n<h1><img class=\"size-full wp-image-48868 alignleft\" src=\"/news/logo-criacao-de-sites-e1475583609553.jpg\" alt=\"Criação de sites\" width=\"150\" height=\"138\" />Deseja ter um bom site?</h1>\n<h2>Entre em contato conosco e faça um <a href=\"https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/\">orçamento!</a></h2>\n</blockquote>\n&nbsp;",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/prestanto-bom-atendimento-ao-cliente.jpg",
     "thumb_id": ""
   },
   {
@@ -1723,7 +1723,7 @@ export const newsData: NewsPost[] = [
       "Site",
       "websites"
     ],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/team-1-1024x682.jpg",
     "thumb_id": "50681"
   },
   {
@@ -1906,7 +1906,7 @@ export const newsData: NewsPost[] = [
       "Sistema Gerador de Relatórios",
       "Sistemas"
     ],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/relatorios.jpg",
     "thumb_id": "50784"
   },
   {
@@ -1961,7 +1961,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/sistema-de-gestao-integrada-1-1024x576.jpg",
     "thumb_id": ""
   },
   {
