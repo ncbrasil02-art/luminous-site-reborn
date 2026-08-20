@@ -45,7 +45,7 @@ export type LandingPageProps = {
   clientsTitle?: React.ReactNode;
   clients?: string[];
   problem?: { title?: React.ReactNode; items: string[] };
-  solution?: { title?: React.ReactNode; desc: React.ReactNode; highlights?: string[] };
+  solution?: { title?: React.ReactNode; desc: React.ReactNode; highlights?: string[]; image?: string };
   benefitsTitle?: React.ReactNode;
   benefits?: LPBenefit[];
   featuresTitle?: React.ReactNode;
@@ -73,6 +73,8 @@ export type LandingPageProps = {
   finalSecondaryCta?: { to: string; label: string };
   relatedNewsTags?: string[];
   imageKeyword?: string;
+  showParallaxshowcase?: boolean;
+  showcaseImages?: string[];
 };
 
 export function buildLPMeta(options: {
@@ -145,6 +147,8 @@ export function LandingPage({
   finalSecondaryCta = { to: "/contato", label: "Falar com especialista" },
   relatedNewsTags = [],
   imageKeyword,
+  showParallaxshowcase = false,
+  showcaseImages = [],
 }: LandingPageProps) {
   const search = useRouterState({ select: (s) => s.location.search });
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -309,19 +313,39 @@ export function LandingPage({
                   <h2 className="relative mt-4 font-display text-2xl font-bold md:text-3xl">
                     {solution.title ?? <>Uma plataforma <span className="text-gradient">completa</span> e pronta para escalar</>}
                   </h2>
-                  <p className="relative mt-4 text-sm text-muted-foreground md:text-base">
-                    {typeof solution.desc === "string" ? renderBold(solution.desc) : solution.desc}
-                  </p>
-                  {solution.highlights && (
-                    <ul className="relative mt-6 grid gap-3 sm:grid-cols-2">
-                      {solution.highlights.map((h) => (
-                        <li key={h} className="flex items-start gap-2 text-sm">
-                          <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                          <span>{renderBold(h)}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:items-center">
+                    <div className="flex-1">
+                      <p className="relative text-sm text-muted-foreground md:text-base">
+                        {typeof solution.desc === "string" ? renderBold(solution.desc) : solution.desc}
+                      </p>
+                      {solution.highlights && (
+                        <ul className="relative mt-6 grid gap-3 sm:grid-cols-2">
+                          {solution.highlights.map((h) => (
+                            <li key={h} className="flex items-start gap-2 text-sm">
+                              <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                              <span>{renderBold(h)}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                    {solution.image && (
+                      <div className="relative mt-8 lg:mt-0 lg:w-1/2">
+                        <div className="relative rounded-2xl border border-primary/30 overflow-hidden glow-sm group">
+                          <img 
+                            src={solution.image} 
+                            alt={imageKeyword || "Solução Premium"} 
+                            className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100 flex items-end p-4">
+                            <span className="text-xs font-medium text-white/90 uppercase tracking-widest flex items-center gap-2">
+                              <Sparkles className="h-3 w-3" /> Sistema Premium
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </Reveal>
             )}
