@@ -2,7 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { newsData } from "@/lib/news.data";
-import { NewsDisplay } from "./NewsDisplay";
+
 import { ShareButtons } from "./ShareButtons";
 import { trackRedirect, trackClick } from "@/lib/analytics";
 import { buildMeta } from "@/lib/seo";
