@@ -5,7 +5,6 @@ import {
   Sparkles, Target, TrendingUp, Users, Video, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
-import logoUrl from "@/assets/logo-nc-leiloes-final.png.asset.json";
 import configUrl from "@/assets/sistema-de-leilao-configuracoes.png.asset.json";
 import dashboardUrl from "@/assets/sistema-de-leilao-dashboard-premium.png.asset.json";
 import cardsUrl from "@/assets/sistema-de-leilao-cards.png.asset.json";
@@ -71,7 +70,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       h1={
         <div className="flex flex-col items-center gap-8">
           <img 
-            src={(logoUrl as any).url} 
+            src="/logo-nc-leiloes-final.png"
             alt="NC Leilões - Plataforma de Leilão" 
             className="h-20 md:h-28 w-auto filter drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]"
             onError={(e) => {
