@@ -60,6 +60,9 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         rifasShowcase2Url,
         rifasShowcase3Url,
         rifasShowcase4Url,
+        painelConfigUrl,
+        painelDashboardUrl,
+        painelPagamentosUrl,
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
