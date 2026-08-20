@@ -18,17 +18,36 @@ import heroTech from "@/assets/hero-tech.jpg";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
 
-const SITE_URL = "https://www.ncbrasil.com.br";
-const OG_IMAGE = `${SITE_URL}/og-home.jpg`;
+import { buildMeta, SITE_URL } from "@/lib/seo";
+import { MagazineSection } from "@/components/MagazineSection";
+import { NewsDisplay } from "@/components/NewsDisplay";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { testimonialsData } from "@/lib/testimonials.data";
+
+const OG_IMAGE = `/og-home.jpg`;
 
 const homeJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "NC Brasil — Criação de Sites, Sistemas Web e Aplicativos",
   url: SITE_URL,
-  image: OG_IMAGE,
+  logo: `${SITE_URL}/logo-nc-brasil.png`,
+  image: `${SITE_URL}${OG_IMAGE}`,
   description:
     "Empresa de criação de sites profissionais, sistemas web, lojas virtuais, aplicativos mobile e marketing digital em São Paulo e Rio de Janeiro.",
+  address: {
+    "@type": "PostalAddress",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    "latitude": -23.55052,
+    "longitude": -46.633308
+  },
+  telephone: "+55-11-99999-9999",
+  priceRange: "$$$",
   areaServed: ["São Paulo", "Rio de Janeiro", "Brasil"],
   serviceType: [
     "Criação de Sites",
@@ -37,44 +56,44 @@ const homeJsonLd = {
     "Aplicativos Mobile",
     "Marketing Digital",
   ],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": testimonialsData.length.toString()
+  },
+  review: testimonialsData.map(t => ({
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": t.author
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": t.rating.toString(),
+      "bestRating": "5"
+    },
+    "reviewBody": t.quote
+  }))
 };
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "NC Brasil · Criação de Sites, Sistemas Web e Aplicativos" },
-      {
-        name: "description",
-        content:
-          "Agência de tecnologia especializada em criação de sites, sistemas web, lojas virtuais, aplicativos mobile e marketing digital em SP e RJ. Solicite seu orçamento.",
-      },
-      {
-        name: "keywords",
-        content:
-          "criação de sites, criação de sistemas, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, sistema de cupons",
-      },
-      { property: "og:title", content: "NC Brasil · Sistemas, Sites e Marketing Digital" },
-      {
-        property: "og:description",
-        content:
-          "Criação de sites profissionais, sistemas web sob demanda, lojas virtuais, aplicativos e campanhas digitais. Atuação em São Paulo e Rio de Janeiro.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: SITE_URL },
-      { property: "og:image", content: OG_IMAGE },
-      { property: "og:locale", content: "pt_BR" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "NC Brasil · Sistemas, Sites e Marketing Digital" },
-      {
-        name: "twitter:description",
-        content:
-          "Sites, sistemas, lojas virtuais e apps que vendem. Tecnologia de ponta com design premium.",
-      },
-      { name: "twitter:image", content: OG_IMAGE },
-    ],
-    links: [{ rel: "canonical", href: `${SITE_URL}/` }],
-    scripts: [{ type: "application/ld+json", children: JSON.stringify(homeJsonLd) }],
-  }),
+  head: () => {
+    const meta = buildMeta({
+      title: "NC Brasil · Criação de Sites, Sistemas Web e Aplicativos em SP e RJ",
+      description: "Agência de tecnologia especializada em criação de sites profissionais, sistemas web sob demanda, e-commerce e aplicativos mobile. Tecnologia premium para escalar seu negócio.",
+      keywords: "criação de sites, criação de sistemas web, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, NC Brasil",
+      ogImage: OG_IMAGE,
+      canonical: `${SITE_URL}/`,
+    });
+
+    return {
+      ...meta,
+      scripts: [
+        ...meta.scripts!,
+        { type: "application/ld+json", children: JSON.stringify(homeJsonLd) }
+      ],
+    };
+  },
   component: HomePage,
 });
 
@@ -165,18 +184,20 @@ function HomePage() {
     <>
       {/* HERO ============================================================= */}
       <section className="relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 -z-10" aria-hidden="true">
           <img
             src={heroTech}
-            alt=""
-            aria-hidden
+            alt="NC Brasil Tecnologia - Criação de Sites e Sistemas"
             width={1920}
             height={1080}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
             className="h-full w-full object-cover opacity-50"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
           <div className="absolute inset-0 bg-hero-glow" />
-          <div className="absolute inset-0 grid-pattern opacity-30" />
+          <div className="absolute inset-0 grid-pattern opacity-30 pointer-events-none" />
         </div>
 
         <div className="mx-auto flex min-h-[88vh] max-w-7xl flex-col items-center justify-center px-4 py-24 text-center md:px-6">
@@ -196,9 +217,9 @@ function HomePage() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="mt-6 max-w-5xl font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-7xl"
           >
-            Tecnologia que <span className="text-gradient">vende</span>.
+            Sistemas Web e <span className="text-gradient">Sites de Leilão</span>.
             <br className="hidden md:block" />
-            Design que <span className="text-gradient">encanta</span>.
+            Design que <span className="text-gradient">Impulsiona Vendas</span>.
           </motion.h1>
 
           <motion.p
@@ -207,19 +228,19 @@ function HomePage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-6 max-w-2xl text-base text-muted-foreground md:text-lg"
           >
-            Somos a <strong className="text-foreground">NC Brasil</strong> — agência de{" "}
-            <Link to="/nossos-sistemas" className="story-link text-foreground">
-              <strong>sistemas web sob demanda</strong>
+            A <strong className="text-foreground">NC Brasil</strong> é especialista em{" "}
+            <Link to="/sistema-de-leilao" className="story-link text-foreground">
+              <strong>plataforma de leilão online</strong>
             </Link>
             ,{" "}
-            <Link to="/portfolio/lojas-virtuais-criadas" className="story-link text-foreground">
-              <strong>lojas virtuais</strong>
+            <Link to="/nossos-sistemas" className="story-link text-foreground">
+              <strong>sistemas web sob demanda</strong>
             </Link>{" "}
             e{" "}
-            <Link to="/portfolio/criacao-de-aplicativos" className="story-link text-foreground">
-              <strong>aplicativos mobile</strong>
+            <Link to="/portfolio/lojas-virtuais-criadas" className="story-link text-foreground">
+              <strong>e-commerce premium</strong>
             </Link>{" "}
-            para empresas em <strong className="text-foreground">SP</strong> e{" "}
+            em <strong className="text-foreground">SP</strong> e{" "}
             <strong className="text-foreground">RJ</strong>.
           </motion.p>
 
@@ -230,10 +251,10 @@ function HomePage() {
             className="mt-10 flex flex-col items-center gap-3 sm:flex-row"
           >
             <Link
-              to="/orcamento"
+              to="/sistema-de-leilao"
               className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md transition-transform hover:scale-105"
             >
-              Quero um orçamento
+              Conhecer Sistema de Leilão
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
@@ -268,7 +289,7 @@ function HomePage() {
 
       {/* SERVIÇOS E SOLUÇÕES =============================================== */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-mesh opacity-60" />
+        <div className="absolute inset-0 -z-10 bg-mesh opacity-60" aria-hidden="true" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
             eyebrow="Nossos Serviços"
@@ -315,7 +336,7 @@ function HomePage() {
 
       {/* SISTEMAS EM DESTAQUE (SLIDER) ===================================== */}
       <section className="relative py-24 md:py-32 bg-surface/30">
-        <div className="absolute inset-0 -z-10 grid-pattern opacity-20" />
+        <div className="absolute inset-0 -z-10 grid-pattern opacity-20" aria-hidden="true" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div className="max-w-2xl">
@@ -342,7 +363,7 @@ function HomePage() {
 
       {/* PROCESSO ========================================================= */}
       <section className="relative overflow-hidden border-y border-border bg-surface py-24 md:py-32">
-        <div className="absolute inset-0 grid-pattern opacity-40" aria-hidden />
+        <div className="absolute inset-0 grid-pattern opacity-40 pointer-events-none" aria-hidden="true" />
         <div className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
         <div className="relative mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
@@ -468,6 +489,9 @@ function HomePage() {
           </div>
         </div>
       </section>
+      
+      <TestimonialsSection />
+
 
       {/* CTA FINAL ======================================================== */}
       <section className="relative overflow-hidden py-24 md:py-32">
@@ -505,6 +529,9 @@ function HomePage() {
           </Reveal>
         </div>
       </section>
+      <NewsDisplay />
+      <MagazineSection />
     </>
   );
 }
+

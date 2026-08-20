@@ -20,6 +20,7 @@ import {
   Palette,
   Target,
   Facebook,
+  Instagram,
   Lightbulb,
   Gavel,
   Tractor,
@@ -30,6 +31,7 @@ import {
   Gift,
   Store,
   CarFront,
+  CarFront as CarFrontIcon,
   Coins,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -39,6 +41,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { trackClick } from "@/lib/analytics";
 
 type NavLeaf = { to: string; label: string; icon: any };
 type NavItem = { to: string; label: string } | { label: string; submenu: NavLeaf[] };
@@ -79,16 +82,16 @@ const navItems: NavItem[] = [
   {
     label: "Nossos Sistemas",
     submenu: [
-      { to: "/sistemas/sistema-de-leilao", label: "Sistema de Leilão", icon: Gavel },
-      { to: "/sistemas/sistema-de-leilao-rural", label: "Sistema de Leilão Rural", icon: Tractor },
-      { to: "/sistemas/classificados-de-veiculos", label: "Classificados de Veículos", icon: Car },
-      { to: "/sistemas/sistema-de-cupom-descontos", label: "Sistema de Cupom", icon: Ticket },
-      { to: "/sistemas/plataforma-chinesa-apostas-cassino", label: "Plataforma Cassino", icon: Dice5 },
-      { to: "/sistemas/sistema-de-raspadinha", label: "Sistema de Raspadinha", icon: ScratchIcon },
-      { to: "/sistemas/sistema-de-rifas", label: "Sistema de Rifas", icon: Gift },
-      { to: "/sistemas/sistema-de-ofertas-cupom-marketplace", label: "Marketplace de Ofertas", icon: Store },
-      { to: "/sistemas/sistema-de-revenda-de-veiculos", label: "Revenda de Veículos", icon: CarFront },
-      { to: "/sistemas/sistema-de-leilao-de-centavos", label: "Leilão de Centavos", icon: Coins },
+      { to: "/sistema-de-leilao", label: "Sistema de Leilão", icon: Gavel },
+      { to: "/sistema-de-leilao-rural", label: "Sistema de Leilão Rural", icon: Tractor },
+      { to: "/classificados-de-veiculos", label: "Classificados de Veículos", icon: Car },
+      { to: "/sistema-de-cupom-descontos", label: "Sistema de Cupom", icon: Ticket },
+      { to: "/plataforma-chinesa-apostas-cassino", label: "Plataforma Cassino", icon: Dice5 },
+      { to: "/sistema-de-raspadinha", label: "Sistema de Raspadinha", icon: ScratchIcon },
+      { to: "/sistema-de-rifas", label: "Sistema de Rifas", icon: Gift },
+      { to: "/sistema-de-ofertas-cupom-marketplace", label: "Marketplace de Ofertas", icon: Store },
+      { to: "/sistema-de-revenda-de-veiculos", label: "Revenda de Veículos", icon: CarFront },
+      { to: "/sistema-de-leilao-de-centavos", label: "Leilão de Centavos", icon: Coins },
     ],
   },
   { to: "/trabalhos-realizados", label: "Trabalhos Realizados" },
@@ -116,7 +119,16 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
         <Link to="/" className="group flex items-center gap-2">
-          <img src="/logo.jpg" alt="NC Brasil" className="h-10 w-auto object-contain transition-transform group-hover:scale-105" />
+          <picture>
+            <source srcSet="/logo.webp" type="image/webp" />
+            <img 
+              src="/logo.jpg" 
+              alt="NC Brasil" 
+              fetchPriority="high"
+              decoding="async"
+              className="h-10 w-auto object-contain transition-transform group-hover:scale-105" 
+            />
+          </picture>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
@@ -151,9 +163,30 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-4 lg:flex">
+          <div className="flex items-center gap-3 mr-2">
+            <a
+              href="https://www.facebook.com/agenciacriacaodesites/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground transition-colors hover:text-primary"
+              aria-label="Facebook"
+            >
+              <Facebook className="h-4 w-4" />
+            </a>
+            <a
+              href="https://www.instagram.com/new.commercebrasil/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground transition-colors hover:text-primary"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-4 w-4" />
+            </a>
+          </div>
           <Link
             to="/orcamento"
+            onClick={() => trackClick("Solicitar orçamento", "Header Nav")}
             className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground glow-sm transition-transform hover:scale-105"
           >
             Solicitar orçamento

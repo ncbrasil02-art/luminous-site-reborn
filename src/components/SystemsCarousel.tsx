@@ -8,10 +8,10 @@ import { cn } from "@/lib/utils";
 const systems = [
   {
     icon: Gavel,
-    title: "Sistema de Leilão",
-    description: "Plataformas completas para leilões judiciais e extrajudiciais com lances em tempo real.",
+    title: "Plataforma de Leilão Online",
+    description: "Sistema para leiloeiro completo com pregão eletrônico, transmissão ao vivo e gestão de lotes.",
     to: "/sistema-de-leilao",
-    image: "https://www.ncbrasil.com.br/wp-content/uploads/2021/05/sistema-de-leilao-nc-brasil.jpg",
+    image: "/news/leilão-e1510970985900.jpg",
     features: ["Lances em Tempo Real", "Gestão de Lotes", "Auditagem"]
   },
   {
@@ -19,7 +19,7 @@ const systems = [
     title: "Marketplaces",
     description: "Soluções complexas para múltiplos vendedores com split de pagamentos automático.",
     to: "/portfolio/lojas-virtuais-criadas",
-    image: "https://www.ncbrasil.com.br/wp-content/uploads/2021/05/loja-virtual-nc-brasil.jpg",
+    image: "/news/b2b-vs-b2c-e-commerce-1024x579.jpg",
     features: ["Split de Pagamentos", "Painel Seller", "Logística"]
   },
   {
@@ -27,7 +27,7 @@ const systems = [
     title: "Compra Coletiva",
     description: "Plataformas de ofertas com gatilhos de escassez e gestão de cupons via QR Code.",
     to: "/portfolio/sistema-de-compra-coletiva",
-    image: "https://www.ncbrasil.com.br/wp-content/uploads/2021/05/compra-coletiva-nc-brasil.jpg",
+    image: "/news/como-economizar-dinheiro-com-cupons-de-desconto.png.png",
     features: ["Controle de Cupons", "Validação App", "Escalabilidade"]
   },
   {
@@ -35,7 +35,7 @@ const systems = [
     title: "Sistemas Sob Demanda",
     description: "Engenharia de software personalizada para resolver desafios exclusivos do seu negócio.",
     to: "/nossos-sistemas",
-    image: "https://www.ncbrasil.com.br/wp-content/uploads/2021/05/sistemas-sob-demanda.jpg",
+    image: "/news/sistema-erp-sob-demanda-entenda-importancia-1000x642.jpg",
     features: ["Arquitetura Custom", "Integração API", "Cloud Native"]
   }
 ];
@@ -77,9 +77,12 @@ export function SystemsCarousel() {
                   <img 
                     src={system.image} 
                     alt={system.title} 
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="h-full w-full object-cover opacity-30 transition-transform duration-700 group-hover:scale-110"
                     onError={(e) => {
-                        (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80";
+                        (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />

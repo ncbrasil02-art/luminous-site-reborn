@@ -3,40 +3,23 @@ import { useState } from "react";
 import { ArrowRight, CheckCircle2, FileText, Send } from "lucide-react";
 
 import { Reveal, SectionHeading } from "@/components/Section";
-import { trackLead } from "@/lib/analytics";
+import { trackLead, trackClick } from "@/lib/analytics";
 
-const SITE_URL = "https://www.ncbrasil.com.br";
 const EMAIL = "contato@ncbrasil.com.br";
 
+
+import { buildMeta, SITE_URL } from "@/lib/seo";
+
 export const Route = createFileRoute("/orcamento")({
-  head: () => ({
-    meta: [
-      { title: "Orçamento · NC Brasil — Solicite uma Proposta em 24h" },
-      {
-        name: "description",
-        content:
-          "Solicite um orçamento personalizado para seu site, sistema, loja virtual ou aplicativo. Resposta em até 24 horas com escopo, prazo e investimento.",
-      },
-      {
-        name: "keywords",
-        content:
-          "orçamento criação de sites, orçamento sistema web, orçamento loja virtual, orçamento aplicativo, proposta agência web",
-      },
-      { property: "og:title", content: "Solicitar Orçamento · NC Brasil" },
-      {
-        property: "og:description",
-        content: "Receba uma proposta clara em até 24h. Escopo, prazo e investimento.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: `${SITE_URL}/orcamento` },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Solicitar Orçamento · NC Brasil" },
-      {
-        name: "twitter:description",
-        content: "Receba uma proposta clara em até 24h.",
-      },
-    ],
-    links: [{ rel: "canonical", href: `${SITE_URL}/orcamento` }],
+  head: () => buildMeta({
+    title: "Orçamento · NC Brasil — Solicite uma Proposta Personalizada em 24h",
+    description: "Solicite um orçamento detalhado para seu site, sistema web, e-commerce ou aplicativo. Receba uma proposta completa com escopo, prazos e investimento em até 24 horas.",
+    keywords: "orçamento criação de sites, orçamento sistema web, orçamento loja virtual, orçamento aplicativo, proposta agência web, consultoria tecnologia orçamento",
+    canonical: `${SITE_URL}/orcamento`,
+    faq: [
+      { q: "Qual o prazo para receber o orçamento?", a: "Nossa equipe analisa seu pedido e envia uma proposta detalhada em até 24 horas úteis." },
+      { q: "O que está incluso na proposta?", a: "A proposta inclui análise estratégica, escopo funcional detalhado, cronograma com marcos, investimento transparente e suporte pós-lançamento." }
+    ]
   }),
   component: OrcamentoPage,
 });

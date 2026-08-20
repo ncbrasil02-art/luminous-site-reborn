@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CreditCard, Package, ShoppingBag, ShoppingCart, Store, Truck, Zap, BarChart3, Percent, Users, Smartphone, ShieldCheck } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/solucoes-web/loja-virtual";
 
@@ -20,9 +22,9 @@ export const Route = createFileRoute("/solucoes-web/loja-virtual")({
     canonical: URL,
     h1: "Criação de Loja Virtual Profissional",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
-      { name: "Loja Virtual", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
+      { label: "Loja Virtual", to: URL },
     ],
     faq: lpFaq,
   }),
@@ -47,7 +49,9 @@ export const Route = createFileRoute("/solucoes-web/loja-virtual")({
         { icon: Smartphone, title: "PWA Mobile", desc: "Loja instalável no celular como app — sem depender das lojas de apps." },
         { icon: ShieldCheck, title: "Antifraude", desc: "Análise automática de risco com **ClearSale, Konduto ou Cybersource**." },
       ]}
+      testimonials={testimonialsData.slice(2, 6)}
       faq={lpFaq}
+      relatedNewsTags={["E-commerce","Loja Virtual","Sistemas"]}
     />
   ),
 });

@@ -20,9 +20,9 @@ export const Route = createFileRoute("/servicos/google-ads")({
     canonical: URL,
     h1: "Gestão Profissional de Google Ads",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Serviços", url: "https://www.ncbrasil.com.br/servicos" },
-      { name: "Google Ads", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
+      { label: "Google Ads", to: URL },
     ],
     faq: lpFaq,
   }),
@@ -48,6 +48,7 @@ export const Route = createFileRoute("/servicos/google-ads")({
         { icon: Users, title: "Landing Pages", desc: "Criamos LPs otimizadas para **Quality Score 10/10** e conversão." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["Google Ads","Links Patrocinados","Marketing Digital"]}
     />
   ),
 });

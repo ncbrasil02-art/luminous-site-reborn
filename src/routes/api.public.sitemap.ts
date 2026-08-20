@@ -1,0 +1,107 @@
+import { createFileRoute } from '@tanstack/react-router'
+import { newsData } from '@/lib/news.data'
+
+export const Route = createFileRoute('/api/public/sitemap')({
+  server: {
+    handlers: {
+      GET: async () => {
+        const baseUrl = 'https://www.ncbrasil.com.br'
+        const today = new Date().toISOString().split('T')[0]
+        
+        const staticRoutes = [
+          { path: '/', priority: '1.0' },
+          { path: '/empresa/quem-somos', priority: '0.8' },
+          { path: '/empresa/nossa-historia', priority: '0.7' },
+          { path: '/empresa/clientes', priority: '0.7' },
+          { path: '/nossos-servicos', priority: '0.9' },
+          { path: '/nossos-sistemas', priority: '0.9' },
+          { path: '/noticias', priority: '0.8' },
+          { path: '/solucoes-web', priority: '0.9' },
+          { path: '/solucoes-web/desenvolvimento-de-sites', priority: '0.9' },
+          { path: '/solucoes-web/loja-virtual', priority: '0.9' },
+          { path: '/solucoes-web/landing-pages', priority: '0.9' },
+          { path: '/solucoes-web/marketing-digital', priority: '0.9' },
+          { path: '/solucoes-web/seo-google', priority: '0.9' },
+          { path: '/solucoes-web/hospedagem', priority: '0.8' },
+          { path: '/sistema-de-leilao', priority: '1.0' },
+          { path: '/sistema-de-leilao-rural', priority: '0.9' },
+          { path: '/classificados-de-veiculos', priority: '0.9' },
+          { path: '/sistema-de-cupom-descontos', priority: '0.9' },
+          { path: '/plataforma-chinesa-apostas-cassino', priority: '0.9' },
+          { path: '/sistema-de-raspadinha', priority: '0.9' },
+          { path: '/sistema-de-rifas', priority: '0.9' },
+          { path: '/sistema-de-ofertas-cupom-marketplace', priority: '0.9' },
+          { path: '/sistema-de-revenda-de-veiculos', priority: '0.9' },
+          { path: '/sistema-de-leilao-de-centavos', priority: '0.9' },
+          { path: '/programa-de-ordem-de-servico', priority: '0.9' },
+          { path: '/software', priority: '0.9' },
+          { path: '/sistema-sob-demanda-nc-brasil', priority: '0.9' },
+          { path: '/instagram-para-empresas', priority: '0.7' },
+          { path: '/dicas-para-e-commerce', priority: '0.7' },
+          { path: '/erros-na-criacao-de-um-aplicativo', priority: '0.7' },
+          { path: '/trabalhos-realizados', priority: '0.8' },
+          { path: '/portfolio/sites-criados', priority: '0.8' },
+          { path: '/portfolio/sistemas-criados', priority: '0.8' },
+          { path: '/portfolio/lojas-virtuais-criadas', priority: '0.8' },
+          { path: '/portfolio/logotipos-criados', priority: '0.8' },
+          { path: '/portfolio/identidade-visual', priority: '0.8' },
+          { path: '/portfolio/aplicativos-criados', priority: '0.8' },
+          { path: '/portfolio/criacao-de-aplicativos', priority: '0.8' },
+          { path: '/portfolio/criacao-de-logomarcas', priority: '0.8' },
+          { path: '/portfolio/criacao-de-sistemas', priority: '0.8' },
+          { path: '/portfolio/sistema-de-compra-coletiva', priority: '0.8' },
+          { path: '/servicos/desenvolvimento', priority: '0.8' },
+          { path: '/servicos/sistemas-web', priority: '0.8' },
+          { path: '/servicos/aplicativos', priority: '0.8' },
+          { path: '/servicos/consultoria', priority: '0.8' },
+          { path: '/servicos/google-ads', priority: '0.8' },
+          { path: '/servicos/facebook-ads', priority: '0.8' },
+          { path: '/servicos/identidade-visual', priority: '0.8' },
+          { path: '/contato', priority: '0.8' },
+          { path: '/orcamento', priority: '0.9' }
+        ]
+
+        const staticUrls = staticRoutes.map(route => `
+          <url>
+            <loc>${baseUrl}${route.path === '/' ? '' : route.path}</loc>
+            <lastmod>${today}</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>${route.priority}</priority>
+          </url>
+        `).join('')
+
+        const newsUrls = newsData.map(post => {
+          let dateStr = today;
+          try {
+            const date = new Date(post.date);
+            if (!isNaN(date.getTime())) {
+              dateStr = date.toISOString().split('T')[0];
+            }
+          } catch (e) {}
+
+          return `
+            <url>
+              <loc>${baseUrl}/noticias/${post.slug}</loc>
+              <lastmod>${dateStr}</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>0.8</priority>
+            </url>
+          `;
+        }).join('')
+
+        const sitemapXml = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+          staticUrls +
+          newsUrls +
+          '</urlset>'
+
+        return new Response(sitemapXml.trim(), {
+          headers: {
+            'Content-Type': 'application/xml; charset=utf-8',
+            'Cache-Control': 'public, max-age=86400'
+          }
+        })
+      }
+    }
+  }
+})

@@ -166,6 +166,7 @@
       linear-gradient(to right, oklch(1 0 0 / 0.04) 1px, transparent 1px),
       linear-gradient(to bottom, oklch(1 0 0 / 0.04) 1px, transparent 1px);
     background-size: 56px 56px;
+    content-visibility: auto;
   }
 
   .marquee-mask {

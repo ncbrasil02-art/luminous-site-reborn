@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-
+Disallow: /api/public/webhook
+Disallow: /api/public/cron
 Sitemap: https://www.ncbrasil.com.br/sitemap.xml

@@ -1,5 +1,10 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { newsData } from "@/lib/news.data";
+import { NewsDisplay } from "./NewsDisplay";
+import { trackRedirect, trackClick } from "@/lib/analytics";
+import { buildMeta } from "@/lib/seo";
 import {
   ArrowRight,
   Check,
@@ -7,6 +12,7 @@ import {
   MessageCircle,
   Minus,
   Rocket,
+  Search,
   Sparkles,
   Star,
   X,
@@ -19,11 +25,11 @@ export type LPFeature = { icon: LucideIcon; title: string; desc: string };
 export type LPBenefit = { icon: LucideIcon; title: string; desc: string };
 export type LPFaq = { q: string; a: string };
 export type LPStat = { value: string; label: string };
-export type LPTestimonial = { quote: string; author: string; role: string };
+export type LPTestimonial = { quote: string; author: string; role: string; image?: string; rating?: number };
 export type LPBreadcrumb = { to: string; label: string };
 export type LPModule = { icon: LucideIcon; title: string; items: string[] };
 export type LPUseCase = { icon: LucideIcon; title: string; desc: string };
-export type LPIntegration = { name: string; category?: string };
+export type LPIntegration = { label: string; category?: string };
 export type LPSecurityItem = { icon: LucideIcon; title: string; desc: string };
 export type LPTimelineStep = { step: string; title: string; desc: string };
 export type LPCompareRow = { feature: string; us: boolean | string; them: boolean | string };
@@ -40,7 +46,7 @@ export type LandingPageProps = {
   clientsTitle?: React.ReactNode;
   clients?: string[];
   problem?: { title?: React.ReactNode; items: string[] };
-  solution?: { title?: React.ReactNode; desc: React.ReactNode; highlights?: string[] };
+  solution?: { title?: React.ReactNode; desc: React.ReactNode; highlights?: string[]; image?: string };
   benefitsTitle?: React.ReactNode;
   benefits?: LPBenefit[];
   featuresTitle?: React.ReactNode;
@@ -60,11 +66,36 @@ export type LandingPageProps = {
   galleryTitle?: React.ReactNode;
   gallery?: LPGalleryItem[];
   testimonials?: LPTestimonial[];
+  testimonialsTitle?: React.ReactNode;
   faqTitle?: React.ReactNode;
   faq?: LPFaq[];
   finalCtaTitle?: React.ReactNode;
   finalCtaDesc?: React.ReactNode;
+  finalPrimaryCta?: { to: string; label: string };
+  finalSecondaryCta?: { to: string; label: string };
+  relatedNewsTags?: string[];
+  imageKeyword?: string;
+  showParallaxshowcase?: boolean;
+  showcaseImages?: string[];
 };
+
+export function buildLPMeta(options: {
+  title: string;
+  description: string;
+  keywords: string;
+  canonical: string;
+  h1: string;
+  breadcrumbs?: { label: string; to: string }[];
+  faq?: LPFaq[];
+  ogImage?: string;
+}) {
+  return buildMeta({
+    ...options,
+    ogType: "website",
+    faq: options.faq?.map((f) => ({ q: f.q, a: f.a })),
+    breadcrumbs: options.breadcrumbs,
+  });
+}
 
 function renderBold(text: string) {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
@@ -110,18 +141,57 @@ export function LandingPage({
   galleryTitle,
   gallery,
   testimonials,
+  testimonialsTitle,
   faqTitle,
   faq,
   finalCtaTitle,
   finalCtaDesc,
+  finalPrimaryCta = { to: "/orcamento", label: "Solicitar orçamento" },
+  finalSecondaryCta = { to: "/contato", label: "Falar com especialista" },
+  relatedNewsTags = [],
+  imageKeyword,
+  showParallaxshowcase = false,
+  showcaseImages = [],
 }: LandingPageProps) {
+  const [expandedImages, setExpandedImages] = useState<Record<number, boolean>>({});
+  const search = useRouterState({ select: (s) => s.location.search });
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+
+  const toggleExpand = (index: number) => {
+    setExpandedImages(prev => ({ ...prev, [index]: !prev[index] }));
+  };
+
+  useEffect(() => {
+    // If the user arrived here from a migration redirect, track it.
+    // We check the 'from_redirect' search param added in the redirect route.
+    if (search && (search as any).from_redirect === "sistemas_migration") {
+      trackRedirect(`/sistemas${pathname}`, pathname);
+    }
+  }, [search, pathname]);
+
   return (
     <>
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
-        <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />
-        <div className="absolute -top-24 left-1/2 -z-10 h-96 w-[42rem] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl" />
+        <div className="absolute inset-0 -z-10 grid-pattern opacity-30 pointer-events-none" aria-hidden="true" />
+        <div className="absolute inset-0 -z-10 bg-black/40" />
+        <div className="absolute inset-0 -z-20">
+          <img 
+            src={newsData[0]?.image_url || "/news/default-nc.jpg"} 
+            alt={imageKeyword || eyebrow} 
+            className="h-full w-full object-cover opacity-20"
+            loading="eager"
+            fetchPriority="high"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              if (!target.src.includes('/news/default-nc.jpg')) {
+                target.src = '/news/default-nc.jpg';
+              }
+            }}
+          />
+        </div>
+        <div className="absolute -top-24 left-1/2 -z-10 h-96 w-[42rem] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl pointer-events-none" aria-hidden="true" />
 
         <div className="mx-auto max-w-6xl px-4 pt-14 md:px-6 md:pt-20">
           {/* Breadcrumb */}
@@ -176,6 +246,7 @@ export function LandingPage({
           >
             <Link
               to={primaryCta.to}
+              onClick={() => trackClick(primaryCta.label, `Hero Primary (${eyebrow})`)}
               className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md transition-transform hover:scale-105"
             >
               {primaryCta.label}
@@ -183,6 +254,7 @@ export function LandingPage({
             </Link>
             <Link
               to={secondaryCta.to}
+              onClick={() => trackClick(secondaryCta.label, `Hero Secondary (${eyebrow})`)}
               className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur hover:bg-surface"
             >
               {secondaryCta.label}
@@ -207,7 +279,7 @@ export function LandingPage({
         <section className="relative border-y border-border bg-surface/30 py-10">
           <div className="mx-auto max-w-6xl px-4 md:px-6">
             <h2 className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">
-              {clientsTitle ?? "Empresas que confiam na NC Brasil"}
+              {clientsTitle ?? `Empresas que confiam no ${eyebrow} NC Brasil`}
             </h2>
 
             <div className="marquee-mask mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
@@ -255,22 +327,149 @@ export function LandingPage({
                   <h2 className="relative mt-4 font-display text-2xl font-bold md:text-3xl">
                     {solution.title ?? <>Uma plataforma <span className="text-gradient">completa</span> e pronta para escalar</>}
                   </h2>
-                  <p className="relative mt-4 text-sm text-muted-foreground md:text-base">
-                    {typeof solution.desc === "string" ? renderBold(solution.desc) : solution.desc}
-                  </p>
-                  {solution.highlights && (
-                    <ul className="relative mt-6 grid gap-3 sm:grid-cols-2">
-                      {solution.highlights.map((h) => (
-                        <li key={h} className="flex items-start gap-2 text-sm">
-                          <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                          <span>{renderBold(h)}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:items-center">
+                    <div className="flex-1">
+                      <p className="relative text-sm text-muted-foreground md:text-base">
+                        {typeof solution.desc === "string" ? renderBold(solution.desc) : solution.desc}
+                      </p>
+                      {solution.highlights && (
+                        <ul className="relative mt-6 grid gap-3 sm:grid-cols-2">
+                          {solution.highlights.map((h) => (
+                            <li key={h} className="flex items-start gap-2 text-sm">
+                              <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                              <span>{renderBold(h)}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                    {solution.image && (
+                      <div className="relative mt-8 lg:mt-0 lg:w-1/2">
+                        <div className="relative rounded-2xl border border-primary/30 overflow-hidden glow-sm group">
+                          <img 
+                            src={solution.image} 
+                            alt={imageKeyword || "Solução Premium"} 
+                            className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              if (!target.src.includes('/news/default-nc.jpg')) {
+                                target.src = '/news/default-nc.jpg';
+                              }
+                            }}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100 flex items-end p-4">
+                            <span className="text-xs font-medium text-white/90 uppercase tracking-widest flex items-center gap-2">
+                              <Sparkles className="h-3 w-3" /> Sistema Premium
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </Reveal>
             )}
+          </div>
+        </section>
+      )}
+
+      {/* PARALLAX SHOWCASE */}
+      {showParallaxshowcase && showcaseImages.length > 0 && (
+        <section className="relative overflow-hidden py-24 md:py-32">
+          <div className="mx-auto max-w-7xl px-4 md:px-6">
+            <SectionHeading
+              eyebrow="Plataforma de Leilão"
+              title={<>Design <span className="text-gradient">Premium</span> & Performance</>}
+              description="Explore a interface sofisticada e os recursos exclusivos da nossa plataforma de leilões."
+            />
+            
+            <div className="mt-20 space-y-16">
+              {showcaseImages.map((img, i) => (
+                <Reveal key={img} delay={i * 0.1}>
+                  <div className="group relative flex flex-col overflow-hidden rounded-[2.5rem] border border-border bg-card/20 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/40 hover:glow-sm">
+                    {/* Header/Caption */}
+                    <div className="flex flex-col gap-2 p-8 text-center md:p-10">
+                      <h3 className="font-display text-2xl font-bold md:text-3xl">
+                        {i === 0 && "Interface do Arrematante"}
+                        {i === 1 && "Painel de Lances em Tempo Real"}
+                        {i === 2 && "Dashboard Administrativo Robusto"}
+                        {i === 3 && "Configurações de Edital e Lotes"}
+                        {i === 4 && "Visualização Mobile Nativa"}
+                        {i === 5 && "Controle de Habilitação e KYC"}
+                      </h3>
+                      <p className="mx-auto max-w-2xl text-sm text-muted-foreground md:text-base">
+                        {i === 0 && "Uma experiência imersiva e intuitiva para quem busca facilidade na hora de arrematar bens."}
+                        {i === 1 && "Tecnologia de baixa latência para garantir que cada lance seja registrado com precisão milimétrica."}
+                        {i === 2 && "Gestão completa do seu negócio com métricas claras, relatórios financeiros e controle total."}
+                        {i === 3 && "Flexibilidade total para cadastrar bens, anexar documentos e gerenciar regras de negócio."}
+                        {i === 4 && "Seu site de leilão na palma da mão com notificações push e lances em um toque."}
+                        {i === 5 && "Segurança jurídica e validação automática de arrematantes integrada à Receita Federal."}
+                      </p>
+                    </div>
+
+                    {/* Image Container with Reveal Effect */}
+                    <div className="relative mx-auto w-full max-w-6xl px-4 pb-6 md:px-8 md:pb-8">
+                      <motion.div 
+                        initial={false}
+                        animate={{ 
+                          height: expandedImages[i] ? "auto" : 400,
+                        }}
+                        transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+                        className="relative overflow-hidden rounded-2xl border border-border shadow-2xl"
+                      >
+                        <img 
+                          src={img} 
+                          alt={imageKeyword || "Plataforma de Leilão"} 
+                          className="w-full h-auto object-cover block"
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            if (!target.src.includes('/news/default-nc.jpg')) {
+                              target.src = '/news/default-nc.jpg';
+                            }
+                          }}
+                        />
+                        
+                        {/* Gradient Overlay for Unexpanded state */}
+                        {!expandedImages[i] && (
+                          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black via-black/80 to-transparent flex items-end justify-center pb-8">
+                            <button 
+                              onClick={() => toggleExpand(i)}
+                              className="group inline-flex items-center gap-2 rounded-full bg-primary/90 px-8 py-3 text-sm font-semibold text-white shadow-xl backdrop-blur transition-all hover:bg-primary hover:scale-105 active:scale-95 glow-sm"
+                            >
+                              <Search className="h-4 w-4" /> Revelar Imagem Completa
+                            </button>
+                          </div>
+                        )}
+
+                        {/* Controls shown when expanded or on hover */}
+                        <div className={`absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col items-center justify-center p-8 gap-4 ${expandedImages[i] ? 'pointer-events-auto' : 'pointer-events-none'}`}>
+                          <div className="flex gap-4">
+                            {expandedImages[i] && (
+                              <button 
+                                onClick={() => toggleExpand(i)}
+                                className="inline-flex items-center gap-2 rounded-full bg-surface/80 border border-white/20 px-6 py-2.5 text-sm font-semibold text-white backdrop-blur shadow-lg transition-transform hover:scale-105"
+                              >
+                                <Minus className="h-4 w-4" /> Recolher
+                              </button>
+                            )}
+                            <button 
+                              onClick={() => window.open(img, '_blank')}
+                              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105"
+                            >
+                              <Search className="h-4 w-4" /> Ver em Tela Cheia
+                            </button>
+                          </div>
+                        </div>
+                      </motion.div>
+                      
+                      
+                      {/* Glow Effect */}
+                      <div className="absolute -inset-4 -z-10 bg-primary/10 blur-3xl rounded-full opacity-30 group-hover:opacity-60 transition-opacity" />
+                    </div>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
           </div>
         </section>
       )}
@@ -304,8 +503,8 @@ export function LandingPage({
 
       {/* FEATURES */}
       {features && features.length > 0 && (
-        <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
-          <div className="absolute inset-0 grid-pattern opacity-20" />
+        <section id="features" className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
+          <div className="absolute inset-0 grid-pattern opacity-20 pointer-events-none" aria-hidden="true" />
           <div className="relative mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Recursos"
@@ -395,9 +594,9 @@ export function LandingPage({
             />
             <div className="mt-12 flex flex-wrap justify-center gap-3">
               {integrations.map((it, i) => (
-                <Reveal key={it.name} delay={i * 0.02}>
+                <Reveal key={it.label} delay={i * 0.02}>
                   <div className="rounded-full border border-border bg-card/60 px-5 py-2.5 text-sm font-medium backdrop-blur transition-all hover:border-primary/50 hover:text-primary">
-                    {it.name}
+                    {it.label}
                     {it.category && <span className="ml-2 text-xs text-muted-foreground">· {it.category}</span>}
                   </div>
                 </Reveal>
@@ -410,7 +609,7 @@ export function LandingPage({
       {/* SECURITY */}
       {security && security.length > 0 && (
         <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
-          <div className="absolute inset-0 grid-pattern opacity-20" />
+          <div className="absolute inset-0 grid-pattern opacity-20 pointer-events-none" />
           <div className="relative mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Segurança"
@@ -528,7 +727,14 @@ export function LandingPage({
                         src={g.src}
                         alt={g.alt}
                         loading="lazy"
+                        decoding="async"
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          if (!target.src.includes('/news/default-nc.jpg')) {
+                            target.src = '/news/default-nc.jpg';
+                          }
+                        }}
                       />
                     </div>
                     {g.caption && (
@@ -548,30 +754,71 @@ export function LandingPage({
 
       {/* TESTIMONIALS */}
       {testimonials && testimonials.length > 0 && (
-        <section className="relative py-20 md:py-28">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
-            <SectionHeading eyebrow="Prova social" title={<>Clientes que <span className="text-gradient">confiam em nós</span></>} />
-            <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <section className="relative overflow-hidden py-24 md:py-32">
+          <div className="absolute inset-0 -z-10 bg-mesh opacity-30" aria-hidden="true" />
+          <div className="mx-auto max-w-7xl px-4 md:px-6">
+            <SectionHeading
+              eyebrow="Prova Social"
+              title={testimonialsTitle ?? <>Clientes que <span className="text-gradient">confiam</span> em nós</>}
+              description="A satisfação de quem utiliza nossas soluções é o nosso maior selo de qualidade."
+            />
+
+            <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {testimonials.map((t, i) => (
-                <Reveal key={t.author} delay={i * 0.06}>
-                  <div className="h-full rounded-2xl border border-border bg-card/60 p-6 backdrop-blur">
-                    <div className="flex gap-0.5 text-primary">
-                      {Array.from({ length: 5 }).map((_, k) => (
-                        <Star key={k} className="h-4 w-4 fill-current" />
-                      ))}
+                <Reveal key={t.author + i} delay={i * 0.1}>
+                  <motion.div 
+                    whileHover={{ y: -5 }}
+                    className="group relative flex h-full flex-col justify-between rounded-3xl border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:glow-sm"
+                  >
+                    <div>
+                      <div className="mb-4 flex items-center gap-1 text-primary">
+                        {Array.from({ length: t.rating || 5 }).map((_, idx) => (
+                          <Star key={idx} className="h-4 w-4 fill-current" />
+                        ))}
+                      </div>
+                      
+                      <div className="relative">
+                        <p className="relative text-sm italic leading-relaxed text-muted-foreground">
+                          "{t.quote}"
+                        </p>
+                      </div>
                     </div>
-                    <p className="mt-4 text-sm text-foreground/90">"{t.quote}"</p>
-                    <div className="mt-6">
-                      <div className="text-sm font-semibold">{t.author}</div>
-                      <div className="text-xs text-muted-foreground">{t.role}</div>
+
+                    <div className="mt-8 flex items-center gap-4 border-t border-border pt-6">
+                      {t.image && (
+                        <div className="relative h-12 w-12 overflow-hidden rounded-full ring-2 ring-primary/20 group-hover:ring-primary/40 transition-all">
+                          <img 
+                            src={t.image} 
+                            alt={t.author}
+                            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              if (!target.src.includes('/news/default-nc.jpg')) {
+                                target.src = '/news/default-nc.jpg';
+                              }
+                            }}
+                          />
+                        </div>
+                      )}
+                      <div className="flex flex-col">
+                        <span className="text-sm font-bold text-foreground">{t.author}</span>
+                        <span className="text-xs text-muted-foreground">{t.role}</span>
+                      </div>
                     </div>
-                  </div>
+                  </motion.div>
                 </Reveal>
               ))}
             </div>
           </div>
         </section>
       )}
+
+      {/* RELATED NEWS */}
+      <NewsDisplay 
+        filterTags={relatedNewsTags} 
+        title={<>Conteúdo Relacionado e <span className="text-gradient">Insights</span></>}
+        eyebrow="Blog & Notícias"
+      />
 
       {/* FAQ */}
       {faq && faq.length > 0 && (
@@ -617,13 +864,21 @@ export function LandingPage({
                   {finalCtaDesc ?? <>Resposta em até <strong className="text-foreground">24 horas</strong> com escopo, prazo e investimento.</>}
                 </p>
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                  <Link to="/orcamento" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md hover:scale-105 transition-transform">
-                    Solicitar orçamento
+                  <Link 
+                    to={finalPrimaryCta.to} 
+                    onClick={() => trackClick(finalPrimaryCta.label, "Footer CTA")}
+                    className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md hover:scale-105 transition-transform"
+                  >
+                    {finalPrimaryCta.label}
                     <ArrowRight className="h-4 w-4" />
                   </Link>
-                  <Link to="/contato" className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-7 py-3.5 text-sm font-semibold text-foreground hover:bg-surface">
+                  <Link 
+                    to={finalSecondaryCta.to} 
+                    onClick={() => trackClick(finalSecondaryCta.label, "Footer CTA")}
+                    className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-7 py-3.5 text-sm font-semibold text-foreground hover:bg-surface"
+                  >
                     <MessageCircle className="h-4 w-4" />
-                    Falar com especialista
+                    {finalSecondaryCta.label}
                   </Link>
                 </div>
               </div>
@@ -635,92 +890,3 @@ export function LandingPage({
   );
 }
 
-export function buildLPMeta({
-  title,
-  description,
-  keywords,
-  canonical,
-  h1,
-  breadcrumbs,
-  faq,
-  ogImage,
-}: {
-  title: string;
-  description: string;
-  keywords: string;
-  canonical: string;
-  h1: string;
-  breadcrumbs: { name: string; url: string }[];
-  faq?: { q: string; a: string }[];
-  ogImage?: string;
-}) {
-  const OG_BASE = "https://luminous-site-reborn.lovable.app";
-  const ogImageUrl = ogImage
-    ? (ogImage.startsWith("http") ? ogImage : `${OG_BASE}${ogImage}`)
-    : undefined;
-  const breadcrumbLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: breadcrumbs.map((b, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: b.name,
-      item: b.url,
-    })),
-  };
-  const serviceLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: h1,
-    description,
-    provider: {
-      "@type": "Organization",
-      name: "NC Brasil",
-      url: "https://www.ncbrasil.com.br",
-    },
-    areaServed: ["São Paulo", "Rio de Janeiro", "Brasil"],
-  };
-  return {
-    meta: [
-      { title },
-      { name: "description", content: description },
-      { name: "keywords", content: keywords },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: canonical },
-      { property: "og:locale", content: "pt_BR" },
-      ...(ogImageUrl
-        ? [
-            { property: "og:image", content: ogImageUrl },
-            { property: "og:image:width", content: "1200" },
-            { property: "og:image:height", content: "630" },
-            { name: "twitter:image", content: ogImageUrl },
-          ]
-        : []),
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: title },
-      { name: "twitter:description", content: description },
-    ],
-
-    links: [{ rel: "canonical", href: canonical }],
-    scripts: [
-      { type: "application/ld+json", children: JSON.stringify(breadcrumbLd) },
-      { type: "application/ld+json", children: JSON.stringify(serviceLd) },
-      ...(faq && faq.length
-        ? [{
-            type: "application/ld+json",
-            children: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              mainEntity: faq.map((f) => ({
-                "@type": "Question",
-                name: f.q,
-                acceptedAnswer: { "@type": "Answer", text: f.a },
-              })),
-            }),
-          }]
-        : []),
-    ],
-  };
-}

@@ -9,6 +9,9 @@ export const Route = createFileRoute("/trabalhos-realizados")({
     description: "Portfólio NC Brasil: sites, sistemas, lojas virtuais, aplicativos, logotipos e identidades visuais entregues para empresas em todo o Brasil.",
     keywords: "portfólio NC Brasil, trabalhos realizados, cases de sucesso, projetos web, sites criados",
     canonical: URL,
+    faq: [
+      { q: "Quantos projetos a NC Brasil já entregou?", a: "Já entregamos mais de 745 projetos, incluindo sites, sistemas, lojas virtuais e aplicativos de alta performance." }
+    ]
   }),
   component: () => (
     <StubPage

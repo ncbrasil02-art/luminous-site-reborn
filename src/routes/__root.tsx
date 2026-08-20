@@ -1,20 +1,20 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts, useRouterState } from "@tanstack/react-router";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 
 import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { WhatsappFab } from "@/components/WhatsappFab";
-import { initAnalytics, trackPageView } from "@/lib/analytics";
+import { initAnalytics, trackPageView, trackNotFound } from "@/lib/analytics";
 
 const SITE_URL = "https://www.ncbrasil.com.br";
 
 const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "NC Brasil — Sistemas & Marketing",
-  url: SITE_URL,
-  logo: `${SITE_URL}/favicon.ico`,
+  label: "NC Brasil — Sistemas & Marketing",
+  to: SITE_URL,
+  logo: `${SITE_URL}/favicon.png`,
   sameAs: [
     "https://www.facebook.com/ncbrasil",
     "https://www.instagram.com/ncbrasil",
@@ -57,10 +57,10 @@ const orgJsonLd = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "NC Brasil",
-  url: SITE_URL,
+  label: "NC Brasil",
+  to: SITE_URL,
   inLanguage: "pt-BR",
-  publisher: { "@type": "Organization", name: "NC Brasil", url: SITE_URL },
+  publisher: { "@type": "Organization", label: "NC Brasil", to: SITE_URL },
   potentialAction: {
     "@type": "SearchAction",
     target: `${SITE_URL}/buscar?q={search_term_string}`,
@@ -69,6 +69,12 @@ const websiteJsonLd = {
 };
 
 function NotFoundComponent() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+
+  useEffect(() => {
+    trackNotFound(pathname);
+  }, [pathname]);
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-background bg-mesh px-4">
       <div className="max-w-md text-center">
@@ -94,24 +100,28 @@ export const Route = createRootRoute({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "theme-color", content: "#0a1428" },
-      { name: "author", content: "NC Brasil" },
+      { label: "viewport", content: "width=device-width, initial-scale=1" },
+      { label: "theme-color", content: "#0a1428" },
+      { label: "author", content: "NC Brasil" },
+      { label: "google-site-verification", content: "verification_id_from_old_site_if_found" }, // Note: No specific ID found in current crawl, but structure is ready
       {
-        name: "robots",
+        label: "robots",
         content: "index, follow, max-image-preview:large, max-snippet:-1",
       },
       { title: "NC Brasil — Sistemas Web, Sites & Marketing Digital" },
       { property: "og:site_name", content: "NC Brasil" },
-      { name: "description", content: "Desenvolvimento de sistemas web sob demanda, sites profissionais, apps e marketing digital. +800 clientes ativos em todo o Brasil." },
+      { label: "description", content: "Desenvolvimento de sistemas web sob demanda, sites profissionais, apps e marketing digital. +800 clientes ativos em todo o Brasil." },
       { property: "og:description", content: "Desenvolvimento de sistemas web sob demanda, sites profissionais, apps e marketing digital. +800 clientes ativos em todo o Brasil." },
-      { name: "twitter:description", content: "Desenvolvimento de sistemas web sob demanda, sites profissionais, apps e marketing digital. +800 clientes ativos em todo o Brasil." },
-      { name: "twitter:card", content: "summary_large_image" },
+      { label: "twitter:description", content: "Desenvolvimento de sistemas web sob demanda, sites profissionais, apps e marketing digital. +800 clientes ativos em todo o Brasil." },
+      { label: "twitter:card", content: "summary_large_image" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "pt_BR" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      { rel: "shortcut icon", href: "/favicon.png" },
+      { rel: "apple-touch-icon", href: "/favicon.png" },
       {
         rel: "preconnect",
         href: "https://fonts.googleapis.com",
@@ -145,6 +155,12 @@ function RootComponent() {
   useEffect(() => {
     trackPageView(pathname);
   }, [pathname]);
+
+  const isAdmin = pathname.startsWith("/admin");
+  
+  if (isAdmin) {
+    return <Outlet />;
+  }
 
   return (
     <>

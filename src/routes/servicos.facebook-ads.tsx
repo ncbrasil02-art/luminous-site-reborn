@@ -20,9 +20,9 @@ export const Route = createFileRoute("/servicos/facebook-ads")({
     canonical: URL,
     h1: "Gestão de Meta Ads (Facebook e Instagram)",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Serviços", url: "https://www.ncbrasil.com.br/servicos" },
-      { name: "Facebook Ads", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Serviços", to: "https://www.ncbrasil.com.br/servicos" },
+      { label: "Facebook Ads", to: URL },
     ],
     faq: lpFaq,
   }),
@@ -48,6 +48,7 @@ export const Route = createFileRoute("/servicos/facebook-ads")({
         { icon: MousePointerClick, title: "Retargeting", desc: "Segmentação de **abandono de carrinho, visualização e cross-sell**." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["Facebook Ads","Redes Sociais","Marketing Digital"]}
     />
   ),
 });

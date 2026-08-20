@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone, Zap } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { NewsDisplay } from "./NewsDisplay";
+
 
 const cols = [
   {
@@ -37,7 +39,9 @@ const cols = [
 export function SiteFooter() {
   return (
     <footer className="relative overflow-hidden border-t border-border bg-surface">
+      <NewsDisplay />
       <div className="absolute inset-0 bg-mesh opacity-40" aria-hidden />
+
       <div className="relative mx-auto max-w-7xl px-4 py-16 md:px-6">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
@@ -56,8 +60,8 @@ export function SiteFooter() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <a href="tel:+551140002000" className="story-link hover:text-foreground">
-                  +55 (11) 4000-2000
+                <a href="tel:+5521996509905" className="story-link hover:text-foreground">
+                  +55 (21) 99650-9905
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -67,6 +71,26 @@ export function SiteFooter() {
                 </a>
               </li>
             </ul>
+            <div className="mt-8 flex items-center gap-4">
+              <a
+                href="https://www.facebook.com/agenciacriacaodesites/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
+              </a>
+              <a
+                href="https://www.instagram.com/new.commercebrasil/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
+              </a>
+            </div>
           </div>
 
           {cols.map((col) => (
@@ -92,9 +116,14 @@ export function SiteFooter() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row">
           <p>© {new Date().getFullYear()} NC Brasil — Sistemas & Marketing. Todos os direitos reservados.</p>
-          <p>
-            <strong className="text-foreground">CNPJ</strong> · Sites · Sistemas · Aplicativos · Marketing Digital
-          </p>
+          <div className="flex items-center gap-4">
+            <p>
+              <strong className="text-foreground">CNPJ</strong> · Sites · Sistemas · Aplicativos · Marketing Digital
+            </p>
+            <Link to="/admin" className="opacity-0 hover:opacity-100 transition-opacity">
+              Admin
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

@@ -19,9 +19,9 @@ export const Route = createFileRoute("/empresa/nossa-historia")({
     canonical: URL,
     h1: "Nossa História — 20 Anos Transformando Negócios",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Empresa", url: "https://www.ncbrasil.com.br/empresa" },
-      { name: "Nossa História", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Empresa", to: "https://www.ncbrasil.com.br/empresa" },
+      { label: "Nossa História", to: URL },
     ],
     faq: lpFaq,
   }),

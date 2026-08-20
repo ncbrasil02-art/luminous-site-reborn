@@ -20,9 +20,9 @@ export const Route = createFileRoute("/solucoes-web/marketing-digital")({
     canonical: URL,
     h1: "Marketing Digital Estratégico e Data-Driven",
     breadcrumbs: [
-      { name: "Home", url: "https://www.ncbrasil.com.br/" },
-      { name: "Soluções Web", url: "https://www.ncbrasil.com.br/solucoes-web" },
-      { name: "Marketing Digital", url: URL },
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
+      { label: "Marketing Digital", to: URL },
     ],
     faq: lpFaq,
   }),
@@ -48,6 +48,7 @@ export const Route = createFileRoute("/solucoes-web/marketing-digital")({
         { icon: Sparkles, title: "Copywriting", desc: "Criativos com **hooks virais e ganchos de conversão** testados A/B." },
       ]}
       faq={lpFaq}
+      relatedNewsTags={["Marketing Digital","Facebook Ads","Google Ads"]}
     />
   ),
 });

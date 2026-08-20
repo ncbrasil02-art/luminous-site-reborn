@@ -12,42 +12,25 @@ import {
 } from "lucide-react";
 
 import { Reveal, SectionHeading } from "@/components/Section";
-import { trackLead } from "@/lib/analytics";
+import { trackLead, trackClick } from "@/lib/analytics";
 
-const SITE_URL = "https://www.ncbrasil.com.br";
 const EMAIL = "contato@ncbrasil.com.br";
 const WHATSAPP =
-  "https://wa.me/5511940002000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20a%20NC%20Brasil.";
+  "https://wa.me/5521996509905?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20a%20NC%20Brasil.";
+
+
+import { buildMeta, SITE_URL } from "@/lib/seo";
 
 export const Route = createFileRoute("/contato")({
-  head: () => ({
-    meta: [
-      { title: "Contato · NC Brasil — Fale com Nossa Equipe" },
-      {
-        name: "description",
-        content:
-          "Entre em contato com a NC Brasil. Tire dúvidas, agende uma reunião ou envie sua demanda. Atendimento em São Paulo e Rio de Janeiro.",
-      },
-      {
-        name: "keywords",
-        content:
-          "contato NC Brasil, agência web SP, agência RJ, telefone NC Brasil, agendar reunião desenvolvimento",
-      },
-      { property: "og:title", content: "Contato · NC Brasil" },
-      {
-        property: "og:description",
-        content: "Fale com nossa equipe. Atendimento em SP e RJ.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: `${SITE_URL}/contato` },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Contato · NC Brasil" },
-      {
-        name: "twitter:description",
-        content: "Fale com nossa equipe. Atendimento em SP e RJ.",
-      },
-    ],
-    links: [{ rel: "canonical", href: `${SITE_URL}/contato` }],
+  head: () => buildMeta({
+    title: "Contato · NC Brasil — Fale com Nossa Equipe de Especialistas",
+    description: "Entre em contato com a NC Brasil. Tire dúvidas, agende uma reunião ou solicite um diagnóstico para seu projeto. Atendimento especializado em São Paulo e Rio de Janeiro.",
+    keywords: "contato NC Brasil, agência web SP, agência RJ, telefone NC Brasil, agendar reunião desenvolvimento, suporte técnico NC Brasil, orçamento tecnologia",
+    canonical: `${SITE_URL}/contato`,
+    faq: [
+      { q: "Como entrar em contato com a NC Brasil?", a: "Você pode nos contatar via formulário no site, e-mail (contato@ncbrasil.com.br), telefone ou WhatsApp comercial direto." },
+      { q: "Qual o horário de atendimento?", a: "Atendemos de segunda a sexta, das 9h às 18h. Sábados sob agendamento." }
+    ]
   }),
   component: ContatoPage,
 });
@@ -133,7 +116,13 @@ function ContatoPage() {
 
               <p className="mt-4 text-xs text-muted-foreground">
                 Prefere algo mais rápido?{" "}
-                <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="story-link text-primary">
+                <a 
+                  href={WHATSAPP} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  onClick={() => trackClick("WhatsApp", "Contato Form")}
+                  className="story-link text-primary"
+                >
                   Fale conosco no WhatsApp
                 </a>
                 .
@@ -144,7 +133,7 @@ function ContatoPage() {
           {/* INFO */}
           <Reveal delay={0.1} className="lg:col-span-2">
             <div className="space-y-4">
-              <InfoCard icon={Phone} title="Telefone" lines={["+55 (11) 4000-2000"]} href="tel:+551140002000" />
+              <InfoCard icon={Phone} title="Telefone" lines={["+55 (21) 99650-9905"]} href="tel:+5521996509905" />
               <InfoCard icon={Mail} title="E-mail" lines={[EMAIL]} href={`mailto:${EMAIL}`} />
               <InfoCard
                 icon={MessageCircle}
