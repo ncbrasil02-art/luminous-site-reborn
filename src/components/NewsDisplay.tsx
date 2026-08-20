@@ -131,20 +131,17 @@ export function NewsDisplay({
                     className="group relative block h-full overflow-hidden rounded-[2.5rem] border border-border bg-card shadow-lg transition-all hover:border-primary/40 hover:glow-sm hover:-translate-y-1"
                   >
                     <div className="overflow-hidden rounded-t-[2.4rem] aspect-[16/10] relative">
-                      {news.image_url ? (
-                        <img 
-                          src={news.image_url} 
-                          alt={news.title} 
-                          loading="lazy"
-                          decoding="async"
-                          sizes="(max-width: 768px) 85vw, (max-width: 1024px) 40vw, 30vw"
-                          className="h-full w-full object-cover transition-transform duration-[1.5s] group-hover:scale-110" 
-                        />
-                      ) : (
-                        <div className="flex h-full w-full items-center justify-center bg-primary/5 text-primary/30">
-                          Sem Imagem
-                        </div>
-                      )}
+                      <img 
+                        src={news.image_url || "/news/default-nc.jpg"} 
+                        alt={news.title} 
+                        loading="lazy"
+                        decoding="async"
+                        sizes="(max-width: 768px) 85vw, (max-width: 1024px) 40vw, 30vw"
+                        className="h-full w-full object-cover transition-transform duration-[1.5s] group-hover:scale-110" 
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
+                        }}
+                      />
                       <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       <div className="absolute top-4 left-4">
                         <span className="bg-background/80 backdrop-blur-md px-3 py-1 rounded-full text-[8px] font-black uppercase tracking-widest border border-white/10 text-white">

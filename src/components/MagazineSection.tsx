@@ -54,18 +54,17 @@ export function MagazineSection() {
                 params={{ slug: featured.slug || "" }}
                 className="group relative block aspect-[16/9] lg:aspect-auto lg:h-[600px] overflow-hidden rounded-[2.5rem] border border-border bg-card shadow-2xl"
               >
-                {featured.image_url ? (
-                  <img 
-                    src={featured.image_url} 
-                    alt={featured.title} 
-                    loading="lazy"
-                    decoding="async"
-                    sizes="(max-width: 1024px) 100vw, 66vw"
-                    className="h-full w-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110" 
-                  />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-primary/5 text-primary/20">Sem Imagem</div>
-                )}
+                <img 
+                  src={featured.image_url || "/news/default-nc.jpg"} 
+                  alt={featured.title} 
+                  loading="lazy"
+                  decoding="async"
+                  sizes="(max-width: 1024px) 100vw, 66vw"
+                  className="h-full w-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110" 
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
+                  }}
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent p-6 md:p-12 flex flex-col justify-end">
                   <div className="flex flex-wrap gap-3 mb-6">
                     {featured.categories.slice(0, 2).map(cat => (
@@ -105,18 +104,17 @@ export function MagazineSection() {
                   className="group grid grid-cols-3 gap-6 items-center"
                 >
                   <div className="col-span-1 aspect-square overflow-hidden rounded-2xl bg-surface border border-border group-hover:border-primary/50 transition-colors">
-                    {news.image_url ? (
-                      <img 
-                        src={news.image_url} 
-                        alt={news.title} 
-                        loading="lazy"
-                        decoding="async"
-                        sizes="(max-width: 768px) 30vw, 15vw"
-                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                      />
-                    ) : (
-                      <div className="flex h-full w-full items-center justify-center bg-primary/5 text-primary/10 text-[10px]">No Image</div>
-                    )}
+                    <img 
+                      src={news.image_url || "/news/default-nc.jpg"} 
+                      alt={news.title} 
+                      loading="lazy"
+                      decoding="async"
+                      sizes="(max-width: 768px) 30vw, 15vw"
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
+                      }}
+                    />
                   </div>
                   <div className="col-span-2 space-y-2">
                     <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">

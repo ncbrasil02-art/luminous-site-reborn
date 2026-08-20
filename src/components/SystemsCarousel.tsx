@@ -82,7 +82,7 @@ export function SystemsCarousel() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="h-full w-full object-cover opacity-30 transition-transform duration-700 group-hover:scale-110"
                     onError={(e) => {
-                        (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80";
+                        (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
