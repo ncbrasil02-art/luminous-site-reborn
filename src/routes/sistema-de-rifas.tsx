@@ -9,13 +9,12 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 import { rifasTestimonials } from "@/lib/testimonials.data";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
 
-// Image Assets
-import rifasLogoAsset from "@/assets/sistema-de-rifas-logo.png.asset.json";
-import rifasShowcase1Asset from "@/assets/melhor-sistema-de-rifas-online.png.asset.json";
-import rifasShowcase2Asset from "@/assets/plataforma-de-rifas-lucrativa.png.asset.json";
-import rifasShowcase3Asset from "@/assets/script-de-rifas-profissional.png.asset.json";
-import rifasShowcase4Asset from "@/assets/sistema-de-rifas-premium.png.asset.json";
-
+// Image Assets - Optimized for external hosting
+const rifasLogoUrl = "/__l5e/assets-v1/26fb39e9-22fd-4dec-a71d-378dfd1e3f0f/sistema-de-rifas-logo.png";
+const rifasShowcase1Url = "/__l5e/assets-v1/130de035-7388-432e-ae19-0d55e318d262/melhor-sistema-de-rifas-online.png";
+const rifasShowcase2Url = "/__l5e/assets-v1/2bea6211-cf33-4267-8b1c-75cc39c82e15/plataforma-de-rifas-lucrativa.png";
+const rifasShowcase3Url = "/__l5e/assets-v1/5988fcfc-d9de-456c-a38e-5dc0699865aa/script-de-rifas-profissional.png";
+const rifasShowcase4Url = "/__l5e/assets-v1/bf636b5f-8d73-46ea-a829-55fa818c64eb/sistema-de-rifas-premium.png";
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
 
@@ -53,10 +52,10 @@ export const Route = createFileRoute("/sistema-de-rifas")({
       imageKeyword="melhor script de rifas e plataforma de ações online profissional"
       showParallaxshowcase
       showcaseImages={[
-        rifasShowcase1Asset.url,
-        rifasShowcase2Asset.url,
-        rifasShowcase3Asset.url,
-        rifasShowcase4Asset.url,
+        rifasShowcase1Url,
+        rifasShowcase2Url,
+        rifasShowcase3Url,
+        rifasShowcase4Url,
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
@@ -98,6 +97,8 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           "**Insegurança jurídica**: sistemas genéricos não orientam sobre o modelo legal correto (título de capitalização, SECAP ou filantropia).",
           "**Falta de app nativo iOS/Android** com sua marca — o participante nunca lembra de você.",
           "**Suporte terceirizado, sem SLA, respostas em dias** — em pleno sorteio, você fica na mão.",
+          "**Falta de app nativo iOS/Android** com sua marca — o participante nunca lembra de você.",
+          "**Suporte terceirizado, sem SLA, respostas em dias** — em pleno sorteio, você fica na mão.",
         ],
       }}
       solution={{
@@ -113,8 +114,9 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           "**Cotas ilimitadas** — de 100 a 10 milhões por campanha",
           "**Módulo de afiliados** com comissão automática",
         ],
-        image: rifasLogoAsset.url
+        image: rifasLogoUrl
       }}
+      testimonials={rifasTestimonials}
       benefits={[
         { icon: Trophy, title: "Sorteio Loteria Federal", desc: "Extração oficial pela **Loteria Federal ou por cota premiada instantânea** — hash público e auditável para cada bilhete." },
         { icon: Banknote, title: "Pix em Segundos", desc: "Reserva, **pagamento e liberação da cota em <10s** via webhook do PSP. Sem intermediário, dinheiro cai direto na sua conta." },
@@ -247,22 +249,13 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           { feature: "Domínio próprio", us: true, them: false },
           { feature: "App iOS/Android com sua marca", us: true, them: false },
           { feature: "Código-fonte licenciado", us: true, them: false },
-          { feature: "Pix cai direto na sua conta", us: true, them: "Retenção 1-3 dias" },
-          { feature: "Cotas ilimitadas (até 10 milhões)", us: true, them: "Limite por plano" },
-          { feature: "Sorteio Loteria Federal + hash blockchain", us: true, them: "Parcial" },
-          { feature: "Módulo de afiliados nativo", us: true, them: false },
-          { feature: "Orientação legal (SECAP/capitalização)", us: true, them: false },
-          { feature: "Suporte técnico 24/7 dedicado", us: true, them: "E-mail/ticket" },
-          { feature: "Customização profunda", us: true, them: false },
-          { feature: "Multi-tenant (múltiplas marcas)", us: true, them: false },
+          { feature: "Base de dados e clientes sua", us: true, them: false },
+          { feature: "Cotas Premiadas Ilimitadas", us: true, them: "Limitado" },
+          { feature: "Split de Pagamento Nativo", us: true, them: false },
         ],
       }}
-      testimonials={rifasTestimonials}
-      testimonialsTitle="Organizadores que alcançaram altos lucros"
       faq={lpFaq}
-      finalCtaTitle={<>Pronto para criar sua <span className="text-gradient">plataforma de rifas</span>?</>}
-      finalCtaDesc={<>Receba um <strong className="text-foreground">plano personalizado em 24h</strong> com escopo, prazo, valor e o modelo legal ideal para sua operação. <strong className="text-foreground">Consultoria inicial gratuita</strong>.</>}
-      relatedNewsTags={["Rifas","Sorteios","Sistemas"]}
+      relatedNewsTags={["rifas", "sistemas", "vendas", "tecnologia"]}
     />
   ),
 });
