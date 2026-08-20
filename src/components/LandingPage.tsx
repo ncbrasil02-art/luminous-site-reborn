@@ -400,9 +400,11 @@ export function LandingPage({
         <section className="relative overflow-hidden py-24 md:py-32">
           <div className="mx-auto max-w-7xl px-4 md:px-6">
             <SectionHeading
-              eyebrow="Plataforma de Leilão"
+              eyebrow={pathname.includes('rifas') ? "Script de Rifas" : "Plataforma de Leilão"}
               title={<>Design <span className="text-gradient">Premium</span> & Performance</>}
-              description="Explore a interface sofisticada e os recursos exclusivos da nossa plataforma de leilões."
+              description={pathname.includes('rifas') 
+                ? "Conheça a interface moderna e intuitiva da nossa plataforma de ações online." 
+                : "Explore a interface sofisticada e os recursos exclusivos da nossa plataforma de leilões."}
             />
             
             <div className="mt-20 space-y-16">
