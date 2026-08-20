@@ -1,7 +1,7 @@
 import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
 import { useEffect } from "react";
 import {
-  Car, CarFront, Coins, Dice5, Gavel, Gift, ScanLine, ShoppingBag, Store, Ticket, Tractor,
+  Car, CarFront, Coins, Dice5, Gavel, Gift, ScanLine, ShoppingBag, Store, Ticket, Tractor, ChevronRight
 } from "lucide-react";
 import { trackRedirect, trackClick } from "@/lib/analytics";
 
