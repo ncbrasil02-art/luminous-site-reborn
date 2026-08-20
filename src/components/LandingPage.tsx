@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { newsData } from "@/lib/news.data";
 import { NewsDisplay } from "./NewsDisplay";
+import { ShareButtons } from "./ShareButtons";
 import { trackRedirect, trackClick } from "@/lib/analytics";
 import { buildMeta } from "@/lib/seo";
 import {
@@ -259,6 +260,15 @@ export function LandingPage({
             >
               {secondaryCta.label}
             </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="mt-8 flex justify-center"
+          >
+            <ShareButtons url={`${typeof window !== 'undefined' ? window.location.origin : ''}${pathname}`} title={typeof h1 === 'string' ? h1 : eyebrow} />
           </motion.div>
 
           {stats && (
