@@ -5,7 +5,7 @@ import {
   Sparkles, Target, TrendingUp, Users, Video, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
-import logoUrl from "@/assets/logo-nc-leiloes-v2.png.asset.json";
+import logoUrl from "@/assets/logo-nc-leiloes-final.png.asset.json";
 import configUrl from "@/assets/sistema-de-leilao-configuracoes.png.asset.json";
 import dashboardUrl from "@/assets/sistema-de-leilao-dashboard-premium.png.asset.json";
 import cardsUrl from "@/assets/sistema-de-leilao-cards.png.asset.json";
