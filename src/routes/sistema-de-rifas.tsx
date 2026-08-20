@@ -262,21 +262,6 @@ export const Route = createFileRoute("/sistema-de-rifas")({
       finalCtaTitle={<>Pronto para criar sua <span className="text-gradient">plataforma de rifas</span>?</>}
       finalCtaDesc={<>Receba um <strong className="text-foreground">plano personalizado em 24h</strong> com escopo, prazo, valor e o modelo legal ideal para sua operação. <strong className="text-foreground">Consultoria inicial gratuita</strong>.</>}
       relatedNewsTags={["Rifas","Sorteios","Sistemas"]}
-      solution={{
-        title: <>Seu <span className="text-gradient">Script de Rifas</span> — Domínio Próprio e 100% de Lucro</>,
-        desc: <>Ao contratar nossa <strong className="text-foreground">plataforma de rifas</strong>, você recebe um ambiente exclusivo e configurado em seu domínio. Nosso <strong className="text-foreground">sistema de rifas</strong> permite que você gerencie campanhas ilimitadas, afiliados e pagamentos sem intermediários. É a solução definitiva para quem busca um <strong className="text-foreground">script de ações</strong> robusto, seguro e altamente lucrativo.</>,
-        highlights: [
-          "**Licença perpétua ou mensalidade fixa** — sem % sobre vendas",
-          "**App iOS + Android** publicado com sua marca",
-          "**Sorteio pela Loteria Federal** com hash blockchain",
-          "**Pix instantâneo** liberado em <10 segundos",
-          "**Orientação legal completa** — modelo SECAP, capitalização ou filantropia",
-          "**Suporte técnico 24/7** por WhatsApp e ticket",
-          "**Cotas ilimitadas** — de 100 a 10 milhões por campanha",
-          "**Módulo de afiliados** com comissão automática",
-        ],
-        image: rifasLogoAsset.url
-      }}
     />
   ),
 });
