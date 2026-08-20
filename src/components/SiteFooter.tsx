@@ -71,6 +71,10 @@ export function SiteFooter() {
                   comercial@ncbrasil.com.br
                 </a>
               </li>
+              <li className="flex items-center gap-2">
+                <Clock className="h-4 w-4 text-primary" />
+                <span className="text-muted-foreground">Seg a Dom · 8h às 22h</span>
+              </li>
             </ul>
             <div className="mt-8 flex items-center gap-4">
               <a
