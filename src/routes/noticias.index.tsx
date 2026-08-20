@@ -124,18 +124,17 @@ function NewsIndex() {
               >
                 <div className="grid lg:grid-cols-2">
                   <div className="relative h-80 lg:h-[500px] overflow-hidden">
-                    {featuredNews.image_url ? (
-                      <img 
-                        src={featuredNews.image_url} 
-                        alt={featuredNews.title} 
-                        loading="eager"
-                        fetchPriority="high"
-                        decoding="async"
-                        className="h-full w-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105" 
-                      />
-                    ) : (
-                      <div className="flex h-full w-full items-center justify-center bg-primary/5 text-primary/20">Sem Imagem</div>
-                    )}
+                    <img 
+                      src={featuredNews.image_url || "/news/default-nc.jpg"} 
+                      alt={featuredNews.title} 
+                      loading="eager"
+                      fetchPriority="high"
+                      decoding="async"
+                      className="h-full w-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105" 
+                      onError={(e) => {
+                        (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
+                      }}
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent lg:hidden" />
                   </div>
                   <div className="p-8 lg:p-16 flex flex-col justify-center">
@@ -177,27 +176,26 @@ function NewsIndex() {
                 <Link 
                   to="/noticias/$slug"
                   params={{ slug: news.slug || "" }}
-                  className="group block h-full space-y-6 rounded-[2rem] border border-border bg-card/40 p-6 transition-all hover:-translate-y-2 hover:border-primary/40 hover:bg-card hover:glow-sm"
-                >
-                  <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-surface border border-border/50">
-                    {news.image_url ? (
-                      <img 
-                        src={news.image_url} 
-                        alt={news.title} 
-                        loading="lazy"
-                        decoding="async"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                      />
-                    ) : (
-                      <div className="flex h-full w-full items-center justify-center bg-primary/5 text-primary/10 text-xs">Sem Imagem</div>
-                    )}
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-background/80 backdrop-blur-md px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-widest border border-white/10 text-white">
-                        {news.categories[0] || 'Geral'}
-                      </span>
-                    </div>
+                className="group block h-full space-y-6 rounded-[2rem] border border-border bg-card/40 p-6 transition-all hover:-translate-y-2 hover:border-primary/40 hover:bg-card hover:glow-sm"
+              >
+                <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-surface border border-border/50">
+                  <img 
+                    src={news.image_url || "/news/default-nc.jpg"} 
+                    alt={news.title} 
+                    loading="lazy"
+                    decoding="async"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
+                    }}
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-background/80 backdrop-blur-md px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-widest border border-white/10 text-white">
+                      {news.categories[0] || 'Geral'}
+                    </span>
                   </div>
+                </div>
                   <div className="space-y-4">
                     <h3 className="line-clamp-2 font-display text-xl font-bold group-hover:text-primary transition-colors leading-tight">
                       {news.title}
