@@ -18,7 +18,7 @@ export const Route = createFileRoute('/noticias/categoria/$category')({
     title: `Categoria: ${loaderData?.category || 'Notícias'} · NC Brasil`,
     description: `Veja todas as notícias e artigos na categoria ${loaderData?.category} da NC Brasil.`,
     keywords: `notícia, nc brasil, categoria, ${loaderData?.category}`,
-    canonical: `${SITE_URL}/noticias/categoria/${loaderData?.category}`,
+    canonical: `/noticias/categoria/${loaderData?.category}`,
   }),
   component: CategoryPage,
 })
