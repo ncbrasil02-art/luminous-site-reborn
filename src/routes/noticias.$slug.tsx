@@ -133,11 +133,17 @@ function NewsPostPage() {
             <div className="mt-12 relative group">
               <div className="absolute inset-0 bg-primary/10 blur-[80px] rounded-full opacity-20 -z-10" />
               <div className="aspect-video overflow-hidden rounded-[3rem] border border-border shadow-2xl bg-surface">
-                {post.image_url ? (
-                  <img src={post.image_url} alt={post.title} loading="eager" fetchPriority="high" decoding="async" className="h-full w-full object-cover transition-transform duration-[2s] group-hover:scale-105" />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-primary/5 text-primary/10">Sem Imagem</div>
-                )}
+                <img 
+                  src={post.image_url || "/news/default-nc.jpg"} 
+                  alt={post.title} 
+                  loading="eager" 
+                  fetchPriority="high" 
+                  decoding="async" 
+                  className="h-full w-full object-cover transition-transform duration-[2s] group-hover:scale-105" 
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
+                  }}
+                />
               </div>
             </div>
           </Reveal>
