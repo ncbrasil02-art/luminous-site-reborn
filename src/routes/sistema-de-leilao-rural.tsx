@@ -4,6 +4,8 @@ import {
   Sprout, Radio, FileCheck, BarChart3, Users, Wallet, Cloud, Award, Zap, Lock, Database,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao-rural";
 
@@ -144,11 +146,7 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
           { feature: "Código-fonte entregável", us: "Opcional", them: false },
         ],
       }}
-      testimonials={[
-        { quote: "Migramos do sistema anterior e reduzimos em 70% o retrabalho de emissão de GTA. O leilão agora fecha com boleto pago no mesmo dia via Pix.", author: "Ricardo Andrade", role: "Leiloeiro Oficial · MT" },
-        { quote: "A transmissão HD e o áudio do pregoeiro fizeram nosso leilão de touros bater recorde de faturamento em 2024.", author: "Fazenda Guardião", role: "Cabanha PO · GO" },
-        { quote: "Finalmente um sistema que entende de campo. GTA, TAG, vacina — tudo automático. Recomendo para qualquer leiloeiro sério.", author: "Marcelo Vasconcellos", role: "Associação de Criadores · MG" },
-      ]}
+      testimonials={testimonialsData.slice(5, 8)}
       faq={lpFaq}
       finalCtaTitle={<>Pronto para operar o leilão rural mais <span className="text-gradient">tecnológico do agronegócio</span>?</>}
       finalCtaDesc={<>Fale com nossa equipe especializada em agro. Enviamos <strong className="text-foreground">demonstração ao vivo com dados reais</strong>, proposta técnica e cronograma personalizado.</>}

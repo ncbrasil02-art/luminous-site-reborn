@@ -4,6 +4,8 @@ import {
   BarChart3, Zap, Lock, Cloud, Database, Award, Globe2, Smartphone, FileCheck, Gauge,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/classificados-de-veiculos";
 
@@ -145,11 +147,7 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
           { feature: "Código-fonte entregável", us: "Opcional", them: false },
         ],
       }}
-      testimonials={[
-        { quote: "Saímos do Webmotors e criamos nosso portal regional com a NC. Em 6 meses fizemos 3x mais leads pagando 80% menos.", author: "Grupo AutoShow", role: "Rede de Revendas · SC" },
-        { quote: "A integração com FIPE e gravame em tempo real elevou a confiança do comprador. Nossa taxa de fechamento subiu 40%.", author: "Revenda MegaCar", role: "Concessionária Multimarca · SP" },
-        { quote: "O comparador e o app com push de baixa de preço fizeram o usuário voltar 3x mais ao portal. Retenção incrível.", author: "AutoRegional", role: "Portal Regional · MG" },
-      ]}
+      testimonials={testimonialsData.slice(0, 3)}
       faq={lpFaq}
       finalCtaTitle={<>Pronto para lançar o <span className="text-gradient">próximo grande portal automotivo</span>?</>}
       finalCtaDesc={<>Fale com nossa equipe de produto. Enviamos <strong className="text-foreground">demo ao vivo, análise de mercado da sua região</strong> e proposta comercial em até 48h.</>}

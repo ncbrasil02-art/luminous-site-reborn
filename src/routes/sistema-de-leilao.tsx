@@ -14,6 +14,8 @@ import vitrineUrl from "@/assets/sistema-de-leilao-vitrine.png.asset.json";
 import mobileUrl from "@/assets/sistema-de-leilao-card-detalhe.png.asset.json";
 import painelUrl from "@/assets/sistema-de-leilao-painel-online.png.asset.json";
 import dashDetailUrl from "@/assets/sistema-de-leilao-dashboard-detalhe.png.asset.json";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao";
 
@@ -235,11 +237,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         { src: (mobileUrl as any).url, alt: "Sistema de Leilão - Visualização Mobile", caption: "Experiência mobile fluida para arrematantes." },
         { src: (painelUrl as any).url, alt: "Sistema de Leilão - Painel Financeiro", caption: "Controle total de faturamento e lances." },
       ]}
-      testimonials={[
-        { quote: "Migramos do papel para a plataforma da NC Brasil e triplicamos o número de arrematantes em 6 meses. O suporte durante o pregão é impecável.", author: "Dr. Carlos Andrade", role: "Leiloeiro Oficial — SP" },
-        { quote: "A conformidade com o CPC e a assinatura ICP-Brasil eliminaram nossas contestações judiciais. Recomendo para qualquer tribunal.", author: "Juíza Marina Ferreira", role: "Vara Cível — MG" },
-        { quote: "O split automático e a integração com nosso ERP economizaram 40 horas/mês do time financeiro. ROI em 3 meses.", author: "Rafael Costa", role: "CFO — Cooperativa Rural" },
-      ]}
+      testimonials={testimonialsData.slice(0, 3)}
       faq={lpFaq}
       finalCtaTitle={<>Pronto para <span className="text-gradient">digitalizar seus leilões</span>?</>}
       finalCtaDesc={<>Agende uma <strong className="text-foreground">demonstração ao vivo</strong> — mostramos a plataforma com seus lotes reais e enviamos proposta em <strong className="text-foreground">até 24 horas</strong>.</>}

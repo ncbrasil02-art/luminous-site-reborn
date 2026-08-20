@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BarChart3, Bell, CreditCard, Gift, MapPin, Percent, QrCode, ShoppingBag, Store, Tag, Ticket, Users } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-cupom-descontos";
 
@@ -47,6 +49,7 @@ export const Route = createFileRoute("/sistema-de-cupom-descontos")({
         { icon: Gift, title: "Programa de Indicações", desc: "MGM com bônus de cashback para quem indica e é indicado." },
         { icon: Users, title: "White Label", desc: "Marca, cores, domínio e app próprios — 100% customizável." },
       ]}
+      testimonials={testimonialsData.slice(0, 3)}
       faq={lpFaq}
       relatedNewsTags={["Cupom", "E-commerce", "Sistemas", "Marketing"]}
     />

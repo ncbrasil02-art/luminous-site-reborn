@@ -6,6 +6,8 @@ import {
   Ticket, Trophy, Users, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-raspadinha";
 
@@ -222,11 +224,7 @@ export const Route = createFileRoute("/sistema-de-raspadinha")({
           { feature: "Deploy em 30 dias", us: true, them: "3 a 6 meses" },
         ],
       }}
-      testimonials={[
-        { quote: "Trocamos um white label europeu pela NC Brasil e economizamos R$180 mil/mês em GGR. O Pix nativo mudou nossa retenção completamente.", author: "Bruno Cardoso", role: "PixWin · SP" },
-        { quote: "O RNG com hash público na blockchain acabou com qualquer questionamento de lisura. Nosso NPS subiu de 42 para 71.", author: "Thaís Menezes", role: "Raspa BR · RJ" },
-        { quote: "Em 90 dias já estávamos operando com app iOS e Android nas lojas. Nenhum fornecedor internacional entregou isso antes.", author: "Diego Rocha", role: "GO Raspa · GO" },
-      ]}
+      testimonials={testimonialsData.slice(1, 4)}
       faq={lpFaq}
       finalCtaTitle={<>Pronto para lançar sua <span className="text-gradient">plataforma de raspadinhas</span>?</>}
       finalCtaDesc={<>Receba um <strong className="text-foreground">plano executivo em 24h</strong> com modelo legal, arquitetura, prazo, investimento e projeção de GGR. <strong className="text-foreground">Consultoria estratégica gratuita</strong>.</>}
