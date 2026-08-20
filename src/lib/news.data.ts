@@ -537,7 +537,7 @@ export const newsData: NewsPost[] = [
       "sites semânticos",
       "webdesign"
     ],
-    "image_url": "/news/desenvolvimento-webdesign-281-300x300.png",
+    "image_url": "/news/Imagem-blog.pngvC3ADdeos-corporativos-1.png",
     "thumb_id": "49336"
   },
   {
@@ -570,7 +570,7 @@ export const newsData: NewsPost[] = [
       "criar sites reponsivos",
       "loja virtual para celulares"
     ],
-    "image_url": "/news/diferencial-em-criacao-de-sites-e-e-commerces.jpg",
+    "image_url": "/news/diferencial-em-criacao-de-sites-e-e-commerces-820x450-Copia.jpg",
     "thumb_id": "49283"
   },
   {
@@ -641,7 +641,7 @@ export const newsData: NewsPost[] = [
       "web designers",
       "webdesign"
     ],
-    "image_url": "/news/por-que-contratar-profissionais-para-a-criacao-de-sites-820x450-Copia-300x165-1.jpg",
+    "image_url": "/news/Imagem-blog-vC3ADdeos-corporativos-3.png",
     "thumb_id": "49335"
   },
   {
@@ -665,7 +665,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "wordpress"
     ],
-    "image_url": "/news/shutterstock_528070915-820x490-Copia-300x179-1.jpg",
+    "image_url": "/news/4-dicas-para-criar-um-C3B3timo-logo-3.png",
     "thumb_id": "49320"
   },
   {
@@ -820,7 +820,7 @@ export const newsData: NewsPost[] = [
       "criar aplicativo",
       "criar loja virtual profissional"
     ],
-    "image_url": "/news/destellos-660x330.gif",
+    "image_url": "/news/era-digital.png",
     "thumb_id": "49442"
   },
   {
@@ -877,7 +877,7 @@ export const newsData: NewsPost[] = [
       "Sites Turbinados",
       "Web Designer"
     ],
-    "image_url": "/news/o-que-e-seo.jpg",
+    "image_url": "/news/full_xciWr5mV.jpg",
     "thumb_id": "49544"
   },
   {
@@ -903,7 +903,7 @@ export const newsData: NewsPost[] = [
       "Web Designer",
       "website"
     ],
-    "image_url": "/news/screen-shot-2015-12-21-at-11-41-40_770x433_acf_cropped.jpg",
+    "image_url": "/news/wdd2014.jpg",
     "thumb_id": "49552"
   },
   {
@@ -944,7 +944,7 @@ export const newsData: NewsPost[] = [
       "website",
       "wordpress"
     ],
-    "image_url": "/news/site-profissional-capa-1024x535.jpg",
+    "image_url": "/news/maxresdefault-scaled.jpg",
     "thumb_id": "49608"
   },
   {
@@ -985,7 +985,7 @@ export const newsData: NewsPost[] = [
       "Search Engine Marketing",
       "SEM"
     ],
-    "image_url": "/news/search-engine-marketing-1024x398.jpg",
+    "image_url": "/news/que-e-marketing-de-busca.jpg",
     "thumb_id": "49699"
   },
   {
@@ -1029,7 +1029,7 @@ export const newsData: NewsPost[] = [
       "Sites para a igreja",
       "Tendência Web designer"
     ],
-    "image_url": "/news/hillsong-image-3-1024x682.jpg",
+    "image_url": "/news/pc-keyboard-thumb-large.jpg",
     "thumb_id": "49763"
   },
   {
@@ -1069,7 +1069,7 @@ export const newsData: NewsPost[] = [
       "Erros de E-commerce",
       "Web Designer"
     ],
-    "image_url": "/news/Como-fazer-seu-e-commerce-se-tornar-um-outlier-1.jpg",
+    "image_url": "/news/2016-e-commerce.png",
     "thumb_id": "49789"
   },
   {
@@ -1158,7 +1158,7 @@ export const newsData: NewsPost[] = [
       "tipografia",
       "Web Design"
     ],
-    "image_url": "/news/webdesign-dpc86654229-1200x608-1024x519.jpg",
+    "image_url": "/news/webdesign-courses-1.jpg",
     "thumb_id": "49891"
   },
   {
@@ -1315,7 +1315,7 @@ export const newsData: NewsPost[] = [
       "Site de vendas",
       "Venda de veículos online"
     ],
-    "image_url": "/news/uma-burocracia-congestionando-a-compra-e-venda-de-veiculos.jpg",
+    "image_url": "/news/Zz03YTZlNTgxYTFhMGYwY2UwZmQ4Y2YyOTc2M2Y3ZjA5NA1-1024x1024.webp",
     "thumb_id": "50044"
   },
   {
@@ -1338,7 +1338,7 @@ export const newsData: NewsPost[] = [
       "Tendência Redutiva",
       "Tendência Web designer"
     ],
-    "image_url": "/news/2016-06-25-1466835058-3172856-DKCWebDesignBanner-1024x517.jpg",
+    "image_url": "/news/web-design-concepts-with-blurred-background_1134-82.jpg",
     "thumb_id": "50054"
   },
   {
@@ -1361,7 +1361,7 @@ export const newsData: NewsPost[] = [
       "UX",
       "Web site"
     ],
-    "image_url": "/news/Agile-Project-Management-and-User-Experience-UX-design.jpg",
+    "image_url": "/news/user_experience_design.jpg",
     "thumb_id": "50058"
   },
   {
@@ -1392,7 +1392,7 @@ export const newsData: NewsPost[] = [
       "logo",
       "marca"
     ],
-    "image_url": "/news/identidade-visual-1024x652.png",
+    "image_url": "/news/identidade-visual-design-grafico.jpg",
     "thumb_id": "50073"
   },
   {
@@ -1441,7 +1441,7 @@ export const newsData: NewsPost[] = [
       "logomarca",
       "marca"
     ],
-    "image_url": "/news/marca2.jpg",
+    "image_url": "/news/design_internet.jpg",
     "thumb_id": "50097"
   },
   {
@@ -1484,7 +1484,7 @@ export const newsData: NewsPost[] = [
       "Vendas de Veículos Online",
       "Web Carrão"
     ],
-    "image_url": "/news/Mercado-automotivo-1024x670.jpg",
+    "image_url": "/news/Female-Accountant.webp",
     "thumb_id": "50487"
   },
   {
@@ -1510,7 +1510,7 @@ export const newsData: NewsPost[] = [
       "Site de Cupom Online",
       "Tendência Web designer"
     ],
-    "image_url": "/news/5853da12e9a55-noticia_cupom_de_desconto_atrai_clientela_on_line.jpg",
+    "image_url": "/news/b2b-vs-b2c-e-commerce-1024x579.webp",
     "thumb_id": "50500"
   },
   {
@@ -1538,7 +1538,7 @@ export const newsData: NewsPost[] = [
       "criar site responsivo",
       "site responsivo"
     ],
-    "image_url": "/news/tend1-300x181.jpg",
+    "image_url": "/news/entenda-o-que-e-um-site-responsivo-1132x600.jpg",
     "thumb_id": "50527"
   },
   {
@@ -1589,7 +1589,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Planejamento SEO"
     ],
-    "image_url": "/news/Deep-Crawl_icon-icons.com_53720.png",
+    "image_url": "/news/sales-plannig-e1510279048728.jpg",
     "thumb_id": "50581"
   },
   {
@@ -1604,7 +1604,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "seo"
     ],
-    "image_url": "/news/o-que-e-seo.jpg",
+    "image_url": "/news/o-que-e-seo-destaque.gif",
     "thumb_id": "50599"
   },
   {
@@ -1633,7 +1633,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Plataforma de leilão"
     ],
-    "image_url": "/news/leilao-n.jpg",
+    "image_url": "/news/leilão-e1510970985900.jpg",
     "thumb_id": "50612"
   },
   {
@@ -1650,7 +1650,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Sistemas de Veículos"
     ],
-    "image_url": "/news/NC.jpg",
+    "image_url": "/news/sistema-veiculos-scaled.jpg",
     "thumb_id": "50621"
   },
   {
@@ -1666,7 +1666,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Sistema sob demanda"
     ],
-    "image_url": "/news/sistema-sob-demanda.jpg",
+    "image_url": "/news/office-583841_960_720-e1510975970167.jpg",
     "thumb_id": "50626"
   },
   {
@@ -1688,7 +1688,7 @@ export const newsData: NewsPost[] = [
       "sistemas web",
       "Software"
     ],
-    "image_url": "/news/sistemas-web.jpg",
+    "image_url": "/news/2.webp",
     "thumb_id": "50665"
   },
   {
@@ -1723,7 +1723,7 @@ export const newsData: NewsPost[] = [
       "Site",
       "websites"
     ],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/sistemas-web.jpg",
     "thumb_id": "50681"
   },
   {
@@ -1778,7 +1778,7 @@ export const newsData: NewsPost[] = [
       "wordpress",
       "WP"
     ],
-    "image_url": "/news/wordpress.jpg",
+    "image_url": "/news/520116_edf5_2.webp",
     "thumb_id": "50719"
   },
   {
@@ -1795,7 +1795,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Contabilidade",
       "Sistema de Gestão Contábil"
     ],
-    "image_url": "/news/cacaroot-1024x645.jpg",
+    "image_url": "/news/cacaroot.jpg",
     "thumb_id": "50728"
   },
   {
@@ -1875,7 +1875,7 @@ export const newsData: NewsPost[] = [
       "Sistema",
       "Software Empresarial"
     ],
-    "image_url": "/news/gestao-talentos.jpg",
+    "image_url": "/news/86585-o-funcionario-nao-sai-do-celular-use-isso-a-favor-da-sua-empresa-900x365.webp",
     "thumb_id": "50773"
   },
   {
@@ -1906,7 +1906,7 @@ export const newsData: NewsPost[] = [
       "Sistema Gerador de Relatórios",
       "Sistemas"
     ],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/4-razoes-para-utilizar-a-automacao-de-email-marketing.jpeg",
     "thumb_id": "50784"
   },
   {
@@ -1987,7 +1987,7 @@ export const newsData: NewsPost[] = [
       "Planejamento",
       "Plataforma eletrônica"
     ],
-    "image_url": "/news/download-1.png",
+    "image_url": "/news/T-ecommerce-D-loja-Virtual.webp",
     "thumb_id": "50854"
   },
   {
@@ -2041,7 +2041,7 @@ export const newsData: NewsPost[] = [
       "rede Social",
       "Site"
     ],
-    "image_url": "/news/marketing-digital.jpg",
+    "image_url": "/news/shutterstock_575844202-700x484.jpg",
     "thumb_id": "50915"
   },
   {
@@ -2138,7 +2138,7 @@ export const newsData: NewsPost[] = [
       "Marketing",
       "Marketing Digital"
     ],
-    "image_url": "/news/instagram-logo-gradient2-ss-1920-1024x576.jpg",
+    "image_url": "/news/instagram-b9-type-ss.jpg",
     "thumb_id": "50995"
   }
 ];
