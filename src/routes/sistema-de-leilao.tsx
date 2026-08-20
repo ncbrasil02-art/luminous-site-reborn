@@ -12,7 +12,20 @@ import { testimonialsData } from "@/lib/testimonials.data";
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao";
 
 const lpFaq = [
-...
+  { q: "A plataforma é homologada nos Tribunais de Justiça?", a: "Sim. A plataforma NC Brasil é **homologada em 27 Tribunais de Justiça** (AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO), além de atender **TJ/SP, Detran, leilões judiciais, extrajudiciais, restritos e venda direta**." },
+  { q: "Como funciona o modelo de aluguel do sistema?", a: "**Não cobramos aluguel mensal do sistema — a plataforma é sua.** Diferente de concorrentes como Leilão PRO ou Superbid que operam por assinatura recorrente, você adquire a licença completa, com domínio próprio e código instalado em servidor dedicado. Sem taxa por lance, sem percentual sobre arrematação." },
+  { q: "O sistema atende leilões judiciais e extrajudiciais?", a: "Sim. A plataforma atende **leilões judiciais (CPC art. 879 a 903)**, **extrajudiciais (Decreto 21.981/32)**, **restritos, venda direta, Detran, imóveis, rurais, arte e veículos**, com fluxos separados de edital, publicação em DOE, cronograma e prestação de contas." },
+  { q: "Como funciona a transmissão ao vivo do pregão?", a: "Streaming em **HD adaptativo (WebRTC + HLS)** com cronômetro sincronizado servidor-cliente (evita contestação de lance), chat moderado, histórico completo do pregão e **gravação armazenada como prova jurídica** por até 10 anos." },
+  { q: "O sistema calcula comissões, taxas e impostos automaticamente?", a: "Sim. **Comissão do leiloeiro (5% arrematante + 5% comitente), taxa administrativa, ITBI, ICMS e IR** são calculados por lote conforme regras configuráveis, com **split automático via PIX** para leiloeiro, comitente e plataforma no momento da liquidação." },
+  { q: "É possível personalizar a marca e ter domínio próprio?", a: "**100% white-label**: logotipo, cores, tipografia, **domínio próprio** (`leiloes.suaempresa.com.br` ou `.com.br` dedicado), edital personalizado, templates de e-mail e apps iOS/Android com sua marca na App Store e Play Store. Case real: [ativeiloes.com.br](https://www.ativeiloes.com.br) operando na plataforma." },
+  { q: "Quanto tempo leva a implantação completa?", a: "De **30 a 60 dias**, incluindo configuração white-label, integrações com meios de pagamento (PIX/Boleto/Cartão), KYC (Receita/Serasa), treinamento da equipe (operadores + financeiro + moderadores) e **leilão-piloto acompanhado in loco**." },
+  { q: "Como funciona a habilitação (KYC) de arrematantes?", a: "Cadastro com **KYC completo integrado à Receita Federal** (validação CPF/CNPJ), upload de documentos com OCR, comprovante de residência, e aprovação global ou por lote com trilha de auditoria LGPD. Blacklist e histórico de inadimplência incluídos." },
+  { q: "Suporta lances automáticos, robô e anti-sniping?", a: "Sim. **Lance máximo programado (robô)** com notificação push, e-mail e SMS. **Anti-sniping nativo**: prorrogação automática de 3 minutos quando há lance nos últimos segundos, evitando lances de última hora e garantindo lisura do pregão conforme jurisprudência do STJ." },
+  { q: "Vocês fazem suporte durante pregões críticos?", a: "**Suporte 24/7 durante pregões** com equipe técnica dedicada em plantão, SLA de resposta de 1h em dias úteis e monitoramento proativo com alertas. Planos incluem evolução mensal, backups automatizados 3x/dia e ambiente de contingência." },
+  { q: "É possível integrar com ERP, PJe, DOE e cartórios?", a: "Sim. **API REST + webhooks** para integração com **ERPs (SAP, TOTVS, Sankhya), PJe (Processo Judicial Eletrônico), DOE, cartórios eletrônicos, sistemas contábeis e Detran** para consulta de restrições veiculares." },
+  { q: "Como funciona a prestação de contas ao juízo?", a: "Geração automática do **auto de arrematação assinado com ICP-Brasil**, relatório oficial por leilão (lotes, lances, arrematantes, valores, comissões), exportação para contabilidade e junta comercial, e nota fiscal eletrônica emitida automaticamente." },
+  { q: "Quais meios de pagamento estão integrados?", a: "**PIX (liquidação em segundos)**, boleto bancário, cartão de crédito parcelado, TED/DOC e caução refundável via bloqueio de cartão. Integrações nativas com **Pagar.me, Iugu, PagSeguro, Stripe** e conciliação bancária automatizada." },
+  { q: "Qual o diferencial vs Leilão PRO e Superbid?", a: "**NC Brasil**: plataforma proprietária sem aluguel, taxa 0% por lance, homologação em 27 TJs, código-fonte disponível, apps nativos com sua marca. **Concorrentes**: cobram mensalidade + % por arrematação, plataforma compartilhada, sem acesso ao código, apps sob marca do fornecedor." },
 ];
 
 export const Route = createFileRoute("/sistema-de-leilao")({
@@ -111,7 +124,6 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         </div>
       }
       solution={{
-
         title: <>Sua <span className="text-gradient">Plataforma de Leilão Online</span> — Homologada e Sem Mensalidade</>,
         desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> é a ferramenta ideal para quem deseja <strong className="text-foreground">ver o site de leilões</strong> operando com máxima performance. Entregamos um <strong className="text-foreground">sistema online para leiloeiro</strong> com licença perpétua e código-fonte. Nossa <strong className="text-foreground">plataforma de pregões online</strong> é robusta, white-label e preparada para leilões judiciais e extrajudiciais. Diferente de soluções como <strong className="text-foreground">sas leilão</strong> genéricas, oferecemos personalização total para o seu negócio.</>,
         image: "/__l5e/assets-v1/2bea6211-cf33-4267-8b1c-75cc39c82e15/sistema-de-leilao-configuracoes.png",
@@ -214,36 +226,22 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         { step: "Semana 3-4", title: "Configuração e Integrações", desc: "Meios de pagamento, KYC, e-mail transacional, DOE e **integrações com seu ERP/TJ**." },
         { step: "Semana 5-6", title: "Treinamento", desc: "Capacitação da equipe: **operadores, moderadores e financeiro**, com manual e vídeos." },
         { step: "Semana 7-8", title: "Leilão-piloto acompanhado", desc: "Primeiro pregão com **suporte in-loco em tempo real** e ajustes finos." },
-        { step: "Contínuo", title: "Evolução e Suporte", desc: "Sprints mensais de melhoria, **SLA 24/7 durante pregões** e monitoramento proativo." },
       ]}
       comparative={{
         usLabel: "NC Brasil",
-        themLabel: "Plataformas genéricas",
+        themLabel: "Leilão PRO / Superbid",
         rows: [
-          { feature: "White-label com domínio próprio", us: true, them: false },
-          { feature: "Cronômetro sincronizado servidor", us: true, them: false },
-          { feature: "Anti-sniping nativo", us: true, them: false },
-          { feature: "Split automático de comissão", us: true, them: false },
-          { feature: "Transmissão HD com gravação jurídica", us: true, them: "Básico" },
-          { feature: "Apps iOS e Android nativos", us: true, them: false },
-          { feature: "API aberta para ERP e TJ", us: true, them: false },
-          { feature: "Suporte 24/7 durante pregões", us: true, them: false },
-          { feature: "Taxa por lance", us: "0%", them: "1-3%" },
-          { feature: "Prazo de implantação", us: "30-60 dias", them: "90+ dias" },
+          { feature: "Licença perpétua (Sem aluguel)", us: true, them: false },
+          { feature: "Taxa 0% por lance", us: true, them: false },
+          { feature: "Homologação em 27 TJs", us: true, them: "Limitado" },
+          { feature: "Código-fonte disponível", us: true, them: false },
+          { feature: "Apps White-label (Sua Marca)", us: true, them: false },
+          { feature: "Assinatura ICP-Brasil nativa", us: true, them: "Opcional" },
         ],
       }}
-      galleryTitle={<>Interface do <span className="text-gradient">Sistema para Leiloeiro</span></>}
-      gallery={[
-        { src: "/img-sistema-de-leilao/cards.png", alt: "Sistema de Leilão - Modelos de Cards", caption: "Escolha entre diversos modelos de cards para seus lotes." },
-        { src: "/img-sistema-de-leilao/card-detalhe.png", alt: "Sistema de Leilão - Visualização Mobile", caption: "Experiência mobile fluida para arrematantes." },
-        { src: "/img-sistema-de-leilao/painel-online.png", alt: "Sistema de Leilão - Painel Financeiro", caption: "Controle total de faturamento e lances." },
-      ]}
-      testimonials={testimonialsData.slice(0, 3)}
       faq={lpFaq}
-      finalCtaTitle={<>Pronto para <span className="text-gradient">digitalizar seus leilões</span>?</>}
-      finalCtaDesc={<>Agende uma <strong className="text-foreground">demonstração ao vivo</strong> — mostramos a plataforma com seus lotes reais e enviamos proposta em <strong className="text-foreground">até 24 horas</strong>.</>}
-      relatedNewsTags={["Leilão", "Leilão Online", "Sistemas", "Tecnologia"]}
-      />
+      relatedNewsTags={["leilão", "sistemas", "jurídico", "tecnologia"]}
+    />
     </>
   ),
 });
