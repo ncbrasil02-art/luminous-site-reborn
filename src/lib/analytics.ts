@@ -82,3 +82,11 @@ export type LeadSource =
 export function trackLead(source: LeadSource, extra: Record<string, unknown> = {}) {
   trackEvent("generate_lead", { source, currency: "BRL", value: 1, ...extra });
 }
+
+export function trackClick(label: string, location: string, extra: Record<string, unknown> = {}) {
+  trackEvent("click", {
+    event_label: label,
+    event_location: location,
+    ...extra
+  });
+}
