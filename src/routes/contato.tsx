@@ -14,7 +14,7 @@ import {
 import { Reveal, SectionHeading } from "@/components/Section";
 import { trackLead, trackClick } from "@/lib/analytics";
 
-const EMAIL = "contato@ncbrasil.com.br";
+const EMAIL = "comercial@ncbrasil.com.br";
 const WHATSAPP =
   "https://wa.me/5521996509905?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20a%20NC%20Brasil.";
 
@@ -145,7 +145,7 @@ function ContatoPage() {
               <InfoCard
                 icon={Clock}
                 title="Horário"
-                lines={["Seg a Sex · 9h às 18h", "Sáb · sob agendamento"]}
+                lines={["Seg a Dom · 8h às 22h"]}
               />
               <InfoCard
                 icon={Calendar}
@@ -177,7 +177,7 @@ function ContatoPage() {
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             <OfficeCard
               cidade="São Paulo · ABC"
-              endereco="São Bernardo do Campo — SP"
+              endereco="Rua Barão de Mauá 347, São Bernardo do Campo — SP"
               tag="Sede"
             />
             <OfficeCard
