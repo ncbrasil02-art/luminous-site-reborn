@@ -175,6 +175,12 @@ export function LandingPage({
             className="h-full w-full object-cover opacity-20"
             loading="eager"
             fetchPriority="high"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              if (!target.src.includes('default-nc.jpg')) {
+                target.src = '/default-nc.jpg';
+              }
+            }}
           />
         </div>
         <div className="absolute -top-24 left-1/2 -z-10 h-96 w-[42rem] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl pointer-events-none" aria-hidden="true" />
@@ -336,6 +342,12 @@ export function LandingPage({
                             src={solution.image} 
                             alt={imageKeyword || "Solução Premium"} 
                             className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              if (!target.src.includes('default-nc.jpg')) {
+                                target.src = '/default-nc.jpg';
+                              }
+                            }}
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100 flex items-end p-4">
                             <span className="text-xs font-medium text-white/90 uppercase tracking-widest flex items-center gap-2">
@@ -375,6 +387,12 @@ export function LandingPage({
                           src={img} 
                           alt={imageKeyword || "Plataforma de Leilão"} 
                           className="w-full h-auto object-cover"
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            if (!target.src.includes('default-nc.jpg')) {
+                              target.src = '/default-nc.jpg';
+                            }
+                          }}
                         />
                         <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                       </motion.div>
@@ -676,8 +694,8 @@ export function LandingPage({
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
-                          if (target.src.endsWith('.webp')) {
-                            target.src = target.src.replace('.webp', '.jpg');
+                          if (!target.src.includes('default-nc.jpg')) {
+                            target.src = '/default-nc.jpg';
                           }
                         }}
                       />
