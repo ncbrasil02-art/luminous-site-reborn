@@ -436,7 +436,7 @@ export function LandingPage({
                       <motion.div 
                         initial={false}
                         animate={{ 
-                          height: expandedImages[i] ? "auto" : 400,
+                          height: expandedImages[i] ? "auto" : 600,
                         }}
                         transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
                         className="relative overflow-hidden rounded-2xl border border-border shadow-2xl"
