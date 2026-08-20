@@ -745,22 +745,9 @@ export function LandingPage({
       {/* RELATED NEWS */}
       <NewsDisplay 
         filterTags={relatedNewsTags} 
-        title={
-          <>
-            Conteúdo <span className="text-gradient">Relacionado</span>
-          </>
-        }
-        eyebrow="Blog & Insights"
+        title={<>Conteúdo Relacionado e <span className="text-gradient">Insights</span></>}
+        eyebrow="Blog & Notícias"
       />
-
-      {/* RELATED NEWS */}
-      {relatedNewsTags && relatedNewsTags.length > 0 && (
-        <NewsDisplay 
-          filterTags={relatedNewsTags} 
-          title={<>Conteúdo Relacionado e <span className="text-gradient">Insights</span></>}
-          eyebrow="Blog & Notícias"
-        />
-      )}
 
       {/* FAQ */}
       {faq && faq.length > 0 && (
