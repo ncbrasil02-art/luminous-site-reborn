@@ -46,6 +46,10 @@ export function PartnerCarousel({ logos, title }: PartnerCarouselProps) {
                     src={logo.url}
                     alt={logo.name}
                     className="h-10 md:h-12 w-auto object-contain"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = "https://placehold.co/200x80/0A1428/FFFFFF?text=" + encodeURIComponent(logo.name);
+                    }}
                   />
                 </a>
               ) : (
@@ -53,6 +57,10 @@ export function PartnerCarousel({ logos, title }: PartnerCarouselProps) {
                   src={logo.url}
                   alt={logo.name}
                   className="h-10 md:h-12 w-auto object-contain"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.src = "https://placehold.co/200x80/0A1428/FFFFFF?text=" + encodeURIComponent(logo.name);
+                  }}
                 />
               )}
             </div>
