@@ -68,6 +68,17 @@ function OrcamentoPage() {
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />
         <div className="mx-auto max-w-3xl px-4 pt-20 pb-10 text-center md:px-6 md:pt-28">
           <Reveal>
+            <nav aria-label="Breadcrumb" className="mb-8 flex justify-center">
+              <ol className="flex flex-wrap items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground list-none p-0 m-0">
+                <li className="flex items-center gap-1">
+                  <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+                </li>
+                <li className="flex items-center gap-1">
+                  <ChevronRight className="h-3 w-3 opacity-50" aria-hidden="true" />
+                  <span className="text-foreground/80" aria-current="page">Orçamento</span>
+                </li>
+              </ol>
+            </nav>
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
               <FileText className="h-3.5 w-3.5" />
               Orçamento
