@@ -3,7 +3,7 @@ import { newsData, type NewsPost } from '@/lib/news.data'
 import { Calendar, Tag, ArrowRight } from 'lucide-react'
 import { Reveal, SectionHeading } from '@/components/Section'
 import { buildMeta, SITE_URL } from '@/lib/seo'
-import { Reveal, SectionHeading } from '@/components/Section'
+
 
 export const Route = createFileRoute('/noticias/tag/$tag')({
   loader: ({ params }) => {
