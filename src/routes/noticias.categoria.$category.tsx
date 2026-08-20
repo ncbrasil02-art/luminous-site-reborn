@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
-import { newsData } from '@/lib/news.data'
+import { newsData, type NewsPost } from '@/lib/news.data'
 import { Calendar, ArrowRight } from 'lucide-react'
 import { Reveal, SectionHeading } from '@/components/Section'
 
@@ -44,7 +44,7 @@ function CategoryPage() {
         />
 
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((news, i) => (
+          {posts.map((news: NewsPost, i: number) => (
             <Reveal key={news.id} delay={i * 0.05}>
               <Link 
                 to="/noticias/$slug"

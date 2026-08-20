@@ -1,7 +1,8 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { newsData } from '@/lib/news.data'
-import { Calendar, Tag, ArrowLeft, Share2, Clock, ChevronRight, BookOpen } from 'lucide-react'
+import { Calendar, Tag, ArrowLeft, Clock, ChevronRight, BookOpen } from 'lucide-react'
 import { Reveal } from '@/components/Section'
+import { ShareButtons } from '@/components/ShareButtons'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { buildMeta, SITE_URL } from '@/lib/seo'
@@ -86,7 +87,7 @@ function NewsPostPage() {
           <Reveal>
             <div className="space-y-8">
               <div className="flex flex-wrap gap-2">
-                {post.categories.map(cat => (
+                {post.categories.map((cat: string) => (
                   <Link
                     key={cat}
                     to="/noticias/categoria/$category"
@@ -118,11 +119,8 @@ function NewsPostPage() {
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4">
-                  <button className="flex items-center gap-2 rounded-full bg-card border border-border px-5 py-2.5 text-[10px] font-black uppercase tracking-widest hover:border-primary/50 hover:bg-surface transition-all">
-                    <Share2 className="h-3.5 w-3.5 text-primary" />
-                    Compartilhar
-                  </button>
+                <div className="flex items-center">
+                  <ShareButtons url={`${typeof window !== 'undefined' ? window.location.origin : ''}/noticias/${post.slug}`} title={post.title} />
                 </div>
               </div>
             </div>
@@ -165,7 +163,7 @@ function NewsPostPage() {
 
               {/* Tags Section */}
               <div className="mt-16 pt-10 border-t border-border flex flex-wrap gap-3">
-                {post.tags.map(tag => (
+                {post.tags.map((tag: string) => (
                   <Link
                     key={tag}
                     to="/noticias/tag/$tag"
