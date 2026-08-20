@@ -87,7 +87,7 @@ function NewsPostPage() {
           <Reveal>
             <div className="space-y-8">
               <div className="flex flex-wrap gap-2">
-                {post.categories.map(cat => (
+                {post.categories.map((cat: string) => (
                   <Link
                     key={cat}
                     to="/noticias/categoria/$category"
@@ -163,7 +163,7 @@ function NewsPostPage() {
 
               {/* Tags Section */}
               <div className="mt-16 pt-10 border-t border-border flex flex-wrap gap-3">
-                {post.tags.map(tag => (
+                {post.tags.map((tag: string) => (
                   <Link
                     key={tag}
                     to="/noticias/tag/$tag"
