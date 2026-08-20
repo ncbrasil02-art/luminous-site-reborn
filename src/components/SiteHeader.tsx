@@ -129,6 +129,14 @@ export function SiteHeader() {
               fetchPriority="high"
               decoding="async"
               className="h-10 w-auto object-contain transition-transform group-hover:scale-105" 
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                if (target.src.endsWith('.webp')) {
+                  target.src = '/logo.jpg';
+                } else if (!target.src.includes('/logo.jpg')) {
+                  target.src = '/logo.jpg';
+                }
+              }}
             />
           </picture>
         </Link>
