@@ -66,6 +66,7 @@ export type LandingPageProps = {
   galleryTitle?: React.ReactNode;
   gallery?: LPGalleryItem[];
   testimonials?: LPTestimonial[];
+  testimonialsTitle?: React.ReactNode;
   faqTitle?: React.ReactNode;
   faq?: LPFaq[];
   finalCtaTitle?: React.ReactNode;
@@ -140,6 +141,7 @@ export function LandingPage({
   galleryTitle,
   gallery,
   testimonials,
+  testimonialsTitle,
   faqTitle,
   faq,
   finalCtaTitle,
