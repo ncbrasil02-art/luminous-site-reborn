@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 
 import { Reveal, SectionHeading } from "@/components/Section";
-import { trackLead } from "@/lib/analytics";
+import { trackLead, trackClick } from "@/lib/analytics";
 
 const EMAIL = "contato@ncbrasil.com.br";
 const WHATSAPP =
