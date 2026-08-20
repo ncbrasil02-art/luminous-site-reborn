@@ -20,6 +20,7 @@ import {
   Palette,
   Target,
   Facebook,
+  Instagram,
   Lightbulb,
   Gavel,
   Tractor,
@@ -162,7 +163,27 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-4 lg:flex">
+          <div className="flex items-center gap-3 mr-2">
+            <a
+              href="https://www.facebook.com/agenciacriacaodesites/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground transition-colors hover:text-primary"
+              aria-label="Facebook"
+            >
+              <Facebook className="h-4 w-4" />
+            </a>
+            <a
+              href="https://www.instagram.com/new.commercebrasil/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground transition-colors hover:text-primary"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-4 w-4" />
+            </a>
+          </div>
           <Link
             to="/orcamento"
             onClick={() => trackClick("Solicitar orçamento", "Header Nav")}
