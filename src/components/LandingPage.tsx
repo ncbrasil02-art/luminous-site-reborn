@@ -71,8 +71,8 @@ export type LandingPageProps = {
   finalCtaDesc?: React.ReactNode;
   finalPrimaryCta?: { to: string; label: string };
   finalSecondaryCta?: { to: string; label: string };
-  relatedNewsTags?: string[]; // New prop for related news
-  imageKeyword?: string; // New prop for image alt tags
+  relatedNewsTags?: string[];
+  imageKeyword?: string;
 };
 
 export function buildLPMeta(options: {
@@ -165,7 +165,7 @@ export function LandingPage({
         <div className="absolute inset-0 -z-10 bg-black/40" />
         <div className="absolute inset-0 -z-20">
           <img 
-            src={newsData[0]?.thumbnail || "/og-main.jpg"} 
+            src={newsData[0]?.image_url || "/og-main.jpg"} 
             alt={imageKeyword || eyebrow} 
             className="h-full w-full object-cover opacity-20"
             loading="eager"
