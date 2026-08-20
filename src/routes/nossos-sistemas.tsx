@@ -21,6 +21,7 @@ export const Route = createFileRoute("/nossos-sistemas")({
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Sistemas", to: URL },
     ],
+    ogImage: "/nossos-sistemas-og.jpg",
   }),
   component: SistemasHub,
 });
