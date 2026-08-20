@@ -186,7 +186,7 @@ function HomePage() {
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10" aria-hidden="true">
           <img
-            src="https://www.ncbrasil.com.br/logo.jpg"
+            src="/logo.jpg"
             alt="NC Brasil Tecnologia - Criação de Sites e Sistemas"
             width={1920}
             height={1080}
@@ -196,7 +196,7 @@ function HomePage() {
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.onerror = null;
-              target.src = '/logo.jpg';
+              target.src = "https://www.ncbrasil.com.br/logo.jpg";
             }}
             className="h-full w-full object-cover opacity-50"
           />

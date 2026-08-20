@@ -130,7 +130,7 @@ export function SiteHeader() {
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.onerror = null;
-                target.src = '/logo.jpg';
+                target.src = "https://www.ncbrasil.com.br/logo.jpg";
               }}
             />
           </picture>

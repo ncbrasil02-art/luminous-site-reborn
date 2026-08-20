@@ -65,13 +65,13 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       h1={
         <div className="flex flex-col items-center gap-8">
           <img 
-            src="https://www.ncbrasil.com.br/logo.jpg"
+            src="/logo.jpg"
             alt="NC Leilões - Plataforma de Leilão" 
             className="h-20 md:h-28 w-auto transition-transform duration-500 hover:scale-105"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.onerror = null;
-              target.src = '/logo.jpg';
+              target.src = "https://www.ncbrasil.com.br/logo.jpg";
             }}
           />
           <span>Sistema de Leilão <span className="text-gradient">NC Brasil</span>: Sua Plataforma de Leilão Online</span>

@@ -184,15 +184,15 @@ export function LandingPage({
         <div className="absolute inset-0 -z-10 bg-black/40" />
         <div className="absolute inset-0 -z-20">
           <img 
-            src="https://www.ncbrasil.com.br/logo.jpg" 
+            src="/logo.jpg" 
             alt={imageKeyword || eyebrow} 
             className="h-full w-full object-cover opacity-20"
             loading="eager"
             fetchPriority="high"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              target.onerror = null; // Prevent infinite loop
-              target.src = '/logo.jpg';
+              target.onerror = null;
+              target.src = "https://www.ncbrasil.com.br/logo.jpg";
             }}
           />
         </div>
