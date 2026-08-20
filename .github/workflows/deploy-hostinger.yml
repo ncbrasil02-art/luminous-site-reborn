@@ -1,0 +1,39 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build (static site)
+        run: npm run build
+
+      # Site is a plain client-side SPA build now (no Node.js runtime needed),
+      # so the "dist/" folder is uploaded straight to the document root
+      # (HOSTINGER_APP_PATH, e.g. public_html) — no remote install/restart step.
+      - name: Upload dist/ to Hostinger via SSH
+        uses: easingthemes/ssh-deploy@v5
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.HOSTINGER_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.HOSTINGER_SSH_HOST }}
+          REMOTE_PORT: ${{ secrets.HOSTINGER_SSH_PORT }}
+          REMOTE_USER: ${{ secrets.HOSTINGER_SSH_USER }}
+          SOURCE: "dist/"
+          TARGET: ${{ secrets.HOSTINGER_APP_PATH }}
+          ARGS: "-rlgoDzvc -i --delete"

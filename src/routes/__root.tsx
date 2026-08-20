@@ -131,24 +131,9 @@ export const Route = createRootRoute({
       { type: "application/ld+json", children: JSON.stringify(websiteJsonLd) },
     ],
   }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
 });
-
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="pt-BR" className="dark">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function RootComponent() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -162,13 +147,17 @@ function RootComponent() {
   }, [pathname]);
 
   return (
-    <div className="relative min-h-screen bg-background text-foreground">
-      <SiteHeader />
-      <main className="pt-16 md:pt-20">
-        <Outlet />
-      </main>
-      <SiteFooter />
-      <WhatsappFab />
-    </div>
+    <>
+      <HeadContent />
+      <div className="relative min-h-screen bg-background text-foreground">
+        <SiteHeader />
+        <main className="pt-16 md:pt-20">
+          <Outlet />
+        </main>
+        <SiteFooter />
+        <WhatsappFab />
+      </div>
+      <Scripts />
+    </>
   );
 }

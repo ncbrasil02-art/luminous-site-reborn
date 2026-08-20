@@ -20,6 +20,9 @@ dist-ssr
 .wrangler/
 .dev.vars
 
+# Deploy build artifacts
+dist-site.zip
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
