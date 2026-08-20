@@ -1,3 +1,12 @@
+import rifasCliente1 from "@/assets/cliente-sistema-de-rifas-1.jpg.asset.json";
+import rifasCliente2 from "@/assets/cliente-sistema-de-rifas-2.jpg.asset.json";
+import rifasCliente3 from "@/assets/cliente-sistema-de-rifas-3.jpg.asset.json";
+import rifasCliente4 from "@/assets/cliente-sistema-de-rifas-4.jpg.asset.json";
+import rifasCliente5 from "@/assets/cliente-sistema-de-rifas-5.jpg.asset.json";
+import rifasCliente6 from "@/assets/cliente-sistema-de-rifas-6.jpg.asset.json";
+import rifasCliente7 from "@/assets/cliente-sistema-de-rifas-7.jpg.asset.json";
+import rifasCliente8 from "@/assets/cliente-sistema-de-rifas-8.jpg.asset.json";
+
 export const testimonialsData = [
   {
     quote: "Migramos do papel para a plataforma da NC Brasil e triplicamos o número de arrematantes em 6 meses. O suporte durante o pregão é impecável.",
@@ -62,56 +71,56 @@ export const rifasTestimonials = [
     quote: "A plataforma NC Rifas mudou minha vida. No primeiro mês faturei o que levava um ano no meu antigo emprego. O sistema de cotas premiadas é o que mais vende.",
     author: "Eder Grauu",
     role: "Influenciador & Organizador",
-    image: "/assets/cliente-sistema-de-rifas-1.jpg.asset.json",
+    image: (rifasCliente1 as any).url,
     rating: 5
   },
   {
     quote: "Já usei outras plataformas, mas a NC Brasil é a única que não cobra taxa por cota. Economizo mais de R$ 10 mil por rifa só em taxas.",
     author: "Hugo Oficial",
     role: "Empreendedor Digital",
-    image: "/assets/cliente-sistema-de-rifas-2.jpg.asset.json",
+    image: (rifasCliente2 as any).url,
     rating: 5
   },
   {
     quote: "O suporte é nota 10. Precisei de uma integração rápida com meu gateway e resolveram em poucas horas. Meus clientes adoram a velocidade do Pix.",
     author: "Nico Lorenzon",
     role: "Portal de Sorteios",
-    image: "/assets/cliente-sistema-de-rifas-3.jpg.asset.json",
+    image: (rifasCliente3 as any).url,
     rating: 5
   },
   {
     quote: "A interface é incrível e o sistema de lances e cotas funciona sem travamentos. Meus lucros subiram 400% desde que migrei para cá.",
     author: "Valentina Ruggeri",
     role: "Organizador de Ações",
-    image: "/assets/cliente-sistema-de-rifas-4.jpg.asset.json",
+    image: (rifasCliente4 as any).url,
     rating: 5
   },
   {
     quote: "Melhor investimento que fiz. O script de rifas é completo, legalizado e o atendimento é personalizado via WhatsApp.",
     author: "Cinthia Fernandez",
     role: "Marketing & Eventos",
-    image: "/assets/cliente-sistema-de-rifas-5.jpg.asset.json",
+    image: (rifasCliente5 as any).url,
     rating: 5
   },
   {
     quote: "Segurança total nos sorteios pela Loteria Federal. Meus seguidores confiam e compram sem medo. Transparência é tudo.",
     author: "Dra. Carla Barber",
     role: "Influenciadora",
-    image: "/assets/cliente-sistema-de-rifas-6.jpg.asset.json",
+    image: (rifasCliente6 as any).url,
     rating: 5
   },
   {
     quote: "O sistema de afiliados nativo é fenomenal. Consigo gerenciar centenas de vendedores com comissão automática via Pix.",
     author: "Irina",
     role: "Gestora de Comunidades",
-    image: "/assets/cliente-sistema-de-rifas-7.jpg.asset.json",
+    image: (rifasCliente7 as any).url,
     rating: 5
   },
   {
     quote: "Plataforma robusta que aguenta milhões de acessos simultâneos. Ideal para quem quer profissionalizar suas ações online.",
     author: "Dra. Cecilia Cavalcante",
     role: "Consultora Jurídica",
-    image: "/assets/cliente-sistema-de-rifas-8.jpg.asset.json",
+    image: (rifasCliente8 as any).url,
     rating: 5
   }
 ];
