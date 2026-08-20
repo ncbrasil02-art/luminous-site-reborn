@@ -6,6 +6,7 @@ import { ShareButtons } from '@/components/ShareButtons'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { buildMeta, SITE_URL } from '@/lib/seo'
+import { ContactSection } from '@/components/ContactSection'
 
 export const Route = createFileRoute('/noticias/$slug')({
   loader: ({ params }) => {
@@ -245,6 +246,8 @@ function NewsPostPage() {
           </div>
         </article>
       </div>
+
+      <ContactSection pageTitle={`Notícia: ${post.title}`} />
     </main>
   )
 }

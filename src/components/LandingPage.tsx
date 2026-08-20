@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 
 import { Reveal, SectionHeading } from "./Section";
+import { ContactSection } from "./ContactSection";
 
 export type LPFeature = { icon: LucideIcon; title: string; desc: string };
 export type LPBenefit = { icon: LucideIcon; title: string; desc: string };
@@ -858,6 +859,9 @@ export function LandingPage({
           </div>
         </section>
       )}
+
+      {/* CONTATO PREMIUM */}
+      <ContactSection pageTitle={typeof h1 === 'string' ? h1 : eyebrow} />
 
       {/* RELATED NEWS */}
       <NewsDisplay 

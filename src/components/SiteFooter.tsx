@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone, Clock } from "lucide-react";
 import { NewsDisplay } from "./NewsDisplay";
 import { trackClick } from "@/lib/analytics";
 
@@ -57,7 +57,7 @@ export function SiteFooter() {
             <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 text-primary" />
-                São Bernardo do Campo — SP · Rio de Janeiro — RJ
+                Rua Barão de Mauá 347, São Bernardo do Campo — SP · Rio de Janeiro — RJ
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
@@ -67,9 +67,13 @@ export function SiteFooter() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <a href="mailto:contato@ncbrasil.com.br" className="story-link hover:text-foreground">
-                  contato@ncbrasil.com.br
+                <a href="mailto:comercial@ncbrasil.com.br" className="story-link hover:text-foreground">
+                  comercial@ncbrasil.com.br
                 </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Clock className="h-4 w-4 text-primary" />
+                <span className="text-muted-foreground">Seg a Dom · 8h às 22h</span>
               </li>
             </ul>
             <div className="mt-8 flex items-center gap-4">

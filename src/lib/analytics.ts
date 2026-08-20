@@ -77,7 +77,8 @@ export type LeadSource =
   | "form_contato"
   | "whatsapp_fab"
   | "cta_hero"
-  | "cta_footer";
+  | "cta_footer"
+  | string;
 
 export function trackLead(source: LeadSource, extra: Record<string, unknown> = {}) {
   trackEvent("generate_lead", { source, currency: "BRL", value: 1, ...extra });

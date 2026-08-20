@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, FileText, Send } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { trackLead, trackClick } from "@/lib/analytics";
 
-const EMAIL = "contato@ncbrasil.com.br";
+const EMAIL = "comercial@ncbrasil.com.br";
 
 
 import { buildMeta, SITE_URL } from "@/lib/seo";
