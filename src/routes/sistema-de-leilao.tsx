@@ -41,6 +41,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
   }),
   component: () => (
     <LandingPage
+      imageKeyword="sistema de leilão"
       breadcrumbs={[
         { to: "/", label: "Home" },
         { to: "/nossos-sistemas", label: "Sistemas" },

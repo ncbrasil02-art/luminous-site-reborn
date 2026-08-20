@@ -162,6 +162,16 @@ export function LandingPage({
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30 pointer-events-none" aria-hidden="true" />
+        <div className="absolute inset-0 -z-10 bg-black/40" />
+        <div className="absolute inset-0 -z-20">
+          <img 
+            src={newsData[0]?.thumbnail || "/og-main.jpg"} 
+            alt={imageKeyword || eyebrow} 
+            className="h-full w-full object-cover opacity-20"
+            loading="eager"
+            fetchPriority="high"
+          />
+        </div>
         <div className="absolute -top-24 left-1/2 -z-10 h-96 w-[42rem] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl pointer-events-none" aria-hidden="true" />
 
         <div className="mx-auto max-w-6xl px-4 pt-14 md:px-6 md:pt-20">
