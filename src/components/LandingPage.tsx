@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { newsData } from "@/lib/news.data";
 import { NewsDisplay } from "./NewsDisplay";
@@ -153,8 +153,13 @@ export function LandingPage({
   showParallaxshowcase = false,
   showcaseImages = [],
 }: LandingPageProps) {
+  const [expandedImages, setExpandedImages] = useState<Record<number, boolean>>({});
   const search = useRouterState({ select: (s) => s.location.search });
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+
+  const toggleExpand = (index: number) => {
+    setExpandedImages(prev => ({ ...prev, [index]: !prev[index] }));
+  };
 
   useEffect(() => {
     // If the user arrived here from a migration redirect, track it.
@@ -403,12 +408,19 @@ export function LandingPage({
                     </div>
 
                     {/* Image Container with Reveal Effect */}
-                    <div className="relative mx-auto max-w-6xl px-6 pb-6 md:px-8 md:pb-8">
-                      <div className="relative overflow-hidden rounded-2xl border border-border shadow-2xl transition-all duration-500">
+                    <div className="relative mx-auto w-full max-w-6xl px-4 pb-6 md:px-8 md:pb-8">
+                      <motion.div 
+                        initial={false}
+                        animate={{ 
+                          height: expandedImages[i] ? "auto" : 400,
+                        }}
+                        transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+                        className="relative overflow-hidden rounded-2xl border border-border shadow-2xl"
+                      >
                         <img 
                           src={img} 
                           alt={imageKeyword || "Plataforma de Leilão"} 
-                          className="w-full h-auto object-cover"
+                          className="w-full h-auto object-cover block"
                           onError={(e) => {
                             const target = e.target as HTMLImageElement;
                             if (!target.src.includes('/news/default-nc.jpg')) {
@@ -417,18 +429,39 @@ export function LandingPage({
                           }}
                         />
                         
-                        {/* Overlay Controls */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex flex-col items-center justify-end p-8 gap-4">
+                        {/* Gradient Overlay for Unexpanded state */}
+                        {!expandedImages[i] && (
+                          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black via-black/80 to-transparent flex items-end justify-center pb-8">
+                            <button 
+                              onClick={() => toggleExpand(i)}
+                              className="group inline-flex items-center gap-2 rounded-full bg-primary/90 px-8 py-3 text-sm font-semibold text-white shadow-xl backdrop-blur transition-all hover:bg-primary hover:scale-105 active:scale-95 glow-sm"
+                            >
+                              <Search className="h-4 w-4" /> Revelar Imagem Completa
+                            </button>
+                          </div>
+                        )}
+
+                        {/* Controls shown when expanded or on hover */}
+                        <div className={`absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col items-center justify-center p-8 gap-4 ${expandedImages[i] ? 'pointer-events-auto' : 'pointer-events-none'}`}>
                           <div className="flex gap-4">
+                            {expandedImages[i] && (
+                              <button 
+                                onClick={() => toggleExpand(i)}
+                                className="inline-flex items-center gap-2 rounded-full bg-surface/80 border border-white/20 px-6 py-2.5 text-sm font-semibold text-white backdrop-blur shadow-lg transition-transform hover:scale-105"
+                              >
+                                <Minus className="h-4 w-4" /> Recolher
+                              </button>
+                            )}
                             <button 
                               onClick={() => window.open(img, '_blank')}
-                              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
+                              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105"
                             >
-                              <Search className="h-4 w-4" /> Ampliar em Tela Cheia
+                              <Search className="h-4 w-4" /> Ver em Tela Cheia
                             </button>
                           </div>
                         </div>
-                      </div>
+                      </motion.div>
+                      
                       
                       {/* Glow Effect */}
                       <div className="absolute -inset-4 -z-10 bg-primary/10 blur-3xl rounded-full opacity-30 group-hover:opacity-60 transition-opacity" />
