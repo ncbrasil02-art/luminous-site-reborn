@@ -49,12 +49,12 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       imageKeyword="sistema de leilão"
       showParallaxshowcase
       showcaseImages={[
-        "/__l5e/assets-v1/937abdca-7451-4695-83e6-552efdb9b73e/sistema-de-leilao-home-premium.png",
-        "/__l5e/assets-v1/2bea6211-cf33-4267-8b1c-75cc39c82e15/sistema-de-leilao-vitrine.png",
-        "/__l5e/assets-v1/bf636b5f-8d73-46ea-a829-55fa818c64eb/sistema-de-leilao-dashboard-premium.png",
-        "/__l5e/assets-v1/5988fcfc-d9de-456c-a38e-5dc0699865aa/sistema-de-leilao-dashboard-detalhe.png",
-        "/__l5e/assets-v1/130de035-7388-432e-ae19-0d55e318d262/sistema-de-leilao-cards.png",
-        "/__l5e/assets-v1/26fb39e9-22fd-4dec-a71d-378dfd1e3f0f/sistema-de-leilao-painel-online.png",
+        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-home-premium.png",
+        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-vitrine.png",
+        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-dashboard-premium.png",
+        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-dashboard-detalhe.png",
+        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-cards.png",
+        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-painel-online.png",
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
@@ -65,9 +65,9 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       h1={
         <div className="flex flex-col items-center gap-8">
           <img 
-            src="/__l5e/assets-v1/26fb39e9-22fd-4dec-a71d-378dfd1e3f0f/logo-nc-leiloes-final.png"
+            src="https://www.ncbrasil.com.br/logo.jpg"
             alt="NC Leilões - Plataforma de Leilão" 
-            className="h-20 md:h-28 w-auto filter drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]"
+            className="h-20 md:h-28 w-auto transition-transform duration-500 hover:scale-105"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.onerror = null;
@@ -109,16 +109,16 @@ export const Route = createFileRoute("/sistema-de-leilao")({
           <PartnerCarousel 
             title="Sistema Homologado e Utilizado por Grandes Órgãos"
             logos={[
-              { name: "TJRS", url: "/__l5e/assets-v1/f9188652-b2c7-4e7b-a91c-0a86b4ea58b2/tjrs.webp", link: "https://www.tjrs.jus.br/" },
-              { name: "Caixa", url: "/__l5e/assets-v1/3029265f-7999-4738-ab82-59ce1e7471f4/caixa.webp", link: "https://www.caixa.gov.br/" },
-              { name: "Detran-MS", url: "/__l5e/assets-v1/937abdca-7451-4695-83e6-552efdb9b73e/detranms.webp", link: "https://www.detran.ms.gov.br/" },
-              { name: "Detran-SC", url: "/__l5e/assets-v1/fc04366f-602c-40ee-bf5a-58eb1e260da5/detransc.webp", link: "https://www.detran.sc.gov.br/" },
-              { name: "Embaixada EUA", url: "/__l5e/assets-v1/74eebd4c-6511-4ddf-a58d-cf4428efd91b/embaixada_usa.webp" },
-              { name: "Sicoob", url: "/__l5e/assets-v1/22f4392c-147a-4729-a333-1b377fcc9d57/sicoob.webp", link: "https://www.sicoob.com.br/" },
-              { name: "Sicredi", url: "/__l5e/assets-v1/7560f104-fa0d-414f-8507-0ae594131321/sicredi.webp", link: "https://www.sicredi.com.br/" },
-              { name: "Unicred", url: "/__l5e/assets-v1/130de035-7388-432e-ae19-0d55e318d262/unicred.webp", link: "https://www.unicred.com.br/" },
-              { name: "Uniprime", url: "/__l5e/assets-v1/2bea6211-cf33-4267-8b1c-75cc39c82e15/uniprime.webp", link: "https://www.uniprimebr.com.br/" },
-              { name: "Cresol", url: "/__l5e/assets-v1/5988fcfc-d9de-456c-a38e-5dc0699865aa/cresol.webp", link: "https://cresol.com.br/" },
+              { name: "TJRS", url: "https://www.ncbrasil.com.br/partners/tjrs.webp", link: "https://www.tjrs.jus.br/" },
+              { name: "Caixa", url: "https://www.ncbrasil.com.br/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
+              { name: "Detran-MS", url: "https://www.ncbrasil.com.br/partners/detranms.webp", link: "https://www.detran.ms.gov.br/" },
+              { name: "Detran-SC", url: "https://www.ncbrasil.com.br/partners/detransc.webp", link: "https://www.detran.sc.gov.br/" },
+              { name: "Embaixada EUA", url: "https://www.ncbrasil.com.br/partners/embaixada_usa.webp" },
+              { name: "Sicoob", url: "https://www.ncbrasil.com.br/partners/sicoob.webp", link: "https://www.sicoob.com.br/" },
+              { name: "Sicredi", url: "https://www.ncbrasil.com.br/partners/sicredi.webp", link: "https://www.sicredi.com.br/" },
+              { name: "Unicred", url: "https://www.ncbrasil.com.br/partners/unicred.webp", link: "https://www.unicred.com.br/" },
+              { name: "Uniprime", url: "https://www.ncbrasil.com.br/partners/uniprime.webp", link: "https://www.uniprimebr.com.br/" },
+              { name: "Cresol", url: "https://www.ncbrasil.com.br/partners/cresol.webp", link: "https://cresol.com.br/" },
             ]}
           />
         </div>

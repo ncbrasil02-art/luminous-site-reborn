@@ -10,14 +10,14 @@ import { rifasTestimonials } from "@/lib/testimonials.data";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
 
 // Image Assets - Optimized for external hosting
-const rifasLogoUrl = "/__l5e/assets-v1/26fb39e9-22fd-4dec-a71d-378dfd1e3f0f/sistema-de-rifas-logo.png";
-const rifasShowcase1Url = "/__l5e/assets-v1/130de035-7388-432e-ae19-0d55e318d262/melhor-sistema-de-rifas-online.png";
-const rifasShowcase2Url = "/__l5e/assets-v1/2bea6211-cf33-4267-8b1c-75cc39c82e15/plataforma-de-rifas-lucrativa.png";
-const rifasShowcase3Url = "/__l5e/assets-v1/5988fcfc-d9de-456c-a38e-5dc0699865aa/script-de-rifas-profissional.png";
-const rifasShowcase4Url = "/__l5e/assets-v1/bf636b5f-8d73-46ea-a829-55fa818c64eb/sistema-de-rifas-premium.png";
-const painelConfigUrl = "/__l5e/assets-v1/dca9c34c-c4cc-4eb4-be45-b49112549e3e/painel-configuracao-rifas.png";
-const painelDashboardUrl = "/__l5e/assets-v1/b1a94b63-b79b-47d6-8f3d-eb6b808e57b7/painel-dashboard-rifas.png";
-const painelPagamentosUrl = "/__l5e/assets-v1/210484ef-af8b-4352-a37b-cad8f8ec5117/painel-pagamentos-rifas.png";
+const rifasLogoUrl = "https://www.ncbrasil.com.br/logo.jpg";
+const rifasShowcase1Url = "https://www.ncbrasil.com.br/sistema-de-rifas/melhor-sistema-de-rifas-online.png";
+const rifasShowcase2Url = "https://www.ncbrasil.com.br/sistema-de-rifas/plataforma-de-rifas-lucrativa.png";
+const rifasShowcase3Url = "https://www.ncbrasil.com.br/sistema-de-rifas/script-de-rifas-profissional.png";
+const rifasShowcase4Url = "https://www.ncbrasil.com.br/sistema-de-rifas/sistema-de-rifas-premium.png";
+const painelConfigUrl = "https://www.ncbrasil.com.br/sistema-de-rifas/painel-configuracao-rifas.png";
+const painelDashboardUrl = "https://www.ncbrasil.com.br/sistema-de-rifas/painel-dashboard-rifas.png";
+const painelPagamentosUrl = "https://www.ncbrasil.com.br/sistema-de-rifas/painel-pagamentos-rifas.png";
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
@@ -85,12 +85,12 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           <PartnerCarousel 
             title="Integrado com os melhores Gateways e Loteria Federal"
             logos={[
-              { name: "Caixa", url: "/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
-              { name: "Mercado Pago", url: "https://placehold.co/200x80/0A1428/FFFFFF?text=Mercado+Pago" },
-              { name: "Pagar.me", url: "https://placehold.co/200x80/0A1428/FFFFFF?text=Pagar.me" },
-              { name: "Efí", url: "https://placehold.co/200x80/0A1428/FFFFFF?text=Efí" },
-              { name: "Asaas", url: "https://placehold.co/200x80/0A1428/FFFFFF?text=Asaas" },
-              { name: "Loteria Federal", url: "https://placehold.co/200x80/0A1428/FFFFFF?text=Loteria+Federal" },
+              { name: "Caixa", url: "https://www.ncbrasil.com.br/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
+              { name: "Mercado Pago", url: "https://www.ncbrasil.com.br/partners/mercado-pago.png" },
+              { name: "Pagar.me", url: "https://www.ncbrasil.com.br/partners/pagarme.png" },
+              { name: "Efí", url: "https://www.ncbrasil.com.br/partners/efi.png" },
+              { name: "Asaas", url: "https://www.ncbrasil.com.br/partners/asaas.png" },
+              { name: "Loteria Federal", url: "https://www.ncbrasil.com.br/partners/loteria-federal.png" },
             ]}
           />
         </div>

@@ -184,7 +184,7 @@ export function LandingPage({
         <div className="absolute inset-0 -z-10 bg-black/40" />
         <div className="absolute inset-0 -z-20">
           <img 
-            src={newsData[0]?.image_url || "/news/default-nc.jpg"} 
+            src="https://www.ncbrasil.com.br/logo.jpg" 
             alt={imageKeyword || eyebrow} 
             className="h-full w-full object-cover opacity-20"
             loading="eager"

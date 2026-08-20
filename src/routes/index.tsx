@@ -186,7 +186,7 @@ function HomePage() {
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10" aria-hidden="true">
           <img
-            src="/__l5e/assets-v1/2bea6211-cf33-4267-8b1c-75cc39c82e15/hero-tech.jpg"
+            src="https://www.ncbrasil.com.br/logo.jpg"
             alt="NC Brasil Tecnologia - Criação de Sites e Sistemas"
             width={1920}
             height={1080}
