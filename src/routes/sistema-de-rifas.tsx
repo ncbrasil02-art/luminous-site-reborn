@@ -85,7 +85,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           <PartnerCarousel 
             title="Integrado com os melhores Gateways e Loteria Federal"
             logos={[
-              { name: "Caixa", url: "/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
+              { name: "Caixa", url: "https://www.ncbrasil.com.br/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
               { name: "Mercado Pago", url: "https://www.ncbrasil.com.br/partners/mercado-pago.png" },
               { name: "Pagar.me", url: "https://www.ncbrasil.com.br/partners/pagarme.png" },
               { name: "Efí", url: "https://www.ncbrasil.com.br/partners/efi.png" },
