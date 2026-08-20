@@ -49,12 +49,12 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       imageKeyword="sistema de leilão"
       showParallaxshowcase
       showcaseImages={[
-        "/__l5e/assets-v1/937abdca-7451-4695-83e6-552efdb9b73e/sistema-de-leilao-home-premium.png",
-        "/__l5e/assets-v1/2bea6211-cf33-4267-8b1c-75cc39c82e15/sistema-de-leilao-vitrine.png",
-        "/__l5e/assets-v1/bf636b5f-8d73-46ea-a829-55fa818c64eb/sistema-de-leilao-dashboard-premium.png",
-        "/__l5e/assets-v1/5988fcfc-d9de-456c-a38e-5dc0699865aa/sistema-de-leilao-dashboard-detalhe.png",
-        "/__l5e/assets-v1/130de035-7388-432e-ae19-0d55e318d262/sistema-de-leilao-cards.png",
-        "/__l5e/assets-v1/26fb39e9-22fd-4dec-a71d-378dfd1e3f0f/sistema-de-leilao-painel-online.png",
+        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-home-premium.png",
+        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-vitrine.png",
+        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-dashboard-premium.png",
+        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-dashboard-detalhe.png",
+        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-cards.png",
+        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-painel-online.png",
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
@@ -65,9 +65,9 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       h1={
         <div className="flex flex-col items-center gap-8">
           <img 
-            src="/__l5e/assets-v1/26fb39e9-22fd-4dec-a71d-378dfd1e3f0f/logo-nc-leiloes-final.png"
+            src="https://www.ncbrasil.com.br/logo.jpg"
             alt="NC Leilões - Plataforma de Leilão" 
-            className="h-20 md:h-28 w-auto filter drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]"
+            className="h-20 md:h-28 w-auto transition-transform duration-500 hover:scale-105"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.onerror = null;
