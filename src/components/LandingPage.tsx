@@ -69,6 +69,8 @@ export type LandingPageProps = {
   faq?: LPFaq[];
   finalCtaTitle?: React.ReactNode;
   finalCtaDesc?: React.ReactNode;
+  finalPrimaryCta?: { to: string; label: string };
+  finalSecondaryCta?: { to: string; label: string };
   relatedNewsTags?: string[]; // New prop for related news
 };
 
@@ -138,6 +140,8 @@ export function LandingPage({
   faq,
   finalCtaTitle,
   finalCtaDesc,
+  finalPrimaryCta = { to: "/orcamento", label: "Solicitar orçamento" },
+  finalSecondaryCta = { to: "/contato", label: "Falar com especialista" },
   relatedNewsTags = [],
 }: LandingPageProps) {
   const search = useRouterState({ select: (s) => s.location.search });
@@ -676,20 +680,20 @@ export function LandingPage({
                 </p>
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                   <Link 
-                    to="/orcamento" 
-                    onClick={() => trackClick("Solicitar orçamento", "Footer CTA")}
+                    to={finalPrimaryCta.to} 
+                    onClick={() => trackClick(finalPrimaryCta.label, "Footer CTA")}
                     className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md hover:scale-105 transition-transform"
                   >
-                    Solicitar orçamento
+                    {finalPrimaryCta.label}
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                   <Link 
-                    to="/contato" 
-                    onClick={() => trackClick("Falar com especialista", "Footer CTA")}
+                    to={finalSecondaryCta.to} 
+                    onClick={() => trackClick(finalSecondaryCta.label, "Footer CTA")}
                     className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-7 py-3.5 text-sm font-semibold text-foreground hover:bg-surface"
                   >
                     <MessageCircle className="h-4 w-4" />
-                    Falar com especialista
+                    {finalSecondaryCta.label}
                   </Link>
                 </div>
               </div>
