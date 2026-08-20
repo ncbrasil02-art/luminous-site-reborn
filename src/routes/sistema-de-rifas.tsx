@@ -6,7 +6,10 @@ import {
   Ticket, Trophy, Users, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
-import { testimonialsData } from "@/lib/testimonials.data";
+import { testimonialsData, rifasTestimonials } from "@/lib/testimonials.data";
+import { PartnerCarousel } from "@/components/PartnerCarousel";
+import showcase01 from "@/assets/rifas-showcase-01.png.asset.json";
+import showcase02 from "@/assets/rifas-showcase-02.webp.asset.json";
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
@@ -28,9 +31,9 @@ export const lpFaq = [
 
 export const Route = createFileRoute("/sistema-de-rifas")({
   head: () => buildLPMeta({
-    title: "Sistema de Rifas Online | Criar Rifa Legalizada com Pix — NC Brasil",
-    description: "Plataforma completa para criar rifa online legalizada: sorteio pela Loteria Federal, Pix instantâneo, cotas ilimitadas, sem taxa por cota, app do participante e painel do organizador. 15 anos de experiência.",
-    keywords: "sistema de rifas online, criar rifa online, plataforma de rifas, sistema para rifas, site de rifas, como criar uma rifa online, rifa online com pix, rifa loteria federal, script de rifas, sistema de sorteios",
+    title: "Script de Rifas e Ações Online | Melhor Sistema de Rifas Profissional",
+    description: "Script de rifas completo e legalizado. Crie sua plataforma de ações online com sorteio pela Loteria Federal, Pix instantâneo e zero taxas sobre vendas. O melhor sistema de rifas do Brasil.",
+    keywords: "script de rifas, sistema de rifas, fazer rifa online, plataforma de rifas, plataforma de ações online, script de ações, sistema de ações de rifas, criar rifa online, site de rifas profissional",
     canonical: URL,
     h1: "Sistema de Rifas Online",
     breadcrumbs: [
@@ -42,14 +45,21 @@ export const Route = createFileRoute("/sistema-de-rifas")({
   }),
   component: () => (
     <LandingPage
+      imageKeyword="sistema de rifas profissional"
+      showParallaxshowcase
+      showcaseImages={[
+        (showcase01 as any).url,
+        (showcase02 as any).url,
+        "/news/default-nc.jpg", // Fallback images to fill the carousel
+      ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
         { to: "/nossos-sistemas", label: "Sistemas" },
         { to: "/sistema-de-rifas", label: "Sistema de Rifas" },
       ]}
-      eyebrow="Rifas Online · Legalizadas · Pix Instantâneo"
-      h1={<>Sistema para <span className="text-gradient">Criar Rifa Online</span> — Legalizado, Escalável e Sem Taxa por Cota</>}
-      intro={<>Plataforma <strong className="text-foreground">turnkey</strong> para você <strong className="text-foreground">criar rifa online legalizada</strong> com sorteio pela <strong className="text-foreground">Loteria Federal</strong>, cotas de R$0,10 a R$1.000, <strong className="text-foreground">Pix em segundos</strong>, aplicativo iOS/Android e painel completo. <strong className="text-foreground">15 anos de mercado</strong>, mais de <strong className="text-foreground">50 milhões de cotas vendidas</strong> e clientes que faturam <strong className="text-foreground">R$500k por rifa</strong>. Diferente de Rifei, Rifana e Rifafy: <strong className="text-foreground">licença própria, sem % sobre vendas — você fica com 100% da arrecadação</strong>.</>}
+      eyebrow="Ações Online · Script de Rifas · Lucro Real"
+      h1={<>O Melhor <span className="text-gradient">Script de Rifas</span> e Plataforma de Ações Online do Brasil</>}
+      intro={<>Tenha seu próprio <strong className="text-foreground">sistema de rifas</strong> profissional e comece a <strong className="text-foreground">fazer rifa online</strong> hoje mesmo com tecnologia de ponta. Nossa <strong className="text-foreground">plataforma de ações online</strong> é a única que entrega o <strong className="text-foreground">script de ações</strong> completo, legalizado e com <strong className="text-foreground">Pix instantâneo</strong>. Diferente de plataformas limitadas, com o nosso <strong className="text-foreground">sistema de ações de rifas</strong> você é dono do negócio e fica com <strong className="text-foreground">100% do lucro</strong>.</>}
       stats={[
         { value: "50Mi+", label: "Cotas vendidas" },
         { value: "3.000+", label: "Rifas realizadas" },
@@ -57,6 +67,22 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         { value: "0%", label: "Taxa sobre vendas" },
       ]}
       clients={["Ativ Rifas", "Rifa da Sorte BR", "Sorte Premiada", "Rifa Solidária", "Meu Prêmio", "GO Rifas", "Rifa VIP", "Sorteios Brasil"]}
+      extraContentBeforeProblem={
+        <div className="relative isolate py-4">
+          <div className="absolute inset-0 -z-10 bg-primary/5 blur-3xl opacity-30" />
+          <PartnerCarousel 
+            title="Integrado com os melhores Gateways e Loteria Federal"
+            logos={[
+              { name: "Caixa", url: "/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
+              { name: "Mercado Pago", url: "https://placehold.co/200x80/0A1428/FFFFFF?text=Mercado+Pago" },
+              { name: "Pagar.me", url: "https://placehold.co/200x80/0A1428/FFFFFF?text=Pagar.me" },
+              { name: "Efí", url: "https://placehold.co/200x80/0A1428/FFFFFF?text=Efí" },
+              { name: "Asaas", url: "https://placehold.co/200x80/0A1428/FFFFFF?text=Asaas" },
+              { name: "Loteria Federal", url: "https://placehold.co/200x80/0A1428/FFFFFF?text=Loteria+Federal" },
+            ]}
+          />
+        </div>
+      }
       problem={{
         title: <>Plataformas de rifa cobram <span className="text-destructive">até 8% sobre cada cota vendida</span></>,
         items: [
@@ -69,8 +95,8 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         ],
       }}
       solution={{
-        title: <>Sua rifa, <span className="text-gradient">seu domínio, sua marca, 100% do lucro</span></>,
-        desc: <>Entregamos a <strong className="text-foreground">plataforma completa em seu nome</strong>: código-fonte licenciado, hospedagem própria, app iOS/Android com sua marca na loja, gateway Pix direto na sua conta e <strong className="text-foreground">zero comissão sobre vendas</strong>. Nossa equipe orienta o modelo legal ideal, integra o gateway certo e <strong className="text-foreground">acompanha sua operação por 12 meses</strong>. Você concentra em vender — nós cuidamos da tecnologia.</>,
+        title: <>Seu <span className="text-gradient">Script de Rifas</span> — Domínio Próprio e 100% de Lucro</>,
+        desc: <>Ao contratar nossa <strong className="text-foreground">plataforma de rifas</strong>, você recebe um ambiente exclusivo e configurado em seu domínio. Nosso <strong className="text-foreground">sistema de rifas</strong> permite que você gerencie campanhas ilimitadas, afiliados e pagamentos sem intermediários. É a solução definitiva para quem busca um <strong className="text-foreground">script de ações</strong> robusto, seguro e altamente lucrativo.</>,
         highlights: [
           "**Licença perpétua ou mensalidade fixa** — sem % sobre vendas",
           "**App iOS + Android** publicado com sua marca",
@@ -224,7 +250,8 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           { feature: "Multi-tenant (múltiplas marcas)", us: true, them: false },
         ],
       }}
-      testimonials={testimonialsData.slice(4, 7)}
+      testimonials={rifasTestimonials}
+      testimonialsTitle="Organizadores que alcançaram altos lucros"
       faq={lpFaq}
       finalCtaTitle={<>Pronto para criar sua <span className="text-gradient">plataforma de rifas</span>?</>}
       finalCtaDesc={<>Receba um <strong className="text-foreground">plano personalizado em 24h</strong> com escopo, prazo, valor e o modelo legal ideal para sua operação. <strong className="text-foreground">Consultoria inicial gratuita</strong>.</>}
