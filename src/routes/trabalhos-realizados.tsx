@@ -1,14 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { StubPage, buildStubMeta } from "@/components/StubPage";
+import { StubPage } from "@/components/StubPage";
+import { buildMeta, SITE_URL } from "@/lib/seo";
 
-const URL = "https://www.ncbrasil.com.br/trabalhos-realizados";
+const URL = `${SITE_URL}/trabalhos-realizados`;
 
 export const Route = createFileRoute("/trabalhos-realizados")({
-  head: () => buildStubMeta({
+  head: () => buildMeta({
     title: "Trabalhos Realizados · NC Brasil — Portfólio de Projetos Digitais",
     description: "Portfólio NC Brasil: sites, sistemas, lojas virtuais, aplicativos, logotipos e identidades visuais entregues para empresas em todo o Brasil.",
     keywords: "portfólio NC Brasil, trabalhos realizados, cases de sucesso, projetos web, sites criados",
     canonical: URL,
+    ogImage: "/logo-nc-brasil.png",
     faq: [
       { q: "Quantos projetos a NC Brasil já entregou?", a: "Já entregamos mais de 745 projetos, incluindo sites, sistemas, lojas virtuais e aplicativos de alta performance." }
     ]

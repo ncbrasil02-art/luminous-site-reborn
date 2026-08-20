@@ -2,7 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Globe2, Palette, Smartphone, Award, Zap, Sparkles, Layout, Search, Gauge, ShieldCheck, Layers, Rocket } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/portfolio/sites-criados";
+import { SITE_URL } from "@/lib/seo";
+
+const URL = `${SITE_URL}/portfolio/sites-criados`;
 
 const lpFaq = [
         { q: "Posso ver cases reais?", a: "Sim, acesse **Trabalhos Realizados** para portfólio completo com links ativos." },
@@ -19,8 +21,8 @@ export const Route = createFileRoute("/portfolio/sites-criados")({
     canonical: URL,
     h1: "Portfólio de Sites Criados pela NC Brasil",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Portfólio", to: "https://www.ncbrasil.com.br/trabalhos-realizados" },
+      { label: "Home", to: `${SITE_URL}/` },
+      { label: "Portfólio", to: `${SITE_URL}/trabalhos-realizados` },
       { label: "Sites Criados", to: URL },
     ],
     faq: lpFaq,

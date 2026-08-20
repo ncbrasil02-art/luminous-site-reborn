@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
+import { SITE_URL } from "@/lib/seo";
 
 import logoUrl from "@/assets/logo-nc-leiloes-final.png.asset.json";
 import configUrl from "@/assets/sistema-de-leilao-configuracoes.png.asset.json";
@@ -60,8 +61,8 @@ export const Route = createFileRoute("/sistema-de-leilao")({
     canonical: URL,
     h1: "Sistema de Leilão NC Brasil: Plataforma de Leilões Online e Pregões",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Home", to: `${SITE_URL}/` },
+      { label: "Sistemas", to: `${SITE_URL}/nossos-sistemas` },
       { label: "Sistema de Leilão", to: URL },
     ],
     faq: lpFaq,

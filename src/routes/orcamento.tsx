@@ -10,12 +10,15 @@ const EMAIL = "comercial@ncbrasil.com.br";
 
 import { buildMeta, SITE_URL } from "@/lib/seo";
 
+const URL = `${SITE_URL}/orcamento`;
+
 export const Route = createFileRoute("/orcamento")({
   head: () => buildMeta({
     title: "Orçamento · NC Brasil — Solicite uma Proposta Personalizada em 24h",
     description: "Solicite um orçamento detalhado para seu site, sistema web, e-commerce ou aplicativo. Receba uma proposta completa com escopo, prazos e investimento em até 24 horas.",
     keywords: "orçamento criação de sites, orçamento sistema web, orçamento loja virtual, orçamento aplicativo, proposta agência web, consultoria tecnologia orçamento",
-    canonical: `${SITE_URL}/orcamento`,
+    canonical: URL,
+    ogImage: "/logo-nc-brasil.png",
     faq: [
       { q: "Qual o prazo para receber o orçamento?", a: "Nossa equipe analisa seu pedido e envia uma proposta detalhada em até 24 horas úteis." },
       { q: "O que está incluso na proposta?", a: "A proposta inclui análise estratégica, escopo funcional detalhado, cronograma com marcos, investimento transparente e suporte pós-lançamento." }

@@ -123,7 +123,9 @@ export function SiteHeader() {
             <source srcSet="/logo.webp" type="image/webp" />
             <img 
               src="/logo.jpg" 
-              alt="NC Brasil" 
+              alt="NC Brasil - Sistemas Web e Marketing Digital" 
+              width={160}
+              height={40}
               fetchPriority="high"
               decoding="async"
               className="h-10 w-auto object-contain transition-transform group-hover:scale-105" 

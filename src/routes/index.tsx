@@ -83,7 +83,7 @@ export const Route = createFileRoute("/")({
       title: "NC Brasil · Criação de Sites, Sistemas Web e Aplicativos em SP e RJ",
       description: "Agência de tecnologia especializada em criação de sites profissionais, sistemas web sob demanda, e-commerce e aplicativos mobile. Tecnologia premium para escalar seu negócio.",
       keywords: "criação de sites, criação de sistemas web, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, NC Brasil",
-      ogImage: "/og-main.jpg",
+      ogImage: "/logo-nc-brasil.png",
       canonical: `${SITE_URL}/`,
     });
 

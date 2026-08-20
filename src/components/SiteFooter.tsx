@@ -47,7 +47,7 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2">
-              <img src="/logo.jpg" alt="NC Brasil" className="h-10 w-auto object-contain" />
+              <img src="/logo.jpg" alt="NC Brasil - Logotipo Rodapé" width={160} height={40} className="h-10 w-auto object-contain" />
             </Link>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
               <strong className="text-foreground">Criação de sistemas web, lojas virtuais e aplicativos</strong> para empresas

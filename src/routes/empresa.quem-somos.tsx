@@ -1,8 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Users, Award, Target, Heart, Sparkles, Rocket, ShieldCheck, TrendingUp, Globe2, Lightbulb, Zap, Handshake } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { SITE_URL } from "@/lib/seo";
 
-const URL = "https://www.ncbrasil.com.br/empresa/quem-somos";
+const URL = `${SITE_URL}/empresa/quem-somos`;
 
 const lpFaq = [
         { q: "Onde a NC Brasil está localizada?", a: "Sede em **São Paulo (SP)**, com times remotos em Rio, Belo Horizonte, Curitiba e Recife." },
@@ -19,8 +20,8 @@ export const Route = createFileRoute("/empresa/quem-somos")({
     canonical: URL,
     h1: "Quem Somos — NC Brasil",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Empresa", to: "https://www.ncbrasil.com.br/empresa" },
+      { label: "Home", to: `${SITE_URL}/` },
+      { label: "Empresa", to: `${SITE_URL}/empresa` },
       { label: "Quem Somos", to: URL },
     ],
     faq: lpFaq,

@@ -1,6 +1,6 @@
 export const SITE_URL = "https://www.ncbrasil.com.br";
 export const SITE_NAME = "NC Brasil";
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-main.jpg`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo-nc-brasil.png`;
 
 export type MetaOptions = {
   title: string;
@@ -143,6 +143,9 @@ export function buildMeta(options: MetaOptions) {
       { rel: "canonical", href: canonical || SITE_URL },
       { rel: "alternate", hrefLang: "pt-BR", href: canonical || SITE_URL },
       { rel: "alternate", hrefLang: "x-default", href: canonical || SITE_URL },
+      { rel: "icon", type: "image/png", href: `${SITE_URL}/favicon.png` },
+      { rel: "shortcut icon", href: `${SITE_URL}/favicon.png` },
+      { rel: "apple-touch-icon", href: `${SITE_URL}/favicon.png` },
     ],
     scripts,
   };
