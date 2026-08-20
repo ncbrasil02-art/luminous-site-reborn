@@ -14,6 +14,8 @@ import vitrineUrl from "@/assets/sistema-de-leilao-vitrine.png.asset.json";
 import mobileUrl from "@/assets/sistema-de-leilao-card-detalhe.png.asset.json";
 import painelUrl from "@/assets/sistema-de-leilao-painel-online.png.asset.json";
 import dashDetailUrl from "@/assets/sistema-de-leilao-dashboard-detalhe.png.asset.json";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao";
 
