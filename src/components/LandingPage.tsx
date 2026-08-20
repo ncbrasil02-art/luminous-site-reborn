@@ -201,19 +201,23 @@ export function LandingPage({
 
         <div className="mx-auto max-w-6xl px-4 pt-14 md:px-6 md:pt-20">
           {/* Breadcrumb */}
-          <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center gap-1 text-xs text-muted-foreground">
-            {breadcrumbs.map((b, i) => (
-              <span key={b.to + i} className="flex items-center gap-1">
-                {i > 0 && <ChevronRight className="h-3 w-3 opacity-50" />}
-                {i === breadcrumbs.length - 1 ? (
-                  <span className="text-foreground/80">{b.label}</span>
-                ) : (
-                  <Link to={b.to} className="hover:text-primary transition-colors">
-                    {b.label}
-                  </Link>
-                )}
-              </span>
-            ))}
+          <nav aria-label="Breadcrumb" className="mb-8">
+            <ol className="flex flex-wrap items-center gap-1 text-xs text-muted-foreground list-none p-0 m-0">
+              {breadcrumbs.map((b, i) => (
+                <li key={b.to + i} className="flex items-center gap-1">
+                  {i > 0 && <ChevronRight className="h-3 w-3 opacity-50" aria-hidden="true" />}
+                  {i === breadcrumbs.length - 1 ? (
+                    <span className="text-foreground/80 font-medium" aria-current="page">
+                      {b.label}
+                    </span>
+                  ) : (
+                    <Link to={b.to} className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm px-0.5">
+                      {b.label}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ol>
           </nav>
         </div>
 
