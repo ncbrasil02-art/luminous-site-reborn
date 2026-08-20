@@ -13,6 +13,7 @@ import homeUrl from "@/assets/sistema-de-leilao-home-premium.png.asset.json";
 import vitrineUrl from "@/assets/sistema-de-leilao-vitrine.png.asset.json";
 import mobileUrl from "@/assets/sistema-de-leilao-card-detalhe.png.asset.json";
 import painelUrl from "@/assets/sistema-de-leilao-painel-rifas.png.asset.json";
+import dashDetailUrl from "@/assets/sistema-de-leilao-dashboard-detalhe.png.asset.json";
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao";
 
@@ -55,6 +56,8 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         (homeUrl as any).url,
         (vitrineUrl as any).url,
         (dashboardUrl as any).url,
+        (dashDetailUrl as any).url,
+        (cardsUrl as any).url,
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
