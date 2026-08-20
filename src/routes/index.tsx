@@ -14,7 +14,6 @@ import {
   Zap,
 } from "lucide-react";
 
-import heroTech from "@/assets/hero-tech.jpg";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
 import { trackClick } from "@/lib/analytics";
