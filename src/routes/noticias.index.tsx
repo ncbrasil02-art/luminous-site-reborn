@@ -6,15 +6,15 @@ import { Reveal, SectionHeading } from '@/components/Section'
 import { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
+import { buildMeta, SITE_URL } from '@/lib/seo'
+
 export const Route = createFileRoute('/noticias/')({
-  head: () => ({
-    meta: [
-      { title: 'Revista Digital NC Brasil · Tecnologia, Sistemas e Negócios' },
-      { name: 'description', content: 'Fique por dentro das últimas notícias sobre tecnologia, sistemas web, e-commerce e marketing digital. Artigos aprofundados e tendências.' },
-      { property: 'og:title', content: 'Revista Digital NC Brasil' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: 'https://www.ncbrasil.com.br/og-main.jpg' },
-    ],
+  head: () => buildMeta({
+    title: 'Revista Digital NC Brasil · Tecnologia, Sistemas e Negócios',
+    description: 'Fique por dentro das últimas notícias sobre tecnologia, sistemas web, e-commerce e marketing digital. Artigos aprofundados e tendências.',
+    keywords: 'tecnologia, notícias tecnologia, marketing digital, desenvolvimento de sistemas, nc brasil, revista digital',
+    canonical: `${SITE_URL}/noticias`,
+    ogImage: '/og-main.jpg',
   }),
   component: NewsIndex,
 })

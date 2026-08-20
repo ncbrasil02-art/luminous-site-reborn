@@ -8,7 +8,9 @@ import { trackRedirect, trackClick } from "@/lib/analytics";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { buildLPMeta } from "@/components/LandingPage";
 
-const URL = "https://www.ncbrasil.com.br/nossos-sistemas";
+import { SITE_URL } from "@/lib/seo";
+
+const URL = `${SITE_URL}/nossos-sistemas`;
 
 export const Route = createFileRoute("/nossos-sistemas")({
   head: () => buildLPMeta({
@@ -18,7 +20,7 @@ export const Route = createFileRoute("/nossos-sistemas")({
     canonical: URL,
     h1: "Nossos Sistemas Web",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Home", to: `${SITE_URL}/` },
       { label: "Sistemas", to: URL },
     ],
     ogImage: "/nossos-sistemas-og.jpg",
