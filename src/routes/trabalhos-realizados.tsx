@@ -1,5 +1,5 @@
 import { ChevronRight } from "lucide-react";
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { StubPage } from "@/components/StubPage";
 import { buildMeta, SITE_URL } from "@/lib/seo";
 
