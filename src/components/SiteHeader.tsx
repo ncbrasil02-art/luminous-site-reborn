@@ -170,7 +170,7 @@ export function SiteHeader() {
                       transition={{ duration: 0.2, ease: "easeOut" }}
                       className="absolute left-0 top-full mt-2 w-80 overflow-hidden rounded-2xl border border-white/10 bg-card/95 p-2 shadow-2xl backdrop-blur-xl"
                     >
-                      <div className="grid gap-1 max-h-[70vh] overflow-y-auto custom-scrollbar">
+                      <div className="grid gap-1 max-h-[70vh] overflow-y-auto scrollbar-none">
                         {item.submenu.map((subItem) => (
                           <Link
                             key={subItem.label}
