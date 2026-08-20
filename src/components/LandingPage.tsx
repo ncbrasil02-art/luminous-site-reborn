@@ -440,40 +440,6 @@ export function LandingPage({
           </div>
         </section>
       )}
-                      <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                        <Sparkles className="h-5 w-5" />
-                      </div>
-                      <h3 className="font-display text-3xl font-bold mb-4">
-                        {i === 0 ? "Interface Administrativa Robusta" : i === 1 ? "Visual de Alta Conversão" : "Gestão Simplificada"}
-                      </h3>
-                      <p className="text-lg text-muted-foreground mb-6">
-                        {i === 0 
-                          ? "Painel completo para gestão de lotes, arrematantes e pregões em tempo real com máxima segurança."
-                          : i === 1
-                          ? "Vitrine de lotes otimizada para capturar o interesse e converter visitantes em arrematantes qualificados."
-                          : "Controle total sobre faturamento, lances e relatórios judiciais com um clique."}
-                      </p>
-                      <ul className="space-y-3">
-                        {i === 0 ? (
-                          <>
-                            <li className="flex items-center gap-2 text-sm font-medium"><Check className="h-4 w-4 text-primary" /> Configuração White-label</li>
-                            <li className="flex items-center gap-2 text-sm font-medium"><Check className="h-4 w-4 text-primary" /> Controle de Habilitação</li>
-                          </>
-                        ) : (
-                          <>
-                            <li className="flex items-center gap-2 text-sm font-medium"><Check className="h-4 w-4 text-primary" /> Design Mobile-First</li>
-                            <li className="flex items-center gap-2 text-sm font-medium"><Check className="h-4 w-4 text-primary" /> Anti-sniping Nativo</li>
-                          </>
-                        )}
-                      </ul>
-                    </div>
-                  </Reveal>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
 
 
 
