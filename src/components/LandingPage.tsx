@@ -412,12 +412,12 @@ export function LandingPage({
                     {/* Header/Caption */}
                     <div className="flex flex-col gap-2 p-8 text-center md:p-10">
                       <h3 className="font-display text-2xl font-bold md:text-3xl">
-                        {i === 0 && "Interface do Arrematante"}
-                        {i === 1 && "Painel de Lances em Tempo Real"}
-                        {i === 2 && "Dashboard Administrativo Robusto"}
-                        {i === 3 && "Configurações de Edital e Lotes"}
+                        {i === 0 && (pathname.includes('rifas') ? "Painel Administrativo Completo" : "Interface do Arrematante")}
+                        {i === 1 && (pathname.includes('rifas') ? "Aplicativo Nativo iOS/Android" : "Painel de Lances em Tempo Real")}
+                        {i === 2 && (pathname.includes('rifas') ? "Tecnologia e Performance" : "Dashboard Administrativo Robusto")}
+                        {i === 3 && (pathname.includes('rifas') ? "Gestão de Campanhas" : "Configurações de Edital e Lotes")}
                         {i === 4 && "Visualização Mobile Nativa"}
-                        {i === 5 && "Controle de Habilitação e KYC"}
+                        {i === 5 && "Controle e Segurança"}
                       </h3>
                       <p className="mx-auto max-w-2xl text-sm text-muted-foreground md:text-base">
                         {i === 0 && "Uma experiência imersiva e intuitiva para quem busca facilidade na hora de arrematar bens."}
