@@ -353,6 +353,72 @@ export function LandingPage({
         </section>
       )}
 
+      {/* PARALLAX SHOWCASE */}
+      {showParallaxshowcase && showcaseImages.length > 0 && (
+        <section className="relative overflow-hidden py-24 md:py-32">
+          <div className="mx-auto max-w-6xl px-4 md:px-6">
+            <SectionHeading
+              eyebrow="Plataforma de Leilão"
+              title={<>Design <span className="text-gradient">Premium</span> & Performance</>}
+            />
+            
+            <div className="mt-20 space-y-32">
+              {showcaseImages.map((img, i) => (
+                <div key={img} className={`flex flex-col gap-12 lg:items-center ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
+                  <Reveal className="flex-1" delay={0.1}>
+                    <div className="relative group perspective-1000">
+                      <motion.div 
+                        whileHover={{ rotateY: i % 2 === 0 ? 5 : -5, rotateX: 2, scale: 1.02 }}
+                        className="relative overflow-hidden rounded-3xl border border-primary/30 shadow-2xl transition-all duration-500"
+                      >
+                        <img 
+                          src={img} 
+                          alt={imageKeyword || "Plataforma de Leilão"} 
+                          className="w-full h-auto object-cover"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </motion.div>
+                      <div className="absolute -inset-4 -z-10 bg-primary/10 blur-3xl rounded-full opacity-50 group-hover:opacity-100 transition-opacity" />
+                    </div>
+                  </Reveal>
+                  
+                  <Reveal className="flex-1" delay={0.2}>
+                    <div className="max-w-md">
+                      <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                        <Sparkles className="h-5 w-5" />
+                      </div>
+                      <h3 className="font-display text-3xl font-bold mb-4">
+                        {i === 0 ? "Interface Administrativa Robusta" : i === 1 ? "Visual de Alta Conversão" : "Gestão Simplificada"}
+                      </h3>
+                      <p className="text-lg text-muted-foreground mb-6">
+                        {i === 0 
+                          ? "Painel completo para gestão de lotes, arrematantes e pregões em tempo real com máxima segurança."
+                          : i === 1
+                          ? "Vitrine de lotes otimizada para capturar o interesse e converter visitantes em arrematantes qualificados."
+                          : "Controle total sobre faturamento, lances e relatórios judiciais com um clique."}
+                      </p>
+                      <ul className="space-y-3">
+                        {i === 0 ? (
+                          <>
+                            <li className="flex items-center gap-2 text-sm font-medium"><Check className="h-4 w-4 text-primary" /> Configuração White-label</li>
+                            <li className="flex items-center gap-2 text-sm font-medium"><Check className="h-4 w-4 text-primary" /> Controle de Habilitação</li>
+                          </>
+                        ) : (
+                          <>
+                            <li className="flex items-center gap-2 text-sm font-medium"><Check className="h-4 w-4 text-primary" /> Design Mobile-First</li>
+                            <li className="flex items-center gap-2 text-sm font-medium"><Check className="h-4 w-4 text-primary" /> Anti-sniping Nativo</li>
+                          </>
+                        )}
+                      </ul>
+                    </div>
+                  </Reveal>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
 
 
       {/* BENEFITS */}
