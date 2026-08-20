@@ -13,6 +13,7 @@ import homeUrl from "@/assets/sistema-de-leilao-home-premium.png.asset.json";
 import vitrineUrl from "@/assets/sistema-de-leilao-vitrine.png.asset.json";
 import mobileUrl from "@/assets/sistema-de-leilao-card-detalhe.png.asset.json";
 import painelUrl from "@/assets/sistema-de-leilao-painel-rifas.png.asset.json";
+import dashDetailUrl from "@/assets/sistema-de-leilao-dashboard-detalhe.png.asset.json";
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao";
 
@@ -55,6 +56,8 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         (homeUrl as any).url,
         (vitrineUrl as any).url,
         (dashboardUrl as any).url,
+        (dashDetailUrl as any).url,
+        (cardsUrl as any).url,
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
@@ -70,8 +73,8 @@ export const Route = createFileRoute("/sistema-de-leilao")({
             className="h-20 md:h-28 w-auto filter drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              if (!target.src.includes('default-nc.jpg')) {
-                target.src = '/default-nc.jpg';
+              if (!target.src.includes('/news/default-nc.jpg')) {
+                target.src = '/news/default-nc.jpg';
               }
             }}
           />
