@@ -68,6 +68,7 @@ import { Route as EmpresaNossaHistoriaRouteImport } from './routes/empresa.nossa
 import { Route as EmpresaClientesRouteImport } from './routes/empresa.clientes'
 import { Route as AdminNoticiasRouteImport } from './routes/admin.noticias'
 import { Route as AdminImportarRouteImport } from './routes/admin.importar'
+import { Route as TagSlugRouteImport } from './routes/$tag.$slug'
 import { Route as NoticiasTagTagRouteImport } from './routes/noticias.tag.$tag'
 import { Route as NoticiasCategoriaCategoryRouteImport } from './routes/noticias.categoria.$category'
 import { Route as AdminNoticiasNovaRouteImport } from './routes/admin.noticias.nova'
@@ -387,6 +388,11 @@ const AdminImportarRoute = AdminImportarRouteImport.update({
   path: '/importar',
   getParentRoute: () => AdminRoute,
 } as any)
+const TagSlugRoute = TagSlugRouteImport.update({
+  id: '/$tag/$slug',
+  path: '/$tag/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const NoticiasTagTagRoute = NoticiasTagTagRouteImport.update({
   id: '/noticias/tag/$tag',
   path: '/noticias/tag/$tag',
@@ -435,6 +441,7 @@ export interface FileRoutesByFullPath {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/$tag/$slug': typeof TagSlugRoute
   '/admin/importar': typeof AdminImportarRoute
   '/admin/noticias': typeof AdminNoticiasRouteWithChildren
   '/empresa/clientes': typeof EmpresaClientesRoute
@@ -499,6 +506,7 @@ export interface FileRoutesByTo {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/$tag/$slug': typeof TagSlugRoute
   '/admin/importar': typeof AdminImportarRoute
   '/admin/noticias': typeof AdminNoticiasRouteWithChildren
   '/empresa/clientes': typeof EmpresaClientesRoute
@@ -565,6 +573,7 @@ export interface FileRoutesById {
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
+  '/$tag/$slug': typeof TagSlugRoute
   '/admin/importar': typeof AdminImportarRoute
   '/admin/noticias': typeof AdminNoticiasRouteWithChildren
   '/empresa/clientes': typeof EmpresaClientesRoute
@@ -632,6 +641,7 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/$tag/$slug'
     | '/admin/importar'
     | '/admin/noticias'
     | '/empresa/clientes'
@@ -696,6 +706,7 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/$tag/$slug'
     | '/admin/importar'
     | '/admin/noticias'
     | '/empresa/clientes'
@@ -761,6 +772,7 @@ export interface FileRouteTypes {
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
+    | '/$tag/$slug'
     | '/admin/importar'
     | '/admin/noticias'
     | '/empresa/clientes'
@@ -827,6 +839,7 @@ export interface RootRouteChildren {
   SoftwareRoute: typeof SoftwareRoute
   SolucoesWebRoute: typeof SolucoesWebRouteWithChildren
   TrabalhosRealizadosRoute: typeof TrabalhosRealizadosRoute
+  TagSlugRoute: typeof TagSlugRoute
   NoticiasSlugRoute: typeof NoticiasSlugRoute
   PortfolioAplicativosCriadosRoute: typeof PortfolioAplicativosCriadosRoute
   PortfolioCriacaoDeAplicativosRoute: typeof PortfolioCriacaoDeAplicativosRoute
@@ -1268,6 +1281,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AdminImportarRouteImport
       parentRoute: typeof AdminRoute
     }
+    '/$tag/$slug': {
+      id: '/$tag/$slug'
+      path: '/$tag/$slug'
+      fullPath: '/$tag/$slug'
+      preLoaderRoute: typeof TagSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/noticias/tag/$tag': {
       id: '/noticias/tag/$tag'
       path: '/noticias/tag/$tag'
@@ -1391,6 +1411,7 @@ const rootRouteChildren: RootRouteChildren = {
   SoftwareRoute: SoftwareRoute,
   SolucoesWebRoute: SolucoesWebRouteWithChildren,
   TrabalhosRealizadosRoute: TrabalhosRealizadosRoute,
+  TagSlugRoute: TagSlugRoute,
   NoticiasSlugRoute: NoticiasSlugRoute,
   PortfolioAplicativosCriadosRoute: PortfolioAplicativosCriadosRoute,
   PortfolioCriacaoDeAplicativosRoute: PortfolioCriacaoDeAplicativosRoute,
