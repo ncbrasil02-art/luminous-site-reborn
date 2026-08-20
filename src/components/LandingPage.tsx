@@ -342,7 +342,7 @@ export function LandingPage({
 
       {/* FEATURES */}
       {features && features.length > 0 && (
-        <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
+        <section id="features" className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
           <div className="absolute inset-0 grid-pattern opacity-20" />
           <div className="relative mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
