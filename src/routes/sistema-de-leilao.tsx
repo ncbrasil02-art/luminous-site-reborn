@@ -5,6 +5,8 @@ import {
   Sparkles, Target, TrendingUp, Users, Video, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { PartnerCarousel } from "@/components/PartnerCarousel";
+
 import logoUrl from "@/assets/logo-nc-leiloes-final.png.asset.json";
 import configUrl from "@/assets/sistema-de-leilao-configuracoes.png.asset.json";
 import dashboardUrl from "@/assets/sistema-de-leilao-dashboard-premium.png.asset.json";
@@ -14,7 +16,21 @@ import vitrineUrl from "@/assets/sistema-de-leilao-vitrine.png.asset.json";
 import mobileUrl from "@/assets/sistema-de-leilao-card-detalhe.png.asset.json";
 import painelUrl from "@/assets/sistema-de-leilao-painel-online.png.asset.json";
 import dashDetailUrl from "@/assets/sistema-de-leilao-dashboard-detalhe.png.asset.json";
+
+// Partner Logos
+import tjrsLogo from "@/assets/partners/tjrs.webp.asset.json";
+import uniprimeLogo from "@/assets/partners/uniprime.webp.asset.json";
+import unicredLogo from "@/assets/partners/unicred.webp.asset.json";
+import sicrediLogo from "@/assets/partners/sicredi.webp.asset.json";
+import sicoobLogo from "@/assets/partners/sicoob.webp.asset.json";
+import cresolLogo from "@/assets/partners/cresol.webp.asset.json";
+import caixaLogo from "@/assets/partners/caixa.webp.asset.json";
+import embassyLogo from "@/assets/partners/embaixada_usa.webp.asset.json";
+import detranmsLogo from "@/assets/partners/detranms.webp.asset.json";
+import detranscLogo from "@/assets/partners/detransc.webp.asset.json";
+
 import { testimonialsData } from "@/lib/testimonials.data";
+
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao";
@@ -52,7 +68,9 @@ export const Route = createFileRoute("/sistema-de-leilao")({
     ogImage: "/sistema-de-leilao-og.jpg",
   }),
   component: () => (
-    <LandingPage
+    <>
+      <LandingPage
+
       imageKeyword="sistema de leilão"
       showParallaxshowcase
       showcaseImages={[
@@ -111,7 +129,25 @@ export const Route = createFileRoute("/sistema-de-leilao")({
           "Concorrentes que já operam com plataforma dedicada capturam **até 3x mais arrematantes por edital**.",
         ],
       }}
+      extraContentBeforeProblem={
+        <PartnerCarousel 
+          title="Sistema Homologado e Utilizado por Grandes Órgãos"
+          logos={[
+            { name: "TJRS", url: (tjrsLogo as any).url, link: "https://www.tjrs.jus.br/" },
+            { name: "Caixa", url: (caixaLogo as any).url, link: "https://www.caixa.gov.br/" },
+            { name: "Detran-MS", url: (detranmsLogo as any).url, link: "https://www.detran.ms.gov.br/" },
+            { name: "Detran-SC", url: (detranscLogo as any).url, link: "https://www.detran.sc.gov.br/" },
+            { name: "Embaixada EUA", url: (embassyLogo as any).url },
+            { name: "Sicoob", url: (sicoobLogo as any).url, link: "https://www.sicoob.com.br/" },
+            { name: "Sicredi", url: (sicrediLogo as any).url, link: "https://www.sicredi.com.br/" },
+            { name: "Unicred", url: (unicredLogo as any).url, link: "https://www.unicred.com.br/" },
+            { name: "Uniprime", url: (uniprimeLogo as any).url, link: "https://www.uniprimebr.com.br/" },
+            { name: "Cresol", url: (cresolLogo as any).url, link: "https://cresol.com.br/" },
+          ]}
+        />
+      }
       solution={{
+
         title: <>Sua <span className="text-gradient">Plataforma de Leilão Online</span> — Homologada e Sem Mensalidade</>,
         desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> é a ferramenta ideal para quem deseja <strong className="text-foreground">ver o site de leilões</strong> operando com máxima performance. Entregamos um <strong className="text-foreground">sistema online para leiloeiro</strong> com licença perpétua e código-fonte. Nossa <strong className="text-foreground">plataforma de pregões online</strong> é robusta, white-label e preparada para leilões judiciais e extrajudiciais. Diferente de soluções como <strong className="text-foreground">sas leilão</strong> genéricas, oferecemos personalização total para o seu negócio.</>,
         image: (configUrl as any).url,
@@ -243,6 +279,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       finalCtaTitle={<>Pronto para <span className="text-gradient">digitalizar seus leilões</span>?</>}
       finalCtaDesc={<>Agende uma <strong className="text-foreground">demonstração ao vivo</strong> — mostramos a plataforma com seus lotes reais e enviamos proposta em <strong className="text-foreground">até 24 horas</strong>.</>}
       relatedNewsTags={["Leilão", "Leilão Online", "Sistemas", "Tecnologia"]}
-    />
+      />
+    </>
   ),
 });
