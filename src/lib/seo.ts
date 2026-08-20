@@ -124,7 +124,7 @@ export function buildMeta(options: MetaOptions) {
           name: SITE_NAME,
           logo: {
             "@type": "ImageObject",
-            url: `${SITE_URL}/favicon.ico`,
+            url: `${SITE_URL}/favicon.png`,
           },
         },
       }),
