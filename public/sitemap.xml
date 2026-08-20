@@ -8,7 +8,7 @@ export default function Sitemap() {
 
 export const loader = async () => {
   const staticRoutes = [
-    "",
+    "/",
     "/empresa/quem-somos",
     "/empresa/nossa-historia",
     "/empresa/clientes",
@@ -44,8 +44,11 @@ export const loader = async () => {
   const newsRoutes = newsData
     .filter(post => post.slug && post.slug.trim() !== "")
     .map((post) => `/noticias/${post.slug}`);
+  
   const categories = Array.from(new Set(newsData.flatMap(p => p.categories)));
-  const categoryRoutes = categories.map(cat => `/noticias/categoria/${cat.toLowerCase().replace(/\s+/g, '-')}`);
+  const categoryRoutes = categories
+    .filter(cat => cat && cat !== "Sem categoria")
+    .map(cat => `/noticias/categoria/${cat.toLowerCase().replace(/\s+/g, '-')}`);
 
   const allRoutes = [...staticRoutes, ...newsRoutes, ...categoryRoutes];
   const date = new Date().toISOString();
@@ -59,8 +62,8 @@ export const loader = async () => {
   <url>
     <loc>${loc}</loc>
     <lastmod>${date}</lastmod>
-    <changefreq>${route === "" || route === "/" ? "daily" : "weekly"}</changefreq>
-    <priority>${route === "" || route === "/" ? "1.0" : route.includes("sistema-de-") ? "0.9" : "0.7"}</priority>
+    <changefreq>${route === "/" ? "daily" : "weekly"}</changefreq>
+    <priority>${route === "/" ? "1.0" : route.includes("sistema-de-") ? "0.9" : "0.7"}</priority>
   </url>`;
     })
     .join("")}

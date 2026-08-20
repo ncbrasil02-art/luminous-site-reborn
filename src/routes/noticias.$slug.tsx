@@ -24,7 +24,7 @@ export const Route = createFileRoute('/noticias/$slug')({
       keywords: `notícia, nc brasil, ${loaderData.categories.join(', ')}, ${loaderData.tags.join(', ')}`,
       ogImage: loaderData.image_url || undefined,
       ogType: 'article',
-      canonical: `${SITE_URL}/noticias/${loaderData.slug}`,
+      canonical: `/noticias/${loaderData.slug}`,
       breadcrumbs: [
         { label: "Home", to: "/" },
         { label: "Notícias", to: "/noticias" },
