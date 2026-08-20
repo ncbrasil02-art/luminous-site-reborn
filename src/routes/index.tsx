@@ -184,9 +184,9 @@ function HomePage() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="mt-6 max-w-5xl font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-7xl"
           >
-            Tecnologia que <span className="text-gradient">vende</span>.
+            Sistemas Web e <span className="text-gradient">Sites de Leilão</span>.
             <br className="hidden md:block" />
-            Design que <span className="text-gradient">encanta</span>.
+            Design que <span className="text-gradient">Impulsiona Vendas</span>.
           </motion.h1>
 
           <motion.p
@@ -218,10 +218,10 @@ function HomePage() {
             className="mt-10 flex flex-col items-center gap-3 sm:flex-row"
           >
             <Link
-              to="/orcamento"
+              to="/sistema-de-leilao"
               className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md transition-transform hover:scale-105"
             >
-              Quero um orçamento
+              Conhecer Sistema de Leilão
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link

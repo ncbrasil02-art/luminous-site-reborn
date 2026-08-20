@@ -249,7 +249,7 @@ export function LandingPage({
         <section className="relative border-y border-border bg-surface/30 py-10">
           <div className="mx-auto max-w-6xl px-4 md:px-6">
             <h2 className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">
-              {clientsTitle ?? "Empresas que confiam na NC Brasil"}
+              {clientsTitle ?? `Empresas que confiam no ${eyebrow} NC Brasil`}
             </h2>
 
             <div className="marquee-mask mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
