@@ -41,7 +41,9 @@ export const loader = async () => {
     "/noticias",
   ];
 
-  const newsRoutes = newsData.map((post) => `/noticias/${post.slug}`);
+  const newsRoutes = newsData
+    .filter(post => post.slug && post.slug.trim() !== "")
+    .map((post) => `/noticias/${post.slug}`);
   const categories = Array.from(new Set(newsData.flatMap(p => p.categories)));
   const categoryRoutes = categories.map(cat => `/noticias/categoria/${cat.toLowerCase().replace(/\s+/g, '-')}`);
 
