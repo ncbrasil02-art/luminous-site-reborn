@@ -9,6 +9,7 @@ import {
   MessageCircle,
   Phone,
   Send,
+  ChevronRight,
 } from "lucide-react";
 
 import { Reveal, SectionHeading } from "@/components/Section";
