@@ -6,6 +6,8 @@ import {
   Trophy, Users, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/plataforma-chinesa-apostas-cassino";
 
@@ -228,11 +230,7 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
           { feature: "Deploy em 45-90 dias", us: true, them: "6 a 12 meses" },
         ],
       }}
-      testimonials={[
-        { quote: "Lançamos em 60 dias com sportsbook + cassino + Pix funcionando. Nenhum white label europeu chegou perto do prazo — nem do preço.", author: "Fernando Coelho", role: "Bet BR · SP" },
-        { quote: "O Pix nativo brasileiro fez nossa taxa de conversão de depósito subir 3x. Jogador brasileiro não tolera saque em D+2.", author: "Camila Ribeiro", role: "Casino Pix · RJ" },
-        { quote: "A assessoria da NC no processo SPA/MF valeu o contrato. Saímos do zero à licença em 4 meses.", author: "Rafael Nunes", role: "Sport Real · PR" },
-      ]}
+      testimonials={testimonialsData.slice(3, 6)}
       faq={lpFaq}
       finalCtaTitle={<>Pronto para lançar seu <span className="text-gradient">operador de iGaming</span>?</>}
       finalCtaDesc={<>Receba um <strong className="text-foreground">plano executivo em 24h</strong> com arquitetura, catálogo de jogos, orçamento, cronograma e roadmap de licenciamento SPA/MF. <strong className="text-foreground">Consultoria estratégica gratuita</strong> com nosso time de iGaming.</>}

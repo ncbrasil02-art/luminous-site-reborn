@@ -6,6 +6,8 @@ import {
   Ticket, Trophy, Users, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
 
@@ -222,11 +224,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           { feature: "Multi-tenant (múltiplas marcas)", us: true, them: false },
         ],
       }}
-      testimonials={[
-        { quote: "Migramos do Rifei para a plataforma NC e economizamos R$40 mil em taxas no primeiro trimestre. Além disso, agora somos donos do banco de dados dos nossos clientes.", author: "Rodrigo Almeida", role: "Ativ Rifas · SP" },
-        { quote: "O sorteio pela Loteria Federal com hash blockchain deu credibilidade absurda. Nossa taxa de conversão triplicou.", author: "Luana Ferreira", role: "Sorte Premiada · MG" },
-        { quote: "Em 6 meses vendemos mais de 2 milhões de cotas. O app nativo iOS/Android publicado com nossa marca foi um divisor.", author: "Marcelo Torres", role: "GO Rifas · GO" },
-      ]}
+      testimonials={testimonialsData.slice(4, 7)}
       faq={lpFaq}
       finalCtaTitle={<>Pronto para criar sua <span className="text-gradient">plataforma de rifas</span>?</>}
       finalCtaDesc={<>Receba um <strong className="text-foreground">plano personalizado em 24h</strong> com escopo, prazo, valor e o modelo legal ideal para sua operação. <strong className="text-foreground">Consultoria inicial gratuita</strong>.</>}

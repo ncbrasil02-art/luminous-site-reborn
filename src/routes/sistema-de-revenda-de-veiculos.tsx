@@ -4,6 +4,8 @@ import {
   Zap, Lock, Cloud, Database, Award, Smartphone, DollarSign, Wrench, TrendingUp,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-revenda-de-veiculos";
 
@@ -145,11 +147,7 @@ export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
           { feature: "Código-fonte entregável", us: "Opcional", them: false },
         ],
       }}
-      testimonials={[
-        { quote: "Substituímos 3 sistemas por 1 só. O cross-post automático economiza 4h por dia da equipe e o BI mostra exatamente onde tem gordura pra cortar.", author: "MegaCar Multimarcas", role: "150 veículos · SP" },
-        { quote: "O WhatsApp com distribuição automática e bot qualificador dobrou nossa taxa de conversão de lead em atendimento.", author: "AutoShow Premium", role: "Revenda de Luxo · RJ" },
-        { quote: "Migramos de um SaaS que cobrava por veículo e economizamos R$8 mil/mês. O portal próprio ainda gera leads orgânicos via Google.", author: "Grupo TopCar", role: "Rede com 4 lojas · MG" },
-      ]}
+      testimonials={testimonialsData.slice(2, 5)}
       faq={lpFaq}
       finalCtaTitle={<>Pronto para <span className="text-gradient">profissionalizar sua revenda</span> com tecnologia?</>}
       finalCtaDesc={<>Fale com nossa equipe automotiva. Fazemos <strong className="text-foreground">demonstração ao vivo com dados da sua operação</strong>, análise de ROI e proposta comercial em até 48h.</>}
