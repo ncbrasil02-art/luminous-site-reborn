@@ -371,22 +371,40 @@ export function LandingPage({
       {/* PARALLAX SHOWCASE */}
       {showParallaxshowcase && showcaseImages.length > 0 && (
         <section className="relative overflow-hidden py-24 md:py-32">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
+          <div className="mx-auto max-w-7xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Plataforma de Leilão"
               title={<>Design <span className="text-gradient">Premium</span> & Performance</>}
+              description="Explore a interface sofisticada e os recursos exclusivos da nossa plataforma de leilões."
             />
             
-            <div className="mt-20 space-y-32">
+            <div className="mt-20 space-y-16">
               {showcaseImages.map((img, i) => (
-                <div key={img} className={`flex flex-col gap-12 lg:items-center ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
-                  <Reveal className="flex-1" delay={0.1}>
-                    <div className="relative group perspective-1000">
-                      <motion.div 
-                        whileHover={{ rotateY: i % 2 === 0 ? 5 : -5, rotateX: 2, scale: 1.02 }}
-                        className="relative overflow-hidden rounded-3xl border border-primary/30 shadow-2xl transition-all duration-500 cursor-zoom-in"
-                        onClick={() => window.open(img, '_blank')}
-                      >
+                <Reveal key={img} delay={i * 0.1}>
+                  <div className="group relative flex flex-col overflow-hidden rounded-[2.5rem] border border-border bg-card/20 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/40 hover:glow-sm">
+                    {/* Header/Caption */}
+                    <div className="flex flex-col gap-2 p-8 text-center md:p-10">
+                      <h3 className="font-display text-2xl font-bold md:text-3xl">
+                        {i === 0 && "Interface do Arrematante"}
+                        {i === 1 && "Painel de Lances em Tempo Real"}
+                        {i === 2 && "Dashboard Administrativo Robusto"}
+                        {i === 3 && "Configurações de Edital e Lotes"}
+                        {i === 4 && "Visualização Mobile Nativa"}
+                        {i === 5 && "Controle de Habilitação e KYC"}
+                      </h3>
+                      <p className="mx-auto max-w-2xl text-sm text-muted-foreground md:text-base">
+                        {i === 0 && "Uma experiência imersiva e intuitiva para quem busca facilidade na hora de arrematar bens."}
+                        {i === 1 && "Tecnologia de baixa latência para garantir que cada lance seja registrado com precisão milimétrica."}
+                        {i === 2 && "Gestão completa do seu negócio com métricas claras, relatórios financeiros e controle total."}
+                        {i === 3 && "Flexibilidade total para cadastrar bens, anexar documentos e gerenciar regras de negócio."}
+                        {i === 4 && "Seu site de leilão na palma da mão com notificações push e lances em um toque."}
+                        {i === 5 && "Segurança jurídica e validação automática de arrematantes integrada à Receita Federal."}
+                      </p>
+                    </div>
+
+                    {/* Image Container with Reveal Effect */}
+                    <div className="relative mx-auto max-w-6xl px-6 pb-6 md:px-8 md:pb-8">
+                      <div className="relative overflow-hidden rounded-2xl border border-border shadow-2xl transition-all duration-500">
                         <img 
                           src={img} 
                           alt={imageKeyword || "Plataforma de Leilão"} 
@@ -398,18 +416,30 @@ export function LandingPage({
                             }
                           }}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                          <div className="bg-black/60 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium flex items-center gap-2">
-                            <Search className="h-4 w-4" /> Ampliar imagem
+                        
+                        {/* Overlay Controls */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex flex-col items-center justify-end p-8 gap-4">
+                          <div className="flex gap-4">
+                            <button 
+                              onClick={() => window.open(img, '_blank')}
+                              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105 active:scale-95"
+                            >
+                              <Search className="h-4 w-4" /> Ampliar em Tela Cheia
+                            </button>
                           </div>
                         </div>
-                      </motion.div>
-                      <div className="absolute -inset-4 -z-10 bg-primary/10 blur-3xl rounded-full opacity-50 group-hover:opacity-100 transition-opacity" />
+                      </div>
+                      
+                      {/* Glow Effect */}
+                      <div className="absolute -inset-4 -z-10 bg-primary/10 blur-3xl rounded-full opacity-30 group-hover:opacity-60 transition-opacity" />
                     </div>
-                  </Reveal>
-                  
-                  <Reveal className="flex-1" delay={0.2}>
-                    <div className="max-w-md">
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
                       <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
                         <Sparkles className="h-5 w-5" />
                       </div>
