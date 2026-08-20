@@ -58,7 +58,7 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    label: "Soluções Web",
+    label: "Serviços",
     submenu: [
       { to: "/solucoes-web/desenvolvimento-de-sites", label: "Desenvolvimento de Sites", icon: Globe2 },
       { to: "/solucoes-web/loja-virtual", label: "Loja Virtual", icon: ShoppingBag },
@@ -66,11 +66,6 @@ const navItems: NavItem[] = [
       { to: "/solucoes-web/marketing-digital", label: "Marketing Digital", icon: LineChart },
       { to: "/solucoes-web/seo-google", label: "SEO Google", icon: Search },
       { to: "/solucoes-web/hospedagem", label: "Hospedagem", icon: Server },
-    ],
-  },
-  {
-    label: "Nossos Serviços",
-    submenu: [
       { to: "/servicos/desenvolvimento", label: "Desenvolvimento", icon: Code2 },
       { to: "/servicos/sistemas-web", label: "Sistemas Web", icon: LayoutDashboard },
       { to: "/servicos/aplicativos", label: "Aplicativos", icon: Smartphone },
@@ -81,7 +76,7 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    label: "Nossos Sistemas",
+    label: "Sistemas",
     submenu: [
       { to: "/sistema-de-leilao", label: "Sistema de Leilão", icon: Gavel },
       { to: "/sistema-de-leilao-rural", label: "Sistema de Leilão Rural", icon: Tractor },
@@ -95,7 +90,7 @@ const navItems: NavItem[] = [
       { to: "/sistema-de-leilao-de-centavos", label: "Leilão de Centavos", icon: Coins },
     ],
   },
-  { to: "/trabalhos-realizados", label: "Trabalhos Realizados" },
+  { to: "/trabalhos-realizados", label: "Cases" },
   { to: "/orcamento", label: "Orçamentos" },
   { to: "/contato", label: "Contato" },
 ];
