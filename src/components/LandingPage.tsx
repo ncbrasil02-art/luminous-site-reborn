@@ -144,6 +144,7 @@ export function LandingPage({
   finalPrimaryCta = { to: "/orcamento", label: "Solicitar orçamento" },
   finalSecondaryCta = { to: "/contato", label: "Falar com especialista" },
   relatedNewsTags = [],
+  imageKeyword,
 }: LandingPageProps) {
   const search = useRouterState({ select: (s) => s.location.search });
   const pathname = useRouterState({ select: (s) => s.location.pathname });
