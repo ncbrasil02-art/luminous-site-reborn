@@ -52,17 +52,16 @@ function TagPage() {
                 className="group block h-full space-y-4 rounded-3xl border border-border bg-card/40 p-5 transition-all hover:-translate-y-2 hover:border-primary/40 hover:bg-card hover:glow-sm"
               >
                 <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-surface">
-                  {news.image_url ? (
-                    <img 
-                      src={news.image_url} 
-                      alt={news.title} 
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" 
-                    />
-                  ) : (
-                    <div className="flex h-full w-full items-center justify-center bg-primary/5 text-primary/10 text-xs">
-                      Sem Imagem
-                    </div>
-                  )}
+                  <img 
+                    src={news.image_url || "/news/default-nc.jpg"} 
+                    alt={news.title} 
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
+                    }}
+                  />
                 </div>
                 <div className="space-y-3">
                   <h3 className="line-clamp-2 font-display text-xl font-bold group-hover:text-primary transition-colors">
