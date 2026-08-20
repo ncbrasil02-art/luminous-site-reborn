@@ -72,6 +72,7 @@ export type LandingPageProps = {
   finalPrimaryCta?: { to: string; label: string };
   finalSecondaryCta?: { to: string; label: string };
   relatedNewsTags?: string[]; // New prop for related news
+  imageKeyword?: string; // New prop for image alt tags
 };
 
 export function buildLPMeta(options: {

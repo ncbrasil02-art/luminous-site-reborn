@@ -195,19 +195,19 @@ function HomePage() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="mt-6 max-w-2xl text-base text-muted-foreground md:text-lg"
           >
-            Somos a <strong className="text-foreground">NC Brasil</strong> — agência de{" "}
-            <Link to="/nossos-sistemas" className="story-link text-foreground">
-              <strong>sistemas web sob demanda</strong>
+            A <strong className="text-foreground">NC Brasil</strong> é especialista em{" "}
+            <Link to="/sistema-de-leilao" className="story-link text-foreground">
+              <strong>plataforma de leilão online</strong>
             </Link>
             ,{" "}
-            <Link to="/portfolio/lojas-virtuais-criadas" className="story-link text-foreground">
-              <strong>lojas virtuais</strong>
+            <Link to="/nossos-sistemas" className="story-link text-foreground">
+              <strong>sistemas web sob demanda</strong>
             </Link>{" "}
             e{" "}
-            <Link to="/portfolio/criacao-de-aplicativos" className="story-link text-foreground">
-              <strong>aplicativos mobile</strong>
+            <Link to="/portfolio/lojas-virtuais-criadas" className="story-link text-foreground">
+              <strong>e-commerce premium</strong>
             </Link>{" "}
-            para empresas em <strong className="text-foreground">SP</strong> e{" "}
+            em <strong className="text-foreground">SP</strong> e{" "}
             <strong className="text-foreground">RJ</strong>.
           </motion.p>
 

@@ -89,10 +89,10 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         ],
       }}
       benefits={[
-        { icon: Landmark, title: "Homologada em 27 TJs", desc: "Aceita em **AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO** + TJ/SP + Detran." },
-        { icon: Banknote, title: "Zero mensalidade", desc: "**Licença perpétua com código-fonte** — sem aluguel, sem taxa por lance, sem percentual sobre arrematação." },
-        { icon: ShieldCheck, title: "Segurança Jurídica", desc: "**Assinatura ICP-Brasil**, cronômetro sincronizado servidor, logs imutáveis e gravação do pregão como prova." },
-        { icon: Video, title: "Transmissão HD ao vivo", desc: "Streaming **WebRTC + HLS adaptativo**, chat moderado, cronômetro sincronizado e gravação jurídica." },
+        { icon: Landmark, title: "Plataforma de Leilões Homologada", desc: "Aceita em **27 TJs** + TJ/SP + Detran. O melhor **sistema online para leiloeiro** jurídico." },
+        { icon: Banknote, title: "Sem taxas extras", desc: "**Sistema de leilão online** com 0% de taxa por lance. O lucro do **pregão online** é todo seu." },
+        { icon: ShieldCheck, title: "Segurança Jurídica", desc: "**Assinatura ICP-Brasil**, cronômetro sincronizado e logs imutáveis para seu **site de leilão**." },
+        { icon: Video, title: "Pregão ao Vivo HD", desc: "Transmissão **WebRTC** em tempo real. Sua **plataforma de pregões online** com zero delay." },
       ]}
       features={[
         { icon: FileSignature, title: "Cadastro rico de lotes", desc: "Fotos ilimitadas, vídeo 360°, laudos, matrículas e edital anexos." },
