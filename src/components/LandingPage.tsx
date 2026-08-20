@@ -184,7 +184,12 @@ export function LandingPage({
         <div className="absolute inset-0 -z-10 bg-black/40" />
         <div className="absolute inset-0 -z-20">
           <img 
-            src="/logo.jpg" 
+            src={pathname.includes('rifas') 
+              ? "https://www.ncbrasil.com.br/sistema-de-rifas/melhor-sistema-de-rifas-online.png"
+              : pathname.includes('leilao')
+                ? "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-home-premium.png"
+                : "https://www.ncbrasil.com.br/logo.jpg"
+            }
             alt={imageKeyword || eyebrow} 
             className="h-full w-full object-cover opacity-20"
             loading="eager"
