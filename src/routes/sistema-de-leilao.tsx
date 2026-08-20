@@ -130,7 +130,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         ],
       }}
       extraContentBeforeProblem={
-        <div className="relative isolate">
+        <div className="relative isolate py-4">
           <div className="absolute inset-0 -z-10 bg-primary/5 blur-3xl opacity-30" />
           <PartnerCarousel 
             title="Sistema Homologado e Utilizado por Grandes Órgãos"

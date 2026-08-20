@@ -59,6 +59,8 @@ export function buildMeta(options: MetaOptions) {
     { name: "twitter:title", content: fullTitle },
     { name: "twitter:description", content: description },
     { name: "twitter:image", content: absoluteOgImage },
+    { name: "image", content: absoluteOgImage },
+    { property: "og:image:secure_url", content: absoluteOgImage },
   ];
 
   if (noIndex) {

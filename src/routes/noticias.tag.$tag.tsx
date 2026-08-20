@@ -2,6 +2,8 @@ import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { newsData, type NewsPost } from '@/lib/news.data'
 import { Calendar, Tag, ArrowRight } from 'lucide-react'
 import { Reveal, SectionHeading } from '@/components/Section'
+import { buildMeta, SITE_URL } from '@/lib/seo'
+
 
 export const Route = createFileRoute('/noticias/tag/$tag')({
   loader: ({ params }) => {
@@ -12,13 +14,11 @@ export const Route = createFileRoute('/noticias/tag/$tag')({
     if (posts.length === 0) throw notFound()
     return { tag, posts }
   },
-  head: ({ loaderData }) => ({
-    meta: [
-      { title: `Tag: ${loaderData?.tag || 'Notícias'} · NC Brasil` },
-      { label: 'description', content: `Explore conteúdos marcados com a tag "${loaderData?.tag}" na revista digital da NC Brasil.` },
-      { property: 'og:title', content: `Tag: ${loaderData?.tag} · NC Brasil` },
-      { property: 'og:type', content: 'website' },
-    ],
+  head: ({ loaderData }) => buildMeta({
+    title: `Tag: ${loaderData?.tag || 'Notícias'} · NC Brasil`,
+    description: `Explore conteúdos marcados com a tag "${loaderData?.tag}" na revista digital da NC Brasil.`,
+    keywords: `notícia, nc brasil, tag, ${loaderData?.tag}`,
+    canonical: `${SITE_URL}/noticias/tag/${loaderData?.tag}`,
   }),
   component: TagPage,
 })

@@ -13,10 +13,10 @@ interface PartnerCarouselProps {
 
 export function PartnerCarousel({ logos, title }: PartnerCarouselProps) {
   // Duplicate logos for infinite scroll effect
-  const duplicatedLogos = [...logos, ...logos, ...logos, ...logos];
+  const duplicatedLogos = [...logos, ...logos, ...logos, ...logos, ...logos];
 
   return (
-    <div className="w-full py-12 overflow-hidden border-b border-border bg-surface/10">
+    <div className="w-full py-12 overflow-hidden border-b border-border bg-gradient-to-b from-surface/5 to-surface/20">
       {title && (
         <h2 className="text-center text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60 mb-8">
           {title}
@@ -26,7 +26,7 @@ export function PartnerCarousel({ logos, title }: PartnerCarouselProps) {
       <div className="relative flex max-w-[100vw] overflow-hidden marquee-mask">
         <motion.div
           animate={{
-            x: [0, -1500], // Increased to ensure continuity on larger screens
+            x: [0, -2500], // Increased further to handle very wide viewports
           }}
           transition={{
             duration: 30,

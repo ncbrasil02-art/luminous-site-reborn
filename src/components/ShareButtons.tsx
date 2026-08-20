@@ -12,8 +12,8 @@ interface ShareButtonsProps {
 export function ShareButtons({ url, title, className }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
   
-  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://www.ncbrasil.com.br';
-  const absoluteUrl = url.startsWith('http') ? url : `${siteUrl}${url}`;
+  const siteUrl = 'https://www.ncbrasil.com.br';
+  const absoluteUrl = url.startsWith('http') ? url : `${siteUrl}${url.startsWith('/') ? '' : '/'}${url}`;
   
   const encodedUrl = encodeURIComponent(absoluteUrl);
   const encodedTitle = encodeURIComponent(title);
