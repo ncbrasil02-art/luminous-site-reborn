@@ -8,8 +8,6 @@ import {
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 import { testimonialsData, rifasTestimonials } from "@/lib/testimonials.data";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
-import showcase01 from "@/assets/rifas-showcase-01.png.asset.json";
-import showcase02 from "@/assets/rifas-showcase-02.webp.asset.json";
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
@@ -48,8 +46,8 @@ export const Route = createFileRoute("/sistema-de-rifas")({
       imageKeyword="sistema de rifas profissional"
       showParallaxshowcase
       showcaseImages={[
-        (showcase01 as any).url,
-        (showcase02 as any).url,
+        "/img-sistema-de-rifas/showcase-01.png",
+        "/img-sistema-de-rifas/showcase-02.webp",
         "/news/default-nc.jpg", // Fallback images to fill the carousel
       ]}
       breadcrumbs={[
