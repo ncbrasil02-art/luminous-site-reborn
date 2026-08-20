@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as TrabalhosRealizadosRouteImport } from './routes/trabalhos-realizados'
 import { Route as SolucoesWebRouteImport } from './routes/solucoes-web'
 import { Route as SoftwareRouteImport } from './routes/software'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SistemaSobDemandaNcBrasilRouteImport } from './routes/sistema-sob-demanda-nc-brasil'
 import { Route as SistemaDeRifasRouteImport } from './routes/sistema-de-rifas'
 import { Route as SistemaDeRevendaDeVeiculosRouteImport } from './routes/sistema-de-revenda-de-veiculos'
@@ -85,6 +86,11 @@ const SolucoesWebRoute = SolucoesWebRouteImport.update({
 const SoftwareRoute = SoftwareRouteImport.update({
   id: '/software',
   path: '/software',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SistemaSobDemandaNcBrasilRoute =
@@ -426,6 +432,7 @@ export interface FileRoutesByFullPath {
   '/sistema-de-revenda-de-veiculos': typeof SistemaDeRevendaDeVeiculosRoute
   '/sistema-de-rifas': typeof SistemaDeRifasRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
@@ -489,6 +496,7 @@ export interface FileRoutesByTo {
   '/sistema-de-revenda-de-veiculos': typeof SistemaDeRevendaDeVeiculosRoute
   '/sistema-de-rifas': typeof SistemaDeRifasRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
@@ -554,6 +562,7 @@ export interface FileRoutesById {
   '/sistema-de-revenda-de-veiculos': typeof SistemaDeRevendaDeVeiculosRoute
   '/sistema-de-rifas': typeof SistemaDeRifasRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/software': typeof SoftwareRoute
   '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
@@ -620,6 +629,7 @@ export interface FileRouteTypes {
     | '/sistema-de-revenda-de-veiculos'
     | '/sistema-de-rifas'
     | '/sistema-sob-demanda-nc-brasil'
+    | '/sitemap.xml'
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
@@ -683,6 +693,7 @@ export interface FileRouteTypes {
     | '/sistema-de-revenda-de-veiculos'
     | '/sistema-de-rifas'
     | '/sistema-sob-demanda-nc-brasil'
+    | '/sitemap.xml'
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
@@ -747,6 +758,7 @@ export interface FileRouteTypes {
     | '/sistema-de-revenda-de-veiculos'
     | '/sistema-de-rifas'
     | '/sistema-sob-demanda-nc-brasil'
+    | '/sitemap.xml'
     | '/software'
     | '/solucoes-web'
     | '/trabalhos-realizados'
@@ -812,6 +824,7 @@ export interface RootRouteChildren {
   SistemaDeRevendaDeVeiculosRoute: typeof SistemaDeRevendaDeVeiculosRoute
   SistemaDeRifasRoute: typeof SistemaDeRifasRoute
   SistemaSobDemandaNcBrasilRoute: typeof SistemaSobDemandaNcBrasilRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   SoftwareRoute: typeof SoftwareRoute
   SolucoesWebRoute: typeof SolucoesWebRouteWithChildren
   TrabalhosRealizadosRoute: typeof TrabalhosRealizadosRoute
@@ -861,6 +874,13 @@ declare module '@tanstack/react-router' {
       path: '/software'
       fullPath: '/software'
       preLoaderRoute: typeof SoftwareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sistema-sob-demanda-nc-brasil': {
@@ -1368,6 +1388,7 @@ const rootRouteChildren: RootRouteChildren = {
   SistemaDeRevendaDeVeiculosRoute: SistemaDeRevendaDeVeiculosRoute,
   SistemaDeRifasRoute: SistemaDeRifasRoute,
   SistemaSobDemandaNcBrasilRoute: SistemaSobDemandaNcBrasilRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   SoftwareRoute: SoftwareRoute,
   SolucoesWebRoute: SolucoesWebRouteWithChildren,
   TrabalhosRealizadosRoute: TrabalhosRealizadosRoute,
