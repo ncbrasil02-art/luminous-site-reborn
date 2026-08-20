@@ -1,7 +1,7 @@
 import { trackLead } from "@/lib/analytics";
 
 const WHATSAPP_URL =
-  "https://wa.me/5511940002000?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20NC%20Brasil%20e%20gostaria%20de%20um%20or%C3%A7amento.";
+  "https://wa.me/5521996509905?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20NC%20Brasil%20e%20gostaria%20de%20um%20or%C3%A7amento.";
 
 export function WhatsappFab() {
   return (
