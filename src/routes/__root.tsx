@@ -97,7 +97,7 @@ function NotFoundComponent() {
       // 3. Handle news categories/tags if the first part is a known base
       // Old bases might have been 'category', 'tag', 'criar-sites', etc.
       const isKnownCategory = newsData.some(p => p.categories.some(c => c.toLowerCase().replace(/\s+/g, '-') === firstPart));
-      if (isKnownCategory) {
+      if (isKnownCategory || firstPart === 'biblia' || firstPart === 'artigos') {
         window.location.replace(`/noticias/categoria/${firstPart}`);
         return;
       }
