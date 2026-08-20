@@ -860,6 +860,9 @@ export function LandingPage({
         </section>
       )}
 
+      {/* CONTATO PREMIUM */}
+      <ContactSection pageTitle={typeof h1 === 'string' ? h1 : eyebrow} />
+
       {/* RELATED NEWS */}
       <NewsDisplay 
         filterTags={relatedNewsTags} 
