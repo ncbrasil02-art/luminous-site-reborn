@@ -16,7 +16,7 @@ export function PartnerCarousel({ logos, title }: PartnerCarouselProps) {
   const duplicatedLogos = [...logos, ...logos, ...logos, ...logos];
 
   return (
-    <div className="w-full py-12 overflow-hidden border-b border-border bg-surface/10">
+    <div className="w-full py-12 overflow-hidden border-b border-border bg-gradient-to-b from-surface/5 to-surface/20">
       {title && (
         <h2 className="text-center text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground/60 mb-8">
           {title}
