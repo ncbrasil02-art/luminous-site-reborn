@@ -132,7 +132,7 @@ export function NewsDisplay({
                   >
                     <div className="overflow-hidden rounded-t-[2.4rem] aspect-[16/10] relative">
                       <img 
-                        src={news.image_url || "/news/default-nc.jpg"} 
+                        src={(news.image_url || "/news/default-nc.jpg").replace(/\.(jpg|jpeg|png)$/, '.webp')} 
                         alt={news.title} 
                         loading="lazy"
                         decoding="async"
@@ -141,7 +141,8 @@ export function NewsDisplay({
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
                           if (target.src.endsWith('.webp')) {
-                            target.src = target.src.replace('.webp', '.jpg');
+                            // Try original format
+                            target.src = news.image_url || "/news/default-nc.jpg";
                           } else {
                             target.src = "/news/default-nc.jpg";
                           }
