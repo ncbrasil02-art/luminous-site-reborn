@@ -190,7 +190,7 @@ function NewsIndex() {
                 <Link 
                   to="/noticias/$slug"
                   params={{ slug: news.slug || "" }}
-                className="group block h-full space-y-6 rounded-[2rem] border border-border bg-card/40 p-6 transition-all hover:-translate-y-2 hover:border-primary/40 hover:bg-card hover:glow-sm"
+                className="group block space-y-6 rounded-[2rem] border border-border bg-card/40 p-6 transition-all hover:-translate-y-2 hover:border-primary/40 hover:bg-card hover:glow-sm"
               >
                 <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-surface border border-border/50">
                   <img 

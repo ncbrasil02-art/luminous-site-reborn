@@ -5,7 +5,7 @@ import { Calendar, ArrowRight, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function MagazineSection() {
-  const magazineNews = newsData.slice(0, 6);
+  const magazineNews = newsData.slice(0, 10);
   const featured = magazineNews[0];
   const others = magazineNews.slice(1);
 

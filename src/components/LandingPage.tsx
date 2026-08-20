@@ -2,7 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { newsData } from "@/lib/news.data";
-import { NewsDisplay } from "./NewsDisplay";
+
 import { ShareButtons } from "./ShareButtons";
 import { trackRedirect, trackClick } from "@/lib/analytics";
 import { buildMeta } from "@/lib/seo";
@@ -868,12 +868,6 @@ export function LandingPage({
       {/* CONTATO PREMIUM */}
       <ContactSection pageTitle={typeof h1 === 'string' ? h1 : eyebrow} />
 
-      {/* RELATED NEWS */}
-      <NewsDisplay 
-        filterTags={relatedNewsTags} 
-        title={<>Conteúdo Relacionado e <span className="text-gradient">Insights</span></>}
-        eyebrow="Blog & Notícias"
-      />
 
       {/* CTA FINAL */}
       <section className="relative overflow-hidden py-20 md:py-28">

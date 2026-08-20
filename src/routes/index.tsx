@@ -20,7 +20,7 @@ import { trackClick } from "@/lib/analytics";
 
 import { buildMeta, SITE_URL } from "@/lib/seo";
 import { MagazineSection } from "@/components/MagazineSection";
-import { NewsDisplay } from "@/components/NewsDisplay";
+
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { testimonialsData } from "@/lib/testimonials.data";
 
@@ -538,7 +538,6 @@ function HomePage() {
           </Reveal>
         </div>
       </section>
-      <NewsDisplay />
       <MagazineSection />
     </>
   );

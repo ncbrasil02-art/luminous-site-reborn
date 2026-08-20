@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Clock } from "lucide-react";
-import { NewsDisplay } from "./NewsDisplay";
+
 import { trackClick } from "@/lib/analytics";
 
 
@@ -40,7 +40,7 @@ const cols = [
 export function SiteFooter() {
   return (
     <footer className="relative overflow-hidden border-t border-border bg-surface">
-      <NewsDisplay />
+      
       <div className="absolute inset-0 bg-mesh opacity-40" aria-hidden />
 
       <div className="relative mx-auto max-w-7xl px-4 py-16 md:px-6">
