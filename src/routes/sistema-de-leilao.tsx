@@ -130,21 +130,24 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         ],
       }}
       extraContentBeforeProblem={
-        <PartnerCarousel 
-          title="Sistema Homologado e Utilizado por Grandes Órgãos"
-          logos={[
-            { name: "TJRS", url: (tjrsLogo as any).url, link: "https://www.tjrs.jus.br/" },
-            { name: "Caixa", url: (caixaLogo as any).url, link: "https://www.caixa.gov.br/" },
-            { name: "Detran-MS", url: (detranmsLogo as any).url, link: "https://www.detran.ms.gov.br/" },
-            { name: "Detran-SC", url: (detranscLogo as any).url, link: "https://www.detran.sc.gov.br/" },
-            { name: "Embaixada EUA", url: (embassyLogo as any).url },
-            { name: "Sicoob", url: (sicoobLogo as any).url, link: "https://www.sicoob.com.br/" },
-            { name: "Sicredi", url: (sicrediLogo as any).url, link: "https://www.sicredi.com.br/" },
-            { name: "Unicred", url: (unicredLogo as any).url, link: "https://www.unicred.com.br/" },
-            { name: "Uniprime", url: (uniprimeLogo as any).url, link: "https://www.uniprimebr.com.br/" },
-            { name: "Cresol", url: (cresolLogo as any).url, link: "https://cresol.com.br/" },
-          ]}
-        />
+        <div className="relative isolate">
+          <div className="absolute inset-0 -z-10 bg-primary/5 blur-3xl opacity-30" />
+          <PartnerCarousel 
+            title="Sistema Homologado e Utilizado por Grandes Órgãos"
+            logos={[
+              { name: "TJRS", url: (tjrsLogo as any).url, link: "https://www.tjrs.jus.br/" },
+              { name: "Caixa", url: (caixaLogo as any).url, link: "https://www.caixa.gov.br/" },
+              { name: "Detran-MS", url: (detranmsLogo as any).url, link: "https://www.detran.ms.gov.br/" },
+              { name: "Detran-SC", url: (detranscLogo as any).url, link: "https://www.detran.sc.gov.br/" },
+              { name: "Embaixada EUA", url: (embassyLogo as any).url },
+              { name: "Sicoob", url: (sicoobLogo as any).url, link: "https://www.sicoob.com.br/" },
+              { name: "Sicredi", url: (sicrediLogo as any).url, link: "https://www.sicredi.com.br/" },
+              { name: "Unicred", url: (unicredLogo as any).url, link: "https://www.unicred.com.br/" },
+              { name: "Uniprime", url: (uniprimeLogo as any).url, link: "https://www.uniprimebr.com.br/" },
+              { name: "Cresol", url: (cresolLogo as any).url, link: "https://cresol.com.br/" },
+            ]}
+          />
+        </div>
       }
       solution={{
 

@@ -12,7 +12,10 @@ interface ShareButtonsProps {
 export function ShareButtons({ url, title, className }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
   
-  const encodedUrl = encodeURIComponent(url);
+  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://www.ncbrasil.com.br';
+  const absoluteUrl = url.startsWith('http') ? url : `${siteUrl}${url}`;
+  
+  const encodedUrl = encodeURIComponent(absoluteUrl);
   const encodedTitle = encodeURIComponent(title);
 
   const shareLinks = [

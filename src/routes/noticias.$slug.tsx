@@ -120,7 +120,7 @@ function NewsPostPage() {
                 </div>
                 
                 <div className="flex items-center">
-                  <ShareButtons url={`${typeof window !== 'undefined' ? window.location.origin : ''}/noticias/${post.slug}`} title={post.title} />
+                  <ShareButtons url={`/noticias/${post.slug}`} title={post.title} />
                 </div>
               </div>
             </div>

@@ -272,7 +272,7 @@ export function LandingPage({
             transition={{ delay: 0.5 }}
             className="mt-8 flex justify-center"
           >
-            <ShareButtons url={`${typeof window !== 'undefined' ? window.location.origin : ''}${pathname}`} title={typeof h1 === 'string' ? h1 : eyebrow} />
+            <ShareButtons url={pathname} title={typeof h1 === 'string' ? h1 : eyebrow} />
           </motion.div>
 
           {stats && (
