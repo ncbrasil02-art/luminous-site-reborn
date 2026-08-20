@@ -2,6 +2,8 @@ import { createFileRoute, Link, notFound } from '@tanstack/react-router'
 import { newsData, type NewsPost } from '@/lib/news.data'
 import { Calendar, ArrowRight } from 'lucide-react'
 import { Reveal, SectionHeading } from '@/components/Section'
+import { buildMeta, SITE_URL } from '@/lib/seo'
+import { Reveal, SectionHeading } from '@/components/Section'
 
 export const Route = createFileRoute('/noticias/categoria/$category')({
   loader: ({ params }) => {
@@ -12,13 +14,11 @@ export const Route = createFileRoute('/noticias/categoria/$category')({
     if (posts.length === 0) throw notFound()
     return { category, posts }
   },
-  head: ({ loaderData }) => ({
-    meta: [
-      { title: `Categoria: ${loaderData?.category || 'Notícias'} · NC Brasil` },
-      { label: 'description', content: `Veja todas as notícias e artigos na categoria ${loaderData?.category} da NC Brasil.` },
-      { property: 'og:title', content: `Categoria: ${loaderData?.category} · NC Brasil` },
-      { property: 'og:type', content: 'website' },
-    ],
+  head: ({ loaderData }) => buildMeta({
+    title: `Categoria: ${loaderData?.category || 'Notícias'} · NC Brasil`,
+    description: `Veja todas as notícias e artigos na categoria ${loaderData?.category} da NC Brasil.`,
+    keywords: `notícia, nc brasil, categoria, ${loaderData?.category}`,
+    canonical: `${SITE_URL}/noticias/categoria/${loaderData?.category}`,
   }),
   component: CategoryPage,
 })
