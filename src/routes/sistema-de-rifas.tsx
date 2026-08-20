@@ -6,8 +6,15 @@ import {
   Ticket, Trophy, Users, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
-import { testimonialsData, rifasTestimonials } from "@/lib/testimonials.data";
+import { rifasTestimonials } from "@/lib/testimonials.data";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
+
+// Image Assets
+import rifasLogoAsset from "@/assets/sistema-de-rifas-logo.png.asset.json";
+import rifasShowcase1Asset from "@/assets/melhor-sistema-de-rifas-online.png.asset.json";
+import rifasShowcase2Asset from "@/assets/plataforma-de-rifas-lucrativa.png.asset.json";
+import rifasShowcase3Asset from "@/assets/script-de-rifas-profissional.png.asset.json";
+import rifasShowcase4Asset from "@/assets/sistema-de-rifas-premium.png.asset.json";
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
@@ -43,12 +50,13 @@ export const Route = createFileRoute("/sistema-de-rifas")({
   }),
   component: () => (
     <LandingPage
-      imageKeyword="sistema de rifas profissional"
+      imageKeyword="melhor script de rifas e plataforma de ações online profissional"
       showParallaxshowcase
       showcaseImages={[
-        "/img-sistema-de-rifas/showcase-01.png",
-        "/img-sistema-de-rifas/showcase-02.webp",
-        "/news/default-nc.jpg", // Fallback images to fill the carousel
+        rifasShowcase1Asset.url,
+        rifasShowcase2Asset.url,
+        rifasShowcase3Asset.url,
+        rifasShowcase4Asset.url,
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
