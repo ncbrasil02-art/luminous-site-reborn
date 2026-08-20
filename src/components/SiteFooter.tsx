@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Clock } from "lucide-react";
-import { NewsDisplay } from "./NewsDisplay";
+
 import { trackClick } from "@/lib/analytics";
 
 
