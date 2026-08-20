@@ -1,0 +1,78 @@
+import { newsData } from "@/lib/news.data";
+
+const SITE_URL = "https://www.ncbrasil.com.br";
+
+export default function Sitemap() {
+  return null;
+}
+
+export const loader = async () => {
+  const staticRoutes = [
+    "",
+    "/empresa/quem-somos",
+    "/empresa/nossa-historia",
+    "/empresa/clientes",
+    "/contato",
+    "/orcamento",
+    "/nossos-servicos",
+    "/nossos-sistemas",
+    "/cases",
+    "/trabalhos-realizados",
+    // Services
+    "/servicos/desenvolvimento",
+    "/servicos/sistemas-web",
+    "/servicos/aplicativos",
+    "/servicos/identidade-visual",
+    "/servicos/google-ads",
+    "/servicos/consultoria",
+    // Systems
+    "/sistema-de-leilao",
+    "/sistema-de-leilao-rural",
+    "/sistema-de-leilao-de-centavos",
+    "/sistema-de-rifas",
+    "/sistema-de-raspadinha",
+    "/sistema-de-cupom-descontos",
+    "/sistema-de-revenda-de-veiculos",
+    "/classificados-de-veiculos",
+    "/plataforma-chinesa-apostas-cassino",
+    // Portfolio
+    "/portfolio/sites-criados",
+    "/portfolio/lojas-virtuais-criadas",
+    "/portfolio/criacao-de-aplicativos",
+    "/portfolio/sistemas-criados",
+    "/portfolio/identidade-visual",
+    // Blog
+    "/noticias",
+  ];
+
+  const newsRoutes = newsData.map((post) => `/noticias/${post.slug}`);
+
+  // Unique categories
+  const categories = Array.from(new Set(newsData.flatMap(p => p.categories)));
+  const categoryRoutes = categories.map(cat => `/noticias/categoria/${cat.toLowerCase().replace(/\s+/g, '-')}`);
+
+  const allRoutes = [...staticRoutes, ...newsRoutes, ...categoryRoutes];
+  const date = new Date().toISOString();
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  ${allRoutes
+    .map((route) => {
+      return `
+  <url>
+    <loc>${SITE_URL}${route}</loc>
+    <lastmod>${date}</lastmod>
+    <changefreq>${route === "" ? "daily" : "weekly"}</changefreq>
+    <priority>${route === "" ? "1.0" : route.startsWith("/noticias/") ? "0.6" : "0.8"}</priority>
+  </url>`;
+    })
+    .join("")}
+</urlset>`;
+
+  return new Response(sitemap, {
+    headers: {
+      "Content-Type": "application/xml",
+      "Cache-Control": "public, max-age=3600, s-maxage=18000",
+    },
+  });
+};
