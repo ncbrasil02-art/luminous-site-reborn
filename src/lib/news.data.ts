@@ -1,7 +1,7 @@
 export interface NewsPost {
   id: string;
   title: string;
-  slug: string;
+  slug: string | null;
   date: string;
   content: string;
   categories: string[];
