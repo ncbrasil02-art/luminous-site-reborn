@@ -9,25 +9,10 @@ import { PartnerCarousel } from "@/components/PartnerCarousel";
 import { SITE_URL } from "@/lib/seo";
 import { testimonialsData } from "@/lib/testimonials.data";
 
-
-
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao";
 
 const lpFaq = [
-  { q: "A plataforma é homologada nos Tribunais de Justiça?", a: "Sim. A plataforma NC Brasil é **homologada em 27 Tribunais de Justiça** (AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO), além de atender **TJ/SP, Detran, leilões judiciais, extrajudiciais, restritos e venda direta**." },
-  { q: "Como funciona o modelo de aluguel do sistema?", a: "**Não cobramos aluguel mensal do sistema — a plataforma é sua.** Diferente de concorrentes como Leilão PRO ou Superbid que operam por assinatura recorrente, você adquire a licença completa, com domínio próprio e código instalado em servidor dedicado. Sem taxa por lance, sem percentual sobre arrematação." },
-  { q: "O sistema atende leilões judiciais e extrajudiciais?", a: "Sim. A plataforma atende **leilões judiciais (CPC art. 879 a 903)**, **extrajudiciais (Decreto 21.981/32)**, **restritos, venda direta, Detran, imóveis, rurais, arte e veículos**, com fluxos separados de edital, publicação em DOE, cronograma e prestação de contas." },
-  { q: "Como funciona a transmissão ao vivo do pregão?", a: "Streaming em **HD adaptativo (WebRTC + HLS)** com cronômetro sincronizado servidor-cliente (evita contestação de lance), chat moderado, histórico completo do pregão e **gravação armazenada como prova jurídica** por até 10 anos." },
-  { q: "O sistema calcula comissões, taxas e impostos automaticamente?", a: "Sim. **Comissão do leiloeiro (5% arrematante + 5% comitente), taxa administrativa, ITBI, ICMS e IR** são calculados por lote conforme regras configuráveis, com **split automático via PIX** para leiloeiro, comitente e plataforma no momento da liquidação." },
-  { q: "É possível personalizar a marca e ter domínio próprio?", a: "**100% white-label**: logotipo, cores, tipografia, **domínio próprio** (`leiloes.suaempresa.com.br` ou `.com.br` dedicado), edital personalizado, templates de e-mail e apps iOS/Android com sua marca na App Store e Play Store. Case real: [ativeiloes.com.br](https://www.ativeiloes.com.br) operando na plataforma." },
-  { q: "Quanto tempo leva a implantação completa?", a: "De **30 a 60 dias**, incluindo configuração white-label, integrações com meios de pagamento (PIX/Boleto/Cartão), KYC (Receita/Serasa), treinamento da equipe (operadores + financeiro + moderadores) e **leilão-piloto acompanhado in loco**." },
-  { q: "Como funciona a habilitação (KYC) de arrematantes?", a: "Cadastro com **KYC completo integrado à Receita Federal** (validação CPF/CNPJ), upload de documentos com OCR, comprovante de residência, e aprovação global ou por lote com trilha de auditoria LGPD. Blacklist e histórico de inadimplência incluídos." },
-  { q: "Suporta lances automáticos, robô e anti-sniping?", a: "Sim. **Lance máximo programado (robô)** com notificação push, e-mail e SMS. **Anti-sniping nativo**: prorrogação automática de 3 minutos quando há lance nos últimos segundos, evitando lances de última hora e garantindo lisura do pregão conforme jurisprudência do STJ." },
-  { q: "Vocês fornecem suporte durante pregões críticos?", a: "**Suporte 24/7 durante pregões** com equipe técnica dedicada em plantão, SLA de resposta de 1h em dias úteis e monitoramento proativo com alertas. Planos incluem evolução mensal, backups automatizados 3x/dia e ambiente de contingência." },
-  { q: "É possível integrar com ERP, PJe, DOE e cartórios?", a: "Sim. **API REST + webhooks** para integração com **ERPs (SAP, TOTVS, Sankhya), PJe (Processo Judicial Eletrônico), DOE, cartórios eletrônicos, sistemas contábeis e Detran** para consulta de restrições veiculares." },
-  { q: "Como funciona a prestação de contas ao juízo?", a: "Geração automática do **auto de arrematação assinado com ICP-Brasil**, relatório oficial por leilão (lotes, lances, arrematantes, valores, comissões), exportação para contabilidade e junta comercial, e nota fiscal eletrônica emitida automaticamente." },
-  { q: "Quais meios de pagamento estão integrados?", a: "**PIX (liquidação em segundos)**, boleto bancário, cartão de crédito parcelado, TED/DOC e caução refundável via bloqueio de cartão. Integrações nativas com **Pagar.me, Iugu, PagSeguro, Stripe** e conciliação bancária automatizada." },
-  { q: "Qual o diferencial vs Leilão PRO e Superbid?", a: "**NC Brasil**: plataforma proprietária sem aluguel, taxa 0% por lance, homologação em 27 TJs, código-fonte disponível, apps nativos com sua marca. **Concorrentes**: cobram mensalidade + % por arrematação, plataforma compartilhada, sem acesso ao código, apps sob marca do fornecedor." },
+...
 ];
 
 export const Route = createFileRoute("/sistema-de-leilao")({
@@ -48,16 +33,15 @@ export const Route = createFileRoute("/sistema-de-leilao")({
   component: () => (
     <>
       <LandingPage
-
       imageKeyword="sistema de leilão"
       showParallaxshowcase
       showcaseImages={[
-        "/img-sistema-de-leilao/home-premium.png",
-        "/img-sistema-de-leilao/vitrine.png",
-        "/img-sistema-de-leilao/dashboard-premium.png",
-        "/img-sistema-de-leilao/dashboard-detalhe.png",
-        "/img-sistema-de-leilao/cards.png",
-        "/img-sistema-de-leilao/painel-online.png",
+        "/__l5e/assets-v1/937abdca-7451-4695-83e6-552efdb9b73e/sistema-de-leilao-home-premium.png",
+        "/__l5e/assets-v1/2bea6211-cf33-4267-8b1c-75cc39c82e15/sistema-de-leilao-vitrine.png",
+        "/__l5e/assets-v1/bf636b5f-8d73-46ea-a829-55fa818c64eb/sistema-de-leilao-dashboard-premium.png",
+        "/__l5e/assets-v1/5988fcfc-d9de-456c-a38e-5dc0699865aa/sistema-de-leilao-dashboard-detalhe.png",
+        "/__l5e/assets-v1/130de035-7388-432e-ae19-0d55e318d262/sistema-de-leilao-cards.png",
+        "/__l5e/assets-v1/26fb39e9-22fd-4dec-a71d-378dfd1e3f0f/sistema-de-leilao-painel-online.png",
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
@@ -68,7 +52,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       h1={
         <div className="flex flex-col items-center gap-8">
           <img 
-            src="/logo-nc-leiloes-final.png"
+            src="/__l5e/assets-v1/26fb39e9-22fd-4dec-a71d-378dfd1e3f0f/logo-nc-leiloes-final.png"
             alt="NC Leilões - Plataforma de Leilão" 
             className="h-20 md:h-28 w-auto filter drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]"
             onError={(e) => {
@@ -112,16 +96,16 @@ export const Route = createFileRoute("/sistema-de-leilao")({
           <PartnerCarousel 
             title="Sistema Homologado e Utilizado por Grandes Órgãos"
             logos={[
-              { name: "TJRS", url: "/partners/tjrs.webp", link: "https://www.tjrs.jus.br/" },
-              { name: "Caixa", url: "/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
-              { name: "Detran-MS", url: "/partners/detranms.webp", link: "https://www.detran.ms.gov.br/" },
-              { name: "Detran-SC", url: "/partners/detransc.webp", link: "https://www.detran.sc.gov.br/" },
-              { name: "Embaixada EUA", url: "/partners/embaixada_usa.webp" },
-              { name: "Sicoob", url: "/partners/sicoob.webp", link: "https://www.sicoob.com.br/" },
-              { name: "Sicredi", url: "/partners/sicredi.webp", link: "https://www.sicredi.com.br/" },
-              { name: "Unicred", url: "/partners/unicred.webp", link: "https://www.unicred.com.br/" },
-              { name: "Uniprime", url: "/partners/uniprime.webp", link: "https://www.uniprimebr.com.br/" },
-              { name: "Cresol", url: "/partners/cresol.webp", link: "https://cresol.com.br/" },
+              { name: "TJRS", url: "/__l5e/assets-v1/f9188652-b2c7-4e7b-a91c-0a86b4ea58b2/tjrs.webp", link: "https://www.tjrs.jus.br/" },
+              { name: "Caixa", url: "/__l5e/assets-v1/3029265f-7999-4738-ab82-59ce1e7471f4/caixa.webp", link: "https://www.caixa.gov.br/" },
+              { name: "Detran-MS", url: "/__l5e/assets-v1/937abdca-7451-4695-83e6-552efdb9b73e/detranms.webp", link: "https://www.detran.ms.gov.br/" },
+              { name: "Detran-SC", url: "/__l5e/assets-v1/fc04366f-602c-40ee-bf5a-58eb1e260da5/detransc.webp", link: "https://www.detran.sc.gov.br/" },
+              { name: "Embaixada EUA", url: "/__l5e/assets-v1/74eebd4c-6511-4ddf-a58d-cf4428efd91b/embaixada_usa.webp" },
+              { name: "Sicoob", url: "/__l5e/assets-v1/22f4392c-147a-4729-a333-1b377fcc9d57/sicoob.webp", link: "https://www.sicoob.com.br/" },
+              { name: "Sicredi", url: "/__l5e/assets-v1/7560f104-fa0d-414f-8507-0ae594131321/sicredi.webp", link: "https://www.sicredi.com.br/" },
+              { name: "Unicred", url: "/__l5e/assets-v1/130de035-7388-432e-ae19-0d55e318d262/unicred.webp", link: "https://www.unicred.com.br/" },
+              { name: "Uniprime", url: "/__l5e/assets-v1/2bea6211-cf33-4267-8b1c-75cc39c82e15/uniprime.webp", link: "https://www.uniprimebr.com.br/" },
+              { name: "Cresol", url: "/__l5e/assets-v1/5988fcfc-d9de-456c-a38e-5dc0699865aa/cresol.webp", link: "https://cresol.com.br/" },
             ]}
           />
         </div>
@@ -130,7 +114,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
 
         title: <>Sua <span className="text-gradient">Plataforma de Leilão Online</span> — Homologada e Sem Mensalidade</>,
         desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> é a ferramenta ideal para quem deseja <strong className="text-foreground">ver o site de leilões</strong> operando com máxima performance. Entregamos um <strong className="text-foreground">sistema online para leiloeiro</strong> com licença perpétua e código-fonte. Nossa <strong className="text-foreground">plataforma de pregões online</strong> é robusta, white-label e preparada para leilões judiciais e extrajudiciais. Diferente de soluções como <strong className="text-foreground">sas leilão</strong> genéricas, oferecemos personalização total para o seu negócio.</>,
-        image: "/img-sistema-de-leilao/configuracoes.png",
+        image: "/__l5e/assets-v1/2bea6211-cf33-4267-8b1c-75cc39c82e15/sistema-de-leilao-configuracoes.png",
         highlights: [
           "**Plataforma proprietária** — sem aluguel mensal, taxa 0% por lance",
           "**Homologada em 27 TJs** + TJ/SP + Detran + PJe",
