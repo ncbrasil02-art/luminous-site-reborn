@@ -5,6 +5,8 @@ import {
   Sparkles, Target, TrendingUp, Users, Video, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { PartnerCarousel } from "@/components/PartnerCarousel";
+import { SITE_URL } from "@/lib/seo";
 import configUrl from "@/assets/sistema-de-leilao-configuracoes.png.asset.json";
 import dashboardUrl from "@/assets/sistema-de-leilao-dashboard-premium.png.asset.json";
 import cardsUrl from "@/assets/sistema-de-leilao-cards.png.asset.json";
