@@ -187,7 +187,7 @@ function NewsPostPage() {
                         <Link 
                           key={related.id}
                           to="/noticias/$slug"
-                          params={{ slug: related.slug }}
+                          params={{ slug: related.slug || "" }}
                           className="group block space-y-3"
                         >
                           <div className="aspect-[16/9] overflow-hidden rounded-2xl bg-surface border border-border group-hover:border-primary/50 transition-all">

@@ -11,7 +11,7 @@ const systems = [
     title: "Sistema de Leilão",
     description: "Plataformas completas para leilões judiciais e extrajudiciais com lances em tempo real.",
     to: "/sistema-de-leilao",
-    image: "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/leilão-e1510970985900.jpg",
+    image: "/news/leilão-e1510970985900.jpg",
     features: ["Lances em Tempo Real", "Gestão de Lotes", "Auditagem"]
   },
   {
@@ -19,7 +19,7 @@ const systems = [
     title: "Marketplaces",
     description: "Soluções complexas para múltiplos vendedores com split de pagamentos automático.",
     to: "/portfolio/lojas-virtuais-criadas",
-    image: "https://www.ncbrasil.com.br/wp-content/uploads/2017/11/b2b-vs-b2c-e-commerce-1024x579.jpg",
+    image: "/news/b2b-vs-b2c-e-commerce-1024x579.jpg",
     features: ["Split de Pagamentos", "Painel Seller", "Logística"]
   },
   {
@@ -27,7 +27,7 @@ const systems = [
     title: "Compra Coletiva",
     description: "Plataformas de ofertas com gatilhos de escassez e gestão de cupons via QR Code.",
     to: "/portfolio/sistema-de-compra-coletiva",
-    image: "https://www.ncbrasil.com.br/wp-content/uploads/2018/06/como-economizar-dinheiro-com-cupons-de-desconto.png.png",
+    image: "/news/como-economizar-dinheiro-com-cupons-de-desconto.png.png",
     features: ["Controle de Cupons", "Validação App", "Escalabilidade"]
   },
   {
@@ -35,7 +35,7 @@ const systems = [
     title: "Sistemas Sob Demanda",
     description: "Engenharia de software personalizada para resolver desafios exclusivos do seu negócio.",
     to: "/nossos-sistemas",
-    image: "https://www.ncbrasil.com.br/wp-content/uploads/2018/07/sistema-erp-sob-demanda-entenda-importancia-1000x642.jpg",
+    image: "/news/sistema-erp-sob-demanda-entenda-importancia-1000x642.jpg",
     features: ["Arquitetura Custom", "Integração API", "Cloud Native"]
   }
 ];

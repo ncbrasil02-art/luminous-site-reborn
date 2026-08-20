@@ -51,7 +51,7 @@ export function MagazineSection() {
             <Reveal>
               <Link 
                 to="/noticias/$slug"
-                params={{ slug: featured.slug }}
+                params={{ slug: featured.slug || "" }}
                 className="group relative block aspect-[16/9] lg:aspect-auto lg:h-[600px] overflow-hidden rounded-[2.5rem] border border-border bg-card shadow-2xl"
               >
                 {featured.image_url ? (
@@ -101,7 +101,7 @@ export function MagazineSection() {
               <Reveal key={news.id} delay={0.1 * (i + 1)}>
                 <Link 
                   to="/noticias/$slug"
-                  params={{ slug: news.slug }}
+                  params={{ slug: news.slug || "" }}
                   className="group grid grid-cols-3 gap-6 items-center"
                 >
                   <div className="col-span-1 aspect-square overflow-hidden rounded-2xl bg-surface border border-border group-hover:border-primary/50 transition-colors">
