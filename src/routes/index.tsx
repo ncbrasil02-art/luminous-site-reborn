@@ -21,7 +21,7 @@ import { SystemsCarousel } from "@/components/SystemsCarousel";
 import { buildMeta, SITE_URL } from "@/lib/seo";
 import { MagazineSection } from "@/components/MagazineSection";
 import { NewsDisplay } from "@/components/NewsDisplay";
-
+import { TestimonialsSection } from "@/components/TestimonialsSection";
 
 const OG_IMAGE = `/og-home.jpg`;
 
@@ -456,6 +456,9 @@ function HomePage() {
           </div>
         </div>
       </section>
+      
+      <TestimonialsSection />
+
 
       {/* CTA FINAL ======================================================== */}
       <section className="relative overflow-hidden py-24 md:py-32">
