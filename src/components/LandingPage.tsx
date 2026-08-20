@@ -78,7 +78,9 @@ export type LandingPageProps = {
   imageKeyword?: string;
   showParallaxshowcase?: boolean;
   showcaseImages?: string[];
+  extraContentBeforeProblem?: React.ReactNode;
 };
+
 
 export function buildLPMeta(options: {
   title: string;
@@ -153,7 +155,9 @@ export function LandingPage({
   imageKeyword,
   showParallaxshowcase = false,
   showcaseImages = [],
+  extraContentBeforeProblem,
 }: LandingPageProps) {
+
   const [expandedImages, setExpandedImages] = useState<Record<number, boolean>>({});
   const search = useRouterState({ select: (s) => s.location.search });
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -303,7 +307,11 @@ export function LandingPage({
         </section>
       )}
 
+      {/* EXTRA CONTENT BEFORE PROBLEM */}
+      {extraContentBeforeProblem}
+
       {/* PROBLEM / SOLUTION */}
+
       {(problem || solution) && (
         <section className="relative py-20 md:py-28">
           <div className="mx-auto grid max-w-6xl gap-8 px-4 md:grid-cols-2 md:px-6">
