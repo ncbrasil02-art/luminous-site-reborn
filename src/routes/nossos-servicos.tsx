@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Globe2, ShoppingBag, Smartphone, Sparkles, LineChart, Search, Palette, Code2, Zap } from "lucide-react";
+import { ArrowRight, Globe2, ShoppingBag, Smartphone, Sparkles, LineChart, Search, Palette, Code2, Zap, ChevronRight } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { buildStubMeta } from "@/components/StubPage";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
