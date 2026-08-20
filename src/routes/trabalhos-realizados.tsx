@@ -48,4 +48,3 @@ export const Route = createFileRoute("/trabalhos-realizados")({
     </div>
   ),
 });
-});
