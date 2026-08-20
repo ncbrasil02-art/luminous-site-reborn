@@ -23,6 +23,10 @@ dist-ssr
 # Deploy build artifacts
 dist-site.zip
 
+# News media library (thousands of files, ~1GB) — lives on the server,
+# not in git history. Deployed separately, excluded from the SSH sync too.
+public/news/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

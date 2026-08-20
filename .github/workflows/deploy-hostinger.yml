@@ -36,4 +36,6 @@ jobs:
           REMOTE_USER: ${{ secrets.HOSTINGER_SSH_USER }}
           SOURCE: "dist/"
           TARGET: ${{ secrets.HOSTINGER_APP_PATH }}
-          ARGS: "-rlgoDzvc -i --delete"
+          # news/ is excluded: it's a ~1GB media library that lives only on
+          # the server (not in git), so --delete must not touch it.
+          ARGS: "-rlgoDzvc -i --delete --exclude=news"
