@@ -60,6 +60,19 @@ function NewsIndex() {
       </div>
 
       <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <Reveal>
+          <nav aria-label="Breadcrumb" className="mb-8">
+            <ol className="flex flex-wrap items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground list-none p-0 m-0">
+              <li className="flex items-center gap-1">
+                <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+              </li>
+              <li className="flex items-center gap-1">
+                <ChevronRight className="h-3 w-3 opacity-50" aria-hidden="true" />
+                <span className="text-foreground/80" aria-current="page">Notícias</span>
+              </li>
+            </ol>
+          </nav>
+        </Reveal>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-16">
           <SectionHeading
             eyebrow="Revista Digital"
