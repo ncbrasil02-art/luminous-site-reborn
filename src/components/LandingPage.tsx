@@ -723,22 +723,42 @@ export function LandingPage({
 
       {/* TESTIMONIALS */}
       {testimonials && testimonials.length > 0 && (
-        <section className="relative py-20 md:py-28">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
+        <section className="relative py-24 md:py-32">
+          <div className="mx-auto max-w-7xl px-4 md:px-6">
             <SectionHeading eyebrow="Prova social" title={<>Clientes que <span className="text-gradient">confiam em nós</span></>} />
-            <div className="mt-14 grid gap-6 md:grid-cols-3">
+            <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {testimonials.map((t, i) => (
-                <Reveal key={t.author} delay={i * 0.06}>
-                  <div className="h-full rounded-2xl border border-border bg-card/60 p-6 backdrop-blur">
-                    <div className="flex gap-0.5 text-primary">
-                      {Array.from({ length: 5 }).map((_, k) => (
-                        <Star key={k} className="h-4 w-4 fill-current" />
-                      ))}
+                <Reveal key={t.author} delay={i * 0.1}>
+                  <div className="group relative flex h-full flex-col justify-between rounded-3xl border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:glow-sm">
+                    <div>
+                      <div className="mb-4 flex items-center gap-1 text-primary">
+                        {Array.from({ length: t.rating || 5 }).map((_, idx) => (
+                          <Star key={idx} className="h-4 w-4 fill-current" />
+                        ))}
+                      </div>
+                      <p className="text-sm italic leading-relaxed text-muted-foreground">"{t.quote}"</p>
                     </div>
-                    <p className="mt-4 text-sm text-foreground/90">"{t.quote}"</p>
-                    <div className="mt-6">
-                      <div className="text-sm font-semibold">{t.author}</div>
-                      <div className="text-xs text-muted-foreground">{t.role}</div>
+
+                    <div className="mt-8 flex items-center gap-4 border-t border-border pt-6">
+                      {t.image && (
+                        <div className="relative h-12 w-12 overflow-hidden rounded-full ring-2 ring-primary/20 group-hover:ring-primary/40 transition-all">
+                          <img 
+                            src={t.image} 
+                            alt={t.author}
+                            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              if (!target.src.includes('/news/default-nc.jpg')) {
+                                target.src = '/news/default-nc.jpg';
+                              }
+                            }}
+                          />
+                        </div>
+                      )}
+                      <div className="flex flex-col">
+                        <span className="text-sm font-bold text-foreground">{t.author}</span>
+                        <span className="text-xs text-muted-foreground">{t.role}</span>
+                      </div>
                     </div>
                   </div>
                 </Reveal>
