@@ -694,8 +694,8 @@ export function LandingPage({
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
-                          if (target.src.endsWith('.webp')) {
-                            target.src = target.src.replace('.webp', '.jpg');
+                          if (!target.src.includes('default-nc.jpg')) {
+                            target.src = '/default-nc.jpg';
                           }
                         }}
                       />
