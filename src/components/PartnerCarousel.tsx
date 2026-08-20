@@ -38,14 +38,14 @@ export function PartnerCarousel({ logos, title }: PartnerCarouselProps) {
           {duplicatedLogos.map((logo, index) => (
             <div
               key={`${logo.name}-${index}`}
-              className="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 hover:scale-110"
+              className="flex shrink-0 items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 hover:scale-110"
             >
               {logo.link ? (
                 <a href={logo.link} target="_blank" rel="noopener noreferrer">
                   <img
                     src={logo.url}
                     alt={logo.name}
-                    className="h-10 md:h-12 w-auto object-contain"
+                    className="h-10 md:h-12 w-auto shrink-0 object-contain"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = "https://placehold.co/200x80/0A1428/FFFFFF?text=" + encodeURIComponent(logo.name);
