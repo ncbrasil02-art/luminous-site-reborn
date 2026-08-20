@@ -9,7 +9,7 @@ const systems = [
   {
     icon: Gavel,
     title: "Plataforma de Leilão Online",
-    description: "Sistema para leiloeiro completo com pregão eletrônico, transmissão ao vivo e gestão de lotes.",
+    description: "O melhor sistema para leiloeiro completo com pregão eletrônico, transmissão ao vivo e gestão de lotes.",
     to: "/sistema-de-leilao",
     image: "/news/leilão-e1510970985900.jpg",
     features: ["Lances em Tempo Real", "Gestão de Lotes", "Auditagem"]
