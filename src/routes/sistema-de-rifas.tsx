@@ -19,7 +19,18 @@ const rifasShowcase4Url = "/__l5e/assets-v1/bf636b5f-8d73-46ea-a829-55fa818c64eb
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
 
 export const lpFaq = [
-...
+  { q: "É seguro e legal criar rifa online no Brasil?", a: "Sim. Existem **três caminhos legais** que orientamos você a adotar: **título de capitalização** (via seguradora parceira), **promoção comercial autorizada pela SECAP/Ministério da Fazenda** ou **rifa filantrópica de associação/ONG sem fins lucrativos**. O sistema já vem preparado com **termos, regulamento gerado automaticamente e prestação de contas transparente**." },
+  { q: "Como funciona o sorteio pela Loteria Federal?", a: "Definimos a extração da Loteria Federal (concurso, data) e o sistema **converte as 5 dezenas premiadas em uma cota vencedora** conforme regra escolhida (dezena por dezena, cota unificada, milhar invertida etc.). O resultado é **público, auditável e imutável** com hash blockchain." },
+  { q: "Preciso pagar taxa por cota vendida ou comissão sobre a arrecadação?", a: "**Não. Diferente do Rifei, Rifana e Rifafy que cobram taxa por cota ou % sobre vendas**, na NC Brasil o sistema é **seu, com licença perpétua ou mensalidade fixa**. Você fica com **100% da arrecadação** e paga apenas a taxa do gateway de pagamento (Pix ~R$0,10)." },
+  { q: "Quantas cotas posso vender por rifa?", a: "De **100 a 10 milhões de cotas** por campanha, com valor livre de R$0,10 a R$1.000. Suporta rifas com **cotas premiadas instantâneas**, ranking de maiores compradores e cotas bônus." },
+  { q: "Aceita Pix instantâneo? E cartão de crédito parcelado?", a: "Sim. **Pix com liberação em <10 segundos** via webhook (Mercado Pago, Efí, PagBank, Pagar.me, Iugu, Asaas). Cartão de crédito **parcelado em até 12x** e boleto opcional. **Split automático** entre organizador, afiliados e plataforma." },
+  { q: "Existe app para o participante?", a: "Sim, **PWA + aplicativo nativo iOS/Android** com sua marca (white label). O participante recebe **notificação push do sorteio, resultado, cotas premiadas e novas campanhas**." },
+  { q: "Como evitam fraudes e cotas duplicadas?", a: "Cada cota gera **hash único e imutável** registrado em log público. O sistema tem **antifraude com device fingerprint, blacklist de CPF, limite por CPF/dispositivo, KYC opcional** e verificação de titularidade Pix." },
+  { q: "Consigo criar rifas beneficentes para minha ONG?", a: "Sim. Temos modelo específico para **associações, igrejas e ONGs** com relatório de prestação de contas, comprovante de doação e **isenção fiscal quando cabível**. Já entregamos plataformas para campanhas beneficentes de mais de R$500 mil." },
+  { q: "Qual o prazo de entrega e como funciona a implantação?", a: "**7 a 15 dias úteis** para versão white label pronta com sua marca, domínio e gateway. Customizações profundas (novos módulos, integrações específicas) levam de **30 a 60 dias**." },
+  { q: "Vocês fazem hospedagem e suporte?", a: "Sim, entregamos **hospedagem cloud escalável (AWS/Cloudflare), CDN global, backup diário, SSL, monitoramento 24/7 e suporte técnico** por WhatsApp e ticket." },
+  { q: "É possível ter afiliados vendendo minhas rifas?", a: "Sim, **módulo de afiliados nativo** com link único, cupom personalizado, painel de vendas, **comissão configurável e saque automático via Pix**." },
+  { q: "Posso vender cotas em combos ou com desconto progressivo?", a: "Sim. Configure combos **'leve 10 pague 8'**, desconto progressivo, cotas bônus por indicação, cashback e **cupom promocional** por cliente ou por rifa." },
 ];
 
 export const Route = createFileRoute("/sistema-de-rifas")({
@@ -84,6 +95,8 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           "Você **não é dono do seu domínio, dos seus clientes nem do banco de dados** — se a plataforma sai do ar, você perde o negócio inteiro.",
           "**Limitações de personalização**: layout engessado, sem app próprio, sem controle de identidade visual.",
           "**Insegurança jurídica**: sistemas genéricos não orientam sobre o modelo legal correto (título de capitalização, SECAP ou filantropia).",
+          "**Falta de app nativo iOS/Android** com sua marca — o participante nunca lembra de você.",
+          "**Suporte terceirizado, sem SLA, respostas em dias** — em pleno sorteio, você fica na mão.",
           "**Falta de app nativo iOS/Android** com sua marca — o participante nunca lembra de você.",
           "**Suporte terceirizado, sem SLA, respostas em dias** — em pleno sorteio, você fica na mão.",
         ],
@@ -236,22 +249,13 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           { feature: "Domínio próprio", us: true, them: false },
           { feature: "App iOS/Android com sua marca", us: true, them: false },
           { feature: "Código-fonte licenciado", us: true, them: false },
-          { feature: "Pix cai direto na sua conta", us: true, them: "Retenção 1-3 dias" },
-          { feature: "Cotas ilimitadas (até 10 milhões)", us: true, them: "Limite por plano" },
-          { feature: "Sorteio Loteria Federal + hash blockchain", us: true, them: "Parcial" },
-          { feature: "Módulo de afiliados nativo", us: true, them: false },
-          { feature: "Orientação legal (SECAP/capitalização)", us: true, them: false },
-          { feature: "Suporte técnico 24/7 dedicado", us: true, them: "E-mail/ticket" },
-          { feature: "Customização profunda", us: true, them: false },
-          { feature: "Multi-tenant (múltiplas marcas)", us: true, them: false },
+          { feature: "Base de dados e clientes sua", us: true, them: false },
+          { feature: "Cotas Premiadas Ilimitadas", us: true, them: "Limitado" },
+          { feature: "Split de Pagamento Nativo", us: true, them: false },
         ],
       }}
-      testimonials={rifasTestimonials}
-      testimonialsTitle="Organizadores que alcançaram altos lucros"
       faq={lpFaq}
-      finalCtaTitle={<>Pronto para criar sua <span className="text-gradient">plataforma de rifas</span>?</>}
-      finalCtaDesc={<>Receba um <strong className="text-foreground">plano personalizado em 24h</strong> com escopo, prazo, valor e o modelo legal ideal para sua operação. <strong className="text-foreground">Consultoria inicial gratuita</strong>.</>}
-      relatedNewsTags={["Rifas","Sorteios","Sistemas"]}
+      relatedNewsTags={["rifas", "sistemas", "vendas", "tecnologia"]}
     />
   ),
 });
