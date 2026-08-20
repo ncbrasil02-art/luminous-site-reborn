@@ -9,29 +9,17 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 import { rifasTestimonials } from "@/lib/testimonials.data";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
 
-// Image Assets
-import rifasLogoAsset from "@/assets/sistema-de-rifas-logo.png.asset.json";
-import rifasShowcase1Asset from "@/assets/melhor-sistema-de-rifas-online.png.asset.json";
-import rifasShowcase2Asset from "@/assets/plataforma-de-rifas-lucrativa.png.asset.json";
-import rifasShowcase3Asset from "@/assets/script-de-rifas-profissional.png.asset.json";
-import rifasShowcase4Asset from "@/assets/sistema-de-rifas-premium.png.asset.json";
-
+// Image Assets - Optimized for external hosting
+const rifasLogoUrl = "/__l5e/assets-v1/26fb39e9-22fd-4dec-a71d-378dfd1e3f0f/sistema-de-rifas-logo.png";
+const rifasShowcase1Url = "/__l5e/assets-v1/130de035-7388-432e-ae19-0d55e318d262/melhor-sistema-de-rifas-online.png";
+const rifasShowcase2Url = "/__l5e/assets-v1/2bea6211-cf33-4267-8b1c-75cc39c82e15/plataforma-de-rifas-lucrativa.png";
+const rifasShowcase3Url = "/__l5e/assets-v1/5988fcfc-d9de-456c-a38e-5dc0699865aa/script-de-rifas-profissional.png";
+const rifasShowcase4Url = "/__l5e/assets-v1/bf636b5f-8d73-46ea-a829-55fa818c64eb/sistema-de-rifas-premium.png";
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
 
 export const lpFaq = [
-  { q: "É seguro e legal criar rifa online no Brasil?", a: "Sim. Existem **três caminhos legais** que orientamos você a adotar: **título de capitalização** (via seguradora parceira), **promoção comercial autorizada pela SECAP/Ministério da Fazenda** ou **rifa filantrópica de associação/ONG sem fins lucrativos**. O sistema já vem preparado com **termos, regulamento gerado automaticamente e prestação de contas transparente**." },
-  { q: "Como funciona o sorteio pela Loteria Federal?", a: "Definimos a extração da Loteria Federal (concurso, data) e o sistema **converte as 5 dezenas premiadas em uma cota vencedora** conforme regra escolhida (dezena por dezena, cota unificada, milhar invertida etc.). O resultado é **público, auditável e imutável** com hash blockchain." },
-  { q: "Preciso pagar taxa por cota vendida ou comissão sobre a arrecadação?", a: "**Não. Diferente do Rifei, Rifana e Rifafy que cobram taxa por cota ou % sobre vendas**, na NC Brasil o sistema é **seu, com licença perpétua ou mensalidade fixa**. Você fica com **100% da arrecadação** e paga apenas a taxa do gateway de pagamento (Pix ~R$0,10)." },
-  { q: "Quantas cotas posso vender por rifa?", a: "De **100 a 10 milhões de cotas** por campanha, com valor livre de R$0,10 a R$1.000. Suporta rifas com **cotas premiadas instantâneas**, ranking de maiores compradores e cotas bônus." },
-  { q: "Aceita Pix instantâneo? E cartão de crédito parcelado?", a: "Sim. **Pix com liberação em <10 segundos** via webhook (Mercado Pago, Efí, PagBank, Pagar.me, Iugu, Asaas). Cartão de crédito **parcelado em até 12x** e boleto opcional. **Split automático** entre organizador, afiliados e plataforma." },
-  { q: "Existe app para o participante?", a: "Sim, **PWA + aplicativo nativo iOS/Android** com sua marca (white label). O participante recebe **notificação push do sorteio, resultado, cotas premiadas e novas campanhas**." },
-  { q: "Como evitam fraudes e cotas duplicadas?", a: "Cada cota gera **hash único e imutável** registrado em log público. O sistema tem **antifraude com device fingerprint, blacklist de CPF, limite por CPF/dispositivo, KYC opcional** e verificação de titularidade Pix." },
-  { q: "Consigo criar rifas beneficentes para minha ONG?", a: "Sim. Temos modelo específico para **associações, igrejas e ONGs** com relatório de prestação de contas, comprovante de doação e **isenção fiscal quando cabível**. Já entregamos plataformas para campanhas beneficentes de mais de R$500 mil." },
-  { q: "Qual o prazo de entrega e como funciona a implantação?", a: "**7 a 15 dias úteis** para versão white label pronta com sua marca, domínio e gateway. Customizações profundas (novos módulos, integrações específicas) levam de **30 a 60 dias**." },
-  { q: "Vocês fazem hospedagem e suporte?", a: "Sim, entregamos **hospedagem cloud escalável (AWS/Cloudflare), CDN global, backup diário, SSL, monitoramento 24/7 e suporte técnico** por WhatsApp e ticket." },
-  { q: "É possível ter afiliados vendendo minhas rifas?", a: "Sim, **módulo de afiliados nativo** com link único, cupom personalizado, painel de vendas, **comissão configurável e saque automático via Pix**." },
-  { q: "Posso vender cotas em combos ou com desconto progressivo?", a: "Sim. Configure combos **'leve 10 pague 8'**, desconto progressivo, cotas bônus por indicação, cashback e **cupom promocional** por cliente ou por rifa." },
+...
 ];
 
 export const Route = createFileRoute("/sistema-de-rifas")({
@@ -53,10 +41,10 @@ export const Route = createFileRoute("/sistema-de-rifas")({
       imageKeyword="melhor script de rifas e plataforma de ações online profissional"
       showParallaxshowcase
       showcaseImages={[
-        rifasShowcase1Asset.url,
-        rifasShowcase2Asset.url,
-        rifasShowcase3Asset.url,
-        rifasShowcase4Asset.url,
+        rifasShowcase1Url,
+        rifasShowcase2Url,
+        rifasShowcase3Url,
+        rifasShowcase4Url,
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
@@ -113,8 +101,9 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           "**Cotas ilimitadas** — de 100 a 10 milhões por campanha",
           "**Módulo de afiliados** com comissão automática",
         ],
-        image: rifasLogoAsset.url
+        image: rifasLogoUrl
       }}
+      testimonials={rifasTestimonials}
       benefits={[
         { icon: Trophy, title: "Sorteio Loteria Federal", desc: "Extração oficial pela **Loteria Federal ou por cota premiada instantânea** — hash público e auditável para cada bilhete." },
         { icon: Banknote, title: "Pix em Segundos", desc: "Reserva, **pagamento e liberação da cota em <10s** via webhook do PSP. Sem intermediário, dinheiro cai direto na sua conta." },
