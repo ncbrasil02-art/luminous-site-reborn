@@ -15,6 +15,10 @@ const rifasShowcase1Url = "/__l5e/assets-v1/130de035-7388-432e-ae19-0d55e318d262
 const rifasShowcase2Url = "/__l5e/assets-v1/2bea6211-cf33-4267-8b1c-75cc39c82e15/plataforma-de-rifas-lucrativa.png";
 const rifasShowcase3Url = "/__l5e/assets-v1/5988fcfc-d9de-456c-a38e-5dc0699865aa/script-de-rifas-profissional.png";
 const rifasShowcase4Url = "/__l5e/assets-v1/bf636b5f-8d73-46ea-a829-55fa818c64eb/sistema-de-rifas-premium.png";
+const painelConfigUrl = "/__l5e/assets-v1/dca9c34c-c4cc-4eb4-be45-b49112549e3e/painel-configuracao-rifas.png";
+const painelDashboardUrl = "/__l5e/assets-v1/b1a94b63-b79b-47d6-8f3d-eb6b808e57b7/painel-dashboard-rifas.png";
+const painelPagamentosUrl = "/__l5e/assets-v1/210484ef-af8b-4352-a37b-cad8f8ec5117/painel-pagamentos-rifas.png";
+
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
 
@@ -56,6 +60,9 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         rifasShowcase2Url,
         rifasShowcase3Url,
         rifasShowcase4Url,
+        painelConfigUrl,
+        painelDashboardUrl,
+        painelPagamentosUrl,
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
