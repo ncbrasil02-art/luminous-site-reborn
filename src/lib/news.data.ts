@@ -21,7 +21,7 @@ export const newsData: NewsPost[] = [
       "Sem categoria"
     ],
     "tags": [],
-    "image_url": "/news/logo.png",
+    "image_url": "https://www.ncbrasil.com.br/logo.jpg",
     "thumb_id": "49041"
   },
   {
@@ -32,7 +32,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "https://www.ncbrasil.com.br/logo.jpg",
     "thumb_id": ""
   },
   {
@@ -52,7 +52,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "webdesign"
     ],
-    "image_url": "/news/criacao-de-sites-rj-63.jpg",
+    "image_url": "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-63.jpg",
     "thumb_id": "48599"
   },
   {
@@ -72,7 +72,7 @@ export const newsData: NewsPost[] = [
       "fazer site",
       "reformular website"
     ],
-    "image_url": "/news/criacao-de-sites-rj-75.jpg",
+    "image_url": "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-75.jpg",
     "thumb_id": "48611"
   },
   {
@@ -89,7 +89,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url": "/news/criacao-de-sites-rj-26.jpg",
+    "image_url": "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-26.jpg",
     "thumb_id": ""
   },
   {
@@ -100,7 +100,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/criacao-de-sites-rj-64.jpg",
+    "image_url": "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-64.jpg",
     "thumb_id": ""
   },
   {
@@ -120,7 +120,7 @@ export const newsData: NewsPost[] = [
       "desenvolvimento de sistemas",
       "sites semânticos"
     ],
-    "image_url": "/news/desenvolvimento-webdesign-109.jpg",
+    "image_url": "https://www.ncbrasil.com.br/news/desenvolvimento-webdesign-109.jpg",
     "thumb_id": "48648"
   },
   {
