@@ -26,9 +26,9 @@ const cols = [
     ],
   },
   {
-    title: "Portfólio & Contato",
+    title: "Cases & Contato",
     links: [
-      { to: "/trabalhos-realizados", label: "Trabalhos Realizados" },
+      { to: "/trabalhos-realizados", label: "Cases" },
       { to: "/portfolio/identidade-visual", label: "Identidade Visual" },
       { to: "/portfolio/logotipos-criados", label: "Logotipos" },
       { to: "/orcamento", label: "Solicitar Orçamento" },
