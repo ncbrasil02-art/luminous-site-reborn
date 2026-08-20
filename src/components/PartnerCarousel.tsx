@@ -13,7 +13,7 @@ interface PartnerCarouselProps {
 
 export function PartnerCarousel({ logos, title }: PartnerCarouselProps) {
   // Duplicate logos for infinite scroll effect
-  const duplicatedLogos = [...logos, ...logos, ...logos];
+  const duplicatedLogos = [...logos, ...logos, ...logos, ...logos];
 
   return (
     <div className="w-full py-12 overflow-hidden border-b border-border bg-surface/10">
@@ -26,7 +26,7 @@ export function PartnerCarousel({ logos, title }: PartnerCarouselProps) {
       <div className="relative flex max-w-[100vw] overflow-hidden marquee-mask">
         <motion.div
           animate={{
-            x: [0, -1035], // Adjust based on estimated content width
+            x: [0, -1500], // Increased to ensure continuity on larger screens
           }}
           transition={{
             duration: 30,
@@ -38,7 +38,7 @@ export function PartnerCarousel({ logos, title }: PartnerCarouselProps) {
           {duplicatedLogos.map((logo, index) => (
             <div
               key={`${logo.name}-${index}`}
-              className="flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+              className="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 hover:scale-110"
             >
               {logo.link ? (
                 <a href={logo.link} target="_blank" rel="noopener noreferrer">
