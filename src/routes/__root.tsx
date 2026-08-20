@@ -4,6 +4,7 @@ import { useEffect, useMemo } from "react";
 import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { newsData } from "@/lib/news.data";
 import { WhatsappFab } from "@/components/WhatsappFab";
 import { initAnalytics, trackPageView, trackNotFound } from "@/lib/analytics";
 
@@ -73,6 +74,38 @@ function NotFoundComponent() {
 
   useEffect(() => {
     trackNotFound(pathname);
+    
+    // Auto-redirect logic for legacy nested URLs
+    const parts = pathname.split('/').filter(Boolean);
+    if (parts.length >= 2) {
+      const slug = parts[parts.length - 1].replace(/\/$/, ""); // remove trailing slash
+      const firstPart = parts[0];
+      
+      // 1. Try to find if the last part is a news slug
+      const newsPost = newsData.find(p => p.slug === slug);
+      if (newsPost) {
+        window.location.replace(`/noticias/${newsPost.slug}`);
+        return;
+      }
+
+      // 2. Specialized redirects for services/portfolio
+      if (pathname.includes('/criar-sites/criacao-de-aplicativos')) {
+        window.location.replace('/servicos/aplicativos');
+        return;
+      }
+
+      // 3. Handle news categories/tags if the first part is a known base
+      // Old bases might have been 'category', 'tag', 'criar-sites', etc.
+      const isKnownCategory = newsData.some(p => p.categories.some(c => c.toLowerCase().replace(/\s+/g, '-') === firstPart));
+      if (isKnownCategory || firstPart === 'biblia' || firstPart === 'artigos') {
+        window.location.replace(`/noticias/categoria/${firstPart}`);
+        return;
+      }
+
+      // 4. Try to redirect to the last segment as a flat URL
+      // (This handles /category/title -> /title migration)
+      window.location.replace(`/${slug}`);
+    }
   }, [pathname]);
 
   return (
