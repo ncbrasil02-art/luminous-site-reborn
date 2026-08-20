@@ -160,8 +160,8 @@ export function LandingPage({
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
-        <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />
-        <div className="absolute -top-24 left-1/2 -z-10 h-96 w-[42rem] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl" />
+        <div className="absolute inset-0 -z-10 grid-pattern opacity-30 pointer-events-none" />
+        <div className="absolute -top-24 left-1/2 -z-10 h-96 w-[42rem] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
 
         <div className="mx-auto max-w-6xl px-4 pt-14 md:px-6 md:pt-20">
           {/* Breadcrumb */}
@@ -347,7 +347,7 @@ export function LandingPage({
       {/* FEATURES */}
       {features && features.length > 0 && (
         <section id="features" className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
-          <div className="absolute inset-0 grid-pattern opacity-20" />
+          <div className="absolute inset-0 grid-pattern opacity-20 pointer-events-none" />
           <div className="relative mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Recursos"
@@ -452,7 +452,7 @@ export function LandingPage({
       {/* SECURITY */}
       {security && security.length > 0 && (
         <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
-          <div className="absolute inset-0 grid-pattern opacity-20" />
+          <div className="absolute inset-0 grid-pattern opacity-20 pointer-events-none" />
           <div className="relative mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Segurança"
@@ -570,7 +570,14 @@ export function LandingPage({
                         src={g.src}
                         alt={g.alt}
                         loading="lazy"
+                        decoding="async"
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          if (target.src.endsWith('.webp')) {
+                            target.src = target.src.replace('.webp', '.jpg');
+                          }
+                        }}
                       />
                     </div>
                     {g.caption && (

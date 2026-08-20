@@ -14,7 +14,7 @@ const orgJsonLd = {
   "@type": "Organization",
   label: "NC Brasil — Sistemas & Marketing",
   to: SITE_URL,
-  logo: `${SITE_URL}/favicon.ico`,
+  logo: `${SITE_URL}/favicon.png`,
   sameAs: [
     "https://www.facebook.com/ncbrasil",
     "https://www.instagram.com/ncbrasil",
@@ -119,6 +119,7 @@ export const Route = createRootRoute({
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
       {
         rel: "preconnect",
         href: "https://fonts.googleapis.com",
