@@ -141,9 +141,9 @@ export function buildMeta(options: MetaOptions) {
   return {
     meta,
     links: [
-      { rel: "canonical", href: canonical || SITE_URL },
-      { rel: "alternate", hrefLang: "pt-BR", href: canonical || SITE_URL },
-      { rel: "alternate", hrefLang: "x-default", href: canonical || SITE_URL },
+      { rel: "canonical", href: canonical ? (canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical}`) : SITE_URL },
+      { rel: "alternate", hrefLang: "pt-BR", href: canonical ? (canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical}`) : SITE_URL },
+      { rel: "alternate", hrefLang: "x-default", href: canonical ? (canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical}`) : SITE_URL },
       { rel: "icon", type: "image/png", href: `${SITE_URL}/favicon.png` },
       { rel: "shortcut icon", href: `${SITE_URL}/favicon.png` },
       { rel: "apple-touch-icon", href: `${SITE_URL}/favicon.png` },

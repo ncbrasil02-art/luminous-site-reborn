@@ -9,6 +9,7 @@ const staticRoutes = [
   '/empresa/clientes',
   '/contato',
   '/orcamento',
+  '/cases',
   '/trabalhos-realizados',
   '/nossos-servicos',
   '/nossos-sistemas',
