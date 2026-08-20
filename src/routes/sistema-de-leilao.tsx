@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
+import { SITE_URL } from "@/lib/seo";
 
 import logoUrl from "@/assets/logo-nc-leiloes-final.png.asset.json";
 import configUrl from "@/assets/sistema-de-leilao-configuracoes.png.asset.json";
