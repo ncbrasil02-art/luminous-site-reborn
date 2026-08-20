@@ -12,6 +12,7 @@ import {
   MessageCircle,
   Minus,
   Rocket,
+  Search,
   Sparkles,
   Star,
   X,

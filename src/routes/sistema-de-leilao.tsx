@@ -58,6 +58,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         (dashboardUrl as any).url,
         (dashDetailUrl as any).url,
         (cardsUrl as any).url,
+        (painelUrl as any).url,
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
