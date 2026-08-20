@@ -197,11 +197,14 @@ function NewsPostPage() {
                           className="group block space-y-3"
                         >
                           <div className="aspect-[16/9] overflow-hidden rounded-2xl bg-surface border border-border group-hover:border-primary/50 transition-all">
-                            {related.image_url ? (
-                              <img src={related.image_url} alt={related.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                            ) : (
-                              <div className="flex h-full w-full items-center justify-center bg-primary/5 text-[8px] text-primary/10">No Image</div>
-                            )}
+                            <img 
+                              src={related.image_url || "/news/default-nc.jpg"} 
+                              alt={related.title} 
+                              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                              onError={(e) => {
+                                (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
+                              }}
+                            />
                           </div>
                           <h4 className="font-display font-bold leading-snug group-hover:text-primary transition-colors line-clamp-2">
                             {related.title}
