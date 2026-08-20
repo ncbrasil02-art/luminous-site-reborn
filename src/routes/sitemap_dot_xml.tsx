@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { generateSitemap } from '@/lib/sitemap';
 
-export const Route = createFileRoute('/sitemap_xml')({
+export const Route = createFileRoute('/sitemap_dot_xml')({
   loader: () => {
     const xml = generateSitemap();
     return new Response(xml, {
