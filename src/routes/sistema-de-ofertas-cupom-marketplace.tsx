@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BarChart3, CreditCard, MapPin, Package, Percent, Search, ShieldCheck, Store, Tag, Truck, Users, Zap } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-ofertas-cupom-marketplace";
 
@@ -47,6 +49,7 @@ export const Route = createFileRoute("/sistema-de-ofertas-cupom-marketplace")({
         { icon: Users, title: "Avaliações e Reviews", desc: "Sistema de reviews com moderação, foto e resposta do lojista." },
         { icon: Truck, title: "Logística Integrada", desc: "Melhor Envio, Correios API e frete grátis condicional por lojista." },
       ]}
+      testimonials={testimonialsData.slice(5, 8)}
       faq={lpFaq}
       relatedNewsTags={["Marketplace","Cupom","E-commerce"]}
     />

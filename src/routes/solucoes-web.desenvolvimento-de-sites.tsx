@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Code2, Gauge, Layout, Palette, Rocket, Search, ShieldCheck, Smartphone, Sparkles, Zap, Globe2, LineChart } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/solucoes-web/desenvolvimento-de-sites";
 
@@ -47,6 +49,7 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
         { icon: Globe2, title: "Multi-idioma", desc: "Suporte a PT-BR, inglês e espanhol com hreflang configurado." },
         { icon: LineChart, title: "Analytics Integrado", desc: "Google Analytics 4, Tag Manager, Meta Pixel e Search Console prontos." },
       ]}
+      testimonials={testimonialsData.slice(0, 4)}
       faq={lpFaq}
       relatedNewsTags={["Criação de Sites","Web Design","Marketing Digital"]}
     />

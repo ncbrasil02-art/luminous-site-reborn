@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Banknote, BarChart3, Clock, Coins, Gift, ShieldCheck, Sparkles, Timer, Trophy, Users, Wallet, Zap } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { testimonialsData } from "@/lib/testimonials.data";
+
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao-de-centavos";
 
@@ -47,6 +49,7 @@ export const Route = createFileRoute("/sistema-de-leilao-de-centavos")({
         { icon: Clock, title: "Leilões Programados", desc: "Cronograma diário com **leilões flash, VIP e beginners-only**." },
         { icon: ShieldCheck, title: "Antifraude Robusto", desc: "**Device fingerprint, KYC, limite diário e blacklist** — controle multicontas." },
       ]}
+      testimonials={testimonialsData.slice(3, 6)}
       faq={lpFaq}
       relatedNewsTags={["Leilão", "Leilão Online", "E-commerce", "Sistemas"]}
     />
