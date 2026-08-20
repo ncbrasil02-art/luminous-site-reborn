@@ -27,6 +27,7 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
       { label: "Desenvolvimento de Sites", to: URL },
     ],
     faq: lpFaq,
+    ogImage: "/desenvolvimento-de-sites-og.jpg",
   }),
   component: () => (
     <LandingPage
