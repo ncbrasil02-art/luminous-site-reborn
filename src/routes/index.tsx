@@ -151,7 +151,7 @@ function HomePage() {
     <>
       {/* HERO ============================================================= */}
       <section className="relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10">
+        <div className="absolute inset-0 -z-10" aria-hidden="true">
           <img
             src={heroTech}
             alt="NC Brasil Tecnologia - Criação de Sites e Sistemas"
@@ -164,7 +164,7 @@ function HomePage() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
           <div className="absolute inset-0 bg-hero-glow" />
-          <div className="absolute inset-0 grid-pattern opacity-30" />
+          <div className="absolute inset-0 grid-pattern opacity-30 pointer-events-none" />
         </div>
 
         <div className="mx-auto flex min-h-[88vh] max-w-7xl flex-col items-center justify-center px-4 py-24 text-center md:px-6">
@@ -256,7 +256,7 @@ function HomePage() {
 
       {/* SERVIÇOS E SOLUÇÕES =============================================== */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-mesh opacity-60" />
+        <div className="absolute inset-0 -z-10 bg-mesh opacity-60" aria-hidden="true" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
             eyebrow="Nossos Serviços"
@@ -303,7 +303,7 @@ function HomePage() {
 
       {/* SISTEMAS EM DESTAQUE (SLIDER) ===================================== */}
       <section className="relative py-24 md:py-32 bg-surface/30">
-        <div className="absolute inset-0 -z-10 grid-pattern opacity-20" />
+        <div className="absolute inset-0 -z-10 grid-pattern opacity-20" aria-hidden="true" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div className="max-w-2xl">
@@ -330,7 +330,7 @@ function HomePage() {
 
       {/* PROCESSO ========================================================= */}
       <section className="relative overflow-hidden border-y border-border bg-surface py-24 md:py-32">
-        <div className="absolute inset-0 grid-pattern opacity-40" aria-hidden />
+        <div className="absolute inset-0 grid-pattern opacity-40 pointer-events-none" aria-hidden="true" />
         <div className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
         <div className="relative mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
