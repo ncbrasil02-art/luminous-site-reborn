@@ -191,9 +191,8 @@ export function LandingPage({
             fetchPriority="high"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              if (!target.src.includes('/news/default-nc.jpg')) {
-                target.src = '/news/default-nc.jpg';
-              }
+              target.onerror = null; // Prevent infinite loop
+              target.src = '/news/default-nc.jpg';
             }}
           />
         </div>

@@ -140,9 +140,10 @@ export function NewsDisplay({
                         className="h-full w-full object-cover transition-transform duration-[1.5s] group-hover:scale-110" 
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
+                          target.onerror = null; // Prevent infinite loops
                           if (target.src.endsWith('.webp')) {
-                            // Try original format
-                            target.src = news.image_url || "/news/default-nc.jpg";
+                            const originalUrl = news.image_url || "/news/default-nc.jpg";
+                            target.src = originalUrl;
                           } else {
                             target.src = "/news/default-nc.jpg";
                           }
