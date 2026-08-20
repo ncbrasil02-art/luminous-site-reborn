@@ -118,7 +118,16 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
         <Link to="/" className="group flex items-center gap-2">
-          <img src="/logo.jpg" alt="NC Brasil" className="h-10 w-auto object-contain transition-transform group-hover:scale-105" />
+          <picture>
+            <source srcSet="/logo.webp" type="image/webp" />
+            <img 
+              src="/logo.jpg" 
+              alt="NC Brasil" 
+              fetchPriority="high"
+              decoding="async"
+              className="h-10 w-auto object-contain transition-transform group-hover:scale-105" 
+            />
+          </picture>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex">
