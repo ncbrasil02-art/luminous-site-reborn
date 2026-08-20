@@ -1,7 +1,7 @@
 import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
 import { useEffect } from "react";
 import {
-  Car, CarFront, Coins, Dice5, Gavel, Gift, ScanLine, ShoppingBag, Store, Ticket, Tractor,
+  Car, CarFront, Coins, Dice5, Gavel, Gift, ScanLine, ShoppingBag, Store, Ticket, Tractor, ChevronRight
 } from "lucide-react";
 import { trackRedirect, trackClick } from "@/lib/analytics";
 
@@ -56,6 +56,19 @@ function SistemasHub() {
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />
         <div className="mx-auto max-w-5xl px-4 text-center md:px-6">
+          <Reveal>
+            <nav aria-label="Breadcrumb" className="mb-8 flex justify-center">
+              <ol className="flex flex-wrap items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground list-none p-0 m-0">
+                <li className="flex items-center gap-1">
+                  <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+                </li>
+                <li className="flex items-center gap-1">
+                  <ChevronRight className="h-3 w-3 opacity-50" aria-hidden="true" />
+                  <span className="text-foreground/80" aria-current="page">Sistemas</span>
+                </li>
+              </ol>
+            </nav>
+          </Reveal>
           <SectionHeading
             eyebrow="Engenharia de Elite"
             title={<>Nossos <span className="text-gradient">Sistemas</span> Web</>}

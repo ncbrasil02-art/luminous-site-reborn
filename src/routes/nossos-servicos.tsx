@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Globe2, ShoppingBag, Smartphone, Sparkles, LineChart, Search, Palette, Code2, Zap } from "lucide-react";
+import { ArrowRight, Globe2, ShoppingBag, Smartphone, Sparkles, LineChart, Search, Palette, Code2, Zap, ChevronRight } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { buildStubMeta } from "@/components/StubPage";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
@@ -67,6 +67,19 @@ export const Route = createFileRoute("/nossos-servicos")({
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <Reveal>
+            <nav aria-label="Breadcrumb" className="mb-8">
+              <ol className="flex flex-wrap items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground list-none p-0 m-0">
+                <li className="flex items-center gap-1">
+                  <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+                </li>
+                <li className="flex items-center gap-1">
+                  <ChevronRight className="h-3 w-3 opacity-50" aria-hidden="true" />
+                  <span className="text-foreground/80" aria-current="page">Nossos Serviços</span>
+                </li>
+              </ol>
+            </nav>
+          </Reveal>
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
