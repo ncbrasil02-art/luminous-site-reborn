@@ -160,8 +160,8 @@ export function LandingPage({
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
-        <div className="absolute inset-0 -z-10 grid-pattern opacity-30 pointer-events-none" />
-        <div className="absolute -top-24 left-1/2 -z-10 h-96 w-[42rem] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
+        <div className="absolute inset-0 -z-10 grid-pattern opacity-30 pointer-events-none" aria-hidden="true" />
+        <div className="absolute -top-24 left-1/2 -z-10 h-96 w-[42rem] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl pointer-events-none" aria-hidden="true" />
 
         <div className="mx-auto max-w-6xl px-4 pt-14 md:px-6 md:pt-20">
           {/* Breadcrumb */}
@@ -347,7 +347,7 @@ export function LandingPage({
       {/* FEATURES */}
       {features && features.length > 0 && (
         <section id="features" className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
-          <div className="absolute inset-0 grid-pattern opacity-20 pointer-events-none" />
+          <div className="absolute inset-0 grid-pattern opacity-20 pointer-events-none" aria-hidden="true" />
           <div className="relative mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Recursos"
