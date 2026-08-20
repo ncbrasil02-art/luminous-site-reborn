@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 interface PartnerLogo {
   url: string;
@@ -40,29 +41,32 @@ export function PartnerCarousel({ logos, title }: PartnerCarouselProps) {
               key={`${logo.name}-${index}`}
               className="flex shrink-0 items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-500 hover:scale-110"
             >
-              {logo.link ? (
-                <a href={logo.link} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={logo.url}
-                    alt={logo.name}
-                    className="h-10 md:h-12 w-auto shrink-0 object-contain"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = "https://placehold.co/200x80/0A1428/FFFFFF?text=" + encodeURIComponent(logo.name);
-                    }}
-                  />
-                </a>
-              ) : (
+              <a 
+                href={logo.link || "#"} 
+                target={logo.link ? "_blank" : undefined} 
+                rel={logo.link ? "noopener noreferrer" : undefined}
+                className={cn("flex flex-col items-center gap-2", !logo.link && "cursor-default")}
+              >
                 <img
                   src={logo.url}
                   alt={logo.name}
-                  className="h-10 md:h-12 w-auto object-contain"
+                  className="h-10 md:h-12 w-auto shrink-0 object-contain"
+                  loading="lazy"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
-                    target.src = "https://placehold.co/200x80/0A1428/FFFFFF?text=" + encodeURIComponent(logo.name);
+                    target.onerror = null;
+                    target.style.display = 'none';
+                    // Show text fallback if image fails
+                    const parent = target.parentElement;
+                    if (parent && !parent.querySelector('.text-fallback')) {
+                      const span = document.createElement('span');
+                      span.className = 'text-fallback text-xs font-bold uppercase tracking-wider text-muted-foreground/80';
+                      span.innerText = logo.name;
+                      parent.appendChild(span);
+                    }
                   }}
                 />
-              )}
+              </a>
             </div>
           ))}
         </motion.div>

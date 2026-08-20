@@ -192,7 +192,7 @@ export function LandingPage({
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.onerror = null; // Prevent infinite loop
-              target.src = '/news/default-nc.jpg';
+              target.src = '/logo.jpg';
             }}
           />
         </div>
@@ -372,11 +372,11 @@ export function LandingPage({
                             src={solution.image} 
                             alt={imageKeyword || "Solução Premium"} 
                             className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                            loading="lazy"
                             onError={(e) => {
                               const target = e.target as HTMLImageElement;
-                              if (!target.src.includes('/news/default-nc.jpg')) {
-                                target.src = '/news/default-nc.jpg';
-                              }
+                              target.onerror = null;
+                              target.src = 'https://www.ncbrasil.com.br/logo.jpg';
                             }}
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100 flex items-end p-4">
@@ -443,13 +443,13 @@ export function LandingPage({
                       >
                         <img 
                           src={img} 
-                          alt={imageKeyword || "Plataforma de Leilão"} 
+                          alt={imageKeyword || "Plataforma Premium"} 
                           className="w-full h-auto object-cover block"
+                          loading="lazy"
                           onError={(e) => {
                             const target = e.target as HTMLImageElement;
-                            if (!target.src.includes('/news/default-nc.jpg')) {
-                              target.src = '/news/default-nc.jpg';
-                            }
+                            target.onerror = null;
+                            target.src = 'https://www.ncbrasil.com.br/logo.jpg';
                           }}
                         />
                         
