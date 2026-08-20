@@ -21,6 +21,7 @@ import {
 } from "lucide-react";
 
 import { Reveal, SectionHeading } from "./Section";
+import { ContactSection } from "./ContactSection";
 
 export type LPFeature = { icon: LucideIcon; title: string; desc: string };
 export type LPBenefit = { icon: LucideIcon; title: string; desc: string };
