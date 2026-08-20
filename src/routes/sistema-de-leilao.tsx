@@ -279,6 +279,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       finalCtaTitle={<>Pronto para <span className="text-gradient">digitalizar seus leilões</span>?</>}
       finalCtaDesc={<>Agende uma <strong className="text-foreground">demonstração ao vivo</strong> — mostramos a plataforma com seus lotes reais e enviamos proposta em <strong className="text-foreground">até 24 horas</strong>.</>}
       relatedNewsTags={["Leilão", "Leilão Online", "Sistemas", "Tecnologia"]}
-    />
+      />
+    </>
   ),
 });
