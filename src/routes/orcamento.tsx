@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { ArrowRight, CheckCircle2, FileText, Send } from "lucide-react";
+import { ArrowRight, CheckCircle2, FileText, Send, ChevronRight } from "lucide-react";
 
 import { Reveal, SectionHeading } from "@/components/Section";
 import { trackLead, trackClick } from "@/lib/analytics";
