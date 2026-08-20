@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import {
   Car, CarFront, Coins, Dice5, Gavel, Gift, ScanLine, ShoppingBag, Store, Ticket, Tractor,
 } from "lucide-react";
-import { trackRedirect } from "@/lib/analytics";
+import { trackRedirect, trackClick } from "@/lib/analytics";
 
 import { Reveal, SectionHeading } from "@/components/Section";
 import { buildLPMeta } from "@/components/LandingPage";
@@ -65,7 +65,11 @@ function SistemasHub() {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {systems.map((s, i) => (
               <Reveal key={s.to} delay={i * 0.04}>
-                <Link to={s.to} className="group block h-full rounded-2xl border border-border bg-card/40 p-7 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-md">
+                <Link 
+                  to={s.to} 
+                  onClick={() => trackClick(s.title, "Sistemas Hub Card")}
+                  className="group block h-full rounded-2xl border border-border bg-card/40 p-7 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-md"
+                >
                   <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
                     <s.icon className="h-6 w-6" />
                   </div>

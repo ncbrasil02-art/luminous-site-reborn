@@ -30,6 +30,7 @@ import {
   Gift,
   Store,
   CarFront,
+  CarFront as CarFrontIcon,
   Coins,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -39,6 +40,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { trackClick } from "@/lib/analytics";
 
 type NavLeaf = { to: string; label: string; icon: any };
 type NavItem = { to: string; label: string } | { label: string; submenu: NavLeaf[] };
@@ -154,6 +156,7 @@ export function SiteHeader() {
         <div className="hidden lg:block">
           <Link
             to="/orcamento"
+            onClick={() => trackClick("Solicitar orçamento", "Header Nav")}
             className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground glow-sm transition-transform hover:scale-105"
           >
             Solicitar orçamento

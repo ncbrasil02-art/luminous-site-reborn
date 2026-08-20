@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { newsData } from "@/lib/news.data";
 import { NewsDisplay } from "./NewsDisplay";
-import { trackRedirect } from "@/lib/analytics";
+import { trackRedirect, trackClick } from "@/lib/analytics";
 import { buildMeta } from "@/lib/seo";
 import {
   ArrowRight,
@@ -69,6 +69,8 @@ export type LandingPageProps = {
   faq?: LPFaq[];
   finalCtaTitle?: React.ReactNode;
   finalCtaDesc?: React.ReactNode;
+  finalPrimaryCta?: { to: string; label: string };
+  finalSecondaryCta?: { to: string; label: string };
   relatedNewsTags?: string[]; // New prop for related news
 };
 
@@ -138,6 +140,8 @@ export function LandingPage({
   faq,
   finalCtaTitle,
   finalCtaDesc,
+  finalPrimaryCta = { to: "/orcamento", label: "Solicitar orçamento" },
+  finalSecondaryCta = { to: "/contato", label: "Falar com especialista" },
   relatedNewsTags = [],
 }: LandingPageProps) {
   const search = useRouterState({ select: (s) => s.location.search });
@@ -212,6 +216,7 @@ export function LandingPage({
           >
             <Link
               to={primaryCta.to}
+              onClick={() => trackClick(primaryCta.label, `Hero Primary (${eyebrow})`)}
               className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md transition-transform hover:scale-105"
             >
               {primaryCta.label}
@@ -219,6 +224,7 @@ export function LandingPage({
             </Link>
             <Link
               to={secondaryCta.to}
+              onClick={() => trackClick(secondaryCta.label, `Hero Secondary (${eyebrow})`)}
               className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur hover:bg-surface"
             >
               {secondaryCta.label}
@@ -340,7 +346,7 @@ export function LandingPage({
 
       {/* FEATURES */}
       {features && features.length > 0 && (
-        <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
+        <section id="features" className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
           <div className="absolute inset-0 grid-pattern opacity-20" />
           <div className="relative mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
@@ -673,13 +679,21 @@ export function LandingPage({
                   {finalCtaDesc ?? <>Resposta em até <strong className="text-foreground">24 horas</strong> com escopo, prazo e investimento.</>}
                 </p>
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                  <Link to="/orcamento" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md hover:scale-105 transition-transform">
-                    Solicitar orçamento
+                  <Link 
+                    to={finalPrimaryCta.to} 
+                    onClick={() => trackClick(finalPrimaryCta.label, "Footer CTA")}
+                    className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md hover:scale-105 transition-transform"
+                  >
+                    {finalPrimaryCta.label}
                     <ArrowRight className="h-4 w-4" />
                   </Link>
-                  <Link to="/contato" className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-7 py-3.5 text-sm font-semibold text-foreground hover:bg-surface">
+                  <Link 
+                    to={finalSecondaryCta.to} 
+                    onClick={() => trackClick(finalSecondaryCta.label, "Footer CTA")}
+                    className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-7 py-3.5 text-sm font-semibold text-foreground hover:bg-surface"
+                  >
                     <MessageCircle className="h-4 w-4" />
-                    Falar com especialista
+                    {finalSecondaryCta.label}
                   </Link>
                 </div>
               </div>
