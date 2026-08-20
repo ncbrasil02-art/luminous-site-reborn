@@ -13,7 +13,21 @@ import vitrineUrl from "@/assets/sistema-de-leilao-vitrine.png.asset.json";
 import mobileUrl from "@/assets/sistema-de-leilao-card-detalhe.png.asset.json";
 import painelUrl from "@/assets/sistema-de-leilao-painel-online.png.asset.json";
 import dashDetailUrl from "@/assets/sistema-de-leilao-dashboard-detalhe.png.asset.json";
+
+// Partner Logos
+import tjrsLogo from "@/assets/partners/tjrs.webp.asset.json";
+import uniprimeLogo from "@/assets/partners/uniprime.webp.asset.json";
+import unicredLogo from "@/assets/partners/unicred.webp.asset.json";
+import sicrediLogo from "@/assets/partners/sicredi.webp.asset.json";
+import sicoobLogo from "@/assets/partners/sicoob.webp.asset.json";
+import cresolLogo from "@/assets/partners/cresol.webp.asset.json";
+import caixaLogo from "@/assets/partners/caixa.webp.asset.json";
+import embassyLogo from "@/assets/partners/embaixada_usa.webp.asset.json";
+import detranmsLogo from "@/assets/partners/detranms.webp.asset.json";
+import detranscLogo from "@/assets/partners/detransc.webp.asset.json";
+
 import { testimonialsData } from "@/lib/testimonials.data";
+
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao";
@@ -43,14 +57,17 @@ export const Route = createFileRoute("/sistema-de-leilao")({
     canonical: URL,
     h1: "Sistema de Leilão NC Brasil: Plataforma de Leilões Online e Pregões",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
+      { label: "Home", to: `${SITE_URL}/` },
+      { label: "Sistemas", to: `${SITE_URL}/nossos-sistemas` },
       { label: "Sistema de Leilão", to: URL },
     ],
     faq: lpFaq,
+    ogImage: "/sistema-de-leilao-og.jpg",
   }),
   component: () => (
-    <LandingPage
+    <>
+      <LandingPage
+
       imageKeyword="sistema de leilão"
       showParallaxshowcase
       showcaseImages={[
@@ -75,9 +92,8 @@ export const Route = createFileRoute("/sistema-de-leilao")({
             className="h-20 md:h-28 w-auto filter drop-shadow-[0_0_15px_rgba(59,130,246,0.5)]"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              if (!target.src.includes('/news/default-nc.jpg')) {
-                target.src = '/news/default-nc.jpg';
-              }
+              target.onerror = null;
+              target.src = '/logo.jpg';
             }}
           />
           <span>Sistema de Leilão <span className="text-gradient">NC Brasil</span>: Sua Plataforma de Leilão Online</span>
@@ -109,7 +125,28 @@ export const Route = createFileRoute("/sistema-de-leilao")({
           "Concorrentes que já operam com plataforma dedicada capturam **até 3x mais arrematantes por edital**.",
         ],
       }}
+      extraContentBeforeProblem={
+        <div className="relative isolate py-4">
+          <div className="absolute inset-0 -z-10 bg-primary/5 blur-3xl opacity-30" />
+          <PartnerCarousel 
+            title="Sistema Homologado e Utilizado por Grandes Órgãos"
+            logos={[
+              { name: "TJRS", url: "/__l5e/assets-v1/2e0a84c2-380f-4712-9511-2b7311d62af0/tjrs.webp", link: "https://www.tjrs.jus.br/" },
+              { name: "Caixa", url: "/__l5e/assets-v1/ced62ae3-afba-4a61-809f-97d79ab23244/caixa.webp", link: "https://www.caixa.gov.br/" },
+              { name: "Detran-MS", url: "/__l5e/assets-v1/451608d1-5be9-4ab4-aae6-17f4c33598a6/detranms.webp", link: "https://www.detran.ms.gov.br/" },
+              { name: "Detran-SC", url: "/__l5e/assets-v1/fd087bbc-be89-48a1-924c-d4da50604d8a/detransc.webp", link: "https://www.detran.sc.gov.br/" },
+              { name: "Embaixada EUA", url: "/__l5e/assets-v1/8e37ba94-62ba-49a8-8ec5-ea6eb02e0867/embaixada_usa.webp" },
+              { name: "Sicoob", url: "/__l5e/assets-v1/c8817572-891e-4a1d-b994-28f556886fc1/sicoob.webp", link: "https://www.sicoob.com.br/" },
+              { name: "Sicredi", url: "/__l5e/assets-v1/f4c7db95-719b-440c-8cf4-f0ece8706ef6/sicredi.webp", link: "https://www.sicredi.com.br/" },
+              { name: "Unicred", url: "/__l5e/assets-v1/15c3b6cb-8e09-4bbd-a776-600ffa7a4c1d/unicred.webp", link: "https://www.unicred.com.br/" },
+              { name: "Uniprime", url: "/__l5e/assets-v1/4804342e-1788-4a01-bf5a-c3a43ccee735/uniprime.webp", link: "https://www.uniprimebr.com.br/" },
+              { name: "Cresol", url: "/__l5e/assets-v1/09b7bbe8-553b-4d13-82b7-42878ac830fa/cresol.webp", link: "https://cresol.com.br/" },
+            ]}
+          />
+        </div>
+      }
       solution={{
+
         title: <>Sua <span className="text-gradient">Plataforma de Leilão Online</span> — Homologada e Sem Mensalidade</>,
         desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> é a ferramenta ideal para quem deseja <strong className="text-foreground">ver o site de leilões</strong> operando com máxima performance. Entregamos um <strong className="text-foreground">sistema online para leiloeiro</strong> com licença perpétua e código-fonte. Nossa <strong className="text-foreground">plataforma de pregões online</strong> é robusta, white-label e preparada para leilões judiciais e extrajudiciais. Diferente de soluções como <strong className="text-foreground">sas leilão</strong> genéricas, oferecemos personalização total para o seu negócio.</>,
         image: (configUrl as any).url,
@@ -241,6 +278,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       finalCtaTitle={<>Pronto para <span className="text-gradient">digitalizar seus leilões</span>?</>}
       finalCtaDesc={<>Agende uma <strong className="text-foreground">demonstração ao vivo</strong> — mostramos a plataforma com seus lotes reais e enviamos proposta em <strong className="text-foreground">até 24 horas</strong>.</>}
       relatedNewsTags={["Leilão", "Leilão Online", "Sistemas", "Tecnologia"]}
-    />
+      />
+    </>
   ),
 });

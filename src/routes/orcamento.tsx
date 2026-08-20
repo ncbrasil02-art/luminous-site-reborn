@@ -1,21 +1,24 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { ArrowRight, CheckCircle2, FileText, Send } from "lucide-react";
+import { ArrowRight, CheckCircle2, FileText, Send, ChevronRight } from "lucide-react";
 
 import { Reveal, SectionHeading } from "@/components/Section";
 import { trackLead, trackClick } from "@/lib/analytics";
 
-const EMAIL = "contato@ncbrasil.com.br";
+const EMAIL = "comercial@ncbrasil.com.br";
 
 
 import { buildMeta, SITE_URL } from "@/lib/seo";
+
+const URL = `${SITE_URL}/orcamento`;
 
 export const Route = createFileRoute("/orcamento")({
   head: () => buildMeta({
     title: "Orçamento · NC Brasil — Solicite uma Proposta Personalizada em 24h",
     description: "Solicite um orçamento detalhado para seu site, sistema web, e-commerce ou aplicativo. Receba uma proposta completa com escopo, prazos e investimento em até 24 horas.",
     keywords: "orçamento criação de sites, orçamento sistema web, orçamento loja virtual, orçamento aplicativo, proposta agência web, consultoria tecnologia orçamento",
-    canonical: `${SITE_URL}/orcamento`,
+    canonical: URL,
+    ogImage: "/logo-nc-brasil.png",
     faq: [
       { q: "Qual o prazo para receber o orçamento?", a: "Nossa equipe analisa seu pedido e envia uma proposta detalhada em até 24 horas úteis." },
       { q: "O que está incluso na proposta?", a: "A proposta inclui análise estratégica, escopo funcional detalhado, cronograma com marcos, investimento transparente e suporte pós-lançamento." }
@@ -65,6 +68,17 @@ function OrcamentoPage() {
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />
         <div className="mx-auto max-w-3xl px-4 pt-20 pb-10 text-center md:px-6 md:pt-28">
           <Reveal>
+            <nav aria-label="Breadcrumb" className="mb-8 flex justify-center">
+              <ol className="flex flex-wrap items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground list-none p-0 m-0">
+                <li className="flex items-center gap-1">
+                  <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+                </li>
+                <li className="flex items-center gap-1">
+                  <ChevronRight className="h-3 w-3 opacity-50" aria-hidden="true" />
+                  <span className="text-foreground/80" aria-current="page">Orçamento</span>
+                </li>
+              </ol>
+            </nav>
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
               <FileText className="h-3.5 w-3.5" />
               Orçamento

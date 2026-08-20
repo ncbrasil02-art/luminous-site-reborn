@@ -79,6 +79,7 @@ export const Route = createFileRoute("/portfolio/criacao-de-aplicativos")({
     description: "Desenvolvimento de apps iOS e Android sob medida. UX cinematográfica, performance nativa e integração total com seus sistemas.",
     keywords: "criação de aplicativos, desenvolvimento mobile, app iOS Android, aplicativo personalizado, empresa de apps sp",
     canonical: URL,
+    ogImage: "/criacao-de-apps-og.jpg",
   }),
   component: () => (
     <div className="pt-20">

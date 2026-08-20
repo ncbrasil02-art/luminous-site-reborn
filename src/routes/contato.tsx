@@ -9,24 +9,28 @@ import {
   MessageCircle,
   Phone,
   Send,
+  ChevronRight,
 } from "lucide-react";
 
 import { Reveal, SectionHeading } from "@/components/Section";
 import { trackLead, trackClick } from "@/lib/analytics";
 
-const EMAIL = "contato@ncbrasil.com.br";
+const EMAIL = "comercial@ncbrasil.com.br";
 const WHATSAPP =
   "https://wa.me/5521996509905?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20com%20a%20NC%20Brasil.";
 
 
 import { buildMeta, SITE_URL } from "@/lib/seo";
 
+const URL = `${SITE_URL}/contato`;
+
 export const Route = createFileRoute("/contato")({
   head: () => buildMeta({
     title: "Contato · NC Brasil — Fale com Nossa Equipe de Especialistas",
     description: "Entre em contato com a NC Brasil. Tire dúvidas, agende uma reunião ou solicite um diagnóstico para seu projeto. Atendimento especializado em São Paulo e Rio de Janeiro.",
     keywords: "contato NC Brasil, agência web SP, agência RJ, telefone NC Brasil, agendar reunião desenvolvimento, suporte técnico NC Brasil, orçamento tecnologia",
-    canonical: `${SITE_URL}/contato`,
+    canonical: URL,
+    ogImage: "/logo-nc-brasil.png",
     faq: [
       { q: "Como entrar em contato com a NC Brasil?", a: "Você pode nos contatar via formulário no site, e-mail (contato@ncbrasil.com.br), telefone ou WhatsApp comercial direto." },
       { q: "Qual o horário de atendimento?", a: "Atendemos de segunda a sexta, das 9h às 18h. Sábados sob agendamento." }
@@ -56,6 +60,17 @@ function ContatoPage() {
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />
         <div className="mx-auto max-w-7xl px-4 pt-20 pb-12 text-center md:px-6 md:pt-28">
           <Reveal>
+            <nav aria-label="Breadcrumb" className="mb-8 flex justify-center">
+              <ol className="flex flex-wrap items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground list-none p-0 m-0">
+                <li className="flex items-center gap-1">
+                  <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+                </li>
+                <li className="flex items-center gap-1">
+                  <ChevronRight className="h-3 w-3 opacity-50" aria-hidden="true" />
+                  <span className="text-foreground/80" aria-current="page">Contato</span>
+                </li>
+              </ol>
+            </nav>
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
               <MessageCircle className="h-3.5 w-3.5" />
               Contato
@@ -145,7 +160,7 @@ function ContatoPage() {
               <InfoCard
                 icon={Clock}
                 title="Horário"
-                lines={["Seg a Sex · 9h às 18h", "Sáb · sob agendamento"]}
+                lines={["Seg a Dom · 8h às 22h"]}
               />
               <InfoCard
                 icon={Calendar}
@@ -177,7 +192,7 @@ function ContatoPage() {
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             <OfficeCard
               cidade="São Paulo · ABC"
-              endereco="São Bernardo do Campo — SP"
+              endereco="Rua Barão de Mauá 347, São Bernardo do Campo — SP"
               tag="Sede"
             />
             <OfficeCard

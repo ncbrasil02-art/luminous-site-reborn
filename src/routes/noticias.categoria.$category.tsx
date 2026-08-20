@@ -1,7 +1,9 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
-import { newsData } from '@/lib/news.data'
-import { Calendar, ArrowRight } from 'lucide-react'
+import { newsData, type NewsPost } from '@/lib/news.data'
+import { Calendar, ArrowRight, ChevronRight } from 'lucide-react'
 import { Reveal, SectionHeading } from '@/components/Section'
+import { buildMeta, SITE_URL } from '@/lib/seo'
+
 
 export const Route = createFileRoute('/noticias/categoria/$category')({
   loader: ({ params }) => {
@@ -12,13 +14,11 @@ export const Route = createFileRoute('/noticias/categoria/$category')({
     if (posts.length === 0) throw notFound()
     return { category, posts }
   },
-  head: ({ loaderData }) => ({
-    meta: [
-      { title: `Categoria: ${loaderData?.category || 'Notícias'} · NC Brasil` },
-      { label: 'description', content: `Veja todas as notícias e artigos na categoria ${loaderData?.category} da NC Brasil.` },
-      { property: 'og:title', content: `Categoria: ${loaderData?.category} · NC Brasil` },
-      { property: 'og:type', content: 'website' },
-    ],
+  head: ({ loaderData }) => buildMeta({
+    title: `Categoria: ${loaderData?.category || 'Notícias'} · NC Brasil`,
+    description: `Veja todas as notícias e artigos na categoria ${loaderData?.category} da NC Brasil.`,
+    keywords: `notícia, nc brasil, categoria, ${loaderData?.category}`,
+    canonical: `${SITE_URL}/noticias/categoria/${loaderData?.category}`,
   }),
   component: CategoryPage,
 })
@@ -30,6 +30,22 @@ function CategoryPage() {
     <main className="pt-24 pb-20">
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <Reveal>
+          <nav aria-label="Breadcrumb" className="mb-8">
+            <ol className="flex flex-wrap items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground list-none p-0 m-0">
+              <li className="flex items-center gap-1">
+                <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+              </li>
+              <li className="flex items-center gap-1">
+                <ChevronRight className="h-3 w-3 opacity-50" aria-hidden="true" />
+                <Link to="/noticias" className="hover:text-primary transition-colors">Notícias</Link>
+              </li>
+              <li className="flex items-center gap-1">
+                <ChevronRight className="h-3 w-3 opacity-50" aria-hidden="true" />
+                <span className="text-foreground/80" aria-current="page">Categoria: {category}</span>
+              </li>
+            </ol>
+          </nav>
+
           <Link to="/noticias" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline mb-8">
             <ArrowRight className="h-4 w-4 rotate-180" />
             Todas as notícias
@@ -44,7 +60,7 @@ function CategoryPage() {
         />
 
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((news, i) => (
+          {posts.map((news: NewsPost, i: number) => (
             <Reveal key={news.id} delay={i * 0.05}>
               <Link 
                 to="/noticias/$slug"

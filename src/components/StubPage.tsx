@@ -21,6 +21,7 @@ export function buildStubMeta({
   canonical,
   faq,
   breadcrumbs,
+  ogImage,
 }: {
   title: string;
   description: string;
@@ -28,6 +29,7 @@ export function buildStubMeta({
   canonical: string;
   faq?: { q: string; a: string }[];
   breadcrumbs?: { label: string; to: string }[];
+  ogImage?: string;
 }) {
   return buildMeta({
     title,
@@ -36,6 +38,7 @@ export function buildStubMeta({
     canonical,
     faq,
     breadcrumbs,
+    ogImage,
   });
 }
 

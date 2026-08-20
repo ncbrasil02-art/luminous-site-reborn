@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Clock } from "lucide-react";
 import { NewsDisplay } from "./NewsDisplay";
+import { trackClick } from "@/lib/analytics";
 
 
 const cols = [
@@ -46,7 +47,16 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2">
-              <img src="/logo.jpg" alt="NC Brasil" className="h-10 w-auto object-contain" />
+              <img 
+                src="/logo.jpg" 
+                alt="NC Brasil - Logotipo Rodapé" 
+                width={160} 
+                height={40} 
+                className="h-10 w-auto object-contain" 
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = "/logo.jpg";
+                }}
+              />
             </Link>
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
               <strong className="text-foreground">Criação de sistemas web, lojas virtuais e aplicativos</strong> para empresas
@@ -56,7 +66,7 @@ export function SiteFooter() {
             <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 text-primary" />
-                São Bernardo do Campo — SP · Rio de Janeiro — RJ
+                Rua Barão de Mauá 347, São Bernardo do Campo — SP · Rio de Janeiro — RJ
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
@@ -66,9 +76,13 @@ export function SiteFooter() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <a href="mailto:contato@ncbrasil.com.br" className="story-link hover:text-foreground">
-                  contato@ncbrasil.com.br
+                <a href="mailto:comercial@ncbrasil.com.br" className="story-link hover:text-foreground">
+                  comercial@ncbrasil.com.br
                 </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Clock className="h-4 w-4 text-primary" />
+                <span className="text-muted-foreground">Seg a Dom · 8h às 22h</span>
               </li>
             </ul>
             <div className="mt-8 flex items-center gap-4">
@@ -76,6 +90,7 @@ export function SiteFooter() {
                 href="https://www.facebook.com/agenciacriacaodesites/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackClick("Facebook", "Footer Social")}
                 className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
                 aria-label="Facebook"
               >
@@ -85,10 +100,21 @@ export function SiteFooter() {
                 href="https://www.instagram.com/new.commercebrasil/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackClick("Instagram", "Footer Social")}
                 className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/new-commerce-brasil"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackClick("LinkedIn", "Footer Social")}
+                className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
               </a>
             </div>
           </div>

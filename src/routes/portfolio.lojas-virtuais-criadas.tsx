@@ -70,6 +70,7 @@ export const Route = createFileRoute("/portfolio/lojas-virtuais-criadas")({
     description: "Criação de lojas virtuais de alta conversão. E-commerce completo com pagamentos, frete, SEO e design premium para vender sem limites.",
     keywords: "criação de loja virtual, e-commerce, plataforma de vendas online, criar loja virtual, loja online sp",
     canonical: URL,
+    ogImage: "/e-commerce-og.jpg",
   }),
   component: () => (
     <div className="pt-20">

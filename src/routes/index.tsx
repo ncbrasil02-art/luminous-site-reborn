@@ -17,6 +17,7 @@ import {
 import heroTech from "@/assets/hero-tech.jpg";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
+import { trackClick } from "@/lib/analytics";
 
 import { buildMeta, SITE_URL } from "@/lib/seo";
 import { MagazineSection } from "@/components/MagazineSection";
@@ -82,7 +83,7 @@ export const Route = createFileRoute("/")({
       title: "NC Brasil · Criação de Sites, Sistemas Web e Aplicativos em SP e RJ",
       description: "Agência de tecnologia especializada em criação de sites profissionais, sistemas web sob demanda, e-commerce e aplicativos mobile. Tecnologia premium para escalar seu negócio.",
       keywords: "criação de sites, criação de sistemas web, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, NC Brasil",
-      ogImage: OG_IMAGE,
+      ogImage: "/logo-nc-brasil.png",
       canonical: `${SITE_URL}/`,
     });
 
@@ -193,6 +194,11 @@ function HomePage() {
             loading="eager"
             fetchPriority="high"
             decoding="async"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.onerror = null;
+              target.src = '/logo.jpg';
+            }}
             className="h-full w-full object-cover opacity-50"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
@@ -252,6 +258,7 @@ function HomePage() {
           >
             <Link
               to="/sistema-de-leilao"
+              onClick={() => trackClick("Conhecer Sistema de Leilão", "Home Hero")}
               className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md transition-transform hover:scale-105"
             >
               Conhecer Sistema de Leilão
@@ -259,6 +266,7 @@ function HomePage() {
             </Link>
             <Link
               to="/trabalhos-realizados"
+              onClick={() => trackClick("Ver trabalhos realizados", "Home Hero")}
               className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur transition-colors hover:bg-surface"
             >
               Ver trabalhos realizados
@@ -312,6 +320,7 @@ function HomePage() {
               <Reveal key={s.title} delay={i * 0.05}>
                 <Link
                   to={s.to}
+                  onClick={() => trackClick(s.title, "Home Solutions Grid")}
                   className="group relative block h-full overflow-hidden rounded-[2rem] border border-border bg-card/40 p-8 backdrop-blur-sm transition-all hover:-translate-y-2 hover:border-primary/40 hover:glow-md hover:bg-card/60"
                 >
                   <div className="relative z-10">
@@ -350,6 +359,7 @@ function HomePage() {
             </div>
             <Link 
               to="/nossos-sistemas" 
+              onClick={() => trackClick("Ver todos os sistemas", "Home Systems Section")}
               className="group inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-primary hover:text-white transition-colors"
             >
               Ver todos os sistemas

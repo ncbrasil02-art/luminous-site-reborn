@@ -1,10 +1,13 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { newsData } from '@/lib/news.data'
 
 export const Route = createFileRoute('/admin/')({
-  component: AdminIndex
+  component: AdminDashboard
 })
 
-function AdminIndex() {
+function AdminDashboard() {
+  const totalNews = newsData.length;
+  
   return (
     <div className="p-8">
       <h1 className="text-3xl font-bold mb-8">Dashboard Administrativo</h1>
@@ -12,15 +15,15 @@ function AdminIndex() {
       <div className="grid gap-6 md:grid-cols-3 mb-8">
         <div className="p-6 rounded-2xl bg-card border border-border">
           <div className="text-sm text-muted-foreground font-medium mb-1">Total de Notícias</div>
-          <div className="text-3xl font-bold">132</div>
+          <div className="text-3xl font-bold">{totalNews}</div>
         </div>
         <div className="p-6 rounded-2xl bg-card border border-border">
           <div className="text-sm text-muted-foreground font-medium mb-1">Publicadas</div>
-          <div className="text-3xl font-bold text-primary">128</div>
+          <div className="text-3xl font-bold text-primary">{totalNews}</div>
         </div>
         <div className="p-6 rounded-2xl bg-card border border-border">
           <div className="text-sm text-muted-foreground font-medium mb-1">Rascunhos</div>
-          <div className="text-3xl font-bold text-amber-500">4</div>
+          <div className="text-3xl font-bold text-amber-500">0</div>
         </div>
       </div>
 

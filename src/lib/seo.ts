@@ -1,6 +1,6 @@
 export const SITE_URL = "https://www.ncbrasil.com.br";
 export const SITE_NAME = "NC Brasil";
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-main.jpg`;
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo-nc-brasil.png`;
 
 export type MetaOptions = {
   title: string;
@@ -49,12 +49,19 @@ export function buildMeta(options: MetaOptions) {
     { property: "og:type", content: ogType },
     { property: "og:url", content: canonical || SITE_URL },
     { property: "og:image", content: absoluteOgImage },
+    { property: "og:image:width", content: "1200" },
+    { property: "og:image:height", content: "630" },
     { property: "og:locale", content: "pt_BR" },
     { property: "og:site_name", content: SITE_NAME },
     { name: "twitter:card", content: "summary_large_image" },
+    { name: "twitter:site", content: "@ncbrasil" },
+    { name: "twitter:creator", content: "@ncbrasil" },
+    { name: "linkedin:profile", content: "https://www.linkedin.com/company/new-commerce-brasil" },
     { name: "twitter:title", content: fullTitle },
     { name: "twitter:description", content: description },
     { name: "twitter:image", content: absoluteOgImage },
+    { name: "image", content: absoluteOgImage },
+    { property: "og:image:secure_url", content: absoluteOgImage },
   ];
 
   if (noIndex) {
@@ -137,6 +144,9 @@ export function buildMeta(options: MetaOptions) {
       { rel: "canonical", href: canonical || SITE_URL },
       { rel: "alternate", hrefLang: "pt-BR", href: canonical || SITE_URL },
       { rel: "alternate", hrefLang: "x-default", href: canonical || SITE_URL },
+      { rel: "icon", type: "image/png", href: `${SITE_URL}/favicon.png` },
+      { rel: "shortcut icon", href: `${SITE_URL}/favicon.png` },
+      { rel: "apple-touch-icon", href: `${SITE_URL}/favicon.png` },
     ],
     scripts,
   };

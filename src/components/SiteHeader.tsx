@@ -21,6 +21,7 @@ import {
   Target,
   Facebook,
   Instagram,
+  Linkedin,
   Lightbulb,
   Gavel,
   Tractor,
@@ -123,10 +124,20 @@ export function SiteHeader() {
             <source srcSet="/logo.webp" type="image/webp" />
             <img 
               src="/logo.jpg" 
-              alt="NC Brasil" 
+              alt="NC Brasil - Sistemas Web e Marketing Digital" 
+              width={160}
+              height={40}
               fetchPriority="high"
               decoding="async"
               className="h-10 w-auto object-contain transition-transform group-hover:scale-105" 
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                if (target.src.endsWith('.webp')) {
+                  target.src = '/logo.jpg';
+                } else if (!target.src.includes('/logo.jpg')) {
+                  target.src = '/logo.jpg';
+                }
+              }}
             />
           </picture>
         </Link>
@@ -169,6 +180,7 @@ export function SiteHeader() {
               href="https://www.facebook.com/agenciacriacaodesites/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackClick("Facebook", "Header Social")}
               className="text-muted-foreground transition-colors hover:text-primary"
               aria-label="Facebook"
             >
@@ -178,10 +190,21 @@ export function SiteHeader() {
               href="https://www.instagram.com/new.commercebrasil/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackClick("Instagram", "Header Social")}
               className="text-muted-foreground transition-colors hover:text-primary"
               aria-label="Instagram"
             >
               <Instagram className="h-4 w-4" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/new-commerce-brasil"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => trackClick("LinkedIn", "Header Social")}
+              className="text-muted-foreground transition-colors hover:text-primary"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="h-4 w-4" />
             </a>
           </div>
           <Link

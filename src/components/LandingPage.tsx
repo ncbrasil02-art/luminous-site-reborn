@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { newsData } from "@/lib/news.data";
 import { NewsDisplay } from "./NewsDisplay";
+import { ShareButtons } from "./ShareButtons";
 import { trackRedirect, trackClick } from "@/lib/analytics";
 import { buildMeta } from "@/lib/seo";
 import {
@@ -20,6 +21,7 @@ import {
 } from "lucide-react";
 
 import { Reveal, SectionHeading } from "./Section";
+import { ContactSection } from "./ContactSection";
 
 export type LPFeature = { icon: LucideIcon; title: string; desc: string };
 export type LPBenefit = { icon: LucideIcon; title: string; desc: string };
@@ -77,7 +79,9 @@ export type LandingPageProps = {
   imageKeyword?: string;
   showParallaxshowcase?: boolean;
   showcaseImages?: string[];
+  extraContentBeforeProblem?: React.ReactNode;
 };
+
 
 export function buildLPMeta(options: {
   title: string;
@@ -152,7 +156,9 @@ export function LandingPage({
   imageKeyword,
   showParallaxshowcase = false,
   showcaseImages = [],
+  extraContentBeforeProblem,
 }: LandingPageProps) {
+
   const [expandedImages, setExpandedImages] = useState<Record<number, boolean>>({});
   const search = useRouterState({ select: (s) => s.location.search });
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -185,9 +191,8 @@ export function LandingPage({
             fetchPriority="high"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              if (!target.src.includes('/news/default-nc.jpg')) {
-                target.src = '/news/default-nc.jpg';
-              }
+              target.onerror = null; // Prevent infinite loop
+              target.src = '/news/default-nc.jpg';
             }}
           />
         </div>
@@ -195,19 +200,23 @@ export function LandingPage({
 
         <div className="mx-auto max-w-6xl px-4 pt-14 md:px-6 md:pt-20">
           {/* Breadcrumb */}
-          <nav aria-label="Breadcrumb" className="mb-8 flex flex-wrap items-center gap-1 text-xs text-muted-foreground">
-            {breadcrumbs.map((b, i) => (
-              <span key={b.to + i} className="flex items-center gap-1">
-                {i > 0 && <ChevronRight className="h-3 w-3 opacity-50" />}
-                {i === breadcrumbs.length - 1 ? (
-                  <span className="text-foreground/80">{b.label}</span>
-                ) : (
-                  <Link to={b.to} className="hover:text-primary transition-colors">
-                    {b.label}
-                  </Link>
-                )}
-              </span>
-            ))}
+          <nav aria-label="Breadcrumb" className="mb-8">
+            <ol className="flex flex-wrap items-center gap-1 text-xs text-muted-foreground list-none p-0 m-0">
+              {breadcrumbs.map((b, i) => (
+                <li key={b.to + i} className="flex items-center gap-1">
+                  {i > 0 && <ChevronRight className="h-3 w-3 opacity-50" aria-hidden="true" />}
+                  {i === breadcrumbs.length - 1 ? (
+                    <span className="text-foreground/80 font-medium" aria-current="page">
+                      {b.label}
+                    </span>
+                  ) : (
+                    <Link to={b.to} className="hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm px-0.5">
+                      {b.label}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ol>
           </nav>
         </div>
 
@@ -261,6 +270,15 @@ export function LandingPage({
             </Link>
           </motion.div>
 
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="mt-8 flex justify-center"
+          >
+            <ShareButtons url={pathname} title={typeof h1 === 'string' ? h1 : eyebrow} />
+          </motion.div>
+
           {stats && (
             <div className="mx-auto mt-16 grid max-w-3xl grid-cols-2 gap-4 md:grid-cols-4">
               {stats.map((s) => (
@@ -293,7 +311,11 @@ export function LandingPage({
         </section>
       )}
 
+      {/* EXTRA CONTENT BEFORE PROBLEM */}
+      {extraContentBeforeProblem}
+
       {/* PROBLEM / SOLUTION */}
+
       {(problem || solution) && (
         <section className="relative py-20 md:py-28">
           <div className="mx-auto grid max-w-6xl gap-8 px-4 md:grid-cols-2 md:px-6">
@@ -813,13 +835,6 @@ export function LandingPage({
         </section>
       )}
 
-      {/* RELATED NEWS */}
-      <NewsDisplay 
-        filterTags={relatedNewsTags} 
-        title={<>Conteúdo Relacionado e <span className="text-gradient">Insights</span></>}
-        eyebrow="Blog & Notícias"
-      />
-
       {/* FAQ */}
       {faq && faq.length > 0 && (
         <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
@@ -847,6 +862,16 @@ export function LandingPage({
           </div>
         </section>
       )}
+
+      {/* CONTATO PREMIUM */}
+      <ContactSection pageTitle={typeof h1 === 'string' ? h1 : eyebrow} />
+
+      {/* RELATED NEWS */}
+      <NewsDisplay 
+        filterTags={relatedNewsTags} 
+        title={<>Conteúdo Relacionado e <span className="text-gradient">Insights</span></>}
+        eyebrow="Blog & Notícias"
+      />
 
       {/* CTA FINAL */}
       <section className="relative overflow-hidden py-20 md:py-28">
