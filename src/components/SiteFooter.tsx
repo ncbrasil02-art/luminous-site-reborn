@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { NewsDisplay } from "./NewsDisplay";
 
 
@@ -71,6 +71,26 @@ export function SiteFooter() {
                 </a>
               </li>
             </ul>
+            <div className="mt-8 flex items-center gap-4">
+              <a
+                href="https://www.facebook.com/agenciacriacaodesites/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
+              </a>
+              <a
+                href="https://www.instagram.com/new.commercebrasil/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
+              </a>
+            </div>
           </div>
 
           {cols.map((col) => (
