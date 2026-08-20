@@ -116,7 +116,13 @@ function ContatoPage() {
 
               <p className="mt-4 text-xs text-muted-foreground">
                 Prefere algo mais rápido?{" "}
-                <a href={WHATSAPP} target="_blank" rel="noopener noreferrer" className="story-link text-primary">
+                <a 
+                  href={WHATSAPP} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  onClick={() => trackClick("WhatsApp", "Contato Form")}
+                  className="story-link text-primary"
+                >
                   Fale conosco no WhatsApp
                 </a>
                 .

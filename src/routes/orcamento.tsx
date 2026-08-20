@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ArrowRight, CheckCircle2, FileText, Send } from "lucide-react";
 
 import { Reveal, SectionHeading } from "@/components/Section";
-import { trackLead } from "@/lib/analytics";
+import { trackLead, trackClick } from "@/lib/analytics";
 
 const EMAIL = "contato@ncbrasil.com.br";
 
