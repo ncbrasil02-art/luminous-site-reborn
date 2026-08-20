@@ -169,6 +169,7 @@ export function SiteHeader() {
               href="https://www.facebook.com/agenciacriacaodesites/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackClick("Facebook", "Header Social")}
               className="text-muted-foreground transition-colors hover:text-primary"
               aria-label="Facebook"
             >
@@ -178,6 +179,7 @@ export function SiteHeader() {
               href="https://www.instagram.com/new.commercebrasil/"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackClick("Instagram", "Header Social")}
               className="text-muted-foreground transition-colors hover:text-primary"
               aria-label="Instagram"
             >

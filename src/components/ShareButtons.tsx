@@ -1,6 +1,7 @@
 import { Facebook, Twitter, Linkedin, MessageSquare, Share2 } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import { trackClick } from "@/lib/analytics";
 
 interface ShareButtonsProps {
   url: string;
@@ -60,6 +61,7 @@ export function ShareButtons({ url, title, className }: ShareButtonsProps) {
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackClick(link.name, "Social Share", { url: link.href })}
           className={cn(
             "group flex h-9 w-9 items-center justify-center rounded-full border border-border bg-surface/50 transition-all hover:scale-110",
             link.color

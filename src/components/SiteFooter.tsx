@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { NewsDisplay } from "./NewsDisplay";
+import { trackClick } from "@/lib/analytics";
 
 
 const cols = [
@@ -76,6 +77,7 @@ export function SiteFooter() {
                 href="https://www.facebook.com/agenciacriacaodesites/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackClick("Facebook", "Footer Social")}
                 className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
                 aria-label="Facebook"
               >
@@ -85,6 +87,7 @@ export function SiteFooter() {
                 href="https://www.instagram.com/new.commercebrasil/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackClick("Instagram", "Footer Social")}
                 className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
                 aria-label="Instagram"
               >

@@ -16,8 +16,8 @@ const orgJsonLd = {
   to: SITE_URL,
   logo: `${SITE_URL}/favicon.png`,
   sameAs: [
-    "https://www.facebook.com/ncbrasil",
-    "https://www.instagram.com/ncbrasil",
+    "https://www.facebook.com/agenciacriacaodesites/",
+    "https://www.instagram.com/new.commercebrasil/",
     "https://www.linkedin.com/company/ncbrasil",
   ],
   contactPoint: [
