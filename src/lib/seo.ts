@@ -56,6 +56,7 @@ export function buildMeta(options: MetaOptions) {
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:site", content: "@ncbrasil" },
     { name: "twitter:creator", content: "@ncbrasil" },
+    { name: "linkedin:profile", content: "https://www.linkedin.com/company/new-commerce-brasil" },
     { name: "twitter:title", content: fullTitle },
     { name: "twitter:description", content: description },
     { name: "twitter:image", content: absoluteOgImage },
