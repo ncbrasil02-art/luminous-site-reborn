@@ -380,7 +380,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/criacao-de-sites-rj-26.jpg",
     "thumb_id": ""
   },
   {
@@ -391,7 +391,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/criacao-de-sites-rj-64.jpg",
     "thumb_id": ""
   },
   {
@@ -447,7 +447,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/criacao-de-sites-rj-77.jpg",
     "thumb_id": ""
   },
   {
@@ -458,7 +458,7 @@ export const newsData: NewsPost[] = [
     "content": "<h4>Hoje em dia, ter um site é item obrigatório para qualquer empresa. Quando nos recomendam uma empresa, a primeira coisa que fazemos é jogar seu nome no Google e acessar o site. Isso vale tanto para a escola em que você está pensando matricular seu filho, para a loja que uma amiga indicou para comprar um produto e até mesmo para um novo mercado que abriu no bairro.</h4>\nSim, o site é, muitas vezes, o seu cartão de visitas, aquilo que será o seu primeiro contato com um possível cliente. Por isso, não pode ser um site qualquer! Seu site tem que causar uma boa primeira impressão. Mas, mais do que isso, tem que ter alguns atrativos para que possam envolver seu cliente e fazê-lo interagir com sua empresa até efetivar a compra do seu produto ou serviço.\n\n<strong>ATRATIVO</strong>\n\nA primeira consideração é que ele seja atrativo e gostoso de navegar, que não tenha <strong>publicidade</strong> exagerada e que tenha a cara da empresa representada no seu layout. Ter uma fonte suave também é um fator decisivo para que o usuário permaneça no site, para que ele não “canse” de navegar nele.\n\nTextos demais costumam assustar os usuários, portanto, procure ser sucinto ao passar suas informações. Mas não cometa o erro de ser superficial demais, afinal, o cliente tem que entender do que se trata o seu produto. Busque um equilíbrio na quantidade de informações e procure quebrar o texto com imagens e informações destacadas. O uso de ícones tem funcionado bastante, pois cada vez mais, as pessoas estão fazendo o que chamamos de “leitura escaneada” ou seja: “ler” o texto através de ícones e imagens, buscando a mensagem geral do texto, sem precisar lê-lo inteiro. Abuse desse recurso. Ele é ótimo!\n\n<strong>IMAGENS REAIS</strong>\n\nAinda sobre <strong>layout</strong>, procure ter imagens boas, preferencialmente não de <strong>banco de imagens</strong>. Outra tendência de comportamento em relação a sites – e isso vale também para as mídias sociais! – é que as pessoas preferem imagens humanizadas e reais, algo que elas sabem que é verdadeiro e não algo totalmente inatingível para elas.\n\n<strong>FÁCIL DE NAVEGAR</strong>\n\nTão importante quanto o layout do site é a sua navegabilidade, ou seja, a facilidade proporcionada ao usuário para navegar pelo site (se ele encontra o que procura, se entende os caminhos que deve percorrer, etc). A regra principal desse item é: o produto não pode estar a mais de três cliques do usuário. Isso significa que o caminho deve ser simples e rápido. Além disso, certifique-se de que o site tem caminhos claros para o usuário, que ele consiga identificar facilmente qual o próximo passo, para que ele não desista de comprar no meio da experiência.\n\n<strong>ATUALIZADO</strong>\n\nUma outra questão essencial é que seu site não seja estático. Como assim? Claro que um site – e aqui não estamos falando de e-commerce, que é atualizado o tempo todo – é basicamente estático, ou seja, as informações não mudam. Mas você deve prever na sua estrutura alguns itens que possam ser atualizados periodicamente, como uma área de banner em destaque ou, melhor ainda, um blog, onde você poderá trazer assuntos bem atualizados sobre o seu mercado e o seu produto. Assim, seu cliente sempre perceberá novidades ao retornar ao seu site. Confira aqui algumas dicas de como produzir conteúdo interessante para seu blog\n\n<strong>CALL TO ACTION</strong>\n\nMais importante que isso tudo é que seu site tenha um ou vários call-to-action, ou seja, “ferramentas” que levem seu cliente a interagir com você, deixando um “rastro” para que você possa “segui-lo” até efetivar a venda. Isso você consegue com formulários de contato ou ofertas específicas em algum setor. Cada formulário ou oferta deverá levar seu usuário para uma página de captura de dados, chamada de <strong><a class=\"expresscurate_contentTags\" href=\"http://ncbrasil.com.br/tag/landing-page/\">#landing page</a></strong>. E é aí que a mágica de vendas do site começa. Você obtém os dados de contato do seu cliente e começa um relacionamento com ele, onde vai apresentando seus produtos e despertando nele o desejo da compra. Mas isso já é assunto para um outro post, ou melhor, para um e-book inteiro, que você pode acessar baixar gratuitamente acessando nosso e-book Como transformar acessos em <strong><a class=\"expresscurate_contentTags\" href=\"http://ncbrasil.com.br/tag/leads/\">#leads</a></strong>.\n\nSe você já tem um bom site, mas não está tendo resultados, pode ser que você esteja cometendo alguns erros. Para ver se esse é o seu caso, confira nosso e-book 5 Erros Mais Comuns em <strong><a class=\"expresscurate_contentTags\" href=\"http://ncbrasil.com.br/tag/marketing-digital/\">#Marketing Digital</a></strong>. É gratuito e fácil de acessar!",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/criacao-de-sistes-sistemas-13.jpg",
     "thumb_id": ""
   },
   {
@@ -469,7 +469,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/criacao-de-sistes-sistemas-15.jpg",
     "thumb_id": ""
   },
   {
@@ -503,7 +503,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/criacao-de-sites-rj-50.jpg",
     "thumb_id": ""
   },
   {
@@ -514,7 +514,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/criacao-de-sistes-sistemas-1.jpg",
     "thumb_id": ""
   },
   {
@@ -548,7 +548,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/shutterstock_528070915-820x490-Copia-300x179-1.jpg",
     "thumb_id": ""
   },
   {
@@ -676,7 +676,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/redes-sociais-Copia.png",
     "thumb_id": ""
   },
   {
@@ -687,7 +687,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/Imagem-blog-landing-page-videos-sC3A3o-mais-chamativos.png",
     "thumb_id": ""
   },
   {
@@ -698,7 +698,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/4-dicas-para-criar-um-C3B3timo-logo-1.png",
     "thumb_id": ""
   },
   {
@@ -709,7 +709,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/Erros-ao-criar-sites-3.png",
     "thumb_id": ""
   },
   {
@@ -720,7 +720,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/img-mokups-dbs.jpg",
     "thumb_id": ""
   },
   {
@@ -731,7 +731,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/criacao-de-sistes-sistemas-14.jpg",
     "thumb_id": ""
   },
   {
@@ -742,7 +742,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/faca-a-criacao-de-site-anuncie-no-google-e-apareca-Copia.jpg",
     "thumb_id": ""
   },
   {
@@ -779,7 +779,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/Fotografia-cuidados-com-a-construC3A7C3A3o-da-sua-marca-na-internet-1.png",
     "thumb_id": ""
   },
   {
@@ -790,7 +790,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/Ecommerce-Aprenda-a-criar-uma-boa-loja-virtual-para-a-sua-empresa-1-150x150.png",
+    "image_url": "/news/Imagem-blog.png-landing-page.png",
     "thumb_id": ""
   },
   {
@@ -801,7 +801,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/loja-vritual-Copia.jpg",
     "thumb_id": ""
   },
   {
@@ -854,7 +854,7 @@ export const newsData: NewsPost[] = [
       "webdesign",
       "website"
     ],
-    "image_url": "/news/criacao-de-site-otimizado.png",
+    "image_url": "/news/quanto-custa-um-site-profissional-post-stavit-03.jpg",
     "thumb_id": ""
   },
   {
@@ -914,7 +914,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/Mcommerce.png",
+    "image_url": "/news/Cv81ZQhWAAAmoTo.webp",
     "thumb_id": ""
   },
   {
@@ -955,7 +955,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/Como-Criar-Uma-Loja-Virtual-Para-2015-01.webp",
     "thumb_id": ""
   },
   {
@@ -996,7 +996,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/identidade_visual.jpg",
     "thumb_id": ""
   },
   {
@@ -1007,7 +1007,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/imgempresas.jpg",
     "thumb_id": ""
   },
   {
@@ -1048,7 +1048,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url": "/news/web-designer-workplace-desktop.jpg",
+    "image_url": "/news/web-designer.jpg",
     "thumb_id": ""
   },
   {
@@ -1080,7 +1080,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/e-commerce-para-a-Black-Friday.jpg",
     "thumb_id": ""
   },
   {
@@ -1091,7 +1091,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/credit-card1.jpg",
     "thumb_id": ""
   },
   {
@@ -1102,7 +1102,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/stockvault-online-marketing-concept-marketeer-working-at-the-desk176902-scaled.jpg",
     "thumb_id": ""
   },
   {
@@ -1113,7 +1113,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/loja_virtual_ecommerce_fornecedores.jpg",
     "thumb_id": ""
   },
   {
@@ -1135,7 +1135,7 @@ export const newsData: NewsPost[] = [
       "CSM",
       "Sistema de Gerenciamento de Conteúdo"
     ],
-    "image_url": "/news/EFE890EF87E00402F983C6E387A56784-1024x342.jpg",
+    "image_url": "/news/content-management-system-in-mumbai.jpg",
     "thumb_id": ""
   },
   {
@@ -1169,7 +1169,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/blog-reinos-unidos-SEO-a-importância-de-ter-um-site-otimizado.jpg",
     "thumb_id": ""
   },
   {
@@ -1180,7 +1180,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/aplicativos.png",
     "thumb_id": ""
   },
   {
@@ -1191,7 +1191,7 @@ export const newsData: NewsPost[] = [
     "content": "<h1 class=\"mt25 mb25\">Por que eu preciso de um site?</h1>\n<p class=\"lead mt25\">A internet causou uma mudança total na forma como muitas pessoas fazem compras e procuram informação de que necessitam.</p>\n<p class=\"lead mt25\">Desde a criação da internet, a forma com que as pessoas fazem compras e buscam informações foi alterada e \"monopolizada\". Segundo pesquisas, em 2012 os consumidores gastaram cerca de $289.000.000.000 em compras online. Além disso, 80% das pessoas que usam a internet já fizeram pelo menos uma compra em sua vida.</p>\n<p class=\"lead mt25\">Com este poder de consumo muito alto, é de extrema importância, para qualquer empresa, independente do tamanho, ter uma presença no mundo virtual. Com a criação de um <strong>site,</strong> a empresa pode se manter competitivo dentro de seu ramo.</p>\n<p class=\"lead mt25\"><img class=\"aligncenter size-large wp-image-49962\" src=\"/news/conceito-cricao-site-1024x392.png\" alt=\"Site\" width=\"840\" height=\"322\" /></p>\n\n<h1 class=\"mt25 mb25\">Território</h1>\nTer um <strong>site</strong> ativo é importante, mesmo para as pequenas empresas, locais. De acordo com um estudo feito, 85% dos consumidores usam a Internet para encontrar uma empresa ou negócio local. Os motores de busca sempre buscarão resultados locais, sendo assim, ter um <strong>site</strong> é ainda mais importante se você tem um negócio local.\n<h1 class=\"mt25 mb25\">Alcance</h1>\nUma empresa com um <strong>site</strong> dá-lhe uma presença global instantânea e permite que o seu negócio para captar clientes de todo o mundo, aumentando assim a quantidade de clientes. Se você pode atender aos clientes a nível nacional ou global, um <strong>site</strong> reflete uma obrigação para as perspectivas que estão pesquisando o seu negócio.\n<h1>Comunicação instantânea</h1>\nUm <strong>site</strong> promove uma plataforma onde os clientes podem se comunicar instantaneamente com o vendedor.\n\nVendas futuras e novos produtos podem ser imediatamente anunciados no site da empresa, eliminando assim a necessidade de enviar flyers, panfletos e folhetos. Além de do fator de relacionar o  conteúdo e a integração dos meios de comunicação social com o site.\n\nA forma com que você gera conteúdo pode ajudar uma perspectiva, que você pode usar a mídia social para propagar imediatamente o conteúdo em milhares de potenciais clientes.\n<h1 class=\"mt25 mb25\">Melhor atendimento ao cliente</h1>\nGeralmente, uma empresa com um <strong>site</strong> irá incluir uma seção de contate-nos, dando aos seus clientes o acesso imediato a uma pergunta, orçamento, ou notificá-lo sobre um problema com seus produtos ou serviços. Isso lhe dá a capacidade de fornecer feedback imediato para o cliente e melhorar a sua taxa de satisfação de atendimento ao cliente.\n\nHá muitas maneiras criativas que você pode melhorar a experiência dos clientes, incluindo um simples formulário de contato para que eles possam contatá-lo com perguntas, um blog ou fórum que podem deixar perguntas ou até mesmo um bate-papo ao vivo para satisfação imediata.\n<h1 class=\"mt25 mb25\"><img class=\"wp-image-49961 size-medium alignleft\" src=\"/news/desenvolvimento-de-site-300x169.png\" alt=\"Site\" width=\"300\" height=\"169\" /></h1>\n<h1 class=\"mt25 mb25\"></h1>\n<h1 class=\"mt25 mb25\">Email@meusite.com.br</h1>\nSim, existem outras maneiras de fazer isso, mas por ter um <strong>site</strong> que você pode ter seu próprio e-mail: email@seusite.com.br.\nÉ mais profissional e mais fácil de lembrar.\n<h1 class=\"mt25 mb25\">24 horas por dia</h1>\nSeu <strong>site</strong> funciona 24/7 sem qualquer supervisão ou necessidade de fechar. Você pode sempre estar lá para os seus clientes.\n<h1 class=\"mt25 mb25\">Conveniência</h1>\nOs consumidores de hoje querem e anseiam por uma experiência de compras rápida e fácil, por isso que mais e mais pessoas estão se voltando para compras online.\n\nA manutenção de um site de negócios vai oferecer uma maneira mais conveniente de fazer compras para seus clientes. Hoje, comércio e informações é imediato.\n<div class=\"blog-three-mini\">\n<h1 class=\"mt25 mb25\">Marketing</h1>\nA internet abriu um novo mundo de marketing que não existia antes. Seu <strong>site</strong> pode atrair novos negócios usando toda uma série de marketing de baixo custo e técnicas.\n\n</div>\n&nbsp;\n<blockquote>\n<h1><img class=\"wp-image-49713 alignright\" src=\"/news/63071798@N06_r.jpg\" alt=\"NC Brasil - criação de sites\" width=\"204\" height=\"191\" />Precisando de um bom site?</h1>\n<h3>Entre em contato conosco da NC Brasil e faça um<a href=\"https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/\"> orçamento para criação de sites!</a></h3>\n</blockquote>",
     "categories": [],
     "tags": [],
-    "image_url": "/news/conceito-cricao-site-1024x392.png",
+    "image_url": "/news/e29323b61ad9b563d74bf77628c18e0a5ed823b4.jpg",
     "thumb_id": ""
   },
   {
@@ -1202,7 +1202,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/Venda-de-Carros-site.webp",
     "thumb_id": ""
   },
   {
@@ -1222,7 +1222,7 @@ export const newsData: NewsPost[] = [
       "criação de sites",
       "Tendência Web designer"
     ],
-    "image_url": "/news/37E04518-6F75-6141-799D-E7C0E2D53043.jpg",
+    "image_url": "/news/tendencias-design-sites.jpg",
     "thumb_id": ""
   },
   {
@@ -1233,7 +1233,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/Você-tem-um-bom-site-para-vender-seus-imóveis.png",
     "thumb_id": ""
   },
   {
@@ -1244,7 +1244,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/site1.jpg",
     "thumb_id": ""
   },
   {
@@ -1255,7 +1255,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/article-iae-para-entrenar-caballos-de-terceros-56681cf144a2a.webp",
     "thumb_id": ""
   },
   {
@@ -1271,7 +1271,7 @@ export const newsData: NewsPost[] = [
       "Sistemas Web"
     ],
     "tags": [],
-    "image_url": "/news/biblia.jpg",
+    "image_url": "/news/bibel_og_pc.jpg",
     "thumb_id": ""
   },
   {
@@ -1293,7 +1293,7 @@ export const newsData: NewsPost[] = [
       "marca",
       "público-alvo"
     ],
-    "image_url": "/news/download-1.png",
+    "image_url": "/news/branding-concept.jpg",
     "thumb_id": ""
   },
   {
@@ -1372,7 +1372,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/apps.png",
     "thumb_id": ""
   },
   {
@@ -1409,7 +1409,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url": "/news/Curso-Superior-de-Tecnologia-em-GestC3A3o-Financeira-E28093-Unisociesc-2-1024x683.jpg",
+    "image_url": "/news/imagem_topo-14-1170x429.png",
     "thumb_id": ""
   },
   {
@@ -1420,7 +1420,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/Marketing-Digital.webp",
     "thumb_id": ""
   },
   {
@@ -1452,7 +1452,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/melhores-celulares-chineses-baratos-2017.jpg",
     "thumb_id": ""
   },
   {
@@ -1463,7 +1463,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/797059169-patio-da-general-motors-na-cidade-de-gravatai-no-rio-grande-do-sul-carros-16-1024x576.jpeg",
     "thumb_id": ""
   },
   {
@@ -1521,7 +1521,7 @@ export const newsData: NewsPost[] = [
     "content": "<h1>O que é um <strong>bom site</strong>?</h1>\n<span class=\"sumo_twilighter_highlighted twilighter-7ec5ee3e\">Um <strong>bom site</strong> é um <strong>endereço virtual</strong> acessado através da internet em um navegador. Mas isso todo mundo já sabe!\n</span>\n\n<span class=\"sumo_twilighter_highlighted twilighter-7ec5ee3e\">Mas o que um <strong>bom site</strong>? Um <strong>bom site</strong> deve fazer bem o que é proposto, que é divulgar os serviços ou produtos da empresa. Muito mais que um \"catálogo eletrônico\", ele deve ser um canal de relacionamento 24 horas com</span> os clientes. Cada segmento de negócios possui características que definem o tipo de conteúdo que o cliente procura no <strong>site</strong>.\n\nTodo <strong>bom site</strong> possui alguns fatores primordiais e padrões, dentre eles; Legibilidade, navegabilidade, rapidez, manutenção constante, foco no cliente, interatividade, funcionalidade e um bom design.\n<h2>Tenha um <strong>bom site</strong> também! Leia nosso artigo e saiba mais!</h2>\n&nbsp;\n\n<img class=\"aligncenter size-large wp-image-50506\" src=\"/news/default-nc.jpg\" alt=\"Bom site\" width=\"840\" height=\"459\" />\n\n&nbsp;\n<h2>Qual a importância de um bom site para sua empresa?</h2>\nDentre todos os meios de comunicação, os <strong>sites</strong> são os meios mais usados em todo o mundo. Não só pelo seu caráter quase ilimitado, como também pela facilidade com que pode ser desenvolvido e disponibilizado para o mundo todo, um<strong> bom site</strong> alavanca negócios e amplia as paredes de sua empresa, seu programa ou seus serviços.\n\nDe longe, é a melhor forma de impulsionar o seu negócio é com a criação de um <strong>bom site profissional</strong>.\n\nA criação de<strong> sites</strong> gerenciadas por uma agência web profissional, comprometida e experiente, como a <strong>NC Brasil</strong>, pode ser desenvolvida com uma combinação rara no mercado! Uma mistura de custos inferiores, se comparado a outras mídias, com qualidade de atendimento, designer e acabamentos!\n\n&nbsp;\n\n<img class=\"aligncenter size-full wp-image-50513\" src=\"/news/prestanto-bom-atendimento-ao-cliente.jpg\" alt=\"bom site\" width=\"870\" height=\"418\" />\n<h2></h2>\n<h2>Site Profissional</h2>\nSem dúvidas, um <strong>bom site</strong> é um <strong>site profissional</strong>. Então, do contrário do que muitos pensam, ter um <strong>bom site</strong> é sim essencial para o sucesso de qualquer negócio, já que eles servem não apenas como um meio de divulgação do produto ou serviço, mas também cumprem a função de comunicar os valores inerentes à empresa.\n\nA partir do momento em que você tem uma “vitrine” institucional online, as expectativas em relação aos resultados se tornam mais otimistas. Um <strong>bom site</strong> será capazes de atrair tráfego e, consequentemente, contribuirão para o aumento das vendas.\n<h2><strong>Site responsivo</strong></h2>\nOutro o fator importante para um <strong>bom site</strong>, é ter um <strong><a href=\"https://www.ncbrasil.com.br/sua-empresa-precisa-ter-um-site-responsivo/\">site responsivo</a>. </strong>Este é o tipo de website que se adapta a diferentes tipos de telas, ou seja, ao acessá-lo de dispositivos mobile, como smartphones e tablets. Todas as informações são colocadas de outra forma, para o tamanho da tela sem perder o design ou sem que haja a necessidade de ampliar as informações.\n\nSua maior vantagem, sem dúvidas, é a <strong>praticidade! </strong>Além de estar dentro das tendências do ano, seu site estará dentro dos padrões do <a href=\"http://www.google.com.br\"><strong>Google</strong></a>!\n\n&nbsp;\n\n<img class=\"aligncenter size-full wp-image-50510\" src=\"/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg\" alt=\"bom site\" width=\"770\" height=\"370\" />\n<h2>Sua empresa precisa de um <strong>bom site</strong>!</h2>\nTer um bom site ativo é importante, mesmo para as pequenas empresas. De acordo com um estudo, cerca de 85% dos consumidores usam a internet para encontrar uma empresa ou um negócio local. Os motores de busca sempre estarão atrás de resultados próximos aos clientes, sendo assim, ter um site é de extrema importância para sua empresa, sendo pequena ou grande!\n<p style=\"margin: 13.5pt 0cm .0001pt 0cm;\">Um negócio com um bom site, pode passar a ter presença global! Capte clientes de todo o Brasil e do mundo!</p>\n\n<blockquote>\n<h1><img class=\"size-full wp-image-48868 alignleft\" src=\"/news/logo-criacao-de-sites-e1475583609553.jpg\" alt=\"Criação de sites\" width=\"150\" height=\"138\" />Deseja ter um bom site?</h1>\n<h2>Entre em contato conosco e faça um <a href=\"https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/\">orçamento!</a></h2>\n</blockquote>\n&nbsp;",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/criação-de-sites-responsivos-em-salvador-empresa.jpg",
     "thumb_id": ""
   },
   {
@@ -1549,7 +1549,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/site-alex-031.jpg",
     "thumb_id": ""
   },
   {
@@ -1560,7 +1560,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/software-web.png",
     "thumb_id": ""
   },
   {
@@ -1571,7 +1571,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/web-design-user-experience.jpg",
     "thumb_id": ""
   },
   {
@@ -1618,7 +1618,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital"
     ],
     "tags": [],
-    "image_url": "/news/market-e1510967540811.jpg",
+    "image_url": "/news/marke-e1510967111661-scaled.jpg",
     "thumb_id": ""
   },
   {
@@ -1699,7 +1699,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/3-1.webp",
     "thumb_id": ""
   },
   {
@@ -1734,7 +1734,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/como-economizar-dinheiro-com-cupons-de-desconto.png.png",
     "thumb_id": ""
   },
   {
@@ -1745,7 +1745,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/1941243.webp",
     "thumb_id": ""
   },
   {
@@ -1756,7 +1756,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/X-motivos-para-fazer-o-inventário-do-seu-estoque.jpg",
     "thumb_id": ""
   },
   {
@@ -1806,7 +1806,7 @@ export const newsData: NewsPost[] = [
     "content": "<h1>Entenda os Leilões Eletrônicos</h1>\n<h3>Primeiramente, saiba que todos e qualquer Leilões Eletrônicos são público.</h3>\nPodendo participar pessoas físicas maiores de 18 anos e jurídicas, ambas, de acordo com as normas e condições do <strong>Leilões Eletrônicos.</strong> O leilão é realizado em data, hora e local divulgados nas mídia eletrônica, seja site ou mídia social.\n\n<img class=\"aligncenter size-full wp-image-50737\" src=\"/news/leilao.jpg\" alt=\"Leilões Eletrônicos\" width=\"800\" height=\"445\" />\n<h2>Leilões Eletrônicos / Como Funciona?</h2>\nNo início de todos os sites, o leiloeiro deixará as condições do leilão descritas no catálogo. Em seguida, o usuário deve verificar quais serão os lotes anunciados um a um, que possuem fotos ilustrativas publicadas. Quando o lote for de seu interesse, entre na sala no horário aberto, e dispute pelo seu objeto de interesse. Vence a disputa pelo lote quem ofertar o maior lance, ou último lance, como no caso de <strong>Leilões Eletrônicos</strong> <strong>de Centavos</strong>.\n\n<img class=\"size-full wp-image-50739 alignleft\" src=\"/news/cronometro.png\" alt=\"Leilões Eletrônicos\" width=\"200\" height=\"167\" />\n<h2>Leilões Eletrônicos / Cronômetro</h2>\nNos<strong> Leilões Eletrônicos</strong> os cadastrados do site farão suas ofertas, no painel virtual, observando sempre o cronômetro para encerramento dos lances, acompanhando, desta forma, o leilão em tempo real.\n\n<strong>?Atenção:</strong> após o encerramento do cronômetro não haverá mais possibilidade de novos lances, salvo em condições especiais. Sempre que houver reforma de valor no lance, o cronômetro será reaberto por mais um minuto para lances.\n<h2>Leilões Eletrônicos / Categorias de Leilões Gerais</h2>\n<strong>Leilão Virtual</strong> – É denominado virtual todos os leilões onde somente os arrematantes cadastrados poderão participar, ofertar e arrematar os bens. (somente através do site)\n\n<strong>Leilão Online</strong> – É denominado online todos os leilões onde os cadastrados no site e os interessados que estiverem presentes no auditório do leiloeiro poderão participar. (site e salão de leilões)\n\n<strong>Leilão Presencial</strong> – É denominado presencial todos leilões onde somente os interessados que estiverem presentes no auditório poderão participar. (salão de leilões)\n\n&nbsp;\n\n<img class=\"aligncenter size-full wp-image-50738\" src=\"/news/pregao-eletronico-390x205.jpg\" alt=\"Leilões Eletrônicos\" width=\"390\" height=\"205\" />\n<h2>Leilões Eletrônicos / Termos comuns</h2>\n<strong>Leiloeiro:</strong> Os leiloeiros são as pessoas físicas proprietárias dos Leilões Eletrônicos. Eles são registrado na junta comercial do estado em que situa conforme o Decreto Nº 21.981 de 19 de Outubro de 1932. Realizam a comercialização dos bens que estão sendo leiloados e recebe uma comissão (geralmente de 5% do valor arrematado).\n\n<strong>Comitente:</strong> É o vendedor, ou seja, quem disponibilizou o bem para ir aos Leilões Eletrônicos. Por exemplo: bancos, financeira, seguradoras, prefeituras, empresas e até pessoas físicas.\n\n<strong>Arrematante:</strong> É o comprador, aquele que venceu a oferta por um item que foi a leilão.\n\n<strong>Edital</strong> <strong>de</strong> <strong>leilão:</strong> Documento oficial pelo qual se faz a publicação de todos os dados do leilão. É um item de leitura obrigatória para os interessados em participar das hastas.\n\nNeste documento são apresentadas todas as “regras do leilão”, como por exemplo: a lista dos bens a serem leiloados, estado de conservação, multas, relação de documentos necessários para um potencial comprador, data e hora do leilão, comissão do leiloeiro, procedimento para retirada do bem, prazo para entrega de documentos, etc.\n\n<strong>Lance Inicial:</strong> Lance inicial define como o primeiro lance dado por um interessado. Geralmente o seu valor é um pouco abaixo do valor de avaliação. Assim faz com que desperte o interesse nos participantes do leilão, gerando maior disputa e consequentemente aumentando o valor do bem leiloado.\n\n<strong>Lance Mínimo:</strong> valor mínimo ou valor de reserva: Estes são os termos utilizado para o menor lance em que o vendedor (comitente) aceita pelo lote. Quem define este valor são avaliadores do próprio vendedor.\n\nFiquem atentos nesses termos utilizados nos <strong>Leilões Eletrônicos</strong> (e demais) e boa sorte com os seus lances!\n\n&nbsp;\n<h2><img class=\"aligncenter size-large wp-image-50741\" src=\"/news/download-1024x689.jpg\" alt=\"Leilões Eletrônicos\" width=\"840\" height=\"565\" /></h2>\n<blockquote>\n<h2>Deseja ter um Sistema de Leilões Eletrônicos?</h2>\n<h1>Faça contato e um <a href=\"https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/\">orçamento no nosso site</a>!</h1>\n</blockquote>",
     "categories": [],
     "tags": [],
-    "image_url": "/news/leilao.jpg",
+    "image_url": "/news/download-scaled.jpg",
     "thumb_id": ""
   },
   {
@@ -1821,7 +1821,7 @@ export const newsData: NewsPost[] = [
       "Sistemas Web"
     ],
     "tags": [],
-    "image_url": "/news/PLANEJAR_ESTOQUE.jpg",
+    "image_url": "/news/ARTIGO-CONTROLE-DE-ESTOQUE-740x432.webp",
     "thumb_id": ""
   },
   {
@@ -1843,7 +1843,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/alamo.webp",
     "thumb_id": ""
   },
   {
@@ -1854,7 +1854,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/c4810d3a-0bd8-4486-bac4-dc744347392f.jpg",
     "thumb_id": ""
   },
   {
@@ -1886,7 +1886,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/email-marketing-automacao-pluga.png",
     "thumb_id": ""
   },
   {
@@ -1928,7 +1928,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/Site-Responsivo-Feira-de-Santana.webp",
     "thumb_id": ""
   },
   {
@@ -1939,7 +1939,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/mercado-de-criacao-de-aplicativos-mobile.jpg",
     "thumb_id": ""
   },
   {
@@ -1950,7 +1950,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/Learn-SEO-796x398.webp",
     "thumb_id": ""
   },
   {
@@ -1961,7 +1961,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/sistema-de-gestao-integrada-1-1024x576.jpg",
+    "image_url": "/news/sistema-de-gestao-integrada-1-e1530023148898.jpg",
     "thumb_id": ""
   },
   {
@@ -1998,7 +1998,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/imóveis.jpg.jpeg",
     "thumb_id": ""
   },
   {
@@ -2009,7 +2009,7 @@ export const newsData: NewsPost[] = [
     "content": "<h1>Sistema Gerador de Nota Fiscal</h1>\nA <strong>Nota Fiscal</strong> eletrônica (NF-e) é o documento de existência digital, emitido e armazenado eletronicamente, com o intuito de documentar circulação de mercadorias ou uma prestação de serviços. Logo, toda empresa precisa de um <strong>Sistema Gerador de Nota Fiscal.</strong>\n\nLeia mais sobre!\n\n<img class=\"aligncenter size-full wp-image-50867\" src=\"/news/1507046448_image2.jpg\" alt=\"Sistema Gerador de Nota Fiscal\" width=\"944\" height=\"715\" />\n<h2>Sistema Gerador de Nota Fiscal / Sobre</h2>\nA emissão de <strong>Nota Fiscal</strong> é um requisito obrigatório para grande parte dos empreendimentos, e para isso, é necessário obter um <strong>Sistema Gerador de Nota Fiscal.</strong>\n\nCom o uso desse software, o empresário pode aprimorar os resultados reduzindo o tempo gasto em operações do tipo, deixando tudo para a automação do <strong>Sistema Gerador de Nota Fiscal</strong>.\n\nA facilidade e a otimização desse sistema ajuda a organizar a empresa, segundo suas responsabilidades fiscais.\n\nGerando portanto, uma eficiência na equipe e na produtividade.\n\nLogo, ter um<strong> Sistema Gerador de Nota Fiscal</strong> de qualidade é essencial para suprir as necessidades básicas da empresa.\n\nTrazendo dessa forma uma organização e uma automatização instantânea!\n<h2></h2>\n<h2>Sistema Gerador de Nota Fiscal / Por que pagar por um?</h2>\nExiste inúmeras versões gratuitas disponíveis pela web, mas apenas um <strong>Sistema Gerador de Nota Fiscal</strong> pago pode, na maioria dos casos, ser a melhor decisão.\n\nJá que as versões gratuitas possuem uma série de limitações de uso, que afinal, à torna um peso, uma desvantagem.\n\nApenas os programas de emissão de nota fiscal pago e únicos, possuem funções adaptadas para a sua empresa. Pois além de oferecerem a emissão de notas, o software possui singularidades.\n\nUm design próprio e adaptável à sua empresa, suporte técnico especializado, interatividade e muitas outras funções projetadas para impulsionar o negócio do cliente.\n\n&nbsp;\n\n<img class=\"aligncenter size-full wp-image-50866\" src=\"/news/NOTA-FISCAL.png\" alt=\"Sistema Gerador de Nota Fiscal\" width=\"350\" height=\"200\" />\n<p class=\"col-md-8 col-md-offset-2 tc bl-spacing\">Emita todos os tipos de<strong> Notas Fiscais Eletrônicas</strong> com o<strong> Sistema Gerador de Notas Fiscais</strong> da <strong>NC Brasil</strong></p>\n\n<div class=\"col-md-12\">\n<div class=\"row\">\n<div class=\"col-md-6\">\n<div class=\"col-md-12 col-xs-12\">\n<div class=\"row\">\n<div class=\"vh-page__section--space\">\n<div class=\"col-md-12\">\n\nCom nosso software o empresário pode emitir notas fiscais com todos os dados armazenados na nuvem. Podendo assim imprimir, exportar, inutilizar e realizar carta de correção, além de enviar tudo pro e-mail sem perder conteúdo e em qualquer lugar!\n\nTotalmente integrado, nosso <strong>Sistema Gerador de Notas Fiscais</strong> relaciona outros departamentos, como o estoque, com as vendas e o financeiro.\n\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"row tl-spacing\">\n<div class=\"col-md-6\">\n<div class=\"col-md-12 col-xs-12\">\n<div class=\"row\">\n<div class=\"vh-page__section--space\">\n<div class=\"col-md-12\">\n<p class=\"vh-title__small mit-null bottom-small-spacing title-underline-hover\">Ainda não acabou! Continue vendo as Vantagens abaixo!</p>\n\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\nO <strong>Sistema Gerador de Notas Fiscais</strong> também colabora para a diminuição de gastos, trazendo praticidade e eficiência para sua empresa. Emitindo nota fiscal do consumidor e enviando por e-mail ou imprimindo na hora!\n<div></div>\n<div></div>\n<div><img class=\"aligncenter size-full wp-image-50869\" src=\"/news/nota-fiscal-certifique-eua.png\" alt=\"Sistema Gerador de Nota Fiscal\" width=\"256\" height=\"256\" /></div>\n<div class=\"col-md-12\">\n<div class=\"row tl-spacing\">\n<div class=\"col-md-6\">\n<div class=\"col-md-12 col-xs-12\">\n<div class=\"row\">\n<div></div>\n<div class=\"col-md-12\">Um bom sistema pago para emitir <strong>Nota Fiscal Eletrônica</strong> apresenta inúmeras funções. Estas, fuções automáticas que vão facilitar a vida do empresário e seus colaboradores. Isso porque você e seu time não vão precisar se preocupar com diversas tarefas manuais simples, mas que, por serem muito burocráticas, levam tempo!</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div></div>\n<div>Obtenha já o melhor <strong>Sistema Gerador de Nota Fiscal, </strong>na<strong> NC Brasil</strong>!</div>\n<div></div>\n<blockquote>\n<h2>Tenha já o seu Sistema Gerador de Nota Fiscal!</h2>\n<h1><a href=\"https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/\">Acesse agora nossa página de orçamento, clicando aqui!</a></h1>\n</blockquote>\n&nbsp;",
     "categories": [],
     "tags": [],
-    "image_url": "/news/1507046448_image2.jpg",
+    "image_url": "/news/Qual_emissor_de_nota_fiscal_devo_escolher_10_55_39.png",
     "thumb_id": ""
   },
   {
@@ -2020,7 +2020,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/confira-4-softwares-para-salao-de-beleza-que-voce-deveria-usar.jpeg",
     "thumb_id": ""
   },
   {
@@ -2058,7 +2058,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url": "/news/criacao-de-layout-para-sites.jpg",
+    "image_url": "/news/20130731174543_660_420.webp",
     "thumb_id": ""
   },
   {
@@ -2069,7 +2069,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "/news/default-nc.jpg",
+    "image_url": "/news/sistema-erp-sob-demanda-entenda-importancia-1000x642.jpg",
     "thumb_id": ""
   },
   {
@@ -2112,7 +2112,7 @@ export const newsData: NewsPost[] = [
     "content": "<h1>Software</h1>\nO que é um <strong>Software?</strong> Vantagens de um <strong>Software</strong> único? Como obter<strong>?</strong>\n\nEstas e outras perguntas serão as bases desse nosso artigo. Conheça mais sobre o empreendimento que vai mudar seu negócio para sempre!\n\n&nbsp;\n\n<img class=\"aligncenter size-large wp-image-50991\" src=\"/news/2014011315350452d407a830ca4-1024x427.jpeg\" alt=\"Software\" width=\"840\" height=\"350\" />\n<h2>O que é?</h2>\nSe buscar a frase <em>\"o que é um Software?\"</em> no <strong>Google,</strong> você encontrará essa seguinte definição:\n\n<em>\"Software é o conjunto de componentes lógicos de um computador ou sistema de processamento de dados; programa, rotina ou conjunto de instruções que controlam o funcionamento de um computador; suporte lógico.\"</em>\n\nIsso explica o que é em termos um pouco mais científicos. Mas dissertando o assunto, podemos dizer que um <strong>software</strong> (Traduzindo para o português: brando ou suave) é o conjunto dos componentes lógicos que formam uma aplicação, que é designada para realizar um procedimento único.\n\nVocê, caro leitor, lida com <strong>software</strong> o dia inteiro. Agora, por exemplo, você está utilizando um <strong>software</strong> de Navegação na Internet. Basicamente, estas aplicações são utilizadas no nosso dia a dia para facilitar um procedimento.\n\n<strong>Se você possui uma empresa, para agilizar e facilitar, deixando tudo mais eficiente, sua empresa necessita de um Software Único!</strong>\n\n&nbsp;\n\n<img class=\"aligncenter size-large wp-image-50989\" src=\"/news/desenvolvimento-de-softwares-1024x533.jpg\" alt=\"Software\" width=\"840\" height=\"437\" />\n<h2>Vantagens?</h2>\n<strong>1. Foco nas necessidades específicas da empresa</strong>\n\nA maior vantagem de um <strong>software personalizado,</strong> sem dúvidas, é a especificação. Obtendo um Software que seja adaptado para a sua empresa, este poderá facilitar e os procedimentos.\n\nDessa forma, o <strong>software</strong> que se adapta a Empresa e não o inverso, como é comum atualmente.\n\nA escolha por um <strong>sistena personalizado</strong> garante que todos os processos, as rotinas e até mesmo os diferenciais competitivos da empresa sejam incluídos no sistema, sem necessidade de alteração no modelo de negócio.\n\nO que, aliás, acontece muitas vezes com os sistemas de prateleira, pois, pela sua falta de flexibilização, as empresas precisam mudar seus processos para se adaptarem à ferramentas.\n\n<strong>2. Mobilidade</strong>\n\nOs funcionários podem utilizar o <strong>software integrado</strong> em qualquer lugar e a qualquer momento, bastando apenas que tenham acesso à internet. Um analista contábil, por exemplo, pode realizar a mesma função que faria se estivesse na sede, viajando a trabalho ou em casa.\n\n<strong>3. Menor incidência de erros</strong>\n\nQuando executamos tarefas manuais, é provável que erros aconteçam. Um documento perdido, um número a menos em uma tabela de controle ou o esquecimento de uma obrigação importante podem comprometer todo o planejamento estabelecido pela equipe.\n\nO mesmo acontece com a comunicação: ao solicitar uma informação sobre outro departamento, é possível que ela esteja errada ou defasada e, por consequência, a tarefa feita em cima desse erro não servirá para nada.\n\nConcentrando em um mesmo software toda a base de controle de dados, ocorrências como essa são evitadas. Além de assegurar um fluxo de trabalho constante — que possibilita realizar buscas de números, relatórios e contatos em um único local —, a precisão das informações dá estabilidade para a sua equipe desempenhar tarefas da melhor maneira possível.\n\n<strong>4. Redução de custos</strong>\n\nEssa é uma vantagem que pode ser decisiva, pois um <strong>software único</strong> diminui o tempo de realização de algumas tarefas e reduz a demanda de impressão — o que contribui com o meio ambiente e evita custos elevados com a compra de folhas, impressoras e tonéis de tinta.\n\nAlém disso, é possível economizar tanto na contratação de funcionários de TI quanto com custos de energia elétrica, visto que o centro de dados que hospeda o <strong>software integrado</strong> não fará parte da base da sua empresa, e sim do fornecedor contratado.\n\n&nbsp;\n\n<img class=\"aligncenter size-large wp-image-50990\" src=\"/news/wordpress-1600x800-e1514233849780-1024x576.jpg\" alt=\"Software\" width=\"840\" height=\"473\" />\n<h2>Como obter<strong>?</strong></h2>\nPara obter um <strong>Software,</strong> basta entrar em contato conosco!\n\nNós da <strong>NC Brasil</strong> possuímos uma equipe única e especializada na criação de <strong>Sistemas Personalizados</strong> para todo os tipos de empresas!\n<blockquote>\n<h1><a href=\"https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/\">Faça já um orçamento clicando aqui!</a></h1>\n</blockquote>\n&nbsp;",
     "categories": [],
     "tags": [],
-    "image_url": "/news/2014011315350452d407a830ca4-1024x427.jpeg",
+    "image_url": "/news/2014011315350452d407a830ca4.jpeg",
     "thumb_id": ""
   },
   {
