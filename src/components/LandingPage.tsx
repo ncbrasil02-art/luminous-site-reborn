@@ -170,15 +170,15 @@ export function LandingPage({
         <div className="absolute inset-0 -z-10 bg-black/40" />
         <div className="absolute inset-0 -z-20">
           <img 
-            src={newsData[0]?.image_url || "/og-main.jpg"} 
+            src={newsData[0]?.image_url || "/news/default-nc.jpg"} 
             alt={imageKeyword || eyebrow} 
             className="h-full w-full object-cover opacity-20"
             loading="eager"
             fetchPriority="high"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
-              if (!target.src.includes('default-nc.jpg')) {
-                target.src = '/default-nc.jpg';
+              if (!target.src.includes('/news/default-nc.jpg')) {
+                target.src = '/news/default-nc.jpg';
               }
             }}
           />
@@ -344,8 +344,8 @@ export function LandingPage({
                             className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                             onError={(e) => {
                               const target = e.target as HTMLImageElement;
-                              if (!target.src.includes('default-nc.jpg')) {
-                                target.src = '/default-nc.jpg';
+                              if (!target.src.includes('/news/default-nc.jpg')) {
+                                target.src = '/news/default-nc.jpg';
                               }
                             }}
                           />
@@ -389,8 +389,8 @@ export function LandingPage({
                           className="w-full h-auto object-cover"
                           onError={(e) => {
                             const target = e.target as HTMLImageElement;
-                            if (!target.src.includes('default-nc.jpg')) {
-                              target.src = '/default-nc.jpg';
+                            if (!target.src.includes('/news/default-nc.jpg')) {
+                              target.src = '/news/default-nc.jpg';
                             }
                           }}
                         />
@@ -694,8 +694,8 @@ export function LandingPage({
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
-                          if (!target.src.includes('default-nc.jpg')) {
-                            target.src = '/default-nc.jpg';
+                          if (!target.src.includes('/news/default-nc.jpg')) {
+                            target.src = '/news/default-nc.jpg';
                           }
                         }}
                       />
