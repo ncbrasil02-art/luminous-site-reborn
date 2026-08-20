@@ -164,10 +164,13 @@ export function SiteHeader() {
                 <AnimatePresence>
                   {activeSubmenu === item.label && (
                     <motion.div
-                      initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                      initial={{ opacity: 0, y: 15, scale: 0.95 }}
                       animate={{ opacity: 1, y: 0, scale: 1 }}
-                      exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                      transition={{ duration: 0.2, ease: "easeOut" }}
+                      exit={{ opacity: 0, y: 15, scale: 0.95 }}
+                      transition={{ 
+                        duration: 0.3, 
+                        ease: [0.23, 1, 0.32, 1] 
+                      }}
                       className="absolute left-0 top-full mt-2 w-80 overflow-hidden rounded-2xl border border-white/10 bg-card/95 p-2 shadow-2xl backdrop-blur-xl"
                     >
                       <div className="grid gap-1 max-h-[70vh] overflow-y-auto scrollbar-none">
