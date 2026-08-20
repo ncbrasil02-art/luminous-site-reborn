@@ -33,7 +33,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
     title: "Sistema de Leilão NC Brasil | Sistema para Leilões Online",
     description: "Plataforma de leilões online profissional para leiloeiros oficiais e tribunais. Sistema para leiloeiro com pregão eletrônico, transmissão ao vivo e split de comissões.",
     keywords: "sistema de leilão, plataforma de leilões, sistema para leiloeiro, plataforma de pregões online, sas leilão, site de leilão, sistema de leilão online, plataforma de leilão online, sistema online para leiloeiro",
-    canonical: URL,
+    canonical: "/sistema-de-leilao",
     h1: "Sistema de Leilão NC Brasil: Plataforma de Leilões Online e Pregões",
     breadcrumbs: [
       { label: "Home", to: `${SITE_URL}/` },

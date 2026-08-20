@@ -18,7 +18,7 @@ export const Route = createFileRoute('/noticias/tag/$tag')({
     title: `Tag: ${loaderData?.tag || 'Notícias'} · NC Brasil`,
     description: `Explore conteúdos marcados com a tag "${loaderData?.tag}" na revista digital da NC Brasil.`,
     keywords: `notícia, nc brasil, tag, ${loaderData?.tag}`,
-    canonical: `${SITE_URL}/noticias/tag/${loaderData?.tag}`,
+    canonical: `/noticias/tag/${loaderData?.tag}`,
   }),
   component: TagPage,
 })
