@@ -135,16 +135,16 @@ export const Route = createFileRoute("/sistema-de-leilao")({
           <PartnerCarousel 
             title="Sistema Homologado e Utilizado por Grandes Órgãos"
             logos={[
-              { name: "TJRS", url: (tjrsLogo as any).url, link: "https://www.tjrs.jus.br/" },
-              { name: "Caixa", url: (caixaLogo as any).url, link: "https://www.caixa.gov.br/" },
-              { name: "Detran-MS", url: (detranmsLogo as any).url, link: "https://www.detran.ms.gov.br/" },
-              { name: "Detran-SC", url: (detranscLogo as any).url, link: "https://www.detran.sc.gov.br/" },
-              { name: "Embaixada EUA", url: (embassyLogo as any).url },
-              { name: "Sicoob", url: (sicoobLogo as any).url, link: "https://www.sicoob.com.br/" },
-              { name: "Sicredi", url: (sicrediLogo as any).url, link: "https://www.sicredi.com.br/" },
-              { name: "Unicred", url: (unicredLogo as any).url, link: "https://www.unicred.com.br/" },
-              { name: "Uniprime", url: (uniprimeLogo as any).url, link: "https://www.uniprimebr.com.br/" },
-              { name: "Cresol", url: (cresolLogo as any).url, link: "https://cresol.com.br/" },
+              { name: "TJRS", url: "/__l5e/assets-v1/2e0a84c2-380f-4712-9511-2b7311d62af0/tjrs.webp", link: "https://www.tjrs.jus.br/" },
+              { name: "Caixa", url: "/__l5e/assets-v1/ced62ae3-afba-4a61-809f-97d79ab23244/caixa.webp", link: "https://www.caixa.gov.br/" },
+              { name: "Detran-MS", url: "/__l5e/assets-v1/451608d1-5be9-4ab4-aae6-17f4c33598a6/detranms.webp", link: "https://www.detran.ms.gov.br/" },
+              { name: "Detran-SC", url: "/__l5e/assets-v1/fd087bbc-be89-48a1-924c-d4da50604d8a/detransc.webp", link: "https://www.detran.sc.gov.br/" },
+              { name: "Embaixada EUA", url: "/__l5e/assets-v1/8e37ba94-62ba-49a8-8ec5-ea6eb02e0867/embaixada_usa.webp" },
+              { name: "Sicoob", url: "/__l5e/assets-v1/c8817572-891e-4a1d-b994-28f556886fc1/sicoob.webp", link: "https://www.sicoob.com.br/" },
+              { name: "Sicredi", url: "/__l5e/assets-v1/f4c7db95-719b-440c-8cf4-f0ece8706ef6/sicredi.webp", link: "https://www.sicredi.com.br/" },
+              { name: "Unicred", url: "/__l5e/assets-v1/15c3b6cb-8e09-4bbd-a776-600ffa7a4c1d/unicred.webp", link: "https://www.unicred.com.br/" },
+              { name: "Uniprime", url: "/__l5e/assets-v1/4804342e-1788-4a01-bf5a-c3a43ccee735/uniprime.webp", link: "https://www.uniprimebr.com.br/" },
+              { name: "Cresol", url: "/__l5e/assets-v1/09b7bbe8-553b-4d13-82b7-42878ac830fa/cresol.webp", link: "https://cresol.com.br/" },
             ]}
           />
         </div>
