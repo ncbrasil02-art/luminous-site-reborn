@@ -89,35 +89,36 @@ export function SystemsCarousel() {
                 </div>
 
 
-                <div className="relative flex h-full flex-col p-8">
-                  <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/20 text-primary ring-1 ring-primary/30 backdrop-blur">
-                    <system.icon className="h-6 w-6" />
+                <div className="relative flex h-full flex-col p-10">
+                  <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-surface-elevated text-primary-glow ring-1 ring-white/10 backdrop-blur transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:glow-sm">
+                    <system.icon className="h-8 w-8" />
                   </div>
 
-                  <h3 className="font-display text-2xl font-bold text-white">{system.title}</h3>
-                  <p className="mt-3 text-sm text-muted-foreground line-clamp-2">
+                  <h3 className="font-display text-2xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{system.title}</h3>
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors line-clamp-3">
                     {system.description}
                   </p>
 
-                  <div className="mt-6 space-y-2">
+                  <div className="mt-8 space-y-3">
                     {system.features.map((feature) => (
-                      <div key={feature} className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-wider text-primary/80">
-                        <Code2 className="h-3 w-3" />
+                      <div key={feature} className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-primary-glow/60">
+                        <div className="h-1 w-1 rounded-full bg-primary-glow" />
                         {feature}
                       </div>
                     ))}
                   </div>
 
-                  <div className="mt-auto">
+                  <div className="mt-auto pt-8">
                     <Link
                       to={system.to}
-                      className="inline-flex w-full items-center justify-between rounded-xl bg-surface/60 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary hover:text-primary-foreground"
+                      className="group/btn relative flex w-full items-center justify-between overflow-hidden rounded-2xl bg-white/5 px-6 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-primary hover:glow-sm"
                     >
-                      Explorar Solução
-                      <ChevronRight className="h-4 w-4" />
+                      <span className="relative z-10">Explorar Solução</span>
+                      <ChevronRight className="relative z-10 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                     </Link>
                   </div>
                 </div>
+
               </motion.div>
             </div>
           ))}
