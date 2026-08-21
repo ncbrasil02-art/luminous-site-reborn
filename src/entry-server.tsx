@@ -28,6 +28,8 @@ export async function render(url: string) {
     
     // IMPORTANT: Helmet data must be accessed AFTER renderToString
     const { helmet } = helmetContext;
+    console.log(`[SSR] Rendered ${url}, helmet title: ${helmet?.title?.toString() || 'none'}`);
+
     
     let head = '';
     if (helmet) {
