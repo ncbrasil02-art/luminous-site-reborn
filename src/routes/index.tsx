@@ -401,20 +401,20 @@ function HomePage() {
 
 
       {/* PROCESSO ========================================================= */}
-      <section className="relative overflow-hidden border-y border-border bg-surface py-24 md:py-32">
-        <div className="absolute inset-0 grid-pattern opacity-40 pointer-events-none" aria-hidden="true" />
-        <div className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
+      <section className="relative overflow-hidden border-y border-white/5 bg-navy-950/40 py-24 md:py-40">
+        <div className="absolute inset-0 bg-mesh opacity-20 pointer-events-none" aria-hidden="true" />
+        <div className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/40 to-transparent shadow-[0_0_20px_rgba(49,91,255,0.4)]" />
         <div className="relative mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Como trabalhamos"
+            eyebrow="Workflow Cinematográfico"
             title={
               <>
-                Um processo <span className="text-gradient">cinematográfico</span>, do briefing ao
-                lançamento
+                Da Concepção à <span className="text-gradient">Soberania Digital</span>
               </>
             }
-            description="Cada cena revela uma etapa: estratégia, design, engenharia e crescimento — entregamos com previsibilidade."
+            description="Cada etapa é uma cena meticulosamente planejada para garantir que seu projeto seja memorável e altamente lucrativo."
           />
+
 
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, i) => (
