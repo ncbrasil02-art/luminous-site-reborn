@@ -14,7 +14,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/servicos/facebook-ads")({
   head: () => buildLPMeta({
-    title: "Gestão de Facebook e Instagram Ads | Meta Ads com Alta Conversão",
+    title: "Gestão de Meta Ads | Facebook e Instagram com Alta Performance",
     description: "Gestão profissional de Meta Ads (Facebook e Instagram). Campanhas com CBO, Advantage+, Lookalikes e criativos otimizados para conversão.",
     keywords: "facebook ads, instagram ads, meta ads, gestão de facebook ads, tráfego pago meta, agência facebook ads",
     canonical: URL,

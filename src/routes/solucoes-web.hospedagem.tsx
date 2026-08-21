@@ -14,7 +14,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/hospedagem")({
   head: () => buildLPMeta({
-    title: "Hospedagem de Sites e Sistemas | Servidores Dedicados e Cloud no Brasil",
+    title: "Hospedagem Profissional de Sites | Servidores Dedicados e Cloud",
     description: "Hospedagem de sites com servidores dedicados, planos cloud e consultoria especializada. Infraestrutura total no Brasil para máxima performance e segurança.",
     keywords: "hospedagem de sites, servidor dedicado brasil, planos cloud, consultoria servidores, hospedagem sistemas, infraestrutura web",
     canonical: URL,

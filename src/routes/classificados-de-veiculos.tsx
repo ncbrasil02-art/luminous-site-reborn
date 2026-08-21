@@ -24,7 +24,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/classificados-de-veiculos")({
   head: () => buildLPMeta({
-    title: "Classificados de Veículos | Plataforma Profissional Estilo WebMotors",
+    title: "Sistema de Classificados de Veículos | Portal Automotivo Estilo WebMotors",
     description: "NcBrasil: Portal de anúncios de veículos completo com Tabela FIPE, financiamento e apps. O sistema ideal para revenda de autos e marketplaces.",
     keywords: "classificado de veículos, sistema para revenda de autos, portal de anúncios de veículos, plataforma profissional estilo WebMotors, sistema para gerenciamento de vendas de veículos, portal de anúncios de autos",
     canonical: URL,

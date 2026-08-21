@@ -15,7 +15,7 @@ const URL = `${SITE_URL}/nossos-sistemas`;
 
 export const Route = createFileRoute("/nossos-sistemas")({
   head: () => buildLPMeta({
-    title: "Nossos Sistemas | Plataformas Web Sob Demanda — NC Brasil",
+    title: "Nossos Sistemas Web | Plataformas de Leilão, Rifas e Classificados",
     description: "Catálogo de sistemas web prontos e sob demanda da NC Brasil: leilão, cassino, rifas, cupons, classificados de veículos, marketplace e muito mais.",
     keywords: "sistemas web, plataformas online, sistema de leilão, cassino online, rifas online, classificados de veículos, cupons, marketplace",
     canonical: URL,

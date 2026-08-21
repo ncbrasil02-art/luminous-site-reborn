@@ -14,7 +14,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/seo-google")({
   head: () => buildLPMeta({
-    title: "SEO Google | Ranqueamento de Palavras-Chave de Curta e Longa Cauda",
+    title: "SEO Google | Ranqueamento de Palavras-Chave e Autoridade Digital",
     description: "Atuamos rankeando qualquer empresa em palavras-chaves de curta e longa cauda, maximizando os resultados orgânicos nos principais buscadores como o Google.",
     keywords: "seo google, rankeamento google, palavras-chave curta cauda, palavras-chave longa cauda, otimização buscadores, autoridade digital",
     canonical: URL,

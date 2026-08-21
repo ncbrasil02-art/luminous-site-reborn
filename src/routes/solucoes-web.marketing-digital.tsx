@@ -14,7 +14,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/marketing-digital")({
   head: () => buildLPMeta({
-    title: "Marketing Digital | Criação de Posts e Vídeos Virais nas Redes Sociais",
+    title: "Marketing Digital Estratégico | Vídeos Virais e Gestão de Ads",
     description: "Gestão completa de marketing digital: criação de posts e vídeos virais para TikTok, Facebook e Instagram com campanhas profissionais de alta performance.",
     keywords: "marketing digital, posts virais, vídeos virais, gestão redes sociais, marketing tiktok, campanhas facebook instagram",
     canonical: URL,

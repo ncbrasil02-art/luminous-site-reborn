@@ -26,7 +26,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/sistema-de-leilao-de-centavos")({
   head: () => buildLPMeta({
-    title: "Leilão de Centavos | Plataforma Premium Penny Auction",
+    title: "Sistema de Leilão de Centavos Profissional | Plataforma Penny Auction",
     description: "NcBrasil: Crie seu site de leilão de centavos com lances em tempo real, timer de alta precisão e Pix. A melhor plataforma de entretenimento do Brasil.",
     keywords: "sistema leilão de centavos, plataforma de leilão de centavos, site de leilão de centavos, software leilão centavos, script leilão de centavos, penny auction brasil, sistema de lances online",
     canonical: "/sistema-de-leilao-de-centavos",

@@ -30,7 +30,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
   head: () => buildLPMeta({
-    title: "Sistema para Revenda de Carros e Portal de Anúncios de Veículos",
+    title: "Sistema para Revendedor de Carros Profissional | Portal Anúncio de Veículos",
     description: "NcBrasil: Plataforma completa de classificado de veículos PHP, sistema portal de veículos e revenda de autos com Tabela FIPE e apps nativos.",
     keywords: "classificado de veículos PHP, sistema portal de veículos, plataforma de anúncio de veículos, sistema revenda de autos, sistema para revendedor de carros, portal anúncio de veículos",
     canonical: URL,
