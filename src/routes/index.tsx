@@ -1,5 +1,5 @@
 /**
-Gerar um sitemap.xml automático com todas as LPs do submenu de serviços e páginas relacionadas.
+Agora vamos reformular todos os cards da página inicial da parte de sistemas inclusive os sistemas tem que vir à frente do serviço.. preciso de algum prêmio que chama atenção com design profissional chamando atenção para cada plataforma dando ênfase principalmente ao sistema de leilões
 */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
