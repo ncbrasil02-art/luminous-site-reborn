@@ -11,13 +11,13 @@ import { PartnerCarousel } from "@/components/PartnerCarousel";
 
 // Image Assets - Optimized for external hosting
 const rifasLogoUrl = "/logo.jpg";
-const rifasShowcase1Url = "/img-sistema-de-rifas/showcase-01.png";
-const rifasShowcase2Url = "/img-sistema-de-rifas/showcase-02.webp";
-const rifasShowcase3Url = "/img-sistema-de-rifas/showcase-01.png"; // Fallback to showcase 01 if others missing
-const rifasShowcase4Url = "/img-sistema-de-rifas/showcase-02.webp";
-const painelConfigUrl = "/img-sistema-de-leilao/configuracoes.png"; 
-const painelDashboardUrl = "/img-sistema-de-leilao/dashboard-premium.png";
-const painelPagamentosUrl = "/img-sistema-de-leilao/painel-online.png";
+const rifasShowcase1Url = "/img-sistema-de-rifas/rifa-1.png";
+const rifasShowcase2Url = "/img-sistema-de-rifas/rifa-2.png";
+const rifasShowcase3Url = "/img-sistema-de-rifas/rifa-3.png";
+const rifasShowcase4Url = "/img-sistema-de-rifas/rifa-4.png";
+const painelConfigUrl = "/img-sistema-de-rifas/rifa-5.png";
+const painelDashboardUrl = "/img-sistema-de-rifas/rifa-6.png";
+const painelPagamentosUrl = "/img-sistema-de-rifas/rifa-7.png";
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
@@ -121,7 +121,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           "**Cotas ilimitadas** — de 100 a 10 milhões por campanha",
           "**Módulo de afiliados** com comissão automática",
         ],
-        image: rifasLogoUrl
+        image: "/img-sistema-de-rifas/rifa-vitrine.png"
       }}
       testimonials={rifasTestimonials}
       benefits={[
