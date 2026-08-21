@@ -6,11 +6,14 @@ import { getRouter } from "./router";
 const router = getRouter();
 
 const rootElement = document.getElementById("root")!;
-if (!rootElement.innerHTML) {
-  const root = ReactDOM.createRoot(rootElement);
-  root.render(
-    <StrictMode>
-      <RouterProvider router={router} />
-    </StrictMode>,
-  );
+const app = (
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>
+);
+
+if (rootElement.innerHTML.trim() === "") {
+  ReactDOM.createRoot(rootElement).render(app);
+} else {
+  ReactDOM.hydrateRoot(rootElement, app);
 }
