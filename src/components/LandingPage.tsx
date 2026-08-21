@@ -80,6 +80,7 @@ export type LandingPageProps = {
   showParallaxshowcase?: boolean;
   showcaseImages?: string[];
   extraContentBeforeProblem?: React.ReactNode;
+  finalParallaxCta?: { text: string; image: string };
 };
 
 
@@ -157,6 +158,7 @@ export function LandingPage({
   showParallaxshowcase = false,
   showcaseImages = [],
   extraContentBeforeProblem,
+  finalParallaxCta,
 }: LandingPageProps) {
 
   const [expandedImages, setExpandedImages] = useState<Record<number, boolean>>({});
@@ -370,28 +372,6 @@ export function LandingPage({
                         </ul>
                       )}
                     </div>
-                    {solution.image && (
-                      <div className="relative mt-8 lg:mt-0 lg:w-1/2">
-                        <div className="relative rounded-2xl border border-primary/30 overflow-hidden glow-sm group">
-                          <img 
-                            src={solution.image} 
-                            alt={imageKeyword || "Solução Premium"} 
-                            className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
-                            loading="lazy"
-                            onError={(e) => {
-                              const target = e.target as HTMLImageElement;
-                              target.onerror = null;
-                              target.src = 'https://www.ncbrasil.com.br/logo.jpg';
-                            }}
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100 flex items-end p-4">
-                            <span className="text-xs font-medium text-white/90 uppercase tracking-widest flex items-center gap-2">
-                              <Sparkles className="h-3 w-3" /> Sistema Premium
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    )}
                   </div>
                 </div>
               </Reveal>
@@ -753,6 +733,35 @@ export function LandingPage({
                     ))}
                   </tbody>
                 </table>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      )}
+      
+      {/* FINAL PARALLAX CTA */}
+      {finalParallaxCta && (
+        <section className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-fixed bg-center bg-cover"
+            style={{ backgroundImage: `url(${finalParallaxCta.image})` }}
+          />
+          <div className="absolute inset-0 bg-black/70 backdrop-blur-[2px]" />
+          <div className="relative h-full flex items-center justify-center text-center px-4">
+            <Reveal>
+              <div className="max-w-4xl">
+                <h2 className="font-display text-4xl md:text-6xl font-bold text-white tracking-tight leading-tight">
+                  {renderBold(finalParallaxCta.text)}
+                </h2>
+                <div className="mt-8 flex justify-center">
+                  <Link 
+                    to="/orcamento" 
+                    className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-10 py-4 text-base font-bold text-primary-foreground glow-md hover:scale-105 transition-transform"
+                  >
+                    Falar com especialista
+                    <ArrowRight className="h-5 w-5" />
+                  </Link>
+                </div>
               </div>
             </Reveal>
           </div>

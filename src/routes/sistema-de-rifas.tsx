@@ -121,7 +121,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           "**Cotas ilimitadas** — de 100 a 10 milhões por campanha",
           "**Módulo de afiliados** com comissão automática",
         ],
-        image: rifasShowcase1Url
+        
       }}
       testimonials={rifasTestimonials}
       benefits={[
@@ -262,6 +262,10 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         ],
       }}
       faq={lpFaq}
+      finalParallaxCta={{
+        text: "**Sistema para Rifas Profissionais**",
+        image: "/img-sistema-de-rifas/rifa-vitrine.png"
+      }}
       relatedNewsTags={["rifas", "sistemas", "vendas", "tecnologia"]}
     />
   ),
