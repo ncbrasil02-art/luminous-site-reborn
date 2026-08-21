@@ -1,4 +1,6 @@
-/** Está cansado? Todos os links que você me enviou de serviços. estão dando página 404.. conforme falei você não fez o conteúdo dessas páginas.. por favor não mexa em nada das páginas do sistemas é de peixe estamos falando apenas do serviços menu de serviços */
+/**
+https://sistema-leilao-plataformas.lovable.app/solucoes-web/landing-pages https://sistema-leilao-plataformas.lovable.app/solucoes-web/desenvolvimento-de-sites  https://sistema-leilao-plataformas.lovable.app/solucoes-web/landing-pages https://sistema-leilao-plataformas.lovable.app/solucoes-web/marketing-digital
+*/
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
