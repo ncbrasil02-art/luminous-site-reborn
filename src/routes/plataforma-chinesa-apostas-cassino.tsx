@@ -6,7 +6,7 @@ import {
   Trophy, Users, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
-import { testimonialsData } from "@/lib/testimonials.data";
+import { cassinoTestimonials } from "@/lib/testimonials.data";
 
 // Import assets
 import mainAsset from "@/assets/plataforma-cassino-main.png.asset.json";
