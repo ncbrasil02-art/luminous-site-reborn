@@ -387,58 +387,64 @@ export function LandingPage({
       )}
 
       {/* PARALLAX SHOWCASE */}
-      {showParallaxshowcase && showcaseImages.length > 0 && (
+      {((showParallaxshowcase && showcaseImages.length > 0) || (showcase && showcase.length > 0)) && (
         <section className="relative overflow-hidden py-24 md:py-32">
           <div className="mx-auto max-w-7xl px-4 md:px-6">
             <SectionHeading
-              eyebrow={pathname.includes('rifas') ? "Script de Rifas" : "Plataforma de Leilão"}
+              eyebrow={pathname.includes('rifas') ? "Script de Rifas" : pathname.includes('leilao') ? "Plataforma de Leilão" : "Showcase do Sistema"}
               title={<>Design <span className="text-gradient">Premium</span> & Performance</>}
               description={pathname.includes('rifas') 
                 ? "Conheça a interface moderna e intuitiva da nossa plataforma de ações online." 
-                : "Explore a interface sofisticada e os recursos exclusivos da nossa plataforma de leilões."}
+                : pathname.includes('leilao')
+                  ? "Explore a interface sofisticada e os recursos exclusivos da nossa plataforma de leilões."
+                  : "Uma experiência de usuário fluida e profissional em todos os dispositivos."}
             />
             
             <div className="mt-20 space-y-16">
-              {showcaseImages.map((img, i) => (
-                <Reveal key={img} delay={i * 0.1}>
+              {(showcase.length > 0 ? showcase : showcaseImages.map((img, i) => ({ 
+                image: img,
+                title: pathname.includes('rifas') ? (
+                  i === 0 ? "Vitrine Profissional" :
+                  i === 1 ? "Checkout Otimizado" :
+                  i === 2 ? "Seleção de Cotas" :
+                  i === 3 ? "Dashboard Administrativo" :
+                  i === 4 ? "Configurações do Sistema" :
+                  i === 5 ? "Painel de Vendas" :
+                  "Gestão de Pagamentos"
+                ) : (
+                  i === 0 ? "Página Inicial Premium" :
+                  i === 1 ? "Vitrine de Lotes" :
+                  i === 2 ? "Painel Administrativo" :
+                  i === 3 ? "Gestão de Edital" :
+                  i === 4 ? "Cards de Destaque" :
+                  "Pregão Online"
+                ),
+                desc: pathname.includes('rifas') ? (
+                  i === 0 ? "Página de vendas atraente focada em conversão de cotas." :
+                  i === 1 ? "Fluxo de pagamento simplificado com Pix instantâneo." :
+                  i === 2 ? "Interface intuitiva para escolha de números da sorte." :
+                  i === 3 ? "Área exclusiva para o administrador gerenciar o sistema." :
+                  i === 4 ? "Controle total sobre sorteios e regulamentos." :
+                  i === 5 ? "Visão estratégica do faturamento em tempo real." :
+                  "Integração segura com múltiplos gateways de pagamento."
+                ) : (
+                  i === 0 ? "Design cinematográfico para atrair os melhores arrematantes." :
+                  i === 1 ? "Apresentação detalhada de bens com galeria de alta qualidade." :
+                  i === 2 ? "Controle total do leiloeiro sobre lances e pregões." :
+                  i === 3 ? "Automação completa de documentos e editais judiciais." :
+                  i === 4 ? "Destaque visual para lotes especiais e urgentes." :
+                  "Transmissão em tempo real com zero delay para lances competitivos."
+                )
+              }))).map((item, i) => (
+                <Reveal key={item.image + i} delay={i * 0.1}>
                   <div className="group relative flex flex-col overflow-hidden rounded-[2.5rem] border border-border bg-card/20 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/40 hover:glow-sm">
                     {/* Header/Caption */}
                     <div className="flex flex-col gap-2 p-8 text-center md:p-10">
                       <h3 className="font-display text-2xl font-bold md:text-3xl">
-                        {pathname.includes('rifas') ? (
-                          i === 0 ? "Vitrine Profissional" :
-                          i === 1 ? "Checkout Otimizado" :
-                          i === 2 ? "Seleção de Cotas" :
-                          i === 3 ? "Dashboard Administrativo" :
-                          i === 4 ? "Configurações do Sistema" :
-                          i === 5 ? "Painel de Vendas" :
-                          "Gestão de Pagamentos"
-                        ) : (
-                          i === 0 ? "Página Inicial Premium" :
-                          i === 1 ? "Vitrine de Lotes" :
-                          i === 2 ? "Painel Administrativo" :
-                          i === 3 ? "Gestão de Edital" :
-                          i === 4 ? "Cards de Destaque" :
-                          "Pregão Online"
-                        )}
+                        {item.title}
                       </h3>
                       <p className="mx-auto max-w-2xl text-sm text-muted-foreground">
-                        {pathname.includes('rifas') ? (
-                          i === 0 ? "Página de vendas atraente focada em conversão de cotas." :
-                          i === 1 ? "Fluxo de pagamento simplificado com Pix instantâneo." :
-                          i === 2 ? "Interface intuitiva para escolha de números da sorte." :
-                          i === 3 ? "Área exclusiva para o administrador gerenciar o sistema." :
-                          i === 4 ? "Controle total sobre sorteios e regulamentos." :
-                          i === 5 ? "Visão estratégica do faturamento em tempo real." :
-                          "Integração segura com múltiplos gateways de pagamento."
-                        ) : (
-                          i === 0 ? "Design cinematográfico para atrair os melhores arrematantes." :
-                          i === 1 ? "Apresentação detalhada de bens com galeria de alta qualidade." :
-                          i === 2 ? "Controle total do leiloeiro sobre lances e pregões." :
-                          i === 3 ? "Automação completa de documentos e editais judiciais." :
-                          i === 4 ? "Destaque visual para lotes especiais e urgentes." :
-                          "Transmissão em tempo real com zero delay para lances competitivos."
-                        )}
+                        {item.desc}
                       </p>
                     </div>
 
