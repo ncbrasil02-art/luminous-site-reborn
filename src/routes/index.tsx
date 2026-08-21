@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight,
   Code2,
@@ -13,7 +13,14 @@ import {
   Sparkles,
   Trophy,
   Zap,
+  ChevronRight,
+  ShieldCheck,
+  Globe,
+  Database,
+  Search,
 } from "lucide-react";
+import { FloatingObject } from "@/components/FloatingObject";
+
 
 import { Reveal, SectionHeading } from "@/components/Section";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
