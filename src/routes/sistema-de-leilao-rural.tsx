@@ -26,9 +26,9 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
   head: () => buildLPMeta({
     title: "Sistema de Leilão Rural Online | Gado, Cavalos, Fazendas — NC Brasil",
     description: "Plataforma completa para leilões rurais e agropecuários: bovinos, equinos, propriedades, maquinário. Transmissão HD, GTA automática, pesagem integrada, Pix e conta gráfica.",
-    keywords: "sistema leilão rural, leilão de gado online, leilão de cavalos, plataforma leilão agropecuário, software leiloeiro rural, sistema leilão pecuária, leilão bovinos online",
+    keywords: "sistema leilão rural, leilão de gado online, leilão de cavalos, plataforma leilão agropecuário, software leiloeiro rural, sistema leilão pecuária, leilão bovinos online, sistema para leilões rurais, plataforma de leilão cavalos, sistema de leilão ao vivo de boi, sistema de leilões para animais, sistema rural de leilões, melhor plataforma de leilão rural, sistema para fazendas e criatórios, plataforma de gerenciamento de leilões com transmissão ao vivo dos animais",
     canonical: URL,
-    h1: "Plataforma para Leilões Rurais e Agropecuários",
+    h1: "Sistema para Leilões Rurais e Plataforma de Leilão Cavalos",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
@@ -41,8 +41,8 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-leilao-rural", label: "Leilão Rural" }]}
       eyebrow="Agronegócio · Pecuária · Genética"
-      h1={<>Plataforma completa para <span className="text-gradient">Leilões Rurais e Agropecuários</span></>}
-      intro={<>A NC Brasil desenvolve o <strong className="text-foreground">software mais avançado do agronegócio brasileiro</strong> para leiloeiros rurais, cabanhas e associações de raça. Opere leilões de <strong className="text-foreground">bovinos, equinos, ovinos, propriedades e maquinário</strong> com transmissão HD, emissão automática de GTA, pesagem integrada e pagamento via Pix — tudo em uma plataforma proprietária, sem mensalidade abusiva.</>}
+      h1={<>Sistema para <span className="text-gradient">Leilões Rurais</span> e Plataforma de <span className="text-gradient">Leilão Cavalos</span></>}
+      intro={<>A NC Brasil desenvolve o <strong>sistema para leilões rurais</strong> mais avançado do agronegócio brasileiro para leiloeiros, cabanhas e associações de raça. Opere com uma <strong>plataforma de leilão cavalos</strong>, bovinos, ovinos e maquinário com transmissão HD, emissão automática de GTA, pesagem integrada e o melhor <strong>sistema de leilão ao vivo de boi</strong>.</>}
       stats={[
         { value: "200+", label: "Leilões rurais realizados" },
         { value: "1.2M", label: "Cabeças cadastradas" },
@@ -63,8 +63,8 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
         ],
       }}
       solution={{
-        title: <>A resposta é uma <span className="text-gradient">plataforma proprietária</span> feita para o campo</>,
-        desc: <>Desde 2007 a NC Brasil constrói sistemas de leilão para <strong className="text-foreground">martelos oficiais, cabanhas e associações</strong>. Nosso software rural nasceu no tatersal — foi projetado com pregoeiros, veterinários e produtores para eliminar retrabalho, garantir conformidade sanitária e maximizar a arrematação por lote.</>,
+        title: <>A resposta é um <span className="text-gradient">sistema de leilões para animais</span> feito para o campo</>,
+        desc: <>Desde 2007 a NC Brasil constrói o <strong>sistema rural de leilões</strong> para martelos oficiais, cabanhas e associações. Nosso software foi projetado com pregoeiros e produtores para ser a <strong>melhor plataforma de leilão rural</strong>, eliminando retrabalho e maximizando a arrematação por lote.</>,
         highlights: [
           "**Licença perpétua** ou SaaS com taxa por lote — você escolhe",
           "**GTA automática** integrada às Defesas Agropecuárias",
@@ -148,8 +148,8 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
       }}
       testimonials={testimonialsData.slice(5, 8)}
       faq={lpFaq}
-      finalCtaTitle={<>Pronto para operar o leilão rural mais <span className="text-gradient">tecnológico do agronegócio</span>?</>}
-      finalCtaDesc={<>Fale com nossa equipe especializada em agro. Enviamos <strong className="text-foreground">demonstração ao vivo com dados reais</strong>, proposta técnica e cronograma personalizado.</>}
+      finalCtaTitle={<>Pronto para operar com o melhor <span className="text-gradient">sistema para fazendas e criatórios</span>?</>}
+      finalCtaDesc={<>Fale com nossa equipe e conheça a nossa <strong>plataforma de gerenciamento de leilões com transmissão ao vivo dos animais</strong>. Enviamos demonstração ao vivo com dados reais, proposta técnica e cronograma personalizado.</>}
       relatedNewsTags={["Leilão", "Leilão Rural", "Agronegócio", "Sistemas"]}
     />
   ),
