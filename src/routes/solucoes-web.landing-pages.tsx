@@ -14,11 +14,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/landing-pages")({
   head: () => buildLPMeta({
-    title: "Criação de Landing Pages de Alta Conversão | Capture Leads Qualificados",
-    description: "Criação de Landing Pages de alta conversão focadas em produtos ou serviços. Capturamos leads com páginas persuasivas interligadas ao seu ecossistema digital.",
-    keywords: "criação de landing pages, landing page alta conversão, landing page produtos, landing page serviços, captação de leads",
+    title: "Criação de LPs Alta Conversão | Focado em Produtos e Serviços",
+    description: "Especialistas na criação de Landing Pages de alta conversão para capturar leads qualificados. LPs persuasivas que interagem com todo o seu ecossistema digital.",
+    keywords: "criação de landing pages, landing page alta conversão, landing page produtos, landing page serviços, captação de leads, criação de lps",
     canonical: URL,
-    h1: "Criação de LPs Alta Conversão",
+    h1: "Criação de Landing Pages de Alta Conversão",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },

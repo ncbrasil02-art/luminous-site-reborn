@@ -14,11 +14,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/marketing-digital")({
   head: () => buildLPMeta({
-    title: "Marketing Digital Estratégico | Vídeos Virais e Gestão de Ads",
-    description: "Gestão completa de marketing digital: criação de posts e vídeos virais para TikTok, Facebook e Instagram com campanhas profissionais de alta performance.",
-    keywords: "marketing digital, posts virais, vídeos virais, gestão redes sociais, marketing tiktok, campanhas facebook instagram",
+    title: "Marketing Digital Estratégico | Posts e Vídeos Virais para Redes Sociais",
+    description: "Marketing digital focado em resultados: criação de posts virais, vídeos virais e gerenciamento de campanhas nas redes sociais como TikTok, Facebook e Instagram.",
+    keywords: "marketing digital, posts virais, vídeos virais, gestão redes sociais, marketing tiktok, campanhas facebook instagram, posts profissionais",
     canonical: URL,
-    h1: "Marketing Digital e Gestão de Campanhas Virais",
+    h1: "Marketing Digital: Posts e Vídeos Virais",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },

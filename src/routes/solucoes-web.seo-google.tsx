@@ -14,11 +14,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/seo-google")({
   head: () => buildLPMeta({
-    title: "SEO Google | Ranqueamento de Palavras-Chave e Autoridade Digital",
-    description: "Atuamos rankeando qualquer empresa em palavras-chaves de curta e longa cauda, maximizando os resultados orgânicos nos principais buscadores como o Google.",
-    keywords: "seo google, rankeamento google, palavras-chave curta cauda, palavras-chave longa cauda, otimização buscadores, autoridade digital",
+    title: "SEO Google | Ranqueamento e Autoridade de Palavras-Chave",
+    description: "Especialistas em SEO onde atuamos rankeando qualquer empresa em palavras-chaves de curta e longa cauda, maximizando os resultados orgânicos nos principais buscadores.",
+    keywords: "seo google, rankeamento google, palavras-chave curta cauda, palavras-chave longa cauda, otimização buscadores, autoridade digital, seo google local",
     canonical: URL,
-    h1: "SEO Google: Ranqueamento e Autoridade",
+    h1: "SEO Google: Ranqueamento e Autoridade Digital",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },

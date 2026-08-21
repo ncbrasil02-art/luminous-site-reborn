@@ -16,11 +16,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
   head: () => buildLPMeta({
-    title: "Desenvolvimento de Sites e Loja Virtual | Criação de Projetos que Vendem",
-    description: "Especialistas em desenvolvimento de sites e lojas virtuais focados em atrair visitantes e converter vendas. Tecnologia moderna e SEO para autoridade digital.",
-    keywords: "desenvolvimento de sites, criação de loja virtual, agência web, site institucional, e-commerce, vendas online",
+    title: "Criação de Sites e Loja Virtual Profissional | Desenvolvimento de Alta Performance",
+    description: "Desenvolvimento de sites institucionais e lojas virtuais focados em atrair visitantes e converter vendas. Focamos em palavras-chaves que atraiam pessoas de visitantes adquirirem seu site.",
+    keywords: "criação de sites, desenvolvimento de loja virtual, agência web, site institucional, e-commerce, vendas online, agência de criação de sites",
     canonical: URL,
-    h1: "Desenvolvimento de Sites e Loja Virtual",
+    h1: "Desenvolvimento de Sites e Loja Virtual Profissional",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },

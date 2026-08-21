@@ -14,11 +14,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/hospedagem")({
   head: () => buildLPMeta({
-    title: "Hospedagem Profissional de Sites | Servidores Dedicados e Cloud",
-    description: "Hospedagem de sites com servidores dedicados, planos cloud e consultoria especializada. Infraestrutura total no Brasil para máxima performance e segurança.",
-    keywords: "hospedagem de sites, servidor dedicado brasil, planos cloud, consultoria servidores, hospedagem sistemas, infraestrutura web",
+    title: "Hospedagem de Sites e Sistemas | Servidores Dedicados e Cloud no Brasil",
+    description: "Hospedagem profissional com servidores dedicados, planos cloud e infraestrutura total no Brasil. Consultoria para servidores dedicados e ambientes escaláveis.",
+    keywords: "hospedagem de sites, servidor dedicado brasil, planos cloud, consultoria servidores, hospedagem sistemas, infraestrutura web, hospedagem revenda",
     canonical: URL,
-    h1: "Hospedagem de Sites e Servidores Dedicados",
+    h1: "Hospedagem de Sites, Sistemas e Servidores Dedicados",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
