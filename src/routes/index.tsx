@@ -87,12 +87,13 @@ const homeJsonLd = {
 export const Route = createFileRoute("/")({
   head: () => {
     const meta = buildMeta({
-      title: "Criação de Sites, Sistemas Web e Aplicativos Profissionais",
-      description: "NcBrasil: Especialistas em criação de sites, sistemas sob demanda e aplicativos mobile. Tecnologia premium e marketing digital para transformar seu negócio.",
-      keywords: "criação de sites, criação de sistemas web, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, NC Brasil",
+      title: "Criação de Sites e Sistemas Web de Alta Performance",
+      description: "NcBrasil: Especialistas em sistemas cinematográficos, plataformas de leilão e aplicativos de alto padrão. Tecnologia premium para empresas líderes.",
+      keywords: "criação de sites premium, sistemas web alta performance, plataforma de leilão online, aplicativos mobile premium, marketing digital estratégico, agência de tecnologia SP",
       ogImage: "/logo-nc-brasil.png",
       canonical: "/",
     });
+
 
     return {
       ...meta,
