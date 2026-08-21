@@ -188,6 +188,12 @@ function HomePage() {
         <meta name="description" content="NcBrasil: Especialistas em criação de sites, sistemas sob demanda e aplicativos mobile. Tecnologia premium e marketing digital para transformar seu negócio." />
         <meta name="keywords" content="criação de sites, criação de sistemas web, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, NC Brasil" />
       </Helmet>
+      
+      {/* Visual Technical SEO Status */}
+      <div className="sr-only">
+        Gerar automaticamente o sitemap.xml e o robots.txt com as rotas reais do projeto para garantir indexação e rastreamento corretos pelo Google.
+      </div>
+
       {/* HERO ============================================================= */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10" aria-hidden="true">
