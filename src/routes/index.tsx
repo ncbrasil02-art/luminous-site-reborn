@@ -309,24 +309,27 @@ function HomePage() {
 
 
       {/* SERVIÇOS E SOLUÇÕES =============================================== */}
-      <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-mesh opacity-60" aria-hidden="true" />
+      <section className="relative py-24 md:py-40 overflow-hidden">
+        {/* Decorative elements for services section */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px] -z-10" />
+        
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Nossos Serviços"
+            eyebrow="Expertise Digital"
             title={
               <>
-                Soluções <span className="text-gradient">360°</span> para o seu negócio
+                Ecossistema de <span className="text-gradient">Alta Performance</span>
               </>
             }
             description={
               <>
-                Desde a <strong className="text-foreground">concepção visual</strong> até o 
-                <strong className="text-foreground"> marketing de performance</strong>, entregamos 
-                o ecossistema completo para sua empresa brilhar no digital.
+                Engenharia de software e design de alta fidelidade para empresas que buscam 
+                <strong className="text-foreground"> soberania digital</strong> e escala global.
               </>
             }
           />
+
 
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {solutions.map((s, i) => (
