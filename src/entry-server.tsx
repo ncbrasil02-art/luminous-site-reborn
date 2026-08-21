@@ -14,7 +14,7 @@ export async function render(url: string) {
       history,
     });
 
-    // CRITICAL: Preload all data needed for the route
+    // Wait for the router to load the route match and any critical data
     await router.load();
 
     const helmetContext: { helmet?: HelmetServerState } = {};
@@ -28,12 +28,7 @@ export async function render(url: string) {
     
     const { helmet } = helmetContext;
     
-    // Log for debugging (will show in sandbox output)
-    console.log(`Rendered URL: ${url}`);
-    if (helmet) {
-      console.log(`Title: ${helmet.title.toString()}`);
-    }
-
+    // Return both the HTML content and the Helmet-captured head tags
     return {
       html,
       head: helmet ? `
