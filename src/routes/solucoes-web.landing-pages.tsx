@@ -14,11 +14,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/landing-pages")({
   head: () => buildLPMeta({
-    title: "Criação de Landing Pages | Páginas de Alta Conversão para Campanhas",
-    description: "Criação de landing pages otimizadas para conversão. Páginas rápidas, focadas em captação de leads e vendas para Google Ads e Meta Ads.",
-    keywords: "landing page, criação de landing page, página de conversão, landing page para google ads, landing page profissional",
+    title: "Criação de LPs Alta Conversão | Landing Pages para Produtos e Serviços",
+    description: "Criação de Landing Pages de alta conversão focadas em produtos ou serviços. Capturamos leads com páginas persuasivas interligadas ao seu ecossistema digital.",
+    keywords: "criação de landing pages, landing page alta conversão, landing page produtos, landing page serviços, captação de leads",
     canonical: URL,
-    h1: "Landing Pages de Alta Conversão",
+    h1: "Criação de LPs Alta Conversão",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/landing-pages")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/landing-pages", label: "Landing Pages" }]}
       eyebrow="LPs de Conversão"
-      h1={<>Landing Pages focadas em <span className="text-gradient">Palavras-Chave e Conversão</span></>}
-      intro={<>Formulamos textos focados em **palavras-chave como Landing Pages** de alta conversão. Páginas rápidas, persuasivas e otimizadas para os buscadores e tráfego pago.</>}
+      h1={<>Criação de LPs de <span className="text-gradient">Alta Conversão</span></>}
+      intro={<>Criamos **Landing Pages de alta conversão** focadas em seu produto ou serviço. Nosso trabalho é focado em **capturar leads qualificados** através de páginas que conversam entre si, integrando seu site, loja e estratégias de marketing.</>}
       stats={[{ value: "500+", label: "LPs entregues" }, { value: "12%", label: "Conversão média" }, { value: "72h", label: "Entrega expressa" }, { value: "A/B", label: "Testes inclusos" }]}
       benefits={[
         { icon: MousePointerClick, title: "CTA Estratégico", desc: "**Botões testados A/B**, contraste otimizado e microcopy que aumenta cliques em 30%." },

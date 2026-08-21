@@ -14,11 +14,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/hospedagem")({
   head: () => buildLPMeta({
-    title: "Hospedagem de Sites e Sistemas | Cloud Gerenciada com SSL e Backup",
-    description: "Hospedagem cloud gerenciada para sites, e-commerces e sistemas. SSL grátis, backup diário, CDN global, uptime 99,9% e suporte 24/7.",
-    keywords: "hospedagem de sites, hospedagem cloud, hospedagem gerenciada, hospedagem para e-commerce, servidor dedicado",
+    title: "Hospedagem de Sites e Sistemas | Servidores Dedicados e Cloud no Brasil",
+    description: "Hospedagem de sites com servidores dedicados, planos cloud e consultoria especializada. Infraestrutura total no Brasil para máxima performance e segurança.",
+    keywords: "hospedagem de sites, servidor dedicado brasil, planos cloud, consultoria servidores, hospedagem sistemas, infraestrutura web",
     canonical: URL,
-    h1: "Hospedagem Cloud Gerenciada de Alta Performance",
+    h1: "Hospedagem de Sites e Servidores Dedicados",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/hospedagem")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/hospedagem", label: "Hospedagem" }]}
       eyebrow="Infra Cloud"
-      h1={<>Hospedagem de Alta Performance: <span className="text-gradient">Sites e Servidores Dedicados</span></>}
-      intro={<>Oferecemos serviços de **hospedagem para revendas, websites e servidores dedicados**. Infraestrutura robusta em Cloud para garantir que sua operação nunca pare, com suporte especialista 24/7.</>}
+      h1={<>Hospedagem de Sites: <span className="text-gradient">Servidores Dedicados e Cloud</span></>}
+      intro={<>Oferecemos **hospedagem de sites** com foco em performance e estabilidade. Contamos com **servidores dedicados, planos cloud e consultoria especializada** para infraestrutura total no Brasil.</>}
       stats={[{ value: "99,9%", label: "Uptime garantido" }, { value: "24/7", label: "Suporte técnico" }, { value: "<50ms", label: "Latência Brasil" }, { value: "SSL", label: "Grátis Let's Encrypt" }]}
       benefits={[
         { icon: Zap, title: "Performance Extrema", desc: "**SSD NVMe, HTTP/3, cache Redis** e CDN Cloudflare em 300+ pontos globais." },

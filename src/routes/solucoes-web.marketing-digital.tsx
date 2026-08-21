@@ -14,11 +14,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/marketing-digital")({
   head: () => buildLPMeta({
-    title: "Marketing Digital 360° | Estratégia, Tráfego Pago e Conteúdo",
-    description: "Marketing digital completo: gestão de tráfego pago, redes sociais, e-mail marketing, SEO e produção de conteúdo estratégico.",
-    keywords: "marketing digital, agência de marketing digital, gestão de tráfego, redes sociais, marketing de conteúdo, estratégia digital",
+    title: "Marketing Digital | Criação de Posts e Vídeos Virais nas Redes Sociais",
+    description: "Gestão completa de marketing digital: criação de posts e vídeos virais para TikTok, Facebook e Instagram com campanhas profissionais de alta performance.",
+    keywords: "marketing digital, posts virais, vídeos virais, gestão redes sociais, marketing tiktok, campanhas facebook instagram",
     canonical: URL,
-    h1: "Marketing Digital Estratégico e Data-Driven",
+    h1: "Marketing Digital e Gestão de Campanhas Virais",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/marketing-digital")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/marketing-digital", label: "Marketing Digital" }]}
       eyebrow="Marketing 360°"
-      h1={<>Marketing digital focado em <span className="text-gradient">ranqueamento e autoridade</span></>}
-      intro={<>Nossa empresa atua com **ranqueamento e autoridade das palavras-chaves**, subindo qualquer empresa nos principais resultados dos buscadores como **Google**. Estratégia completa de aquisição e conversão baseada em dados.</>}
+      h1={<>Marketing Digital: <span className="text-gradient">Posts e Vídeos Virais</span></>}
+      intro={<>Especialistas em **criação de posts e vídeos virais** para redes sociais. Gerenciamos suas campanhas no **TikTok, Facebook e Instagram** com conteúdos profissionais focados em atrair e converter seu público.</>}
       stats={[{ value: "R$ 30Mi", label: "Verba gerenciada" }, { value: "4,8x", label: "ROAS médio" }, { value: "150+", label: "Clientes ativos" }, { value: "24/7", label: "Monitoramento" }]}
       benefits={[
         { icon: Target, title: "Tráfego Pago", desc: "Google Ads, Meta Ads, TikTok Ads e LinkedIn Ads — **gestão com foco em ROAS**." },
