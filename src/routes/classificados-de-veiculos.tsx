@@ -114,8 +114,7 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
         { icon: Zap, title: "Performance Extrema", desc: "Carregamento instantâneo para não perder nenhum comprador no mobile." },
       ]}
       finalParallaxCta={{
-        title: "Sistema para Revenda de Autos Premium",
-        desc: "Transforme sua visão em um portal de anúncios de veículos de sucesso. Tecnologia NC Brasil.",
+        text: "Sistema para Revenda de Autos Premium",
         image: "/logo.jpg"
       }}
       testimonials={testimonialsData.slice(0, 3)}
