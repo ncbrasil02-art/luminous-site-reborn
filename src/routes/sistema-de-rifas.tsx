@@ -56,10 +56,10 @@ export const Route = createFileRoute("/sistema-de-rifas")({
       imageKeyword="melhor script de rifas e plataforma de ações online profissional"
       showParallaxshowcase
       showcaseImages={[
-        rifasShowcase1Url,
+        rifasShowcase4Url,
         rifasShowcase2Url,
         rifasShowcase3Url,
-        rifasShowcase4Url,
+        rifasShowcase1Url,
         rifasShowcase5Url,
         rifasShowcase6Url,
         rifasShowcase7Url,
