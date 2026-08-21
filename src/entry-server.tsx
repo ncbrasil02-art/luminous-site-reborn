@@ -26,13 +26,9 @@ export async function render(url: string) {
       </HelmetProvider>
     );
     
+    // IMPORTANT: Helmet data must be accessed AFTER renderToString
     const { helmet } = helmetContext;
     
-    // Log for debugging (will show in sandbox output)
-    console.log(`Rendered URL: ${url}`);
-    
-    // Return both the HTML content and the Helmet-captured head tags
-    // Important: Helmet data needs to be extracted after renderToString
     let head = '';
     if (helmet) {
       head = `
@@ -41,9 +37,6 @@ export async function render(url: string) {
         ${helmet.link.toString()}
         ${helmet.script.toString()}
       `;
-      console.log(`Head tags found for ${url}: ${head.length} chars`);
-    } else {
-      console.log(`No helmet context found for ${url}`);
     }
 
     return {
