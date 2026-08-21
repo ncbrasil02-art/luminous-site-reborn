@@ -1,3 +1,4 @@
+/** Crie seções especializadas na Home para cada um dos meus principais sistemas com descrição, benefícios e links dedicados mantendo URLs amigáveis e estrutura semântica. */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
