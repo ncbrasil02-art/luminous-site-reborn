@@ -8,7 +8,11 @@ const toAbsolute = (p) => path.resolve(__dirname, p)
 async function generate() {
   const template = fs.readFileSync(toAbsolute('dist/index.html'), 'utf-8')
   
+  // Import the SSR entry point
   const { render } = await import('./dist/server/entry-server.js')
+  
+  // Import news data for dynamic routes
+  // We use a direct import because we're in an ESM context (prerender.js is ESM via package.json or extension)
   const { newsData } = await import('./src/lib/news.data.ts')
 
   const allCategories = Array.from(new Set(newsData.flatMap(p => p.categories)))
@@ -31,7 +35,7 @@ async function generate() {
     ...newsData.map(post => `/noticias/${post.slug}`),
     ...allCategories.map(cat => `/noticias/categoria/${encodeURIComponent(cat)}`),
     ...allTags.map(tag => `/noticias/tag/${encodeURIComponent(tag)}`),
-  ]
+  ].filter(url => url !== '/noticias/') // Filter out empty or duplicate trailing slash routes
 
   console.log(`Starting pre-rendering of ${routesToPrerender.length} routes...`)
 
@@ -43,7 +47,9 @@ async function generate() {
       const appHtml = result.html
       const head = result.head
 
-      console.log(`URL: ${url}, head length: ${head?.length || 0}, html length: ${appHtml?.length || 0}`)
+      if (!appHtml || appHtml.length < 100) {
+         console.warn(`Warning: Empty or very small HTML for ${url}. appHtml length: ${appHtml?.length || 0}`);
+      }
 
       const finalHtml = template
         .replace('<!--app-head-->', head || '')
@@ -57,14 +63,13 @@ async function generate() {
         fs.mkdirSync(dir, { recursive: true })
       }
       fs.writeFileSync(absolutePath, finalHtml)
-      console.log('pre-rendered:', filePath)
+      // console.log('pre-rendered:', filePath)
     } catch (err) {
       console.error(`Error rendering ${url}:`, err)
     }
   }
+  
+  console.log('Pre-rendering complete.')
 }
 
-generate().catch(err => {
-  console.error(err)
-  process.exit(1)
-})
+generate()
