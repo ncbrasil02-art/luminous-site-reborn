@@ -30,8 +30,8 @@ export const Route = createFileRoute("/servicos/facebook-ads")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/facebook-ads", label: "Facebook Ads" }]}
       eyebrow="Meta Ads"
-      h1={<>Facebook e Instagram Ads com <span className="text-gradient">ROI real</span></>}
-      intro={<>Gestão avançada de **Meta Ads com CBO, Advantage+, Lookalikes e criativos testados** — focada em escala com CAC saudável.</>}
+      h1={<>Gerenciamento de Campanhas <span className="text-gradient">Facebook ADS</span></>}
+      intro={<>Fazemos toda a **consultoria e aplicação de resultados** em campanhas de **Facebook ADS**. Criativos otimizados e segmentação avançada para maximizar sua autoridade no mercado.</>}
       stats={[{ value: "R$ 15Mi", label: "Investidos em Meta" }, { value: "4,6x", label: "ROAS médio" }, { value: "200+", label: "Contas ativas" }, { value: "Meta", label: "Business Partner" }]}
       benefits={[
         { icon: Facebook, title: "Facebook Ads", desc: "Campanhas de **conversão, tráfego, engajamento e mensagens** otimizadas." },
