@@ -19,6 +19,7 @@ import {
   Globe,
   Database,
   Search,
+  Hdd,
 } from "lucide-react";
 import { FloatingObject } from "@/components/FloatingObject";
 
@@ -110,15 +111,15 @@ export const Route = createFileRoute("/")({
 const solutions = [
   {
     icon: Globe2,
-    title: "Criação de Sites",
-    desc: "Sites institucionais, landing pages e portais corporativos com **design premium**, performance e SEO técnico.",
-    to: "/nossos-servicos",
+    title: "Desenvolvimento de Sites",
+    desc: "Sites institucionais e lojas virtuais focados em **atrair visitantes e converter vendas** com tecnologia moderna e SEO nativo.",
+    to: "/solucoes-web/desenvolvimento-de-sites",
   },
   {
     icon: Layers,
-    title: "Sistemas Web Sob Demanda",
-    desc: "Plataformas personalizadas, **ERPs**, intranets, sistemas de pregão e leilão eletrônico, áreas restritas.",
-    to: "/nossos-sistemas",
+    title: "LPs Alta Conversão",
+    desc: "Criação de **Landing Pages de alta conversão** focadas em produtos ou serviços, otimizadas para captação de leads qualificados.",
+    to: "/solucoes-web/landing-pages",
   },
   {
     icon: ShoppingBag,
@@ -141,16 +142,16 @@ const solutions = [
   {
     icon: LineChart,
     title: "Marketing Digital",
-    desc: "Tráfego pago, **SEO**, redes sociais e motion design. Crescimento mensurável de verdade.",
-    to: "/nossos-servicos",
+    desc: "**Criação de posts e vídeos virais** para TikTok, Instagram e Facebook Ads com gestão profissional de campanhas.",
+    to: "/solucoes-web/marketing-digital",
   },
 ];
 
 const stats = [
-  { value: "745+", label: "Homepages criadas" },
-  { value: "525+", label: "Lojas online no ar" },
-  { value: "78+", label: "Projetos completos" },
-  { value: "15+", label: "Anos de mercado" },
+  { value: "745+", label: "Sites & Lojas entregues" },
+  { value: "525+", label: "LPs de Alta Conversão" },
+  { value: "78+", label: "Sistemas Customizados" },
+  { value: "20+", label: "Anos de Experiência" },
 ];
 
 const steps = [
