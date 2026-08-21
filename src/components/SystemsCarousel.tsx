@@ -1,6 +1,6 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Code2, Gavel, LayoutDashboard, ShoppingCart, Users, ChevronRight, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, Code2, Gavel, LayoutDashboard, ShoppingCart, Users, ChevronRight, Sparkles, Rocket } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
