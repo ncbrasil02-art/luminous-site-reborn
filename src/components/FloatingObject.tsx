@@ -1,13 +1,15 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import type { ReactNode } from "react";
 
 interface FloatingObjectProps {
   className?: string;
   delay?: number;
   duration?: number;
+  children?: ReactNode;
 }
 
-export function FloatingObject({ className, delay = 0, duration = 6 }: FloatingObjectProps) {
+export function FloatingObject({ className, delay = 0, duration = 6, children }: FloatingObjectProps) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
@@ -19,7 +21,8 @@ export function FloatingObject({ className, delay = 0, duration = 6 }: FloatingO
       }}
       className={cn("absolute z-0", className)}
     >
-      <div className="h-24 w-24 rounded-full bg-primary/20 blur-3xl" />
+      {children || <div className="h-24 w-24 rounded-full bg-primary/20 blur-3xl" />}
     </motion.div>
   );
 }
+
