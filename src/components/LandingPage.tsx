@@ -459,7 +459,8 @@ export function LandingPage({
                         className="relative overflow-hidden rounded-2xl border border-border shadow-2xl"
                       >
                         <img 
-                          src={img} 
+                          src={item.image} 
+
                           alt={imageKeyword || "Plataforma Premium"} 
                           className="w-full h-auto object-cover block"
                           loading="lazy"
