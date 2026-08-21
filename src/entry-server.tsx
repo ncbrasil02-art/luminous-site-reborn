@@ -12,8 +12,9 @@ export function render(url: string) {
     history,
   });
 
-  // Wait for the router to be ready
-  // In a real SSG environment, you'd want to handle data fetching here too
+  // Pre-load the route to ensure it's ready
+  // router.load() returns a promise, but for string rendering we usually need the sync result
+  // In dynamic SSG we might need to await something if loaders are async
   
   const html = ReactDOMServer.renderToString(
     <RouterProvider router={router} />

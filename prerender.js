@@ -7,21 +7,30 @@ const toAbsolute = (p) => path.resolve(__dirname, p)
 
 const template = fs.readFileSync(toAbsolute('dist/index.html'), 'utf-8')
 const { render } = await import('./dist/server/entry-server.js')
+const { newsData } = await import('./src/lib/news.data.ts')
+
+// Extract unique categories and tags
+const allCategories = Array.from(new Set(newsData.flatMap(p => p.categories)))
+const allTags = Array.from(new Set(newsData.flatMap(p => p.tags)))
 
 // List of routes to pre-render. 
-// For TanStack Router, we can crawl src/routes or define them manually.
 const routesToPrerender = [
   '/',
   '/contato',
   '/orcamento',
   '/nossos-servicos',
   '/nossos-sistemas',
+  '/trabalhos-realizados',
   '/empresa/quem-somos',
   '/sistema-de-leilao',
   '/sistema-de-rifas',
   '/classificados-de-veiculos',
   '/sistema-de-leilao-rural',
   '/sistema-de-leilao-de-centavos',
+  '/noticias',
+  ...newsData.map(post => `/noticias/${post.slug}`),
+  ...allCategories.map(cat => `/noticias/categoria/${encodeURIComponent(cat)}`),
+  ...allTags.map(tag => `/noticias/tag/${encodeURIComponent(tag)}`),
 ]
 
 ;(async () => {
