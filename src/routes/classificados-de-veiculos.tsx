@@ -4,7 +4,7 @@ import {
   BarChart3, Zap, Lock, Cloud, Database, Award, Globe2, Smartphone, FileCheck, Gauge,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
-import { testimonialsData } from "@/lib/testimonials.data";
+import { veiculosTestimonials } from "@/lib/testimonials.data";
 
 const URL = "https://www.ncbrasil.com.br/classificados-de-veiculos";
 
@@ -117,7 +117,7 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
         text: "Sistema para Revenda de Autos Premium",
         image: "/logo.jpg"
       }}
-      testimonials={testimonialsData.slice(0, 3)}
+      testimonials={veiculosTestimonials}
       faq={lpFaq}
       finalCtaTitle={<>Pronto para dominar o mercado com seu <span className="text-gradient">Portal de Anúncios de Autos</span>?</>}
       finalCtaDesc={<>Fale com nossos especialistas em <strong className="text-foreground">sistemas para revenda de veículos</strong>. Demonstração personalizada disponível.</>}
