@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import {
   Banknote, Bell, Building2, Clock, CreditCard, FileSignature, Gavel, Globe2,
   Landmark, Lock, Rocket, ScrollText, Search, ShieldCheck, Smartphone,
@@ -45,6 +46,11 @@ export const Route = createFileRoute("/sistema-de-leilao")({
   }),
   component: () => (
     <>
+      <Helmet>
+        <title>Sistema de Leilão NC Brasil | Sistema para Leilões Online</title>
+        <meta name="description" content="Plataforma de leilões online profissional para leiloeiros oficiais e tribunais. Sistema para leiloeiro com pregão eletrônico, transmissão ao vivo e split de comissões." />
+        <meta name="keywords" content="sistema de leilão, plataforma de leilões, sistema para leiloeiro, plataforma de pregões online, sas leilão, site de leilão, sistema de leilão online, plataforma de leilão online, sistema online para leiloeiro" />
+      </Helmet>
       <LandingPage
       imageKeyword="sistema de leilão"
       showParallaxshowcase

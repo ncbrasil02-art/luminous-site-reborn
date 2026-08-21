@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import {
   Beef, Bell, Camera, ClipboardList, Globe2, MapPin, ShieldCheck, Tractor, Truck, Video,
   Sprout, Radio, FileCheck, BarChart3, Users, Wallet, Cloud, Award, Zap, Lock, Database,
@@ -46,7 +47,13 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
     ogImage: "/og/leilao-rural.jpg",
   }),
   component: () => (
-    <LandingPage
+    <>
+      <Helmet>
+        <title>Sistema de Leilão Rural Online | Gado, Cavalos, Fazendas — NC Brasil</title>
+        <meta name="description" content="Plataforma completa para leilões rurais e agropecuários: bovinos, equinos, propriedades, maquinário. Transmissão HD, GTA automática, pesagem integrada, Pix e conta gráfica." />
+        <meta name="keywords" content="sistema leilão rural, leilão de gado online, leilão de cavalos, plataforma leilão agropecuário, software leiloeiro rural, sistema leilão pecuária, leilão bovinos online, sistema para leilões rurais, plataforma de leilão cavalos, sistema de leilão ao vivo de boi, sistema de leilões para animais, sistema rural de leilões, melhor plataforma de leilão rural, sistema para fazendas e criatórios, plataforma de gerenciamento de leilões com transmissão ao vivo dos animais" />
+      </Helmet>
+      <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-leilao-rural", label: "Leilão Rural" }]}
       eyebrow="Agronegócio · Pecuária · Genética"
       h1={<>Sistema para <span className="text-gradient">Leilões Rurais</span> e Plataforma de <span className="text-gradient">Leilão Cavalos</span></>}
@@ -199,5 +206,6 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
       logo="/logo.jpg"
       heroImage="/logo.jpg"
     />
+    </>
   ),
 });

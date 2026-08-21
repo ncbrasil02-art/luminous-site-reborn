@@ -1,4 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
+import { Helmet } from 'react-helmet-async'
 import { newsData } from '@/lib/news.data'
 import { Link } from '@tanstack/react-router'
 import { Calendar, Tag, ArrowRight, Search, ChevronRight, Newspaper } from 'lucide-react'
@@ -52,7 +53,12 @@ function NewsIndex() {
   const featuredNews = filteredNews[0]
 
   return (
-    <main className="relative pt-24 pb-20 overflow-hidden">
+    <>
+      <Helmet>
+        <title>Revista Digital NC Brasil · Tecnologia, Sistemas e Negócios</title>
+        <meta name="description" content="Fique por dentro das últimas notícias sobre tecnologia, sistemas web, e-commerce e marketing digital. Artigos aprofundados e tendências." />
+      </Helmet>
+      <main className="relative pt-24 pb-20 overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 pointer-events-none opacity-20">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/20 blur-[120px] rounded-full" />
@@ -279,5 +285,6 @@ function NewsIndex() {
         </Reveal>
       </div>
     </main>
+    </>
   )
 }
