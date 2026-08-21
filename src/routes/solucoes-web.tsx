@@ -93,59 +93,67 @@ function SolucoesWebPage() {
             {[
               {
                 icon: Layout,
-                title: "Sites Institucionais & Landing Pages",
-                desc: "Design exclusivo e otimização para SEO e conversão de leads.",
-                features: ["Mobile first", "SEO Técnico", "Alta velocidade"]
+                title: "Criação de LPs Alta Conversão",
+                desc: "Landing Pages persuasivas focadas em captação de leads e vendas.",
+                features: ["Mobile first", "SEO Técnico", "Alta velocidade"],
+                to: "/solucoes-web/landing-pages"
               },
               {
                 icon: Database,
                 title: "Sistemas Web Personalizados",
                 desc: "ERPs, CRMs e intranets sob medida para os processos da sua empresa.",
-                features: ["Dashboards", "Automação", "Segurança"]
+                features: ["Dashboards", "Automação", "Segurança"],
+                to: "/servicos/sistemas-web"
               },
               {
                 icon: Globe2,
                 title: "E-commerce & Marketplaces",
                 desc: "Lojas virtuais escaláveis com foco em experiência de compra e segurança.",
-                features: ["Pagamentos", "Frete", "Painel Administrativo"]
+                features: ["Pagamentos", "Frete", "Painel Administrativo"],
+                to: "/solucoes-web/loja-virtual"
               },
               {
                 icon: Layers,
-                title: "Integração de APIs e Sistemas",
-                desc: "Conectamos sua plataforma com serviços externos (Gateway de pagamento, Logística, CRM).",
-                features: ["Webhook", "REST/GraphQL", "Sync em tempo real"]
+                title: "Hospedagem de Sites e Cloud",
+                desc: "Infraestrutura robusta com servidores dedicados no Brasil.",
+                features: ["Webhook", "REST/GraphQL", "Sync em tempo real"],
+                to: "/solucoes-web/hospedagem"
               },
               {
                 icon: BarChart3,
-                title: "Dashboards e BI",
-                desc: "Visualização de dados em tempo real para tomada de decisão estratégica.",
-                features: ["Gráficos dinâmicos", "Filtros avançados", "Exportação"]
+                title: "SEO Google & Ranqueamento",
+                desc: "Autoridade e primeiras posições para palavras-chave estratégicas.",
+                features: ["Gráficos dinâmicos", "Filtros avançados", "Exportação"],
+                to: "/solucoes-web/seo-google"
               },
               {
                 icon: ShieldCheck,
-                title: "Manutenção e Evolução",
-                desc: "Suporte contínuo para garantir que sua plataforma esteja sempre atualizada e segura.",
-                features: ["Backups", "Updates", "Monitoramento"]
+                title: "Marketing Digital & Social Ads",
+                desc: "Gestão de tráfego pago e conteúdos virais para redes sociais.",
+                features: ["Backups", "Updates", "Monitoramento"],
+                to: "/solucoes-web/marketing-digital"
               }
             ].map((item, i) => (
               <Reveal key={item.title} delay={i * 0.05}>
-                <div className="group h-full rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-sm">
-                  <div className="mb-6 inline-flex rounded-xl bg-primary/10 p-3 text-primary ring-1 ring-primary/20">
-                    <item.icon className="h-6 w-6" />
+                <Link to={item.to} className="group block h-full">
+                  <div className="h-full rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-sm">
+                    <div className="mb-6 inline-flex rounded-xl bg-primary/10 p-3 text-primary ring-1 ring-primary/20">
+                      <item.icon className="h-6 w-6" />
+                    </div>
+                    <h3 className="font-display text-xl font-bold">{item.title}</h3>
+                    <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                      {item.desc}
+                    </p>
+                    <ul className="mt-6 space-y-2">
+                      {item.features.map(f => (
+                        <li key={f} className="flex items-center gap-2 text-xs font-medium text-foreground/70">
+                          <CheckCircle2 className="h-3 w-3 text-primary" />
+                          {f}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  <h3 className="font-display text-xl font-bold">{item.title}</h3>
-                  <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-                    {item.desc}
-                  </p>
-                  <ul className="mt-6 space-y-2">
-                    {item.features.map(f => (
-                      <li key={f} className="flex items-center gap-2 text-xs font-medium text-foreground/70">
-                        <CheckCircle2 className="h-3 w-3 text-primary" />
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                </Link>
               </Reveal>
             ))}
           </div>
