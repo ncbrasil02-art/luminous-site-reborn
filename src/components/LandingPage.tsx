@@ -183,17 +183,17 @@ export function LandingPage({
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30 pointer-events-none" aria-hidden="true" />
-        <div className="absolute inset-0 -z-10 bg-black/40" />
+        <div className={`absolute inset-0 -z-10 ${pathname.includes('leilao') ? 'bg-black/80' : 'bg-black/40'}`} />
         <div className="absolute inset-0 -z-20">
           <img 
             src={pathname.includes('rifas') 
               ? "/img-sistema-de-rifas/rifa-vitrine.png"
               : pathname.includes('leilao')
-                ? "/img-sistema-de-leilao/plataforma-de-leilao-dashboard-gerencial-02.png"
+                ? "/logo.jpg"
                 : "/logo.jpg"
             }
             alt={imageKeyword || eyebrow} 
-            className="h-full w-full object-cover opacity-20"
+            className={`h-full w-full ${pathname.includes('leilao') ? 'object-contain p-20 opacity-10' : 'object-cover opacity-20'}`}
             loading="eager"
             fetchPriority="high"
             onError={(e) => {
@@ -743,10 +743,10 @@ export function LandingPage({
       {finalParallaxCta && (
         <section className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
           <div 
-            className="absolute inset-0 bg-fixed bg-center bg-cover"
+            className={`absolute inset-0 bg-fixed bg-center ${finalParallaxCta.image === '/logo.jpg' ? 'bg-contain bg-no-repeat opacity-10' : 'bg-cover'}`}
             style={{ backgroundImage: `url(${finalParallaxCta.image})` }}
           />
-          <div className="absolute inset-0 bg-black/70 backdrop-blur-[2px]" />
+          <div className={`absolute inset-0 ${finalParallaxCta.image === '/logo.jpg' ? 'bg-black/90' : 'bg-black/70'} backdrop-blur-[2px]`} />
           <div className="relative h-full flex items-center justify-center text-center px-4">
             <Reveal>
               <div className="max-w-4xl">
