@@ -8,11 +8,9 @@ const router = getRouter();
 
 function App() {
   return (
-    <StrictMode>
-      <HelmetProvider>
-        <RouterProvider router={router} />
-      </HelmetProvider>
-    </StrictMode>
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
   );
 }
 
