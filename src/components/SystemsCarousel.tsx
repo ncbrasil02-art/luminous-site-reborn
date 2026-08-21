@@ -89,90 +89,88 @@ export function SystemsCarousel() {
 
   return (
     <div className="relative">
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex touch-pan-y">
-          {systems.map((system, index) => (
-            <div key={system.title} className="min-w-0 flex-[0_0_100%] pl-4 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]">
-              <motion.div 
-                whileHover={{ y: -12 }}
-                className={cn(
-                  "group relative h-[560px] overflow-hidden rounded-[3rem] border transition-all duration-500 backdrop-blur-xl",
-                  system.isPremium 
-                    ? "border-primary/50 bg-navy-900/40 glow-md ring-1 ring-primary/20" 
-                    : "border-white/5 bg-navy-900/30 hover:border-primary/40 hover:glow-md hover:bg-navy-900/50"
-                )}
-              >
-                {/* Premium Badge */}
-                {system.isPremium && (
-                  <div className="absolute left-10 top-10 z-20">
-                    <span className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/20 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary-glow backdrop-blur-md animate-pulse">
-                      <Sparkles className="h-3 w-3" />
-                      Especialidade NcBrasil
-                    </span>
-                  </div>
-                )}
+    <div className="relative">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {systems.map((system, index) => (
+          <Reveal key={system.title} delay={index * 0.1}>
+            <motion.div 
+              whileHover={{ y: -12 }}
+              className={cn(
+                "group relative h-[600px] overflow-hidden rounded-[3rem] border transition-all duration-500 backdrop-blur-xl",
+                system.isPremium 
+                  ? "border-primary/50 bg-navy-900/40 glow-md ring-1 ring-primary/20" 
+                  : "border-white/5 bg-navy-900/30 hover:border-primary/40 hover:glow-md hover:bg-navy-900/50"
+              )}
+            >
+              {/* Premium Badge */}
+              {system.isPremium && (
+                <div className="absolute left-10 top-10 z-20">
+                  <span className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/20 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary-glow backdrop-blur-md animate-pulse">
+                    <Sparkles className="h-3 w-3" />
+                    Especialidade NcBrasil
+                  </span>
+                </div>
+              )}
 
-                {/* Background Image with Cinematic Overlay */}
-                <div className="absolute inset-0">
-                  <img 
-                    src={system.image} 
-                    alt={system.title} 
-                    loading="lazy"
-                    decoding="async"
+              {/* Background Image with Cinematic Overlay */}
+              <div className="absolute inset-0">
+                <img 
+                  src={system.image} 
+                  alt={system.title} 
+                  loading="lazy"
+                  decoding="async"
+                  className={cn(
+                    "h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110",
+                    system.isPremium ? "opacity-30" : "opacity-15 group-hover:opacity-30"
+                  )}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "/logo.jpg";
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-transparent" />
+              </div>
+
+
+              <div className="relative flex h-full flex-col p-10 pt-24">
+                <div className={cn(
+                  "mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl ring-1 ring-white/10 backdrop-blur transition-all duration-500 group-hover:scale-110 group-hover:glow-sm",
+                  system.isPremium ? "bg-primary text-white shadow-glow-sm" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
+                )}>
+                  <system.icon className="h-8 w-8" />
+                </div>
+
+                <h3 className="font-display text-4xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{system.title}</h3>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors line-clamp-3">
+                  {system.description}
+                </p>
+
+                <div className="mt-8 space-y-3">
+                  {system.features.map((feature) => (
+                    <div key={feature} className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-primary-glow/80">
+                      <div className="h-1.5 w-1.5 rounded-full bg-primary-glow shadow-[0_0_8px_rgba(49,91,255,0.8)]" />
+                      {feature}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-auto pt-8">
+                  <Link
+                    to={system.to}
                     className={cn(
-                      "h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110",
-                      system.isPremium ? "opacity-40" : "opacity-20 group-hover:opacity-40"
+                      "group/btn relative flex w-full items-center justify-between overflow-hidden rounded-2xl px-6 py-5 text-sm font-bold uppercase tracking-widest transition-all",
+                      system.isPremium 
+                        ? "bg-primary text-white glow-sm hover:scale-[1.02]" 
+                        : "bg-white/5 text-white hover:bg-primary hover:glow-sm"
                     )}
-                    onError={(e) => {
-                      (e.target as HTMLImageElement).src = "/logo.jpg";
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-transparent" />
+                  >
+                    <span className="relative z-10">Explorar Solução</span>
+                    <ChevronRight className="relative z-10 h-5 w-5 transition-transform group-hover/btn:translate-x-1" />
+                  </Link>
                 </div>
-
-
-                <div className="relative flex h-full flex-col p-10 pt-24">
-                  <div className={cn(
-                    "mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl ring-1 ring-white/10 backdrop-blur transition-all duration-500 group-hover:scale-110 group-hover:glow-sm",
-                    system.isPremium ? "bg-primary text-white shadow-glow-sm" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
-                  )}>
-                    <system.icon className="h-8 w-8" />
-                  </div>
-
-                  <h3 className="font-display text-3xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{system.title}</h3>
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors line-clamp-3">
-                    {system.description}
-                  </p>
-
-                  <div className="mt-8 space-y-3">
-                    {system.features.map((feature) => (
-                      <div key={feature} className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-primary-glow/80">
-                        <div className="h-1 w-1 rounded-full bg-primary-glow shadow-[0_0_8px_rgba(49,91,255,0.8)]" />
-                        {feature}
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="mt-auto pt-8">
-                    <Link
-                      to={system.to}
-                      className={cn(
-                        "group/btn relative flex w-full items-center justify-between overflow-hidden rounded-2xl px-6 py-4 text-sm font-bold uppercase tracking-widest transition-all",
-                        system.isPremium 
-                          ? "bg-primary text-white glow-sm hover:scale-[1.02]" 
-                          : "bg-white/5 text-white hover:bg-primary hover:glow-sm"
-                      )}
-                    >
-                      <span className="relative z-10">Explorar Solução</span>
-                      <ChevronRight className="relative z-10 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                    </Link>
-                  </div>
-                </div>
-
-              </motion.div>
-            </div>
-          ))}
-        </div>
+              </div>
+            </motion.div>
+          </Reveal>
+        ))}
       </div>
 
       {/* Navigation */}
