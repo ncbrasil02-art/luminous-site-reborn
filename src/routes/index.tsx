@@ -1,4 +1,6 @@
+/**
 https://sistema-leilao-plataformas.lovable.app/solucoes-web/landing-pages https://sistema-leilao-plataformas.lovable.app/solucoes-web/desenvolvimento-de-sites  https://sistema-leilao-plataformas.lovable.app/solucoes-web/landing-pages https://sistema-leilao-plataformas.lovable.app/solucoes-web/marketing-digital
+*/
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
