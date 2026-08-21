@@ -23,6 +23,7 @@ import {
 
 import { Reveal, SectionHeading } from "./Section";
 import { ContactSection } from "./ContactSection";
+import { InternalPageLinks } from "./InternalPageLinks";
 
 export type LPFeature = { icon: LucideIcon; title: string; desc: string };
 export type LPBenefit = { icon: LucideIcon; title: string; desc: string };
@@ -921,6 +922,9 @@ export function LandingPage({
           </div>
         </section>
       )}
+
+      {/* RELACIONAMENTO ENTRE PÁGINAS */}
+      <InternalPageLinks currentPath={pathname} />
 
       {/* CONTATO PREMIUM */}
       <ContactSection pageTitle={typeof h1 === 'string' ? h1 : eyebrow} />

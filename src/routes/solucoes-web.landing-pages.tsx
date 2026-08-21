@@ -14,7 +14,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/landing-pages")({
   head: () => buildLPMeta({
-    title: "Criação de LPs Alta Conversão | Landing Pages para Produtos e Serviços",
+    title: "Criação de Landing Pages de Alta Conversão | Capture Leads Qualificados",
     description: "Criação de Landing Pages de alta conversão focadas em produtos ou serviços. Capturamos leads com páginas persuasivas interligadas ao seu ecossistema digital.",
     keywords: "criação de landing pages, landing page alta conversão, landing page produtos, landing page serviços, captação de leads",
     canonical: URL,
