@@ -69,10 +69,21 @@ async function generate() {
 
       const finalHead = (head + titleTag + metaDesc).trim();
 
-      const finalHtml = template
-        .replace('<!--app-head-->', finalHead || '')
-        .replace('<!--app-html-->', appHtml || '')
+      // Ensure template has the placeholders
+      let finalHtml = template;
+      if (finalHtml.includes('<!--app-head-->')) {
+        finalHtml = finalHtml.replace('<!--app-head-->', finalHead || '');
+      } else {
+        // Fallback: inject before </head>
+        finalHtml = finalHtml.replace('</head>', `${finalHead}\n  </head>`);
+      }
 
+      if (finalHtml.includes('<!--app-html-->')) {
+        finalHtml = finalHtml.replace('<!--app-html-->', appHtml || '');
+      } else {
+        // Fallback: inject inside <div id="root">
+        finalHtml = finalHtml.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
+      }
 
       // Clean the URL to get a valid file path
       const cleanUrl = url === '/' ? '/index' : url.replace(/\/$/, "");
