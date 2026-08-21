@@ -48,6 +48,7 @@ export const Route = createFileRoute("/servicos/aplicativos")({
         { icon: Users, title: "Publicação nas Lojas", desc: "Cuidamos de tudo: **App Store Connect, Google Play Console** e revisões." },
       ]}
       faq={lpFaq}
+      heroImage="/img-sistema-de-leilao/rural-transmissao.png"
       relatedNewsTags={["Aplicativos","Mobile","Tecnologia"]}
     />
   ),

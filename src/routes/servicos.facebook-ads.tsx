@@ -48,6 +48,7 @@ export const Route = createFileRoute("/servicos/facebook-ads")({
         { icon: MousePointerClick, title: "Retargeting", desc: "Segmentação de **abandono de carrinho, visualização e cross-sell**." },
       ]}
       faq={lpFaq}
+      heroImage="/img-sistema-de-leilao/rural-genealogia.png"
       relatedNewsTags={["Facebook Ads","Redes Sociais","Marketing Digital"]}
     />
   ),

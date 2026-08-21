@@ -48,6 +48,7 @@ export const Route = createFileRoute("/solucoes-web/hospedagem")({
         { icon: Headphones, title: "Suporte Especialista", desc: "Time DevOps brasileiro — **resposta em menos de 30 minutos** em horário comercial." },
       ]}
       faq={lpFaq}
+      heroImage="/img-sistema-de-leilao/rural-pregao.png"
     />
   ),
 });
