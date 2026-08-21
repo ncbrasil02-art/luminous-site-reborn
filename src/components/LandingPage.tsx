@@ -183,13 +183,13 @@ export function LandingPage({
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30 pointer-events-none" aria-hidden="true" />
-        <div className="absolute inset-0 -z-10 bg-black/40" />
+        <div className={`absolute inset-0 -z-10 ${pathname.includes('leilao') ? 'bg-black/80' : 'bg-black/40'}`} />
         <div className="absolute inset-0 -z-20">
           <img 
             src={pathname.includes('rifas') 
               ? "/img-sistema-de-rifas/rifa-vitrine.png"
               : pathname.includes('leilao')
-                ? "/img-sistema-de-leilao/plataforma-de-leilao-dashboard-gerencial-02.png"
+                ? "/logo.jpg"
                 : "/logo.jpg"
             }
             alt={imageKeyword || eyebrow} 

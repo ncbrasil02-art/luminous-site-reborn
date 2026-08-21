@@ -240,7 +240,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       faq={lpFaq}
       finalParallaxCta={{
         text: "**Sistema de Leilão Profissional e Personalizado**",
-        image: "/img-sistema-de-leilao/plataforma-de-leilao-dashboard-gerencial-02.png"
+        image: "/logo.jpg"
       }}
       relatedNewsTags={["leilão", "sistemas", "jurídico", "tecnologia"]}
     />
