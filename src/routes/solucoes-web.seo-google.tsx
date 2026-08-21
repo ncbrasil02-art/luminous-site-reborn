@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/seo-google")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/seo-google", label: "SEO Google" }]}
       eyebrow="SEO Profissional"
-      h1={<>SEO Google: <span className="text-gradient">Ranqueamento e Autoridade de Palavras-Chave</span></>}
-      intro={<>Atuamos com o **rankeamento e autoridade de palavras-chaves** de curta e longa cauda, maximizando os resultados orgânicos nos principais buscadores como o Google para elevar qualquer empresa ao topo.</>}
+      h1={<>Domine o Google e <span className="text-gradient">Escale suas Vendas Orgânicas</span></>}
+      intro={<>Eleve sua empresa ao topo com nossa metodologia de **SEO de alta performance**. Atuamos no rankeamento estratégico de palavras-chave de curta e longa cauda para garantir que seu site seja a primeira opção do seu cliente.</>}
       stats={[{ value: "+340%", label: "Tráfego orgânico" }, { value: "Top 3", label: "Rankings alcançados" }, { value: "500+", label: "Palavras-chave" }, { value: "12 meses", label: "Resultado consistente" }]}
       benefits={[
         { icon: Search, title: "Keyword Research", desc: "Mapeamento com **Ahrefs, SEMrush e Google Search Console** — foco em intenção de busca." },

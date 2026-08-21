@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/landing-pages")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/landing-pages", label: "Landing Pages" }]}
       eyebrow="LPs de Conversão"
-      h1={<>Criação de Landing Pages de <span className="text-gradient">Alta Conversão | LPs que Vendem</span></>}
-      intro={<>Especialistas na **criação de LPs de alta conversão** focadas em produtos ou serviços. Capturamos leads qualificados através de uma estrutura persuasiva integrada ao seu funil de marketing digital.</>}
+      h1={<>Landing Pages que <span className="text-gradient">Escalam sua Captação de Leads</span></>}
+      intro={<>Transforme cliques em lucro com **Landing Pages de altíssima conversão**. Projetamos LPs persuasivas com gatilhos mentais e design cinematográfico para capturar leads qualificados para seu produto ou serviço.</>}
       stats={[{ value: "500+", label: "LPs entregues" }, { value: "12%", label: "Conversão média" }, { value: "72h", label: "Entrega expressa" }, { value: "A/B", label: "Testes inclusos" }]}
       benefits={[
         { icon: MousePointerClick, title: "CTA Estratégico", desc: "**Botões testados A/B**, contraste otimizado e microcopy que aumenta cliques em 30%." },

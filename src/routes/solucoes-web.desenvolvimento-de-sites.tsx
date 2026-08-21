@@ -33,8 +33,8 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/desenvolvimento-de-sites", label: "Desenvolvimento de Sites" }]}
       eyebrow="Sites Profissionais"
-      h1={<>Criação de Sites e <span className="text-gradient">Lojas Virtuais Profissionais</span></>}
-      intro={<>Especialistas em **desenvolvimento de sites e lojas virtuais** com conteúdo relevante focado em atrair visitantes e convertê-los em clientes reais. Nossa agência utiliza tecnologia de ponta para garantir autoridade e ranqueamento nas palavras-chave mais competitivas do mercado.</>}
+      h1={<>Plataformas Digitais que <span className="text-gradient">Escalam seu Negócio</span></>}
+      intro={<>Na **NC Brasil**, desenvolvemos muito mais que sites: entregamos **ecossistemas digitais robustos** focados em atrair visitantes qualificados e convertê-los em clientes reais. Nossa tecnologia de ponta garante que sua empresa tenha a soberania necessária para liderar seu nicho.</>}
       stats={[{ value: "800+", label: "Sites entregues" }, { value: "98", label: "Score PageSpeed" }, { value: "<2s", label: "LCP médio" }, { value: "20 anos", label: "De experiência" }]}
       benefits={[
         { icon: Gauge, title: "Performance Extrema", desc: "Sites com **carregamento em menos de 2s**, otimizados para Core Web Vitals do Google." },
