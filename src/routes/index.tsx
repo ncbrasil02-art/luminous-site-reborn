@@ -1,5 +1,5 @@
 /**
-Criar páginas (LPs) separadas para cada item do submenu de serviços, com conteúdo completo e único para cada rota.
+Gerar um sitemap.xml automático com todas as LPs do submenu de serviços e páginas relacionadas.
 */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
