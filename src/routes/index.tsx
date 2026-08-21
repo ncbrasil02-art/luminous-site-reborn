@@ -312,61 +312,6 @@ function HomePage() {
       </section>
 
 
-      {/* SERVIÇOS E SOLUÇÕES =============================================== */}
-      <section className="relative py-24 md:py-40 overflow-hidden">
-        {/* Decorative elements for services section */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10" />
-        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px] -z-10" />
-        
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <SectionHeading
-            eyebrow="Expertise Digital"
-            title={
-              <>
-                Ecossistema de <span className="text-gradient">Alta Performance</span>
-              </>
-            }
-            description={
-              <>
-                Engenharia de software e design de alta fidelidade para empresas que buscam 
-                <strong className="text-foreground"> soberania digital</strong> e escala global.
-              </>
-            }
-          />
-
-
-          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {solutions.map((s, i) => (
-              <Reveal key={s.title} delay={i * 0.1}>
-                <Link
-                  to={s.to}
-                  onClick={() => trackClick(s.title, "Home Solutions Grid")}
-                  className="group relative block h-full overflow-hidden rounded-[2.5rem] border border-white/5 bg-navy-900/20 p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
-                >
-                  {/* Glowing background hint */}
-                  <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/20" />
-                  
-                  <div className="relative z-10">
-                    <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-[1.25rem] bg-surface-elevated text-primary-glow shadow-glow-sm ring-1 ring-white/10 transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:glow-sm">
-                      <s.icon className="h-8 w-8" />
-                    </div>
-                    <h3 className="font-display text-2xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{s.title}</h3>
-                    <p className="mt-6 text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors">
-                      {renderBold(s.desc)}
-                    </p>
-                    <div className="mt-10 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-primary-glow opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
-                      Explorar Tecnologia
-                      <ChevronRight className="h-4 w-4" />
-                    </div>
-                  </div>
-                </Link>
-              </Reveal>
-            ))}
-          </div>
-
-        </div>
-      </section>
-
       {/* SISTEMAS EM DESTAQUE (SLIDER) ===================================== */}
       <section className="relative py-24 md:py-40 bg-navy-950/20">
         <div className="absolute inset-0 z-0 bg-hero-glow opacity-30 rotate-180" aria-hidden="true" />
@@ -400,6 +345,59 @@ function HomePage() {
           </div>
 
           <SystemsCarousel />
+        </div>
+      </section>
+
+      {/* SERVIÇOS E SOLUÇÕES =============================================== */}
+      <section className="relative py-24 md:py-40 overflow-hidden">
+        {/* Decorative elements for services section */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px] -z-10" />
+        
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <SectionHeading
+            eyebrow="Expertise Digital"
+            title={
+              <>
+                Ecossistema de <span className="text-gradient">Alta Performance</span>
+              </>
+            }
+            description={
+              <>
+                Engenharia de software e design de alta fidelidade para empresas que buscam 
+                <strong className="text-foreground"> soberania digital</strong> e escala global.
+              </>
+            }
+          />
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {solutions.map((s, i) => (
+              <Reveal key={s.title} delay={i * 0.1}>
+                <Link
+                  to={s.to}
+                  onClick={() => trackClick(s.title, "Home Solutions Grid")}
+                  className="group relative block h-full overflow-hidden rounded-[2.5rem] border border-white/5 bg-navy-900/20 p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
+                >
+                  {/* Glowing background hint */}
+                  <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/20" />
+                  
+                  <div className="relative z-10">
+                    <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-[1.25rem] bg-surface-elevated text-primary-glow shadow-glow-sm ring-1 ring-white/10 transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:glow-sm">
+                      <s.icon className="h-8 w-8" />
+                    </div>
+                    <h3 className="font-display text-2xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{s.title}</h3>
+                    <p className="mt-6 text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors">
+                      {renderBold(s.desc)}
+                    </p>
+                    <div className="mt-10 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-primary-glow opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
+                      Explorar Tecnologia
+                      <ChevronRight className="h-4 w-4" />
+                    </div>
+                  </div>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
