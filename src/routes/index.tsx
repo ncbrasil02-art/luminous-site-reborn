@@ -202,116 +202,111 @@ function HomePage() {
       </div>
 
       {/* HERO ============================================================= */}
-      <section className="relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10" aria-hidden="true">
-          <img
-            src="/img-sistema-de-leilao/home-premium.png"
-            alt="NC Brasil Tecnologia - Criação de Sites e Sistemas"
-            width={1920}
-            height={1080}
-            loading="eager"
-            fetchPriority="high"
-            decoding="async"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.onerror = null;
-              target.src = "/logo.jpg";
-            }}
-            className="h-full w-full object-cover opacity-50"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
-          <div className="absolute inset-0 bg-hero-glow" />
-          <div className="absolute inset-0 grid-pattern opacity-30 pointer-events-none" />
+      <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden bg-background">
+        {/* Background Elements */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-hero opacity-80" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] animate-glow-pulse" />
+          <div className="absolute bottom-0 left-0 w-full h-[40vh] bg-gradient-to-t from-background to-transparent z-10" />
+          
+          {/* Animated Mesh */}
+          <div className="absolute inset-0 bg-mesh opacity-40 mix-blend-screen" />
+          
+          {/* Floating Tech Objects */}
+          <FloatingObject className="top-[15%] left-[10%] opacity-40 hidden md:block" delay={0}>
+             <div className="h-16 w-16 rounded-2xl border border-primary/20 bg-primary/5 flex items-center justify-center backdrop-blur-sm">
+                <Globe className="h-8 w-8 text-primary/60" />
+             </div>
+          </FloatingObject>
+          <FloatingObject className="top-[25%] right-[15%] opacity-30 hidden lg:block" delay={1.5} duration={7}>
+             <div className="h-20 w-20 rounded-full border border-primary-glow/20 bg-primary-glow/5 flex items-center justify-center backdrop-blur-sm">
+                <Database className="h-10 w-10 text-primary-glow/50" />
+             </div>
+          </FloatingObject>
+          <FloatingObject className="bottom-[20%] left-[20%] opacity-40 hidden md:block" delay={0.5} duration={8}>
+             <div className="h-12 w-12 rounded-lg border border-secondary/20 bg-secondary/5 flex items-center justify-center backdrop-blur-sm rotate-12">
+                <Code2 className="h-6 w-6 text-secondary/60" />
+             </div>
+          </FloatingObject>
         </div>
 
-        <div className="mx-auto flex min-h-[88vh] max-w-7xl flex-col items-center justify-center px-4 py-24 text-center md:px-6">
-          <motion.span
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-primary backdrop-blur"
-          >
-            <Sparkles className="h-3.5 w-3.5" />
-            Sistemas · Sites · Apps · Marketing
-          </motion.span>
+        <div className="relative z-20 mx-auto max-w-7xl px-4 py-24 text-center md:px-6">
+          <Reveal>
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary-glow backdrop-blur-md glow-sm mb-8">
+              <Sparkles className="h-3.5 w-3.5 animate-pulse" />
+              Liderança em Tecnologia Digital
+            </span>
+          </Reveal>
 
           <motion.h1
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="mt-6 max-w-5xl font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-7xl"
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-6 font-display text-5xl font-bold leading-[1] tracking-tight text-foreground md:text-8xl lg:text-[7rem]"
           >
-            Sistemas Web e <span className="text-gradient">Sites de Leilão</span>.
-            <br className="hidden md:block" />
-            Design que <span className="text-gradient">Impulsiona Vendas</span>.
+            Sistemas de <span className="text-gradient drop-shadow-[0_0_30px_rgba(49,91,255,0.3)]">Alta Performance</span>.
           </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-6 max-w-2xl text-base text-muted-foreground md:text-lg"
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="mt-8 mx-auto max-w-3xl"
           >
-            A <strong className="text-foreground">NC Brasil</strong> é especialista em{" "}
-            <Link to="/sistema-de-leilao" className="story-link text-foreground">
-              <strong>plataforma de leilão online</strong>
-            </Link>
-            ,{" "}
-            <Link to="/nossos-sistemas" className="story-link text-foreground">
-              <strong>sistemas web sob demanda</strong>
-            </Link>{" "}
-            e{" "}
-            <Link to="/portfolio/lojas-virtuais-criadas" className="story-link text-foreground">
-              <strong>e-commerce premium</strong>
-            </Link>{" "}
-            em <strong className="text-foreground">SP</strong> e{" "}
-            <strong className="text-foreground">RJ</strong>.
-          </motion.p>
+            <p className="text-lg text-muted-foreground md:text-xl leading-relaxed">
+              Transformamos ideias em <strong className="text-foreground">ecossistemas digitais</strong> cinematográficos. 
+              Especialistas em <strong className="text-primary-glow">plataformas de leilão</strong>, 
+              sistemas web escaláveis e apps de alto padrão para o mercado brasileiro.
+            </p>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="mt-10 flex flex-col items-center gap-3 sm:flex-row"
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <Link
-              to="/sistema-de-leilao"
-              onClick={() => trackClick("Conhecer Sistema de Leilão", "Home Hero")}
-              className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md transition-transform hover:scale-105"
+              to="/nossos-sistemas"
+              onClick={() => trackClick("Explorar Nossos Sistemas", "Home Hero")}
+              className="group relative flex h-14 items-center justify-center overflow-hidden rounded-full bg-primary px-8 text-sm font-bold uppercase tracking-widest text-white transition-all hover:scale-105 hover:glow-lg"
             >
-              Conhecer Sistema de Leilão
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <span className="relative z-10 flex items-center gap-2">
+                Explorar Soluções
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
             </Link>
             <Link
-              to="/trabalhos-realizados"
-              onClick={() => trackClick("Ver trabalhos realizados", "Home Hero")}
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur transition-colors hover:bg-surface"
+              to="/contato"
+              onClick={() => trackClick("Solicitar Orçamento", "Home Hero")}
+              className="flex h-14 items-center justify-center rounded-full border border-white/10 bg-white/5 px-8 text-sm font-bold uppercase tracking-widest text-white backdrop-blur-md transition-all hover:bg-white/10 hover:border-white/20"
             >
-              Ver trabalhos realizados
+              Consultoria Estratégica
             </Link>
           </motion.div>
 
-          {/* Stats */}
+          {/* Premium Partners / Trust */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="mt-20 grid w-full max-w-4xl grid-cols-2 gap-4 md:grid-cols-4"
+            transition={{ duration: 1, delay: 0.8 }}
+            className="mt-24 pt-12 border-t border-white/5"
           >
-            {stats.map((s) => (
-              <div
-                key={s.label}
-                className="glass rounded-2xl px-4 py-5 text-center"
-              >
-                <div className="font-display text-2xl font-bold text-gradient md:text-3xl">
-                  {s.value}
-                </div>
-                <div className="mt-1 text-xs text-muted-foreground">{s.label}</div>
-              </div>
-            ))}
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground/60 mb-8">
+              Tecnologia validada por centenas de negócios no Brasil
+            </p>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+               {stats.map((s) => (
+                 <div key={s.label} className="text-center">
+                    <div className="text-xl md:text-2xl font-display font-bold text-foreground">{s.value}</div>
+                    <div className="text-[9px] uppercase tracking-tighter text-muted-foreground">{s.label}</div>
+                 </div>
+               ))}
+            </div>
           </motion.div>
         </div>
       </section>
+
 
       {/* SERVIÇOS E SOLUÇÕES =============================================== */}
       <section className="relative py-24 md:py-32 overflow-hidden">
