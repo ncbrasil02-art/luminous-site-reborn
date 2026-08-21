@@ -33,7 +33,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/sistema-de-leilao-rural")({
   head: () => buildLPMeta({
-    title: "Leilão Rural | Sistema para Gado, Cavalos e Agropecuária",
+    title: "Sistema de Leilão Rural Profissional | Plataforma de Gado e Cavalos",
     description: "NcBrasil: Plataforma completa de leilão rural com transmissão HD, GTA automática e pesagem integrada. A melhor tecnologia para o agronegócio.",
     keywords: "sistema leilão rural, leilão de gado online, leilão de cavalos, plataforma leilão agropecuário, software leiloeiro rural, sistema leilão pecuária, leilão bovinos online, sistema para leilões rurais, plataforma de leilão cavalos, sistema de leilão ao vivo de boi, sistema de leilões para animais, sistema rural de leilões, melhor plataforma de leilão rural, sistema para fazendas e criatórios, plataforma de gerenciamento de leilões com transmissão ao vivo dos animais",
     canonical: URL,

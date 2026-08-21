@@ -39,7 +39,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
   head: () => buildLPMeta({
-    title: "NcBrasil - Sistema de Cassino Online e Plataforma de Jogos Chinesa",
+    title: "Sistema de Cassino Online Profissional | Plataforma de Jogos Chinesa",
     description: "NcBrasil: Plataforma completa de cassino online e apostas white label. Slots, cassino ao vivo, sportsbook e Pix nativo. O melhor script de cassino online do Brasil.",
     keywords: "sistema de cassino online, plataforma de jogos chinesa, script de cassino online, plataforma iGaming white label, cassino com pix, criar site de apostas",
     canonical: URL,
