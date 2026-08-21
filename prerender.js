@@ -36,22 +36,31 @@ async function generate() {
   console.log(`Starting pre-rendering of ${routesToPrerender.length} routes...`)
 
   for (const url of routesToPrerender) {
-    console.log('Rendering:', url)
-    const { html: appHtml, head } = render(url)
+    try {
+      console.log('Rendering:', url)
+      const result = render(url)
+      
+      const appHtml = result.html
+      const head = result.head
 
-    const finalHtml = template
-      .replace('<!--app-head-->', head || '')
-      .replace('<!--app-html-->', appHtml || '')
+      console.log(`URL: ${url}, head length: ${head?.length || 0}, html length: ${appHtml?.length || 0}`)
 
-    const filePath = `dist${url === '/' ? '/index' : url}.html`
-    const absolutePath = toAbsolute(filePath)
-    const dir = path.dirname(absolutePath)
-    
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true })
+      const finalHtml = template
+        .replace('<!--app-head-->', head || '')
+        .replace('<!--app-html-->', appHtml || '')
+
+      const filePath = `dist${url === '/' ? '/index' : url}.html`
+      const absolutePath = toAbsolute(filePath)
+      const dir = path.dirname(absolutePath)
+      
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true })
+      }
+      fs.writeFileSync(absolutePath, finalHtml)
+      console.log('pre-rendered:', filePath)
+    } catch (err) {
+      console.error(`Error rendering ${url}:`, err)
     }
-    fs.writeFileSync(absolutePath, finalHtml)
-    console.log('pre-rendered:', filePath)
   }
 }
 
