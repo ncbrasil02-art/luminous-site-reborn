@@ -238,6 +238,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         ],
       }}
       faq={lpFaq}
+      testimonials={leilaoTestimonials}
       finalParallaxCta={{
         text: "**Sistema de Leilão Profissional e Personalizado**",
         image: "/logo.jpg"
