@@ -32,11 +32,14 @@ export async function render(url: string) {
     let head = '';
     if (helmet) {
       head = `
-        ${helmet.title.toString()}
-        ${helmet.meta.toString()}
-        ${helmet.link.toString()}
-        ${helmet.script.toString()}
+        ${helmet.title ? helmet.title.toString() : ''}
+        ${helmet.meta ? helmet.meta.toString() : ''}
+        ${helmet.link ? helmet.link.toString() : ''}
+        ${helmet.script ? helmet.script.toString() : ''}
       `;
+      console.log(`[SSR] Head generated for ${url}, length: ${head.length}`);
+    } else {
+      console.log(`[SSR] No helmet context for ${url}`);
     }
 
     return {
