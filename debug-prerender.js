@@ -28,9 +28,13 @@ async function generate() {
       const head = result.head
 
       console.log(`URL: ${url} | Head length: ${head?.length || 0} | HTML length: ${appHtml?.length || 0}`)
-      if (head) {
-        console.log(`Head content snippet: ${head.substring(0, 100)}...`)
-      }
+      
+      const h1Match = appHtml.match(/<h1.*?>([\s\S]*?)<\/h1>/);
+      console.log(`H1 found: ${h1Match ? h1Match[1].trim().substring(0, 100) : 'NOT FOUND'}`);
+
+      const titleMatch = appHtml.match(/<title.*?>([\s\S]*?)<\/title>/);
+      console.log(`Title found in HTML body: ${titleMatch ? titleMatch[1].trim() : 'NOT FOUND'}`);
+
     } catch (err) {
       console.error(`Error rendering ${url}:`, err)
     }
