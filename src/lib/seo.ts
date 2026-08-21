@@ -38,17 +38,21 @@ export function buildMeta(options: MetaOptions) {
   } = options;
 
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} · ${SITE_NAME}`;
-  const absoluteCanonical = canonical ? (canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical.startsWith("/") ? "" : "/"}${canonical}`) : `${SITE_URL}/`;
+  
+  // If canonical is provided, make it absolute. If not, it will be added by the route components if possible.
+  const absoluteCanonical = canonical 
+    ? (canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical.startsWith("/") ? "" : "/"}${canonical}`) 
+    : undefined;
+    
   const absoluteOgImage = ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`;
 
-  const meta = [
+  const meta: any[] = [
     { title: fullTitle },
     { name: "description", content: description },
     { name: "keywords", content: keywords },
     { property: "og:title", content: fullTitle },
     { property: "og:description", content: description },
     { property: "og:type", content: ogType },
-    { property: "og:url", content: absoluteCanonical },
     { property: "og:image", content: absoluteOgImage },
     { property: "og:image:width", content: "1200" },
     { property: "og:image:height", content: "630" },
@@ -64,6 +68,10 @@ export function buildMeta(options: MetaOptions) {
     { name: "image", content: absoluteOgImage },
     { property: "og:image:secure_url", content: absoluteOgImage },
   ];
+
+  if (absoluteCanonical) {
+    meta.push({ property: "og:url", content: absoluteCanonical });
+  }
 
   if (noIndex) {
     meta.push({ name: "robots", content: "noindex, nofollow" });
@@ -139,16 +147,21 @@ export function buildMeta(options: MetaOptions) {
     });
   }
 
+  const links: any[] = [
+    { rel: "icon", type: "image/png", href: `${SITE_URL}/favicon.png` },
+    { rel: "shortcut icon", href: `${SITE_URL}/favicon.png` },
+    { rel: "apple-touch-icon", href: `${SITE_URL}/favicon.png` },
+  ];
+
+  if (absoluteCanonical) {
+    links.push({ rel: "canonical", href: absoluteCanonical });
+    links.push({ rel: "alternate", hrefLang: "pt-BR", href: absoluteCanonical });
+    links.push({ rel: "alternate", hrefLang: "x-default", href: absoluteCanonical });
+  }
+
   return {
     meta,
-    links: [
-      { rel: "canonical", href: absoluteCanonical },
-      { rel: "alternate", hrefLang: "pt-BR", href: absoluteCanonical },
-      { rel: "alternate", hrefLang: "x-default", href: absoluteCanonical },
-      { rel: "icon", type: "image/png", href: `${SITE_URL}/favicon.png` },
-      { rel: "shortcut icon", href: `${SITE_URL}/favicon.png` },
-      { rel: "apple-touch-icon", href: `${SITE_URL}/favicon.png` },
-    ],
+    links,
     scripts,
   };
 }

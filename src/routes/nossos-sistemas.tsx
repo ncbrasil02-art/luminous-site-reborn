@@ -42,7 +42,8 @@ const systems = [
 ];
 
 function SistemasHub() {
-  const search = useRouterState({ select: (s) => s.location.search });
+  const { location } = useRouterState();
+  const search = location.search;
 
   useEffect(() => {
     if (search && (search as any).from_redirect === 'sistemas_migration') {

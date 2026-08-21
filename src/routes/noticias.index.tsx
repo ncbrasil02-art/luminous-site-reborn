@@ -13,7 +13,7 @@ export const Route = createFileRoute('/noticias/')({
     title: 'Revista Digital NC Brasil · Tecnologia, Sistemas e Negócios',
     description: 'Fique por dentro das últimas notícias sobre tecnologia, sistemas web, e-commerce e marketing digital. Artigos aprofundados e tendências.',
     keywords: 'tecnologia, notícias tecnologia, marketing digital, desenvolvimento de sistemas, nc brasil, revista digital',
-    canonical: `${SITE_URL}/noticias`,
+    canonical: "/noticias",
     ogImage: '/og-main.jpg',
   }),
   component: NewsIndex,

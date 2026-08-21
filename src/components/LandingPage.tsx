@@ -168,8 +168,9 @@ export function LandingPage({
 }: LandingPageProps) {
 
   const [expandedImages, setExpandedImages] = useState<Record<number, boolean>>({});
-  const search = useRouterState({ select: (s) => s.location.search });
-  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const { location } = useRouterState();
+  const search = location.search;
+  const pathname = location.pathname;
 
   const toggleExpand = (index: number) => {
     setExpandedImages(prev => ({ ...prev, [index]: !prev[index] }));
