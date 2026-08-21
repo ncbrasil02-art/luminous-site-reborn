@@ -192,10 +192,11 @@ function HomePage() {
   return (
     <>
       <Helmet>
-        <title>NcBrasil - Criação de Sites, Sistemas Web e Aplicativos Profissionais</title>
-        <meta name="description" content="NcBrasil: Especialistas em criação de sites, sistemas sob demanda e aplicativos mobile. Tecnologia premium e marketing digital para transformar seu negócio." />
-        <meta name="keywords" content="criação de sites, criação de sistemas web, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, NC Brasil" />
+        <title>NcBrasil - Sistemas Web e Sites de Alta Performance</title>
+        <meta name="description" content="NcBrasil: Especialistas em sistemas cinematográficos, plataformas de leilão e aplicativos de alto padrão. Tecnologia premium para empresas líderes." />
+        <meta name="keywords" content="criação de sites premium, sistemas web alta performance, plataforma de leilão online, aplicativos mobile premium, marketing digital estratégico, agência de tecnologia SP" />
       </Helmet>
+
       
       {/* Visual Technical SEO Status */}
       <div className="sr-only">
