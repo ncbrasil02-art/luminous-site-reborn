@@ -1,78 +1,152 @@
-import { newsData } from "@/lib/news.data";
-
-const SITE_URL = "https://www.ncbrasil.com.br";
-
-export default function Sitemap() {
-  return null;
-}
-
-export const loader = async () => {
-  const staticRoutes = [
-    "/",
-    "/empresa/quem-somos",
-    "/empresa/nossa-historia",
-    "/empresa/clientes",
-    "/contato",
-    "/orcamento",
-    "/nossos-servicos",
-    "/nossos-sistemas",
-    "/cases",
-    "/trabalhos-realizados",
-    "/servicos/desenvolvimento",
-    "/servicos/sistemas-web",
-    "/servicos/aplicativos",
-    "/servicos/identidade-visual",
-    "/servicos/google-ads",
-    "/servicos/consultoria",
-    "/sistema-de-leilao",
-    "/sistema-de-leilao-rural",
-    "/sistema-de-leilao-de-centavos",
-    "/sistema-de-rifas",
-    "/sistema-de-raspadinha",
-    "/sistema-de-cupom-descontos",
-    "/sistema-de-revenda-de-veiculos",
-    "/classificados-de-veiculos",
-    "/plataforma-chinesa-apostas-cassino",
-    "/portfolio/sites-criados",
-    "/portfolio/lojas-virtuais-criadas",
-    "/portfolio/criacao-de-aplicativos",
-    "/portfolio/sistemas-criados",
-    "/portfolio/identidade-visual",
-    "/noticias",
-  ];
-
-  const newsRoutes = newsData
-    .filter(post => post.slug && post.slug.trim() !== "")
-    .map((post) => `/noticias/${post.slug}`);
-  
-  const categories = Array.from(new Set(newsData.flatMap(p => p.categories)));
-  const categoryRoutes = categories
-    .filter(cat => cat && cat !== "Sem categoria")
-    .map(cat => `/noticias/categoria/${cat.toLowerCase().replace(/\s+/g, '-')}`);
-
-  const allRoutes = [...staticRoutes, ...newsRoutes, ...categoryRoutes];
-  const date = new Date().toISOString();
-
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${allRoutes
-    .map((route) => {
-      const loc = `${SITE_URL}${route.startsWith("/") ? "" : "/"}${route}`;
-      return `
   <url>
-    <loc>${loc}</loc>
-    <lastmod>${date}</lastmod>
-    <changefreq>${route === "/" ? "daily" : "weekly"}</changefreq>
-    <priority>${route === "/" ? "1.0" : route.includes("sistema-de-") ? "0.9" : "0.7"}</priority>
-  </url>`;
-    })
-    .join("")}
-</urlset>`;
-
-  return new Response(sitemap, {
-    headers: {
-      "Content-Type": "application/xml",
-      "Cache-Control": "public, max-age=3600, s-maxage=18000",
-    },
-  });
-};
+    <loc>https://www.ncbrasil.com.br/</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Platforms / Systems (Priority) -->
+  <url>
+    <loc>https://www.ncbrasil.com.br/sistema-de-leilao</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/sistema-de-leilao-rural</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/sistema-de-leilao-de-centavos</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/sistema-de-rifas</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/classificados-de-veiculos</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/sistema-de-revenda-de-veiculos</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/plataforma-chinesa-apostas-cassino</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/sistema-de-raspadinha</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/sistema-de-cupom-descontos</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/sistema-de-ofertas-cupom-marketplace</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/sistema-sob-demanda-nc-brasil</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/programa-de-ordem-de-servico</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/software</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Services -->
+  <url>
+    <loc>https://www.ncbrasil.com.br/nossos-servicos</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/solucoes-web/desenvolvimento-de-sites</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/solucoes-web/loja-virtual</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/solucoes-web/landing-pages</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/solucoes-web/marketing-digital</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/solucoes-web/seo-google</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/servicos/aplicativos</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <!-- Corporate / General -->
+  <url>
+    <loc>https://www.ncbrasil.com.br/empresa/quem-somos</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/trabalhos-realizados</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/contato</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/orcamento</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ncbrasil.com.br/noticias</loc>
+    <lastmod>2026-08-21T13:51:28Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
