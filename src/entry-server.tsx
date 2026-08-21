@@ -14,19 +14,16 @@ export async function render(url: string) {
       history,
     });
 
-    // Wait for the router to load the route match and any critical data
     await router.load();
 
     const helmetContext: { helmet?: HelmetServerState } = {};
     
-    // Using renderToString to be sure everything is rendered
     const html = ReactDOMServer.renderToString(
       <HelmetProvider context={helmetContext}>
         <RouterProvider router={router} />
       </HelmetProvider>
     );
     
-    // IMPORTANT: Helmet data must be accessed AFTER renderToString
     const { helmet } = helmetContext;
     
     let head = '';
