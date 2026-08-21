@@ -1,4 +1,4 @@
-/** Misericórdia estou aqui atualizando a página toda hora para ver se alterou os serviços do menu de serviços todos os itens cada um com seu título lembrando que não é na parte de sistemas e os títulos estão iguais o hero e páginas com conteúdo igual... As últimas que eu pedi para você criar o conteúdo não está lá estou clicando na página por exemplo marketing digital eu te passei toda estrutura de cada página acima para você colocar e fazer e não estar la para mim está igual */
+/** Todas começam com plataformas digitais que escala seu negócio... Cada uma precisa ter seu título da página independente com conteúdo independente focado no serviço que estamos propondo a falar naquela página.. inclusive perguntas e respostas precisam ser condições com a página do serviço que estamos fazendo ou seja peço que você observe bem... Dentro do menu serviços tem o sub itens as páginas que estão nele precisam ser únicas com conteúdo único relevante conforme passei acima */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
