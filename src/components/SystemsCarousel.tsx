@@ -69,10 +69,10 @@ export function SystemsCarousel() {
           {systems.map((system, index) => (
             <div key={system.title} className="min-w-0 flex-[0_0_100%] pl-4 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]">
               <motion.div 
-                whileHover={{ y: -8 }}
-                className="group relative h-[420px] overflow-hidden rounded-[2rem] border border-border/60 bg-card/40 backdrop-blur-sm"
+                whileHover={{ y: -12 }}
+                className="group relative h-[520px] overflow-hidden rounded-[3rem] border border-white/5 bg-navy-900/30 backdrop-blur-xl transition-all duration-500 hover:border-primary/40 hover:glow-md hover:bg-navy-900/50"
               >
-                {/* Background Image with Overlay */}
+                {/* Background Image with Cinematic Overlay */}
                 <div className="absolute inset-0">
                   <img 
                     src={system.image} 
@@ -80,13 +80,14 @@ export function SystemsCarousel() {
                     loading="lazy"
                     decoding="async"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="h-full w-full object-cover opacity-30 transition-transform duration-700 group-hover:scale-110"
+                    className="h-full w-full object-cover opacity-20 transition-transform duration-1000 group-hover:scale-110 group-hover:opacity-40"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = "/logo.jpg";
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
                 </div>
+
 
                 <div className="relative flex h-full flex-col p-8">
                   <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/20 text-primary ring-1 ring-primary/30 backdrop-blur">
