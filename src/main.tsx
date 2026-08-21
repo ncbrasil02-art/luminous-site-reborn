@@ -18,9 +18,5 @@ function App() {
 
 const rootElement = document.getElementById("root")!;
 
-// Use hydrateRoot if the content was pre-rendered, otherwise createRoot
-if (rootElement.innerHTML.trim().length > 0) {
-  ReactDOM.hydrateRoot(rootElement, <App />);
-} else {
-  ReactDOM.createRoot(rootElement).render(<App />);
-}
+// Use createRoot to avoid hydration mismatch in preview environment
+ReactDOM.createRoot(rootElement).render(<App />);

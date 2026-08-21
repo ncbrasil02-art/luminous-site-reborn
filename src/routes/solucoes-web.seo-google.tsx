@@ -5,12 +5,12 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 const URL = "https://www.ncbrasil.com.br/solucoes-web/seo-google";
 
 const lpFaq = [
-        { q: "Em quanto tempo vejo resultado?", a: "Primeiros ganhos em **60-90 dias**; resultados consistentes a partir de 6 meses." },
-        { q: "Vocês garantem primeira página?", a: "Ninguém pode garantir posições — mas nosso **histórico mostra 90% dos projetos no Top 10** em 12 meses." },
-        { q: "Fazem SEO local?", a: "Sim, especialidade em **Google Business Profile, SEO por bairro e Google Maps**." },
-        { q: "Trabalham com que ferramentas?", a: "**Ahrefs, SEMrush, Screaming Frog, Search Console, GA4, Sitebulb** e mais." },
-        { q: "Preciso de conteúdo?", a: "Sim, **conteúdo é o combustível do SEO** — produzimos com redatores especializados." },
-      ];
+  { q: "Em quanto tempo meu site aparece no topo do Google?", a: "O SEO é um processo gradual; ganhos iniciais surgem em **30 a 90 dias**, com consolidação da autoridade em 6 a 12 meses." },
+  { q: "Vocês garantem a primeira posição?", a: "Nenhuma agência séria garante o 1º lugar, mas garantimos a aplicação das **melhores práticas e otimização técnica** para levar seu site ao topo." },
+  { q: "O que é SEO de cauda longa?", a: "São frases mais específicas que trazem um **público muito mais qualificado** e propenso a converter do que termos genéricos." },
+  { q: "Como vocês medem o sucesso do SEO?", a: "Através do aumento de **tráfego orgânico, impressões no Search Console e conversões diretas** vindas da busca." },
+  { q: "SEO e Google Ads são a mesma coisa?", a: "Não. O SEO foca em resultados **orgânicos (gratuitos)** a longo prazo, enquanto o Ads é tráfego pago imediato." },
+];
 
 export const Route = createFileRoute("/solucoes-web/seo-google")({
   head: () => buildLPMeta({
@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/seo-google")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/seo-google", label: "SEO Google" }]}
       eyebrow="SEO Profissional"
-      h1={<>SEO Google: <span className="text-gradient">Ranqueamento e Autoridade de Palavras-Chave</span></>}
-      intro={<>Atuamos com o **rankeamento e autoridade de palavras-chaves** de curta e longa cauda, maximizando os resultados orgânicos nos principais buscadores como o Google para elevar qualquer empresa ao topo.</>}
+      h1={<>Domine o Google e <span className="text-gradient">Escale suas Vendas Orgânicas</span></>}
+      intro={<>Eleve sua empresa ao topo com nossa metodologia de **SEO de alta performance**. Atuamos no rankeamento estratégico de palavras-chave de curta e longa cauda para garantir que seu site seja a primeira opção do seu cliente.</>}
       stats={[{ value: "+340%", label: "Tráfego orgânico" }, { value: "Top 3", label: "Rankings alcançados" }, { value: "500+", label: "Palavras-chave" }, { value: "12 meses", label: "Resultado consistente" }]}
       benefits={[
         { icon: Search, title: "Keyword Research", desc: "Mapeamento com **Ahrefs, SEMrush e Google Search Console** — foco em intenção de busca." },

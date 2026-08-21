@@ -5,12 +5,12 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 const URL = "https://www.ncbrasil.com.br/solucoes-web/landing-pages";
 
 const lpFaq = [
-        { q: "Qual o prazo de entrega?", a: "LPs simples em **7 dias**, projetos completos em até 20 dias." },
-        { q: "Vocês fazem o copywriting?", a: "Sim, temos **copywriters especializados** em conversão para tráfego pago." },
-        { q: "Serve para Google Ads e Meta Ads?", a: "Sim, todas as LPs seguem as **diretrizes de qualidade** de ambas as plataformas." },
-        { q: "Fazem testes A/B?", a: "Sim, oferecemos **2 versões de teste** e otimização baseada em dados reais." },
-        { q: "Integra com meu CRM?", a: "Sim: RD Station, HubSpot, ActiveCampaign, Mailchimp, Pipedrive e **webhooks personalizados**." },
-      ];
+  { q: "O que torna uma Landing Page de alta conversão?", a: "O uso estratégico de **copywriting persuasivo, design limpo e CTAs claros** que guiam o usuário para a ação desejada." },
+  { q: "Posso usar a LP para vender produtos físicos?", a: "Com certeza, são ideais para **lançamentos ou promoções específicas**, focando toda a atenção no produto estrela." },
+  { q: "A Landing Page é integrada ao meu CRM?", a: "Sim, conectamos os formulários diretamente ao seu **funil de vendas** para que nenhum lead seja perdido." },
+  { q: "Quanto tempo leva para criar uma LP?", a: "Projetamos e entregamos sua página otimizada em um prazo médio de **7 a 15 dias úteis**." },
+  { q: "A página é otimizada para mobile?", a: "Sim, cada LP é desenvolvida com foco total em **dispositivos móveis**, onde ocorre a maioria das conversões hoje." },
+];
 
 export const Route = createFileRoute("/solucoes-web/landing-pages")({
   head: () => buildLPMeta({
@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/landing-pages")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/landing-pages", label: "Landing Pages" }]}
       eyebrow="LPs de Conversão"
-      h1={<>Criação de Landing Pages de <span className="text-gradient">Alta Conversão | LPs que Vendem</span></>}
-      intro={<>Especialistas na **criação de LPs de alta conversão** focadas em produtos ou serviços. Capturamos leads qualificados através de uma estrutura persuasiva integrada ao seu funil de marketing digital.</>}
+      h1={<>Landing Pages que <span className="text-gradient">Escalam sua Captação de Leads</span></>}
+      intro={<>Transforme cliques em lucro com **Landing Pages de altíssima conversão**. Projetamos LPs persuasivas com gatilhos mentais e design cinematográfico para capturar leads qualificados para seu produto ou serviço.</>}
       stats={[{ value: "500+", label: "LPs entregues" }, { value: "12%", label: "Conversão média" }, { value: "72h", label: "Entrega expressa" }, { value: "A/B", label: "Testes inclusos" }]}
       benefits={[
         { icon: MousePointerClick, title: "CTA Estratégico", desc: "**Botões testados A/B**, contraste otimizado e microcopy que aumenta cliques em 30%." },

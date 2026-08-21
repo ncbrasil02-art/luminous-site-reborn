@@ -5,12 +5,12 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 const URL = "https://www.ncbrasil.com.br/solucoes-web/hospedagem";
 
 const lpFaq = [
-        { q: "Qual a diferença para hospedagens populares?", a: "Nossa hospedagem é **gerenciada por engenheiros DevOps** — não é compartilhada e nunca deixa seu site fora do ar por vizinho ruim." },
-        { q: "Migram meu site atual?", a: "Sim, **migração gratuita e sem downtime**, cuidamos de tudo em até 48h." },
-        { q: "Qual o valor?", a: "Planos a partir de **R$ 149/mês** — proposta personalizada conforme necessidade." },
-        { q: "Serve para e-commerce?", a: "Sim, temos planos otimizados para **WooCommerce, Magento e plataformas próprias**." },
-        { q: "Fazem manutenção?", a: "Sim, **atualizações, patches de segurança e otimizações** incluídos no plano." },
-      ];
+  { q: "Por que escolher um servidor dedicado no Brasil?", a: "Servidores nacionais garantem a **menor latência possível**, tornando seu site muito mais rápido para o público brasileiro." },
+  { q: "O que é hospedagem em Cloud?", a: "É uma infraestrutura escalável que permite aumentar recursos como **RAM e CPU instantaneamente** conforme seu tráfego cresce." },
+  { q: "Vocês oferecem suporte para e-mail profissional?", a: "Sim, configuramos toda a estrutura de e-mails para que sua empresa tenha uma **presença profissional completa**." },
+  { q: "Meu site terá certificado de segurança SSL?", a: "Sim, instalamos e renovamos automaticamente o **SSL gratuito** em todos os domínios hospedados conosco." },
+  { q: "Como funciona a consultoria para dedicados?", a: "Analisamos sua carga de processamento e configuramos o **hardware ideal** para que você nunca tenha gargalos de performance." },
+];
 
 export const Route = createFileRoute("/solucoes-web/hospedagem")({
   head: () => buildLPMeta({
@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/hospedagem")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/hospedagem", label: "Hospedagem" }]}
       eyebrow="Infra Cloud"
-      h1={<>Hospedagem de Sites e Sistemas: <span className="text-gradient">Servidores Dedicados e Cloud no Brasil</span></>}
-      intro={<>Hospedagem profissional com **servidores dedicados e planos cloud** de alta performance. Oferecemos consultoria completa para infraestrutura dedicada com servidores robustos localizados no Brasil.</>}
+      h1={<>Infraestrutura Robusta para <span className="text-gradient">Escalar seus Sistemas</span></>}
+      intro={<>Hospedagem profissional com **servidores dedicados e cloud** projetada para projetos que não podem parar. Consultoria técnica e infraestrutura brasileira que garante velocidade extrema e estabilidade total.</>}
       stats={[{ value: "99,9%", label: "Uptime garantido" }, { value: "24/7", label: "Suporte técnico" }, { value: "<50ms", label: "Latência Brasil" }, { value: "SSL", label: "Grátis Let's Encrypt" }]}
       benefits={[
         { icon: Zap, title: "Performance Extrema", desc: "**SSD NVMe, HTTP/3, cache Redis** e CDN Cloudflare em 300+ pontos globais." },
