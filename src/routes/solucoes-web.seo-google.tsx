@@ -5,12 +5,12 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 const URL = "https://www.ncbrasil.com.br/solucoes-web/seo-google";
 
 const lpFaq = [
-        { q: "Em quanto tempo vejo resultado?", a: "Primeiros ganhos em **60-90 dias**; resultados consistentes a partir de 6 meses." },
-        { q: "Vocês garantem primeira página?", a: "Ninguém pode garantir posições — mas nosso **histórico mostra 90% dos projetos no Top 10** em 12 meses." },
-        { q: "Fazem SEO local?", a: "Sim, especialidade em **Google Business Profile, SEO por bairro e Google Maps**." },
-        { q: "Trabalham com que ferramentas?", a: "**Ahrefs, SEMrush, Screaming Frog, Search Console, GA4, Sitebulb** e mais." },
-        { q: "Preciso de conteúdo?", a: "Sim, **conteúdo é o combustível do SEO** — produzimos com redatores especializados." },
-      ];
+  { q: "Em quanto tempo meu site aparece no topo do Google?", a: "O SEO é um processo gradual; ganhos iniciais surgem em **30 a 90 dias**, com consolidação da autoridade em 6 a 12 meses." },
+  { q: "Vocês garantem a primeira posição?", a: "Nenhuma agência séria garante o 1º lugar, mas garantimos a aplicação das **melhores práticas e otimização técnica** para levar seu site ao topo." },
+  { q: "O que é SEO de cauda longa?", a: "São frases mais específicas que trazem um **público muito mais qualificado** e propenso a converter do que termos genéricos." },
+  { q: "Como vocês medem o sucesso do SEO?", a: "Através do aumento de **tráfego orgânico, impressões no Search Console e conversões diretas** vindas da busca." },
+  { q: "SEO e Google Ads são a mesma coisa?", a: "Não. O SEO foca em resultados **orgânicos (gratuitos)** a longo prazo, enquanto o Ads é tráfego pago imediato." },
+];
 
 export const Route = createFileRoute("/solucoes-web/seo-google")({
   head: () => buildLPMeta({

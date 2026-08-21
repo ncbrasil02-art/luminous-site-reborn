@@ -5,12 +5,12 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 const URL = "https://www.ncbrasil.com.br/solucoes-web/hospedagem";
 
 const lpFaq = [
-        { q: "Qual a diferença para hospedagens populares?", a: "Nossa hospedagem é **gerenciada por engenheiros DevOps** — não é compartilhada e nunca deixa seu site fora do ar por vizinho ruim." },
-        { q: "Migram meu site atual?", a: "Sim, **migração gratuita e sem downtime**, cuidamos de tudo em até 48h." },
-        { q: "Qual o valor?", a: "Planos a partir de **R$ 149/mês** — proposta personalizada conforme necessidade." },
-        { q: "Serve para e-commerce?", a: "Sim, temos planos otimizados para **WooCommerce, Magento e plataformas próprias**." },
-        { q: "Fazem manutenção?", a: "Sim, **atualizações, patches de segurança e otimizações** incluídos no plano." },
-      ];
+  { q: "Por que escolher um servidor dedicado no Brasil?", a: "Servidores nacionais garantem a **menor latência possível**, tornando seu site muito mais rápido para o público brasileiro." },
+  { q: "O que é hospedagem em Cloud?", a: "É uma infraestrutura escalável que permite aumentar recursos como **RAM e CPU instantaneamente** conforme seu tráfego cresce." },
+  { q: "Vocês oferecem suporte para e-mail profissional?", a: "Sim, configuramos toda a estrutura de e-mails para que sua empresa tenha uma **presença profissional completa**." },
+  { q: "Meu site terá certificado de segurança SSL?", a: "Sim, instalamos e renovamos automaticamente o **SSL gratuito** em todos os domínios hospedados conosco." },
+  { q: "Como funciona a consultoria para dedicados?", a: "Analisamos sua carga de processamento e configuramos o **hardware ideal** para que você nunca tenha gargalos de performance." },
+];
 
 export const Route = createFileRoute("/solucoes-web/hospedagem")({
   head: () => buildLPMeta({
