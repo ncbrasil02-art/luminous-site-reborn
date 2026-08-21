@@ -10,14 +10,14 @@ import { rifasTestimonials } from "@/lib/testimonials.data";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
 
 // Image Assets - Optimized for external hosting
-const rifasLogoUrl = "https://www.ncbrasil.com.br/logo.jpg";
-const rifasShowcase1Url = "https://www.ncbrasil.com.br/sistema-de-rifas/melhor-sistema-de-rifas-online.png";
-const rifasShowcase2Url = "https://www.ncbrasil.com.br/sistema-de-rifas/plataforma-de-rifas-lucrativa.png";
-const rifasShowcase3Url = "https://www.ncbrasil.com.br/sistema-de-rifas/script-de-rifas-profissional.png";
-const rifasShowcase4Url = "https://www.ncbrasil.com.br/sistema-de-rifas/sistema-de-rifas-premium.png";
-const painelConfigUrl = "https://www.ncbrasil.com.br/sistema-de-rifas/painel-configuracao-rifas.png";
-const painelDashboardUrl = "https://www.ncbrasil.com.br/sistema-de-rifas/painel-dashboard-rifas.png";
-const painelPagamentosUrl = "https://www.ncbrasil.com.br/sistema-de-rifas/painel-pagamentos-rifas.png";
+const rifasLogoUrl = "/logo.jpg";
+const rifasShowcase1Url = "/img-sistema-de-rifas/showcase-01.png";
+const rifasShowcase2Url = "/img-sistema-de-rifas/showcase-02.webp";
+const rifasShowcase3Url = "/img-sistema-de-rifas/showcase-01.png"; // Fallback to showcase 01 if others missing
+const rifasShowcase4Url = "/img-sistema-de-rifas/showcase-02.webp";
+const painelConfigUrl = "/img-sistema-de-leilao/configuracoes.png"; 
+const painelDashboardUrl = "/img-sistema-de-leilao/dashboard-premium.png";
+const painelPagamentosUrl = "/img-sistema-de-leilao/painel-online.png";
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
@@ -85,7 +85,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           <PartnerCarousel 
             title="Integrado com os melhores Gateways e Loteria Federal"
             logos={[
-              { name: "Caixa", url: "https://www.ncbrasil.com.br/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
+              { name: "Caixa", url: "/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
               { name: "Mercado Pago", url: "https://www.ncbrasil.com.br/partners/mercado-pago.png" },
               { name: "Pagar.me", url: "https://www.ncbrasil.com.br/partners/pagarme.png" },
               { name: "Efí", url: "https://www.ncbrasil.com.br/partners/efi.png" },
