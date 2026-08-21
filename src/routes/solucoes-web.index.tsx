@@ -31,10 +31,14 @@ const URL = "https://www.ncbrasil.com.br/solucoes-web";
 
 export const Route = createFileRoute("/solucoes-web/")({
   head: () => buildStubMeta({
-    title: "Soluções Web · NC Brasil — Plataformas Digitais Sob Medida",
-    description: "Soluções web completas: sites, sistemas, lojas virtuais e integrações. Tecnologia escalável para o seu negócio crescer.",
-    keywords: "soluções web, plataforma digital, desenvolvimento web SP, integração de sistemas, NC Brasil",
+    title: "Soluções Web | Sites, Lojas Virtuais, SEO e Hospedagem — NC Brasil",
+    description: "Soluções web completas: criação de sites, landing pages de alta conversão, lojas virtuais, SEO no Google, marketing digital e hospedagem em servidores dedicados.",
+    keywords: "soluções web, criação de sites, landing pages, loja virtual, seo google, marketing digital, hospedagem de sites",
     canonical: URL,
+    breadcrumbs: [
+      { label: "Home", to: "https://www.ncbrasil.com.br/" },
+      { label: "Soluções Web", to: URL },
+    ],
   }),
   component: SolucoesWebPage,
 });
