@@ -9,15 +9,24 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 import { rifasTestimonials } from "@/lib/testimonials.data";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
 
-// Image Assets - Optimized for external hosting
-const rifasLogoUrl = "/logo.jpg";
-const rifasShowcase1Url = "/img-sistema-de-rifas/sistema-de-rifas-dashboard-financeiro-premium-01.png";
-const rifasShowcase2Url = "/logo.jpg";
-const rifasShowcase3Url = "/logo.jpg";
-const rifasShowcase4Url = "/logo.jpg";
-const painelConfigUrl = "/logo.jpg";
-const painelDashboardUrl = "/logo.jpg";
-const painelPagamentosUrl = "/logo.jpg";
+// Image Assets - Optimized for SEO and performance
+import rifasLogoAsset from "@/assets/rifas/logo.asset.json";
+import showcase1Asset from "@/assets/rifas/showcase1.asset.json";
+import showcase2Asset from "@/assets/rifas/showcase2.asset.json";
+import showcase3Asset from "@/assets/rifas/showcase3.asset.json";
+import showcase4Asset from "@/assets/rifas/showcase4.asset.json";
+import showcase5Asset from "@/assets/rifas/showcase5.asset.json";
+import showcase6Asset from "@/assets/rifas/showcase6.asset.json";
+import showcase7Asset from "@/assets/rifas/showcase7.asset.json";
+
+const rifasLogoUrl = rifasLogoAsset.url;
+const rifasShowcase1Url = showcase1Asset.url;
+const rifasShowcase2Url = showcase2Asset.url;
+const rifasShowcase3Url = showcase3Asset.url;
+const rifasShowcase4Url = showcase4Asset.url;
+const rifasShowcase5Url = showcase5Asset.url;
+const rifasShowcase6Url = showcase6Asset.url;
+const rifasShowcase7Url = showcase7Asset.url;
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
@@ -60,9 +69,9 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         rifasShowcase2Url,
         rifasShowcase3Url,
         rifasShowcase4Url,
-        painelConfigUrl,
-        painelDashboardUrl,
-        painelPagamentosUrl,
+        rifasShowcase5Url,
+        rifasShowcase6Url,
+        rifasShowcase7Url,
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
@@ -121,7 +130,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           "**Cotas ilimitadas** — de 100 a 10 milhões por campanha",
           "**Módulo de afiliados** com comissão automática",
         ],
-        image: "/img-sistema-de-rifas/sistema-de-rifas-dashboard-financeiro-premium-01.png"
+        image: rifasShowcase1Url
       }}
       testimonials={rifasTestimonials}
       benefits={[
