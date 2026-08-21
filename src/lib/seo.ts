@@ -37,7 +37,7 @@ export function buildMeta(options: MetaOptions) {
     article,
   } = options;
 
-  const fullTitle = title.includes(SITE_NAME) ? title : `${SITE_NAME} - ${title}`;
+  const fullTitle = title.includes(SITE_NAME) ? title : title;
   
   // If canonical is provided, make it absolute. If not, it will be added by the route components if possible.
   const absoluteCanonical = canonical 
