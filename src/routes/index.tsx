@@ -1,4 +1,4 @@
-/** mee manda o link dlelas paara  verr */
+/** me manda o link daas pagginaas  qquee vcc ffez */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
