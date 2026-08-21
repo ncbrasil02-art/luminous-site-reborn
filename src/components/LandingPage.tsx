@@ -187,11 +187,14 @@ export function LandingPage({
 
   return (
     <>
+      {/* Helmet is disabled here because we use head property in routes for better SEO and SSG */}
+      {/* 
       <Helmet>
-        <title>{`${typeof h1 === 'string' ? h1 : eyebrow} · NC Brasil`}</title>
-        <meta name="description" content={typeof intro === 'string' ? intro.slice(0, 160) : eyebrow} />
+        <title>{`NcBrasil - ${typeof h1 === 'string' ? h1 : eyebrow}`}</title>
+        <meta name="description" content={`NcBrasil: ${typeof intro === 'string' ? intro.slice(0, 140) : eyebrow} - Especialistas em ${eyebrow} para o seu negócio.`} />
         {logo && <link rel="icon" href={logo} />}
-      </Helmet>
+      </Helmet> 
+      */}
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />

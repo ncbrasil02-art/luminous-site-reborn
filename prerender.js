@@ -6,12 +6,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const toAbsolute = (p) => path.resolve(__dirname, p)
 
 async function generate() {
-  const template = fs.readFileSync(toAbsolute('dist/index.html'), 'utf-8')
+  const templatePath = toAbsolute('dist/index.html')
+  if (!fs.existsSync(templatePath)) {
+    console.error('Error: dist/index.html not found. Run build:client first.')
+    process.exit(1)
+  }
+  const template = fs.readFileSync(templatePath, 'utf-8')
   
-  // Import the SSR entry point
   const { render } = await import('./dist/server/entry-server.js')
-  
-  // Import news data for dynamic routes
   const { newsData } = await import('./src/lib/news.data.ts')
 
   const allCategories = Array.from(new Set(newsData.flatMap(p => p.categories))).filter(Boolean)
@@ -43,49 +45,72 @@ async function generate() {
       console.log('Rendering:', url)
       const result = await render(url)
       
-      const appHtml = result.html
+      let appHtml = result.html
       const head = result.head
 
-      if (!appHtml || appHtml.length < 500) {
-         console.warn(`Warning: Small HTML for ${url}. Length: ${appHtml?.length || 0}`);
-      }
-
-      // Final HTML reconstruction
-      // We also look for <title> and <meta name="description"> that might have been rendered in the body by TanStack's HeadContent
-      // and move them to the head if the 'head' string from entry-server is incomplete.
+      // TanStack HeadContent often renders tags inside the body during SSR.
+      // We need to move them to the head if they exist in appHtml.
       
-      let titleTag = "";
-      let metaDesc = "";
-
-      if (!head.includes('<title')) {
-        const titleMatch = appHtml.match(/<title.*?>([\s\S]*?)<\/title>/);
-        if (titleMatch) titleTag = `<title>${titleMatch[1]}</title>`;
+      // Extract title from appHtml if present
+      let extractedHeadTags = '';
+      const titleMatch = appHtml.match(/<title>.*?<\/title>/gi);
+      if (titleMatch) {
+        extractedHeadTags += titleMatch.join('\n');
+        appHtml = appHtml.replace(/<title>.*?<\/title>/gi, '');
       }
 
-      if (!head.includes('name="description"')) {
-        const descMatch = appHtml.match(/<meta name="description" content="([\s\S]*?)"/);
-        if (descMatch) metaDesc = `<meta name="description" content="${descMatch[1]}">`;
+      // Extract meta tags from appHtml
+      const metaMatch = appHtml.match(/<meta.*?\/>/gi) || appHtml.match(/<meta.*?>/gi);
+      if (metaMatch) {
+        const uniqueMetas = metaMatch.filter(m => 
+          m.includes('name="description"') || 
+          m.includes('name="keywords"') || 
+          m.includes('property="og:') || 
+          m.includes('name="twitter:') ||
+          m.includes('name="robots"')
+        );
+        extractedHeadTags += uniqueMetas.join('\n');
+        // We don't remove all metas from appHtml as some might be legitimate, 
+        // but we'll try to remove the common ones to clean up the body.
+        uniqueMetas.forEach(m => {
+          appHtml = appHtml.replace(m, '');
+        });
       }
 
-      const finalHead = (head + titleTag + metaDesc).trim();
+      // Extract links (canonical, etc.)
+      const linkMatch = appHtml.match(/<link.*?\/>/gi) || appHtml.match(/<link.*?>/gi);
+      if (linkMatch) {
+        const uniqueLinks = linkMatch.filter(l => 
+          l.includes('rel="canonical"') || 
+          l.includes('rel="alternate"') ||
+          l.includes('rel="icon"')
+        );
+        extractedHeadTags += uniqueLinks.join('\n');
+        uniqueLinks.forEach(l => {
+          appHtml = appHtml.replace(l, '');
+        });
+      }
 
-      // Ensure template has the placeholders
-      let finalHtml = template;
+      // Combine head from entry-server and extracted tags
+      const combinedHead = (head + extractedHeadTags).trim();
+
+      // Clean template from existing SEO tags to avoid duplicates
+      let finalHtml = template.replace(/<title>.*?<\/title>/gi, '')
+                              .replace(/<meta name="description" content=".*?" \/>/gi, '')
+                              .replace(/<meta name="description" content=".*?"\/>/gi, '');
+
       if (finalHtml.includes('<!--app-head-->')) {
-        finalHtml = finalHtml.replace('<!--app-head-->', finalHead || '');
+        finalHtml = finalHtml.replace('<!--app-head-->', combinedHead)
       } else {
-        // Fallback: inject before </head>
-        finalHtml = finalHtml.replace('</head>', `${finalHead}\n  </head>`);
+        finalHtml = finalHtml.replace('</head>', `${combinedHead}\n</head>`)
       }
 
       if (finalHtml.includes('<!--app-html-->')) {
-        finalHtml = finalHtml.replace('<!--app-html-->', appHtml || '');
+        finalHtml = finalHtml.replace('<!--app-html-->', appHtml)
       } else {
-        // Fallback: inject inside <div id="root">
-        finalHtml = finalHtml.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
+        finalHtml = finalHtml.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`)
       }
 
-      // Clean the URL to get a valid file path
       const cleanUrl = url === '/' ? '/index' : url.replace(/\/$/, "");
       const filePath = `dist${cleanUrl}.html`
       const absolutePath = toAbsolute(filePath)

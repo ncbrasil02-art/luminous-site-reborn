@@ -31,11 +31,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/sistema-de-leilao")({
   head: () => buildLPMeta({
-    title: "Sistema de Leilão NC Brasil | Sistema para Leilões Online",
-    description: "Plataforma de leilões online profissional para leiloeiros oficiais e tribunais. Sistema para leiloeiro com pregão eletrônico, transmissão ao vivo e split de comissões.",
+    title: "Sistema de Leilão | Plataforma de Leilões Online Profissional",
+    description: "NcBrasil: Plataforma de leilão online completa com pregão eletrônico, transmissão HD e split de comissões. O melhor sistema para leiloeiro oficial e judicial.",
     keywords: "sistema de leilão, plataforma de leilões, sistema para leiloeiro, plataforma de pregões online, sas leilão, site de leilão, sistema de leilão online, plataforma de leilão online, sistema online para leiloeiro",
     canonical: "/sistema-de-leilao",
-    h1: "Sistema de Leilão NC Brasil: Plataforma de Leilões Online e Pregões",
+    h1: "NcBrasil - Sistema de Leilão Profissional",
     breadcrumbs: [
       { label: "Home", to: `${SITE_URL}/` },
       { label: "Sistemas", to: `${SITE_URL}/nossos-sistemas` },

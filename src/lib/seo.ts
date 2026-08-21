@@ -1,5 +1,5 @@
 export const SITE_URL = "https://www.ncbrasil.com.br";
-export const SITE_NAME = "NC Brasil — Tecnologia e Marketing Digital";
+export const SITE_NAME = "NcBrasil";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo-nc-brasil.png`;
 
 export type MetaOptions = {
@@ -37,7 +37,7 @@ export function buildMeta(options: MetaOptions) {
     article,
   } = options;
 
-  const fullTitle = title.includes(SITE_NAME) ? title : `${title} · ${SITE_NAME}`;
+  const fullTitle = title.includes(SITE_NAME) ? title : title;
   
   // If canonical is provided, make it absolute. If not, it will be added by the route components if possible.
   const absoluteCanonical = canonical 
