@@ -406,16 +406,19 @@ function HomePage() {
 
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, i) => (
-              <Reveal key={step.n} delay={i * 0.08}>
-                <div className="group relative h-full rounded-2xl border border-border bg-card/60 p-6 backdrop-blur transition-all hover:border-primary/40 hover:bg-card">
-                  <div className="font-display text-5xl font-bold text-gradient opacity-90">
+              <Reveal key={step.n} delay={i * 0.1}>
+                <div className="group relative h-full rounded-[2rem] border border-white/5 bg-navy-950/40 p-8 backdrop-blur-xl transition-all duration-500 hover:border-primary/30 hover:bg-navy-900/40 hover:-translate-y-2">
+                  <div className="font-display text-6xl font-black text-white/5 transition-colors group-hover:text-primary/10">
                     {step.n}
                   </div>
-                  <h3 className="mt-4 font-display text-lg font-semibold">{step.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{renderBold(step.desc)}</p>
+                  <h3 className="mt-4 font-display text-xl font-bold tracking-tight text-white">{step.title}</h3>
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors">
+                    {renderBold(step.desc)}
+                  </p>
                 </div>
               </Reveal>
             ))}
+
           </div>
         </div>
       </section>
