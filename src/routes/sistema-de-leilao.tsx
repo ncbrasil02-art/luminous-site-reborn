@@ -63,7 +63,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       h1={
         <div className="flex flex-col items-center gap-8">
           <img 
-            src="/__l5e/assets-v1/fe0ede8a-1628-4a33-a80b-94243df006f9/nc-leiloes-logo-premium.png"
+            src="/img-sistema-de-leilao/nc-leiloes-logo-premium.png"
             alt="NC Leilões - Plataforma de Leilão" 
             className="h-20 md:h-28 w-auto transition-transform duration-500 hover:scale-105"
             onError={(e) => {

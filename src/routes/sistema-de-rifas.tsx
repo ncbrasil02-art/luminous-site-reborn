@@ -9,24 +9,15 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 import { rifasTestimonials } from "@/lib/testimonials.data";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
 
-// Image Assets - Optimized for SEO and performance
-import rifasLogoAsset from "@/assets/rifas/logo.asset.json";
-import showcase1Asset from "@/assets/rifas/showcase1.asset.json";
-import showcase2Asset from "@/assets/rifas/showcase2.asset.json";
-import showcase3Asset from "@/assets/rifas/showcase3.asset.json";
-import showcase4Asset from "@/assets/rifas/showcase4.asset.json";
-import showcase5Asset from "@/assets/rifas/showcase5.asset.json";
-import showcase6Asset from "@/assets/rifas/showcase6.asset.json";
-import showcase7Asset from "@/assets/rifas/showcase7.asset.json";
-
-const rifasLogoUrl = rifasLogoAsset.url;
-const rifasShowcase1Url = showcase1Asset.url;
-const rifasShowcase2Url = showcase2Asset.url;
-const rifasShowcase3Url = showcase3Asset.url;
-const rifasShowcase4Url = showcase4Asset.url;
-const rifasShowcase5Url = showcase5Asset.url;
-const rifasShowcase6Url = showcase6Asset.url;
-const rifasShowcase7Url = showcase7Asset.url;
+// Image Assets - Otimizadas com SEO
+const rifasLogoUrl = "/img-sistema-de-rifas/nc-rifas-logo-premium.png";
+const rifasShowcase1Url = "/img-sistema-de-rifas/sistema-de-rifas-dashboard-admin-01.png";
+const rifasShowcase2Url = "/img-sistema-de-rifas/sistema-de-rifas-configuracoes-identidade-02.png";
+const rifasShowcase3Url = "/img-sistema-de-rifas/sistema-de-rifas-edicao-campanha-03.png";
+const rifasShowcase4Url = "/img-sistema-de-rifas/plataforma-de-rifas-vitrine-cliente-04.png";
+const rifasShowcase5Url = "/img-sistema-de-rifas/sistema-de-rifas-mobile-app-05.png";
+const rifasShowcase6Url = "/img-sistema-de-rifas/plataforma-de-rifas-mobile-cotas-06.png";
+const rifasShowcase7Url = "/img-sistema-de-rifas/sistema-de-rifas-mobile-checkout-07.png";
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
