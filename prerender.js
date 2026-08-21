@@ -51,9 +51,28 @@ async function generate() {
       }
 
       // Final HTML reconstruction
+      // We also look for <title> and <meta name="description"> that might have been rendered in the body by TanStack's HeadContent
+      // and move them to the head if the 'head' string from entry-server is incomplete.
+      
+      let titleTag = "";
+      let metaDesc = "";
+
+      if (!head.includes('<title')) {
+        const titleMatch = appHtml.match(/<title.*?>([\s\S]*?)<\/title>/);
+        if (titleMatch) titleTag = `<title>${titleMatch[1]}</title>`;
+      }
+
+      if (!head.includes('name="description"')) {
+        const descMatch = appHtml.match(/<meta name="description" content="([\s\S]*?)"/);
+        if (descMatch) metaDesc = `<meta name="description" content="${descMatch[1]}">`;
+      }
+
+      const finalHead = (head + titleTag + metaDesc).trim();
+
       const finalHtml = template
-        .replace('<!--app-head-->', head || '')
+        .replace('<!--app-head-->', finalHead || '')
         .replace('<!--app-html-->', appHtml || '')
+
 
       // Clean the URL to get a valid file path
       const cleanUrl = url === '/' ? '/index' : url.replace(/\/$/, "");
