@@ -7,7 +7,7 @@ import {
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
 import { SITE_URL } from "@/lib/seo";
-import { testimonialsData } from "@/lib/testimonials.data";
+import { leilaoTestimonials } from "@/lib/testimonials.data";
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao";
 
