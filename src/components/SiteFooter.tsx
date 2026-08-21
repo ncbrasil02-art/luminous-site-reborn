@@ -3,7 +3,6 @@ import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Clock } from "lucid
 
 import { trackClick } from "@/lib/analytics";
 
-
 const cols = [
   {
     title: "Soluções",
@@ -40,19 +39,18 @@ const cols = [
 export function SiteFooter() {
   return (
     <footer className="relative overflow-hidden border-t border-border bg-surface">
-      
       <div className="absolute inset-0 bg-mesh opacity-40" aria-hidden />
 
       <div className="relative mx-auto max-w-7xl px-4 py-16 md:px-6">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2">
-              <img 
-                src="/logo.jpg" 
-                alt="NC Brasil - Logotipo Rodapé" 
-                width={160} 
-                height={40} 
-                className="h-10 w-auto object-contain" 
+              <img
+                src="/logo.jpg"
+                alt="NC Brasil - Logotipo Rodapé"
+                width={160}
+                height={40}
+                className="h-10 w-auto object-contain"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = "/logo.jpg";
                 }}
@@ -140,16 +138,8 @@ export function SiteFooter() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row">
+        <div className="mt-12 border-t border-border pt-6 text-center text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} NC Brasil — Sistemas & Marketing. Todos os direitos reservados.</p>
-        </div>
-            <p>
-              <strong className="text-foreground">CNPJ</strong> · Sites · Sistemas · Aplicativos · Marketing Digital
-            </p>
-            <Link to="/admin" className="opacity-0 hover:opacity-100 transition-opacity">
-              Admin
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
