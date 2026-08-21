@@ -1,157 +1,151 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import {
-  BarChart3, Camera, Car, CreditCard, FileCheck, Globe2, MessageCircle, Package, Search, ShieldCheck, Users,
-  Zap, Lock, Cloud, Database, Award, Smartphone, DollarSign, Wrench, TrendingUp,
+  Camera, Car, CreditCard, Filter, MapPin, MessageCircle, Search, ShieldCheck, Tag, Users,
+  BarChart3, Zap, Lock, Cloud, Database, Award, Globe2, Smartphone, FileCheck, Gauge,
+  DollarSign, Wrench, TrendingUp,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
-import { testimonialsData } from "@/lib/testimonials.data";
+import { veiculosTestimonials } from "@/lib/testimonials.data";
 
+// Import asset pointers
+import heroAsset from "@/assets/classificados-veiculos-hero.jpeg.asset.json";
+import dashboardVkAsset from "@/assets/classificados-veiculos-dashboard-vkintegradora.png.asset.json";
+import vitrineMobiAsset from "@/assets/classificados-veiculos-vitrine-mobiauto.png.asset.json";
+import importadorAsset from "@/assets/classificados-veiculos-importador-estoque.png.asset.json";
+import adminPanelAsset from "@/assets/classificados-veiculos-painel-admin.png.asset.json";
+import mobileDetailAsset from "@/assets/classificados-veiculos-detalhe-mobile.png.asset.json";
+import gestaoGeralAsset from "@/assets/classificados-veiculos-gestao-geral.png.asset.json";
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-revenda-de-veiculos";
 
 const lpFaq = [
-  { q: "Vocês entregam o portal com o meu domínio próprio?", a: "Sim. Portal com **domínio próprio, SSL wildcard, hospedagem otimizada AWS, CDN global e SEO técnico** — tudo incluído no plano." },
-  { q: "Quais portais externos são integrados para cross-post?", a: "**Webmotors, iCarros, OLX Autos, MercadoLivre, Facebook Marketplace, Instagram Shopping, Google Vehicle Ads e Kavak** — publicação com 1 clique." },
-  { q: "Existe app mobile para o vendedor no pátio?", a: "Sim, **app iOS/Android nativo** para vendedores fazerem fichamento no pátio, fotos, precificação FIPE e captura de leads offline." },
-  { q: "Como funciona a integração com financiamento?", a: "Simulador integrado com os **8 principais bancos** (BV, Santander, Itaú, Bradesco, Safra, Banco Pan, Creditas, Omni) — proposta em 1 clique." },
-  { q: "Suporta múltiplas lojas/filiais?", a: "Sim, arquitetura **multi-loja nativa** com transferência de estoque entre unidades, permissões granulares e BI consolidado." },
-  { q: "Faz gestão financeira e contábil?", a: "Sim. **Conta corrente, DRE, fluxo de caixa, comissões, custos operacionais, ITBI/ITBM e integração contábil** (Domínio, Alterdata, Sage)." },
-  { q: "Emite nota fiscal e faz DOC (transferência)?", a: "**NF-e, NFC-e e integração com DETRAN** de todos os estados para transferência, débitos, IPVA e vistoria eletrônica." },
-  { q: "Tem CRM com WhatsApp?", a: "Sim. **CRM completo com pipeline visual, chatbot WhatsApp Business, distribuição automática de leads, follow-up e gravação de chamadas**." },
-  { q: "Vocês entregam com estoque já cadastrado?", a: "Migração completa de **fotos, fichas, precificação e histórico** do seu sistema atual — sem retrabalho para sua equipe." },
-  { q: "Qual o modelo comercial?", a: "**Licença perpétua sem mensalidade** ou SaaS com valor fixo por loja (sem taxa por veículo) — orçamento personalizado." },
+  { q: "É possível integrar com o meu ERP de revenda ou concessionária?", a: "Sim. Temos **APIs prontas para AutoConf, Automotor, Boom Sistemas, Localiza Meu Carro, Revenda Mais, DealerBox** e integrações personalizadas via REST/XML para o seu **Classificado de veículos PHP**." },
+  { q: "O sistema já vem com SEO técnico otimizado?", a: "Sim. Cada anúncio gera **URL amigável, Schema.org Vehicle, sitemap dinâmico e imagens WebP** no seu **Sistema portal de veículos**." },
+  { q: "Aceita anúncios de particulares e revendedores no mesmo portal?", a: "Sim, com planos flexíveis na sua **Plataforma de anúncio de veículos** com moderação automatizada via IA." },
+  { q: "Como funciona o financiamento integrado?", a: "Integramos com as principais financeiras para simulação em tempo real no seu **Sistema revenda de autos**." },
+  { q: "Existe app mobile próprio?", a: "Sim, **iOS e Android nativos** para o seu **Sistema para revendedor de carros** com notificações push." },
+  { q: "Consulto a Tabela FIPE em tempo real?", a: "Sim. Consulta automática da **FIPE** integrada ao seu **Portal anúncio de veículos**." },
 ];
 
 export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
   head: () => buildLPMeta({
-    title: "Sistema para Revenda de Veículos | ERP + Portal Automotivo — NC Brasil",
-    description: "ERP completo para revendas de veículos: gestão de estoque, CRM WhatsApp, financiamento, portal com anúncios integrados a Webmotors/iCarros/OLX, DOC-fácil, NF-e e app da equipe.",
-    keywords: "sistema para revenda de veículos, ERP para revenda, software para loja de carros, plataforma revenda automotiva, CRM concessionária, sistema gestão de estoque veículos, DMS revenda",
+    title: "Sistema para Revenda de Carros e Portal de Anúncios de Veículos",
+    description: "NcBrasil: Plataforma completa de classificado de veículos PHP, sistema portal de veículos e revenda de autos com Tabela FIPE e apps nativos.",
+    keywords: "classificado de veículos PHP, sistema portal de veículos, plataforma de anúncio de veículos, sistema revenda de autos, sistema para revendedor de carros, portal anúncio de veículos",
     canonical: URL,
-    h1: "Plataforma para Revenda de Veículos",
+    h1: "NcBrasil - Sistema para Revendedor de Carros",
     breadcrumbs: [
-      { label: "Home", to: "https://www.ncbrasil.com.br/" },
-      { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { label: "Revenda de Veículos", to: URL },
+      { label: "Home", to: "/" },
+      { label: "Sistemas", to: "/nossos-sistemas" },
+      { label: "Revenda de Veículos", to: "/sistema-de-revenda-de-veiculos" },
     ],
     faq: lpFaq,
-    ogImage: "/og/revenda-veiculos.jpg",
+    ogImage: heroAsset.url,
   }),
   component: () => (
-    <LandingPage
+    <>
+      <Helmet>
+        <title>Sistema para Revendedor de Carros | Portal Anúncio de Veículos — NC Brasil</title>
+        <meta name="description" content="Domine o mercado com seu próprio Classificado de veículos PHP. Sistema portal de veículos completo com integração FIPE e apps nativos." />
+        <meta name="keywords" content="classificado de veículos PHP, sistema portal de veículos, plataforma de anúncio de veículos, sistema revenda de autos, sistema para revendedor de carros, portal anúncio de veículos" />
+      </Helmet>
+      <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/sistema-de-revenda-de-veiculos", label: "Revenda de Veículos" }]}
-      eyebrow="ERP + Portal + CRM Automotivo"
-      h1={<>ERP & Portal para <span className="text-gradient">Revenda de Veículos</span></>}
-      intro={<>Solução <strong className="text-foreground">tudo-em-um</strong> para lojas de revenda que querem crescer: gestão completa de estoque, CRM com WhatsApp, simulador de financiamento, portal próprio com SEO e <strong className="text-foreground">publicação automática em Webmotors, iCarros, OLX e Mercado Livre</strong>. Menos retrabalho, mais leads, mais margem.</>}
+      eyebrow="Portal Automotivo · Marketplace de Veículos"
+      h1={<>Sistema para <span className="text-gradient">Revendedor de Carros</span> Profissional</>}
+      intro={<>Lançamos seu **Portal anúncio de veículos** com tecnologia de ponta. Uma **Plataforma de anúncio de veículos** completa com Tabela FIPE e **Sistema revenda de autos**.</>}
+      logo="/logo-nc-brasil.png"
+      heroImage={heroAsset.url}
       stats={[
-        { value: "800+", label: "Revendas ativas" },
-        { value: "150K", label: "Veículos gerenciados" },
-        { value: "40%", label: "Aumento em leads" },
-        { value: "R$0", label: "Setup inicial" },
+        { value: "50K+", label: "Anúncios ativos" },
+        { value: "2M", label: "Visitas mensais" },
+        { value: "800+", label: "Revendas conectadas" },
+        { value: "95", label: "PageSpeed médio" },
       ]}
-      clientsTitle={<>Revendas e concessionárias que <span className="text-gradient">confiam na NC Brasil</span></>}
-      clients={["MegaCar", "AutoShow", "Revenda Premium", "CarPlus", "TopCar", "AutoBrasil", "Multimarcas SP", "Grupo Veículos MG"]}
+      clientsTitle={<>Portais e revendas que <span className="text-gradient">confiam na NC Brasil</span></>}
+      clients={["AutoShow", "MegaCar Portal", "Revenda Fácil", "CarroBom", "AutoBrasil", "MercadoCar", "TopVeículos", "AutoRegional"]}
       problem={{
-        title: <>Por que a sua revenda <span className="text-destructive">perde tempo e dinheiro</span> com sistema errado?</>,
+        title: <>Por que seu <span className="text-destructive">Portal anúncio de veículos</span> precisa ser profissional?</>,
         items: [
-          "**Cadastro em duplicidade** — mesmo carro precisa ser inserido no ERP, no Webmotors, no iCarros e no site da loja.",
-          "**Leads perdidos** porque o WhatsApp não distribui automaticamente entre vendedores e ninguém responde a tempo.",
-          "**Sem controle de margem real** — comissão, custo de reforma, ITBI e taxas comem o lucro sem alerta.",
-          "**Financiamento manual** — vendedor gasta 40 minutos ligando para cada banco pra fazer simulação.",
-          "**DOC de transferência** feito no papel, com filas no DETRAN e cliente esperando semanas.",
-          "**Zero BI** — dono não sabe qual vendedor vende mais, qual carro fica parado ou qual canal traz mais lead.",
+          "**Dependência de taxas abusivas** em portais nacionais de **Classificado de veículos PHP**.",
+          "**Falta de regionalismo** no seu **Sistema portal de veículos** local.",
+          "**Processos manuais** lentos sem uma **Plataforma de anúncio de veículos** integrada.",
+          "**Baixa conversão** em sites que não possuem um **Sistema revenda de autos** moderno.",
+          "**SEO fraco** que impede o ranqueamento do seu **Sistema para revendedor de carros**.",
         ],
       }}
       solution={{
-        title: <>O <span className="text-gradient">ERP + Portal + CRM</span> mais completo do mercado automotivo</>,
-        desc: <>A NC Brasil desenvolve há mais de 15 anos <strong className="text-foreground">software para revenda de veículos</strong>. Nossa plataforma unifica estoque, CRM, financiamento, portal e cross-post em um único sistema — <strong className="text-foreground">sem mensalidades abusivas por veículo</strong>, com suporte especializado e roadmap contínuo de evolução.</>,
+        title: <>A melhor <span className="text-gradient">Plataforma de anúncio de veículos</span> do Brasil</>,
+        desc: <>Desenvolvemos um **Sistema para revendedor de carros** robusto e focado em conversão. Nossa solução de **Portal anúncio de veículos** entrega autonomia total para sua marca.</>,
         highlights: [
-          "**Tudo-em-um** — ERP + CRM + Portal + App",
-          "**Cross-post 1 clique** para Webmotors, iCarros, OLX",
-          "**WhatsApp Business** com bot e distribuição",
-          "**8 bancos** para financiamento em 1 clique",
-          "**DOC fácil** integrado com DETRAN nacional",
-          "**BI da loja** com margem, giro e ROI",
+          "**White Label Completo** no seu **Classificado de veículos PHP**",
+          "**Importador de Estoque** para o **Sistema portal de veículos**",
+          "**Tabela FIPE Integrada** na **Plataforma de anúncio de veículos**",
+          "**App iOS e Android** para o seu **Sistema revenda de autos**",
+          "**SEO de Alta Performance** no **Sistema para revendedor de carros**",
+          "**Gerenciamento Total** via **Portal anúncio de veículos**",
         ],
       }}
+      showcase={[
+        {
+          title: "Dashboard Administrativo de Alta Performance",
+          desc: "Controle total sobre seu **Classificado de veículos PHP** com métricas em tempo real.",
+          image: adminPanelAsset.url
+        },
+        {
+          title: "Painel do Lojista e Revenda",
+          desc: "Ambiente exclusivo para gerenciar o estoque no seu **Sistema portal de veículos**.",
+          image: dashboardVkAsset.url
+        },
+        {
+          title: "Vitrine Premium e Mobile First",
+          desc: "Experiência cinematográfica na sua **Plataforma de anúncio de veículos**.",
+          image: vitrineMobiAsset.url
+        },
+        {
+          title: "Importação Inteligente de Estoque",
+          desc: "Sincronização automática para o seu **Sistema revenda de autos**.",
+          image: importadorAsset.url
+        },
+        {
+          title: "Gestão Geral e Financeira",
+          desc: "Visão 360 do seu **Sistema para revendedor de carros**.",
+          image: gestaoGeralAsset.url
+        },
+        {
+          title: "Detalhes do Veículo e Conversão",
+          desc: "Ficha técnica completa no seu **Portal anúncio de veículos**.",
+          image: mobileDetailAsset.url
+        }
+      ]}
       benefits={[
-        { icon: Package, title: "Gestão de Estoque", desc: "Entrada, precificação FIPE, **custos, comissão, reforma e margem** por veículo — controle total do capital de giro." },
-        { icon: Users, title: "CRM Automotivo", desc: "Funil de leads, **follow-up automatizado, WhatsApp e ligação** direto do card do lead — nada cai no esquecimento." },
-        { icon: CreditCard, title: "Financiamento", desc: "Simulação e pré-aprovação com **BV, Santander, Itaú, Bradesco, Safra, Pan** — comissão automática configurada." },
-        { icon: Globe2, title: "Anúncios Integrados", desc: "1 clique publica em **Webmotors, iCarros, OLX, MercadoLivre, Facebook Marketplace, Instagram** e portal próprio." },
+        { icon: Search, title: "Busca Avançada", desc: "Filtros inteligentes no seu **Classificado de veículos PHP**." },
+        { icon: Tag, title: "Tabela FIPE Ativa", desc: "Preços atualizados no seu **Sistema portal de veículos**." },
+        { icon: Users, title: "Multilojista", desc: "Gerencie revendedores na sua **Plataforma de anúncio de veículos**." },
+        { icon: CreditCard, title: "Financiamento Direto", desc: "Simulador integrado no seu **Sistema revenda de autos**." },
       ]}
       features={[
-        { icon: Camera, title: "Fotos Profissionais", desc: "Sessão fotográfica no app, **remoção de fundo IA e watermark automático** em lote." },
-        { icon: FileCheck, title: "DOC-fácil", desc: "Transferência, débitos, restrições, IPVA — tudo integrado com **DETRAN de todos os estados**." },
-        { icon: Search, title: "Portal com SEO", desc: "Site próprio com **URL amigável, schema Vehicle, Google Analytics e Vehicle Ads**." },
-        { icon: MessageCircle, title: "WhatsApp Business", desc: "**Chatbot qualificador, distribuição de leads por vendedor, gravação e histórico** completo." },
-        { icon: BarChart3, title: "BI da Loja", desc: "**Ticket médio, tempo em estoque, giro, ROI por canal** de origem — dashboard executivo." },
-        { icon: ShieldCheck, title: "Vistoria Digital", desc: "Checklist com fotos, **laudo cautelar e histórico** do veículo (sinistro, gravame, roubo)." },
-        { icon: Smartphone, title: "App do Vendedor", desc: "Ficha do carro, calculadora de financiamento e captura de lead **offline no pátio**." },
-        { icon: DollarSign, title: "Gestão Financeira", desc: "**DRE, fluxo de caixa, comissões, ITBI, contas a pagar/receber** e integração contábil." },
-        { icon: Wrench, title: "Gestão de Reforma", desc: "Controle de **serviços, peças e custos** por veículo em preparação para venda." },
+        { icon: Car, title: "Ficha Técnica Rica", desc: "Dados completos no seu **Sistema para revendedor de carros**." },
+        { icon: Camera, title: "Galeria Inteligente", desc: "Fotos em alta definição no seu **Portal anúncio de veículos**." },
+        { icon: MapPin, title: "Geolocalização", desc: "Busca por proximidade no seu **Classificado de veículos PHP**." },
+        { icon: Filter, title: "Filtros Pro", desc: "Refine a busca no seu **Sistema portal de veículos**." },
+        { icon: MessageCircle, title: "Leads WhatsApp", desc: "Contato direto na sua **Plataforma de anúncio de veículos**." },
+        { icon: ShieldCheck, title: "Segurança Total", desc: "Moderação ativa no seu **Sistema revenda de autos**." },
+        { icon: Smartphone, title: "App White Label", desc: "Apps nativos no seu **Sistema para revendedor de carros**." },
+        { icon: Globe2, title: "SEO Automotivo", desc: "Ranqueamento orgânico do seu **Portal anúncio de veículos**." },
+        { icon: Zap, title: "Alta Velocidade", desc: "Performance extrema no seu **Classificado de veículos PHP**." },
       ]}
-      modules={[
-        { icon: Package, title: "Estoque & Precificação", items: ["Cadastro rápido com FIPE", "Custo de aquisição + reforma", "Margem alvo e mínima", "Alerta de veículo parado", "Reserva e sinal"] },
-        { icon: Users, title: "CRM & Leads", items: ["Pipeline visual (Kanban)", "Distribuição automática", "Score de qualificação IA", "Follow-up cadenciado", "Motivos de perda"] },
-        { icon: CreditCard, title: "Financiamento & F&I", items: ["Simulação multi-banco", "Envio de proposta 1 clique", "Comissão automática", "Seguro, garantia estendida", "Protetor financeiro"] },
-        { icon: BarChart3, title: "BI Executivo", items: ["Vendas por vendedor", "Origem do lead (SEO/Ads/Direto)", "Giro por marca/modelo", "Curva ABC de estoque", "Meta vs realizado"] },
-      ]}
-      useCases={[
-        { icon: Car, title: "Revenda Multimarca", desc: "Loja de 30-300 veículos que precisa unificar estoque, cross-post e CRM em uma única plataforma sem mensalidade abusiva." },
-        { icon: Award, title: "Grupo com Múltiplas Filiais", desc: "Rede com 5+ lojas que precisa de transferência de estoque, permissões por unidade e BI consolidado." },
-        { icon: TrendingUp, title: "Revenda Premium/Luxo", desc: "Loja de veículos de alto padrão com necessidade de fotos profissionais, visita virtual e CRM VIP." },
-        { icon: Wrench, title: "Loja com Retífica/Reforma", desc: "Revenda que compra veículo para reformar e revender — controle de custos, prazos e OS integrada." },
-      ]}
-      integrations={[
-        { label: "Tabela FIPE", category: "Precificação" },
-        { label: "Webmotors XML", category: "Cross-post" },
-        { label: "iCarros XML", category: "Cross-post" },
-        { label: "OLX Autos", category: "Cross-post" },
-        { label: "MercadoLivre", category: "Cross-post" },
-        { label: "Facebook Marketplace", category: "Cross-post" },
-        { label: "BV Financeira", category: "Financiamento" },
-        { label: "Santander Auto", category: "Financiamento" },
-        { label: "Bradesco Finance", category: "Financiamento" },
-        { label: "DETRAN nacional", category: "Documentação" },
-        { label: "WhatsApp Business API", category: "Leads" },
-        { label: "Domínio Contábil", category: "Contabilidade" },
-        { label: "Google Analytics 4", category: "Analytics" },
-        { label: "Meta Ads / Google Ads", category: "Mídia" },
-      ]}
-      security={[
-        { icon: Lock, title: "LGPD Compliance", desc: "Consentimento, portabilidade, anonimização e log de acesso a dados do cliente." },
-        { icon: ShieldCheck, title: "Antifraude Automotivo", desc: "Validação de **placa, chassi, gravame, restrição, sinistro e leilão** antes de anunciar." },
-        { icon: Cloud, title: "Infra AWS/GCP", desc: "**99.9% uptime**, backups diários e disaster recovery em <4h." },
-        { icon: Database, title: "Auditoria & Permissões", desc: "Log imutável de alteração de preço, KM, foto e usuário. Permissões granulares por função." },
-      ]}
-      timeline={[
-        { step: "01", title: "Diagnóstico da Revenda", desc: "Mapeamos operação, volume, canais de venda e integrações necessárias em 3 dias." },
-        { step: "02", title: "Migração de Dados", desc: "Trazemos fotos, fichas, leads e histórico do sistema antigo — sem perder informação." },
-        { step: "03", title: "White Label & Portal", desc: "Sua marca, domínio e portal próprio no ar em até 15 dias com SEO configurado." },
-        { step: "04", title: "Treinamento", desc: "Equipe comercial, financeiro e pátio treinados presencialmente ou online por especialistas." },
-        { step: "05", title: "Suporte Contínuo", desc: "Suporte 24/7, evoluções trimestrais e consultoria de crescimento incluídas." },
-      ]}
-      comparative={{
-        usLabel: "NC Brasil",
-        themLabel: "Concorrentes SaaS",
-        rows: [
-          { feature: "Licença perpétua sem mensalidade", us: true, them: false },
-          { feature: "Sem taxa por veículo cadastrado", us: true, them: false },
-          { feature: "Portal próprio com SEO técnico", us: true, them: "Básico" },
-          { feature: "Cross-post 1 clique (todos portais)", us: true, them: "Parcial" },
-          { feature: "WhatsApp Business com bot", us: true, them: false },
-          { feature: "Financiamento 8 bancos integrados", us: true, them: "3-4" },
-          { feature: "App nativo do vendedor", us: true, them: false },
-          { feature: "BI executivo completo", us: true, them: "Básico" },
-          { feature: "Código-fonte entregável", us: "Opcional", them: false },
-        ],
+      finalParallaxCta={{
+        text: "Portal Anúncio de Veículos Premium",
+        image: heroAsset.url
       }}
-      testimonials={testimonialsData.slice(2, 5)}
+      testimonials={veiculosTestimonials}
       faq={lpFaq}
-      finalCtaTitle={<>Pronto para <span className="text-gradient">profissionalizar sua revenda</span> com tecnologia?</>}
-      finalCtaDesc={<>Fale com nossa equipe automotiva. Fazemos <strong className="text-foreground">demonstração ao vivo com dados da sua operação</strong>, análise de ROI e proposta comercial em até 48h.</>}
-      relatedNewsTags={["Veículos","Revenda","Sistemas"]}
+      finalCtaTitle={<>Pronto para dominar o mercado com seu <span className="text-gradient">Sistema Portal de Veículos</span>?</>}
+      finalCtaDesc={<>Fale com especialistas em **Plataforma de anúncio de veículos**. Demonstração disponível.</>}
+      relatedNewsTags={["Veículos", "Classificados", "Sistemas"]}
     />
+    </>
   ),
 });

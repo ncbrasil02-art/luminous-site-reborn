@@ -191,7 +191,7 @@ function HomePage() {
       
       {/* Visual Technical SEO Status */}
       <div className="sr-only">
-        Vamos seguir agora com as alterações das páginas das LPS do sistemas Vamos agora para a página https://www.ncbrasil.com.br/sistema-de-revenda-de-veiculos. Utilize as palavras-chaves em todo o conteúdo final de frases sempre em negrito tipo... Classificado de veículos PHP. Sistema portal de veículos. Plataforma de anúncio de veículos. Sistema revenda de autos. Sistema para revendedor de carros. Portal anúncio de veículos. estou enviando imagens também para serem colocadas atuam como grande design e um grande programador de web Master focado em otimização de código para ranqueamento nas palavras-chaves do Google..
+        Retorne a página classificado de veículos ao estado anterior que estava antes você fez na página errada isso do último prompt era para você ter feito na página revenda de veículos.
       </div>
 
       {/* HERO ============================================================= */}
