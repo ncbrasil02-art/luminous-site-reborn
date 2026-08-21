@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import { ArrowRight, Globe2, ShoppingBag, Smartphone, Sparkles, LineChart, Search, Palette, Code2, Zap, ChevronRight } from "lucide-react";
 import { Reveal, SectionHeading } from "@/components/Section";
 import { buildStubMeta } from "@/components/StubPage";
@@ -62,6 +63,11 @@ export const Route = createFileRoute("/nossos-servicos")({
   }),
   component: () => (
     <div className="pt-20">
+      <Helmet>
+        <title>Nossos Serviços · NC Brasil — Sites, Sistemas, Apps e Marketing</title>
+        <meta name="description" content="Conheça os serviços da NC Brasil: criação de sites, sistemas web, lojas virtuais, aplicativos mobile, identidade visual e marketing digital." />
+        <meta name="keywords" content="serviços de tecnologia, criação de sites, marketing digital, agência web SP RJ" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative overflow-hidden py-24 md:py-32">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
