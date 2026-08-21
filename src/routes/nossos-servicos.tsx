@@ -10,45 +10,45 @@ const URL = "https://www.ncbrasil.com.br/nossos-servicos";
 const services = [
   {
     icon: Globe2,
-    title: "Criação de Sites",
+    title: "Desenvolvimento de Sites",
     description: "Sites institucionais e portais corporativos focados em performance e conversão. Design exclusivo que transmite autoridade.",
     features: ["Performance Máxima", "SEO Integrado", "Design Responsivo", "Painel Administrativo"],
-    to: "/nossos-servicos"
+    to: "/solucoes-web/desenvolvimento-de-sites"
   },
   {
     icon: ShoppingBag,
     title: "Lojas Virtuais & E-commerce",
     description: "Plataformas robustas e escaláveis para vender seus produtos online. Foco total na experiência de compra do usuário.",
     features: ["Pagamentos Seguros", "Gestão de Estoque", "Cálculo de Frete", "Mobile First"],
-    to: "/portfolio/lojas-virtuais-criadas"
+    to: "/solucoes-web/loja-virtual"
   },
   {
     icon: Smartphone,
     title: "Aplicativos Mobile",
     description: "Desenvolvimento de apps nativos e híbridos para iOS e Android. Transformamos sua ideia em uma ferramenta mobile de sucesso.",
     features: ["Notificações Push", "Geolocalização", "Câmera & Sensores", "Design UX Premium"],
-    to: "/portfolio/criacao-de-aplicativos"
+    to: "/servicos/aplicativos"
   },
   {
     icon: Palette,
     title: "Identidade Visual & Branding",
     description: "Criamos marcas que se destacam e comunicam seus valores. Logotipos, paletas de cores e guias de marca completos.",
     features: ["Criação de Logo", "Manual da Marca", "Design System", "Papelaria Digital"],
-    to: "/portfolio/identidade-visual"
+    to: "/servicos/identidade-visual"
   },
   {
     icon: LineChart,
     title: "Marketing Digital",
     description: "Estratégias completas para atrair, converter e fidelizar clientes através de canais digitais.",
     features: ["Tráfego Pago (Ads)", "Social Media", "Email Marketing", "Inbound Marketing"],
-    to: "/nossos-servicos"
+    to: "/solucoes-web/marketing-digital"
   },
   {
     icon: Search,
     title: "SEO & Posicionamento",
     description: "Otimização para mecanismos de busca para que seu negócio apareça na primeira página do Google.",
     features: ["Auditoria Técnica", "Pesquisa de Keywords", "Link Building", "Otimização On-page"],
-    to: "/nossos-servicos"
+    to: "/solucoes-web/seo-google"
   }
 ];
 
