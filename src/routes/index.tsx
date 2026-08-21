@@ -1,5 +1,5 @@
 /**
-Agora vamos reformular todos os cards da página inicial da parte de sistemas inclusive os sistemas tem que vir à frente do serviço.. preciso de algum prêmio que chama atenção com design profissional chamando atenção para cada plataforma dando ênfase principalmente ao sistema de leilões
+Não achei atraente o texto com a imagem de fundo do meu logotipo não está legal precisa ser uma imagem de cada LP no fundo mas que não contraste muito com o texto que está escrito gostaria que o nome seja o nome da plataforma tipo sistema de leilão apenas e não sistema de leilão prêmio script de rifas profissional coloque sistema de rifas e por aí vai portal de anúncio de veículos sistema de leilão rural... Lembrando que falta sistema de leilão centavos falta sistema de cassinos falta sistema de raspadinha.. atue como grande design e ênfase a melhorar a chamada dessas plataformas listadas na primeira página não precisa rolar para o lado
 */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
