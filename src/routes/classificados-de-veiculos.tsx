@@ -117,7 +117,7 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
         text: "Sistema para Revenda de Autos Premium",
         image: "/logo.jpg"
       }}
-      testimonials={veiculosTesticulos}
+      testimonials={veiculosTestimonials}
       faq={lpFaq}
       finalCtaTitle={<>Pronto para dominar o mercado com seu <span className="text-gradient">Portal de Anúncios de Autos</span>?</>}
       finalCtaDesc={<>Fale com nossos especialistas em <strong className="text-foreground">sistemas para revenda de veículos</strong>. Demonstração personalizada disponível.</>}

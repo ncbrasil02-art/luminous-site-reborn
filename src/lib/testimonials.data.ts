@@ -1,4 +1,4 @@
-export const testimonialsData = [
+export const leilaoTestimonials = [
   {
     quote: "Migramos do papel para a plataforma da NC Brasil e triplicamos o número de arrematantes em 6 meses. O suporte durante o pregão é impecável.",
     author: "Dr. Carlos Andrade",
@@ -25,34 +25,6 @@ export const testimonialsData = [
     author: "Cinthia Fernandez",
     role: "Diretora de Operações",
     image: "/testimonials/cinthia.jpg",
-    rating: 5
-  },
-  {
-    quote: "Tecnologia de ponta. Conseguimos expandir nossos leilões para todo o Brasil com segurança e total transparência nos processos.",
-    author: "Nico Lorenzon",
-    role: "Empresário do Agronegócio",
-    image: "/testimonials/nico.jpg",
-    rating: 5
-  },
-  {
-    quote: "O app mobile é fantástico. Nossos arrematantes elogiam a facilidade de dar lances de qualquer lugar com apenas um toque.",
-    author: "Valentina Ruggeri",
-    role: "Leiloeira e Perita",
-    image: "/testimonials/cale.jpg",
-    rating: 5
-  },
-  {
-    quote: "Consultoria estratégica que vai além do código. Eles entendem o mercado jurídico e as necessidades reais de um pregão.",
-    author: "Dra. Cecilia Cavalcante",
-    role: "Consultora Jurídica",
-    image: "/testimonials/cecilia.jpg",
-    rating: 5
-  },
-  {
-    quote: "Sistema robusto e escalável. Processamos milhares de lances simultâneos sem qualquer lentidão ou erro de sincronia.",
-    author: "Eder Grauu",
-    role: "Gestor de Tecnologia",
-    image: "/testimonials/eder.jpg",
     rating: 5
   }
 ];
@@ -85,33 +57,31 @@ export const rifasTestimonials = [
     role: "Organizador de Ações",
     image: "/testimonials/cale.jpg",
     rating: 5
-  },
+  }
+];
+
+export const veiculosTestimonials = [
   {
-    quote: "Melhor investimento que fiz. O script de rifas é completo, legalizado e o atendimento é personalizado via WhatsApp.",
-    author: "Cinthia Fernandez",
-    role: "Marketing & Eventos",
-    image: "/testimonials/cinthia.jpg",
+    quote: "O sistema de classificados é muito bom! Estou faturando muito mais com anúncios de veículos na minha cidade graças à visibilidade e ao SEO do portal.",
+    author: "Marcos Silva",
+    role: "Proprietário de Revenda — RJ",
+    image: "/testimonials/eder.jpg",
     rating: 5
   },
   {
-    quote: "Segurança total nos sorteios pela Loteria Federal. Meus seguidores confiam e compram sem medo. Transparência é tudo.",
-    author: "Dra. Carla Barber",
-    role: "Influenciadora",
-    image: "/testimonials/carla.jpg",
-    rating: 5
-  },
-  {
-    quote: "O sistema de afiliados nativo é fenomenal. Consigo gerenciar centenas de vendedores com comissão automática via Pix.",
-    author: "Irina",
-    role: "Gestora de Comunidades",
-    image: "/testimonials/irina.jpg",
-    rating: 5
-  },
-  {
-    quote: "Plataforma robusta que aguenta milhões de acessos simultâenuos. Ideal para quem quer profissionalizar suas ações online.",
-    author: "Dra. Cecilia Cavalcante",
-    role: "Consultora Jurídica",
+    quote: "A integração com a Tabela FIPE e o importador de estoque facilitaram demais o dia a dia da nossa loja. O portal é rápido e passa muita confiança.",
+    author: "Ana Paula Souza",
+    role: "Gerente Comercial",
     image: "/testimonials/cecilia.jpg",
+    rating: 5
+  },
+  {
+    quote: "Tivemos um aumento de 60% nos leads qualificados via WhatsApp logo nas primeiras semanas. A plataforma estilo WebMotors da NC é imbatível.",
+    author: "Ricardo Oliveira",
+    role: "Diretor de Marketplace Automotivo",
+    image: "/testimonials/hugo.jpg",
     rating: 5
   }
 ];
+
+export const testimonialsData = leilaoTestimonials;
