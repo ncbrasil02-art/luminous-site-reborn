@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/marketing-digital")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/marketing-digital", label: "Marketing Digital" }]}
       eyebrow="Marketing 360°"
-      h1={<>Marketing Digital: <span className="text-gradient">Posts e Vídeos Virais</span></>}
-      intro={<>Especialistas em **criação de posts e vídeos virais** para redes sociais. Gerenciamos suas campanhas no **TikTok, Facebook e Instagram** com conteúdos profissionais focados em atrair e converter seu público.</>}
+      h1={<>Marketing Digital: <span className="text-gradient">Posts e Vídeos Virais Estratégicos</span></>}
+      intro={<>Especialistas em **criação de posts virais e vídeos criativos** para redes sociais. Gerenciamos suas campanhas no **TikTok, Facebook, Instagram e YouTube** com conteúdos profissionais focados em maximizar o engajamento e a autoridade da sua marca.</>}
       stats={[{ value: "R$ 30Mi", label: "Verba gerenciada" }, { value: "4,8x", label: "ROAS médio" }, { value: "150+", label: "Clientes ativos" }, { value: "24/7", label: "Monitoramento" }]}
       benefits={[
         { icon: Target, title: "Tráfego Pago", desc: "Google Ads, Meta Ads, TikTok Ads e LinkedIn Ads — **gestão com foco em ROAS**." },

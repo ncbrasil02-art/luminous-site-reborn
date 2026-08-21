@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/hospedagem")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/hospedagem", label: "Hospedagem" }]}
       eyebrow="Infra Cloud"
-      h1={<>Hospedagem de Sites: <span className="text-gradient">Servidores Dedicados e Cloud</span></>}
-      intro={<>Oferecemos **hospedagem de sites** com foco em performance e estabilidade. Contamos com **servidores dedicados, planos cloud e consultoria especializada** para infraestrutura total no Brasil.</>}
+      h1={<>Hospedagem de Sites e Sistemas: <span className="text-gradient">Servidores Dedicados e Cloud Profissional</span></>}
+      intro={<>Oferecemos **hospedagem de sites e sistemas** com foco absoluto em performance. Contamos com **servidores dedicados, planos cloud e consultoria especializada** com infraestrutura robusta total no Brasil para garantir que seu projeto nunca fique offline.</>}
       stats={[{ value: "99,9%", label: "Uptime garantido" }, { value: "24/7", label: "Suporte técnico" }, { value: "<50ms", label: "Latência Brasil" }, { value: "SSL", label: "Grátis Let's Encrypt" }]}
       benefits={[
         { icon: Zap, title: "Performance Extrema", desc: "**SSD NVMe, HTTP/3, cache Redis** e CDN Cloudflare em 300+ pontos globais." },
