@@ -82,7 +82,7 @@ export function SystemsCarousel() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="h-full w-full object-cover opacity-30 transition-transform duration-700 group-hover:scale-110"
                     onError={(e) => {
-                      (e.target as HTMLImageElement).src = "https://www.ncbrasil.com.br/logo.jpg";
+                      (e.target as HTMLImageElement).src = "/logo.jpg";
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
