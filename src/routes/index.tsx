@@ -80,7 +80,7 @@ export const Route = createFileRoute("/")({
   head: () => {
     const meta = buildMeta({
       title: "NC Brasil · Criação de Sites, Sistemas Web e Aplicativos em SP e RJ",
-      description: "Agência de tecnologia especializada em criação de sites profissionais, sistemas web sob demanda, e-commerce e aplicativos mobile. Tecnologia premium para escalar seu negócio.",
+      description: "Agência de tecnologia especializada em criação de sites profissionais, sistemas web sob demanda, e-commerce e aplicativos mobile. Tecnologia premium para elevar sua presença digital.",
       keywords: "criação de sites, criação de sistemas web, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, NC Brasil",
       ogImage: "/logo-nc-brasil.png",
       canonical: "/",

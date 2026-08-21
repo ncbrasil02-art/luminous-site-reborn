@@ -1,5 +1,5 @@
 export const SITE_URL = "https://www.ncbrasil.com.br";
-export const SITE_NAME = "NC Brasil";
+export const SITE_NAME = "NC Brasil — Tecnologia e Marketing Digital";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo-nc-brasil.png`;
 
 export type MetaOptions = {
