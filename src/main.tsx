@@ -1,4 +1,4 @@
-import { StrictMode, useEffect, useState } from "react";
+import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "@tanstack/react-router";
 import { HelmetProvider } from "react-helmet-async";
@@ -8,9 +8,11 @@ const router = getRouter();
 
 function App() {
   return (
-    <HelmetProvider>
-      <RouterProvider router={router} />
-    </HelmetProvider>
+    <StrictMode>
+      <HelmetProvider>
+        <RouterProvider router={router} />
+      </HelmetProvider>
+    </StrictMode>
   );
 }
 

@@ -37,8 +37,6 @@ export async function render(url: string) {
         ${helmet.link ? helmet.link.toString() : ''}
         ${helmet.script ? helmet.script.toString() : ''}
       `;
-      // We'll also manually try to capture H1 or other elements if they are not in Helmet
-      // but TanStack Router HeadContent should be handled by Helmet if implemented correctly
     }
 
     return {

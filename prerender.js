@@ -50,12 +50,12 @@ async function generate() {
          console.warn(`Warning: Small HTML for ${url}. Length: ${appHtml?.length || 0}`);
       }
 
+      // Final HTML reconstruction
       const finalHtml = template
         .replace('<!--app-head-->', head || '')
         .replace('<!--app-html-->', appHtml || '')
 
       // Clean the URL to get a valid file path
-      // Remove trailing slash except for root
       const cleanUrl = url === '/' ? '/index' : url.replace(/\/$/, "");
       const filePath = `dist${cleanUrl}.html`
       const absolutePath = toAbsolute(filePath)
