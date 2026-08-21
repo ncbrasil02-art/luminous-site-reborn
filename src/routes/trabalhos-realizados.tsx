@@ -1,5 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import { StubPage } from "@/components/StubPage";
 import { buildMeta, SITE_URL } from "@/lib/seo";
 

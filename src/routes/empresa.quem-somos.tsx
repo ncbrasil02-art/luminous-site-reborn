@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import { Users, Award, Target, Heart, Sparkles, Rocket, ShieldCheck, TrendingUp, Globe2, Lightbulb, Zap, Handshake } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 import { SITE_URL } from "@/lib/seo";
@@ -27,7 +28,12 @@ export const Route = createFileRoute("/empresa/quem-somos")({
     faq: lpFaq,
   }),
   component: () => (
-    <LandingPage
+    <>
+      <Helmet>
+        <title>{`Quem Somos | NC Brasil — 20 Anos de Tecnologia e Marketing Digital`}</title>
+        <meta name="description" content="Conheça a NC Brasil: agência de tecnologia e marketing digital com 20 anos de mercado, +1500 projetos entregues e time multidisciplinar." />
+      </Helmet>
+      <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/empresa", label: "Empresa" }, { to: "/empresa/quem-somos", label: "Quem Somos" }]}
       eyebrow="Sobre nós"
       h1={<>Somos uma <span className="text-gradient">agência de engenharia</span> apaixonada por resultado</>}
@@ -49,5 +55,6 @@ export const Route = createFileRoute("/empresa/quem-somos")({
       ]}
       faq={lpFaq}
     />
+    </>
   ),
 });
