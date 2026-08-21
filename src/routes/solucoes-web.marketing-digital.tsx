@@ -5,11 +5,11 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 const URL = "https://www.ncbrasil.com.br/solucoes-web/marketing-digital";
 
 const lpFaq = [
-        { q: "Qual verba mínima?", a: "Recomendamos **R$ 3.000/mês** em verba + fee de gestão para resultados consistentes." },
-        { q: "Fazem contratos longos?", a: "Trabalhamos com **contrato mínimo de 3 meses** — tempo necessário para maturar campanhas." },
-        { q: "Vocês produzem os criativos?", a: "Sim, temos **estúdio próprio** de vídeo, design e copy para criativos ilimitados." },
-        { q: "Como medem resultado?", a: "**GA4, Meta Pixel, GTM e dashboards Looker** — total transparência de números." },
-        { q: "Atendem quais nichos?", a: "**E-commerce, SaaS, educação, saúde, imobiliário, jurídico** e infoprodutos." },
+        { q: "Quais redes sociais vocês gerenciam?", a: "Focamos em **TikTok, Instagram, Facebook e YouTube**, criando conteúdos virais específicos para cada plataforma." },
+        { q: "Vocês fazem a edição dos vídeos?", a: "Sim, temos um time especializado em **edição de vídeos curtos, reels e vídeos para anúncios** com foco em retenção." },
+        { q: "Como funciona a gestão de posts virais?", a: "Analisamos tendências em tempo real e criamos **posts profissionais** que conversam com o público-alvo da sua marca." },
+        { q: "Trabalham com tráfego pago nas redes?", a: "Sim, integramos a criação de conteúdo com **campanhas de Meta Ads e TikTok Ads** para maximizar o alcance." },
+        { q: "Qual o prazo para ver resultados?", a: "Resultados de engajamento são rápidos, mas a **autoridade de marca** é construída de forma sólida em 3 a 6 meses." },
       ];
 
 export const Route = createFileRoute("/solucoes-web/marketing-digital")({
