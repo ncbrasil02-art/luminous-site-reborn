@@ -6,8 +6,17 @@ import {
   Trophy, Users, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
-import { testimonialsData } from "@/lib/testimonials.data";
+import { cassinoTestimonials } from "@/lib/testimonials.data";
 
+// Import assets
+import mainAsset from "@/assets/plataforma-cassino-main.png.asset.json";
+import ui1Asset from "@/assets/plataforma-cassino-ui-1.jpg.asset.json";
+import dashboardAsset from "@/assets/plataforma-cassino-dashboard.webp.asset.json";
+import mobileAsset from "@/assets/plataforma-cassino-mobile.webp.asset.json";
+import devicesAsset from "@/assets/plataforma-cassino-devices.webp.asset.json";
+import sportsbookAsset from "@/assets/plataforma-cassino-sportsbook.webp.asset.json";
+import cryptoAsset from "@/assets/plataforma-cassino-crypto.webp.asset.json";
+import premiumAsset from "@/assets/plataforma-cassino-premium.jpg.asset.json";
 
 const URL = "https://www.ncbrasil.com.br/plataforma-chinesa-apostas-cassino";
 
@@ -30,211 +39,114 @@ const lpFaq = [
 
 export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
   head: () => buildLPMeta({
-    title: "Plataforma de Cassino Online White Label | Sportsbook + Slots + Pix",
-    description: "Plataforma completa de cassino online e apostas esportivas white label: 8.000+ slots (Pragmatic, PG Soft, Aviator), cassino ao vivo, sportsbook, Pix instantâneo, KYC BR e licenciamento SPA. Deploy em 45 dias.",
-    keywords: "plataforma cassino online, white label cassino, sistema cassino online, plataforma chinesa cassino, plataforma apostas esportivas, sportsbook white label, sistema de apostas, plataforma iGaming, cassino com pix, plataforma slots online",
+    title: "NcBrasil - Sistema de Cassino Online e Plataforma de Jogos Chinesa",
+    description: "NcBrasil: Plataforma completa de cassino online e apostas white label. Slots, cassino ao vivo, sportsbook e Pix nativo. O melhor script de cassino online do Brasil.",
+    keywords: "sistema de cassino online, plataforma de jogos chinesa, script de cassino online, plataforma iGaming white label, cassino com pix, criar site de apostas",
     canonical: URL,
-    h1: "Plataforma de Cassino Online e Apostas White Label",
+    h1: "Sistema de Cassino Online e Plataforma de Jogos Chinesa",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Sistemas", to: "https://www.ncbrasil.com.br/nossos-sistemas" },
-      { label: "Plataforma Cassino", to: URL },
+      { label: "Cassino Online", to: URL },
     ],
     faq: lpFaq,
+    ogImage: mainAsset.url,
   }),
   component: () => (
     <LandingPage
       breadcrumbs={[
         { to: "/", label: "Home" },
         { to: "/nossos-sistemas", label: "Sistemas" },
-        { to: "/plataforma-chinesa-apostas-cassino", label: "Plataforma Cassino" },
+        { to: "/plataforma-chinesa-apostas-cassino", label: "Cassino Online" },
       ]}
-      eyebrow="iGaming · White Label · Pix + SPA/MF"
-      h1={<>Plataforma de <span className="text-gradient">Cassino Online e Apostas</span> White Label — Sportsbook, Slots e Pix Nativo</>}
-      intro={<>Solução <strong className="text-foreground">iGaming turnkey</strong> com a mesma arquitetura das <strong className="text-foreground">plataformas chinesas / asiáticas de referência</strong>, tropicalizada para o Brasil: <strong className="text-foreground">8.000+ jogos agregados</strong> (Pragmatic Play, PG Soft, Evolution, Aviator), <strong className="text-foreground">sportsbook completo</strong> com odds ao vivo, cassino ao vivo com dealers BR, <strong className="text-foreground">Pix instantâneo</strong>, KYC brasileiro e conformidade com a <strong className="text-foreground">Lei 14.790/2023 e Portaria SPA/MF 1.475/2024</strong>. Sem % sobre GGR — <strong className="text-foreground">você é o operador</strong>.</>}
+      eyebrow="iGaming · White Label · SEO & Performance"
+      h1={<>Sistema de <span className="text-gradient">Cassino Online</span> e Plataforma de Jogos Chinesa</>}
+      intro={<>A **NcBrasil** é referência na criação de **sistemas de cassino online** com a mesma arquitetura das plataformas chinesas e asiáticas. Oferecemos uma solução **white label turnkey** com **8.000+ jogos agregados**, sportsbook completo, **Pix instantâneo** e total conformidade regulatória. Design premium focado em **conversão e ranqueamento no Google**.</>}
+      heroImage={mainAsset.url}
+      imageKeyword="sistema de cassino online"
       stats={[
         { value: "8.000+", label: "Jogos agregados" },
         { value: "30+", label: "Provedores" },
-        { value: "<30s", label: "Pix depósito/saque" },
-        { value: "99.99%", label: "Uptime SLA" },
+        { value: "Pix", label: "Depósito instantâneo" },
+        { value: "24/7", label: "Suporte especializado" },
       ]}
-      clients={["Bet BR", "GO Cassino", "Aposta VIP", "Casino Pix", "Sport Real", "Play Brasil", "Bet Pro", "Slot Fun"]}
+      showParallaxshowcase={true}
+      showcase={[
+        {
+          title: "Interface de Jogador Premium",
+          desc: "Design cinematográfico focado na experiência do usuário e alta retenção.",
+          image: ui1Asset.url,
+        },
+        {
+          title: "Dashboard de Gestão Turnkey",
+          desc: "Controle total da sua operação com relatórios detalhados de GGR e NGR.",
+          image: dashboardAsset.url,
+        },
+        {
+          title: "Experiência Mobile First",
+          desc: "App PWA otimizado para todos os smartphones, garantindo apostas em qualquer lugar.",
+          image: mobileAsset.url,
+        },
+        {
+          title: "Multi-dispositivo",
+          desc: "Performance extrema em desktops, tablets e celulares com carregamento instantâneo.",
+          image: devicesAsset.url,
+        },
+        {
+          title: "Sportsbook de Alta Performance",
+          desc: "Integração com odds ao vivo e milhares de eventos esportivos mundiais.",
+          image: sportsbookAsset.url,
+        },
+        {
+          title: "Ecossistema Cripto & Pix",
+          desc: "Segurança total em transações com Bitcoin, USDT e Pix nativo brasileiro.",
+          image: cryptoAsset.url,
+        },
+      ]}
       problem={{
-        title: <>White labels internacionais te tornam <span className="text-destructive">refém do fornecedor</span></>,
+        title: <>Sua operação não pode ser <span className="text-destructive">refém de tecnologias obsoletas</span></>,
         items: [
-          "**SoftGamings, GamingTec, UltraPlay cobram 15% a 30% sobre GGR** — em R$5Mi/mês, você entrega até R$1,5Mi ao fornecedor.",
-          "**Suporte no fuso de Malta ou Chipre** — problema no domingo de futebol brasileiro? Boa sorte até segunda.",
-          "**Integração Pix ruim e KYC estrangeiro** rejeita CPF válido, saque demora dias, jogador migra para o concorrente.",
-          "**Você não controla o RTP, o catálogo nem as promoções** — tudo depende de aprovar com o fornecedor.",
-          "**Migrar de plataforma = perder base de jogadores** (o dado é deles, não seu).",
-          "**Falta de assessoria de licenciamento SPA/MF** — você fica sozinho no processo regulatório brasileiro.",
+          "**Plataformas lentas** que derrubam o ranqueamento SEO do seu domínio.",
+          "**Falta de suporte no Brasil** causa prejuízos em horários de pico.",
+          "**Gateways de pagamento instáveis** que resultam em desistência de depósitos.",
+          "**Ausência de jogos populares** como os slots da PG Soft e Pragmatic Play.",
+          "**Dificuldade de indexação no Google** por falta de otimização de código.",
         ],
       }}
       solution={{
-        title: <>Uma plataforma <span className="text-gradient">tropicalizada, sua, com Pix nativo e assessoria SPA</span></>,
-        desc: <>Entregamos a mesma arquitetura de <strong className="text-foreground">alta escala das plataformas asiáticas</strong>, adaptada para o Brasil: <strong className="text-foreground">código sob licença</strong>, hospedagem em cloud com PoP no BR, gateway Pix direto na sua conta, KYC nacional, catálogo de 8.000+ jogos, sportsbook completo e <strong className="text-foreground">assessoria jurídica de licenciamento SPA/MF</strong>. Nossa equipe opera junto com você por 90 dias.</>,
+        title: <>A melhor <span className="text-gradient">plataforma de jogos chinesa</span> tropicalizada pela NcBrasil</>,
+        desc: <>Desenvolvemos um **script de cassino online** robusto, com código limpo e focado em **SEO técnico**. Nossa plataforma entrega o que há de mais moderno em iGaming: **baixa latência, segurança extrema e alta escalabilidade**.</>,
         highlights: [
-          "**8.000+ jogos** — Pragmatic, PG Soft, Evolution, Aviator, Endorphina",
-          "**Sportsbook completo** — feeds Betradar/Sportradar",
-          "**Cassino ao vivo** com dealers brasileiros",
-          "**Pix instantâneo BR** com múltiplos PSPs",
-          "**KYC brasileiro** — Serpro, Datavalid, Unico",
-          "**Assessoria SPA/MF** com parceiros jurídicos",
-          "**Multi-tenant** — várias marcas na mesma infra",
-          "**Suporte 24/7 no Brasil** em português",
+          "**SEO Otimizado** para ranquear nas principais palavras-chaves do nicho.",
+          "**Pix Nativo** com liquidação imediata na conta do operador.",
+          "**Catálogo Completo** com Fortune Tiger, Aviator e milhares de slots.",
+          "**Sportsbook Integrado** com feeds de dados em tempo real.",
+          "**Segurança Bancária** com criptografia de ponta e KYC BR.",
         ],
       }}
       benefits={[
-        { icon: Dice5, title: "Catálogo Massivo de Slots", desc: "**Pragmatic Play, PG Soft, Endorphina, BGaming, Spribe (Aviator), Amatic, Booongo** e mais 30 provedores — mais de **8.000 jogos** prontos." },
-        { icon: Spade, title: "Cassino ao Vivo", desc: "**Evolution Gaming, Playtech, Ezugi, Pragmatic Live** — mesas 24/7 com **dealers brasileiros** em horário nobre BR." },
-        { icon: Trophy, title: "Sportsbook Completo", desc: "**Odds ao vivo, cash out, múltiplas, sistemas, +60 modalidades** com feeds Betradar/Sportradar." },
-        { icon: Banknote, title: "Pix Nativo BR", desc: "**Depósito e saque via Pix em segundos** com múltiplos PSPs (Efí, Pagar.me, PagBank), fallback automático." },
+        { icon: Dice5, title: "8.000+ Jogos", desc: "Os slots mais procurados do mercado: **PG Soft, Pragmatic, Spribe** e muito mais." },
+        { icon: Banknote, title: "Pix Instantâneo", desc: "Depósitos e saques automáticos via Pix para máxima satisfação do jogador." },
+        { icon: Trophy, title: "Sportsbook Elite", desc: "Apostas esportivas com odds competitivas e cobertura global de eventos." },
+        { icon: ShieldCheck, title: "Compliance Total", desc: "Conformidade com a **Lei 14.790/2023** e assessoria jurídica completa." },
       ]}
       features={[
-        { icon: Gamepad2, title: "Mini-games (Aviator, Plinko, Mines)", desc: "**Crash games** de altíssima retenção — Aviator, JetX, Plinko, Mines integrados via Spribe, BGaming e Turbo Games." },
-        { icon: Coins, title: "Carteira Multi-moeda", desc: "**BRL, USD, USDT-TRC20, BTC, ETH** — saldo unificado com conversão automática." },
-        { icon: Gift, title: "Engine de Bônus", desc: "**Welcome bonus, freespins, reload, cashback, torneios, missões** com rollover configurável e antibônus abuse." },
-        { icon: Users, title: "Programa VIP em Níveis", desc: "**Bronze → Prata → Ouro → Diamante → VIP** com cashback progressivo, gerente pessoal e ofertas exclusivas." },
-        { icon: Smartphone, title: "PWA + App Nativo", desc: "**iOS + Android** publicáveis nas lojas (via APK direto onde a Apple restringe), notificação push segmentada." },
-        { icon: Bell, title: "Retention Engine", desc: "**Campanhas automáticas de reativação, alerta de bônus, missão diária, spin da roleta** para engajamento contínuo." },
-        { icon: BarChart3, title: "BI de iGaming", desc: "**GGR, NGR, RTP por jogo, ARPPU, LTV, cohort, funnel** — dashboards prontos e API para BI externo." },
-        { icon: Globe, title: "Multi-idioma", desc: "**PT-BR, EN, ES, ZH** — pronto para LATAM e expansão asiática." },
-        { icon: MessageCircle, title: "Suporte Omnichannel", desc: "**Chat 24/7 no site + WhatsApp + Telegram** com IA de primeiro atendimento e escalonamento humano." },
+        { icon: Zap, title: "Velocidade Extrema", desc: "Código otimizado para carregamento ultra-rápido, essencial para SEO." },
+        { icon: Users, title: "Programa VIP", desc: "Engine de fidelização com níveis, cashback e bônus personalizados." },
+        { icon: Smartphone, title: "Mobile Otimizado", desc: "Interface intuitiva que converte visitantes em jogadores ativos." },
+        { icon: BarChart3, title: "Relatórios BI", desc: "Dashboards inteligentes para análise de faturamento e comportamento." },
+        { icon: Rocket, title: "Lançamento Rápido", desc: "Sua plataforma no ar em tempo recorde com configuração turnkey." },
+        { icon: Globe, title: "Multi-idiomas", desc: "Pronto para expansão internacional com suporte a várias moedas." },
       ]}
-      modules={[
-        {
-          icon: Dice5,
-          title: "Módulo Cassino & Slots",
-          items: [
-            "Agregação de 30+ provedores",
-            "Categorização (novos, populares, jackpot)",
-            "Filtros por RTP, volatilidade, provedor",
-            "Torneios inter-jogos com premiação",
-            "Demo mode para novos jogadores",
-          ],
-        },
-        {
-          icon: Trophy,
-          title: "Módulo Sportsbook",
-          items: [
-            "Feeds Betradar / Sportradar / BTOBet",
-            "Odds em tempo real + cash out",
-            "Simples, múltiplas, sistemas, criador de aposta",
-            "Estatísticas ao vivo",
-            "Streaming de eventos integrado",
-          ],
-        },
-        {
-          icon: Wallet,
-          title: "Módulo Carteira & Pix",
-          items: [
-            "Múltiplos PSPs Pix com fallback",
-            "Cartão de crédito e cripto",
-            "KYC completo (Serpro/Unico/Datavalid)",
-            "AML + monitoramento COAF",
-            "Saque em minutos com verificação",
-          ],
-        },
-        {
-          icon: Gift,
-          title: "Módulo Bônus & Promoções",
-          items: [
-            "Welcome bonus configurável",
-            "Freespins por jogo/provedor",
-            "Cashback semanal automático",
-            "Missões, torneios, spin diário",
-            "Antibônus abuse integrado",
-          ],
-        },
-        {
-          icon: Users,
-          title: "Módulo Afiliados & VIP",
-          items: [
-            "CPA + RevShare + Hybrid",
-            "Sub-afiliados em 3 níveis",
-            "Programa VIP com gerente pessoal",
-            "Cashback progressivo por nível",
-            "Painel dedicado ao afiliado",
-          ],
-        },
-        {
-          icon: ShieldCheck,
-          title: "Módulo Compliance & Segurança",
-          items: [
-            "Conformidade Lei 14.790/2023",
-            "Autoexclusão + limites responsáveis",
-            "Verificação de idade + KYC",
-            "Reports SPA/MF automáticos",
-            "Log imutável + trilha de auditoria",
-          ],
-        },
-      ]}
-      useCases={[
-        { icon: Rocket, title: "Novo Operador Licenciado", desc: "Empresa que obteve licença **SPA/MF ou estadual** e precisa de plataforma pronta para lançar em 60 dias." },
-        { icon: Sparkles, title: "Marca de Influenciador", desc: "Criador com **milhões de seguidores** que quer sua própria plataforma de apostas com nome forte." },
-        { icon: Globe, title: "Expansão LATAM", desc: "Operador BR que quer **entrar em México, Colômbia, Peru** com plataforma multi-jurisdicional." },
-        { icon: Trophy, title: "Clube ou Federação", desc: "Time / federação esportiva com **base engajada** que quer sportsbook temático oficial." },
-        { icon: Coins, title: "Plataforma Cripto-Native", desc: "Operação **cripto-first** com foco em USDT, BTC e público internacional." },
-        { icon: Layers, title: "Rede de Franquias", desc: "Modelo **multi-tenant white label** com franqueados regionais operando marcas independentes." },
-      ]}
-      integrations={[
-        { label: "Pragmatic Play", category: "Slots + Live" },
-        { label: "PG Soft", category: "Slots" },
-        { label: "Evolution Gaming", category: "Live Casino" },
-        { label: "Spribe (Aviator)", category: "Crash Games" },
-        { label: "Endorphina", category: "Slots" },
-        { label: "BGaming", category: "Slots + Crash" },
-        { label: "Playtech", category: "Slots + Live" },
-        { label: "Ezugi", category: "Live Casino" },
-        { label: "Amatic", category: "Slots" },
-        { label: "Booongo", category: "Slots" },
-        { label: "Betradar", category: "Sportsbook Feed" },
-        { label: "Sportradar", category: "Sportsbook Feed" },
-        { label: "Efí (Pix)", category: "Pagamentos" },
-        { label: "Pagar.me", category: "Pagamentos" },
-        { label: "PagBank", category: "Pagamentos" },
-        { label: "CoinsPaid", category: "Cripto" },
-        { label: "Serpro / CPF", category: "KYC" },
-        { label: "Datavalid", category: "Biometria" },
-        { label: "Unico Check", category: "Face Match" },
-        { label: "AppsFlyer", category: "Attribution" },
-      ]}
-      security={[
-        { icon: FileCheck, title: "Conformidade SPA/MF", desc: "**Lei 14.790/2023, Portaria 1.475/2024, reports mensais automáticos** e trilha de auditoria completa." },
-        { icon: Lock, title: "LGPD + PCI-DSS", desc: "**Criptografia em repouso e trânsito, tokenização de cartão, DPO parceiro** e política auditada." },
-        { icon: ScanLine, title: "KYC + Biometria + AML", desc: "**Face match, prova de vida, CPF/Serpro, bureau de crédito** e monitoramento antilavagem." },
-        { icon: ShieldCheck, title: "Jogo Responsável", desc: "**Autoexclusão, limites de depósito/perda/tempo, cool-down** e integração com programas de apoio." },
-      ]}
-      timeline={[
-        { step: "Semana 1-2", title: "Discovery & Compliance", desc: "**Definição de escopo, jurisdição, estruturação societária, licenciamento** e identidade visual." },
-        { step: "Semana 3-6", title: "Setup & Integração", desc: "**Infra cloud + CDN BR, agregadores de jogos, sportsbook feeds, Pix + KYC** e ambiente de homologação." },
-        { step: "Semana 7-8", title: "Homologação & Certificação", desc: "**Testes de carga (50k concurrent), auditoria de RTP, certificação de RNG, treinamento** e ajustes." },
-        { step: "Semana 9-12", title: "Go-Live", desc: "**Soft launch com base restrita, ajustes, lançamento público, campanha de aquisição** e monitoramento 24/7." },
-        { step: "Mês 4 em diante", title: "Otimização Contínua", desc: "**A/B tests, novos provedores, ajuste de RTP, expansão LATAM, novos mercados** e evolução do produto." },
-      ]}
-      comparative={{
-        usLabel: "NC Brasil",
-        themLabel: "White label internacional",
-        rows: [
-          { feature: "Comissão sobre GGR", us: "0%", them: "15% a 30%" },
-          { feature: "Setup médio", us: "R$ transparente", them: "USD 50k a 200k" },
-          { feature: "Dono do banco de dados", us: true, them: false },
-          { feature: "Pix nativo brasileiro", us: true, them: "Parcial / travado" },
-          { feature: "KYC brasileiro (Serpro/CPF)", us: true, them: false },
-          { feature: "Assessoria licença SPA/MF", us: true, them: false },
-          { feature: "Cassino ao vivo com dealer BR", us: true, them: "Só EN" },
-          { feature: "Suporte 24/7 no Brasil (PT-BR)", us: true, them: false },
-          { feature: "Multi-tenant white label", us: true, them: "Add-on caro" },
-          { feature: "Catálogo 8.000+ jogos", us: true, them: true },
-          { feature: "Sportsbook completo integrado", us: true, them: "Módulo à parte" },
-          { feature: "Deploy em 45-90 dias", us: true, them: "6 a 12 meses" },
-        ],
+      finalParallaxCta={{
+        text: "NcBrasil - Especialista em Plataforma de Cassino Online",
+        image: premiumAsset.url,
       }}
-      testimonials={testimonialsData.slice(3, 6)}
+      finalCtaTitle={<>Seja o dono da sua própria <span className="text-gradient">plataforma de cassino</span></>}
+      finalCtaDesc={<>Fale agora com um especialista da **NcBrasil** e receba um orçamento personalizado para o seu **sistema de cassino online**. Otimização total para dominar as buscas do Google.</>}
+      testimonials={cassinoTestimonials}
       faq={lpFaq}
-      finalCtaTitle={<>Pronto para lançar seu <span className="text-gradient">operador de iGaming</span>?</>}
-      finalCtaDesc={<>Receba um <strong className="text-foreground">plano executivo em 24h</strong> com arquitetura, catálogo de jogos, orçamento, cronograma e roadmap de licenciamento SPA/MF. <strong className="text-foreground">Consultoria estratégica gratuita</strong> com nosso time de iGaming.</>}
-      relatedNewsTags={["Cassino", "Apostas", "iGaming", "Sistemas"]}
+      relatedNewsTags={["Cassino", "iGaming", "Sistemas", "Tecnologia"]}
     />
   ),
 });
