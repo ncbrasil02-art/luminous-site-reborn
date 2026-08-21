@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 const systems = [
   {
     icon: Gavel,
-    title: "Sistema de Leilão Premium",
+    title: "Sistema de Leilão",
     description: "Referência nacional em tecnologia de leilões. Pregão eletrônico ultraveloz, auditagem completa e lances em tempo real com latência zero.",
     to: "/sistema-de-leilao",
     image: "/img-sistema-de-leilao/home-premium.png",
@@ -17,7 +17,7 @@ const systems = [
   },
   {
     icon: ShoppingCart,
-    title: "Script de Rifas Profissional",
+    title: "Sistema de Rifas",
     description: "A plataforma de sorteios mais completa do Brasil. Totalmente automatizada com split de pagamentos e visual cinematográfico.",
     to: "/sistema-de-rifas",
     image: "/img-sistema-de-rifas/Fachada Profissional.png",
@@ -25,7 +25,7 @@ const systems = [
   },
   {
     icon: LayoutDashboard,
-    title: "Marketplace de Veículos",
+    title: "Portal de Veículos",
     description: "Plataforma robusta para revenda de autos. Filtros inteligentes, integração com estoque e alta conversão de leads.",
     to: "/classificados-de-veiculos",
     image: "/img-sistema-de-leilao/dashboard-detalhe.png",
@@ -33,11 +33,35 @@ const systems = [
   },
   {
     icon: Users,
-    title: "Leilão Rural & Agro",
+    title: "Sistema de Leilão Rural",
     description: "Tecnologia especializada para o agronegócio. Gestão de genealogia, vídeos de lotes e suporte a grandes eventos rurais.",
     to: "/leilao-rural",
     image: "/img-sistema-de-leilao/cards.png",
     features: ["Catálogo Rural", "Lotes de Animais", "App Agro"]
+  },
+  {
+    icon: Code2,
+    title: "Leilão de Centavos",
+    description: "Sistema de entretenimento e lances regressivos. Alta escalabilidade para milhares de acessos simultâneos.",
+    to: "/leilao-de-centavos",
+    image: "/img-sistema-de-leilao/vitrine.png",
+    features: ["Lances Regressivos", "Painel Financeiro", "Gamificação"]
+  },
+  {
+    icon: Rocket,
+    title: "Sistema de Cassino",
+    description: "Plataforma completa de iGaming com integração de provedores mundiais e gestão de banca segura.",
+    to: "/sistema-de-cassino",
+    image: "/img-sistema-de-leilao/dashboard-detalhe.png",
+    features: ["Slots & Live Casino", "Gestão de Afiliados", "Saque Imediato"]
+  },
+  {
+    icon: Sparkles,
+    title: "Sistema de Raspadinha",
+    description: "Engajamento instantâneo com raspadinhas digitais personalizáveis e controle total de prêmios.",
+    to: "/solucoes-web/sistemas-web",
+    image: "/img-sistema-de-leilao/cards.png",
+    features: ["Prêmios Instantâneos", "Design Custom", "Auditagem"]
   }
 ];
 
