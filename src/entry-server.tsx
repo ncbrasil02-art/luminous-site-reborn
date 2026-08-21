@@ -3,7 +3,7 @@ import { createMemoryHistory, createRouter, RouterProvider } from '@tanstack/rea
 import { HelmetProvider, HelmetServerState } from 'react-helmet-async';
 import { routeTree } from './routeTree.gen';
 
-export function render(url: string) {
+export async function render(url: string) {
   try {
     const history = createMemoryHistory({
       initialEntries: [url],
@@ -14,10 +14,10 @@ export function render(url: string) {
       history,
     });
 
-    const helmetContext: { helmet?: HelmetServerState } = {};
+    // Wait for the router to load the route match and any critical data
+    await router.load();
 
-    // Wait for the router to be ready? Memory history is synchronous usually.
-    // However, TanStack Router might need some internal processing.
+    const helmetContext: { helmet?: HelmetServerState } = {};
     
     const html = ReactDOMServer.renderToString(
       <HelmetProvider context={helmetContext}>

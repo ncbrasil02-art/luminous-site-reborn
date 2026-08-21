@@ -38,7 +38,7 @@ async function generate() {
   for (const url of routesToPrerender) {
     try {
       console.log('Rendering:', url)
-      const result = render(url)
+      const result = await render(url)
       
       const appHtml = result.html
       const head = result.head
