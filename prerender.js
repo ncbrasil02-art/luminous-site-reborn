@@ -6,7 +6,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const toAbsolute = (p) => path.resolve(__dirname, p)
 
 async function generate() {
-  // Use dist/index.html as the base template
   const templatePath = toAbsolute('dist/index.html')
   if (!fs.existsSync(templatePath)) {
     console.error('Error: dist/index.html not found. Run build:client first.')
@@ -14,10 +13,7 @@ async function generate() {
   }
   const template = fs.readFileSync(templatePath, 'utf-8')
   
-  // Import the SSR entry point
   const { render } = await import('./dist/server/entry-server.js')
-  
-  // Import news data for dynamic routes
   const { newsData } = await import('./src/lib/news.data.ts')
 
   const allCategories = Array.from(new Set(newsData.flatMap(p => p.categories))).filter(Boolean)
@@ -52,26 +48,24 @@ async function generate() {
       const appHtml = result.html
       const head = result.head
 
-      // Final HTML reconstruction
-      // We look for <!--app-head--> and <!--app-html-->
-      // If they were stripped by Vite's minifier, we fallback to replacing the standard tags
-      let finalHtml = template;
+      // In pre-rendering, we want the template to be AS CLEAN AS POSSIBLE.
+      // We remove existing meta/title tags from the template to avoid duplicates.
+      let finalHtml = template.replace(/<title>.*?<\/title>/gi, '')
+                              .replace(/<meta name="description" content=".*?" \/>/gi, '')
+                              .replace(/<meta name="description" content=".*?"\/>/gi, '');
 
       if (finalHtml.includes('<!--app-head-->')) {
         finalHtml = finalHtml.replace('<!--app-head-->', head || '')
       } else {
-        // Fallback: inject into <head>
         finalHtml = finalHtml.replace('</head>', `${head || ''}</head>`)
       }
 
       if (finalHtml.includes('<!--app-html-->')) {
         finalHtml = finalHtml.replace('<!--app-html-->', appHtml || '')
       } else {
-        // Fallback: inject into <div id="root">
         finalHtml = finalHtml.replace('<div id="root"></div>', `<div id="root">${appHtml || ''}</div>`)
       }
 
-      // Clean the URL to get a valid file path
       const cleanUrl = url === '/' ? '/index' : url.replace(/\/$/, "");
       const filePath = `dist${cleanUrl}.html`
       const absolutePath = toAbsolute(filePath)
