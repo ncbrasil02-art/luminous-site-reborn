@@ -1,9 +1,8 @@
-import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
 import { ArrowLeft, ArrowRight, Code2, Gavel, LayoutDashboard, ShoppingCart, Users, ChevronRight, Sparkles, Rocket } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
+import { Reveal } from "@/components/Section";
 
 const systems = [
   {
@@ -66,29 +65,7 @@ const systems = [
 ];
 
 export function SystemsCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start", skipSnaps: false });
-  const [prevBtnDisabled, setPrevBtnDisabled] = useState(true);
-  const [nextBtnDisabled, setNextBtnDisabled] = useState(true);
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
-
-  const onSelect = useCallback((emblaApi: any) => {
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-    setPrevBtnDisabled(!emblaApi.canScrollPrev());
-    setNextBtnDisabled(!emblaApi.canScrollNext());
-  }, []);
-
-  useEffect(() => {
-    if (!emblaApi) return;
-    onSelect(emblaApi);
-    emblaApi.on("reInit", onSelect);
-    emblaApi.on("select", onSelect);
-  }, [emblaApi, onSelect]);
-
   return (
-    <div className="relative">
     <div className="relative">
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {systems.map((system, index) => (
@@ -171,36 +148,6 @@ export function SystemsCarousel() {
             </motion.div>
           </Reveal>
         ))}
-      </div>
-
-      {/* Navigation */}
-      <div className="mt-10 flex items-center justify-center gap-4">
-        <button
-          onClick={scrollPrev}
-          className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-card/60 text-foreground transition-all hover:bg-primary hover:text-primary-foreground disabled:opacity-30"
-          disabled={prevBtnDisabled}
-        >
-          <ArrowLeft className="h-5 w-5" />
-        </button>
-        <div className="flex gap-2">
-          {systems.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => emblaApi?.scrollTo(index)}
-              className={cn(
-                "h-2 w-2 rounded-full transition-all",
-                selectedIndex === index ? "w-8 bg-primary" : "bg-border hover:bg-primary/50"
-              )}
-            />
-          ))}
-        </div>
-        <button
-          onClick={scrollNext}
-          className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-card/60 text-foreground transition-all hover:bg-primary hover:text-primary-foreground disabled:opacity-30"
-          disabled={nextBtnDisabled}
-        >
-          <ArrowRight className="h-5 w-5" />
-        </button>
       </div>
     </div>
   );
