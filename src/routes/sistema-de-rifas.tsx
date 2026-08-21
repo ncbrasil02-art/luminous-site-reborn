@@ -40,7 +40,7 @@ export const lpFaq = [
 
 export const Route = createFileRoute("/sistema-de-rifas")({
   head: () => buildLPMeta({
-    title: "NcBrasil - Script de Rifas | O Melhor Sistema de Rifas e Ações Online",
+    title: "Script de Rifas | O Melhor Sistema de Rifas e Ações Online",
     description: "NcBrasil: Crie sua plataforma de ações online com sorteio pela Loteria Federal, Pix instantâneo e zero taxas. O script de rifas mais seguro do Brasil.",
     keywords: "script de rifas, sistema de rifas, fazer rifa online, plataforma de rifas, plataforma de ações online, script de ações, sistema de ações de rifas, criar rifa online, site de rifas profissional",
     canonical: "/sistema-de-rifas",
