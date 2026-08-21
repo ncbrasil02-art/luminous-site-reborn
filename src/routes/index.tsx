@@ -19,7 +19,8 @@ import {
   Globe,
   Database,
   Search,
-  Hdd,
+  Layout,
+  Server,
 } from "lucide-react";
 import { FloatingObject } from "@/components/FloatingObject";
 
@@ -116,34 +117,34 @@ const solutions = [
     to: "/solucoes-web/desenvolvimento-de-sites",
   },
   {
-    icon: Layers,
+    icon: Layout,
     title: "LPs Alta Conversão",
     desc: "Criação de **Landing Pages de alta conversão** focadas em produtos ou serviços, otimizadas para captação de leads qualificados.",
     to: "/solucoes-web/landing-pages",
   },
   {
-    icon: ShoppingBag,
-    title: "Lojas Virtuais",
-    desc: "**E-commerce** e marketplaces escaláveis, integrados a meios de pagamento, frete e gestão.",
-    to: "/portfolio/lojas-virtuais-criadas",
+    icon: Search,
+    title: "SEO Google",
+    desc: "**Rankeamento e autoridade** em palavras-chaves de curta e longa cauda para maximizar resultados orgânicos.",
+    to: "/solucoes-web/seo-google",
   },
   {
-    icon: Smartphone,
-    title: "Aplicativos Mobile",
-    desc: "Apps **iOS e Android** com UX cinematográfica, notificações, geolocalização e integrações.",
-    to: "/portfolio/criacao-de-aplicativos",
-  },
-  {
-    icon: Sparkles,
-    title: "Identidade Visual",
-    desc: "**Logotipos**, branding e design system para marcas que querem ser inesquecíveis.",
-    to: "/portfolio/identidade-visual",
+    icon: Server,
+    title: "Hospedagem de Sites",
+    desc: "**Servidores dedicados e planos cloud** com infraestrutura total no Brasil e consultoria especializada.",
+    to: "/solucoes-web/hospedagem",
   },
   {
     icon: LineChart,
     title: "Marketing Digital",
     desc: "**Criação de posts e vídeos virais** para TikTok, Instagram e Facebook Ads com gestão profissional de campanhas.",
     to: "/solucoes-web/marketing-digital",
+  },
+  {
+    icon: Smartphone,
+    title: "Aplicativos Mobile",
+    desc: "Apps **iOS e Android** com UX cinematográfica, notificações e sistemas de alta performance.",
+    to: "/portfolio/criacao-de-aplicativos",
   },
 ];
 
