@@ -199,9 +199,6 @@ function HomePage() {
 
       
       {/* Visual Technical SEO Status */}
-      <div className="sr-only">
-        Retorne a página classificado de veículos ao estado anterior que estava antes você fez na página errada isso do último prompt era para você ter feito na página revenda de veículos.
-      </div>
 
       {/* HERO ============================================================= */}
       <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden bg-background">
