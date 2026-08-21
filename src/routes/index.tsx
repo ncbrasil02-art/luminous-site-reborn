@@ -1,5 +1,5 @@
 /**
-https://sistema-leilao-plataformas.lovable.app/solucoes-web/landing-pages https://sistema-leilao-plataformas.lovable.app/solucoes-web/desenvolvimento-de-sites  https://sistema-leilao-plataformas.lovable.app/solucoes-web/landing-pages https://sistema-leilao-plataformas.lovable.app/solucoes-web/marketing-digital
+Eu acho que eu já entendi o erro você na parte de serviços não fez igual a parte de sistemas você não criou uma LP para cada link do submenu de serviços com conteúdo completo como estava nas LPS de sistemas... Por favor por isso todas elas clicam e abrem o mesmo conteúdo pelo menu do site onde eu passo mal sem serviços... É para você criar cada LP separadamente em HTML com conteúdo relevante para cada página do menu de serviços ou seja se não houver páginas lá crie... Pois estou abrindo as quatro primeiras páginas do menu todas com o mesmo conteúdo não estou falando de você alterar a página inicial...
 */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
