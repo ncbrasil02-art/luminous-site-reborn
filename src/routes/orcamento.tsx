@@ -64,10 +64,6 @@ function OrcamentoPage() {
 
   return (
     <>
-      <Helmet>
-        <title>{`Orçamento · NC Brasil — Solicite uma Proposta Personalizada em 24h`}</title>
-        <meta name="description" content="Solicite um orçamento detalhado para seu site, sistema web, e-commerce ou aplicativo. Receba uma proposta completa com escopo, prazos e investimento em até 24 horas." />
-      </Helmet>
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />

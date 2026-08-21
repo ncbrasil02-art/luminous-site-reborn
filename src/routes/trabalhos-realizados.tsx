@@ -19,10 +19,6 @@ export const Route = createFileRoute("/trabalhos-realizados")({
   }),
   component: () => (
     <div className="pt-20">
-      <Helmet>
-        <title>{`Trabalhos Realizados · NC Brasil — Portfólio de Projetos Digitais`}</title>
-        <meta name="description" content="Portfólio NC Brasil: sites, sistemas, lojas virtuais, aplicativos, logotipos e identidades visuais entregues para empresas em todo o Brasil." />
-      </Helmet>
       <div className="mx-auto max-w-7xl px-4 md:px-6">
         <nav aria-label="Breadcrumb" className="mb-8">
           <ol className="flex flex-wrap items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground list-none p-0 m-0">

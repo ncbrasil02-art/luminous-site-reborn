@@ -29,10 +29,6 @@ export const Route = createFileRoute("/empresa/quem-somos")({
   }),
   component: () => (
     <>
-      <Helmet>
-        <title>{`Quem Somos | NC Brasil — 20 Anos de Tecnologia e Marketing Digital`}</title>
-        <meta name="description" content="Conheça a NC Brasil: agência de tecnologia e marketing digital com 20 anos de mercado, +1500 projetos entregues e time multidisciplinar." />
-      </Helmet>
       <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/empresa", label: "Empresa" }, { to: "/empresa/quem-somos", label: "Quem Somos" }]}
       eyebrow="Sobre nós"

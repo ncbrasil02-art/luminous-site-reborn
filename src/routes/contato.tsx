@@ -55,10 +55,6 @@ function ContatoPage() {
 
   return (
     <>
-      <Helmet>
-        <title>{`Contato · NC Brasil — Fale com Nossa Equipe de Especialistas`}</title>
-        <meta name="description" content="Entre em contato com a NC Brasil. Tire dúvidas, agende uma reunião ou solicite um diagnóstico para seu projeto. Atendimento especializado em São Paulo e Rio de Janeiro." />
-      </Helmet>
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />

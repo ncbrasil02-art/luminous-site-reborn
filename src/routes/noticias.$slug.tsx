@@ -65,10 +65,6 @@ function NewsPostPage() {
 
   return (
     <>
-      <Helmet>
-        <title>{post.title} | Revista Digital</title>
-        <meta name="description" content={post.content.replace(/<[^>]*>/g, '').slice(0, 160)} />
-      </Helmet>
       <main className="relative pt-24 pb-20 overflow-hidden">
       
       {/* Reading Progress Bar */}
