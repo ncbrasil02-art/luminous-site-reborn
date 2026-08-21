@@ -8,7 +8,7 @@ const URL = `${SITE_URL}/trabalhos-realizados`;
 
 export const Route = createFileRoute("/trabalhos-realizados")({
   head: () => buildMeta({
-    title: "Trabalhos Realizados · NC Brasil — Portfólio de Projetos Digitais",
+    title: "Trabalhos Realizados | Portfólio de Sites e Sistemas de Alta Performance",
     description: "Portfólio NC Brasil: sites, sistemas, lojas virtuais, aplicativos, logotipos e identidades visuais entregues para empresas em todo o Brasil.",
     keywords: "portfólio NC Brasil, trabalhos realizados, cases de sucesso, projetos web, sites criados",
     canonical: URL,

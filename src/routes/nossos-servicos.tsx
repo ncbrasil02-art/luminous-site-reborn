@@ -54,7 +54,7 @@ const services = [
 
 export const Route = createFileRoute("/nossos-servicos")({
   head: () => buildStubMeta({
-    title: "Nossos Serviços · NC Brasil — Sites, Sistemas, Apps e Marketing",
+    title: "Nossos Serviços | Criação de Sites, LPs, SEO e Marketing Digital",
     description: "Conheça os serviços da NC Brasil: criação de sites, sistemas web, lojas virtuais, aplicativos mobile, identidade visual e marketing digital.",
     keywords: "serviços de tecnologia, criação de sites, marketing digital, agência web SP RJ",
     canonical: URL,
