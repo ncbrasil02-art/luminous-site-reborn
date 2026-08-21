@@ -144,7 +144,7 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
       }}
       finalCtaTitle={<>Seja o dono da sua própria <span className="text-gradient">plataforma de cassino</span></>}
       finalCtaDesc={<>Fale agora com um especialista da **NcBrasil** e receba um orçamento personalizado para o seu **sistema de cassino online**. Otimização total para dominar as buscas do Google.</>}
-      testimonials={testimonialsData.filter(t => t.id === "6" || t.id === "3" || t.id === "1")}
+      testimonials={cassinoTestimonials}
       faq={lpFaq}
       relatedNewsTags={["Cassino", "iGaming", "Sistemas", "Tecnologia"]}
     />
