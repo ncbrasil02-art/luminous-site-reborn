@@ -189,7 +189,7 @@ export function LandingPage({
             src={pathname.includes('rifas') 
               ? "/img-sistema-de-rifas/rifa-vitrine.png"
               : pathname.includes('leilao')
-                ? "/img-sistema-de-leilao/home-premium.png"
+                ? "/img-sistema-de-leilao/plataforma-de-leilao-dashboard-gerencial-02.png"
                 : "/logo.jpg"
             }
             alt={imageKeyword || eyebrow} 
