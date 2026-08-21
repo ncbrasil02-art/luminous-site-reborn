@@ -743,10 +743,10 @@ export function LandingPage({
       {finalParallaxCta && (
         <section className="relative h-[400px] md:h-[500px] w-full overflow-hidden">
           <div 
-            className="absolute inset-0 bg-fixed bg-center bg-cover"
+            className={`absolute inset-0 bg-fixed bg-center ${finalParallaxCta.image === '/logo.jpg' ? 'bg-contain bg-no-repeat opacity-10' : 'bg-cover'}`}
             style={{ backgroundImage: `url(${finalParallaxCta.image})` }}
           />
-          <div className="absolute inset-0 bg-black/70 backdrop-blur-[2px]" />
+          <div className={`absolute inset-0 ${finalParallaxCta.image === '/logo.jpg' ? 'bg-black/90' : 'bg-black/70'} backdrop-blur-[2px]`} />
           <div className="relative h-full flex items-center justify-center text-center px-4">
             <Reveal>
               <div className="max-w-4xl">
