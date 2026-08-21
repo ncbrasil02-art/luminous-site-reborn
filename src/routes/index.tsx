@@ -1,4 +1,4 @@
-/** Entrei nessas páginas e o título está tudo igual não sei se é cash... Não estou vendo cada palavra no título em lugar nenhum da página nem conteúdo diferente... Também não estou vendo a parte do relacionamento entre as páginas */
+/** Misericórdia estou aqui atualizando a página toda hora para ver se alterou os serviços do menu de serviços todos os itens cada um com seu título lembrando que não é na parte de sistemas e os títulos estão iguais o hero e páginas com conteúdo igual... As últimas que eu pedi para você criar o conteúdo não está lá estou clicando na página por exemplo marketing digital eu te passei toda estrutura de cada página acima para você colocar e fazer e não estar la para mim está igual */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
