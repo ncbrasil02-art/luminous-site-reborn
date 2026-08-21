@@ -11,6 +11,7 @@ export type MetaOptions = {
   ogType?: "website" | "article";
   noIndex?: boolean;
   faq?: { q: string; a: string }[];
+  service?: { name: string; description: string; serviceType?: string; url?: string };
   breadcrumbs?: { label: string; to: string }[];
   article?: {
     publishedTime?: string;
@@ -35,6 +36,7 @@ export function buildMeta(options: MetaOptions) {
     faq,
     breadcrumbs,
     article,
+    service,
   } = options;
 
   const fullTitle = title.includes(SITE_NAME) ? title : title;
@@ -142,6 +144,27 @@ export function buildMeta(options: MetaOptions) {
             "@type": "ImageObject",
             url: `${SITE_URL}/favicon.png`,
           },
+        },
+      }),
+    });
+  }
+
+  if (service) {
+    scripts.push({
+      type: "application/ld+json",
+      children: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: service.name,
+        description: service.description,
+        serviceType: service.serviceType || service.name,
+        url: absoluteCanonical || service.url || SITE_URL,
+        areaServed: { "@type": "Country", name: "Brasil" },
+        provider: {
+          "@type": "Organization",
+          name: SITE_NAME,
+          url: SITE_URL,
+          logo: `${SITE_URL}/favicon.png`,
         },
       }),
     });

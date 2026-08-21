@@ -18,6 +18,7 @@ export const Route = createFileRoute("/servicos/consultoria")({
     description: "Consultoria estratégica em tecnologia, transformação digital e marketing. Diagnóstico, roadmap e mentoria para acelerar seu crescimento.",
     keywords: "consultoria em tecnologia, consultoria em marketing digital, consultoria transformação digital, mentoria de negócios",
     canonical: URL,
+    serviceType: "consultoria",
     h1: "Consultoria em Tecnologia e Marketing Digital",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -30,6 +31,9 @@ export const Route = createFileRoute("/servicos/consultoria")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/consultoria", label: "Consultoria" }]}
       eyebrow="Consultoria Estratégica"
+      benefitsTitle={<>Benefícios da <span className="text-gradient">consultoria em tecnologia e marketing</span></>}
+      featuresTitle={<>Como funciona nossa <span className="text-gradient">consultoria estratégica</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">consultoria digital</span></>}
       h1={<>Consultoria que transforma <span className="text-gradient">estratégia em resultado</span></>}
       intro={<>**Diagnóstico, roadmap e mentoria** para líderes que precisam acelerar transformação digital, escalar operações ou reposicionar produto.</>}
       stats={[{ value: "500+", label: "Empresas atendidas" }, { value: "20 anos", label: "De experiência" }, { value: "C-Level", label: "Consultores sênior" }, { value: "ROI 10x", label: "Cases comprovados" }]}

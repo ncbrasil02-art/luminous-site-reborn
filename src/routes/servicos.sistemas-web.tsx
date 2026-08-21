@@ -18,6 +18,7 @@ export const Route = createFileRoute("/servicos/sistemas-web")({
     description: "Desenvolvimento de sistemas web sob medida: ERPs, CRMs, portais, intranets, sistemas de gestão e plataformas SaaS multi-tenant.",
     keywords: "sistemas web, desenvolvimento de sistemas, erp personalizado, crm sob medida, sistema de gestão, plataforma saas",
     canonical: URL,
+    serviceType: "sistemas web",
     h1: "Sistemas Web Personalizados para Sua Operação",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -30,6 +31,9 @@ export const Route = createFileRoute("/servicos/sistemas-web")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/sistemas-web", label: "Sistemas Web" }]}
       eyebrow="Sistemas Web"
+      benefitsTitle={<>Ganhos de um <span className="text-gradient">sistema web sob medida</span></>}
+      featuresTitle={<>Recursos dos nossos <span className="text-gradient">ERPs, CRMs e plataformas SaaS</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">desenvolvimento de sistemas web</span></>}
       h1={<>Sistemas web <span className="text-gradient">sob medida</span> para gestão e operação</>}
       intro={<>Do **ERP ao CRM, do portal do cliente ao SaaS multi-tenant** — construímos sistemas web que automatizam processos e escalam com seu negócio.</>}
       stats={[{ value: "400+", label: "Sistemas ativos" }, { value: "Multi-tenant", label: "Arquitetura" }, { value: "99,9%", label: "SLA" }, { value: "24/7", label: "Suporte" }]}

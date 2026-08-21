@@ -18,6 +18,7 @@ export const Route = createFileRoute("/servicos/identidade-visual")({
     description: "Criação de identidade visual completa: logotipo, manual de marca, paleta, tipografia, aplicações e branding estratégico.",
     keywords: "identidade visual, branding, criação de logotipo, manual de marca, design de marca, brand identity",
     canonical: URL,
+    serviceType: "identidade visual",
     h1: "Identidade Visual e Branding Estratégico",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -30,6 +31,9 @@ export const Route = createFileRoute("/servicos/identidade-visual")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/identidade-visual", label: "Identidade Visual" }]}
       eyebrow="Branding"
+      benefitsTitle={<>O valor de uma <span className="text-gradient">identidade visual estratégica</span></>}
+      featuresTitle={<>Entregas do projeto de <span className="text-gradient">branding e design de marca</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">identidade visual e branding</span></>}
       h1={<>Identidade visual que <span className="text-gradient">posiciona sua marca</span></>}
       intro={<>Da **pesquisa de mercado ao manual de marca** — criamos identidades visuais memoráveis que geram reconhecimento, desejo e diferenciação.</>}
       stats={[{ value: "1.500+", label: "Marcas criadas" }, { value: "20 anos", label: "De branding" }, { value: "100%", label: "Autoral" }, { value: "Manual", label: "De marca completo" }]}

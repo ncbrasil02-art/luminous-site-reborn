@@ -20,6 +20,7 @@ export const Route = createFileRoute("/solucoes-web/loja-virtual")({
     description: "Criação de loja virtual completa: catálogo, checkout otimizado, integração com meios de pagamento, frete, marketplaces e ERP.",
     keywords: "criação de loja virtual, e-commerce, loja online, plataforma e-commerce, loja virtual profissional, e-commerce personalizado",
     canonical: URL,
+    serviceType: "loja virtual",
     h1: "Criação de Loja Virtual Profissional",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -32,6 +33,9 @@ export const Route = createFileRoute("/solucoes-web/loja-virtual")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/loja-virtual", label: "Loja Virtual" }]}
       eyebrow="E-commerce"
+      benefitsTitle={<>Vantagens de uma <span className="text-gradient">loja virtual profissional</span></>}
+      featuresTitle={<>Recursos do seu <span className="text-gradient">e-commerce de alta conversão</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">criação de loja virtual</span></>}
       h1={<>Loja Virtual pronta para <span className="text-gradient">vender muito</span></>}
       intro={<>Plataforma de e-commerce completa com **checkout otimizado, integração com marketplaces e meios de pagamento**. De 0 a R$ 100 mil/mês com estrutura escalável.</>}
       stats={[{ value: "300+", label: "Lojas ativas" }, { value: "R$ 50Mi", label: "GMV anual" }, { value: "3,2%", label: "Taxa conversão" }, { value: "99,9%", label: "Uptime" }]}

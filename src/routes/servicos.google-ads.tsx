@@ -18,6 +18,7 @@ export const Route = createFileRoute("/servicos/google-ads")({
     description: "Gestão profissional de Google Ads: campanhas de Search, Shopping, YouTube, Display e Performance Max com foco em ROAS e conversões.",
     keywords: "google ads, gestão de google ads, agência google ads, campanhas google ads, google adwords, tráfego pago google",
     canonical: URL,
+    serviceType: "Google Ads",
     h1: "Gestão Profissional de Google Ads",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -30,6 +31,9 @@ export const Route = createFileRoute("/servicos/google-ads")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/google-ads", label: "Google Ads" }]}
       eyebrow="Google Ads"
+      benefitsTitle={<>Vantagens da <span className="text-gradient">gestão de Google Ads</span></>}
+      featuresTitle={<>Como estruturamos suas <span className="text-gradient">campanhas no Google Ads</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">Google Ads e tráfego pago</span></>}
       h1={<>Consultoria e Gestão de <span className="text-gradient">Google ADS Profissional</span></>}
       intro={<>Fazemos toda a **consultoria e aplicação de resultados** em campanhas de **Google ADS**. Foco total em conversão e ROAS para garantir o retorno do seu investimento.</>}
       stats={[{ value: "R$ 20Mi", label: "Investidos em Ads" }, { value: "5,2x", label: "ROAS médio" }, { value: "Premier", label: "Google Partner" }, { value: "-38%", label: "CAC médio" }]}

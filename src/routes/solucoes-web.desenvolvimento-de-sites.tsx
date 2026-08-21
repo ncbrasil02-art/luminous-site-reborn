@@ -20,6 +20,7 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
     description: "Desenvolvimento de sites institucionais e lojas virtuais focados em atrair visitantes e converter vendas. Focamos em palavras-chaves que atraiam pessoas de visitantes adquirirem seu site.",
     keywords: "criação de sites, desenvolvimento de loja virtual, agência web, site institucional, e-commerce, vendas online, agência de criação de sites",
     canonical: URL,
+    serviceType: "criação de sites",
     h1: "Desenvolvimento de Sites e Loja Virtual Profissional",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -33,6 +34,9 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/desenvolvimento-de-sites", label: "Desenvolvimento de Sites" }]}
       eyebrow="Sites Profissionais"
+      benefitsTitle={<>Por que investir na <span className="text-gradient">criação de sites profissionais</span></>}
+      featuresTitle={<>Recursos do seu <span className="text-gradient">site institucional sob medida</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">desenvolvimento de sites</span></>}
       h1={<>Criação de Sites e <span className="text-gradient">Lojas Virtuais Profissionais</span></>}
       intro={<>Na **NC Brasil**, desenvolvemos muito mais que sites: entregamos **ecossistemas digitais robustos** focados em atrair visitantes qualificados e convertê-los em clientes reais. Nossa tecnologia de ponta garante que sua empresa tenha a soberania necessária para liderar seu nicho.</>}
       stats={[{ value: "800+", label: "Sites entregues" }, { value: "98", label: "Score PageSpeed" }, { value: "<2s", label: "LCP médio" }, { value: "20 anos", label: "De experiência" }]}

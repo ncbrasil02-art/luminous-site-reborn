@@ -18,6 +18,7 @@ export const Route = createFileRoute("/solucoes-web/seo-google")({
     description: "Especialistas em SEO onde atuamos rankeando qualquer empresa em palavras-chaves de curta e longa cauda, maximizando os resultados orgânicos nos principais buscadores.",
     keywords: "seo google, rankeamento google, palavras-chave curta cauda, palavras-chave longa cauda, otimização buscadores, autoridade digital, seo google local",
     canonical: URL,
+    serviceType: "SEO Google",
     h1: "SEO Google: Ranqueamento e Autoridade Digital",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -30,6 +31,9 @@ export const Route = createFileRoute("/solucoes-web/seo-google")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/seo-google", label: "SEO Google" }]}
       eyebrow="SEO Profissional"
+      benefitsTitle={<>Ganhos reais de <span className="text-gradient">SEO no Google</span></>}
+      featuresTitle={<>O que entra na nossa <span className="text-gradient">estratégia de ranqueamento</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">SEO e ranqueamento no Google</span></>}
       h1={<>Domine o Google e <span className="text-gradient">Escale suas Vendas Orgânicas</span></>}
       intro={<>Eleve sua empresa ao topo com nossa metodologia de **SEO de alta performance**. Atuamos no rankeamento estratégico de palavras-chave de curta e longa cauda para garantir que seu site seja a primeira opção do seu cliente.</>}
       stats={[{ value: "+340%", label: "Tráfego orgânico" }, { value: "Top 3", label: "Rankings alcançados" }, { value: "500+", label: "Palavras-chave" }, { value: "12 meses", label: "Resultado consistente" }]}

@@ -18,6 +18,7 @@ export const Route = createFileRoute("/servicos/facebook-ads")({
     description: "Gestão profissional de Meta Ads (Facebook e Instagram). Campanhas com CBO, Advantage+, Lookalikes e criativos otimizados para conversão.",
     keywords: "facebook ads, instagram ads, meta ads, gestão de facebook ads, tráfego pago meta, agência facebook ads",
     canonical: URL,
+    serviceType: "Meta Ads",
     h1: "Gestão de Meta Ads (Facebook e Instagram)",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -30,6 +31,9 @@ export const Route = createFileRoute("/servicos/facebook-ads")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/facebook-ads", label: "Facebook Ads" }]}
       eyebrow="Meta Ads"
+      benefitsTitle={<>Vantagens da <span className="text-gradient">gestão de Meta Ads</span></>}
+      featuresTitle={<>Como estruturamos suas <span className="text-gradient">campanhas no Facebook e Instagram</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">Facebook Ads e Instagram Ads</span></>}
       h1={<>Gerenciamento de Campanhas <span className="text-gradient">Facebook ADS</span></>}
       intro={<>Fazemos toda a **consultoria e aplicação de resultados** em campanhas de **Facebook ADS**. Criativos otimizados e segmentação avançada para maximizar sua autoridade no mercado.</>}
       stats={[{ value: "R$ 15Mi", label: "Investidos em Meta" }, { value: "4,6x", label: "ROAS médio" }, { value: "200+", label: "Contas ativas" }, { value: "Meta", label: "Business Partner" }]}
