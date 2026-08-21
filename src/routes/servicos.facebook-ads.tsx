@@ -5,11 +5,11 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 const URL = "https://www.ncbrasil.com.br/servicos/facebook-ads";
 
 const lpFaq = [
-        { q: "Verba mínima?", a: "**R$ 2.000/mês** em mídia + fee de gestão para resultados consistentes." },
-        { q: "Fazem os criativos?", a: "Sim, **estúdio próprio de vídeo, foto e motion** para criativos ilimitados." },
-        { q: "Quanto tempo para resultado?", a: "Primeiros dados em **7 dias**; maturidade da campanha em 30 dias." },
-        { q: "BM fica com quem?", a: "**Você é dono do Business Manager e do Pixel** — mantemos acesso permissionado." },
-        { q: "Trabalham com infoproduto?", a: "Sim, especialidade em **infoprodutos, e-commerce, SaaS e serviços locais**." },
+        { q: "Facebook Ads ainda funciona?", a: "Sim, é uma das melhores plataformas para **gerar desejo e capturar leads** com segmentação avançada." },
+        { q: "Vocês criam os vídeos para os anúncios?", a: "Sim, produzimos criativos de alta conversão focados em **Stories e Reels**." },
+        { q: "Como vocês segmentam o público?", a: "Usamos inteligência de dados para atingir pessoas por **interesse, comportamento e localização**." },
+        { q: "Posso anunciar com pouca verba?", a: "Sim, o Facebook permite começar com orçamentos menores e **escalar conforme o resultado** aparece." },
+        { q: "Vocês gerenciam o Instagram também?", a: "Sim, as campanhas são integradas para aparecerem tanto no **Facebook quanto no Instagram**." },
       ];
 
 export const Route = createFileRoute("/servicos/facebook-ads")({

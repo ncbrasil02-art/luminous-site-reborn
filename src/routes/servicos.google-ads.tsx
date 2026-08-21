@@ -5,11 +5,11 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 const URL = "https://www.ncbrasil.com.br/servicos/google-ads";
 
 const lpFaq = [
-        { q: "Verba mínima?", a: "**R$ 2.000/mês** em mídia + fee de gestão para resultados consistentes." },
-        { q: "Somos Google Partner?", a: "Sim, **Google Premier Partner** com certificações em Search, Shopping e YouTube." },
-        { q: "Fica no meu MCC?", a: "Sim, você **é dono da conta** — nós apenas gerenciamos com acesso permissionado." },
-        { q: "Fazem criativos de vídeo?", a: "Sim, estúdio próprio produz **anúncios em vídeo, imagens e responsivos**." },
-        { q: "Vocês reportam como?", a: "Dashboards **Looker Studio em tempo real** + call semanal ou quinzenal." },
+        { q: "Como vocês garantem o ROI?", a: "Otimizamos diariamente seus lances e palavras-chave para que seu investimento traga o **máximo de conversões**." },
+        { q: "O Google Ads serve para o meu negócio?", a: "Sim, é a ferramenta mais poderosa para aparecer exatamente quando seu cliente está **procurando pelo seu serviço**." },
+        { q: "Vocês fazem o rastreamento das vendas?", a: "Sim, configuramos todas as tags para você saber exatamente **de onde veio cada venda**." },
+        { q: "Qual a diferença de contratar uma agência?", a: "Nós temos certificação e experiência para **não desperdiçar seu dinheiro** com cliques irrelevantes." },
+        { q: "Fazem anúncios no YouTube também?", a: "Sim, criamos e gerenciamos campanhas de vídeo para **aumentar a autoridade** da sua marca." },
       ];
 
 export const Route = createFileRoute("/servicos/google-ads")({

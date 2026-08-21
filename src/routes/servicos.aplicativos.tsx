@@ -5,11 +5,11 @@ import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 const URL = "https://www.ncbrasil.com.br/servicos/aplicativos";
 
 const lpFaq = [
-        { q: "Nativo ou React Native?", a: "**Recomendamos por projeto**: React Native para MVP rápido; nativo para performance crítica ou uso intensivo de hardware." },
-        { q: "Vocês publicam nas lojas?", a: "Sim, cuidamos de **contas de desenvolvedor, screenshots, ASO e revisões** da Apple/Google." },
-        { q: "Fazem manutenção?", a: "Sim, contratos de **evolução mensal** com sprints de melhorias contínuas." },
-        { q: "Qual o prazo médio?", a: "MVP em **90 dias**; app completo em 4 a 8 meses conforme escopo." },
-        { q: "Integram com meu backend?", a: "Sim, ou **construímos o backend** completo com APIs, admin e infraestrutura." },
+        { q: "Desenvolvem para Android e iOS?", a: "Sim, criamos aplicativos nativos e híbridos que rodam perfeitamente em **ambas as plataformas**." },
+        { q: "O aplicativo é integrado ao meu site?", a: "Sim, desenvolvemos o backend para que seu **site e aplicativo compartilhem os mesmos dados** em tempo real." },
+        { q: "Qual tecnologia vocês utilizam?", a: "Utilizamos as mais modernas do mercado como **React Native, Flutter e Node.js** para garantir performance." },
+        { q: "Vocês cuidam da publicação nas lojas?", a: "Sim, fazemos todo o processo de envio e aprovação na **Apple Store e Google Play**." },
+        { q: "Fazem aplicativos sob medida?", a: "Sim, cada projeto é **único e planejado** de acordo com a necessidade específica do seu negócio." },
       ];
 
 export const Route = createFileRoute("/servicos/aplicativos")({
