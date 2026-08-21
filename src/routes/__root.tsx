@@ -103,8 +103,15 @@ function NotFoundComponent() {
       }
 
       // 4. Try to redirect to the last segment as a flat URL
-      // (This handles /category/title -> /title migration)
-      window.location.replace(`/${slug}`);
+      // Only redirect if it's a known flat route segment to avoid loops
+      const knownFlatRoutes = [
+        'sistema-de-leilao', 'sistema-de-rifas', 'nossos-sistemas', 
+        'nossos-servicos', 'trabalhos-realizados', 'orcamento', 'contato'
+      ];
+      if (knownFlatRoutes.includes(slug)) {
+        window.location.replace(`/${slug}`);
+        return;
+      }
     }
   }, [pathname]);
 
