@@ -193,7 +193,7 @@ export function LandingPage({
                 : "/logo.jpg"
             }
             alt={imageKeyword || eyebrow} 
-            className="h-full w-full object-cover opacity-20"
+            className={`h-full w-full ${pathname.includes('leilao') ? 'object-contain p-20 opacity-10' : 'object-cover opacity-20'}`}
             loading="eager"
             fetchPriority="high"
             onError={(e) => {
