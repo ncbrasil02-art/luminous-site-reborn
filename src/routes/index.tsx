@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight,
   Code2,
@@ -13,7 +13,14 @@ import {
   Sparkles,
   Trophy,
   Zap,
+  ChevronRight,
+  ShieldCheck,
+  Globe,
+  Database,
+  Search,
 } from "lucide-react";
+import { FloatingObject } from "@/components/FloatingObject";
+
 
 import { Reveal, SectionHeading } from "@/components/Section";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
@@ -80,12 +87,13 @@ const homeJsonLd = {
 export const Route = createFileRoute("/")({
   head: () => {
     const meta = buildMeta({
-      title: "Criação de Sites, Sistemas Web e Aplicativos Profissionais",
-      description: "NcBrasil: Especialistas em criação de sites, sistemas sob demanda e aplicativos mobile. Tecnologia premium e marketing digital para transformar seu negócio.",
-      keywords: "criação de sites, criação de sistemas web, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, NC Brasil",
+      title: "Criação de Sites e Sistemas Web de Alta Performance",
+      description: "NcBrasil: Especialistas em sistemas cinematográficos, plataformas de leilão e aplicativos de alto padrão. Tecnologia premium para empresas líderes.",
+      keywords: "criação de sites premium, sistemas web alta performance, plataforma de leilão online, aplicativos mobile premium, marketing digital estratégico, agência de tecnologia SP",
       ogImage: "/logo-nc-brasil.png",
       canonical: "/",
     });
+
 
     return {
       ...meta,
@@ -184,197 +192,205 @@ function HomePage() {
   return (
     <>
       <Helmet>
-        <title>NcBrasil - Criação de Sites, Sistemas Web e Aplicativos Profissionais</title>
-        <meta name="description" content="NcBrasil: Especialistas em criação de sites, sistemas sob demanda e aplicativos mobile. Tecnologia premium e marketing digital para transformar seu negócio." />
-        <meta name="keywords" content="criação de sites, criação de sistemas web, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, NC Brasil" />
+        <title>NcBrasil - Sistemas Web e Sites de Alta Performance</title>
+        <meta name="description" content="NcBrasil: Especialistas em sistemas cinematográficos, plataformas de leilão e aplicativos de alto padrão. Tecnologia premium para empresas líderes." />
+        <meta name="keywords" content="criação de sites premium, sistemas web alta performance, plataforma de leilão online, aplicativos mobile premium, marketing digital estratégico, agência de tecnologia SP" />
       </Helmet>
+
       
       {/* Visual Technical SEO Status */}
-      <div className="sr-only">
-        Retorne a página classificado de veículos ao estado anterior que estava antes você fez na página errada isso do último prompt era para você ter feito na página revenda de veículos.
-      </div>
 
       {/* HERO ============================================================= */}
-      <section className="relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10" aria-hidden="true">
-          <img
-            src="/img-sistema-de-leilao/home-premium.png"
-            alt="NC Brasil Tecnologia - Criação de Sites e Sistemas"
-            width={1920}
-            height={1080}
-            loading="eager"
-            fetchPriority="high"
-            decoding="async"
-            onError={(e) => {
-              const target = e.target as HTMLImageElement;
-              target.onerror = null;
-              target.src = "/logo.jpg";
-            }}
-            className="h-full w-full object-cover opacity-50"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
-          <div className="absolute inset-0 bg-hero-glow" />
-          <div className="absolute inset-0 grid-pattern opacity-30 pointer-events-none" />
+      <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden bg-background">
+        {/* Background Elements */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-hero opacity-80" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] animate-glow-pulse" />
+          <div className="absolute bottom-0 left-0 w-full h-[40vh] bg-gradient-to-t from-background to-transparent z-10" />
+          
+          {/* Animated Mesh */}
+          <div className="absolute inset-0 bg-mesh opacity-40 mix-blend-screen" />
+          
+          {/* Floating Tech Objects */}
+          <FloatingObject className="top-[15%] left-[10%] opacity-40 hidden md:block" delay={0}>
+             <div className="h-16 w-16 rounded-2xl border border-primary/20 bg-primary/5 flex items-center justify-center backdrop-blur-sm">
+                <Globe className="h-8 w-8 text-primary/60" />
+             </div>
+          </FloatingObject>
+          <FloatingObject className="top-[25%] right-[15%] opacity-30 hidden lg:block" delay={1.5} duration={7}>
+             <div className="h-20 w-20 rounded-full border border-primary-glow/20 bg-primary-glow/5 flex items-center justify-center backdrop-blur-sm">
+                <Database className="h-10 w-10 text-primary-glow/50" />
+             </div>
+          </FloatingObject>
+          <FloatingObject className="bottom-[20%] left-[20%] opacity-40 hidden md:block" delay={0.5} duration={8}>
+             <div className="h-12 w-12 rounded-lg border border-secondary/20 bg-secondary/5 flex items-center justify-center backdrop-blur-sm rotate-12">
+                <Code2 className="h-6 w-6 text-secondary/60" />
+             </div>
+          </FloatingObject>
         </div>
 
-        <div className="mx-auto flex min-h-[88vh] max-w-7xl flex-col items-center justify-center px-4 py-24 text-center md:px-6">
-          <motion.span
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-primary backdrop-blur"
-          >
-            <Sparkles className="h-3.5 w-3.5" />
-            Sistemas · Sites · Apps · Marketing
-          </motion.span>
+        <div className="relative z-20 mx-auto max-w-7xl px-4 py-24 text-center md:px-6">
+          <Reveal>
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary-glow backdrop-blur-md glow-sm mb-8">
+              <Sparkles className="h-3.5 w-3.5 animate-pulse" />
+              Liderança em Tecnologia Digital
+            </span>
+          </Reveal>
 
           <motion.h1
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="mt-6 max-w-5xl font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-7xl"
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="mt-6 font-display text-5xl font-bold leading-[1] tracking-tight text-foreground md:text-8xl lg:text-[7rem]"
           >
-            Sistemas Web e <span className="text-gradient">Sites de Leilão</span>.
-            <br className="hidden md:block" />
-            Design que <span className="text-gradient">Impulsiona Vendas</span>.
+            Sistemas de <span className="text-gradient drop-shadow-[0_0_30px_rgba(49,91,255,0.3)]">Alta Performance</span>.
           </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="mt-6 max-w-2xl text-base text-muted-foreground md:text-lg"
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="mt-8 mx-auto max-w-3xl"
           >
-            A <strong className="text-foreground">NC Brasil</strong> é especialista em{" "}
-            <Link to="/sistema-de-leilao" className="story-link text-foreground">
-              <strong>plataforma de leilão online</strong>
-            </Link>
-            ,{" "}
-            <Link to="/nossos-sistemas" className="story-link text-foreground">
-              <strong>sistemas web sob demanda</strong>
-            </Link>{" "}
-            e{" "}
-            <Link to="/portfolio/lojas-virtuais-criadas" className="story-link text-foreground">
-              <strong>e-commerce premium</strong>
-            </Link>{" "}
-            em <strong className="text-foreground">SP</strong> e{" "}
-            <strong className="text-foreground">RJ</strong>.
-          </motion.p>
+            <p className="text-lg text-muted-foreground md:text-xl leading-relaxed">
+              Transformamos ideias em <strong className="text-foreground">ecossistemas digitais</strong> cinematográficos. 
+              Especialistas em <strong className="text-primary-glow">plataformas de leilão</strong>, 
+              sistemas web escaláveis e apps de alto padrão para o mercado brasileiro.
+            </p>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="mt-10 flex flex-col items-center gap-3 sm:flex-row"
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <Link
-              to="/sistema-de-leilao"
-              onClick={() => trackClick("Conhecer Sistema de Leilão", "Home Hero")}
-              className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md transition-transform hover:scale-105"
+              to="/nossos-sistemas"
+              onClick={() => trackClick("Explorar Nossos Sistemas", "Home Hero")}
+              className="group relative flex h-14 items-center justify-center overflow-hidden rounded-full bg-primary px-8 text-sm font-bold uppercase tracking-widest text-white transition-all hover:scale-105 hover:glow-lg"
             >
-              Conhecer Sistema de Leilão
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <span className="relative z-10 flex items-center gap-2">
+                Explorar Soluções
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
             </Link>
             <Link
-              to="/trabalhos-realizados"
-              onClick={() => trackClick("Ver trabalhos realizados", "Home Hero")}
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur transition-colors hover:bg-surface"
+              to="/contato"
+              onClick={() => trackClick("Solicitar Orçamento", "Home Hero")}
+              className="flex h-14 items-center justify-center rounded-full border border-white/10 bg-white/5 px-8 text-sm font-bold uppercase tracking-widest text-white backdrop-blur-md transition-all hover:bg-white/10 hover:border-white/20"
             >
-              Ver trabalhos realizados
+              Consultoria Estratégica
             </Link>
           </motion.div>
 
-          {/* Stats */}
+          {/* Premium Partners / Trust */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="mt-20 grid w-full max-w-4xl grid-cols-2 gap-4 md:grid-cols-4"
+            transition={{ duration: 1, delay: 0.8 }}
+            className="mt-24 pt-12 border-t border-white/5"
           >
-            {stats.map((s) => (
-              <div
-                key={s.label}
-                className="glass rounded-2xl px-4 py-5 text-center"
-              >
-                <div className="font-display text-2xl font-bold text-gradient md:text-3xl">
-                  {s.value}
-                </div>
-                <div className="mt-1 text-xs text-muted-foreground">{s.label}</div>
-              </div>
-            ))}
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground/60 mb-8">
+              Tecnologia validada por centenas de negócios no Brasil
+            </p>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+               {stats.map((s) => (
+                 <div key={s.label} className="text-center">
+                    <div className="text-xl md:text-2xl font-display font-bold text-foreground">{s.value}</div>
+                    <div className="text-[9px] uppercase tracking-tighter text-muted-foreground">{s.label}</div>
+                 </div>
+               ))}
+            </div>
           </motion.div>
         </div>
       </section>
 
+
       {/* SERVIÇOS E SOLUÇÕES =============================================== */}
-      <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 -z-10 bg-mesh opacity-60" aria-hidden="true" />
+      <section className="relative py-24 md:py-40 overflow-hidden">
+        {/* Decorative elements for services section */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10" />
+        <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px] -z-10" />
+        
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Nossos Serviços"
+            eyebrow="Expertise Digital"
             title={
               <>
-                Soluções <span className="text-gradient">360°</span> para o seu negócio
+                Ecossistema de <span className="text-gradient">Alta Performance</span>
               </>
             }
             description={
               <>
-                Desde a <strong className="text-foreground">concepção visual</strong> até o 
-                <strong className="text-foreground"> marketing de performance</strong>, entregamos 
-                o ecossistema completo para sua empresa brilhar no digital.
+                Engenharia de software e design de alta fidelidade para empresas que buscam 
+                <strong className="text-foreground"> soberania digital</strong> e escala global.
               </>
             }
           />
 
-          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {solutions.map((s, i) => (
-              <Reveal key={s.title} delay={i * 0.05}>
+              <Reveal key={s.title} delay={i * 0.1}>
                 <Link
                   to={s.to}
                   onClick={() => trackClick(s.title, "Home Solutions Grid")}
-                  className="group relative block h-full overflow-hidden rounded-[2rem] border border-border bg-card/40 p-8 backdrop-blur-sm transition-all hover:-translate-y-2 hover:border-primary/40 hover:glow-md hover:bg-card/60"
+                  className="group relative block h-full overflow-hidden rounded-[2.5rem] border border-white/5 bg-navy-900/20 p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
                 >
+                  {/* Glowing background hint */}
+                  <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/20" />
+                  
                   <div className="relative z-10">
-                    <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
-                      <s.icon className="h-7 w-7" />
+                    <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-[1.25rem] bg-surface-elevated text-primary-glow shadow-glow-sm ring-1 ring-white/10 transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:glow-sm">
+                      <s.icon className="h-8 w-8" />
                     </div>
-                    <h3 className="font-display text-2xl font-bold">{s.title}</h3>
-                    <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                    <h3 className="font-display text-2xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{s.title}</h3>
+                    <p className="mt-6 text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors">
                       {renderBold(s.desc)}
                     </p>
-                    <div className="mt-8 flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-primary opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
-                      Conhecer Solução
-                      <ArrowRight className="h-4 w-4" />
+                    <div className="mt-10 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-primary-glow opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
+                      Explorar Tecnologia
+                      <ChevronRight className="h-4 w-4" />
                     </div>
                   </div>
                 </Link>
               </Reveal>
             ))}
           </div>
+
         </div>
       </section>
 
       {/* SISTEMAS EM DESTAQUE (SLIDER) ===================================== */}
-      <section className="relative py-24 md:py-32 bg-surface/30">
-        <div className="absolute inset-0 -z-10 grid-pattern opacity-20" aria-hidden="true" />
+      <section className="relative py-24 md:py-40 bg-navy-950/20">
+        <div className="absolute inset-0 z-0 bg-hero-glow opacity-30 rotate-180" aria-hidden="true" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
             <div className="max-w-2xl">
-              <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
-                <Zap className="h-3.5 w-3.5" />
-                Engenharia de Elite
-              </span>
-              <h2 className="mt-4 font-display text-3xl font-bold md:text-5xl">
-                Sistemas <span className="text-gradient">Inteligentes</span> que impulsionam resultados
+              <Reveal>
+                <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-primary-glow mb-6">
+                  <Rocket className="h-3.5 w-3.5" />
+                  Ecossistema Premium
+                </span>
+              </Reveal>
+              <h2 className="font-display text-4xl font-bold tracking-tight text-white md:text-6xl leading-[1.1]">
+                Nossos <span className="text-gradient">Sistemas Flagship</span>
               </h2>
+              <p className="mt-6 text-lg text-muted-foreground">
+                Plataformas de alta escala projetadas para dominar o mercado. 
+                Tecnologia cinematográfica que converte.
+              </p>
             </div>
             <Link 
               to="/nossos-sistemas" 
               onClick={() => trackClick("Ver todos os sistemas", "Home Systems Section")}
-              className="group inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-primary hover:text-white transition-colors"
+              className="group inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-primary-glow hover:text-white transition-all duration-300"
             >
-              Ver todos os sistemas
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-2" />
+              Catálogo Completo
+              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-primary/30 bg-primary/5 transition-transform group-hover:translate-x-2 group-hover:bg-primary group-hover:text-white">
+                <ChevronRight className="h-4 w-4" />
+              </div>
             </Link>
           </div>
 
@@ -382,34 +398,38 @@ function HomePage() {
         </div>
       </section>
 
+
       {/* PROCESSO ========================================================= */}
-      <section className="relative overflow-hidden border-y border-border bg-surface py-24 md:py-32">
-        <div className="absolute inset-0 grid-pattern opacity-40 pointer-events-none" aria-hidden="true" />
-        <div className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
+      <section className="relative overflow-hidden border-y border-white/5 bg-navy-950/40 py-24 md:py-40">
+        <div className="absolute inset-0 bg-mesh opacity-20 pointer-events-none" aria-hidden="true" />
+        <div className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/40 to-transparent shadow-[0_0_20px_rgba(49,91,255,0.4)]" />
         <div className="relative mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
-            eyebrow="Como trabalhamos"
+            eyebrow="Workflow Cinematográfico"
             title={
               <>
-                Um processo <span className="text-gradient">cinematográfico</span>, do briefing ao
-                lançamento
+                Da Concepção à <span className="text-gradient">Soberania Digital</span>
               </>
             }
-            description="Cada cena revela uma etapa: estratégia, design, engenharia e crescimento — entregamos com previsibilidade."
+            description="Cada etapa é uma cena meticulosamente planejada para garantir que seu projeto seja memorável e altamente lucrativo."
           />
+
 
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, i) => (
-              <Reveal key={step.n} delay={i * 0.08}>
-                <div className="group relative h-full rounded-2xl border border-border bg-card/60 p-6 backdrop-blur transition-all hover:border-primary/40 hover:bg-card">
-                  <div className="font-display text-5xl font-bold text-gradient opacity-90">
+              <Reveal key={step.n} delay={i * 0.1}>
+                <div className="group relative h-full rounded-[2rem] border border-white/5 bg-navy-950/40 p-8 backdrop-blur-xl transition-all duration-500 hover:border-primary/30 hover:bg-navy-900/40 hover:-translate-y-2">
+                  <div className="font-display text-6xl font-black text-white/5 transition-colors group-hover:text-primary/10">
                     {step.n}
                   </div>
-                  <h3 className="mt-4 font-display text-lg font-semibold">{step.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground">{renderBold(step.desc)}</p>
+                  <h3 className="mt-4 font-display text-xl font-bold tracking-tight text-white">{step.title}</h3>
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors">
+                    {renderBold(step.desc)}
+                  </p>
                 </div>
               </Reveal>
             ))}
+
           </div>
         </div>
       </section>
