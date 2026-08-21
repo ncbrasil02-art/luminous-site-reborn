@@ -495,7 +495,7 @@ export function LandingPage({
                               </button>
                             )}
                             <button 
-                              onClick={() => window.open(img, '_blank')}
+                              onClick={() => window.open(item.image, '_blank')}
                               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-white shadow-lg transition-transform hover:scale-105"
                             >
                               <Search className="h-4 w-4" /> Ver em Tela Cheia
