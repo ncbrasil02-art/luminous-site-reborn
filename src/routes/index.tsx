@@ -1,4 +1,4 @@
-/** Todas começam com plataformas digitais que escala seu negócio... Cada uma precisa ter seu título da página independente com conteúdo independente focado no serviço que estamos propondo a falar naquela página.. inclusive perguntas e respostas precisam ser condições com a página do serviço que estamos fazendo ou seja peço que você observe bem... Dentro do menu serviços tem o sub itens as páginas que estão nele precisam ser únicas com conteúdo único relevante conforme passei acima */
+/** mee manda o link dlelas paara  verr */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
