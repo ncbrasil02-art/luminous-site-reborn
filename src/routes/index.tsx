@@ -361,32 +361,41 @@ function HomePage() {
       </section>
 
       {/* SISTEMAS EM DESTAQUE (SLIDER) ===================================== */}
-      <section className="relative py-24 md:py-32 bg-surface/30">
-        <div className="absolute inset-0 -z-10 grid-pattern opacity-20" aria-hidden="true" />
+      <section className="relative py-24 md:py-40 bg-navy-950/20">
+        <div className="absolute inset-0 z-0 bg-hero-glow opacity-30 rotate-180" aria-hidden="true" />
         <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
             <div className="max-w-2xl">
-              <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
-                <Zap className="h-3.5 w-3.5" />
-                Engenharia de Elite
-              </span>
-              <h2 className="mt-4 font-display text-3xl font-bold md:text-5xl">
-                Sistemas <span className="text-gradient">Inteligentes</span> que impulsionam resultados
+              <Reveal>
+                <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-primary-glow mb-6">
+                  <Rocket className="h-3.5 w-3.5" />
+                  Ecossistema Premium
+                </span>
+              </Reveal>
+              <h2 className="font-display text-4xl font-bold tracking-tight text-white md:text-6xl leading-[1.1]">
+                Nossos <span className="text-gradient">Sistemas Flagship</span>
               </h2>
+              <p className="mt-6 text-lg text-muted-foreground">
+                Plataformas de alta escala projetadas para dominar o mercado. 
+                Tecnologia cinematográfica que converte.
+              </p>
             </div>
             <Link 
               to="/nossos-sistemas" 
               onClick={() => trackClick("Ver todos os sistemas", "Home Systems Section")}
-              className="group inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-primary hover:text-white transition-colors"
+              className="group inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-primary-glow hover:text-white transition-all duration-300"
             >
-              Ver todos os sistemas
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-2" />
+              Catálogo Completo
+              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-primary/30 bg-primary/5 transition-transform group-hover:translate-x-2 group-hover:bg-primary group-hover:text-white">
+                <ChevronRight className="h-4 w-4" />
+              </div>
             </Link>
           </div>
 
           <SystemsCarousel />
         </div>
       </section>
+
 
       {/* PROCESSO ========================================================= */}
       <section className="relative overflow-hidden border-y border-border bg-surface py-24 md:py-32">
