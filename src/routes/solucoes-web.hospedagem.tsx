@@ -14,11 +14,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/hospedagem")({
   head: () => buildLPMeta({
-    title: "Hospedagem Profissional de Sites | Servidores Dedicados e Cloud",
-    description: "Hospedagem de sites com servidores dedicados, planos cloud e consultoria especializada. Infraestrutura total no Brasil para máxima performance e segurança.",
-    keywords: "hospedagem de sites, servidor dedicado brasil, planos cloud, consultoria servidores, hospedagem sistemas, infraestrutura web",
+    title: "Hospedagem de Sites e Sistemas | Servidores Dedicados e Cloud no Brasil",
+    description: "Hospedagem profissional com servidores dedicados, planos cloud e infraestrutura total no Brasil. Consultoria para servidores dedicados e ambientes escaláveis.",
+    keywords: "hospedagem de sites, servidor dedicado brasil, planos cloud, consultoria servidores, hospedagem sistemas, infraestrutura web, hospedagem revenda",
     canonical: URL,
-    h1: "Hospedagem de Sites e Servidores Dedicados",
+    h1: "Hospedagem de Sites, Sistemas e Servidores Dedicados",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/hospedagem")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/hospedagem", label: "Hospedagem" }]}
       eyebrow="Infra Cloud"
-      h1={<>Hospedagem de Sites: <span className="text-gradient">Servidores Dedicados e Cloud</span></>}
-      intro={<>Oferecemos **hospedagem de sites** com foco em performance e estabilidade. Contamos com **servidores dedicados, planos cloud e consultoria especializada** para infraestrutura total no Brasil.</>}
+      h1={<>Hospedagem de Sites e Sistemas: <span className="text-gradient">Servidores Dedicados e Cloud no Brasil</span></>}
+      intro={<>Hospedagem profissional com **servidores dedicados e planos cloud** de alta performance. Oferecemos consultoria completa para infraestrutura dedicada com servidores robustos localizados no Brasil.</>}
       stats={[{ value: "99,9%", label: "Uptime garantido" }, { value: "24/7", label: "Suporte técnico" }, { value: "<50ms", label: "Latência Brasil" }, { value: "SSL", label: "Grátis Let's Encrypt" }]}
       benefits={[
         { icon: Zap, title: "Performance Extrema", desc: "**SSD NVMe, HTTP/3, cache Redis** e CDN Cloudflare em 300+ pontos globais." },

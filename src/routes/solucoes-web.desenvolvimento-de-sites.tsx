@@ -16,11 +16,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
   head: () => buildLPMeta({
-    title: "Desenvolvimento de Sites e Loja Virtual | Criação de Projetos que Vendem",
-    description: "Especialistas em desenvolvimento de sites e lojas virtuais focados em atrair visitantes e converter vendas. Tecnologia moderna e SEO para autoridade digital.",
-    keywords: "desenvolvimento de sites, criação de loja virtual, agência web, site institucional, e-commerce, vendas online",
+    title: "Criação de Sites e Loja Virtual Profissional | Desenvolvimento de Alta Performance",
+    description: "Desenvolvimento de sites institucionais e lojas virtuais focados em atrair visitantes e converter vendas. Focamos em palavras-chaves que atraiam pessoas de visitantes adquirirem seu site.",
+    keywords: "criação de sites, desenvolvimento de loja virtual, agência web, site institucional, e-commerce, vendas online, agência de criação de sites",
     canonical: URL,
-    h1: "Desenvolvimento de Sites e Loja Virtual",
+    h1: "Desenvolvimento de Sites e Loja Virtual Profissional",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
@@ -33,8 +33,8 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/desenvolvimento-de-sites", label: "Desenvolvimento de Sites" }]}
       eyebrow="Sites Profissionais"
-      h1={<>Desenvolvimento de Sites e <span className="text-gradient">Loja Virtual</span></>}
-      intro={<>Focamos no **desenvolvimento de sites e lojas virtuais** com conteúdo relevante que atrai visitantes e os converte em clientes. Nossa agência utiliza tecnologia de ponta para garantir autoridade e ranqueamento.</>}
+      h1={<>Criação de Sites e <span className="text-gradient">Lojas Virtuais Profissionais</span></>}
+      intro={<>Especialistas em **desenvolvimento de sites e lojas virtuais** com conteúdo relevante focado em atrair visitantes e convertê-los em clientes reais. Nossa agência utiliza tecnologia de ponta para garantir autoridade e ranqueamento nas palavras-chave mais competitivas do mercado.</>}
       stats={[{ value: "800+", label: "Sites entregues" }, { value: "98", label: "Score PageSpeed" }, { value: "<2s", label: "LCP médio" }, { value: "20 anos", label: "De experiência" }]}
       benefits={[
         { icon: Gauge, title: "Performance Extrema", desc: "Sites com **carregamento em menos de 2s**, otimizados para Core Web Vitals do Google." },

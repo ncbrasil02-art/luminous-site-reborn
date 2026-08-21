@@ -14,11 +14,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/landing-pages")({
   head: () => buildLPMeta({
-    title: "Criação de Landing Pages de Alta Conversão | Capture Leads Qualificados",
-    description: "Criação de Landing Pages de alta conversão focadas em produtos ou serviços. Capturamos leads com páginas persuasivas interligadas ao seu ecossistema digital.",
-    keywords: "criação de landing pages, landing page alta conversão, landing page produtos, landing page serviços, captação de leads",
+    title: "Criação de LPs Alta Conversão | Focado em Produtos e Serviços",
+    description: "Especialistas na criação de Landing Pages de alta conversão para capturar leads qualificados. LPs persuasivas que interagem com todo o seu ecossistema digital.",
+    keywords: "criação de landing pages, landing page alta conversão, landing page produtos, landing page serviços, captação de leads, criação de lps",
     canonical: URL,
-    h1: "Criação de LPs Alta Conversão",
+    h1: "Criação de Landing Pages de Alta Conversão",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/landing-pages")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/landing-pages", label: "Landing Pages" }]}
       eyebrow="LPs de Conversão"
-      h1={<>Criação de LPs de <span className="text-gradient">Alta Conversão</span></>}
-      intro={<>Criamos **Landing Pages de alta conversão** focadas em seu produto ou serviço. Nosso trabalho é focado em **capturar leads qualificados** através de páginas que conversam entre si, integrando seu site, loja e estratégias de marketing.</>}
+      h1={<>Criação de Landing Pages de <span className="text-gradient">Alta Conversão | LPs que Vendem</span></>}
+      intro={<>Especialistas na **criação de LPs de alta conversão** focadas em produtos ou serviços. Capturamos leads qualificados através de uma estrutura persuasiva integrada ao seu funil de marketing digital.</>}
       stats={[{ value: "500+", label: "LPs entregues" }, { value: "12%", label: "Conversão média" }, { value: "72h", label: "Entrega expressa" }, { value: "A/B", label: "Testes inclusos" }]}
       benefits={[
         { icon: MousePointerClick, title: "CTA Estratégico", desc: "**Botões testados A/B**, contraste otimizado e microcopy que aumenta cliques em 30%." },
