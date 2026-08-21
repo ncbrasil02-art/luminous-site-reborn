@@ -114,5 +114,29 @@ export const centavosTestimonials = [
     rating: 5
   }
 ];
+ 
+export const cassinoTestimonials = [
+  {
+    quote: "Migramos nossa operação asiática para a infra da NcBrasil e a latência do Pix caiu para menos de 30 segundos. O SEO deles é imbatível no nicho.",
+    author: "André Zhou",
+    role: "CEO — Global iGaming Group",
+    image: "/testimonials/hugo.jpg",
+    rating: 5
+  },
+  {
+    quote: "O suporte 24/7 no Brasil é o diferencial. Estávamos acostumados com suporte na Europa que demorava 24h. Com a NcBrasil resolvemos tudo em minutos.",
+    author: "Luiza Santos",
+    role: "Diretora de Operações — BetBR",
+    image: "/testimonials/cinthia.jpg",
+    rating: 5
+  },
+  {
+    quote: "A facilidade de integrar provedores de slots e sportsbook via API unificada economizou meses de desenvolvimento. Lançamos em 45 dias.",
+    author: "Marcos Vinícius",
+    role: "CTO — Plataforma Gold",
+    image: "/testimonials/nico.jpg",
+    rating: 5
+  }
+];
 
 export const testimonialsData = leilaoTestimonials;
