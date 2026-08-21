@@ -84,4 +84,35 @@ export const veiculosTestimonials = [
   }
 ];
 
+export const centavosTestimonials = [
+  {
+    quote: "O sistema de leilão de centavos é incrível! A interface é muito moderna e fácil de usar tanto no celular quanto no PC. Já indiquei para todos os meus amigos.",
+    author: "Beatriz Rocha",
+    role: "Ganhadora Verificada",
+    image: "/testimonials/cecilia.jpg",
+    rating: 5
+  },
+  {
+    quote: "Melhor site de leilão de centavos que já participei. Entrega rápida e produtos originais. Comprei o pacote de 500 lances e valeu cada centavo.",
+    author: "Juliana Mendes",
+    role: "Ganhadora Verificada",
+    image: "/testimonials/cinthia.jpg",
+    rating: 5
+  },
+  {
+    quote: "Fiquei impressionado com a transparência. Você vê exatamente quem deu o último lance. Arrematei uma Smart TV 65\" por menos de 500 reais!",
+    author: "Roberto Silva",
+    role: "Ganhador Verificado",
+    image: "/testimonials/eder.jpg",
+    rating: 5
+  },
+  {
+    quote: "Arrematei um iPhone 15 Pro Max por apenas R$ 245,00! No começo não acreditei, mas o produto chegou lacrado em 3 dias. Atendimento excelente!",
+    author: "Felipe Andrade",
+    role: "Ganhador Verificado",
+    image: "/testimonials/hugo.jpg",
+    rating: 5
+  }
+];
+
 export const testimonialsData = leilaoTestimonials;
