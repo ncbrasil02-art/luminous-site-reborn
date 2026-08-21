@@ -1,5 +1,5 @@
 /**
-Não achei atraente o texto com a imagem de fundo do meu logotipo não está legal precisa ser uma imagem de cada LP no fundo mas que não contraste muito com o texto que está escrito gostaria que o nome seja o nome da plataforma tipo sistema de leilão apenas e não sistema de leilão prêmio script de rifas profissional coloque sistema de rifas e por aí vai portal de anúncio de veículos sistema de leilão rural... Lembrando que falta sistema de leilão centavos falta sistema de cassinos falta sistema de raspadinha.. atue como grande design e ênfase a melhorar a chamada dessas plataformas listadas na primeira página não precisa rolar para o lado
+Vejo que o meu site antigo possui vários links no Google cadastrado que estão dando página 404 por favor faça um redirecionamento para que o Google não interprete essas páginas como não existentes mais.. faça alguma coisa para que o Google não penalise e modifique todas essas páginas de erro para o redirecionamento para uma página inicial do site. Acredito que isso vai me ajudar
 */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
