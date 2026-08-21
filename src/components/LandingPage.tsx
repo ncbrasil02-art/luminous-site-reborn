@@ -185,10 +185,10 @@ export function LandingPage({
         <div className="absolute inset-0 -z-20">
           <img 
             src={pathname.includes('rifas') 
-              ? "https://www.ncbrasil.com.br/sistema-de-rifas/melhor-sistema-de-rifas-online.png"
+              ? "/img-sistema-de-rifas/showcase-01.png"
               : pathname.includes('leilao')
-                ? "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-home-premium.png"
-                : "https://www.ncbrasil.com.br/logo.jpg"
+                ? "/img-sistema-de-leilao/home-premium.png"
+                : "/logo.jpg"
             }
             alt={imageKeyword || eyebrow} 
             className="h-full w-full object-cover opacity-20"

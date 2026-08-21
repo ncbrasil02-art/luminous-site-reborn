@@ -49,12 +49,12 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       imageKeyword="sistema de leilão"
       showParallaxshowcase
       showcaseImages={[
-        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-home-premium.png",
-        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-vitrine.png",
-        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-dashboard-premium.png",
-        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-dashboard-detalhe.png",
-        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-cards.png",
-        "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-painel-online.png",
+        "/img-sistema-de-leilao/home-premium.png",
+        "/img-sistema-de-leilao/vitrine.png",
+        "/img-sistema-de-leilao/dashboard-premium.png",
+        "/img-sistema-de-leilao/dashboard-detalhe.png",
+        "/img-sistema-de-leilao/cards.png",
+        "/img-sistema-de-leilao/painel-online.png",
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
@@ -109,16 +109,16 @@ export const Route = createFileRoute("/sistema-de-leilao")({
           <PartnerCarousel 
             title="Sistema Homologado e Utilizado por Grandes Órgãos"
             logos={[
-              { name: "TJRS", url: "https://www.ncbrasil.com.br/partners/tjrs.webp", link: "https://www.tjrs.jus.br/" },
-              { name: "Caixa", url: "https://www.ncbrasil.com.br/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
-              { name: "Detran-MS", url: "https://www.ncbrasil.com.br/partners/detranms.webp", link: "https://www.detran.ms.gov.br/" },
-              { name: "Detran-SC", url: "https://www.ncbrasil.com.br/partners/detransc.webp", link: "https://www.detran.sc.gov.br/" },
-              { name: "Embaixada EUA", url: "https://www.ncbrasil.com.br/partners/embaixada_usa.webp" },
-              { name: "Sicoob", url: "https://www.ncbrasil.com.br/partners/sicoob.webp", link: "https://www.sicoob.com.br/" },
-              { name: "Sicredi", url: "https://www.ncbrasil.com.br/partners/sicredi.webp", link: "https://www.sicredi.com.br/" },
-              { name: "Unicred", url: "https://www.ncbrasil.com.br/partners/unicred.webp", link: "https://www.unicred.com.br/" },
-              { name: "Uniprime", url: "https://www.ncbrasil.com.br/partners/uniprime.webp", link: "https://www.uniprimebr.com.br/" },
-              { name: "Cresol", url: "https://www.ncbrasil.com.br/partners/cresol.webp", link: "https://cresol.com.br/" },
+              { name: "TJRS", url: "/partners/tjrs.webp", link: "https://www.tjrs.jus.br/" },
+              { name: "Caixa", url: "/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
+              { name: "Detran-MS", url: "/partners/detranms.webp", link: "https://www.detran.ms.gov.br/" },
+              { name: "Detran-SC", url: "/partners/detransc.webp", link: "https://www.detran.sc.gov.br/" },
+              { name: "Embaixada EUA", url: "/partners/embaixada_usa.webp" },
+              { name: "Sicoob", url: "/partners/sicoob.webp", link: "https://www.sicoob.com.br/" },
+              { name: "Sicredi", url: "/partners/sicredi.webp", link: "https://www.sicredi.com.br/" },
+              { name: "Unicred", url: "/partners/unicred.webp", link: "https://www.unicred.com.br/" },
+              { name: "Uniprime", url: "/partners/uniprime.webp", link: "https://www.uniprimebr.com.br/" },
+              { name: "Cresol", url: "/partners/cresol.webp", link: "https://cresol.com.br/" },
             ]}
           />
         </div>
@@ -126,7 +126,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       solution={{
         title: <>Sua <span className="text-gradient">Plataforma de Leilão Online</span> — Homologada e Sem Mensalidade</>,
         desc: <>O <strong className="text-foreground">Sistema de Leilão NC Brasil</strong> é a ferramenta ideal para quem deseja <strong className="text-foreground">ver o site de leilões</strong> operando com máxima performance. Entregamos um <strong className="text-foreground">sistema online para leiloeiro</strong> com licença perpétua e código-fonte. Nossa <strong className="text-foreground">plataforma de pregões online</strong> é robusta, white-label e preparada para leilões judiciais e extrajudiciais. Diferente de soluções como <strong className="text-foreground">sas leilão</strong> genéricas, oferecemos personalização total para o seu negócio.</>,
-        image: "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-configuracoes.png",
+        image: "/img-sistema-de-leilao/configuracoes.png",
         highlights: [
           "**Plataforma proprietária** — sem aluguel mensal, taxa 0% por lance",
           "**Homologada em 27 TJs** + TJ/SP + Detran + PJe",
