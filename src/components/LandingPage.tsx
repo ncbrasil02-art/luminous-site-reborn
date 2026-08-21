@@ -188,8 +188,9 @@ export function LandingPage({
   return (
     <>
       <Helmet>
-        <title>{(typeof h1 === 'string' ? h1 : eyebrow) + ' · NC Brasil'}</title>
+        <title>{`${typeof h1 === 'string' ? h1 : eyebrow} · NC Brasil`}</title>
         <meta name="description" content={typeof intro === 'string' ? intro.slice(0, 160) : eyebrow} />
+        {logo && <link rel="icon" href={logo} />}
       </Helmet>
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
