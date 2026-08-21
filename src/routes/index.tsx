@@ -328,31 +328,35 @@ function HomePage() {
             }
           />
 
-          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {solutions.map((s, i) => (
-              <Reveal key={s.title} delay={i * 0.05}>
+              <Reveal key={s.title} delay={i * 0.1}>
                 <Link
                   to={s.to}
                   onClick={() => trackClick(s.title, "Home Solutions Grid")}
-                  className="group relative block h-full overflow-hidden rounded-[2rem] border border-border bg-card/40 p-8 backdrop-blur-sm transition-all hover:-translate-y-2 hover:border-primary/40 hover:glow-md hover:bg-card/60"
+                  className="group relative block h-full overflow-hidden rounded-[2.5rem] border border-white/5 bg-navy-900/20 p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
                 >
+                  {/* Glowing background hint */}
+                  <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/20" />
+                  
                   <div className="relative z-10">
-                    <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
-                      <s.icon className="h-7 w-7" />
+                    <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-[1.25rem] bg-surface-elevated text-primary-glow shadow-glow-sm ring-1 ring-white/10 transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:glow-sm">
+                      <s.icon className="h-8 w-8" />
                     </div>
-                    <h3 className="font-display text-2xl font-bold">{s.title}</h3>
-                    <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                    <h3 className="font-display text-2xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{s.title}</h3>
+                    <p className="mt-6 text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors">
                       {renderBold(s.desc)}
                     </p>
-                    <div className="mt-8 flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-primary opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
-                      Conhecer Solução
-                      <ArrowRight className="h-4 w-4" />
+                    <div className="mt-10 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-primary-glow opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
+                      Explorar Tecnologia
+                      <ChevronRight className="h-4 w-4" />
                     </div>
                   </div>
                 </Link>
               </Reveal>
             ))}
           </div>
+
         </div>
       </section>
 
