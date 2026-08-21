@@ -12,11 +12,10 @@ async function generate() {
   const { render } = await import('./dist/server/entry-server.js')
   
   // Import news data for dynamic routes
-  // We use a direct import because we're in an ESM context (prerender.js is ESM via package.json or extension)
   const { newsData } = await import('./src/lib/news.data.ts')
 
-  const allCategories = Array.from(new Set(newsData.flatMap(p => p.categories)))
-  const allTags = Array.from(new Set(newsData.flatMap(p => p.tags)))
+  const allCategories = Array.from(new Set(newsData.flatMap(p => p.categories))).filter(Boolean)
+  const allTags = Array.from(new Set(newsData.flatMap(p => p.tags))).filter(Boolean)
 
   const routesToPrerender = [
     '/',
@@ -32,10 +31,10 @@ async function generate() {
     '/sistema-de-leilao-rural',
     '/sistema-de-leilao-de-centavos',
     '/noticias',
-    ...newsData.map(post => `/noticias/${post.slug}`),
+    ...newsData.filter(p => p.slug).map(post => `/noticias/${post.slug}`),
     ...allCategories.map(cat => `/noticias/categoria/${encodeURIComponent(cat)}`),
     ...allTags.map(tag => `/noticias/tag/${encodeURIComponent(tag)}`),
-  ].filter(url => url !== '/noticias/') // Filter out empty or duplicate trailing slash routes
+  ]
 
   console.log(`Starting pre-rendering of ${routesToPrerender.length} routes...`)
 
@@ -47,15 +46,18 @@ async function generate() {
       const appHtml = result.html
       const head = result.head
 
-      if (!appHtml || appHtml.length < 100) {
-         console.warn(`Warning: Empty or very small HTML for ${url}. appHtml length: ${appHtml?.length || 0}`);
+      if (!appHtml || appHtml.length < 500) {
+         console.warn(`Warning: Small HTML for ${url}. Length: ${appHtml?.length || 0}`);
       }
 
       const finalHtml = template
         .replace('<!--app-head-->', head || '')
         .replace('<!--app-html-->', appHtml || '')
 
-      const filePath = `dist${url === '/' ? '/index' : url}.html`
+      // Clean the URL to get a valid file path
+      // Remove trailing slash except for root
+      const cleanUrl = url === '/' ? '/index' : url.replace(/\/$/, "");
+      const filePath = `dist${cleanUrl}.html`
       const absolutePath = toAbsolute(filePath)
       const dir = path.dirname(absolutePath)
       
@@ -63,7 +65,6 @@ async function generate() {
         fs.mkdirSync(dir, { recursive: true })
       }
       fs.writeFileSync(absolutePath, finalHtml)
-      // console.log('pre-rendered:', filePath)
     } catch (err) {
       console.error(`Error rendering ${url}:`, err)
     }
