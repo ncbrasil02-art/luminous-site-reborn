@@ -14,7 +14,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/servicos/google-ads")({
   head: () => buildLPMeta({
-    title: "Gestão de Google Ads | Agência Parceira Premier com ROI Comprovado",
+    title: "Gestão Profissional de Google Ads | Aumente suas Vendas e ROI",
     description: "Gestão profissional de Google Ads: campanhas de Search, Shopping, YouTube, Display e Performance Max com foco em ROAS e conversões.",
     keywords: "google ads, gestão de google ads, agência google ads, campanhas google ads, google adwords, tráfego pago google",
     canonical: URL,

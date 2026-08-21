@@ -14,7 +14,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/servicos/aplicativos")({
   head: () => buildLPMeta({
-    title: "Desenvolvimento de Aplicativos Mobile | iOS e Android Nativos",
+    title: "Criação de Aplicativos Web e Mobile Profissionais | iOS e Android",
     description: "Desenvolvimento de aplicativos mobile para iOS e Android. Apps nativos e cross-platform com React Native, Flutter e Swift/Kotlin.",
     keywords: "desenvolvimento de aplicativos, criação de apps, aplicativo ios, aplicativo android, app react native, app flutter",
     canonical: URL,
