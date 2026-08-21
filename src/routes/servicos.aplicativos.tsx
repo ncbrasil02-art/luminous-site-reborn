@@ -18,6 +18,7 @@ export const Route = createFileRoute("/servicos/aplicativos")({
     description: "Desenvolvimento de aplicativos mobile para iOS e Android. Apps nativos e cross-platform com React Native, Flutter e Swift/Kotlin.",
     keywords: "desenvolvimento de aplicativos, criação de apps, aplicativo ios, aplicativo android, app react native, app flutter",
     canonical: URL,
+    serviceType: "aplicativos",
     h1: "Desenvolvimento de Aplicativos iOS e Android",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -30,6 +31,9 @@ export const Route = createFileRoute("/servicos/aplicativos")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/aplicativos", label: "Aplicativos" }]}
       eyebrow="Mobile Apps"
+      benefitsTitle={<>Por que criar seu <span className="text-gradient">aplicativo iOS e Android</span></>}
+      featuresTitle={<>Recursos do <span className="text-gradient">desenvolvimento de aplicativos</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">criação de aplicativos</span></>}
       h1={<>Criação de <span className="text-gradient">Aplicativos Web Completos</span> e Modernos</>}
       intro={<>Criamos **aplicativos web completos** com as mais modernas tecnologias do mercado. Do MVP à escala global, entregamos performance nativa e experiência de usuário premium.</>}
       stats={[{ value: "200+", label: "Apps publicados" }, { value: "10Mi+", label: "Downloads acumulados" }, { value: "4,8⭐", label: "Nota média nas lojas" }, { value: "iOS+Android", label: "Nativo ou cross" }]}

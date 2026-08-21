@@ -18,6 +18,7 @@ export const Route = createFileRoute("/servicos/desenvolvimento")({
     description: "Fábrica de software para desenvolvimento sob medida. Web, mobile, APIs e integrações com metodologia ágil e código de altíssima qualidade.",
     keywords: "desenvolvimento de software, fábrica de software, desenvolvimento sob medida, software personalizado, desenvolvimento ágil",
     canonical: URL,
+    serviceType: "desenvolvimento de software",
     h1: "Desenvolvimento de Software Sob Medida",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -30,6 +31,9 @@ export const Route = createFileRoute("/servicos/desenvolvimento")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/desenvolvimento", label: "Desenvolvimento" }]}
       eyebrow="Fábrica de Software"
+      benefitsTitle={<>Por que desenvolver com a <span className="text-gradient">NC Brasil</span></>}
+      featuresTitle={<>Nosso processo de <span className="text-gradient">desenvolvimento de software</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">desenvolvimento sob medida</span></>}
       h1={<>Desenvolvimento de <span className="text-gradient">software sob medida</span></>}
       intro={<>Squads dedicadas de **engenheiros sênior** para construir web, mobile e APIs com metodologia ágil, code review rigoroso e entregas semanais.</>}
       stats={[{ value: "1.200+", label: "Projetos entregues" }, { value: "20 anos", label: "De mercado" }, { value: "Squads", label: "Sênior dedicadas" }, { value: "Agile", label: "Scrum/Kanban" }]}

@@ -18,6 +18,7 @@ export const Route = createFileRoute("/solucoes-web/hospedagem")({
     description: "Hospedagem profissional com servidores dedicados, planos cloud e infraestrutura total no Brasil. Consultoria para servidores dedicados e ambientes escaláveis.",
     keywords: "hospedagem de sites, servidor dedicado brasil, planos cloud, consultoria servidores, hospedagem sistemas, infraestrutura web, hospedagem revenda",
     canonical: URL,
+    serviceType: "hospedagem de sites",
     h1: "Hospedagem de Sites, Sistemas e Servidores Dedicados",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -30,6 +31,9 @@ export const Route = createFileRoute("/solucoes-web/hospedagem")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/hospedagem", label: "Hospedagem" }]}
       eyebrow="Infra Cloud"
+      benefitsTitle={<>Vantagens da nossa <span className="text-gradient">hospedagem de sites e sistemas</span></>}
+      featuresTitle={<>Infraestrutura de <span className="text-gradient">servidores dedicados e cloud</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">hospedagem e servidores</span></>}
       h1={<>Infraestrutura Robusta para <span className="text-gradient">Escalar seus Sistemas</span></>}
       intro={<>Hospedagem profissional com **servidores dedicados e cloud** projetada para projetos que não podem parar. Consultoria técnica e infraestrutura brasileira que garante velocidade extrema e estabilidade total.</>}
       stats={[{ value: "99,9%", label: "Uptime garantido" }, { value: "24/7", label: "Suporte técnico" }, { value: "<50ms", label: "Latência Brasil" }, { value: "SSL", label: "Grátis Let's Encrypt" }]}

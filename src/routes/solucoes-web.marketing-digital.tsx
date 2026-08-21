@@ -18,6 +18,7 @@ export const Route = createFileRoute("/solucoes-web/marketing-digital")({
     description: "Marketing digital focado em resultados: criação de posts virais, vídeos virais e gerenciamento de campanhas nas redes sociais como TikTok, Facebook e Instagram.",
     keywords: "marketing digital, posts virais, vídeos virais, gestão redes sociais, marketing tiktok, campanhas facebook instagram, posts profissionais",
     canonical: URL,
+    serviceType: "marketing digital",
     h1: "Marketing Digital: Posts e Vídeos Virais",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -30,6 +31,9 @@ export const Route = createFileRoute("/solucoes-web/marketing-digital")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/marketing-digital", label: "Marketing Digital" }]}
       eyebrow="Marketing 360°"
+      benefitsTitle={<>Resultados do <span className="text-gradient">marketing digital estratégico</span></>}
+      featuresTitle={<>Canais e entregas de <span className="text-gradient">posts e vídeos virais</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">marketing digital e redes sociais</span></>}
       h1={<>Marketing Estratégico para <span className="text-gradient">Escalar sua Presença Digital</span></>}
       intro={<>Aceleramos seu crescimento com **marketing digital focado em conversão**. Criamos posts e vídeos virais que não apenas engajam, mas posicionam sua marca como autoridade incontestável no TikTok, Instagram e Facebook.</>}
       stats={[{ value: "R$ 30Mi", label: "Verba gerenciada" }, { value: "4,8x", label: "ROAS médio" }, { value: "150+", label: "Clientes ativos" }, { value: "24/7", label: "Monitoramento" }]}

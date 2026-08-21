@@ -18,6 +18,7 @@ export const Route = createFileRoute("/solucoes-web/landing-pages")({
     description: "Especialistas na criação de Landing Pages de alta conversão para capturar leads qualificados. LPs persuasivas que interagem com todo o seu ecossistema digital.",
     keywords: "criação de landing pages, landing page alta conversão, landing page produtos, landing page serviços, captação de leads, criação de lps",
     canonical: URL,
+    serviceType: "landing pages",
     h1: "Criação de Landing Pages de Alta Conversão",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
@@ -30,6 +31,9 @@ export const Route = createFileRoute("/solucoes-web/landing-pages")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/landing-pages", label: "Landing Pages" }]}
       eyebrow="LPs de Conversão"
+      benefitsTitle={<>Por que usar <span className="text-gradient">landing pages de alta conversão</span></>}
+      featuresTitle={<>Estrutura das nossas <span className="text-gradient">LPs focadas em leads</span></>}
+      faqTitle={<>Dúvidas sobre <span className="text-gradient">criação de landing pages</span></>}
       h1={<>Landing Pages que <span className="text-gradient">Escalam sua Captação de Leads</span></>}
       intro={<>Transforme cliques em lucro com **Landing Pages de altíssima conversão**. Projetamos LPs persuasivas com gatilhos mentais e design cinematográfico para capturar leads qualificados para seu produto ou serviço.</>}
       stats={[{ value: "500+", label: "LPs entregues" }, { value: "12%", label: "Conversão média" }, { value: "72h", label: "Entrega expressa" }, { value: "A/B", label: "Testes inclusos" }]}
