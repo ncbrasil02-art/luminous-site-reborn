@@ -196,7 +196,7 @@ function HomePage() {
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.onerror = null;
-              target.src = "https://www.ncbrasil.com.br/logo.jpg";
+              target.src = "/logo.jpg";
             }}
             className="h-full w-full object-cover opacity-50"
           />
