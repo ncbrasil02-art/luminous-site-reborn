@@ -16,7 +16,7 @@ export const Route = createFileRoute("/portfolio/aplicativos-criados")({
     title: "Portfólio de Aplicativos | Apps iOS e Android Criados pela NC Brasil",
     description: "Portfólio de aplicativos criados pela NC Brasil. Apps iOS e Android com milhões de downloads e nota 4.8+ nas lojas.",
     keywords: "portfolio aplicativos, apps criados, portfolio apps ios, portfolio apps android, cases de aplicativos",
-    canonical: URL,
+    canonical: "/portfolio/aplicativos-criados",
     h1: "Portfólio de Aplicativos iOS e Android",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
