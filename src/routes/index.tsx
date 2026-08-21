@@ -1,4 +1,4 @@
-/** ffez mesmmo? nao tto vendo */
+/** Entrei nessas páginas e o título está tudo igual não sei se é cash... Não estou vendo cada palavra no título em lugar nenhum da página nem conteúdo diferente... Também não estou vendo a parte do relacionamento entre as páginas */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
