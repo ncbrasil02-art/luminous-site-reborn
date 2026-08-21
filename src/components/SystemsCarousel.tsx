@@ -11,7 +11,7 @@ const systems = [
     title: "Plataforma de Leilão Online",
     description: "O melhor sistema para leiloeiro completo com pregão eletrônico, transmissão ao vivo e gestão de lotes.",
     to: "/sistema-de-leilao",
-    image: "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-home-premium.png",
+    image: "/img-sistema-de-leilao/home-premium.png",
     features: ["Lances em Tempo Real", "Gestão de Lotes", "Auditagem"]
   },
   {
@@ -19,7 +19,7 @@ const systems = [
     title: "Marketplaces",
     description: "Soluções complexas para múltiplos vendedores com split de pagamentos automático.",
     to: "/portfolio/lojas-virtuais-criadas",
-    image: "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-vitrine.png",
+    image: "/img-sistema-de-leilao/vitrine.png",
     features: ["Split de Pagamentos", "Painel Seller", "Logística"]
   },
   {
@@ -27,7 +27,7 @@ const systems = [
     title: "Compra Coletiva",
     description: "Plataformas de ofertas com gatilhos de escassez e gestão de cupons via QR Code.",
     to: "/portfolio/sistema-de-compra-coletiva",
-    image: "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-cards.png",
+    image: "/img-sistema-de-leilao/cards.png",
     features: ["Controle de Cupons", "Validação App", "Escalabilidade"]
   },
   {
@@ -35,7 +35,7 @@ const systems = [
     title: "Sistemas Sob Demanda",
     description: "Engenharia de software personalizada para resolver desafios exclusivos do seu negócio.",
     to: "/nossos-sistemas",
-    image: "https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-dashboard-detalhe.png",
+    image: "/img-sistema-de-leilao/dashboard-detalhe.png",
     features: ["Arquitetura Custom", "Integração API", "Cloud Native"]
   }
 ];

@@ -10,14 +10,14 @@ import { rifasTestimonials } from "@/lib/testimonials.data";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
 
 // Image Assets - Optimized for external hosting
-const rifasLogoUrl = "https://www.ncbrasil.com.br/logo.jpg";
-const rifasShowcase1Url = "https://www.ncbrasil.com.br/sistema-de-rifas/melhor-sistema-de-rifas-online.png";
-const rifasShowcase2Url = "https://www.ncbrasil.com.br/sistema-de-rifas/plataforma-de-rifas-lucrativa.png";
-const rifasShowcase3Url = "https://www.ncbrasil.com.br/sistema-de-rifas/script-de-rifas-profissional.png";
-const rifasShowcase4Url = "https://www.ncbrasil.com.br/sistema-de-rifas/sistema-de-rifas-premium.png";
-const painelConfigUrl = "https://www.ncbrasil.com.br/sistema-de-rifas/painel-configuracao-rifas.png";
-const painelDashboardUrl = "https://www.ncbrasil.com.br/sistema-de-rifas/painel-dashboard-rifas.png";
-const painelPagamentosUrl = "https://www.ncbrasil.com.br/sistema-de-rifas/painel-pagamentos-rifas.png";
+const rifasLogoUrl = "/logo.jpg";
+const rifasShowcase1Url = "/img-sistema-de-rifas/rifa-1.png";
+const rifasShowcase2Url = "/img-sistema-de-rifas/rifa-2.png";
+const rifasShowcase3Url = "/img-sistema-de-rifas/rifa-3.png";
+const rifasShowcase4Url = "/img-sistema-de-rifas/rifa-4.png";
+const painelConfigUrl = "/img-sistema-de-rifas/rifa-5.png";
+const painelDashboardUrl = "/img-sistema-de-rifas/rifa-6.png";
+const painelPagamentosUrl = "/img-sistema-de-rifas/rifa-7.png";
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
@@ -85,7 +85,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           <PartnerCarousel 
             title="Integrado com os melhores Gateways e Loteria Federal"
             logos={[
-              { name: "Caixa", url: "https://www.ncbrasil.com.br/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
+              { name: "Caixa", url: "/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
               { name: "Mercado Pago", url: "https://www.ncbrasil.com.br/partners/mercado-pago.png" },
               { name: "Pagar.me", url: "https://www.ncbrasil.com.br/partners/pagarme.png" },
               { name: "Efí", url: "https://www.ncbrasil.com.br/partners/efi.png" },
@@ -121,7 +121,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           "**Cotas ilimitadas** — de 100 a 10 milhões por campanha",
           "**Módulo de afiliados** com comissão automática",
         ],
-        image: rifasLogoUrl
+        image: "/img-sistema-de-rifas/rifa-vitrine.png"
       }}
       testimonials={rifasTestimonials}
       benefits={[

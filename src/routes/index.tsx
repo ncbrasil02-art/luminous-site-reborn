@@ -186,7 +186,7 @@ function HomePage() {
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10" aria-hidden="true">
           <img
-            src="https://www.ncbrasil.com.br/sistema-de-leilao/sistema-de-leilao-home-premium.png"
+            src="/img-sistema-de-leilao/home-premium.png"
             alt="NC Brasil Tecnologia - Criação de Sites e Sistemas"
             width={1920}
             height={1080}
