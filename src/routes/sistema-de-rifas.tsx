@@ -130,7 +130,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
           "**Cotas ilimitadas** — de 100 a 10 milhões por campanha",
           "**Módulo de afiliados** com comissão automática",
         ],
-        image: "/img-sistema-de-rifas/sistema-de-rifas-dashboard-financeiro-premium-01.png"
+        image: rifasShowcase1Url
       }}
       testimonials={rifasTestimonials}
       benefits={[
