@@ -1,4 +1,5 @@
 import { Outlet, Link, createRootRoute, HeadContent, Scripts, useRouterState } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import { useEffect, useMemo } from "react";
 
 import appCss from "../styles.css?url";
@@ -207,6 +208,24 @@ function RootComponent() {
 
   return (
     <>
+      <Helmet>
+        <html lang="pt-BR" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0a1428" />
+        <meta name="author" content="NC Brasil" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+        <meta property="og:site_name" content="NC Brasil" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@ncbrasil" />
+        <link rel="stylesheet" href={appCss} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
+        <script type="application/ld+json">{JSON.stringify(orgJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify(websiteJsonLd)}</script>
+      </Helmet>
       <HeadContent />
       <div className="relative min-h-screen bg-background text-foreground">
         <SiteHeader />

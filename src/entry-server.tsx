@@ -37,9 +37,8 @@ export async function render(url: string) {
         ${helmet.link ? helmet.link.toString() : ''}
         ${helmet.script ? helmet.script.toString() : ''}
       `;
-      console.log(`[SSR] Head generated for ${url}, length: ${head.length}`);
-    } else {
-      console.log(`[SSR] No helmet context for ${url}`);
+      // We'll also manually try to capture H1 or other elements if they are not in Helmet
+      // but TanStack Router HeadContent should be handled by Helmet if implemented correctly
     }
 
     return {
