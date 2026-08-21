@@ -34,6 +34,7 @@ import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as ClassificadosDeVeiculosRouteImport } from './routes/classificados-de-veiculos'
 import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SolucoesWebIndexRouteImport } from './routes/solucoes-web.index'
 import { Route as SistemasIndexRouteImport } from './routes/sistemas.index'
 import { Route as NoticiasIndexRouteImport } from './routes/noticias.index'
 import { Route as AdminIndexRouteImport } from './routes/admin.index'
@@ -203,6 +204,11 @@ const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
+} as any)
+const SolucoesWebIndexRoute = SolucoesWebIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => SolucoesWebRoute,
 } as any)
 const SistemasIndexRoute = SistemasIndexRouteImport.update({
   id: '/sistemas/',
@@ -462,6 +468,7 @@ export interface FileRoutesByFullPath {
   '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
+  '/solucoes-web/': typeof SolucoesWebIndexRoute
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
@@ -490,7 +497,6 @@ export interface FileRoutesByTo {
   '/sistema-de-rifas': typeof SistemaDeRifasRoute
   '/sistema-sob-demanda-nc-brasil': typeof SistemaSobDemandaNcBrasilRoute
   '/software': typeof SoftwareRoute
-  '/solucoes-web': typeof SolucoesWebRouteWithChildren
   '/trabalhos-realizados': typeof TrabalhosRealizadosRoute
   '/admin/importar': typeof AdminImportarRoute
   '/admin/noticias': typeof AdminNoticiasRouteWithChildren
@@ -525,6 +531,7 @@ export interface FileRoutesByTo {
   '/admin': typeof AdminIndexRoute
   '/noticias': typeof NoticiasIndexRoute
   '/sistemas': typeof SistemasIndexRoute
+  '/solucoes-web': typeof SolucoesWebIndexRoute
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
@@ -590,6 +597,7 @@ export interface FileRoutesById {
   '/admin/': typeof AdminIndexRoute
   '/noticias/': typeof NoticiasIndexRoute
   '/sistemas/': typeof SistemasIndexRoute
+  '/solucoes-web/': typeof SolucoesWebIndexRoute
   '/admin/noticias/$id': typeof AdminNoticiasIdRoute
   '/admin/noticias/nova': typeof AdminNoticiasNovaRoute
   '/noticias/categoria/$category': typeof NoticiasCategoriaCategoryRoute
@@ -656,6 +664,7 @@ export interface FileRouteTypes {
     | '/admin/'
     | '/noticias/'
     | '/sistemas/'
+    | '/solucoes-web/'
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/noticias/categoria/$category'
@@ -684,7 +693,6 @@ export interface FileRouteTypes {
     | '/sistema-de-rifas'
     | '/sistema-sob-demanda-nc-brasil'
     | '/software'
-    | '/solucoes-web'
     | '/trabalhos-realizados'
     | '/admin/importar'
     | '/admin/noticias'
@@ -719,6 +727,7 @@ export interface FileRouteTypes {
     | '/admin'
     | '/noticias'
     | '/sistemas'
+    | '/solucoes-web'
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/noticias/categoria/$category'
@@ -783,6 +792,7 @@ export interface FileRouteTypes {
     | '/admin/'
     | '/noticias/'
     | '/sistemas/'
+    | '/solucoes-web/'
     | '/admin/noticias/$id'
     | '/admin/noticias/nova'
     | '/noticias/categoria/$category'
@@ -1016,6 +1026,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/solucoes-web/': {
+      id: '/solucoes-web/'
+      path: '/'
+      fullPath: '/solucoes-web/'
+      preLoaderRoute: typeof SolucoesWebIndexRouteImport
+      parentRoute: typeof SolucoesWebRoute
     }
     '/sistemas/': {
       id: '/sistemas/'
@@ -1329,6 +1346,7 @@ interface SolucoesWebRouteChildren {
   SolucoesWebLojaVirtualRoute: typeof SolucoesWebLojaVirtualRoute
   SolucoesWebMarketingDigitalRoute: typeof SolucoesWebMarketingDigitalRoute
   SolucoesWebSeoGoogleRoute: typeof SolucoesWebSeoGoogleRoute
+  SolucoesWebIndexRoute: typeof SolucoesWebIndexRoute
 }
 
 const SolucoesWebRouteChildren: SolucoesWebRouteChildren = {
@@ -1339,6 +1357,7 @@ const SolucoesWebRouteChildren: SolucoesWebRouteChildren = {
   SolucoesWebLojaVirtualRoute: SolucoesWebLojaVirtualRoute,
   SolucoesWebMarketingDigitalRoute: SolucoesWebMarketingDigitalRoute,
   SolucoesWebSeoGoogleRoute: SolucoesWebSeoGoogleRoute,
+  SolucoesWebIndexRoute: SolucoesWebIndexRoute,
 }
 
 const SolucoesWebRouteWithChildren = SolucoesWebRoute._addFileChildren(
