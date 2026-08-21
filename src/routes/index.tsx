@@ -19,6 +19,8 @@ import {
   Globe,
   Database,
   Search,
+  Layout,
+  Server,
 } from "lucide-react";
 import { FloatingObject } from "@/components/FloatingObject";
 
@@ -110,47 +112,47 @@ export const Route = createFileRoute("/")({
 const solutions = [
   {
     icon: Globe2,
-    title: "Criação de Sites",
-    desc: "Sites institucionais, landing pages e portais corporativos com **design premium**, performance e SEO técnico.",
-    to: "/nossos-servicos",
+    title: "Desenvolvimento de Sites",
+    desc: "Sites institucionais e lojas virtuais focados em **atrair visitantes e converter vendas** com tecnologia moderna e SEO nativo.",
+    to: "/solucoes-web/desenvolvimento-de-sites",
   },
   {
-    icon: Layers,
-    title: "Sistemas Web Sob Demanda",
-    desc: "Plataformas personalizadas, **ERPs**, intranets, sistemas de pregão e leilão eletrônico, áreas restritas.",
-    to: "/nossos-sistemas",
+    icon: Layout,
+    title: "LPs Alta Conversão",
+    desc: "Criação de **Landing Pages de alta conversão** focadas em produtos ou serviços, otimizadas para captação de leads qualificados.",
+    to: "/solucoes-web/landing-pages",
   },
   {
-    icon: ShoppingBag,
-    title: "Lojas Virtuais",
-    desc: "**E-commerce** e marketplaces escaláveis, integrados a meios de pagamento, frete e gestão.",
-    to: "/portfolio/lojas-virtuais-criadas",
+    icon: Search,
+    title: "SEO Google",
+    desc: "**Rankeamento e autoridade** em palavras-chaves de curta e longa cauda para maximizar resultados orgânicos.",
+    to: "/solucoes-web/seo-google",
   },
   {
-    icon: Smartphone,
-    title: "Aplicativos Mobile",
-    desc: "Apps **iOS e Android** com UX cinematográfica, notificações, geolocalização e integrações.",
-    to: "/portfolio/criacao-de-aplicativos",
-  },
-  {
-    icon: Sparkles,
-    title: "Identidade Visual",
-    desc: "**Logotipos**, branding e design system para marcas que querem ser inesquecíveis.",
-    to: "/portfolio/identidade-visual",
+    icon: Server,
+    title: "Hospedagem de Sites",
+    desc: "**Servidores dedicados e planos cloud** com infraestrutura total no Brasil e consultoria especializada.",
+    to: "/solucoes-web/hospedagem",
   },
   {
     icon: LineChart,
     title: "Marketing Digital",
-    desc: "Tráfego pago, **SEO**, redes sociais e motion design. Crescimento mensurável de verdade.",
-    to: "/nossos-servicos",
+    desc: "**Criação de posts e vídeos virais** para TikTok, Instagram e Facebook Ads com gestão profissional de campanhas.",
+    to: "/solucoes-web/marketing-digital",
+  },
+  {
+    icon: Smartphone,
+    title: "Aplicativos Mobile",
+    desc: "Apps **iOS e Android** com UX cinematográfica, notificações e sistemas de alta performance.",
+    to: "/portfolio/criacao-de-aplicativos",
   },
 ];
 
 const stats = [
-  { value: "745+", label: "Homepages criadas" },
-  { value: "525+", label: "Lojas online no ar" },
-  { value: "78+", label: "Projetos completos" },
-  { value: "15+", label: "Anos de mercado" },
+  { value: "745+", label: "Sites & Lojas entregues" },
+  { value: "525+", label: "LPs de Alta Conversão" },
+  { value: "78+", label: "Sistemas Customizados" },
+  { value: "20+", label: "Anos de Experiência" },
 ];
 
 const steps = [

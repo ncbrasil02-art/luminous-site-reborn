@@ -14,11 +14,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/seo-google")({
   head: () => buildLPMeta({
-    title: "SEO Google | Otimização e Posicionamento na Primeira Página",
-    description: "Consultoria de SEO para Google. Auditoria técnica, otimização on-page, link building e produção de conteúdo para posicionar seu site na 1ª página.",
-    keywords: "seo google, consultoria seo, otimização para google, posicionamento no google, seo técnico, link building",
+    title: "SEO Google | Ranqueamento de Palavras-Chave de Curta e Longa Cauda",
+    description: "Atuamos rankeando qualquer empresa em palavras-chaves de curta e longa cauda, maximizando os resultados orgânicos nos principais buscadores como o Google.",
+    keywords: "seo google, rankeamento google, palavras-chave curta cauda, palavras-chave longa cauda, otimização buscadores, autoridade digital",
     canonical: URL,
-    h1: "SEO Google — Da Estratégia ao Topo do Ranking",
+    h1: "SEO Google: Ranqueamento e Autoridade",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/seo-google")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/seo-google", label: "SEO Google" }]}
       eyebrow="SEO Profissional"
-      h1={<>SEO Google: <span className="text-gradient">Ranqueamento e Autoridade</span> na 1ª página</>}
-      intro={<>Atuamos com o **ranqueamento e autoridade das palavras-chaves**, posicionando sua empresa nos principais resultados do **Google**. Auditoria técnica e link building para soberania digital.</>}
+      h1={<>SEO Google: <span className="text-gradient">Ranqueamento de Palavras-Chave</span></>}
+      intro={<>Atuamos com o **rankeamento e autoridade das palavras-chaves**, posicionando sua empresa nos principais resultados do **Google** e outros buscadores. Mapeamos desde **palavras-chaves de curta cauda** até as de **longa cauda** para maximizar seu tráfego orgânico.</>}
       stats={[{ value: "+340%", label: "Tráfego orgânico" }, { value: "Top 3", label: "Rankings alcançados" }, { value: "500+", label: "Palavras-chave" }, { value: "12 meses", label: "Resultado consistente" }]}
       benefits={[
         { icon: Search, title: "Keyword Research", desc: "Mapeamento com **Ahrefs, SEMrush e Google Search Console** — foco em intenção de busca." },
