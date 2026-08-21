@@ -12,8 +12,4 @@ const app = (
   </StrictMode>
 );
 
-if (rootElement.innerHTML.trim() === "") {
-  ReactDOM.createRoot(rootElement).render(app);
-} else {
-  ReactDOM.hydrateRoot(rootElement, app);
-}
+ReactDOM.createRoot(rootElement).render(app);
