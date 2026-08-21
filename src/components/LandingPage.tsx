@@ -423,7 +423,7 @@ export function LandingPage({
                           i === 0 ? "Vitrine Profissional" :
                           i === 1 ? "Checkout Otimizado" :
                           i === 2 ? "Seleção de Cotas" :
-                          i === 3 ? "Dashboard do Participante" :
+                          i === 3 ? "Dashboard Administrativo" :
                           i === 4 ? "Configurações do Sistema" :
                           i === 5 ? "Painel de Vendas" :
                           "Gestão de Pagamentos"
@@ -441,7 +441,7 @@ export function LandingPage({
                           i === 0 ? "Página de vendas atraente focada em conversão de cotas." :
                           i === 1 ? "Fluxo de pagamento simplificado com Pix instantâneo." :
                           i === 2 ? "Interface intuitiva para escolha de números da sorte." :
-                          i === 3 ? "Área exclusiva para o arrematante gerenciar suas ações." :
+                          i === 3 ? "Área exclusiva para o administrador gerenciar o sistema." :
                           i === 4 ? "Controle total sobre sorteios e regulamentos." :
                           i === 5 ? "Visão estratégica do faturamento em tempo real." :
                           "Integração segura com múltiplos gateways de pagamento."
