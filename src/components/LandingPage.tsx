@@ -185,7 +185,7 @@ export function LandingPage({
         <div className="absolute inset-0 -z-20">
           <img 
             src={pathname.includes('rifas') 
-              ? "/img-sistema-de-rifas/rifa-1.png"
+              ? "/img-sistema-de-rifas/rifa-vitrine.png"
               : pathname.includes('leilao')
                 ? "/img-sistema-de-leilao/home-premium.png"
                 : "/logo.jpg"
@@ -197,7 +197,7 @@ export function LandingPage({
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.onerror = null;
-              target.src = "https://www.ncbrasil.com.br/logo.jpg";
+              target.src = "/logo.jpg";
             }}
           />
         </div>
