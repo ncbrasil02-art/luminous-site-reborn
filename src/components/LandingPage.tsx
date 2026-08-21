@@ -79,8 +79,11 @@ export type LandingPageProps = {
   imageKeyword?: string;
   showParallaxshowcase?: boolean;
   showcaseImages?: string[];
+  showcase?: { title: string; desc: string; image: string }[];
   extraContentBeforeProblem?: React.ReactNode;
   finalParallaxCta?: { text: string; image: string };
+  logo?: string;
+  heroImage?: string;
 };
 
 
