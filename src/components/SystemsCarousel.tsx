@@ -8,35 +8,36 @@ import { cn } from "@/lib/utils";
 const systems = [
   {
     icon: Gavel,
-    title: "Plataforma de Leilão Online",
-    description: "O melhor sistema para leiloeiro completo com pregão eletrônico, transmissão ao vivo e gestão de lotes.",
+    title: "Sistema de Leilão Premium",
+    description: "Referência nacional em tecnologia de leilões. Pregão eletrônico ultraveloz, auditagem completa e lances em tempo real com latência zero.",
     to: "/sistema-de-leilao",
     image: "/img-sistema-de-leilao/home-premium.png",
-    features: ["Lances em Tempo Real", "Gestão de Lotes", "Auditagem"]
+    features: ["Transmissão ao Vivo", "Pregão Eletrônico", "Gestão de Arrematantes"],
+    isPremium: true
   },
   {
     icon: ShoppingCart,
-    title: "Marketplaces",
-    description: "Soluções complexas para múltiplos vendedores com split de pagamentos automático.",
-    to: "/portfolio/lojas-virtuais-criadas",
-    image: "/img-sistema-de-leilao/vitrine.png",
-    features: ["Split de Pagamentos", "Painel Seller", "Logística"]
-  },
-  {
-    icon: Users,
-    title: "Compra Coletiva",
-    description: "Plataformas de ofertas com gatilhos de escassez e gestão de cupons via QR Code.",
-    to: "/portfolio/sistema-de-compra-coletiva",
-    image: "/img-sistema-de-leilao/cards.png",
-    features: ["Controle de Cupons", "Validação App", "Escalabilidade"]
+    title: "Script de Rifas Profissional",
+    description: "A plataforma de sorteios mais completa do Brasil. Totalmente automatizada com split de pagamentos e visual cinematográfico.",
+    to: "/sistema-de-rifas",
+    image: "/img-sistema-de-rifas/Fachada Profissional.png",
+    features: ["Pagamentos Automáticos", "Ranking de Compradores", "Reserva de Bilhetes"]
   },
   {
     icon: LayoutDashboard,
-    title: "Sistemas Sob Demanda",
-    description: "Engenharia de software personalizada para resolver desafios exclusivos do seu negócio.",
-    to: "/nossos-sistemas",
+    title: "Marketplace de Veículos",
+    description: "Plataforma robusta para revenda de autos. Filtros inteligentes, integração com estoque e alta conversão de leads.",
+    to: "/classificados-de-veiculos",
     image: "/img-sistema-de-leilao/dashboard-detalhe.png",
-    features: ["Arquitetura Custom", "Integração API", "Cloud Native"]
+    features: ["Busca Avançada", "Painel Lojista", "SEO Nativo"]
+  },
+  {
+    icon: Users,
+    title: "Leilão Rural & Agro",
+    description: "Tecnologia especializada para o agronegócio. Gestão de genealogia, vídeos de lotes e suporte a grandes eventos rurais.",
+    to: "/leilao-rural",
+    image: "/img-sistema-de-leilao/cards.png",
+    features: ["Catálogo Rural", "Lotes de Animais", "App Agro"]
   }
 ];
 
