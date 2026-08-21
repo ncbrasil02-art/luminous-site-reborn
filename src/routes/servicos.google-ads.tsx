@@ -30,8 +30,8 @@ export const Route = createFileRoute("/servicos/google-ads")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/google-ads", label: "Google Ads" }]}
       eyebrow="Google Ads"
-      h1={<>Google Ads com <span className="text-gradient">ROAS previsível</span> e escalável</>}
-      intro={<>Gestão avançada de **Search, Shopping, Performance Max, YouTube e Display** — com foco absoluto em conversão, CAC e ROAS.</>}
+      h1={<>Consultoria e Gestão de <span className="text-gradient">Google ADS Profissional</span></>}
+      intro={<>Fazemos toda a **consultoria e aplicação de resultados** em campanhas de **Google ADS**. Foco total em conversão e ROAS para garantir o retorno do seu investimento.</>}
       stats={[{ value: "R$ 20Mi", label: "Investidos em Ads" }, { value: "5,2x", label: "ROAS médio" }, { value: "Premier", label: "Google Partner" }, { value: "-38%", label: "CAC médio" }]}
       benefits={[
         { icon: Search, title: "Campanhas de Search", desc: "Palavras-chave com **alta intenção de compra** e negativação diária de termos ruins." },
@@ -48,6 +48,7 @@ export const Route = createFileRoute("/servicos/google-ads")({
         { icon: Users, title: "Landing Pages", desc: "Criamos LPs otimizadas para **Quality Score 10/10** e conversão." },
       ]}
       faq={lpFaq}
+      heroImage="/img-sistema-de-leilao/rural-vitrine.png"
       relatedNewsTags={["Google Ads","Links Patrocinados","Marketing Digital"]}
     />
   ),

@@ -30,8 +30,8 @@ export const Route = createFileRoute("/solucoes-web/marketing-digital")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/marketing-digital", label: "Marketing Digital" }]}
       eyebrow="Marketing 360°"
-      h1={<>Marketing digital que <span className="text-gradient">gera resultado real</span></>}
-      intro={<>Estratégia completa de **aquisição, engajamento e conversão** — tráfego pago, orgânico, conteúdo e automação em uma única operação.</>}
+      h1={<>Marketing digital focado em <span className="text-gradient">ranqueamento e autoridade</span></>}
+      intro={<>Nossa empresa atua com **ranqueamento e autoridade das palavras-chaves**, subindo qualquer empresa nos principais resultados dos buscadores como **Google**. Estratégia completa de aquisição e conversão baseada em dados.</>}
       stats={[{ value: "R$ 30Mi", label: "Verba gerenciada" }, { value: "4,8x", label: "ROAS médio" }, { value: "150+", label: "Clientes ativos" }, { value: "24/7", label: "Monitoramento" }]}
       benefits={[
         { icon: Target, title: "Tráfego Pago", desc: "Google Ads, Meta Ads, TikTok Ads e LinkedIn Ads — **gestão com foco em ROAS**." },
@@ -48,6 +48,7 @@ export const Route = createFileRoute("/solucoes-web/marketing-digital")({
         { icon: Sparkles, title: "Copywriting", desc: "Criativos com **hooks virais e ganchos de conversão** testados A/B." },
       ]}
       faq={lpFaq}
+      heroImage="/img-sistema-de-leilao/rural-lote.png"
       relatedNewsTags={["Marketing Digital","Facebook Ads","Google Ads"]}
     />
   ),

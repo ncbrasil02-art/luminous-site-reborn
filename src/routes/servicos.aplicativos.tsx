@@ -30,8 +30,8 @@ export const Route = createFileRoute("/servicos/aplicativos")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-servicos", label: "Serviços" }, { to: "/servicos/aplicativos", label: "Aplicativos" }]}
       eyebrow="Mobile Apps"
-      h1={<>Aplicativos <span className="text-gradient">iOS e Android</span> que encantam</>}
-      intro={<>Do MVP ao app com milhões de downloads — construímos apps **nativos e cross-platform** com UX premium, performance nativa e publicação nas lojas.</>}
+      h1={<>Criação de <span className="text-gradient">Aplicativos Web Completos</span> e Modernos</>}
+      intro={<>Criamos **aplicativos web completos** com as mais modernas tecnologias do mercado. Do MVP à escala global, entregamos performance nativa e experiência de usuário premium.</>}
       stats={[{ value: "200+", label: "Apps publicados" }, { value: "10Mi+", label: "Downloads acumulados" }, { value: "4,8⭐", label: "Nota média nas lojas" }, { value: "iOS+Android", label: "Nativo ou cross" }]}
       benefits={[
         { icon: Smartphone, title: "iOS + Android", desc: "**React Native, Flutter, Swift ou Kotlin** — escolhemos o stack ideal para seu projeto." },
@@ -48,6 +48,7 @@ export const Route = createFileRoute("/servicos/aplicativos")({
         { icon: Users, title: "Publicação nas Lojas", desc: "Cuidamos de tudo: **App Store Connect, Google Play Console** e revisões." },
       ]}
       faq={lpFaq}
+      heroImage="/img-sistema-de-leilao/rural-transmissao.png"
       relatedNewsTags={["Aplicativos","Mobile","Tecnologia"]}
     />
   ),

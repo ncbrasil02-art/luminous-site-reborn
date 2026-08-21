@@ -33,8 +33,8 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
     <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/solucoes-web", label: "Soluções Web" }, { to: "/solucoes-web/desenvolvimento-de-sites", label: "Desenvolvimento de Sites" }]}
       eyebrow="Sites Profissionais"
-      h1={<>Sites que <span className="text-gradient">vendem</span> e posicionam sua marca</>}
-      intro={<>Desenvolvemos <strong className="text-foreground">sites institucionais</strong> modernos, rápidos e otimizados para Google. Da estratégia à publicação, com foco em **conversão e autoridade digital**.</>}
+      h1={<>Sites Profissionais com <span className="text-gradient">Ranqueamento e Autoridade</span></>}
+      intro={<>Nossa empresa atua com **ranqueamento e autoridade das palavras-chaves**, subindo qualquer empresa nos principais resultados dos buscadores. Desenvolvemos **sites institucionais** modernos e rápidos para o mercado brasileiro e internacional.</>}
       stats={[{ value: "800+", label: "Sites entregues" }, { value: "98", label: "Score PageSpeed" }, { value: "<2s", label: "LCP médio" }, { value: "20 anos", label: "De experiência" }]}
       benefits={[
         { icon: Gauge, title: "Performance Extrema", desc: "Sites com **carregamento em menos de 2s**, otimizados para Core Web Vitals do Google." },
@@ -52,6 +52,7 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
       ]}
       testimonials={testimonialsData.slice(0, 4)}
       faq={lpFaq}
+      heroImage="/img-sistema-de-leilao/rural-dash.png"
       relatedNewsTags={["Criação de Sites","Web Design","Marketing Digital"]}
     />
   ),
