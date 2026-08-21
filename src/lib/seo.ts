@@ -38,7 +38,7 @@ export function buildMeta(options: MetaOptions) {
   } = options;
 
   const fullTitle = title.includes(SITE_NAME) ? title : `${title} · ${SITE_NAME}`;
-  const absoluteCanonical = canonical ? (canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical.startsWith("/") ? "" : "/"}${canonical}`) : SITE_URL;
+  const absoluteCanonical = canonical ? (canonical.startsWith("http") ? canonical : `${SITE_URL}${canonical.startsWith("/") ? "" : "/"}${canonical}`) : `${SITE_URL}/`;
   const absoluteOgImage = ogImage.startsWith("http") ? ogImage : `${SITE_URL}${ogImage}`;
 
   const meta = [
