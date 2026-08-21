@@ -32,8 +32,8 @@ export const Route = createFileRoute("/empresa/quem-somos")({
       <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/empresa", label: "Empresa" }, { to: "/empresa/quem-somos", label: "Quem Somos" }]}
       eyebrow="Sobre nós"
-      h1={<>Somos uma <span className="text-gradient">agência de engenharia</span> apaixonada por resultado</>}
-      intro={<>Há **20 anos** transformando negócios com **tecnologia sob medida, marketing digital e design**. Somos um time enxuto e sênior — sem intermediários, com foco absoluto em ROI.</>}
+      h1={<>Nossa Empresa: <span className="text-gradient">Ranqueamento, Autoridade e Tecnologia</span></>}
+      intro={<>Nossa empresa atua com **ranqueamento e autoridade das palavras-chaves**, subindo qualquer empresa nos principais resultados dos buscadores. Com vasta experiência no **mercado brasileiro e internacional**, nossa estrutura garante resultados comprovados e suporte técnico especializado em todas as frentes digitais.</>}
       stats={[{ value: "20 anos", label: "De mercado" }, { value: "1.500+", label: "Projetos entregues" }, { value: "50+", label: "Especialistas" }, { value: "12", label: "Estados atendidos" }]}
       benefits={[
         { icon: Award, title: "Experiência Comprovada", desc: "Duas décadas construindo **sistemas, sites e apps** para PMEs, startups e grandes marcas." },
