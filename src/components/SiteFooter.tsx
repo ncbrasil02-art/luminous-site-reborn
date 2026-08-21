@@ -140,9 +140,9 @@ export function SiteFooter() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row">
           <p>© {new Date().getFullYear()} NC Brasil — Sistemas & Marketing. Todos os direitos reservados.</p>
-          <div className="flex items-center gap-4">
+        </div>
             <p>
               <strong className="text-foreground">CNPJ</strong> · Sites · Sistemas · Aplicativos · Marketing Digital
             </p>
