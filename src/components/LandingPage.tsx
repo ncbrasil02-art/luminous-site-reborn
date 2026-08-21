@@ -188,8 +188,8 @@ export function LandingPage({
   return (
     <>
       <Helmet>
-        <title>{`${typeof h1 === 'string' ? h1 : eyebrow} · NC Brasil`}</title>
-        <meta name="description" content={typeof intro === 'string' ? intro.slice(0, 160) : eyebrow} />
+        <title>{`NcBrasil - ${typeof h1 === 'string' ? h1 : eyebrow}`}</title>
+        <meta name="description" content={`NcBrasil: ${typeof intro === 'string' ? intro.slice(0, 140) : eyebrow} - Especialistas em ${eyebrow} para o seu negócio.`} />
         {logo && <link rel="icon" href={logo} />}
       </Helmet>
       {/* HERO */}

@@ -6,7 +6,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const toAbsolute = (p) => path.resolve(__dirname, p)
 
 async function generate() {
-  const template = fs.readFileSync(toAbsolute('dist/index.html'), 'utf-8')
+  // Use dist/index.html as the base template
+  const templatePath = toAbsolute('dist/index.html')
+  if (!fs.existsSync(templatePath)) {
+    console.error('Error: dist/index.html not found. Run build:client first.')
+    process.exit(1)
+  }
+  const template = fs.readFileSync(templatePath, 'utf-8')
   
   // Import the SSR entry point
   const { render } = await import('./dist/server/entry-server.js')
@@ -46,43 +52,23 @@ async function generate() {
       const appHtml = result.html
       const head = result.head
 
-      if (!appHtml || appHtml.length < 500) {
-         console.warn(`Warning: Small HTML for ${url}. Length: ${appHtml?.length || 0}`);
-      }
-
       // Final HTML reconstruction
-      // We also look for <title> and <meta name="description"> that might have been rendered in the body by TanStack's HeadContent
-      // and move them to the head if the 'head' string from entry-server is incomplete.
-      
-      let titleTag = "";
-      let metaDesc = "";
-
-      if (!head.includes('<title')) {
-        const titleMatch = appHtml.match(/<title.*?>([\s\S]*?)<\/title>/);
-        if (titleMatch) titleTag = `<title>${titleMatch[1]}</title>`;
-      }
-
-      if (!head.includes('name="description"')) {
-        const descMatch = appHtml.match(/<meta name="description" content="([\s\S]*?)"/);
-        if (descMatch) metaDesc = `<meta name="description" content="${descMatch[1]}">`;
-      }
-
-      const finalHead = (head + titleTag + metaDesc).trim();
-
-      // Ensure template has the placeholders
+      // We look for <!--app-head--> and <!--app-html-->
+      // If they were stripped by Vite's minifier, we fallback to replacing the standard tags
       let finalHtml = template;
+
       if (finalHtml.includes('<!--app-head-->')) {
-        finalHtml = finalHtml.replace('<!--app-head-->', finalHead || '');
+        finalHtml = finalHtml.replace('<!--app-head-->', head || '')
       } else {
-        // Fallback: inject before </head>
-        finalHtml = finalHtml.replace('</head>', `${finalHead}\n  </head>`);
+        // Fallback: inject into <head>
+        finalHtml = finalHtml.replace('</head>', `${head || ''}</head>`)
       }
 
       if (finalHtml.includes('<!--app-html-->')) {
-        finalHtml = finalHtml.replace('<!--app-html-->', appHtml || '');
+        finalHtml = finalHtml.replace('<!--app-html-->', appHtml || '')
       } else {
-        // Fallback: inject inside <div id="root">
-        finalHtml = finalHtml.replace('<div id="root"></div>', `<div id="root">${appHtml}</div>`);
+        // Fallback: inject into <div id="root">
+        finalHtml = finalHtml.replace('<div id="root"></div>', `<div id="root">${appHtml || ''}</div>`)
       }
 
       // Clean the URL to get a valid file path

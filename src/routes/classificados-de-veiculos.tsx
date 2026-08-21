@@ -24,11 +24,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/classificados-de-veiculos")({
   head: () => buildLPMeta({
-    title: "Sistema de Classificados de Veículos | Portal Automotivo — NC Brasil",
-    description: "Plataforma profissional estilo WebMotors para classificados de veículos. Sistema para revenda de autos, portal de anúncios de autos e gerenciamento de vendas.",
+    title: "NcBrasil - Classificados de Veículos | Plataforma Profissional Estilo WebMotors",
+    description: "NcBrasil: Portal de anúncios de veículos completo com Tabela FIPE, financiamento e apps. O sistema ideal para revenda de autos e marketplaces.",
     keywords: "classificado de veículos, sistema para revenda de autos, portal de anúncios de veículos, plataforma profissional estilo WebMotors, sistema para gerenciamento de vendas de veículos, portal de anúncios de autos",
     canonical: URL,
-    h1: "Sistema de Classificados de Veículos Profissional",
+    h1: "NcBrasil - Sistema de Classificados de Veículos",
     breadcrumbs: [
       { label: "Home", to: "/" },
       { label: "Sistemas", to: "/nossos-sistemas" },
