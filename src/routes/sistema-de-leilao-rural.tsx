@@ -5,6 +5,14 @@ import {
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 import { testimonialsData } from "@/lib/testimonials.data";
+import leilaoRuralAdmin from "@/assets/leilao-rural-admin.asset.json";
+import leilaoRuralLotes from "@/assets/leilao-rural-lotes.asset.json";
+import leilaoRuralEventos from "@/assets/leilao-rural-eventos.asset.json";
+import leilaoRuralVitrine from "@/assets/leilao-rural-vitrine.asset.json";
+import leilaoRuralCadastro from "@/assets/leilao-rural-cadastro.asset.json";
+import leilaoRuralGenealogia from "@/assets/leilao-rural-genealogia.asset.json";
+import leilaoRuralPregao from "@/assets/leilao-rural-pregao.asset.json";
+import leilaoRuralHome from "@/assets/leilao-rural-home.asset.json";
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-leilao-rural";
@@ -151,6 +159,45 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
       finalCtaTitle={<>Pronto para operar com o melhor <span className="text-gradient">sistema para fazendas e criatórios</span>?</>}
       finalCtaDesc={<>Fale com nossa equipe e conheça a nossa <strong>plataforma de gerenciamento de leilões com transmissão ao vivo dos animais</strong>. Enviamos demonstração ao vivo com dados reais, proposta técnica e cronograma personalizado.</>}
       relatedNewsTags={["Leilão", "Leilão Rural", "Agronegócio", "Sistemas"]}
+      showParallaxshowcase={true}
+      showcase={[
+        { 
+          title: "Painel Administrativo Rural", 
+          desc: "Gestão completa de animais, lotes e compradores com interface intuitiva.", 
+          image: leilaoRuralAdmin.url 
+        },
+        { 
+          title: "Vitrine do Animal Premium", 
+          desc: "Apresentação de alta linhagem com fotos, vídeos e ficha técnica detalhada.", 
+          image: leilaoRuralVitrine.url 
+        },
+        { 
+          title: "Pregão ao Vivo HD", 
+          desc: "Transmissão em tempo real com delay zero e integração de lances online.", 
+          image: leilaoRuralPregao.url 
+        },
+        { 
+          title: "Genealogia e Genética", 
+          desc: "Árvore genealógica completa e rastreabilidade de linhagem para animais PO.", 
+          image: leilaoRuralGenealogia.url 
+        },
+        { 
+          title: "Agenda de Eventos", 
+          desc: "Calendário de leilões agendados e transmissão de eventos ao vivo.", 
+          image: leilaoRuralEventos.url 
+        },
+        { 
+          title: "Gestão de Lotes", 
+          desc: "Controle absoluto de status, preços e histórico de lances por lote.", 
+          image: leilaoRuralLotes.url 
+        }
+      ]}
+      finalParallaxCta={{
+        text: "Sistema de Leilão Rural Profissional e Personalizado",
+        image: leilaoRuralHome.url
+      }}
+      logo="/logo.jpg"
+      heroImage="/logo.jpg"
     />
   ),
 });
