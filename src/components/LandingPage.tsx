@@ -419,20 +419,40 @@ export function LandingPage({
                     {/* Header/Caption */}
                     <div className="flex flex-col gap-2 p-8 text-center md:p-10">
                       <h3 className="font-display text-2xl font-bold md:text-3xl">
-                        {i === 0 && (pathname.includes('rifas') ? "Painel Administrativo Completo" : "Interface do Arrematante")}
-                        {i === 1 && (pathname.includes('rifas') ? "Aplicativo Nativo iOS/Android" : "Painel de Lances em Tempo Real")}
-                        {i === 2 && (pathname.includes('rifas') ? "Tecnologia e Performance" : "Dashboard Administrativo Robusto")}
-                        {i === 3 && (pathname.includes('rifas') ? "Gestão de Campanhas" : "Configurações de Edital e Lotes")}
-                        {i === 4 && "Visualização Mobile Nativa"}
-                        {i === 5 && "Controle e Segurança"}
+                        {pathname.includes('rifas') ? (
+                          i === 0 ? "Vitrine Profissional" :
+                          i === 1 ? "Checkout Otimizado" :
+                          i === 2 ? "Seleção de Cotas" :
+                          i === 3 ? "Dashboard do Participante" :
+                          i === 4 ? "Configurações do Sistema" :
+                          i === 5 ? "Painel de Vendas" :
+                          "Gestão de Pagamentos"
+                        ) : (
+                          i === 0 ? "Página Inicial Premium" :
+                          i === 1 ? "Vitrine de Lotes" :
+                          i === 2 ? "Painel Administrativo" :
+                          i === 3 ? "Gestão de Edital" :
+                          i === 4 ? "Cards de Destaque" :
+                          "Pregão Online"
+                        )}
                       </h3>
-                      <p className="mx-auto max-w-2xl text-sm text-muted-foreground md:text-base">
-                        {i === 0 && "Uma experiência imersiva e intuitiva para quem busca facilidade na hora de arrematar bens."}
-                        {i === 1 && "Tecnologia de baixa latência para garantir que cada lance seja registrado com precisão milimétrica."}
-                        {i === 2 && "Gestão completa do seu negócio com métricas claras, relatórios financeiros e controle total."}
-                        {i === 3 && "Flexibilidade total para cadastrar bens, anexar documentos e gerenciar regras de negócio."}
-                        {i === 4 && "Seu site de leilão na palma da mão com notificações push e lances em um toque."}
-                        {i === 5 && "Segurança jurídica e validação automática de arrematantes integrada à Receita Federal."}
+                      <p className="mx-auto max-w-2xl text-sm text-muted-foreground">
+                        {pathname.includes('rifas') ? (
+                          i === 0 ? "Página de vendas atraente focada em conversão de cotas." :
+                          i === 1 ? "Fluxo de pagamento simplificado com Pix instantâneo." :
+                          i === 2 ? "Interface intuitiva para escolha de números da sorte." :
+                          i === 3 ? "Área exclusiva para o arrematante gerenciar suas ações." :
+                          i === 4 ? "Controle total sobre sorteios e regulamentos." :
+                          i === 5 ? "Visão estratégica do faturamento em tempo real." :
+                          "Integração segura com múltiplos gateways de pagamento."
+                        ) : (
+                          i === 0 ? "Design cinematográfico para atrair os melhores arrematantes." :
+                          i === 1 ? "Apresentação detalhada de bens com galeria de alta qualidade." :
+                          i === 2 ? "Controle total do leiloeiro sobre lances e pregões." :
+                          i === 3 ? "Automação completa de documentos e editais judiciais." :
+                          i === 4 ? "Destaque visual para lotes especiais e urgentes." :
+                          "Transmissão em tempo real com zero delay para lances competitivos."
+                        )}
                       </p>
                     </div>
 
