@@ -455,21 +455,6 @@ export function LandingPage({
                         )}
                       </p>
                     </div>
-                        {i === 1 && (pathname.includes('rifas') ? "Aplicativo Nativo iOS/Android" : "Painel de Lances em Tempo Real")}
-                        {i === 2 && (pathname.includes('rifas') ? "Tecnologia e Performance" : "Dashboard Administrativo Robusto")}
-                        {i === 3 && (pathname.includes('rifas') ? "Gestão de Campanhas" : "Configurações de Edital e Lotes")}
-                        {i === 4 && "Visualização Mobile Nativa"}
-                        {i === 5 && "Controle e Segurança"}
-                      </h3>
-                      <p className="mx-auto max-w-2xl text-sm text-muted-foreground md:text-base">
-                        {i === 0 && "Uma experiência imersiva e intuitiva para quem busca facilidade na hora de arrematar bens."}
-                        {i === 1 && "Tecnologia de baixa latência para garantir que cada lance seja registrado com precisão milimétrica."}
-                        {i === 2 && "Gestão completa do seu negócio com métricas claras, relatórios financeiros e controle total."}
-                        {i === 3 && "Flexibilidade total para cadastrar bens, anexar documentos e gerenciar regras de negócio."}
-                        {i === 4 && "Seu site de leilão na palma da mão com notificações push e lances em um toque."}
-                        {i === 5 && "Segurança jurídica e validação automática de arrematantes integrada à Receita Federal."}
-                      </p>
-                    </div>
 
                     {/* Image Container with Reveal Effect */}
                     <div className="relative mx-auto w-full max-w-6xl px-4 pb-6 md:px-8 md:pb-8">
