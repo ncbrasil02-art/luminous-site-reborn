@@ -160,8 +160,11 @@ export function LandingPage({
   imageKeyword,
   showParallaxshowcase = false,
   showcaseImages = [],
+  showcase = [],
   extraContentBeforeProblem,
   finalParallaxCta,
+  logo,
+  heroImage,
 }: LandingPageProps) {
 
   const [expandedImages, setExpandedImages] = useState<Record<number, boolean>>({});
