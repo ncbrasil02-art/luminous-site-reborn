@@ -192,14 +192,14 @@ export function LandingPage({
         <div className={`absolute inset-0 -z-10 ${pathname.includes('leilao') ? 'bg-black/80' : 'bg-black/40'}`} />
         <div className="absolute inset-0 -z-20">
           <img 
-            src={pathname.includes('rifas') 
+            src={heroImage || (pathname.includes('rifas') 
               ? "/img-sistema-de-rifas/rifa-vitrine.png"
               : pathname.includes('leilao')
                 ? "/logo.jpg"
-                : "/logo.jpg"
+                : "/logo.jpg")
             }
             alt={imageKeyword || eyebrow} 
-            className={`h-full w-full ${pathname.includes('leilao') ? 'object-contain p-20 opacity-10' : 'object-cover opacity-20'}`}
+            className={`h-full w-full ${pathname.includes('leilao') || (heroImage === '/logo.jpg') ? 'object-contain p-20 opacity-10' : 'object-cover opacity-20'}`}
             loading="eager"
             fetchPriority="high"
             onError={(e) => {
