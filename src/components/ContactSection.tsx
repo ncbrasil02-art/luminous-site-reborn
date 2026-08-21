@@ -20,6 +20,7 @@ const EMAIL = "comercial@ncbrasil.com.br";
 const PHONE_NUMBER = "5521996509905";
 const ADDRESS = "Rua Barão de Mauá 347, São Bernardo do Campo - São Paulo";
 const HOURS = "Segunda a Domingo, das 08:00 às 22:00";
+const EMAIL_V2 = "comercial@ncbrasil.com.br";
 
 export function ContactSection({ pageTitle }: ContactSectionProps) {
   const [form, setForm] = useState({ nome: "", empresa: "", email: "", whatsapp: "", mensagem: "" });

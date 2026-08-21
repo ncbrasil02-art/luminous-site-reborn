@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -182,6 +183,11 @@ function renderBold(text: string) {
 function HomePage() {
   return (
     <>
+      <Helmet>
+        <title>{`NC Brasil · Criação de Sites, Sistemas Web e Aplicativos em SP e RJ`}</title>
+        <meta name="description" content="Agência de tecnologia especializada em criação de sites profissionais, sistemas web sob demanda, e-commerce e aplicativos mobile. Tecnologia premium para elevar sua presença digital." />
+        <meta name="keywords" content="criação de sites, criação de sistemas web, lojas virtuais, aplicativos mobile, marketing digital, agência web SP, agência web RJ, sistemas personalizados, plataforma de leilões, NC Brasil" />
+      </Helmet>
       {/* HERO ============================================================= */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10" aria-hidden="true">

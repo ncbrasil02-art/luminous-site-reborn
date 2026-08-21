@@ -12,7 +12,7 @@ interface PartnerCarouselProps {
   title?: string;
 }
 
-export function PartnerCarousel({ logos, title }: PartnerCarouselProps) {
+export function PartnerCarousel({ logos, title = "Órgãos Homologados e Parceiros" }: PartnerCarouselProps) {
   // Duplicate logos for infinite scroll effect
   const duplicatedLogos = [...logos, ...logos, ...logos, ...logos, ...logos];
 

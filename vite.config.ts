@@ -1,5 +1,3 @@
-// Plain client-side SPA build (no SSR/Node server) — required for static
-// hosting on Hostinger's Premium plan, which doesn't support Node.js apps.
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
@@ -13,4 +11,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  ssr: {
+    noExternal: ['@tanstack/react-router', 'react-helmet-async']
+  }
 });

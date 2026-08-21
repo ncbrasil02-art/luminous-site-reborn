@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import {
   Camera, Car, CreditCard, Filter, MapPin, MessageCircle, Search, ShieldCheck, Tag, Users,
   BarChart3, Zap, Lock, Cloud, Database, Award, Globe2, Smartphone, FileCheck, Gauge,
@@ -37,7 +38,13 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
     ogImage: "/img-sistema-de-veiculos/sistema-de-classificados-de-veiculos-hero.jpeg",
   }),
   component: () => (
-    <LandingPage
+    <>
+      <Helmet>
+        <title>Sistema de Classificados de Veículos | Portal Automotivo — NC Brasil</title>
+        <meta name="description" content="Plataforma profissional estilo WebMotors para classificados de veículos. Sistema para revenda de autos, portal de anúncios de autos e gerenciamento de vendas." />
+        <meta name="keywords" content="classificado de veículos, sistema para revenda de autos, portal de anúncios de veículos, plataforma profissional estilo WebMotors, sistema para gerenciamento de vendas de veículos, portal de anúncios de autos" />
+      </Helmet>
+      <LandingPage
       breadcrumbs={[{ to: "/", label: "Home" }, { to: "/nossos-sistemas", label: "Sistemas" }, { to: "/classificados-de-veiculos", label: "Classificados de Veículos" }]}
       eyebrow="Portal Automotivo · Marketplace de Veículos"
       h1={<>Sistema de <span className="text-gradient">Classificados de Veículos</span> Profissional</>}
@@ -123,6 +130,7 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
       finalCtaDesc={<>Fale com nossos especialistas em <strong className="text-foreground">sistemas para revenda de veículos</strong>. Demonstração personalizada disponível.</>}
       relatedNewsTags={["Veículos", "Classificados", "Sistemas"]}
     />
+    </>
   ),
 });
 

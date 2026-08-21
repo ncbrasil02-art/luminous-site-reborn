@@ -1,4 +1,5 @@
 import { createFileRoute, Link, useRouterState } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import { useEffect } from "react";
 import {
   Car, CarFront, Coins, Dice5, Gavel, Gift, ScanLine, ShoppingBag, Store, Ticket, Tractor, ChevronRight
@@ -53,6 +54,11 @@ function SistemasHub() {
 
   return (
     <>
+      <Helmet>
+        <title>Nossos Sistemas | Plataformas Web Sob Demanda — NC Brasil</title>
+        <meta name="description" content="Catálogo de sistemas web prontos e sob demanda da NC Brasil: leilão, cassino, rifas, cupons, classificados de veículos, marketplace e muito mais." />
+        <meta name="keywords" content="sistemas web, plataformas online, sistema de leilão, cassino online, rifas online, classificados de veículos, cupons, marketplace" />
+      </Helmet>
       <section className="relative isolate overflow-hidden pt-24 pb-16">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />

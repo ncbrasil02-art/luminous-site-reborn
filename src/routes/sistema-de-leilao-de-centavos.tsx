@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import { Banknote, BarChart3, Clock, Coins, Gift, ShieldCheck, Sparkles, Timer, Trophy, Users, Wallet, Zap, Smartphone, ShoppingCart, Percent } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
 import { centavosTestimonials } from "@/lib/testimonials.data";
@@ -39,7 +40,13 @@ export const Route = createFileRoute("/sistema-de-leilao-de-centavos")({
     ogImage: heroAsset.url,
   }),
   component: () => (
-    <LandingPage
+    <>
+      <Helmet>
+        <title>Sistema Leilão de Centavos | Plataforma Premium Penny Auction</title>
+        <meta name="description" content="Crie seu site de leilão de centavos profissional. Plataforma completa com pacotes de lances, timer anti-sniping, Pix e apps. O melhor sistema leilão de centavos." />
+        <meta name="keywords" content="sistema leilão de centavos, plataforma de leilão de centavos, site de leilão de centavos, software leilão centavos, script leilão de centavos, penny auction brasil, sistema de lances online" />
+      </Helmet>
+      <LandingPage
       imageKeyword="sistema leilão de centavos"
       heroImage={heroAsset.url}
       showParallaxshowcase
@@ -135,5 +142,6 @@ export const Route = createFileRoute("/sistema-de-leilao-de-centavos")({
         image: heroAsset.url
       }}
     />
+    </>
   ),
 });

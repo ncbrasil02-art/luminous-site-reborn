@@ -1,5 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { newsData } from "@/lib/news.data";
 
@@ -186,6 +187,11 @@ export function LandingPage({
 
   return (
     <>
+      <Helmet>
+        <title>{`${typeof h1 === 'string' ? h1 : eyebrow} · NC Brasil`}</title>
+        <meta name="description" content={typeof intro === 'string' ? intro.slice(0, 160) : eyebrow} />
+        {logo && <link rel="icon" href={logo} />}
+      </Helmet>
       {/* HERO */}
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />

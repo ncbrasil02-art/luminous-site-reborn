@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
+import { Helmet } from 'react-helmet-async'
 import { newsData } from '@/lib/news.data'
 import { Calendar, Tag, ArrowLeft, Clock, ChevronRight, BookOpen } from 'lucide-react'
 import { Reveal } from '@/components/Section'
@@ -63,7 +64,8 @@ function NewsPostPage() {
     .slice(0, 3)
 
   return (
-    <main className="relative pt-24 pb-20 overflow-hidden">
+    <>
+      <main className="relative pt-24 pb-20 overflow-hidden">
       
       {/* Reading Progress Bar */}
       <motion.div
@@ -270,5 +272,6 @@ function NewsPostPage() {
 
       <ContactSection pageTitle={`Notícia: ${post.title}`} />
     </main>
+    </>
   )
 }
