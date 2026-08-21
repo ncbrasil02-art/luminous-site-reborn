@@ -1,6 +1,6 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Code2, Gavel, LayoutDashboard, ShoppingCart, Users, ChevronRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Code2, Gavel, LayoutDashboard, ShoppingCart, Users, ChevronRight, Sparkles } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
@@ -8,35 +8,36 @@ import { cn } from "@/lib/utils";
 const systems = [
   {
     icon: Gavel,
-    title: "Plataforma de Leilão Online",
-    description: "O melhor sistema para leiloeiro completo com pregão eletrônico, transmissão ao vivo e gestão de lotes.",
+    title: "Sistema de Leilão Premium",
+    description: "Referência nacional em tecnologia de leilões. Pregão eletrônico ultraveloz, auditagem completa e lances em tempo real com latência zero.",
     to: "/sistema-de-leilao",
     image: "/img-sistema-de-leilao/home-premium.png",
-    features: ["Lances em Tempo Real", "Gestão de Lotes", "Auditagem"]
+    features: ["Transmissão ao Vivo", "Pregão Eletrônico", "Gestão de Arrematantes"],
+    isPremium: true
   },
   {
     icon: ShoppingCart,
-    title: "Marketplaces",
-    description: "Soluções complexas para múltiplos vendedores com split de pagamentos automático.",
-    to: "/portfolio/lojas-virtuais-criadas",
-    image: "/img-sistema-de-leilao/vitrine.png",
-    features: ["Split de Pagamentos", "Painel Seller", "Logística"]
-  },
-  {
-    icon: Users,
-    title: "Compra Coletiva",
-    description: "Plataformas de ofertas com gatilhos de escassez e gestão de cupons via QR Code.",
-    to: "/portfolio/sistema-de-compra-coletiva",
-    image: "/img-sistema-de-leilao/cards.png",
-    features: ["Controle de Cupons", "Validação App", "Escalabilidade"]
+    title: "Script de Rifas Profissional",
+    description: "A plataforma de sorteios mais completa do Brasil. Totalmente automatizada com split de pagamentos e visual cinematográfico.",
+    to: "/sistema-de-rifas",
+    image: "/img-sistema-de-rifas/Fachada Profissional.png",
+    features: ["Pagamentos Automáticos", "Ranking de Compradores", "Reserva de Bilhetes"]
   },
   {
     icon: LayoutDashboard,
-    title: "Sistemas Sob Demanda",
-    description: "Engenharia de software personalizada para resolver desafios exclusivos do seu negócio.",
-    to: "/nossos-sistemas",
+    title: "Marketplace de Veículos",
+    description: "Plataforma robusta para revenda de autos. Filtros inteligentes, integração com estoque e alta conversão de leads.",
+    to: "/classificados-de-veiculos",
     image: "/img-sistema-de-leilao/dashboard-detalhe.png",
-    features: ["Arquitetura Custom", "Integração API", "Cloud Native"]
+    features: ["Busca Avançada", "Painel Lojista", "SEO Nativo"]
+  },
+  {
+    icon: Users,
+    title: "Leilão Rural & Agro",
+    description: "Tecnologia especializada para o agronegócio. Gestão de genealogia, vídeos de lotes e suporte a grandes eventos rurais.",
+    to: "/leilao-rural",
+    image: "/img-sistema-de-leilao/cards.png",
+    features: ["Catálogo Rural", "Lotes de Animais", "App Agro"]
   }
 ];
 
@@ -70,8 +71,23 @@ export function SystemsCarousel() {
             <div key={system.title} className="min-w-0 flex-[0_0_100%] pl-4 sm:flex-[0_0_50%] lg:flex-[0_0_33.333%]">
               <motion.div 
                 whileHover={{ y: -12 }}
-                className="group relative h-[520px] overflow-hidden rounded-[3rem] border border-white/5 bg-navy-900/30 backdrop-blur-xl transition-all duration-500 hover:border-primary/40 hover:glow-md hover:bg-navy-900/50"
+                className={cn(
+                  "group relative h-[560px] overflow-hidden rounded-[3rem] border transition-all duration-500 backdrop-blur-xl",
+                  system.isPremium 
+                    ? "border-primary/50 bg-navy-900/40 glow-md ring-1 ring-primary/20" 
+                    : "border-white/5 bg-navy-900/30 hover:border-primary/40 hover:glow-md hover:bg-navy-900/50"
+                )}
               >
+                {/* Premium Badge */}
+                {system.isPremium && (
+                  <div className="absolute left-10 top-10 z-20">
+                    <span className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/20 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary-glow backdrop-blur-md animate-pulse">
+                      <Sparkles className="h-3 w-3" />
+                      Especialidade NcBrasil
+                    </span>
+                  </div>
+                )}
+
                 {/* Background Image with Cinematic Overlay */}
                 <div className="absolute inset-0">
                   <img 
@@ -79,30 +95,35 @@ export function SystemsCarousel() {
                     alt={system.title} 
                     loading="lazy"
                     decoding="async"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="h-full w-full object-cover opacity-20 transition-transform duration-1000 group-hover:scale-110 group-hover:opacity-40"
+                    className={cn(
+                      "h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110",
+                      system.isPremium ? "opacity-40" : "opacity-20 group-hover:opacity-40"
+                    )}
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = "/logo.jpg";
                     }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/60 to-transparent" />
                 </div>
 
 
-                <div className="relative flex h-full flex-col p-10">
-                  <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-surface-elevated text-primary-glow ring-1 ring-white/10 backdrop-blur transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:glow-sm">
+                <div className="relative flex h-full flex-col p-10 pt-24">
+                  <div className={cn(
+                    "mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl ring-1 ring-white/10 backdrop-blur transition-all duration-500 group-hover:scale-110 group-hover:glow-sm",
+                    system.isPremium ? "bg-primary text-white shadow-glow-sm" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
+                  )}>
                     <system.icon className="h-8 w-8" />
                   </div>
 
-                  <h3 className="font-display text-2xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{system.title}</h3>
+                  <h3 className="font-display text-3xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{system.title}</h3>
                   <p className="mt-4 text-sm leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors line-clamp-3">
                     {system.description}
                   </p>
 
                   <div className="mt-8 space-y-3">
                     {system.features.map((feature) => (
-                      <div key={feature} className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-primary-glow/60">
-                        <div className="h-1 w-1 rounded-full bg-primary-glow" />
+                      <div key={feature} className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.2em] text-primary-glow/80">
+                        <div className="h-1 w-1 rounded-full bg-primary-glow shadow-[0_0_8px_rgba(49,91,255,0.8)]" />
                         {feature}
                       </div>
                     ))}
@@ -111,7 +132,12 @@ export function SystemsCarousel() {
                   <div className="mt-auto pt-8">
                     <Link
                       to={system.to}
-                      className="group/btn relative flex w-full items-center justify-between overflow-hidden rounded-2xl bg-white/5 px-6 py-4 text-sm font-bold uppercase tracking-widest text-white transition-all hover:bg-primary hover:glow-sm"
+                      className={cn(
+                        "group/btn relative flex w-full items-center justify-between overflow-hidden rounded-2xl px-6 py-4 text-sm font-bold uppercase tracking-widest transition-all",
+                        system.isPremium 
+                          ? "bg-primary text-white glow-sm hover:scale-[1.02]" 
+                          : "bg-white/5 text-white hover:bg-primary hover:glow-sm"
+                      )}
                     >
                       <span className="relative z-10">Explorar Solução</span>
                       <ChevronRight className="relative z-10 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
