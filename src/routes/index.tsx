@@ -456,7 +456,7 @@ function HomePage() {
                 Da Concepção à <span className="text-gradient">Soberania Digital</span>
               </>
             }
-            description="Cada etapa é uma cena meticulosamente planejada para garantir que seu projeto seja memorável e altamente lucrativo."
+            description="Cada etapa é meticulosamente planejada para garantir que seu projeto seja memorável e altamente lucrativo."
           />
 
 
