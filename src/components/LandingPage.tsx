@@ -352,7 +352,7 @@ export function LandingPage({
           <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:px-8 md:grid-cols-2">
             {problem && (
               <Reveal>
-                <div className="h-full rounded-none border border-destructive/30 bg-destructive/5 p-8 backdrop-blur">>
+                <div className="h-full rounded-none border border-destructive/30 bg-destructive/5 p-8 backdrop-blur">
                   <span className="inline-flex items-center gap-2 rounded-none bg-destructive/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-destructive">
                     <X className="h-3.5 w-3.5" /> O problema
                   </span>
