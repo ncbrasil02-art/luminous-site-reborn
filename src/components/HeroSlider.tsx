@@ -28,7 +28,7 @@ const slides = [
   },
   {
     id: "leilao",
-    eyebrow: "Tecnologia Flagship",
+    eyebrow: "Sistema Personalizado",
     icon: Gavel,
     title: "Seu Sistema de Leilões Online Homologado.",
     highlight: "Homologado.",
