@@ -151,13 +151,13 @@ export const Route = createFileRoute("/sistema-de-rifas")({
       modules={[
         {
           icon: Ticket,
-          title: "Módulo Rifas",
+          title: "Módulo Virais",
           items: [
-            "Criação ilimitada de campanhas",
-            "Cotas premiadas instantâneas",
-            "Sorteio Loteria Federal automatizado",
-            "Regulamento gerado automaticamente",
-            "Galeria de fotos e vídeos do prêmio",
+            "Hora Premiada com sorteios relâmpago",
+            "Roletas Interativas de bônus",
+            "Raspadinhas Digitais instantâneas",
+            "Cotas Premiadas automatizadas",
+            "Sorteio Loteria Federal integrado",
           ],
         },
         {
