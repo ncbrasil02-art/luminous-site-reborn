@@ -42,7 +42,8 @@ export function RocketLanding() {
           scale,
           opacity,
           rotate,
-          filter: "drop-shadow(0 0 20px rgba(49, 91, 255, 0.5))"
+          // Otimização: Filtro leve em vez de drop-shadow
+          filter: "brightness(1.1)"
         }}
         className="relative w-48 h-48 flex items-center justify-center"
       >
