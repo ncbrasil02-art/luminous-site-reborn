@@ -115,7 +115,7 @@ export function SiteHeader() {
         scrolled ? "glass border-b border-border/60 py-2" : "bg-transparent py-4",
       )}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 md:px-6">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="group flex items-center gap-2 relative z-50">
           <picture>
             <source srcSet="/logo.webp" type="image/webp" />
@@ -264,7 +264,7 @@ export function SiteHeader() {
             exit={{ opacity: 0, y: -20 }}
             className="fixed inset-0 top-[68px] z-40 bg-background/95 backdrop-blur-xl lg:hidden overflow-y-auto"
           >
-            <nav className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-8">
+            <nav className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-8 sm:px-6">
               {navItems.map((item) => (
                 "submenu" in item ? (
                   <div key={item.label} className="flex flex-col">

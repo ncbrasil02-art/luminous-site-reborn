@@ -20,7 +20,7 @@ export function MagazineSection() {
         <div className="absolute bottom-0 left-0 h-[600px] w-[600px] bg-primary/5 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/2" />
       </div>
 
-      <div className="mx-auto max-w-7xl px-4 md:px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-end justify-between gap-6 mb-16">
           <div className="max-w-2xl text-left">
             <motion.span 
@@ -103,7 +103,7 @@ export function MagazineSection() {
                 <Link 
                   to="/noticias/$slug"
                   params={{ slug: news.slug || "" }}
-                  className="group grid grid-cols-3 gap-6 items-center"
+                  className="group grid grid-cols-1 sm:grid-cols-3 gap-6 items-center"
                 >
                   <div className="col-span-1 aspect-square overflow-hidden rounded-2xl bg-surface border border-border group-hover:border-primary/50 transition-colors">
                     <img 

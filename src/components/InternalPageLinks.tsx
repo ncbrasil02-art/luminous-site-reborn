@@ -46,7 +46,7 @@ export function InternalPageLinks({ currentPath }: { currentPath: string }) {
 
   return (
     <section className="relative py-20 overflow-hidden bg-navy-950/20">
-      <div className="mx-auto max-w-7xl px-4 md:px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>

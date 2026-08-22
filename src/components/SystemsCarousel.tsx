@@ -67,13 +67,13 @@ const systems = [
 export function SystemsCarousel() {
   return (
     <div className="relative">
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {systems.map((system, index) => (
           <Reveal key={system.title} delay={index * 0.1}>
             <motion.div 
               whileHover={{ y: -12 }}
               className={cn(
-                "group relative h-[600px] overflow-hidden rounded-[3rem] border transition-all duration-500 backdrop-blur-xl",
+                "group relative h-[500px] sm:h-[600px] overflow-hidden rounded-[2.5rem] sm:rounded-[3rem] border transition-all duration-500 backdrop-blur-xl",
                 system.isPremium 
                   ? "border-primary/50 bg-navy-900/40 glow-md ring-1 ring-primary/20" 
                   : "border-white/5 bg-navy-900/30 hover:border-primary/40 hover:glow-md hover:bg-navy-900/50"
@@ -108,7 +108,7 @@ export function SystemsCarousel() {
               </div>
 
 
-              <div className="relative flex h-full flex-col p-10 pt-24">
+              <div className="relative flex h-full flex-col p-6 sm:p-10 pt-20 sm:pt-24">
                 <div className={cn(
                   "mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl ring-1 ring-white/10 backdrop-blur transition-all duration-500 group-hover:scale-110 group-hover:glow-sm",
                   system.isPremium ? "bg-primary text-white shadow-glow-sm" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
@@ -116,7 +116,7 @@ export function SystemsCarousel() {
                   <system.icon className="h-8 w-8" />
                 </div>
 
-                <h3 className="font-display text-4xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{system.title}</h3>
+                <h3 className="font-display text-2xl sm:text-4xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{system.title}</h3>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors line-clamp-3">
                   {system.description}
                 </p>

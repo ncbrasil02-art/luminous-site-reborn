@@ -39,7 +39,7 @@ export function TestimonialsSection() {
   return (
     <section className="relative overflow-hidden py-24 md:py-32">
       <div className="absolute inset-0 -z-10 bg-mesh opacity-30" aria-hidden="true" />
-      <div className="mx-auto max-w-7xl px-4 md:px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <SectionHeading
             eyebrow="Prova Social"

@@ -59,7 +59,7 @@ function ContatoPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />
-        <div className="mx-auto max-w-7xl px-4 pt-20 pb-12 text-center md:px-6 md:pt-28">
+        <div className="mx-auto max-w-7xl px-4 pt-20 pb-12 text-center sm:px-6 lg:px-8 md:pt-28">
           <Reveal>
             <nav aria-label="Breadcrumb" className="mb-8 flex justify-center">
               <ol className="flex flex-wrap items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground list-none p-0 m-0">
@@ -89,7 +89,7 @@ function ContatoPage() {
 
       {/* GRID FORM + INFO */}
       <section className="pb-24">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 md:px-6 lg:grid-cols-5">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:px-8 lg:grid-cols-5">
           {/* FORM */}
           <Reveal className="lg:col-span-3">
             <form
@@ -180,7 +180,7 @@ function ContatoPage() {
 
       {/* ENDEREÇOS */}
       <section className="border-t border-border bg-surface py-20 md:py-24">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Nossos escritórios"
             title={
