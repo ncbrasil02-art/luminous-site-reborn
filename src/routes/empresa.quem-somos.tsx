@@ -15,11 +15,11 @@ const lpFaq = [
 
 export const Route = createFileRoute("/empresa/quem-somos")({
   head: () => buildLPMeta({
-    title: "Quem Somos | NC Brasil — 20 Anos de Tecnologia e Marketing Digital",
-    description: "Conheça a NC Brasil: agência de tecnologia e marketing digital com 20 anos de mercado, +1500 projetos entregues e time multidisciplinar.",
-    keywords: "nc brasil, quem somos nc brasil, agência de tecnologia, empresa desenvolvimento software, sobre a nc brasil",
+    title: "NcBrasil - Sistemas de Leilões e Plataformas de Leilão Online",
+    description: "NcBrasil: Especialistas em sistemas de leilões e plataformas de leilão online homologadas. Tecnologia avançada para o seu negócio digital.",
+    keywords: "sistemas de leilões, plataforma de leilão online, leilão eletrônico, sistema de rifas, criação de sites, sistemas web, NC Brasil",
     canonical: URL,
-    h1: "Quem Somos — NC Brasil",
+    h1: "NcBrasil - Sistemas de Leilões e Plataformas de Leilão Online",
     breadcrumbs: [
       { label: "Home", to: `${SITE_URL}/` },
       { label: "Empresa", to: `${SITE_URL}/empresa` },
