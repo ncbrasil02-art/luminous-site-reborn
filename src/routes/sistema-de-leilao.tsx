@@ -31,7 +31,7 @@ const lpFaq = [
 
 export const Route = createFileRoute("/sistema-de-leilao")({
   head: () => buildLPMeta({
-    title: "Seu Sistema de Leilões Online Homologado | Plataforma NC Brasil",
+    title: "Seu Sistema de Leilões e Plataforma de Leilão Online Homologada",
     description: "NcBrasil: Plataforma de leilão online completa com pregão eletrônico, transmissão HD e split de comissões. O melhor sistema para leiloeiro oficial e judicial.",
     keywords: "sistema de leilão, plataforma de leilões, sistema para leiloeiro, plataforma de pregões online, sas leilão, site de leilão, sistema de leilão online, plataforma de leilão online, sistema online para leiloeiro",
     canonical: "https://www.ncbrasil.com.br/sistema-de-leilao",
