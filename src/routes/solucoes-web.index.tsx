@@ -140,8 +140,8 @@ function SolucoesWebPage() {
             ].map((item, i) => (
               <Reveal key={item.title} delay={i * 0.05}>
                 <Link to={item.to} className="group block h-full">
-                  <div className="h-full rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-sm">
-                    <div className="mb-6 inline-flex rounded-xl bg-primary/10 p-3 text-primary ring-1 ring-primary/20">
+                  <div className="h-full rounded-none border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-sm">
+                    <div className="mb-6 inline-flex rounded-none bg-primary/10 p-3 text-primary ring-1 ring-primary/20">
                       <item.icon className="h-6 w-6" />
                     </div>
                     <h3 className="font-display text-xl font-bold">{item.title}</h3>
@@ -197,7 +197,7 @@ function SolucoesWebPage() {
               }
             ].map((item, i) => (
               <Reveal key={item.title} delay={i * 0.1}>
-                <Card className="border-border bg-card/50 overflow-hidden group hover:border-primary/30 transition-colors">
+                <Card className="border-border bg-card/50 overflow-hidden group hover:border-primary/30 transition-colors rounded-none">
                   <CardContent className="p-0 flex flex-col sm:flex-row h-full">
                     <div className="p-8 flex-1">
                       <div className="flex items-center gap-3 mb-4">
@@ -271,7 +271,7 @@ function SolucoesWebPage() {
             <Reveal delay={0.2}>
               <div className="relative">
                 <div className="absolute -inset-4 rounded-3xl bg-gradient-primary opacity-20 blur-2xl" />
-                <div className="relative rounded-2xl border border-border bg-background p-8 shadow-2xl">
+                <div className="relative rounded-none border border-border bg-background p-8 shadow-2xl">
                   <div className="flex items-center gap-4 mb-8 pb-8 border-b border-border">
                     <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
                       <MessageSquare className="h-6 w-6 text-primary" />
@@ -333,7 +333,7 @@ function SolucoesWebPage() {
                   a: "Sim. Ao final do projeto e quitação dos valores, a propriedade intelectual e o código-fonte pertencem ao cliente. Não prendemos nossos clientes com licenças de uso proprietárias."
                 }
               ].map((faq, i) => (
-                <AccordionItem key={i} value={`item-${i}`} className="border rounded-2xl border-border bg-card px-6">
+                <AccordionItem key={i} value={`item-${i}`} className="border rounded-none border-border bg-card px-6">
                   <AccordionTrigger className="hover:no-underline text-left font-bold py-6">
                     <div className="flex items-center gap-3">
                       <HelpCircle className="h-5 w-5 text-primary flex-shrink-0" />
