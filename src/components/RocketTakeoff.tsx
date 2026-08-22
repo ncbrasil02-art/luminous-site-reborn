@@ -31,9 +31,11 @@ export function RocketTakeoff() {
       >
         <img 
           src={rocketAsset.url} 
-          alt="Foguete 3D Decolando" 
-          className="w-full h-full object-contain"
-          loading="lazy"
+          alt="" 
+          className="w-full h-full object-contain will-change-transform"
+          loading="eager"
+          width="384"
+          height="384"
         />
         
         {/* Deep Exhaust Flame Effect */}
