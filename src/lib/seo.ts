@@ -171,9 +171,9 @@ export function buildMeta(options: MetaOptions) {
   }
 
   const links: any[] = [
-    { rel: "icon", type: "image/png", href: "/favicon.png" },
-    { rel: "shortcut icon", href: "/favicon.png" },
-    { rel: "apple-touch-icon", href: "/favicon.png" },
+    { rel: "icon", type: "image/png", href: "https://www.ncbrasil.com.br/favicon.png" },
+    { rel: "shortcut icon", href: "https://www.ncbrasil.com.br/favicon.png" },
+    { rel: "apple-touch-icon", href: "https://www.ncbrasil.com.br/favicon.png" },
   ];
 
   if (absoluteCanonical) {
