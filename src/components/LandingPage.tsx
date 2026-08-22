@@ -810,7 +810,7 @@ export function LandingPage({
             <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {gallery.map((g, i) => (
                 <Reveal key={g.src} delay={i * 0.05}>
-                  <figure className="group overflow-hidden rounded-none border border-border bg-card/60 backdrop-blur">>
+                  <figure className="group overflow-hidden rounded-none border border-border bg-card/60 backdrop-blur">
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img
                         src={g.src}
