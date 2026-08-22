@@ -76,8 +76,8 @@ export function StubPage({ title, eyebrow, description, icon: Icon = Rocket, bre
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <Reveal>
             <div className="relative">
-              <div className="absolute -top-20 -left-20 w-64 h-64 bg-primary/20 rounded-full blur-[100px]" />
-              <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary mb-8">
+              <div className="absolute -top-20 -left-20 w-64 h-64 bg-primary/20 rounded-none blur-[100px]" />
+              <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-none bg-primary/10 border border-primary/20 text-primary mb-8">
                 <Icon className="w-4 h-4" />
                 <span className="text-sm font-medium tracking-wide uppercase">{eyebrow}</span>
               </div>
@@ -90,14 +90,14 @@ export function StubPage({ title, eyebrow, description, icon: Icon = Rocket, bre
               <div className="flex flex-wrap gap-6">
                 <Link
                   to="/orcamento"
-                  className="px-8 py-4 rounded-full bg-primary text-white font-semibold hover:bg-primary/90 transition-all transform hover:scale-105 flex items-center space-x-2"
+                  className="px-8 py-4 rounded-none bg-primary text-white font-semibold hover:bg-primary/90 transition-all transform hover:scale-105 flex items-center space-x-2"
                 >
                   <span>Solicitar Orçamento</span>
                   <ArrowRight className="w-5 h-5" />
                 </Link>
                 <Link
                   to="/contato"
-                  className="px-8 py-4 rounded-full bg-white/5 border border-white/10 text-white font-semibold hover:bg-white/10 transition-all flex items-center space-x-2"
+                  className="px-8 py-4 rounded-none bg-white/5 border border-white/10 text-white font-semibold hover:bg-white/10 transition-all flex items-center space-x-2"
                 >
                   Falar com Especialista
                 </Link>
@@ -112,7 +112,7 @@ export function StubPage({ title, eyebrow, description, icon: Icon = Rocket, bre
                   <Link
                     key={i}
                     to={item.to}
-                    className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-all flex items-center justify-between group"
+                    className="p-6 rounded-none bg-white/5 border border-white/10 hover:border-primary/50 transition-all flex items-center justify-between group"
                   >
                     <div>
                       <h3 className="font-semibold text-white group-hover:text-primary transition-colors">{item.label}</h3>
@@ -124,8 +124,8 @@ export function StubPage({ title, eyebrow, description, icon: Icon = Rocket, bre
               </div>
             ) : (
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-[3rem] blur-3xl opacity-50 group-hover:opacity-100 transition-opacity" />
-                <div className="relative bg-white/5 border border-white/10 rounded-[3rem] p-12 backdrop-blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-blue-500/20 rounded-none blur-3xl opacity-50 group-hover:opacity-100 transition-opacity" />
+                <div className="relative bg-white/5 border border-white/10 rounded-none p-12 backdrop-blur-sm">
                   <div className="grid grid-cols-2 gap-8">
                     {[
                       { icon: Shield, title: "Segurança", desc: "Protocolos avançados" },
@@ -133,7 +133,7 @@ export function StubPage({ title, eyebrow, description, icon: Icon = Rocket, bre
                       { icon: Globe, title: "Escalável", desc: "Cresça sem limites" },
                       { icon: Users, title: "Suporte", desc: "24/7 Dedicado" },
                     ].map((item, i) => (
-                      <div key={i} className="p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-primary/50 transition-colors">
+                      <div key={i} className="p-6 rounded-none bg-white/5 border border-white/10 hover:border-primary/50 transition-colors">
                         <item.icon className="w-8 h-8 text-primary mb-4" />
                         <h3 className="font-semibold text-white mb-2">{item.title}</h3>
                         <p className="text-sm text-gray-400">{item.desc}</p>
@@ -141,11 +141,11 @@ export function StubPage({ title, eyebrow, description, icon: Icon = Rocket, bre
                     ))}
                   </div>
                   
-                  <div className="mt-8 p-6 rounded-2xl bg-primary/10 border border-primary/20">
+                  <div className="mt-8 p-6 rounded-none bg-primary/10 border border-primary/20">
                     <div className="flex items-center space-x-4 mb-4">
                       <div className="flex -space-x-2">
                         {[1,2,3].map(i => (
-                          <div key={i} className="w-8 h-8 rounded-full border-2 border-[#0B0F1A] bg-gray-700" />
+                          <div key={i} className="w-8 h-8 rounded-none border-2 border-[#0B0F1A] bg-gray-700" />
                         ))}
                       </div>
                       <div className="text-sm">
