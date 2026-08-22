@@ -293,16 +293,7 @@ function HomePage() {
             {solutions.map((s, i) => (
               <Reveal key={s.title} delay={i * 0.1}>
                 <div className="relative group">
-                  {/* Persona effect: behind the first card ("Desenvolvimento de Sites") */}
-                  {i === 0 && (
-                    <div className="absolute -top-16 -left-8 w-48 h-48 opacity-10 grayscale group-hover:grayscale-0 group-hover:opacity-30 transition-all duration-700 pointer-events-none -z-10">
-                      <img 
-                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" 
-                        alt="Expert Developer"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  )}
+
 
                   <Link
                     to={s.to}
