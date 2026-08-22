@@ -140,7 +140,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
       features={[
         { icon: ShoppingBag, title: "Hora Premiada & Cotas", desc: "De **100 a 10 milhões de cotas** por rifa, com módulos de **Hora Premiada** e cotas premiadas instantâneas automáticas." },
         { icon: Wallet, title: "Múltiplos Meios de Pagamento", desc: "**Pix, cartão em até 12x, boleto** e crédito de cotas anteriores. Split automático entre organizador e afiliados." },
-        { icon: Gift, title: "Combos & Desconto Progressivo", desc: "**Leve 10 pague 8, leve 50 pague 30** — sistema de combos dinâmicos com cotas bônus grátis." },
+        { icon: Gift, title: "Roletas & Raspadinhas", desc: "**Roletas Interativas e Raspadinhas Digitais** para engajamento imediato e gamificação da sua plataforma." },
         { icon: Users, title: "Ranking de Compradores", desc: "**Top compradores** com prêmio extra automático e ranking em tempo real na página da rifa." },
         { icon: Smartphone, title: "App do Participante", desc: "**iOS + Android nativo** com sua marca, notificação push do sorteio, minhas cotas e histórico." },
         { icon: BarChart3, title: "Dashboard do Organizador", desc: "**Vendas em tempo real, conciliação bancária, curva de arrecadação** e saque automático." },
