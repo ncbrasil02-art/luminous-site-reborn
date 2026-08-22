@@ -113,7 +113,6 @@ export function SystemsCarousel() {
                     "h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110",
                     system.isPremium ? "opacity-25 grayscale-[20%]" : "opacity-10 grayscale-[40%] group-hover:opacity-20 group-hover:grayscale-0"
                   )}
-                  decoding="async"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = "/logo.jpg";
                   }}

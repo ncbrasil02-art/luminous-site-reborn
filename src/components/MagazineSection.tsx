@@ -113,6 +113,8 @@ export function MagazineSection() {
                       decoding="async"
                       sizes="(max-width: 768px) 30vw, 15vw"
                       className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                      loading="lazy"
+                      decoding="async"
                       onError={(e) => {
                         (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
                       }}
