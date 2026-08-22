@@ -5,7 +5,7 @@ import { useEffect, useMemo } from "react";
 import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { newsData } from "@/lib/news.data";
+import { resolveLegacyPath } from "@/lib/redirects";
 import { WhatsappFab } from "@/components/WhatsappFab";
 import { initAnalytics, trackPageView, trackNotFound } from "@/lib/analytics";
 
@@ -72,49 +72,22 @@ const websiteJsonLd = {
 
 function NotFoundComponent() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const target = resolveLegacyPath(pathname);
 
   useEffect(() => {
     trackNotFound(pathname);
-    
-    // Auto-redirect logic for legacy nested URLs
-    const parts = pathname.split('/').filter(Boolean);
-    if (parts.length >= 2) {
-      const slug = parts[parts.length - 1].replace(/\/$/, ""); // remove trailing slash
-      const firstPart = parts[0];
-      
-      // 1. Try to find if the last part is a news slug
-      const newsPost = newsData.find(p => p.slug === slug);
-      if (newsPost) {
-        window.location.replace(`/noticias/${newsPost.slug}`);
-        return;
-      }
-
-      // 2. Specialized redirects for services/portfolio
-      if (pathname.includes('/criar-sites/criacao-de-aplicativos')) {
-        window.location.replace('/servicos/aplicativos');
-        return;
-      }
-
-      // 3. Handle news categories/tags if the first part is a known base
-      // Old bases might have been 'category', 'tag', 'criar-sites', etc.
-      const isKnownCategory = newsData.some(p => p.categories.some(c => c.toLowerCase().replace(/\s+/g, '-') === firstPart));
-      if (isKnownCategory || firstPart === 'biblia' || firstPart === 'artigos') {
-        window.location.replace(`/noticias/categoria/${firstPart}`);
-        return;
-      }
-
-      // 4. Try to redirect to the last segment as a flat URL
-      // Only redirect if it's a known flat route segment to avoid loops
-      const knownFlatRoutes = [
-        'sistema-de-leilao', 'sistema-de-rifas', 'nossos-sistemas', 
-        'nossos-servicos', 'trabalhos-realizados', 'orcamento', 'contato'
-      ];
-      if (knownFlatRoutes.includes(slug)) {
-        window.location.replace(`/${slug}`);
-        return;
-      }
+    if (target && target !== pathname) {
+      window.location.replace(target);
     }
-  }, [pathname]);
+  }, [pathname, target]);
+
+  if (target && target !== pathname) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-background bg-mesh px-4">
+        <p className="text-sm text-muted-foreground">Redirecionando…</p>
+      </div>
+    );
+  }
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background bg-mesh px-4">
@@ -124,18 +97,25 @@ function NotFoundComponent() {
         <p className="mt-2 text-sm text-muted-foreground">
           O endereço que você procurou não existe ou foi movido.
         </p>
-        <div className="mt-6">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <Link
             to="/"
             className="inline-flex items-center justify-center rounded-full bg-gradient-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground glow-sm hover:scale-105 transition-transform"
           >
             Voltar para a Home
           </Link>
+          <Link
+            to="/nossos-sistemas"
+            className="inline-flex items-center justify-center rounded-full border border-white/10 px-5 py-2.5 text-sm font-semibold hover:border-primary/50 transition-colors"
+          >
+            Ver sistemas
+          </Link>
         </div>
       </div>
     </div>
   );
 }
+
 
 export const Route = createRootRoute({
   head: () => ({
