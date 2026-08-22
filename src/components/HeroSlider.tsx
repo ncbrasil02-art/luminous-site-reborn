@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, Gavel, ShoppingCart, Rocket, Sparkles, ChevronLeft, ChevronRight, Globe, Database, ShieldCheck } from "lucide-react";
+import { ArrowRight, Gavel, ShoppingCart, Rocket, Sparkles, ChevronLeft, ChevronRight, Globe, Database, ShieldCheck, Car, Tractor } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { trackClick } from "@/lib/analytics";
@@ -53,6 +53,30 @@ const slides = [
     cta1: "Explorar iGaming",
     cta2: "Documentação Técnica",
     color: "primary-glow",
+  },
+  {
+    id: "veiculos",
+    eyebrow: "Eficiência Automotiva",
+    icon: Car,
+    title: "Sistema de Classificados de Veículos Profissional.",
+    highlight: "Profissional.",
+    description: "Lance seu **Portal de Anúncios** com tecnologia estilo WebMotors. Tabela FIPE integrada, simulador de financiamento e gestão completa de estoque para revendas.",
+    to: "/classificados-de-veiculos",
+    cta1: "Ver Classificados",
+    cta2: "Solicitar Orçamento",
+    color: "primary",
+  },
+  {
+    id: "rural",
+    eyebrow: "Agronegócio Digital",
+    icon: Tractor,
+    title: "Sistema de Leilão Rural e Animais de Elite.",
+    highlight: "Animais de Elite.",
+    description: "A tecnologia definitiva para o **Campo**. Transmissão HD, emissão de GTA automática, pesagem integrada e gestão de genética para bovinos e equinos.",
+    to: "/sistema-de-leilao-rural",
+    cta1: "Explorar Agro",
+    cta2: "Falar com Especialista",
+    color: "secondary",
   }
 ];
 
