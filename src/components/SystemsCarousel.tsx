@@ -155,7 +155,7 @@ export function SystemsCarousel() {
                         : "bg-white/5 text-white hover:bg-primary hover:glow-sm"
                     )}
                   >
-                    <span className="relative z-10">Explorar Solução</span>
+                    <span className="relative z-10">Ver Sistema</span>
                     <ChevronRight className="relative z-10 h-5 w-5 transition-transform group-hover/btn:translate-x-1" />
                   </Link>
                 </div>
