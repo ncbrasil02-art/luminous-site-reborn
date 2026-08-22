@@ -92,19 +92,23 @@ export function HeroSlider() {
     <section className="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center overflow-hidden bg-[#0A1428]">
       {/* Background Decorations matching the screenshot concept */}
       <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-hero-glow opacity-30" />
+        
+        {/* Blue Fade effect for the background */}
         <AnimatePresence mode="wait">
           <motion.div
             key={`bg-${slide.id}`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.15 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-            className="absolute inset-0 bg-gradient-hero"
+            transition={{ duration: 1.5 }}
+            className="absolute inset-0 bg-gradient-to-b from-[#315BFF]/10 via-transparent to-transparent"
           />
         </AnimatePresence>
         
         {/* Subtle Glows */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-primary/10 rounded-full blur-[160px] animate-glow-pulse" />
+
         
         {/* Floating Icons as seen in the reference */}
         <motion.div 
