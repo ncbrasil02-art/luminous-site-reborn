@@ -21,6 +21,7 @@ import { Route as SistemaDeLeilaoRuralRouteImport } from './routes/sistema-de-le
 import { Route as SistemaDeLeilaoDeCentavosRouteImport } from './routes/sistema-de-leilao-de-centavos'
 import { Route as SistemaDeLeilaoRouteImport } from './routes/sistema-de-leilao'
 import { Route as SistemaDeCupomDescontosRouteImport } from './routes/sistema-de-cupom-descontos'
+import { Route as RedirectRouteImport } from './routes/redirect'
 import { Route as ProgramaDeOrdemDeServicoRouteImport } from './routes/programa-de-ordem-de-servico'
 import { Route as PlataformaChinesaApostasCassinoRouteImport } from './routes/plataforma-chinesa-apostas-cassino'
 import { Route as OrcamentoRouteImport } from './routes/orcamento'
@@ -135,6 +136,11 @@ const SistemaDeLeilaoRoute = SistemaDeLeilaoRouteImport.update({
 const SistemaDeCupomDescontosRoute = SistemaDeCupomDescontosRouteImport.update({
   id: '/sistema-de-cupom-descontos',
   path: '/sistema-de-cupom-descontos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RedirectRoute = RedirectRouteImport.update({
+  id: '/redirect',
+  path: '/redirect',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProgramaDeOrdemDeServicoRoute =
@@ -423,6 +429,7 @@ export interface FileRoutesByFullPath {
   '/orcamento': typeof OrcamentoRoute
   '/plataforma-chinesa-apostas-cassino': typeof PlataformaChinesaApostasCassinoRoute
   '/programa-de-ordem-de-servico': typeof ProgramaDeOrdemDeServicoRoute
+  '/redirect': typeof RedirectRoute
   '/sistema-de-cupom-descontos': typeof SistemaDeCupomDescontosRoute
   '/sistema-de-leilao': typeof SistemaDeLeilaoRoute
   '/sistema-de-leilao-de-centavos': typeof SistemaDeLeilaoDeCentavosRoute
@@ -487,6 +494,7 @@ export interface FileRoutesByTo {
   '/orcamento': typeof OrcamentoRoute
   '/plataforma-chinesa-apostas-cassino': typeof PlataformaChinesaApostasCassinoRoute
   '/programa-de-ordem-de-servico': typeof ProgramaDeOrdemDeServicoRoute
+  '/redirect': typeof RedirectRoute
   '/sistema-de-cupom-descontos': typeof SistemaDeCupomDescontosRoute
   '/sistema-de-leilao': typeof SistemaDeLeilaoRoute
   '/sistema-de-leilao-de-centavos': typeof SistemaDeLeilaoDeCentavosRoute
@@ -552,6 +560,7 @@ export interface FileRoutesById {
   '/orcamento': typeof OrcamentoRoute
   '/plataforma-chinesa-apostas-cassino': typeof PlataformaChinesaApostasCassinoRoute
   '/programa-de-ordem-de-servico': typeof ProgramaDeOrdemDeServicoRoute
+  '/redirect': typeof RedirectRoute
   '/sistema-de-cupom-descontos': typeof SistemaDeCupomDescontosRoute
   '/sistema-de-leilao': typeof SistemaDeLeilaoRoute
   '/sistema-de-leilao-de-centavos': typeof SistemaDeLeilaoDeCentavosRoute
@@ -619,6 +628,7 @@ export interface FileRouteTypes {
     | '/orcamento'
     | '/plataforma-chinesa-apostas-cassino'
     | '/programa-de-ordem-de-servico'
+    | '/redirect'
     | '/sistema-de-cupom-descontos'
     | '/sistema-de-leilao'
     | '/sistema-de-leilao-de-centavos'
@@ -683,6 +693,7 @@ export interface FileRouteTypes {
     | '/orcamento'
     | '/plataforma-chinesa-apostas-cassino'
     | '/programa-de-ordem-de-servico'
+    | '/redirect'
     | '/sistema-de-cupom-descontos'
     | '/sistema-de-leilao'
     | '/sistema-de-leilao-de-centavos'
@@ -747,6 +758,7 @@ export interface FileRouteTypes {
     | '/orcamento'
     | '/plataforma-chinesa-apostas-cassino'
     | '/programa-de-ordem-de-servico'
+    | '/redirect'
     | '/sistema-de-cupom-descontos'
     | '/sistema-de-leilao'
     | '/sistema-de-leilao-de-centavos'
@@ -813,6 +825,7 @@ export interface RootRouteChildren {
   OrcamentoRoute: typeof OrcamentoRoute
   PlataformaChinesaApostasCassinoRoute: typeof PlataformaChinesaApostasCassinoRoute
   ProgramaDeOrdemDeServicoRoute: typeof ProgramaDeOrdemDeServicoRoute
+  RedirectRoute: typeof RedirectRoute
   SistemaDeCupomDescontosRoute: typeof SistemaDeCupomDescontosRoute
   SistemaDeLeilaoRoute: typeof SistemaDeLeilaoRoute
   SistemaDeLeilaoDeCentavosRoute: typeof SistemaDeLeilaoDeCentavosRoute
@@ -934,6 +947,13 @@ declare module '@tanstack/react-router' {
       path: '/sistema-de-cupom-descontos'
       fullPath: '/sistema-de-cupom-descontos'
       preLoaderRoute: typeof SistemaDeCupomDescontosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/redirect': {
+      id: '/redirect'
+      path: '/redirect'
+      fullPath: '/redirect'
+      preLoaderRoute: typeof RedirectRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/programa-de-ordem-de-servico': {
@@ -1378,6 +1398,7 @@ const rootRouteChildren: RootRouteChildren = {
   OrcamentoRoute: OrcamentoRoute,
   PlataformaChinesaApostasCassinoRoute: PlataformaChinesaApostasCassinoRoute,
   ProgramaDeOrdemDeServicoRoute: ProgramaDeOrdemDeServicoRoute,
+  RedirectRoute: RedirectRoute,
   SistemaDeCupomDescontosRoute: SistemaDeCupomDescontosRoute,
   SistemaDeLeilaoRoute: SistemaDeLeilaoRoute,
   SistemaDeLeilaoDeCentavosRoute: SistemaDeLeilaoDeCentavosRoute,
