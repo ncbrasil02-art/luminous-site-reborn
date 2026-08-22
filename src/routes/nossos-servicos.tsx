@@ -62,7 +62,7 @@ export const Route = createFileRoute("/nossos-servicos")({
     faq: services.map(s => ({ q: `O que é ${s.title}?`, a: s.description })),
   }),
   component: () => (
-    <div className="pt-20">
+    <div className="pt-24 md:pt-32">
       <Helmet>
         <title>Nossos Serviços · NC Brasil — Sites, Sistemas, Apps e Marketing</title>
         <meta name="description" content="Conheça os serviços da NC Brasil: criação de sites, sistemas web, lojas virtuais, aplicativos mobile, identidade visual e marketing digital." />
