@@ -123,8 +123,12 @@ export const Route = createFileRoute("/")({
 
     return {
       ...meta,
+      links: [
+        ...(meta.links || []),
+        { rel: "preload", href: "/src/assets/hero-tech.jpg", as: "image" }
+      ],
       scripts: [
-        ...meta.scripts!,
+        ...(meta.scripts || []),
         { type: "application/ld+json", children: JSON.stringify(homeJsonLd) }
       ],
     };
