@@ -367,7 +367,7 @@ function HomePage() {
                 </span>
               </Reveal>
               <h2 className="font-display text-4xl font-bold tracking-tight text-white md:text-6xl leading-[1.1]">
-                Nossos <span className="text-gradient">Sistemas Flagship</span>
+                Nossos <span className="text-gradient">Sistemas Personalizados</span>
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
                 Plataformas de alta escala projetadas para dominar o mercado. 
