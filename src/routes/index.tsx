@@ -321,9 +321,6 @@ function HomePage() {
               </Reveal>
             ))}
           </div>
-          <div className="relative h-96 w-full mt-20">
-             <RocketTakeoff variant="scrolling" />
-          </div>
         </div>
       </section>
 
