@@ -81,12 +81,15 @@ export function SystemsCarousel() {
         {systems.map((system, index) => (
           <Reveal key={system.title} delay={index * 0.1}>
             <motion.div 
-              whileHover={{ y: -12 }}
+              whileHover={{ 
+                y: -15,
+                transition: { duration: 0.4, ease: "easeOut" }
+              }}
               className={cn(
-                "group relative h-[450px] sm:h-[550px] lg:h-[600px] overflow-hidden rounded-[2.5rem] sm:rounded-[3rem] border transition-all duration-500 backdrop-blur-xl",
+                "group relative h-[500px] sm:h-[600px] lg:h-[650px] overflow-hidden rounded-[2.5rem] sm:rounded-[3.5rem] border transition-all duration-500 backdrop-blur-xl",
                 system.isPremium 
-                  ? "border-primary/50 bg-navy-900/40 glow-md ring-1 ring-primary/20" 
-                  : "border-white/5 bg-navy-900/30 hover:border-primary/40 hover:glow-md hover:bg-navy-900/50"
+                  ? "border-primary/40 bg-[#0A1428]/60 glow-md ring-1 ring-primary/20 hover:border-primary-glow/60" 
+                  : "border-white/5 bg-[#0A1428]/40 hover:border-primary/40 hover:glow-md hover:bg-[#0A1428]/60"
               )}
             >
               {/* Premium Badge */}
@@ -99,7 +102,7 @@ export function SystemsCarousel() {
                 </div>
               )}
 
-              {/* Background Image with Cinematic Overlay */}
+              {/* Background Image with Cinematic Overlay - Reduced Intensity */}
               <div className="absolute inset-0">
                 <img 
                   src={system.image} 
@@ -108,26 +111,28 @@ export function SystemsCarousel() {
                   decoding="async"
                   className={cn(
                     "h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110",
-                    system.isPremium ? "opacity-30" : "opacity-15 group-hover:opacity-30"
+                    system.isPremium ? "opacity-25 grayscale-[20%]" : "opacity-10 grayscale-[40%] group-hover:opacity-20 group-hover:grayscale-0"
                   )}
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = "/logo.jpg";
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1428] via-[#0A1428]/95 to-[#0A1428]/30" />
+                {/* Dynamic Glow Effect on Hover */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_50%_0%,rgba(49,91,255,0.15),transparent_70%)]" />
               </div>
 
 
               <div className="relative flex h-full flex-col p-6 sm:p-10 pt-20 sm:pt-24">
                 <div className={cn(
-                  "mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl ring-1 ring-white/10 backdrop-blur transition-all duration-500 group-hover:scale-110 group-hover:glow-md",
-                  system.isPremium ? "bg-gradient-primary text-white shadow-glow-sm" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
+                  "mb-8 inline-flex h-20 w-20 items-center justify-center rounded-3xl ring-1 ring-white/10 backdrop-blur-xl transition-all duration-700 group-hover:scale-110 group-hover:rotate-6 group-hover:glow-lg",
+                  system.isPremium ? "bg-gradient-primary text-white shadow-glow-md" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
                 )}>
-                  <system.icon className="h-8 w-8" />
+                  <system.icon className="h-10 w-10" />
                 </div>
 
-                <h3 className="font-display text-2xl sm:text-4xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors drop-shadow-sm">{system.title}</h3>
-                <p className="mt-4 text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors line-clamp-3">
+                <h3 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-all duration-500 drop-shadow-lg">{system.title}</h3>
+                <p className="mt-6 text-lg leading-relaxed text-muted-foreground group-hover:text-foreground transition-all duration-500 line-clamp-3 font-medium">
                   {system.description}
                 </p>
 
@@ -150,7 +155,7 @@ export function SystemsCarousel() {
                         : "bg-white/5 text-white hover:bg-primary hover:glow-sm"
                     )}
                   >
-                    <span className="relative z-10">Explorar Solução</span>
+                    <span className="relative z-10">Ver Sistema</span>
                     <ChevronRight className="relative z-10 h-5 w-5 transition-transform group-hover/btn:translate-x-1" />
                   </Link>
                 </div>
