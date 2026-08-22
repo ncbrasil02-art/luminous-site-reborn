@@ -4,6 +4,7 @@ import { ArrowRight, Gavel, ShoppingCart, Rocket, Sparkles, ChevronLeft, Chevron
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { trackClick } from "@/lib/analytics";
+import { RocketTakeoff } from "./RocketTakeoff";
 
 // Importando os assets via JSON pointers para usar as URLs corretas
 import leilaoHomeAsset from "@/assets/sistema-de-leilao-home-premium.png.asset.json";
@@ -119,6 +120,9 @@ export function HeroSlider() {
 
   return (
     <section className="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center overflow-hidden bg-[#0A1428]">
+      {/* Foguete 3D decolando no Hero */}
+      <RocketTakeoff />
+
       {/* Imagem de Fundo de Alta Qualidade com Profundidade Real */}
       <AnimatePresence mode="wait">
         <motion.div

@@ -29,6 +29,7 @@ import { Reveal, SectionHeading } from "@/components/Section";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
 import { HeroSlider } from "@/components/HeroSlider";
 import { trackClick } from "@/lib/analytics";
+import { TemplateConstruction } from "@/components/TemplateConstruction";
 
 import { buildMeta, SITE_URL } from "@/lib/seo";
 import { MagazineSection } from "@/components/MagazineSection";
@@ -291,31 +292,45 @@ function HomePage() {
           <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {solutions.map((s, i) => (
               <Reveal key={s.title} delay={i * 0.1}>
-                <Link
-                  to={s.to}
-                  onClick={() => trackClick(s.title, "Home Solutions Grid")}
-                  className="group relative block h-full overflow-hidden rounded-none border border-white/5 bg-navy-900/20 p-6 sm:p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
-                >
-                  {/* Glowing background hint */}
-                  <div className="absolute -right-20 -top-20 h-40 w-40 rounded-none bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/20" />
-                  
-                  <div className="relative z-10">
-                    <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-none bg-surface-elevated text-primary-glow shadow-glow-sm ring-1 ring-white/10 transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:glow-sm">
-                      <s.icon className="h-8 w-8" />
+                <div className="relative group">
+                  {/* Persona effect: behind the first card ("Desenvolvimento de Sites") */}
+                  {i === 0 && (
+                    <div className="absolute -top-16 -left-8 w-48 h-48 opacity-10 grayscale group-hover:grayscale-0 group-hover:opacity-30 transition-all duration-700 pointer-events-none -z-10">
+                      <img 
+                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400" 
+                        alt="Expert Developer"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <h3 className="font-display text-2xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{s.title}</h3>
-                    <p className="mt-6 text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors">
-                      {renderBold(s.desc)}
-                    </p>
-                    <div className="mt-10 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-primary-glow opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
-                      Explorar Tecnologia
-                      <ChevronRight className="h-4 w-4" />
+                  )}
+
+                  <Link
+                    to={s.to}
+                    onClick={() => trackClick(s.title, "Home Solutions Grid")}
+                    className="group relative block h-full overflow-hidden rounded-none border border-white/5 bg-navy-900/20 p-6 sm:p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
+                  >
+                    {/* Glowing background hint */}
+                    <div className="absolute -right-20 -top-20 h-40 w-40 rounded-none bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/20" />
+                    
+                    <div className="relative z-10">
+                      <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-none bg-surface-elevated text-primary-glow shadow-glow-sm ring-1 ring-white/10 transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:glow-sm">
+                        <s.icon className="h-8 w-8" />
+                      </div>
+                      <h3 className="font-display text-2xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{s.title}</h3>
+                      <p className="mt-6 text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors">
+                        {renderBold(s.desc)}
+                      </p>
+                      <div className="mt-10 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-primary-glow opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-2">
+                        Explorar Tecnologia
+                        <ChevronRight className="h-4 w-4" />
+                      </div>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               </Reveal>
             ))}
           </div>
+          <TemplateConstruction />
         </div>
       </section>
 
@@ -463,7 +478,14 @@ function HomePage() {
 
       {/* CTA FINAL ======================================================== */}
       <section className="relative overflow-hidden py-24 md:py-32">
-        <div className="absolute inset-0 -z-10 bg-mesh" aria-hidden />
+        <div className="absolute inset-0 -z-10 bg-mesh overflow-hidden" aria-hidden>
+          <img 
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200" 
+            alt="Digital Marketing Agency Team"
+            className="w-full h-full object-cover opacity-10 grayscale"
+            loading="lazy"
+          />
+        </div>
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal>
             <div className="relative overflow-hidden rounded-none border border-primary/30 bg-surface/60 px-6 py-12 backdrop-blur md:px-12 md:py-16">
