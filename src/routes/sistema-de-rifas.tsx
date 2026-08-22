@@ -119,9 +119,9 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         title: <>Seu <span className="text-gradient">Sistema de Rifas</span> com Hora Premiada e Roletas</>,
         desc: <>Ao contratar nossa <strong className="text-foreground">plataforma de rifas</strong>, você recebe recursos exclusivos como <strong className="text-foreground">Hora Premiada</strong>, Roletas e Raspadinhas Digitais. Nosso <strong className="text-foreground">sistema de rifas</strong> permite que você gerencie campanhas virais de alta conversão. É a solução definitiva para quem busca um <strong className="text-foreground">script de ações</strong> robusto, seguro e altamente tecnológico com <strong className="text-foreground">Cotas Premiadas</strong> automáticas.</>,
         highlights: [
-          "**Licença perpétua ou mensalidade fixa** — sem % sobre vendas",
-          "**App iOS + Android** publicado com sua marca",
-          "**Sorteio pela Loteria Federal** com hash blockchain",
+          "**Módulo Hora Premiada** — Sorteios relâmpago automatizados",
+          "**Roletas e Raspadinhas** — Gamificação para engajamento viral",
+          "**Cotas Premiadas** — Prêmios instantâneos automáticos",
           "**Pix instantâneo** liberado em <10 segundos",
           "**Orientação legal completa** — modelo SECAP, capitalização ou filantropia",
           "**Suporte técnico 24/7** por WhatsApp e ticket",
