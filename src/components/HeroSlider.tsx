@@ -4,6 +4,9 @@ import { ArrowRight, Gavel, ShoppingCart, Rocket, Sparkles, ChevronLeft, Chevron
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { trackClick } from "@/lib/analytics";
+import leilaoHero from "@/assets/sistema-de-leilao-home-premium.png.asset.json";
+import rifasHero from "@/assets/melhor-sistema-de-rifas-online.png.asset.json";
+import cassinoHero from "@/assets/plataforma-cassino-main.png.asset.json";
 
 const slides = [
   {
@@ -14,7 +17,7 @@ const slides = [
     highlight: "Pregão Eletrônico",
     description: "Referência em tecnologia de leilões com pregão eletrônico ultraveloz, latência zero e auditagem completa.",
     to: "/sistema-de-leilao",
-    image: "/img-sistema-de-leilao/home-premium.png",
+    image: leilaoHero.url,
     color: "primary",
     keywords: ["Sistema de Leilão", "Pregão Eletrônico", "Leilão Online"]
   },
@@ -26,7 +29,7 @@ const slides = [
     highlight: "Sorteios Online",
     description: "A plataforma de rifas mais completa e cinematográfica do Brasil. Automação total com split de pagamentos.",
     to: "/sistema-de-rifas",
-    image: "/img-sistema-de-rifas/Fachada Profissional.png",
+    image: rifasHero.url,
     color: "secondary",
     keywords: ["Script de Rifas", "Sistema de Rifas", "Sorteios Digitais"]
   },
@@ -38,7 +41,7 @@ const slides = [
     highlight: "Cassino Online",
     description: "Tecnologia de ponta para cassinos online e plataformas de jogos com integração global e segurança máxima.",
     to: "/sistema-de-cassino",
-    image: "/img-sistema-de-leilao/dashboard-detalhe.png",
+    image: cassinoHero.url,
     color: "primary-glow",
     keywords: ["Plataforma de Jogos", "Cassino Online", "iGaming"]
   }
