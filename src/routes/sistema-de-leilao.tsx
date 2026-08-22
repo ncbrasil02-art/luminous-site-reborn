@@ -34,7 +34,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
     title: "Seu Sistema de Leilões Online Homologado | Plataforma NC Brasil",
     description: "NcBrasil: Plataforma de leilão online completa com pregão eletrônico, transmissão HD e split de comissões. O melhor sistema para leiloeiro oficial e judicial.",
     keywords: "sistema de leilão, plataforma de leilões, sistema para leiloeiro, plataforma de pregões online, sas leilão, site de leilão, sistema de leilão online, plataforma de leilão online, sistema online para leiloeiro",
-    canonical: "/sistema-de-leilao",
+    canonical: "https://www.ncbrasil.com.br/sistema-de-leilao",
     h1: "NcBrasil - Sistema de Leilão Profissional",
     breadcrumbs: [
       { label: "Home", to: `${SITE_URL}/` },
@@ -67,6 +67,9 @@ export const Route = createFileRoute("/sistema-de-leilao")({
             src="/img-sistema-de-leilao/nc-leiloes-logo-premium.png"
             alt="NC Leilões - Plataforma de Leilão" 
             className="h-20 md:h-28 w-auto transition-transform duration-500 hover:scale-105"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.onerror = null;

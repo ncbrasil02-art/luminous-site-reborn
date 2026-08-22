@@ -52,6 +52,7 @@ export function PartnerCarousel({ logos, title = "Órgãos Homologados e Parceir
                   alt={logo.name}
                   className="h-10 md:h-12 w-auto shrink-0 object-contain"
                   loading="lazy"
+                  decoding="async"
                   onError={(e) => {
                     const target = e.target as HTMLImageElement;
                     target.onerror = null;
