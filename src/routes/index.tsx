@@ -114,7 +114,7 @@ export const Route = createFileRoute("/")({
   head: () => {
     const meta = buildMeta({
       title: "NcBrasil - Sistemas de Leilões e Plataformas de Leilão Online",
-      description: "NcBrasil: Especialistas em sistemas avançados, plataformas de leilão e aplicativos de alto padrão. Tecnologia premium para empresas líderes.",
+      description: "NcBrasil: Especialistas em sistemas de leilões e plataformas de leilão online homologadas. Tecnologia avançada para o seu negócio digital.",
       keywords: "criação de sites premium, sistemas web alta performance, plataforma de leilão online, aplicativos mobile premium, marketing digital estratégico, agência de tecnologia SP",
       ogImage: "/logo-nc-brasil.png",
       canonical: "/",
@@ -223,7 +223,7 @@ function HomePage() {
     <>
       <Helmet>
         <title>NcBrasil - Sistemas de Leilões e Plataformas de Leilão Online</title>
-        <meta name="description" content="NcBrasil: Especialistas em sistemas avançados, plataformas de leilão e aplicativos de alto padrão. Tecnologia premium para empresas líderes." />
+        <meta name="description" content="NcBrasil: Especialistas em sistemas de leilões e plataformas de leilão online homologadas. Tecnologia avançada para o seu negócio digital." />
         <meta name="keywords" content="criação de sites premium, sistemas web alta performance, plataforma de leilão online, aplicativos mobile premium, marketing digital estratégico, agência de tecnologia SP" />
       </Helmet>
 
