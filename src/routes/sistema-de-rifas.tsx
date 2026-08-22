@@ -55,9 +55,9 @@ export const Route = createFileRoute("/sistema-de-rifas")({
   component: () => (
     <>
       <Helmet>
-        <title>Script de Rifas e Ações Online | Melhor Sistema de Rifas Profissional</title>
-        <meta name="description" content="Script de rifas completo e legalizado. Crie sua plataforma de ações online com sorteio pela Loteria Federal, Pix instantâneo e zero taxas sobre vendas. O melhor sistema de rifas do Brasil." />
-        <meta name="keywords" content="script de rifas, sistema de rifas, fazer rifa online, plataforma de rifas, plataforma de ações online, script de ações, sistema de ações de rifas, criar rifa online, site de rifas profissional" />
+        <title>Sistema de Rifas com Hora Premiada, Roletas e Raspadinhas Digitais</title>
+        <meta name="description" content="Tenha sua plataforma cinematográfica de rifas com módulos de Hora Premiada, Roletas e Raspadinhas. O sistema mais completo e viral do mercado brasileiro." />
+        <meta name="keywords" content="sistema de rifas, hora premiada, roletas online, raspadinhas digitais, cotas premiadas, plataforma de rifas profissional, script de rifas viral" />
       </Helmet>
       <LandingPage
       imageKeyword="melhor script de rifas e plataforma de ações online profissional"
