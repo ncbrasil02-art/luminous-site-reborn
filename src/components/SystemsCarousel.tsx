@@ -23,7 +23,7 @@ const systems = [
   {
     icon: ShoppingCart,
     title: "Sistema de Rifas",
-    description: "A plataforma de sorteios mais completa do Brasil. Totalmente automatizada com split de pagamentos e visual cinematográfico.",
+    description: "Plataforma cinematográfica com Hora Premiada, Roletas, Raspadinhas e Cotas Premiadas. Automação total e visual premium para escala imediata.",
     to: "/sistema-de-rifas",
     image: rifasHero.url,
     features: ["Pagamentos Automáticos", "Ranking de Compradores", "Reserva de Bilhetes"],
