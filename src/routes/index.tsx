@@ -1,150 +1,3 @@
-/**
-Analise toda a aplicação antes de realizar qualquer alteração e torne TODAS as páginas, componentes e fluxos 100% responsivos em todos os dispositivos.
-
-Seu objetivo é garantir que o sistema funcione perfeitamente em qualquer tamanho de tela, incluindo mobile (pequenos smartphones), tablets, notebooks, desktops e telas ultrawide, sem quebras de layout, overflow ou perda de usabilidade.
-
-━━━━━━━━━━━━━━━━━━━
-OBJETIVO PRINCIPAL
-━━━━━━━━━━━━━━━━━━━
-
-Transformar toda a aplicação em uma interface totalmente responsiva, fluida e adaptativa, com excelente experiência de uso em qualquer dispositivo.
-
-━━━━━━━━━━━━━━━━━━━
-ANÁLISE OBRIGATÓRIA
-━━━━━━━━━━━━━━━━━━━
-
-Antes de qualquer alteração, analise:
-
-- Todas as páginas e rotas do sistema
-- Layouts principais e secundários
-- Componentes reutilizáveis
-- Containers e grids
-- Breakpoints atuais (ou ausência deles)
-- Uso de width/height fixos (px)
-- Overflow horizontal ou vertical
-- Elementos quebrando em telas pequenas
-- Tipografia em diferentes tamanhos de tela
-- Botões e áreas clicáveis em mobile
-- Formulários e inputs
-- Modais, dropdowns e menus
-- Imagens e assets
-- Tabelas e listas complexas
-- Navegação e sidebar
-- Espaçamentos fixos vs flexíveis
-
-━━━━━━━━━━━━━━━━━━━
-OBJETIVOS DE RESPONSIVIDADE
-━━━━━━━━━━━━━━━━━━━
-
-- Eliminar qualquer overflow horizontal
-- Garantir leitura perfeita em telas pequenas
-- Adaptar todos os layouts dinamicamente
-- Manter consistência visual entre dispositivos
-- Garantir usabilidade total no mobile
-- Otimizar interação por toque (touch)
-- Garantir boa hierarquia visual em qualquer tela
-
-━━━━━━━━━━━━━━━━━━━
-MELHORIAS OBRIGATÓRIAS
-━━━━━━━━━━━━━━━━━━━
-
-LAYOUT E ESTRUTURA:
-- Substituir widths fixos por layouts flexíveis
-- Usar Flexbox e Grid corretamente
-- Aplicar containers responsivos
-- Ajustar breakpoints consistentes
-- Reorganizar layouts para mobile-first quando necessário
-
-MOBILE (PRIORIDADE MÁXIMA):
-- Ajustar espaçamentos para telas pequenas
-- Garantir botões com tamanho adequado para toque
-- Evitar elementos muito próximos
-- Melhorar menus mobile (hamburger/drawer)
-- Simplificar layouts complexos no mobile
-- Evitar tabelas quebradas (usar scroll ou cards)
-
-TIPOGRAFIA:
-- Ajustar tamanhos de fonte por breakpoint
-- Garantir legibilidade em telas pequenas
-- Evitar textos longos sem quebra
-- Ajustar line-height responsivo
-
-IMAGENS E MÍDIA:
-- Garantir imagens fluidas (max-width: 100%)
-- Evitar distorção de proporção
-- Otimizar visualização em diferentes telas
-- Ajustar vídeos e embeds responsivos
-
-COMPONENTES:
-- Tornar todos os componentes adaptáveis
-- Ajustar cards para colunas responsivas
-- Melhorar modais em mobile (fullscreen quando necessário)
-- Ajustar dropdowns e menus flutuantes
-
-FORMULÁRIOS:
-- Inputs ocupando largura correta em mobile
-- Melhor espaçamento entre campos
-- Botões full-width quando necessário
-- Melhor UX de preenchimento em telas pequenas
-
-NAVEGAÇÃO:
-- Sidebar adaptativa (colapsável no mobile)
-- Menus responsivos e acessíveis
-- Navegação simplificada no mobile
-- Evitar excesso de elementos na header
-
-━━━━━━━━━━━━━━━━━━━
-BREAKPOINTS PADRÃO (SE NECESSÁRIO)
-━━━━━━━━━━━━━━━━━━━
-
-- Mobile: até 480px
-- Mobile large: até 640px
-- Tablet: até 768px
-- Laptop: até 1024px
-- Desktop: até 1280px+
-- Large screens: 1536px+
-
-━━━━━━━━━━━━━━━━━━━
-REGRAS IMPORTANTES
-━━━━━━━━━━━━━━━━━━━
-
-- NÃO quebrar funcionalidades existentes
-- NÃO remover componentes ou features
-- NÃO alterar o design base sem necessidade
-- Priorizar adaptação, não reconstrução total
-- Manter consistência visual em todos os tamanhos
-- Evitar soluções temporárias ou gambiarras
-- Usar boas práticas modernas (Flexbox/Grid)
-- Garantir performance junto com responsividade
-
-━━━━━━━━━━━━━━━━━━━
-VALIDAÇÃO FINAL OBRIGATÓRIA
-━━━━━━━━━━━━━━━━━━━
-
-Após aplicar melhorias:
-
-- Testar todas as páginas em mobile, tablet e desktop
-- Verificar ausência de overflow
-- Verificar legibilidade geral
-- Verificar usabilidade no toque
-- Verificar consistência de layout
-- Garantir que nada quebrou visualmente
-- Garantir navegação fluida em qualquer tela
-
-━━━━━━━━━━━━━━━━━━━
-RESULTADO ESPERADO
-━━━━━━━━━━━━━━━━━━━
-
-O sistema deve estar:
-
-- 100% responsivo
-- Totalmente adaptável a qualquer tela
-- Sem quebras de layout
-- Sem scroll horizontal indesejado
-- Com excelente UX em mobile
-- Visualmente consistente em todos os dispositivos
-- Pronto para produção profissional
-*/
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
@@ -171,6 +24,7 @@ import {
 import { FloatingObject } from "@/components/FloatingObject";
 
 
+
 import { Reveal, SectionHeading } from "@/components/Section";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
 import { HeroSlider } from "@/components/HeroSlider";
@@ -181,6 +35,27 @@ import { MagazineSection } from "@/components/MagazineSection";
 
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { testimonialsData } from "@/lib/testimonials.data";
+
+import logoRifa from "@/assets/logotipos/logo-rifa.png.asset.json";
+import logoVeiculos from "@/assets/logotipos/logo-veiculos.png.asset.json";
+import logoSupermercado from "@/assets/logotipos/logo-supermercado.png.asset.json";
+import logoLeilao1 from "@/assets/logotipos/logo-leilao-1.png.asset.json";
+import logoLeilao2 from "@/assets/logotipos/logo-leilao-2.png.asset.json";
+import logoCentavos from "@/assets/logotipos/logo-centavos.png.asset.json";
+import logoFamiliaRS from "@/assets/logotipos/logo-familia-rs.png.asset.json";
+import logoLimpeza from "@/assets/logotipos/logo-limpeza.png.asset.json";
+const projectLogos = [
+  { url: logoRifa.url, name: "Sistema de Rifas" },
+  { url: logoVeiculos.url, name: "Classificados de Veículos" },
+  { url: logoSupermercado.url, name: "Sistema de Supermercado" },
+  { url: logoLeilao1.url, name: "Plataforma de Leilão" },
+  { url: logoLeilao2.url, name: "Sistema de Leilão Rural" },
+  { url: logoCentavos.url, name: "Leilão de Centavos" },
+  { url: logoFamiliaRS.url, name: "App Família RS" },
+  { url: logoLimpeza.url, name: "Sistema de Gestão" },
+  { url: logoRifa.url, name: "Solução Personalizada" }, // Repeating one to fill 9 squares
+];
+
 
 const OG_IMAGE = `/og-home.jpg`;
 
@@ -381,6 +256,7 @@ function HomePage() {
             >
               Catálogo Completo
               <div className="flex h-10 w-10 items-center justify-center rounded-none border border-primary/30 bg-primary/5 transition-transform group-hover:translate-x-2 group-hover:bg-primary group-hover:text-white">
+
                 <ChevronRight className="h-4 w-4" />
               </div>
             </Link>
@@ -485,7 +361,7 @@ function HomePage() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <Reveal>
               <div>
-                <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
+                <span className="inline-flex items-center gap-2 rounded-none border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
                   <Trophy className="h-3.5 w-3.5" />
                   Especialidades
                 </span>
@@ -525,7 +401,7 @@ function HomePage() {
                     },
                   ].map((it) => (
                     <li key={it.to} className="flex items-center gap-3">
-                      <span className="grid h-6 w-6 place-items-center rounded-full bg-primary/15 text-primary">
+                      <span className="grid h-6 w-6 place-items-center rounded-none bg-primary/15 text-primary">
                         <Code2 className="h-3.5 w-3.5" />
                       </span>
                       <Link to={it.to} className="story-link text-foreground font-medium">
@@ -538,7 +414,7 @@ function HomePage() {
                 <div className="mt-10">
                   <Link
                     to="/trabalhos-realizados"
-                    className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground glow-sm hover:scale-105 transition-transform"
+                    className="inline-flex items-center gap-2 rounded-none bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground glow-sm hover:scale-105 transition-transform"
                   >
                     Explorar portfólio
                     <ArrowRight className="h-4 w-4" />
@@ -553,14 +429,18 @@ function HomePage() {
                 <div className="relative overflow-hidden rounded-none border border-border bg-surface p-1">
                   <div className="rounded-none bg-background p-8">
                     <div className="grid grid-cols-3 gap-3">
-                      {Array.from({ length: 9 }).map((_, i) => (
+                      {projectLogos.map((logo, i) => (
                         <div
                           key={i}
-                          className="aspect-square rounded-none border border-border bg-gradient-to-br from-primary/10 to-transparent"
-                          style={{
-                            animation: `glow-pulse 4s ease-in-out ${i * 0.15}s infinite`,
-                          }}
-                        />
+                          className="group/item aspect-square overflow-hidden rounded-none border border-border bg-navy-900/50"
+                        >
+                          <img 
+                            src={logo.url} 
+                            alt={logo.name}
+                            className="h-full w-full object-cover transition-transform duration-500 group-hover/item:scale-110 opacity-70 group-hover/item:opacity-100"
+                            loading="lazy"
+                          />
+                        </div>
                       ))}
                     </div>
                     <div className="mt-6 space-y-2">
@@ -568,6 +448,7 @@ function HomePage() {
                       <div className="h-2 w-1/2 rounded-none bg-muted" />
                       <div className="h-2 w-2/3 rounded-none bg-muted" />
                     </div>
+
                   </div>
                 </div>
               </div>
