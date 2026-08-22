@@ -117,23 +117,21 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link to="/" className="group flex items-center gap-2 relative z-50">
-          <picture>
-            <source srcSet="/logo.webp" type="image/webp" />
-            <img 
-              src="/logo.jpg" 
-              alt="NC Brasil - Sistemas Web e Marketing Digital" 
-              width={160}
-              height={40}
-              fetchPriority="high"
-              decoding="async"
-              className="h-10 w-auto object-contain transition-transform duration-500 group-hover:scale-105" 
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.onerror = null;
-                target.src = "https://www.ncbrasil.com.br/logo.jpg";
-              }}
-            />
-          </picture>
+          <img 
+            src="/logo.jpg" 
+            alt="NC Brasil - Sistemas Web e Marketing Digital" 
+            width={160}
+            height={40}
+            fetchPriority="high"
+            decoding="async"
+            className="h-10 w-auto object-contain transition-transform duration-500 group-hover:scale-105" 
+            loading="eager"
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.onerror = null;
+              target.src = "https://www.ncbrasil.com.br/logo.jpg";
+            }}
+          />
         </Link>
 
         {/* Desktop Navigation */}

@@ -439,6 +439,7 @@ function HomePage() {
                             alt={logo.name}
                             className="h-full w-full object-cover transition-transform duration-500 group-hover/item:scale-110 opacity-70 group-hover/item:opacity-100"
                             loading="lazy"
+                            decoding="async"
                           />
                         </div>
                       ))}

@@ -218,8 +218,8 @@ export function LandingPage({
             }
             alt={imageKeyword || eyebrow} 
             className={`h-full w-full ${pathname.includes('leilao') || (heroImage === '/logo.jpg') ? 'object-contain p-20 opacity-10' : 'object-cover opacity-20'}`}
-            loading="eager"
-            fetchPriority="high"
+            loading="lazy"
+            decoding="async"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.onerror = null;
