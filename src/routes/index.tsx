@@ -459,7 +459,7 @@ function HomePage() {
       {/* SISTEMAS EM DESTAQUE (SLIDER) ===================================== */}
       <section className="relative py-24 md:py-40 bg-navy-950/20">
         <div className="absolute inset-0 z-0 bg-hero-glow opacity-30 rotate-180" aria-hidden="true" />
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
             <div className="max-w-2xl">
               <Reveal>
@@ -498,7 +498,7 @@ function HomePage() {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px] -z-10" />
         
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Expertise Digital"
             title={
@@ -550,7 +550,7 @@ function HomePage() {
       <section className="relative overflow-hidden border-y border-white/5 bg-navy-950/40 py-24 md:py-40">
         <div className="absolute inset-0 bg-mesh opacity-20 pointer-events-none" aria-hidden="true" />
         <div className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/40 to-transparent shadow-[0_0_20px_rgba(49,91,255,0.4)]" />
-        <div className="relative mx-auto max-w-7xl px-4 md:px-6">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Workflow Cinematográfico"
             title={
@@ -583,7 +583,7 @@ function HomePage() {
 
       {/* DESTAQUES ======================================================== */}
       <section className="relative py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <Reveal>
               <div>
@@ -684,7 +684,7 @@ function HomePage() {
       {/* CTA FINAL ======================================================== */}
       <section className="relative overflow-hidden py-24 md:py-32">
         <div className="absolute inset-0 -z-10 bg-mesh" aria-hidden />
-        <div className="mx-auto max-w-4xl px-4 text-center md:px-6">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal>
             <div className="relative overflow-hidden rounded-3xl border border-primary/30 bg-surface/60 px-6 py-16 backdrop-blur md:px-12">
               <div className="absolute -inset-px rounded-3xl bg-gradient-primary opacity-20 blur-2xl" />
