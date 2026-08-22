@@ -117,7 +117,7 @@ export function SystemsCarousel() {
                     (e.target as HTMLImageElement).src = "/logo.jpg";
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1428] via-[#0A1428]/95 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1428] via-[#0A1428]/95 to-[#0A1428]/30" />
                 {/* Dynamic Glow Effect on Hover */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_50%_0%,rgba(49,91,255,0.15),transparent_70%)]" />
               </div>
