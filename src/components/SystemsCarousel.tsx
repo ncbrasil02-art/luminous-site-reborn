@@ -102,7 +102,7 @@ export function SystemsCarousel() {
                 </div>
               )}
 
-              {/* Background Image with Cinematic Overlay */}
+              {/* Background Image with Cinematic Overlay - Reduced Intensity */}
               <div className="absolute inset-0">
                 <img 
                   src={system.image} 
@@ -111,13 +111,15 @@ export function SystemsCarousel() {
                   decoding="async"
                   className={cn(
                     "h-full w-full object-cover transition-transform duration-1000 group-hover:scale-110",
-                    system.isPremium ? "opacity-30" : "opacity-15 group-hover:opacity-30"
+                    system.isPremium ? "opacity-25 grayscale-[20%]" : "opacity-10 grayscale-[40%] group-hover:opacity-20 group-hover:grayscale-0"
                   )}
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = "/logo.jpg";
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1428] via-[#0A1428]/95 to-transparent" />
+                {/* Dynamic Glow Effect on Hover */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_50%_0%,rgba(49,91,255,0.15),transparent_70%)]" />
               </div>
 
 
