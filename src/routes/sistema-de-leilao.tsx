@@ -67,6 +67,9 @@ export const Route = createFileRoute("/sistema-de-leilao")({
             src="/img-sistema-de-leilao/nc-leiloes-logo-premium.png"
             alt="NC Leilões - Plataforma de Leilão" 
             className="h-20 md:h-28 w-auto transition-transform duration-500 hover:scale-105"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
             onError={(e) => {
               const target = e.target as HTMLImageElement;
               target.onerror = null;
