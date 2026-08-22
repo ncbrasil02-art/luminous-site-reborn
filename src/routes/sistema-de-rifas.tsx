@@ -43,7 +43,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
     title: "Sistema de Rifas com Hora Premiada, Roletas e Raspadinhas | NC Brasil",
     description: "NcBrasil: Plataforma cinematográfica de rifas com Hora Premiada, Roletas, Raspadinhas e Cotas Premiadas. O sistema mais completo e viral do Brasil.",
     keywords: "sistema de rifas, hora premiada, roletas online, raspadinhas digitais, cotas premiadas, plataforma de rifas profissional, script de rifas viral",
-    canonical: "/sistema-de-rifas",
+    canonical: "https://www.ncbrasil.com.br/sistema-de-rifas",
     h1: "NcBrasil - Sistema de Rifas Online",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
