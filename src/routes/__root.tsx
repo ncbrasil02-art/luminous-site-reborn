@@ -5,7 +5,7 @@ import { useEffect, useMemo } from "react";
 import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { newsData } from "@/lib/news.data";
+import { resolveLegacyPath } from "@/lib/redirects";
 import { WhatsappFab } from "@/components/WhatsappFab";
 import { initAnalytics, trackPageView, trackNotFound } from "@/lib/analytics";
 
