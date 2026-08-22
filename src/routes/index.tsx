@@ -1,116 +1,149 @@
 /**
-Analise completamente todo o projeto e identifique TODOS os bugs, erros, falhas, comportamentos inesperados e possíveis problemas existentes na aplicação.
+Analise toda a aplicação antes de realizar qualquer alteração e torne TODAS as páginas, componentes e fluxos 100% responsivos em todos os dispositivos.
 
-Seu objetivo é realizar uma auditoria técnica profunda no sistema inteiro, corrigindo problemas de lógica, frontend, backend, integração, renderização, estado, banco de dados, responsividade e performance.
+Seu objetivo é garantir que o sistema funcione perfeitamente em qualquer tamanho de tela, incluindo mobile (pequenos smartphones), tablets, notebooks, desktops e telas ultrawide, sem quebras de layout, overflow ou perda de usabilidade.
 
-Antes de modificar qualquer coisa:
-- Analise toda a estrutura do projeto
-- Analise rotas
-- Analise componentes
-- Analise hooks
-- Analise estados globais
-- Analise integrações
-- Analise Supabase
-- Analise APIs
-- Analise banco de dados
-- Analise autenticação
-- Analise permissões
-- Analise carregamentos
-- Analise console errors
-- Analise warnings
-- Analise logs
-- Analise comportamento da interface
-- Analise responsividade
-- Analise possíveis falhas silenciosas
-- Analise segurança básica
-- Analise fluxos completos do sistema
+━━━━━━━━━━━━━━━━━━━
+OBJETIVO PRINCIPAL
+━━━━━━━━━━━━━━━━━━━
 
-Identifique e corrija:
-- Bugs visuais
-- Bugs de navegação
-- Erros de console
-- Warnings
-- Loops infinitos
-- Problemas de renderização
-- Re-renderizações desnecessárias
-- Falhas de autenticação
-- Problemas de sessão
-- Problemas de permissões
-- Problemas de loading
-- Problemas de estado
-- Problemas de sincronização
-- Problemas de responsividade
-- Problemas de formulários
-- Problemas de validação
-- Problemas em chamadas API
-- Problemas em queries Supabase
-- Problemas de realtime
-- Problemas de cache
-- Problemas de tipagem
-- Problemas de imports
-- Problemas de dependências
-- Problemas de performance
-- Problemas de UX
-- Problemas mobile
-- Problemas de acessibilidade
-- Memory leaks
-- Requests duplicados
-- Condições de corrida
-- Falhas silenciosas
-- Tratamento incorreto de erros
-- Quebras em edge cases
+Transformar toda a aplicação em uma interface totalmente responsiva, fluida e adaptativa, com excelente experiência de uso em qualquer dispositivo.
 
-Verifique especialmente:
-- Fluxos de login/logout
-- Persistência de sessão
-- Proteção de rotas
-- Navegação entre páginas
-- CRUDs completos
-- Uploads
-- Modais
-- Estados assíncronos
-- Atualizações em tempo real
-- Compatibilidade mobile
-- Responsividade geral
+━━━━━━━━━━━━━━━━━━━
+ANÁLISE OBRIGATÓRIA
+━━━━━━━━━━━━━━━━━━━
+
+Antes de qualquer alteração, analise:
+
+- Todas as páginas e rotas do sistema
+- Layouts principais e secundários
 - Componentes reutilizáveis
-- Integrações externas
-- Webhooks
-- Fluxos críticos do sistema
+- Containers e grids
+- Breakpoints atuais (ou ausência deles)
+- Uso de width/height fixos (px)
+- Overflow horizontal ou vertical
+- Elementos quebrando em telas pequenas
+- Tipografia em diferentes tamanhos de tela
+- Botões e áreas clicáveis em mobile
+- Formulários e inputs
+- Modais, dropdowns e menus
+- Imagens e assets
+- Tabelas e listas complexas
+- Navegação e sidebar
+- Espaçamentos fixos vs flexíveis
 
-Durante a análise:
-1. Liste os problemas encontrados
-2. Explique a causa de cada problema
-3. Explique o impacto no sistema
-4. Corrija utilizando boas práticas modernas
-5. Garanta que a correção não quebre funcionalidades existentes
+━━━━━━━━━━━━━━━━━━━
+OBJETIVOS DE RESPONSIVIDADE
+━━━━━━━━━━━━━━━━━━━
 
-Regras importantes:
-- NÃO remover funcionalidades sem necessidade
-- NÃO alterar design sem motivo
-- NÃO criar soluções temporárias ou gambiarra
-- Sempre aplicar soluções profissionais
-- Priorizar estabilidade, segurança e confiabilidade
-- Garantir código limpo e sustentável
-- Melhorar tratamento de erros em toda aplicação
-- Validar edge cases importantes
-- Garantir compatibilidade mobile e desktop
+- Eliminar qualquer overflow horizontal
+- Garantir leitura perfeita em telas pequenas
+- Adaptar todos os layouts dinamicamente
+- Manter consistência visual entre dispositivos
+- Garantir usabilidade total no mobile
+- Otimizar interação por toque (touch)
+- Garantir boa hierarquia visual em qualquer tela
 
-Após finalizar:
-- Faça uma nova varredura completa
-- Verifique se ainda existem erros
-- Verifique possíveis regressões
-- Garanta estabilidade geral do sistema
+━━━━━━━━━━━━━━━━━━━
+MELHORIAS OBRIGATÓRIAS
+━━━━━━━━━━━━━━━━━━━
 
-O resultado final deve deixar a aplicação:
-- Estável
-- Confiável
-- Sem erros visíveis
-- Sem warnings desnecessários
-- Sem bugs críticos
-- Fluida
-- Responsiva
-- Profissional
-- Pronta para produção
+LAYOUT E ESTRUTURA:
+- Substituir widths fixos por layouts flexíveis
+- Usar Flexbox e Grid corretamente
+- Aplicar containers responsivos
+- Ajustar breakpoints consistentes
+- Reorganizar layouts para mobile-first quando necessário
+
+MOBILE (PRIORIDADE MÁXIMA):
+- Ajustar espaçamentos para telas pequenas
+- Garantir botões com tamanho adequado para toque
+- Evitar elementos muito próximos
+- Melhorar menus mobile (hamburger/drawer)
+- Simplificar layouts complexos no mobile
+- Evitar tabelas quebradas (usar scroll ou cards)
+
+TIPOGRAFIA:
+- Ajustar tamanhos de fonte por breakpoint
+- Garantir legibilidade em telas pequenas
+- Evitar textos longos sem quebra
+- Ajustar line-height responsivo
+
+IMAGENS E MÍDIA:
+- Garantir imagens fluidas (max-width: 100%)
+- Evitar distorção de proporção
+- Otimizar visualização em diferentes telas
+- Ajustar vídeos e embeds responsivos
+
+COMPONENTES:
+- Tornar todos os componentes adaptáveis
+- Ajustar cards para colunas responsivas
+- Melhorar modais em mobile (fullscreen quando necessário)
+- Ajustar dropdowns e menus flutuantes
+
+FORMULÁRIOS:
+- Inputs ocupando largura correta em mobile
+- Melhor espaçamento entre campos
+- Botões full-width quando necessário
+- Melhor UX de preenchimento em telas pequenas
+
+NAVEGAÇÃO:
+- Sidebar adaptativa (colapsável no mobile)
+- Menus responsivos e acessíveis
+- Navegação simplificada no mobile
+- Evitar excesso de elementos na header
+
+━━━━━━━━━━━━━━━━━━━
+BREAKPOINTS PADRÃO (SE NECESSÁRIO)
+━━━━━━━━━━━━━━━━━━━
+
+- Mobile: até 480px
+- Mobile large: até 640px
+- Tablet: até 768px
+- Laptop: até 1024px
+- Desktop: até 1280px+
+- Large screens: 1536px+
+
+━━━━━━━━━━━━━━━━━━━
+REGRAS IMPORTANTES
+━━━━━━━━━━━━━━━━━━━
+
+- NÃO quebrar funcionalidades existentes
+- NÃO remover componentes ou features
+- NÃO alterar o design base sem necessidade
+- Priorizar adaptação, não reconstrução total
+- Manter consistência visual em todos os tamanhos
+- Evitar soluções temporárias ou gambiarras
+- Usar boas práticas modernas (Flexbox/Grid)
+- Garantir performance junto com responsividade
+
+━━━━━━━━━━━━━━━━━━━
+VALIDAÇÃO FINAL OBRIGATÓRIA
+━━━━━━━━━━━━━━━━━━━
+
+Após aplicar melhorias:
+
+- Testar todas as páginas em mobile, tablet e desktop
+- Verificar ausência de overflow
+- Verificar legibilidade geral
+- Verificar usabilidade no toque
+- Verificar consistência de layout
+- Garantir que nada quebrou visualmente
+- Garantir navegação fluida em qualquer tela
+
+━━━━━━━━━━━━━━━━━━━
+RESULTADO ESPERADO
+━━━━━━━━━━━━━━━━━━━
+
+O sistema deve estar:
+
+- 100% responsivo
+- Totalmente adaptável a qualquer tela
+- Sem quebras de layout
+- Sem scroll horizontal indesejado
+- Com excelente UX em mobile
+- Visualmente consistente em todos os dispositivos
+- Pronto para produção profissional
 */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
