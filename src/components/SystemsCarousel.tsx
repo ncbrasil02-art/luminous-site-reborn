@@ -131,8 +131,8 @@ export function SystemsCarousel() {
                   <system.icon className="h-10 w-10" />
                 </div>
 
-                <h3 className="font-display text-2xl sm:text-4xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors drop-shadow-sm">{system.title}</h3>
-                <p className="mt-4 text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors line-clamp-3">
+                <h3 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-all duration-500 drop-shadow-lg">{system.title}</h3>
+                <p className="mt-6 text-lg leading-relaxed text-muted-foreground group-hover:text-foreground transition-all duration-500 line-clamp-3 font-medium">
                   {system.description}
                 </p>
 
