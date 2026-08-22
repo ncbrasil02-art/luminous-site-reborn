@@ -154,16 +154,22 @@ export function HeroSlider() {
 
             {/* Title with Word-Appearance Effect */}
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight text-white mb-8 max-w-5xl mx-auto">
-              {slide.title.split(slide.highlight)[0]}
-              <motion.span 
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: 0.4 }}
-                className="text-gradient block sm:inline whitespace-nowrap"
-              >
-                {slide.highlight}
-              </motion.span>
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={`title-${slide.id}`}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                >
+                  {slide.title.split(slide.highlight)[0]}
+                  <span className="text-gradient inline-block">
+                    {slide.highlight}
+                  </span>
+                </motion.span>
+              </AnimatePresence>
             </h1>
+
 
             {/* Description */}
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-12">
