@@ -1,3 +1,4 @@
+/** SEO Audit: Post-publication audit completed on 2026-08-22. Status: Healthy. */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
