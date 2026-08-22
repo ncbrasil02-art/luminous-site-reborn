@@ -72,9 +72,9 @@ export function InternalPageLinks({ currentPath }: { currentPath: string }) {
             <Reveal key={s.to} delay={i * 0.1}>
               <Link
                 to={s.to}
-                className="group relative block overflow-hidden rounded-2xl border border-white/5 bg-navy-900/40 p-6 backdrop-blur transition-all hover:border-primary/30 hover:glow-sm hover:-translate-y-1"
+                className="group relative block overflow-hidden rounded-none border border-white/5 bg-navy-900/40 p-6 backdrop-blur transition-all hover:border-primary/30 hover:glow-sm hover:-translate-y-1"
               >
-                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary-glow ring-1 ring-white/10 group-hover:bg-primary group-hover:text-white transition-colors">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-none bg-primary/10 text-primary-glow ring-1 ring-white/10 group-hover:bg-primary group-hover:text-white transition-colors">
                   <s.icon className="h-6 w-6" />
                 </div>
                 <h3 className="font-display text-xl font-bold text-white group-hover:text-primary-glow transition-colors">
