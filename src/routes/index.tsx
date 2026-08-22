@@ -559,7 +559,7 @@ function HomePage() {
                 <div className="mt-10">
                   <Link
                     to="/trabalhos-realizados"
-                    className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground glow-sm hover:scale-105 transition-transform"
+                    className="inline-flex items-center gap-2 rounded-none bg-gradient-primary px-6 py-3 text-sm font-semibold text-primary-foreground glow-sm hover:scale-105 transition-transform"
                   >
                     Explorar portfólio
                     <ArrowRight className="h-4 w-4" />
