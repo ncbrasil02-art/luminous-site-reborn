@@ -450,7 +450,7 @@ function HomePage() {
         <div className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/40 to-transparent shadow-[0_0_20px_rgba(49,91,255,0.4)]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Workflow Cinematográfico"
+            eyebrow="Workflow Profissional"
             title={
               <>
                 Da Concepção à <span className="text-gradient">Soberania Digital</span>
