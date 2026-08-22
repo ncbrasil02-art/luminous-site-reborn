@@ -574,14 +574,18 @@ function HomePage() {
                 <div className="relative overflow-hidden rounded-none border border-border bg-surface p-1">
                   <div className="rounded-none bg-background p-8">
                     <div className="grid grid-cols-3 gap-3">
-                      {Array.from({ length: 9 }).map((_, i) => (
+                      {projectLogos.map((logo, i) => (
                         <div
                           key={i}
-                          className="aspect-square rounded-none border border-border bg-gradient-to-br from-primary/10 to-transparent"
-                          style={{
-                            animation: `glow-pulse 4s ease-in-out ${i * 0.15}s infinite`,
-                          }}
-                        />
+                          className="group/item aspect-square overflow-hidden rounded-none border border-border bg-navy-900/50"
+                        >
+                          <img 
+                            src={logo.url} 
+                            alt={logo.name}
+                            className="h-full w-full object-cover transition-transform duration-500 group-hover/item:scale-110 opacity-70 group-hover/item:opacity-100"
+                            loading="lazy"
+                          />
+                        </div>
                       ))}
                     </div>
                     <div className="mt-6 space-y-2">
@@ -589,6 +593,7 @@ function HomePage() {
                       <div className="h-2 w-1/2 rounded-none bg-muted" />
                       <div className="h-2 w-2/3 rounded-none bg-muted" />
                     </div>
+
                   </div>
                 </div>
               </div>
