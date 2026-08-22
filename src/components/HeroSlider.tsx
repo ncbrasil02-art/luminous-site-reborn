@@ -191,22 +191,24 @@ export function HeroSlider() {
         </div>
 
         {/* Controls */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-8">
+        <div className="absolute bottom-8 lg:bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-4 lg:gap-8 z-30">
           <button 
             onClick={prevSlide}
-            className="h-12 w-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white hover:bg-white/20 transition-all backdrop-blur-md"
+            aria-label="Slide anterior"
+            className="h-10 w-10 lg:h-12 lg:w-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white hover:bg-white/20 transition-all backdrop-blur-md"
           >
-            <ChevronLeft className="h-6 w-6" />
+            <ChevronLeft className="h-5 w-5 lg:h-6 lg:w-6" />
           </button>
           
-          <div className="flex gap-3">
+          <div className="flex gap-2 lg:gap-3">
             {slides.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
+                aria-label={`Ir para slide ${i + 1}`}
                 className={cn(
-                  "h-1.5 transition-all duration-500 rounded-full",
-                  current === i ? "w-12 bg-primary shadow-glow-sm" : "w-4 bg-white/20"
+                  "h-1 lg:h-1.5 transition-all duration-500 rounded-full",
+                  current === i ? "w-8 lg:w-12 bg-primary shadow-glow-sm" : "w-3 lg:w-4 bg-white/20"
                 )}
               />
             ))}
@@ -214,9 +216,10 @@ export function HeroSlider() {
 
           <button 
             onClick={nextSlide}
-            className="h-12 w-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white hover:bg-white/20 transition-all backdrop-blur-md"
+            aria-label="Próximo slide"
+            className="h-10 w-10 lg:h-12 lg:w-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white hover:bg-white/20 transition-all backdrop-blur-md"
           >
-            <ChevronRight className="h-6 w-6" />
+            <ChevronRight className="h-5 w-5 lg:h-6 lg:w-6" />
           </button>
         </div>
       </div>
