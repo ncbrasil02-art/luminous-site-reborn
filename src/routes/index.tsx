@@ -441,7 +441,7 @@ function HomePage() {
             transition={{ duration: 1 }}
             className="mt-24 pt-12 border-t border-white/5"
           >
-            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground/60 mb-10">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground/60 mb-10 px-4">
               Tecnologia validada por centenas de negócios no Brasil
             </p>
             <div className="grid grid-cols-2 gap-8 md:flex md:flex-wrap md:justify-center md:items-center md:gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-500 px-4">
@@ -521,7 +521,7 @@ function HomePage() {
                 <Link
                   to={s.to}
                   onClick={() => trackClick(s.title, "Home Solutions Grid")}
-                  className="group relative block h-full overflow-hidden rounded-[2.5rem] border border-white/5 bg-navy-900/20 p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
+                  className="group relative block h-full overflow-hidden rounded-[2.5rem] border border-white/5 bg-navy-900/20 p-6 sm:p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
                 >
                   {/* Glowing background hint */}
                   <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/20" />
@@ -566,7 +566,7 @@ function HomePage() {
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, i) => (
               <Reveal key={step.n} delay={i * 0.1}>
-                <div className="group relative h-full rounded-[2rem] border border-white/5 bg-navy-950/40 p-8 backdrop-blur-xl transition-all duration-500 hover:border-primary/30 hover:bg-navy-900/40 hover:-translate-y-2">
+                <div className="group relative h-full rounded-[2rem] border border-white/5 bg-navy-950/40 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:border-primary/30 hover:bg-navy-900/40 hover:-translate-y-2">
                   <div className="font-display text-6xl font-black text-white/5 transition-colors group-hover:text-primary/10">
                     {step.n}
                   </div>
@@ -687,7 +687,7 @@ function HomePage() {
         <div className="absolute inset-0 -z-10 bg-mesh" aria-hidden />
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal>
-            <div className="relative overflow-hidden rounded-3xl border border-primary/30 bg-surface/60 px-6 py-16 backdrop-blur md:px-12">
+            <div className="relative overflow-hidden rounded-3xl border border-primary/30 bg-surface/60 px-6 py-12 backdrop-blur md:px-12 md:py-16">
               <div className="absolute -inset-px rounded-3xl bg-gradient-primary opacity-20 blur-2xl" />
               <div className="relative">
                 <Rocket className="mx-auto h-10 w-10 text-primary" />
