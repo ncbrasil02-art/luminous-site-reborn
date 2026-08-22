@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Code2, Gavel, LayoutDashboard, ShoppingCart, Users, ChevronRight, Sparkles, Rocket } from "lucide-react";
+import { ArrowLeft, ArrowRight, Code2, Gavel, LayoutDashboard, ShoppingCart, Tractor, ChevronRight, Sparkles, Rocket } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/Section";
@@ -20,7 +20,35 @@ const systems = [
     description: "A plataforma de sorteios mais completa do Brasil. Totalmente automatizada com split de pagamentos e visual cinematográfico.",
     to: "/sistema-de-rifas",
     image: "/img-sistema-de-rifas/Fachada Profissional.png",
-    features: ["Pagamentos Automáticos", "Ranking de Compradores", "Reserva de Bilhetes"]
+    features: ["Pagamentos Automáticos", "Ranking de Compradores", "Reserva de Bilhetes"],
+    isPremium: true
+  },
+  {
+    icon: Rocket,
+    title: "Sistema de Cassino",
+    description: "Plataforma completa de iGaming com integração de provedores mundiais e gestão de banca segura.",
+    to: "/sistema-de-cassino",
+    image: "/img-sistema-de-leilao/dashboard-detalhe.png",
+    features: ["Slots & Live Casino", "Gestão de Afiliados", "Saque Imediato"],
+    isPremium: true
+  },
+  {
+    icon: Code2,
+    title: "Leilão de Centavos",
+    description: "Sistema de entretenimento e lances regressivos. Alta escalabilidade para milhares de acessos simultâneos.",
+    to: "/leilao-de-centavos",
+    image: "/img-sistema-de-leilao/vitrine.png",
+    features: ["Lances Regressivos", "Painel Financeiro", "Gamificação"],
+    isPremium: true
+  },
+  {
+    icon: Tractor,
+    title: "Leilão Rural",
+    description: "Tecnologia especializada para o agronegócio. Gestão de genealogia, vídeos de lotes e suporte a grandes eventos rurais.",
+    to: "/leilao-rural",
+    image: "/img-sistema-de-leilao/cards.png",
+    features: ["Catálogo Rural", "Lotes de Animais", "App Agro"],
+    isPremium: true
   },
   {
     icon: LayoutDashboard,
@@ -31,34 +59,10 @@ const systems = [
     features: ["Busca Avançada", "Painel Lojista", "SEO Nativo"]
   },
   {
-    icon: Users,
-    title: "Sistema de Leilão Rural",
-    description: "Tecnologia especializada para o agronegócio. Gestão de genealogia, vídeos de lotes e suporte a grandes eventos rurais.",
-    to: "/leilao-rural",
-    image: "/img-sistema-de-leilao/cards.png",
-    features: ["Catálogo Rural", "Lotes de Animais", "App Agro"]
-  },
-  {
-    icon: Code2,
-    title: "Leilão de Centavos",
-    description: "Sistema de entretenimento e lances regressivos. Alta escalabilidade para milhares de acessos simultâneos.",
-    to: "/leilao-de-centavos",
-    image: "/img-sistema-de-leilao/vitrine.png",
-    features: ["Lances Regressivos", "Painel Financeiro", "Gamificação"]
-  },
-  {
-    icon: Rocket,
-    title: "Sistema de Cassino",
-    description: "Plataforma completa de iGaming com integração de provedores mundiais e gestão de banca segura.",
-    to: "/sistema-de-cassino",
-    image: "/img-sistema-de-leilao/dashboard-detalhe.png",
-    features: ["Slots & Live Casino", "Gestão de Afiliados", "Saque Imediato"]
-  },
-  {
     icon: Sparkles,
     title: "Sistema de Raspadinha",
     description: "Engajamento instantâneo com raspadinhas digitais personalizáveis e controle total de prêmios.",
-    to: "/solucoes-web/sistemas-web",
+    to: "/sistema-de-raspadinha",
     image: "/img-sistema-de-leilao/cards.png",
     features: ["Prêmios Instantâneos", "Design Custom", "Auditagem"]
   }
@@ -82,9 +86,9 @@ export function SystemsCarousel() {
               {/* Premium Badge */}
               {system.isPremium && (
                 <div className="absolute left-10 top-10 z-20">
-                  <span className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/20 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary-glow backdrop-blur-md animate-pulse">
+                  <span className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/20 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary-glow backdrop-blur-md animate-pulse shadow-[0_0_15px_rgba(49,91,255,0.3)]">
                     <Sparkles className="h-3 w-3" />
-                    Especialidade NcBrasil
+                    Tecnologia Flagship
                   </span>
                 </div>
               )}
@@ -110,13 +114,13 @@ export function SystemsCarousel() {
 
               <div className="relative flex h-full flex-col p-6 sm:p-10 pt-20 sm:pt-24">
                 <div className={cn(
-                  "mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl ring-1 ring-white/10 backdrop-blur transition-all duration-500 group-hover:scale-110 group-hover:glow-sm",
-                  system.isPremium ? "bg-primary text-white shadow-glow-sm" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
+                  "mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl ring-1 ring-white/10 backdrop-blur transition-all duration-500 group-hover:scale-110 group-hover:glow-md",
+                  system.isPremium ? "bg-gradient-primary text-white shadow-glow-sm" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
                 )}>
                   <system.icon className="h-8 w-8" />
                 </div>
 
-                <h3 className="font-display text-2xl sm:text-4xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{system.title}</h3>
+                <h3 className="font-display text-2xl sm:text-4xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors drop-shadow-sm">{system.title}</h3>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors line-clamp-3">
                   {system.description}
                 </p>
