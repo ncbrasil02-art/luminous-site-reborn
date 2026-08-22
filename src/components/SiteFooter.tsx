@@ -89,7 +89,7 @@ export function SiteFooter() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackClick("Facebook", "Footer Social")}
-                className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
+                className="group rounded-none bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
@@ -99,7 +99,7 @@ export function SiteFooter() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackClick("Instagram", "Footer Social")}
-                className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
+                className="group rounded-none bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />
@@ -109,7 +109,7 @@ export function SiteFooter() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackClick("LinkedIn", "Footer Social")}
-                className="group rounded-full bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
+                className="group rounded-none bg-secondary/30 p-2.5 transition-all hover:bg-primary/20"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5 text-muted-foreground transition-colors group-hover:text-primary" />

@@ -51,14 +51,14 @@ export function TestimonialsSection() {
           <div className="flex items-center gap-3">
             <button
               onClick={prev}
-              className="group flex h-12 w-12 items-center justify-center rounded-full border border-border bg-card/40 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:text-primary"
+              className="group flex h-12 w-12 items-center justify-center rounded-none border border-border bg-card/40 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:text-primary"
               aria-label="Anterior"
             >
               <ChevronLeft className="h-6 w-6 transition-transform group-hover:-translate-x-0.5" />
             </button>
             <button
               onClick={next}
-              className="group flex h-12 w-12 items-center justify-center rounded-full border border-border bg-card/40 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:text-primary"
+              className="group flex h-12 w-12 items-center justify-center rounded-none border border-border bg-card/40 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:text-primary"
               aria-label="Próximo"
             >
               <ChevronRight className="h-6 w-6 transition-transform group-hover:translate-x-0.5" />
@@ -83,7 +83,7 @@ export function TestimonialsSection() {
                     opacity: { duration: 0.2 }
                   }}
                   whileHover={{ y: -5 }}
-                  className="group relative flex h-full flex-col justify-between rounded-3xl border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:glow-sm"
+                  className="group relative flex h-full flex-col justify-between rounded-none border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:glow-sm"
                 >
                   <div>
                     <div className="mb-4 flex items-center gap-1 text-primary">
@@ -101,7 +101,7 @@ export function TestimonialsSection() {
                   </div>
 
                   <div className="mt-8 flex items-center gap-4 border-t border-border pt-6">
-                    <div className="relative h-12 w-12 overflow-hidden rounded-full ring-2 ring-primary/20 group-hover:ring-primary/40 transition-all">
+                    <div className="relative h-12 w-12 overflow-hidden rounded-none ring-2 ring-primary/20 group-hover:ring-primary/40 transition-all">
                       <img 
                         src={t.image} 
                         alt={t.author}
@@ -134,7 +134,7 @@ export function TestimonialsSection() {
                 setDirection(i > currentIndex ? 1 : -1);
                 setCurrentIndex(i);
               }}
-              className={`h-2 rounded-full transition-all duration-300 ${
+              className={`h-2 rounded-none transition-all duration-300 ${
                 i === currentIndex 
                   ? "w-8 bg-primary" 
                   : "w-2 bg-border hover:bg-primary/50"
