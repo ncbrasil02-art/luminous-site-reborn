@@ -66,7 +66,7 @@ export function ShareButtons({ url, title, className }: ShareButtonsProps) {
           rel="noopener noreferrer"
           onClick={() => trackClick(link.name, "Social Share", { url: link.href })}
           className={cn(
-            "group flex h-9 w-9 items-center justify-center rounded-full border border-border bg-surface/50 transition-all hover:scale-110",
+            "group flex h-9 w-9 items-center justify-center rounded-none border border-border bg-surface/50 transition-all hover:scale-110",
             link.color
           )}
           aria-label={`Compartilhar no ${link.name}`}
@@ -77,7 +77,7 @@ export function ShareButtons({ url, title, className }: ShareButtonsProps) {
       <button
         onClick={copyToClipboard}
         className={cn(
-          "group flex h-9 w-9 items-center justify-center rounded-full border border-border bg-surface/50 transition-all hover:scale-110 hover:text-primary",
+          "group flex h-9 w-9 items-center justify-center rounded-none border border-border bg-surface/50 transition-all hover:scale-110 hover:text-primary",
           copied && "text-primary border-primary/50"
         )}
         aria-label="Copiar link"

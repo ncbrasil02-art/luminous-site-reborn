@@ -148,7 +148,7 @@ export function SiteHeader() {
               >
                 <button 
                   className={cn(
-                    "relative flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-300 outline-none",
+                    "relative flex items-center gap-1.5 rounded-none px-4 py-2 text-sm font-semibold transition-all duration-300 outline-none",
                     "text-muted-foreground hover:text-foreground",
                     "hover:bg-white/[0.03] hover:ring-1 hover:ring-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)]",
                     activeSubmenu === item.label && "text-foreground bg-white/[0.05] ring-1 ring-white/20"
@@ -171,17 +171,17 @@ export function SiteHeader() {
                         duration: 0.3, 
                         ease: [0.23, 1, 0.32, 1] 
                       }}
-                      className="absolute left-0 top-full mt-2 w-80 overflow-hidden rounded-2xl border border-white/10 bg-card/95 p-2 shadow-2xl backdrop-blur-xl"
+                      className="absolute left-0 top-full mt-2 w-80 overflow-hidden rounded-none border border-white/10 bg-card/95 p-2 shadow-2xl backdrop-blur-xl"
                     >
                       <div className="grid gap-1 max-h-[70vh] overflow-y-auto scrollbar-none">
                         {item.submenu.map((subItem) => (
                           <Link
                             key={subItem.label}
                             to={subItem.to}
-                            className="group flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium text-muted-foreground transition-all hover:bg-white/[0.05] hover:text-foreground hover:ring-1 hover:ring-white/10"
+                            className="group flex items-center gap-3 rounded-none px-3 py-2.5 text-sm font-medium text-muted-foreground transition-all hover:bg-white/[0.05] hover:text-foreground hover:ring-1 hover:ring-white/10"
                             onClick={() => setActiveSubmenu(null)}
                           >
-                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                            <div className="flex h-8 w-8 items-center justify-center rounded-none bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                               <subItem.icon className="h-4 w-4" />
                             </div>
                             <div className="flex flex-col">
@@ -199,7 +199,7 @@ export function SiteHeader() {
                 key={item.to}
                 to={item.to}
                 className={cn(
-                  "rounded-lg px-4 py-2 text-sm font-semibold text-muted-foreground transition-all duration-300",
+                  "rounded-none px-4 py-2 text-sm font-semibold text-muted-foreground transition-all duration-300",
                   "hover:bg-white/[0.03] hover:ring-1 hover:ring-white/10 hover:text-foreground hover:shadow-[0_0_15px_rgba(255,255,255,0.05)]"
                 )}
                 activeProps={{ className: "text-foreground bg-white/[0.05] ring-1 ring-white/20" }}
@@ -233,7 +233,7 @@ export function SiteHeader() {
           <Link
             to="/orcamento"
             onClick={() => trackClick("Solicitar orçamento", "Header Nav")}
-            className="relative overflow-hidden group rounded-full bg-gradient-primary px-6 py-2.5 text-sm font-bold text-primary-foreground shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]"
+            className="relative overflow-hidden group rounded-none bg-gradient-primary px-6 py-2.5 text-sm font-bold text-primary-foreground shadow-[0_0_20px_rgba(59,130,246,0.3)] transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]"
           >
             <span className="relative z-10">Solicitar orçamento</span>
             <motion.div 
@@ -249,7 +249,7 @@ export function SiteHeader() {
         <button
           aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
           onClick={() => setMobileMenuOpen((v) => !v)}
-          className="relative z-50 flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 border border-white/10 text-foreground lg:hidden transition-all hover:bg-white/10"
+          className="relative z-50 flex h-10 w-10 items-center justify-center rounded-none bg-white/5 border border-white/10 text-foreground lg:hidden transition-all hover:bg-white/10"
         >
           {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
@@ -270,7 +270,7 @@ export function SiteHeader() {
                   <div key={item.label} className="flex flex-col">
                     <button
                       onClick={() => setMobileExpandedSection(mobileExpandedSection === item.label ? null : item.label)}
-                      className="flex items-center justify-between rounded-2xl px-5 py-4 text-base font-bold text-foreground bg-white/5 border border-white/5 transition-all active:scale-[0.98]"
+                      className="flex items-center justify-between rounded-none px-5 py-4 text-base font-bold text-foreground bg-white/5 border border-white/5 transition-all active:scale-[0.98]"
                     >
                       <span className="flex items-center gap-3">
                         <div className="h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(59,130,246,0.6)]" />
@@ -296,7 +296,7 @@ export function SiteHeader() {
                                 key={subItem.label}
                                 to={subItem.to}
                                 onClick={() => setMobileMenuOpen(false)}
-                                className="flex items-center gap-4 rounded-xl px-5 py-3.5 text-sm font-medium text-muted-foreground transition-all active:bg-white/10 active:text-foreground"
+                                className="flex items-center gap-4 rounded-none px-5 py-3.5 text-sm font-medium text-muted-foreground transition-all active:bg-white/10 active:text-foreground"
                                 activeProps={{ className: "text-foreground bg-white/5 font-bold" }}
                               >
                                 <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 text-primary">
@@ -315,7 +315,7 @@ export function SiteHeader() {
                     key={item.to}
                     to={item.to}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="flex items-center gap-3 rounded-2xl px-5 py-4 text-base font-bold text-foreground bg-white/5 border border-white/5 transition-all active:scale-[0.98]"
+                    className="flex items-center gap-3 rounded-none px-5 py-4 text-base font-bold text-foreground bg-white/5 border border-white/5 transition-all active:scale-[0.98]"
                     activeProps={{ className: "text-primary bg-primary/5 border-primary/20" }}
                   >
                     <div className="h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(59,130,246,0.6)]" />
@@ -327,7 +327,7 @@ export function SiteHeader() {
               <Link
                 to="/orcamento"
                 onClick={() => setMobileMenuOpen(false)}
-                className="mt-6 flex items-center justify-center rounded-2xl bg-gradient-primary py-5 text-base font-bold text-primary-foreground shadow-xl shadow-primary/20 active:scale-95 transition-transform"
+                className="mt-6 flex items-center justify-center rounded-none bg-gradient-primary py-5 text-base font-bold text-primary-foreground shadow-xl shadow-primary/20 active:scale-95 transition-transform"
               >
                 Solicitar orçamento
               </Link>

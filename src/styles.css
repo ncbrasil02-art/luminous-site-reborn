@@ -51,7 +51,7 @@
 }
 
 :root {
-  --radius: 1rem;
+  --radius: 0rem;
 
   /* Base — Premium Ink / Navy */
   --background: #01061F; /* --color-ink */

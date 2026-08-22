@@ -88,7 +88,7 @@ export const Route = createFileRoute("/nossos-servicos")({
           </Reveal>
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
-              <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
+              <span className="inline-flex items-center gap-2 rounded-none border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
                 <Sparkles className="h-3.5 w-3.5" />
                 Nossos Serviços
               </span>
@@ -111,12 +111,12 @@ export const Route = createFileRoute("/nossos-servicos")({
               <Reveal key={service.title} delay={i * 0.05}>
                 <Link
                   to={service.to}
-                  className="group relative flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-sm"
+                  className="group relative flex h-full flex-col overflow-hidden rounded-none border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-sm"
                 >
                   <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-gradient-primary opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-20" />
                   
                   <div className="relative flex flex-1 flex-col">
-                    <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform group-hover:scale-110">
+                    <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-none bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform group-hover:scale-110">
                       <service.icon className="h-6 w-6" />
                     </div>
                     
@@ -165,7 +165,7 @@ export const Route = createFileRoute("/nossos-servicos")({
       <section className="relative py-24 md:py-32">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <div className="relative overflow-hidden rounded-[2.5rem] bg-surface p-8 text-center md:p-16">
+            <div className="relative overflow-hidden rounded-none bg-surface p-8 text-center md:p-16">
               <div className="absolute inset-0 -z-10 bg-mesh opacity-20" />
               <div className="absolute inset-0 -z-10 grid-pattern opacity-10" />
               
@@ -179,14 +179,14 @@ export const Route = createFileRoute("/nossos-servicos")({
               <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Link
                   to="/orcamento"
-                  className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-8 py-4 text-base font-bold text-primary-foreground glow-sm transition-transform hover:scale-105"
+                  className="inline-flex items-center gap-2 rounded-none bg-gradient-primary px-8 py-4 text-base font-bold text-primary-foreground glow-sm transition-transform hover:scale-105"
                 >
                   Solicitar orçamento gratuito
                   <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
                   to="/contato"
-                  className="inline-flex items-center gap-2 rounded-full border border-border bg-background/50 px-8 py-4 text-base font-bold backdrop-blur transition-colors hover:bg-surface"
+                  className="inline-flex items-center gap-2 rounded-none border border-border bg-background/50 px-8 py-4 text-base font-bold backdrop-blur transition-colors hover:bg-surface"
                 >
                   Falar pelo WhatsApp
                 </Link>

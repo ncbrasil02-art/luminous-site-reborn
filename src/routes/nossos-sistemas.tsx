@@ -91,9 +91,9 @@ function SistemasHub() {
                 <Link 
                   to={s.to} 
                   onClick={() => trackClick(s.title, "Sistemas Hub Card")}
-                  className="group block h-full rounded-2xl border border-border bg-card/40 p-7 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-md"
+                  className="group block h-full rounded-none border border-border bg-card/40 p-7 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-md"
                 >
-                  <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
+                  <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-none bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
                     <s.icon className="h-6 w-6" />
                   </div>
                   <h3 className="font-display text-xl font-bold">{s.title}</h3>

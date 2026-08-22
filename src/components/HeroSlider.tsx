@@ -152,7 +152,7 @@ export function HeroSlider() {
           >
             {/* Eyebrow */}
             <div className="flex justify-center mb-8">
-              <span className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-6 py-2 text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-primary-glow backdrop-blur-md">
+              <span className="inline-flex items-center gap-3 rounded-none border border-white/10 bg-white/5 px-6 py-2 text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] text-primary-glow backdrop-blur-md">
                 <slide.icon className="h-4 w-4 text-white" />
                 {slide.eyebrow}
               </span>
@@ -176,7 +176,7 @@ export function HeroSlider() {
               <Link
                 to={slide.to}
                 onClick={() => trackClick(`Slider CTA 1: ${slide.title}`, "Home Hero")}
-                className="group relative flex h-16 items-center justify-center overflow-hidden rounded-xl bg-[#315BFF] px-10 text-sm font-bold uppercase tracking-widest text-white transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20"
+                className="group relative flex h-16 items-center justify-center overflow-hidden rounded-none bg-[#315BFF] px-10 text-sm font-bold uppercase tracking-widest text-white transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20"
               >
                 <span className="relative z-10 flex items-center gap-3">
                   {slide.cta1}
@@ -186,7 +186,7 @@ export function HeroSlider() {
               <Link
                 to="/orcamento"
                 onClick={() => trackClick(`Slider CTA 2: ${slide.title}`, "Home Hero")}
-                className="flex h-16 items-center justify-center rounded-xl border border-white/20 bg-white/5 px-10 text-sm font-bold uppercase tracking-widest text-white backdrop-blur-xl transition-all hover:bg-white/10 active:scale-95"
+                className="flex h-16 items-center justify-center rounded-none border border-white/20 bg-white/5 px-10 text-sm font-bold uppercase tracking-widest text-white backdrop-blur-xl transition-all hover:bg-white/10 active:scale-95"
               >
                 {slide.cta2}
               </Link>

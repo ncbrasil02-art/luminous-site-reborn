@@ -27,7 +27,7 @@ export function MagazineSection() {
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-primary mb-4"
+              className="inline-flex items-center gap-2 rounded-none border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-primary mb-4"
             >
               <BookOpen className="h-3.5 w-3.5" />
               Editorial NC
@@ -54,7 +54,7 @@ export function MagazineSection() {
               <Link 
                 to="/noticias/$slug"
                 params={{ slug: featured.slug || "" }}
-                className="group relative block aspect-[16/9] lg:aspect-auto lg:h-[600px] overflow-hidden rounded-[2.5rem] border border-border bg-card shadow-2xl"
+                className="group relative block aspect-[16/9] lg:aspect-auto lg:h-[600px] overflow-hidden rounded-none border border-border bg-card shadow-2xl"
               >
                 <img 
                   src={featured.image_url || "/news/default-nc.jpg"} 
@@ -70,7 +70,7 @@ export function MagazineSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent p-6 md:p-12 flex flex-col justify-end">
                   <div className="flex flex-wrap gap-3 mb-6">
                     {featured.categories.slice(0, 2).map(cat => (
-                      <span key={cat} className="rounded-full bg-primary/90 px-4 py-1.5 text-[10px] font-bold text-white uppercase tracking-widest shadow-lg">
+                      <span key={cat} className="rounded-none bg-primary/90 px-4 py-1.5 text-[10px] font-bold text-white uppercase tracking-widest shadow-lg">
                         {cat}
                       </span>
                     ))}
@@ -87,7 +87,7 @@ export function MagazineSection() {
                       <span className="hidden sm:block h-1 w-1 rounded-full bg-primary" />
                       <span className="hidden sm:block">Leitura de 8 min</span>
                     </div>
-                    <div className="h-12 w-12 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110 border border-white/20">
+                    <div className="h-12 w-12 rounded-none bg-white/10 backdrop-blur-md flex items-center justify-center text-white opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:scale-110 border border-white/20">
                       <ArrowRight className="h-5 w-5" />
                     </div>
                   </div>
@@ -105,7 +105,7 @@ export function MagazineSection() {
                   params={{ slug: news.slug || "" }}
                   className="group grid grid-cols-1 sm:grid-cols-3 gap-6 items-center"
                 >
-                  <div className="col-span-1 aspect-square overflow-hidden rounded-2xl bg-surface border border-border group-hover:border-primary/50 transition-colors">
+                  <div className="col-span-1 aspect-square overflow-hidden rounded-none bg-surface border border-border group-hover:border-primary/50 transition-colors">
                     <img 
                       src={news.image_url || "/news/default-nc.jpg"} 
                       alt={news.title} 
@@ -141,7 +141,7 @@ export function MagazineSection() {
             >
               <Link 
                 to="/noticias" 
-                className="group flex items-center justify-between rounded-2xl border-2 border-dashed border-border p-6 text-sm font-bold uppercase tracking-widest text-muted-foreground hover:border-primary/50 hover:bg-primary/5 hover:text-primary transition-all"
+                className="group flex items-center justify-between rounded-none border-2 border-dashed border-border p-6 text-sm font-bold uppercase tracking-widest text-muted-foreground hover:border-primary/50 hover:bg-primary/5 hover:text-primary transition-all"
               >
                 <span>Ver Todas as Edições</span>
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-2" />

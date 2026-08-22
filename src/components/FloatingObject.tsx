@@ -21,7 +21,7 @@ export function FloatingObject({ className, delay = 0, duration = 6, children }:
       }}
       className={cn("absolute z-0", className)}
     >
-      {children || <div className="h-24 w-24 rounded-full bg-primary/20 blur-3xl" />}
+      {children || <div className="h-24 w-24 rounded-none bg-primary/20 blur-3xl" />}
     </motion.div>
   );
 }
