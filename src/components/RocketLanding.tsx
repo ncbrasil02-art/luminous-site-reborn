@@ -46,14 +46,31 @@ export function RocketLanding() {
         }}
         className="relative w-48 h-48 flex items-center justify-center"
       >
+        {/* Cauda de luz dinâmica em direção ao WhatsApp no pouso */}
+        <motion.div
+          style={{
+            opacity: useTransform(landingProgress, [0.8, 1], [0, 0.8]),
+          }}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 w-4 h-32 bg-gradient-to-t from-primary/60 via-primary/20 to-transparent blur-xl -z-10 origin-top rotate-45"
+          animate={{
+            scaleY: [1, 1.2, 1],
+            opacity: [0.4, 0.8, 0.4],
+          }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+
         {/* Foguete Branded */}
         <motion.img
           src={rocketAsset.url}
           alt=""
           className="w-full h-full object-contain"
           animate={isVisible && scrollYProgress.get() > 0.45 ? {
-            y: [0, -15, 0],
-            rotate: [-45, -42, -45]
+            y: [0, -10, 0],
+            rotate: [-45, -43, -45]
           } : {}}
           transition={{
             duration: 3,
