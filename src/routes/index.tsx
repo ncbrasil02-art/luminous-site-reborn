@@ -478,7 +478,14 @@ function HomePage() {
 
       {/* CTA FINAL ======================================================== */}
       <section className="relative overflow-hidden py-24 md:py-32">
-        <div className="absolute inset-0 -z-10 bg-mesh" aria-hidden />
+        <div className="absolute inset-0 -z-10 bg-mesh overflow-hidden" aria-hidden>
+          <img 
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200" 
+            alt="Digital Marketing Agency Team"
+            className="w-full h-full object-cover opacity-10 grayscale"
+            loading="lazy"
+          />
+        </div>
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal>
             <div className="relative overflow-hidden rounded-none border border-primary/30 bg-surface/60 px-6 py-12 backdrop-blur md:px-12 md:py-16">
