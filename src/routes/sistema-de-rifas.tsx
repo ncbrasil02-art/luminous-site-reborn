@@ -77,8 +77,8 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         { to: "/sistema-de-rifas", label: "Sistema de Rifas" },
       ]}
       eyebrow="Ações Online · Script de Rifas · Lucro Real"
-      h1={<>O Melhor <span className="text-gradient">Script de Rifas</span> e Plataforma de Ações Online do Brasil</>}
-      intro={<>Tenha seu próprio <strong className="text-foreground">sistema de rifas</strong> profissional e comece a <strong className="text-foreground">fazer rifa online</strong> hoje mesmo com tecnologia de ponta. Nossa <strong className="text-foreground">plataforma de ações online</strong> é a única que entrega o <strong className="text-foreground">script de ações</strong> completo, legalizado e com <strong className="text-foreground">Pix instantâneo</strong>. Diferente de plataformas limitadas, com o nosso <strong className="text-foreground">sistema de ações de rifas</strong> você é dono do negócio e fica com <strong className="text-foreground">100% do lucro</strong>.</>}
+      h1={<>Sistema de Rifas com <span className="text-gradient">Hora Premiada</span>, Roletas, Raspadinhas e Cotas Premiadas</>}
+      intro={<>Tenha seu próprio <strong className="text-foreground">sistema de rifas</strong> profissional com módulos de <strong className="text-foreground">Hora Premiada</strong>, Roletas Interativas, Raspadinhas Digitais e Cotas Premiadas. Nossa <strong className="text-foreground">plataforma de ações online</strong> é a única que entrega o <strong className="text-foreground">script de ações</strong> completo e viral. Com o nosso <strong className="text-foreground">sistema de ações de rifas</strong> você escala seu faturamento com automação total e <strong className="text-foreground">Pix instantâneo</strong>.</>}
       stats={[
         { value: "50Mi+", label: "Cotas vendidas" },
         { value: "3.000+", label: "Rifas realizadas" },
