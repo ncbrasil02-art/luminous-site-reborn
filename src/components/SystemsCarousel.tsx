@@ -86,9 +86,9 @@ export function SystemsCarousel() {
               {/* Premium Badge */}
               {system.isPremium && (
                 <div className="absolute left-10 top-10 z-20">
-                  <span className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/20 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary-glow backdrop-blur-md animate-pulse">
+                  <span className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/20 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary-glow backdrop-blur-md animate-pulse shadow-[0_0_15px_rgba(49,91,255,0.3)]">
                     <Sparkles className="h-3 w-3" />
-                    Especialidade NcBrasil
+                    Tecnologia Flagship
                   </span>
                 </div>
               )}
@@ -114,13 +114,13 @@ export function SystemsCarousel() {
 
               <div className="relative flex h-full flex-col p-6 sm:p-10 pt-20 sm:pt-24">
                 <div className={cn(
-                  "mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl ring-1 ring-white/10 backdrop-blur transition-all duration-500 group-hover:scale-110 group-hover:glow-sm",
-                  system.isPremium ? "bg-primary text-white shadow-glow-sm" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
+                  "mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl ring-1 ring-white/10 backdrop-blur transition-all duration-500 group-hover:scale-110 group-hover:glow-md",
+                  system.isPremium ? "bg-gradient-primary text-white shadow-glow-sm" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
                 )}>
                   <system.icon className="h-8 w-8" />
                 </div>
 
-                <h3 className="font-display text-2xl sm:text-4xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{system.title}</h3>
+                <h3 className="font-display text-2xl sm:text-4xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors drop-shadow-sm">{system.title}</h3>
                 <p className="mt-4 text-base leading-relaxed text-muted-foreground group-hover:text-foreground/90 transition-colors line-clamp-3">
                   {system.description}
                 </p>
