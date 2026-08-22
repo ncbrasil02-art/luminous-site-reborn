@@ -86,10 +86,10 @@ export function SystemsCarousel() {
                 transition: { duration: 0.4, ease: "easeOut" }
               }}
               className={cn(
-                "group relative h-[500px] sm:h-[600px] lg:h-[650px] overflow-hidden rounded-none border transition-all duration-500 backdrop-blur-xl",
+                "group relative h-[500px] sm:h-[600px] lg:h-[650px] overflow-hidden rounded-none border transition-all duration-500 backdrop-blur-md",
                 system.isPremium 
-                  ? "border-primary/40 bg-[#0A1428]/60 glow-md ring-1 ring-primary/20 hover:border-primary-glow/60" 
-                  : "border-white/5 bg-[#0A1428]/40 hover:border-primary/40 hover:glow-md hover:bg-[#0A1428]/60"
+                  ? "border-primary/40 bg-[#0A1428]/60 ring-1 ring-primary/20 hover:border-primary-glow/60" 
+                  : "border-white/5 bg-[#0A1428]/40 hover:border-primary/40 hover:bg-[#0A1428]/60"
               )}
             >
               {/* Premium Badge */}
