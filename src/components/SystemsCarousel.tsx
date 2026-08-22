@@ -3,6 +3,12 @@ import { ArrowLeft, ArrowRight, Code2, Gavel, LayoutDashboard, ShoppingCart, Tra
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/Section";
+import leilaoHero from "@/assets/sistema-de-leilao-home-premium.png.asset.json";
+import rifasHero from "@/assets/melhor-sistema-de-rifas-online.png.asset.json";
+import cassinoHero from "@/assets/plataforma-cassino-main.png.asset.json";
+import centavosVitrine from "@/assets/centavos-vitrine.png.asset.json";
+import leilaoCards from "@/assets/sistema-de-leilao-cards.png.asset.json";
+import classificadosDashboard from "@/assets/classificados-veiculos-dashboard-vkintegradora.png.asset.json";
 
 const systems = [
   {
@@ -10,7 +16,7 @@ const systems = [
     title: "Sistema de Leilão",
     description: "Referência nacional em tecnologia de leilões. Pregão eletrônico ultraveloz, auditagem completa e lances em tempo real com latência zero.",
     to: "/sistema-de-leilao",
-    image: "/img-sistema-de-leilao/home-premium.png",
+    image: leilaoHero.url,
     features: ["Transmissão ao Vivo", "Pregão Eletrônico", "Gestão de Arrematantes"],
     isPremium: true
   },
@@ -19,7 +25,7 @@ const systems = [
     title: "Sistema de Rifas",
     description: "A plataforma de sorteios mais completa do Brasil. Totalmente automatizada com split de pagamentos e visual cinematográfico.",
     to: "/sistema-de-rifas",
-    image: "/img-sistema-de-rifas/Fachada Profissional.png",
+    image: rifasHero.url,
     features: ["Pagamentos Automáticos", "Ranking de Compradores", "Reserva de Bilhetes"],
     isPremium: true
   },
@@ -28,7 +34,7 @@ const systems = [
     title: "Sistema de Cassino",
     description: "Plataforma completa de iGaming com integração de provedores mundiais e gestão de banca segura.",
     to: "/sistema-de-cassino",
-    image: "/img-sistema-de-leilao/dashboard-detalhe.png",
+    image: cassinoHero.url,
     features: ["Slots & Live Casino", "Gestão de Afiliados", "Saque Imediato"],
     isPremium: true
   },
@@ -37,7 +43,7 @@ const systems = [
     title: "Leilão de Centavos",
     description: "Sistema de entretenimento e lances regressivos. Alta escalabilidade para milhares de acessos simultâneos.",
     to: "/leilao-de-centavos",
-    image: "/img-sistema-de-leilao/vitrine.png",
+    image: centavosVitrine.url,
     features: ["Lances Regressivos", "Painel Financeiro", "Gamificação"],
     isPremium: true
   },
@@ -46,7 +52,7 @@ const systems = [
     title: "Leilão Rural",
     description: "Tecnologia especializada para o agronegócio. Gestão de genealogia, vídeos de lotes e suporte a grandes eventos rurais.",
     to: "/leilao-rural",
-    image: "/img-sistema-de-leilao/cards.png",
+    image: leilaoCards.url,
     features: ["Catálogo Rural", "Lotes de Animais", "App Agro"],
     isPremium: true
   },
@@ -55,7 +61,7 @@ const systems = [
     title: "Portal de Veículos",
     description: "Plataforma robusta para revenda de autos. Filtros inteligentes, integração com estoque e alta conversão de leads.",
     to: "/classificados-de-veiculos",
-    image: "/img-sistema-de-leilao/dashboard-detalhe.png",
+    image: classificadosDashboard.url,
     features: ["Busca Avançada", "Painel Lojista", "SEO Nativo"]
   },
   {
@@ -63,7 +69,7 @@ const systems = [
     title: "Sistema de Raspadinha",
     description: "Engajamento instantâneo com raspadinhas digitais personalizáveis e controle total de prêmios.",
     to: "/sistema-de-raspadinha",
-    image: "/img-sistema-de-leilao/cards.png",
+    image: leilaoCards.url,
     features: ["Prêmios Instantâneos", "Design Custom", "Auditagem"]
   }
 ];
