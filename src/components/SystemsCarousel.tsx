@@ -14,7 +14,7 @@ const systems = [
   {
     icon: Gavel,
     title: "Sistema de Leilão",
-    description: "Referência nacional em tecnologia de leilões. Pregão eletrônico ultraveloz, auditagem completa e lances em tempo real com Sistema de leilões Online Homologado.",
+    description: "Referência nacional em tecnologia de leilões. Pregão eletrônico ultraveloz, auditagem completa e lances em tempo real com Seu Sistema de Leilões Online Homologado.",
     to: "/sistema-de-leilao",
     image: leilaoHero.url,
     features: ["Transmissão ao Vivo", "Pregão Eletrônico", "Gestão de Arrematantes"],

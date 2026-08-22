@@ -22,7 +22,7 @@ const slides = [
     id: "leilao",
     eyebrow: "Tecnologia Flagship",
     icon: Gavel,
-    title: "Sistema de leilões Online Homologado.",
+    title: "Seu Sistema de Leilões Online Homologado.",
     highlight: "Homologado.",
     description: "A engenharia mais robusta do Brasil para leilões online, presenciais e híbridos. Performance extrema com segurança auditável e lances em tempo real.",
     to: "/sistema-de-leilao",
