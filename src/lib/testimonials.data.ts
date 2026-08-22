@@ -31,7 +31,7 @@ export const leilaoTestimonials = [
 
 export const rifasTestimonials = [
   {
-    quote: "A plataforma NC Rifas mudou minha vida. No primeiro mês faturei o que levava um ano no meu antigo emprego. O sistema de cotas premiadas é o que mais vende.",
+    quote: "A plataforma NC Rifas mudou minha vida. No primeiro mês faturei o que levava um ano no meu antigo emprego. O sistema de Hora Premiada e as Roletas são o que mais vendem.",
     author: "Eder Grauu",
     role: "Influenciador & Organizador",
     image: "/testimonials/eder.jpg",
@@ -52,7 +52,7 @@ export const rifasTestimonials = [
     rating: 5
   },
   {
-    quote: "A interface é incrível e o sistema de lances e cotas funciona sem travamentos. Meus lucros subiram 400% desde que migrei para cá.",
+    quote: "A interface é incrível e as Raspadinhas Digitais funcionam sem travamentos. Meus lucros subiram 400% desde que migrei para a tecnologia cinematográfica da NC.",
     author: "Valentina Ruggeri",
     role: "Organizador de Ações",
     image: "/testimonials/cale.jpg",

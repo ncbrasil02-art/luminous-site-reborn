@@ -40,9 +40,9 @@ export const lpFaq = [
 
 export const Route = createFileRoute("/sistema-de-rifas")({
   head: () => buildLPMeta({
-    title: "Melhor Script de Rifas do Brasil | Plataforma de Ações Online NC Brasil",
-    description: "NcBrasil: Crie sua plataforma de ações online com sorteio pela Loteria Federal, Pix instantâneo e zero taxas. O script de rifas mais seguro do Brasil.",
-    keywords: "script de rifas, sistema de rifas, fazer rifa online, plataforma de rifas, plataforma de ações online, script de ações, sistema de ações de rifas, criar rifa online, site de rifas profissional",
+    title: "Sistema de Rifas com Hora Premiada, Roletas e Raspadinhas | NC Brasil",
+    description: "NcBrasil: Plataforma cinematográfica de rifas com Hora Premiada, Roletas, Raspadinhas e Cotas Premiadas. O sistema mais completo e viral do Brasil.",
+    keywords: "sistema de rifas, hora premiada, roletas online, raspadinhas digitais, cotas premiadas, plataforma de rifas profissional, script de rifas viral",
     canonical: "/sistema-de-rifas",
     h1: "NcBrasil - Sistema de Rifas Online",
     breadcrumbs: [
@@ -55,9 +55,9 @@ export const Route = createFileRoute("/sistema-de-rifas")({
   component: () => (
     <>
       <Helmet>
-        <title>Script de Rifas e Ações Online | Melhor Sistema de Rifas Profissional</title>
-        <meta name="description" content="Script de rifas completo e legalizado. Crie sua plataforma de ações online com sorteio pela Loteria Federal, Pix instantâneo e zero taxas sobre vendas. O melhor sistema de rifas do Brasil." />
-        <meta name="keywords" content="script de rifas, sistema de rifas, fazer rifa online, plataforma de rifas, plataforma de ações online, script de ações, sistema de ações de rifas, criar rifa online, site de rifas profissional" />
+        <title>Sistema de Rifas com Hora Premiada, Roletas e Raspadinhas Digitais</title>
+        <meta name="description" content="Tenha sua plataforma cinematográfica de rifas com módulos de Hora Premiada, Roletas e Raspadinhas. O sistema mais completo e viral do mercado brasileiro." />
+        <meta name="keywords" content="sistema de rifas, hora premiada, roletas online, raspadinhas digitais, cotas premiadas, plataforma de rifas profissional, script de rifas viral" />
       </Helmet>
       <LandingPage
       imageKeyword="melhor script de rifas e plataforma de ações online profissional"
@@ -77,8 +77,8 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         { to: "/sistema-de-rifas", label: "Sistema de Rifas" },
       ]}
       eyebrow="Ações Online · Script de Rifas · Lucro Real"
-      h1={<>O Melhor <span className="text-gradient">Script de Rifas</span> e Plataforma de Ações Online do Brasil</>}
-      intro={<>Tenha seu próprio <strong className="text-foreground">sistema de rifas</strong> profissional e comece a <strong className="text-foreground">fazer rifa online</strong> hoje mesmo com tecnologia de ponta. Nossa <strong className="text-foreground">plataforma de ações online</strong> é a única que entrega o <strong className="text-foreground">script de ações</strong> completo, legalizado e com <strong className="text-foreground">Pix instantâneo</strong>. Diferente de plataformas limitadas, com o nosso <strong className="text-foreground">sistema de ações de rifas</strong> você é dono do negócio e fica com <strong className="text-foreground">100% do lucro</strong>.</>}
+      h1={<>Sistema de Rifas com <span className="text-gradient">Hora Premiada</span>, Roletas, Raspadinhas e Cotas Premiadas</>}
+      intro={<>Tenha seu próprio <strong className="text-foreground">sistema de rifas</strong> profissional com módulos de <strong className="text-foreground">Hora Premiada</strong>, Roletas Interativas, Raspadinhas Digitais e Cotas Premiadas. Nossa <strong className="text-foreground">plataforma de ações online</strong> é a única que entrega o <strong className="text-foreground">script de ações</strong> completo e viral. Com o nosso <strong className="text-foreground">sistema de ações de rifas</strong> você escala seu faturamento com automação total e <strong className="text-foreground">Pix instantâneo</strong>.</>}
       stats={[
         { value: "50Mi+", label: "Cotas vendidas" },
         { value: "3.000+", label: "Rifas realizadas" },
@@ -116,12 +116,12 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         ],
       }}
       solution={{
-        title: <>Seu <span className="text-gradient">Script de Rifas</span> — Domínio Próprio e 100% de Lucro</>,
-        desc: <>Ao contratar nossa <strong className="text-foreground">plataforma de rifas</strong>, você recebe um ambiente exclusivo e configurado em seu domínio. Nosso <strong className="text-foreground">sistema de rifas</strong> permite que você gerencie campanhas ilimitadas, afiliados e pagamentos sem intermediários. É a solução definitiva para quem busca um <strong className="text-foreground">script de ações</strong> robusto, seguro e altamente lucrativo.</>,
+        title: <>Seu <span className="text-gradient">Sistema de Rifas</span> com Hora Premiada e Roletas</>,
+        desc: <>Ao contratar nossa <strong className="text-foreground">plataforma de rifas</strong>, você recebe recursos exclusivos como <strong className="text-foreground">Hora Premiada</strong>, Roletas e Raspadinhas Digitais. Nosso <strong className="text-foreground">sistema de rifas</strong> permite que você gerencie campanhas virais de alta conversão. É a solução definitiva para quem busca um <strong className="text-foreground">script de ações</strong> robusto, seguro e altamente tecnológico com <strong className="text-foreground">Cotas Premiadas</strong> automáticas.</>,
         highlights: [
-          "**Licença perpétua ou mensalidade fixa** — sem % sobre vendas",
-          "**App iOS + Android** publicado com sua marca",
-          "**Sorteio pela Loteria Federal** com hash blockchain",
+          "**Módulo Hora Premiada** — Sorteios relâmpago automatizados",
+          "**Roletas e Raspadinhas** — Gamificação para engajamento viral",
+          "**Cotas Premiadas** — Prêmios instantâneos automáticos",
           "**Pix instantâneo** liberado em <10 segundos",
           "**Orientação legal completa** — modelo SECAP, capitalização ou filantropia",
           "**Suporte técnico 24/7** por WhatsApp e ticket",
@@ -138,9 +138,9 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         { icon: ShieldCheck, title: "Cotas Auditáveis", desc: "Cada bilhete gera **hash imutável em blockchain** — o comprador confere sua cota antes do sorteio." },
       ]}
       features={[
-        { icon: ShoppingBag, title: "Cotas Ilimitadas", desc: "De **100 a 10 milhões de cotas** por rifa, valor livre de R$0,10 a R$1.000, com cotas premiadas aleatórias." },
+        { icon: ShoppingBag, title: "Hora Premiada & Cotas", desc: "De **100 a 10 milhões de cotas** por rifa, com módulos de **Hora Premiada** e cotas premiadas instantâneas automáticas." },
         { icon: Wallet, title: "Múltiplos Meios de Pagamento", desc: "**Pix, cartão em até 12x, boleto** e crédito de cotas anteriores. Split automático entre organizador e afiliados." },
-        { icon: Gift, title: "Combos & Desconto Progressivo", desc: "**Leve 10 pague 8, leve 50 pague 30** — sistema de combos dinâmicos com cotas bônus grátis." },
+        { icon: Gift, title: "Roletas & Raspadinhas", desc: "**Roletas Interativas e Raspadinhas Digitais** para engajamento imediato e gamificação da sua plataforma." },
         { icon: Users, title: "Ranking de Compradores", desc: "**Top compradores** com prêmio extra automático e ranking em tempo real na página da rifa." },
         { icon: Smartphone, title: "App do Participante", desc: "**iOS + Android nativo** com sua marca, notificação push do sorteio, minhas cotas e histórico." },
         { icon: BarChart3, title: "Dashboard do Organizador", desc: "**Vendas em tempo real, conciliação bancária, curva de arrecadação** e saque automático." },
@@ -151,13 +151,13 @@ export const Route = createFileRoute("/sistema-de-rifas")({
       modules={[
         {
           icon: Ticket,
-          title: "Módulo Rifas",
+          title: "Módulo Virais",
           items: [
-            "Criação ilimitada de campanhas",
-            "Cotas premiadas instantâneas",
-            "Sorteio Loteria Federal automatizado",
-            "Regulamento gerado automaticamente",
-            "Galeria de fotos e vídeos do prêmio",
+            "Hora Premiada com sorteios relâmpago",
+            "Roletas Interativas de bônus",
+            "Raspadinhas Digitais instantâneas",
+            "Cotas Premiadas automatizadas",
+            "Sorteio Loteria Federal integrado",
           ],
         },
         {
