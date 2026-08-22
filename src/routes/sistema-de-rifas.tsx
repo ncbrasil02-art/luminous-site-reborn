@@ -138,7 +138,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         { icon: ShieldCheck, title: "Cotas Auditáveis", desc: "Cada bilhete gera **hash imutável em blockchain** — o comprador confere sua cota antes do sorteio." },
       ]}
       features={[
-        { icon: ShoppingBag, title: "Cotas Ilimitadas", desc: "De **100 a 10 milhões de cotas** por rifa, valor livre de R$0,10 a R$1.000, com cotas premiadas aleatórias." },
+        { icon: ShoppingBag, title: "Hora Premiada & Cotas", desc: "De **100 a 10 milhões de cotas** por rifa, com módulos de **Hora Premiada** e cotas premiadas instantâneas automáticas." },
         { icon: Wallet, title: "Múltiplos Meios de Pagamento", desc: "**Pix, cartão em até 12x, boleto** e crédito de cotas anteriores. Split automático entre organizador e afiliados." },
         { icon: Gift, title: "Combos & Desconto Progressivo", desc: "**Leve 10 pague 8, leve 50 pague 30** — sistema de combos dinâmicos com cotas bônus grátis." },
         { icon: Users, title: "Ranking de Compradores", desc: "**Top compradores** com prêmio extra automático e ranking em tempo real na página da rifa." },
