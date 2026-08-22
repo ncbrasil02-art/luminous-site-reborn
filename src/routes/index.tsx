@@ -378,7 +378,7 @@ function HomePage() {
           </FloatingObject>
         </div>
 
-        <div className="relative z-20 mx-auto max-w-7xl px-4 py-24 text-center md:px-6">
+        <div className="relative z-20 mx-auto max-w-7xl px-4 py-24 text-center sm:px-6 lg:px-8">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary-glow backdrop-blur-md glow-sm mb-8">
               <Sparkles className="h-3.5 w-3.5 animate-pulse" />
