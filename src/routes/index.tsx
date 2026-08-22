@@ -29,7 +29,7 @@ import { Reveal, SectionHeading } from "@/components/Section";
 import { SystemsCarousel } from "@/components/SystemsCarousel";
 import { HeroSlider } from "@/components/HeroSlider";
 import { trackClick } from "@/lib/analytics";
-import { TemplateConstruction } from "@/components/TemplateConstruction";
+import { RocketTakeoff } from "@/components/RocketTakeoff";
 
 import { buildMeta, SITE_URL } from "@/lib/seo";
 import { MagazineSection } from "@/components/MagazineSection";
@@ -330,7 +330,9 @@ function HomePage() {
               </Reveal>
             ))}
           </div>
-          <TemplateConstruction />
+          <div className="relative h-96 w-full mt-20">
+             <RocketTakeoff variant="scrolling" />
+          </div>
         </div>
       </section>
 
