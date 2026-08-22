@@ -86,7 +86,7 @@ export function SystemsCarousel() {
                 transition: { duration: 0.4, ease: "easeOut" }
               }}
               className={cn(
-                "group relative h-[500px] sm:h-[600px] lg:h-[650px] overflow-hidden rounded-[2.5rem] sm:rounded-[3.5rem] border transition-all duration-500 backdrop-blur-xl",
+                "group relative h-[500px] sm:h-[600px] lg:h-[650px] overflow-hidden rounded-none border transition-all duration-500 backdrop-blur-xl",
                 system.isPremium 
                   ? "border-primary/40 bg-[#0A1428]/60 glow-md ring-1 ring-primary/20 hover:border-primary-glow/60" 
                   : "border-white/5 bg-[#0A1428]/40 hover:border-primary/40 hover:glow-md hover:bg-[#0A1428]/60"
@@ -125,7 +125,7 @@ export function SystemsCarousel() {
 
               <div className="relative flex h-full flex-col p-6 sm:p-10 pt-20 sm:pt-24">
                 <div className={cn(
-                  "mb-8 inline-flex h-20 w-20 items-center justify-center rounded-3xl ring-1 ring-white/10 backdrop-blur-xl transition-all duration-700 group-hover:scale-110 group-hover:rotate-6 group-hover:glow-lg",
+                  "mb-8 inline-flex h-20 w-20 items-center justify-center rounded-none ring-1 ring-white/10 backdrop-blur-xl transition-all duration-700 group-hover:scale-110 group-hover:rotate-6 group-hover:glow-lg",
                   system.isPremium ? "bg-gradient-primary text-white shadow-glow-md" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
                 )}>
                   <system.icon className="h-10 w-10" />
@@ -149,7 +149,7 @@ export function SystemsCarousel() {
                   <Link
                     to={system.to}
                     className={cn(
-                      "group/btn relative flex w-full items-center justify-between overflow-hidden rounded-2xl px-6 py-5 text-sm font-bold uppercase tracking-widest transition-all",
+                      "group/btn relative flex w-full items-center justify-between overflow-hidden rounded-none px-6 py-5 text-sm font-bold uppercase tracking-widest transition-all",
                       system.isPremium 
                         ? "bg-primary text-white glow-sm hover:scale-[1.02]" 
                         : "bg-white/5 text-white hover:bg-primary hover:glow-sm"
