@@ -7,6 +7,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { resolveLegacyPath } from "@/lib/redirects";
 import { WhatsappFab } from "@/components/WhatsappFab";
+import { RocketLanding } from "@/components/RocketLanding";
 import { initAnalytics, trackPageView, trackNotFound } from "@/lib/analytics";
 
 const SITE_URL = "https://www.ncbrasil.com.br";
@@ -213,6 +214,7 @@ function RootComponent() {
           <Outlet />
         </main>
         <SiteFooter />
+        <RocketLanding />
         <WhatsappFab />
       </div>
       <Scripts />
