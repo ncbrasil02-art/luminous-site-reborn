@@ -116,8 +116,8 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         ],
       }}
       solution={{
-        title: <>Seu <span className="text-gradient">Script de Rifas</span> — Domínio Próprio e 100% de Lucro</>,
-        desc: <>Ao contratar nossa <strong className="text-foreground">plataforma de rifas</strong>, você recebe um ambiente exclusivo e configurado em seu domínio. Nosso <strong className="text-foreground">sistema de rifas</strong> permite que você gerencie campanhas ilimitadas, afiliados e pagamentos sem intermediários. É a solução definitiva para quem busca um <strong className="text-foreground">script de ações</strong> robusto, seguro e altamente lucrativo.</>,
+        title: <>Seu <span className="text-gradient">Sistema de Rifas</span> com Hora Premiada e Roletas</>,
+        desc: <>Ao contratar nossa <strong className="text-foreground">plataforma de rifas</strong>, você recebe recursos exclusivos como <strong className="text-foreground">Hora Premiada</strong>, Roletas e Raspadinhas Digitais. Nosso <strong className="text-foreground">sistema de rifas</strong> permite que você gerencie campanhas virais de alta conversão. É a solução definitiva para quem busca um <strong className="text-foreground">script de ações</strong> robusto, seguro e altamente tecnológico com <strong className="text-foreground">Cotas Premiadas</strong> automáticas.</>,
         highlights: [
           "**Licença perpétua ou mensalidade fixa** — sem % sobre vendas",
           "**App iOS + Android** publicado com sua marca",
