@@ -21,7 +21,7 @@ export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
     keywords: "sistemas de leilões, plataforma de leilão online, leilão eletrônico, sistema de rifas, criação de sites, sistemas web, NC Brasil",
     canonical: URL,
     serviceType: "criação de sites",
-    h1: "Desenvolvimento de Sites e Loja Virtual Profissional",
+    h1: "NcBrasil - Sistemas de Leilões e Plataformas de Leilão Online",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },
