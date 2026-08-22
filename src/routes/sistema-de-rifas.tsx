@@ -40,7 +40,7 @@ export const lpFaq = [
 
 export const Route = createFileRoute("/sistema-de-rifas")({
   head: () => buildLPMeta({
-    title: "Sistema de Rifas com Hora Premiada, Roletas e Raspadinhas | NC Brasil",
+    title: "Sistema de Rifas com Hora Premiada, Roletas e Raspadinhas Online",
     description: "NcBrasil: Plataforma cinematográfica de rifas com Hora Premiada, Roletas, Raspadinhas e Cotas Premiadas. O sistema mais completo e viral do Brasil.",
     keywords: "sistema de rifas, hora premiada, roletas online, raspadinhas digitais, cotas premiadas, plataforma de rifas profissional, script de rifas viral",
     canonical: "https://www.ncbrasil.com.br/sistema-de-rifas",
@@ -55,7 +55,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
   component: () => (
     <>
       <Helmet>
-        <title>Sistema de Rifas com Hora Premiada, Roletas e Raspadinhas Digitais</title>
+        <title>Sistema de Rifas com Hora Premiada, Roletas e Raspadinhas Online</title>
         <meta name="description" content="Tenha sua plataforma cinematográfica de rifas com módulos de Hora Premiada, Roletas e Raspadinhas. O sistema mais completo e viral do mercado brasileiro." />
         <meta name="keywords" content="sistema de rifas, hora premiada, roletas online, raspadinhas digitais, cotas premiadas, plataforma de rifas profissional, script de rifas viral" />
         <link rel="canonical" href="https://www.ncbrasil.com.br/sistema-de-rifas" />

@@ -16,12 +16,12 @@ const lpFaq = [
 
 export const Route = createFileRoute("/solucoes-web/desenvolvimento-de-sites")({
   head: () => buildLPMeta({
-    title: "Criação de Sites e Loja Virtual Profissional | Desenvolvimento de Alta Performance",
-    description: "Desenvolvimento de sites institucionais e lojas virtuais focados em atrair visitantes e converter vendas. Focamos em palavras-chaves que atraiam pessoas de visitantes adquirirem seu site.",
-    keywords: "criação de sites, desenvolvimento de loja virtual, agência web, site institucional, e-commerce, vendas online, agência de criação de sites",
+    title: "NcBrasil - Sistemas de Leilões e Plataformas de Leilão Online",
+    description: "NcBrasil: Especialistas em sistemas de leilões e plataformas de leilão online homologadas. Tecnologia avançada para o seu negócio digital.",
+    keywords: "sistemas de leilões, plataforma de leilão online, leilão eletrônico, sistema de rifas, criação de sites, sistemas web, NC Brasil",
     canonical: URL,
     serviceType: "criação de sites",
-    h1: "Desenvolvimento de Sites e Loja Virtual Profissional",
+    h1: "NcBrasil - Sistemas de Leilões e Plataformas de Leilão Online",
     breadcrumbs: [
       { label: "Home", to: "https://www.ncbrasil.com.br/" },
       { label: "Soluções Web", to: "https://www.ncbrasil.com.br/solucoes-web" },

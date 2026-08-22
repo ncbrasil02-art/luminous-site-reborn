@@ -63,12 +63,12 @@ const OG_IMAGE = `/og-home.jpg`;
 const homeJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "NC Brasil — Criação de Sites, Sistemas Web e Aplicativos",
+  name: "NC Brasil — Sistemas de Leilão e Plataformas de Leilão Online",
   url: SITE_URL,
   logo: `${SITE_URL}/logo-nc-brasil.png`,
   image: `${SITE_URL}${OG_IMAGE}`,
   description:
-    "Empresa de criação de sites profissionais, sistemas web, lojas virtuais, aplicativos mobile e marketing digital em São Paulo e Rio de Janeiro.",
+    "Especialistas em sistemas de leilão e plataformas de leilão online homologadas. Desenvolvemos sistemas avançados de leilões eletrônicos e rifas digitais.",
   address: {
     "@type": "PostalAddress",
     "addressLocality": "São Paulo",
@@ -84,11 +84,11 @@ const homeJsonLd = {
   priceRange: "$$$",
   areaServed: ["São Paulo", "Rio de Janeiro", "Brasil"],
   serviceType: [
-    "Criação de Sites",
-    "Criação de Sistemas Web",
-    "Lojas Virtuais",
-    "Aplicativos Mobile",
-    "Marketing Digital",
+    "Sistema de Leilão",
+    "Plataforma de Leilão Online",
+    "Sistemas de Leilão Rural",
+    "Leilão de Centavos",
+    "Sistema de Rifas",
   ],
   aggregateRating: {
     "@type": "AggregateRating",
@@ -113,9 +113,9 @@ const homeJsonLd = {
 export const Route = createFileRoute("/")({
   head: () => {
     const meta = buildMeta({
-      title: "Criação de Sites e Sistemas Web de Alta Performance",
-      description: "NcBrasil: Especialistas em sistemas avançados, plataformas de leilão e aplicativos de alto padrão. Tecnologia premium para empresas líderes.",
-      keywords: "criação de sites premium, sistemas web alta performance, plataforma de leilão online, aplicativos mobile premium, marketing digital estratégico, agência de tecnologia SP",
+      title: "NcBrasil - Sistemas de Leilões e Plataformas de Leilão Online",
+      description: "NcBrasil: Especialistas em sistemas de leilões e plataformas de leilão online homologadas. Tecnologia avançada para o seu negócio digital.",
+      keywords: "sistemas de leilões, plataforma de leilão online, leilão eletrônico, sistema de rifas, criação de sites, sistemas web, NC Brasil",
       ogImage: "/logo-nc-brasil.png",
       canonical: "/",
     });
@@ -222,9 +222,9 @@ function HomePage() {
   return (
     <>
       <Helmet>
-        <title>NcBrasil - Sistemas Web e Sites de Alta Performance</title>
-        <meta name="description" content="NcBrasil: Especialistas em sistemas avançados, plataformas de leilão e aplicativos de alto padrão. Tecnologia premium para empresas líderes." />
-        <meta name="keywords" content="criação de sites premium, sistemas web alta performance, plataforma de leilão online, aplicativos mobile premium, marketing digital estratégico, agência de tecnologia SP" />
+        <title>NcBrasil - Sistemas de Leilões e Plataformas de Leilão Online</title>
+        <meta name="description" content="NcBrasil: Especialistas em sistemas de leilões e plataformas de leilão online homologadas. Tecnologia avançada para o seu negócio digital." />
+        <meta name="keywords" content="sistemas de leilões, plataforma de leilão online, leilão eletrônico, sistema de rifas, criação de sites, sistemas web, NC Brasil" />
       </Helmet>
 
       
