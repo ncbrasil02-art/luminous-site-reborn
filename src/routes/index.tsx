@@ -1,5 +1,5 @@
 /**
-Vejo que o meu site antigo possui vários links no Google cadastrado que estão dando página 404 por favor faça um redirecionamento para que o Google não interprete essas páginas como não existentes mais.. faça alguma coisa para que o Google não penalise e modifique todas essas páginas de erro para o redirecionamento para uma página inicial do site. Acredito que isso vai me ajudar
+Implementar redirecionamentos das páginas que retornam 404 para a página inicial (ou páginas equivalentes quando existir) para evitar penalização do Google.
 */
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
