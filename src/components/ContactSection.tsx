@@ -54,7 +54,7 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="text-center mb-16">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-primary backdrop-blur">
+            <span className="inline-flex items-center gap-2 rounded-none border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-primary backdrop-blur">
               <Sparkles className="h-3.5 w-3.5" />
               Solicite um Orçamento
             </span>
@@ -72,7 +72,7 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
           <Reveal className="lg:col-span-3">
             <form 
               onSubmit={handleSubmit}
-              className="group relative overflow-hidden rounded-[2.5rem] border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 sm:p-8 md:p-12"
+              className="group relative overflow-hidden rounded-none border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 sm:p-8 md:p-12"
             >
               <div className="relative z-10">
                 <h3 className="font-display text-2xl font-bold md:text-3xl">Vamos conversar</h3>
@@ -86,7 +86,7 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
                       placeholder="Seu nome completo"
                       value={form.nome}
                       onChange={e => setForm({...form, nome: e.target.value})}
-                      className="w-full rounded-2xl border border-border bg-background/50 px-5 py-4 text-sm outline-none transition-all focus:border-primary focus:bg-background focus:ring-1 focus:ring-primary/20"
+                      className="w-full rounded-none border border-border bg-background/50 px-5 py-4 text-sm outline-none transition-all focus:border-primary focus:bg-background focus:ring-1 focus:ring-primary/20"
                     />
                   </div>
                   <div className="space-y-2">
@@ -97,7 +97,7 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
                       placeholder="seu@email.com"
                       value={form.email}
                       onChange={e => setForm({...form, email: e.target.value})}
-                      className="w-full rounded-2xl border border-border bg-background/50 px-5 py-4 text-sm outline-none transition-all focus:border-primary focus:bg-background focus:ring-1 focus:ring-primary/20"
+                      className="w-full rounded-none border border-border bg-background/50 px-5 py-4 text-sm outline-none transition-all focus:border-primary focus:bg-background focus:ring-1 focus:ring-primary/20"
                     />
                   </div>
                   <div className="space-y-2">
@@ -107,7 +107,7 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
                       placeholder="Nome da sua empresa"
                       value={form.empresa}
                       onChange={e => setForm({...form, empresa: e.target.value})}
-                      className="w-full rounded-2xl border border-border bg-background/50 px-5 py-4 text-sm outline-none transition-all focus:border-primary focus:bg-background focus:ring-1 focus:ring-primary/20"
+                      className="w-full rounded-none border border-border bg-background/50 px-5 py-4 text-sm outline-none transition-all focus:border-primary focus:bg-background focus:ring-1 focus:ring-primary/20"
                     />
                   </div>
                   <div className="space-y-2">
@@ -116,7 +116,7 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
                       placeholder="(11) 99999-9999"
                       value={form.whatsapp}
                       onChange={e => setForm({...form, whatsapp: e.target.value})}
-                      className="w-full rounded-2xl border border-border bg-background/50 px-5 py-4 text-sm outline-none transition-all focus:border-primary focus:bg-background focus:ring-1 focus:ring-primary/20"
+                      className="w-full rounded-none border border-border bg-background/50 px-5 py-4 text-sm outline-none transition-all focus:border-primary focus:bg-background focus:ring-1 focus:ring-primary/20"
                     />
                   </div>
                 </div>
@@ -129,13 +129,13 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
                     placeholder="Conte-nos sobre seu projeto ou dúvida..."
                     value={form.mensagem}
                     onChange={e => setForm({...form, mensagem: e.target.value})}
-                    className="w-full rounded-2xl border border-border bg-background/50 px-5 py-4 text-sm outline-none transition-all focus:border-primary focus:bg-background focus:ring-1 focus:ring-primary/20 resize-none"
+                    className="w-full rounded-none border border-border bg-background/50 px-5 py-4 text-sm outline-none transition-all focus:border-primary focus:bg-background focus:ring-1 focus:ring-primary/20 resize-none"
                   />
                 </div>
 
                 <button 
                   type="submit"
-                  className="mt-8 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-primary py-5 text-sm font-bold text-primary-foreground glow-md transition-transform hover:scale-[1.02] active:scale-[0.98] md:w-auto md:px-12"
+                  className="mt-8 flex w-full items-center justify-center gap-2 rounded-none bg-gradient-primary py-5 text-sm font-bold text-primary-foreground glow-md transition-transform hover:scale-[1.02] active:scale-[0.98] md:w-auto md:px-12"
                 >
                   Enviar Mensagem
                   <Send className="h-4 w-4" />
@@ -183,7 +183,7 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
               desc="Horário de Brasília"
             />
 
-            <div className="mt-12 rounded-3xl border border-primary/20 bg-primary/5 p-8 backdrop-blur-sm">
+            <div className="mt-12 rounded-none border border-primary/20 bg-primary/5 p-8 backdrop-blur-sm">
               <h4 className="font-display font-bold text-lg mb-2 flex items-center gap-2">
                 <Sparkles className="h-4 w-4 text-primary" />
                 Diagnóstico Gratuito
@@ -222,8 +222,8 @@ function ContactInfoCard({
   external?: boolean 
 }) {
   const Card = (
-    <div className="group flex flex-col sm:flex-row items-center sm:items-start gap-5 rounded-[2rem] border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:glow-sm text-center sm:text-left">
-      <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
+    <div className="group flex flex-col sm:flex-row items-center sm:items-start gap-5 rounded-none border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:glow-sm text-center sm:text-left">
+      <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-none bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
         <Icon className="h-6 w-6" />
       </div>
       <div className="min-w-0">
