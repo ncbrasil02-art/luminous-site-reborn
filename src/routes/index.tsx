@@ -63,12 +63,12 @@ const OG_IMAGE = `/og-home.jpg`;
 const homeJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "NC Brasil — Criação de Sites, Sistemas Web e Aplicativos",
+  name: "NC Brasil — Sistemas de Leilão e Plataformas de Leilão Online",
   url: SITE_URL,
   logo: `${SITE_URL}/logo-nc-brasil.png`,
   image: `${SITE_URL}${OG_IMAGE}`,
   description:
-    "Empresa de criação de sites profissionais, sistemas web, lojas virtuais, aplicativos mobile e marketing digital em São Paulo e Rio de Janeiro.",
+    "Especialistas em sistemas de leilão e plataformas de leilão online homologadas. Desenvolvemos sistemas avançados de leilões eletrônicos e rifas digitais.",
   address: {
     "@type": "PostalAddress",
     "addressLocality": "São Paulo",
@@ -84,11 +84,11 @@ const homeJsonLd = {
   priceRange: "$$$",
   areaServed: ["São Paulo", "Rio de Janeiro", "Brasil"],
   serviceType: [
-    "Criação de Sites",
-    "Criação de Sistemas Web",
-    "Lojas Virtuais",
-    "Aplicativos Mobile",
-    "Marketing Digital",
+    "Sistema de Leilão",
+    "Plataforma de Leilão Online",
+    "Sistemas de Leilão Rural",
+    "Leilão de Centavos",
+    "Sistema de Rifas",
   ],
   aggregateRating: {
     "@type": "AggregateRating",

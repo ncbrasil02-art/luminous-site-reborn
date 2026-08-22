@@ -119,7 +119,7 @@ export function SiteHeader() {
         <Link to="/" className="group flex items-center gap-2 relative z-50">
           <img 
             src="/logo.jpg" 
-            alt="NC Brasil - Sistemas Web e Marketing Digital" 
+            alt="NcBrasil - Sistemas de Leilões e Plataformas de Leilão Online" 
             width={160}
             height={40}
             fetchPriority="high"
