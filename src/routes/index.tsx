@@ -190,7 +190,17 @@ import logoLeilao2 from "@/assets/logotipos/logo-leilao-2.png.asset.json";
 import logoCentavos from "@/assets/logotipos/logo-centavos.png.asset.json";
 import logoFamiliaRS from "@/assets/logotipos/logo-familia-rs.png.asset.json";
 import logoLimpeza from "@/assets/logotipos/logo-limpeza.png.asset.json";
-import image15 from "/mnt/user-uploads/image-15.png"; // Fallback placeholder if needed, but we'll use actual assets
+const projectLogos = [
+  { url: logoRifa.url, name: "Sistema de Rifas" },
+  { url: logoVeiculos.url, name: "Classificados de Veículos" },
+  { url: logoSupermercado.url, name: "Sistema de Supermercado" },
+  { url: logoLeilao1.url, name: "Plataforma de Leilão" },
+  { url: logoLeilao2.url, name: "Sistema de Leilão Rural" },
+  { url: logoCentavos.url, name: "Leilão de Centavos" },
+  { url: logoFamiliaRS.url, name: "App Família RS" },
+  { url: logoLimpeza.url, name: "Sistema de Gestão" },
+  { url: logoRifa.url, name: "Solução Personalizada" }, // Repeating one to fill 9 squares
+];
 
 
 const OG_IMAGE = `/og-home.jpg`;
