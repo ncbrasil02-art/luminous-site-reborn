@@ -171,9 +171,9 @@ export function buildMeta(options: MetaOptions) {
   }
 
   const links: any[] = [
-    { rel: "icon", type: "image/png", href: `${SITE_URL}/favicon.png` },
-    { rel: "shortcut icon", href: `${SITE_URL}/favicon.png` },
-    { rel: "apple-touch-icon", href: `${SITE_URL}/favicon.png` },
+    { rel: "icon", type: "image/png", href: "/favicon.png" },
+    { rel: "shortcut icon", href: "/favicon.png" },
+    { rel: "apple-touch-icon", href: "/favicon.png" },
   ];
 
   if (absoluteCanonical) {
