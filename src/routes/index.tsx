@@ -436,18 +436,19 @@ function HomePage() {
           {/* Premium Partners / Trust */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
             className="mt-24 pt-12 border-t border-white/5"
           >
-            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground/60 mb-8">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground/60 mb-10">
               Tecnologia validada por centenas de negócios no Brasil
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+            <div className="grid grid-cols-2 gap-8 md:flex md:flex-wrap md:justify-center md:items-center md:gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-500 px-4">
                {stats.map((s) => (
-                 <div key={s.label} className="text-center">
-                    <div className="text-xl md:text-2xl font-display font-bold text-foreground">{s.value}</div>
-                    <div className="text-[9px] uppercase tracking-tighter text-muted-foreground">{s.label}</div>
+                 <div key={s.label} className="text-center group">
+                    <div className="text-2xl md:text-3xl font-display font-bold text-foreground group-hover:text-primary-glow transition-colors">{s.value}</div>
+                    <div className="text-[9px] md:text-[10px] uppercase tracking-wider text-muted-foreground mt-1">{s.label}</div>
                  </div>
                ))}
             </div>
