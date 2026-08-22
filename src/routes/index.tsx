@@ -182,6 +182,17 @@ import { MagazineSection } from "@/components/MagazineSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { testimonialsData } from "@/lib/testimonials.data";
 
+import logoRifa from "@/assets/logotipos/logo-rifa.png.asset.json";
+import logoVeiculos from "@/assets/logotipos/logo-veiculos.png.asset.json";
+import logoSupermercado from "@/assets/logotipos/logo-supermercado.png.asset.json";
+import logoLeilao1 from "@/assets/logotipos/logo-leilao-1.png.asset.json";
+import logoLeilao2 from "@/assets/logotipos/logo-leilao-2.png.asset.json";
+import logoCentavos from "@/assets/logotipos/logo-centavos.png.asset.json";
+import logoFamiliaRS from "@/assets/logotipos/logo-familia-rs.png.asset.json";
+import logoLimpeza from "@/assets/logotipos/logo-limpeza.png.asset.json";
+import image15 from "/mnt/user-uploads/image-15.png"; // Fallback placeholder if needed, but we'll use actual assets
+
+
 const OG_IMAGE = `/og-home.jpg`;
 
 const homeJsonLd = {
