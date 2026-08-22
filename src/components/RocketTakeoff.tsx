@@ -25,7 +25,8 @@ export function RocketTakeoff() {
           rotate: smoothRotate, 
           scale, 
           opacity,
-          filter: "drop-shadow(0 0-30px rgba(49, 91, 255, 0.4))"
+          // Removido drop-shadow pesado para melhorar FPS em dispositivos móveis
+          filter: "brightness(1.2)"
         }}
         className="absolute top-[60%] left-1/2 md:left-2/3 -translate-x-1/2 w-48 h-48 md:w-96 md:h-96"
       >
