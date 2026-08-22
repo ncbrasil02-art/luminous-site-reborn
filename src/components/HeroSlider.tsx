@@ -16,11 +16,11 @@ import heroTechAsset from "@/assets/hero-tech.jpg";
 const slides = [
   {
     id: "home",
-    eyebrow: "Liderança em Tecnologia Digital",
+    eyebrow: "Sistemas desenvolvidos",
     icon: Sparkles,
     title: "Ecossistemas Digitais de Alta Performance.",
     highlight: "Alta Performance.",
-    description: "Líder em **Plataformas de Leilão** e sistemas cinematográficos. Tecnologia premium para **Rifas, Cassinos e Classificados**, projetada para escalar seu negócio com design de alto padrão.",
+    description: "Líder em **Plataformas de Leilão** e Sistemas desenvolvidos. Tecnologia premium para **Rifas, Cassinos e Classificados**, projetada para escalar seu negócio com design de alto padrão.",
     to: "/solucoes-web",
     cta1: "Explorar Soluções",
     cta2: "Consultoria Estratégica",

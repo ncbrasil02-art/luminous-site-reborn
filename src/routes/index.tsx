@@ -238,7 +238,7 @@ export const Route = createFileRoute("/")({
   head: () => {
     const meta = buildMeta({
       title: "Criação de Sites e Sistemas Web de Alta Performance",
-      description: "NcBrasil: Especialistas em sistemas cinematográficos, plataformas de leilão e aplicativos de alto padrão. Tecnologia premium para empresas líderes.",
+      description: "NcBrasil: Especialistas em sistemas avançados, plataformas de leilão e aplicativos de alto padrão. Tecnologia premium para empresas líderes.",
       keywords: "criação de sites premium, sistemas web alta performance, plataforma de leilão online, aplicativos mobile premium, marketing digital estratégico, agência de tecnologia SP",
       ogImage: "/logo-nc-brasil.png",
       canonical: "/",
@@ -290,7 +290,7 @@ const solutions = [
   {
     icon: Smartphone,
     title: "Aplicativos Mobile",
-    desc: "Apps **iOS e Android** com UX cinematográfica, notificações e sistemas de alta performance.",
+    desc: "Apps **iOS e Android** com UX avançada, notificações e sistemas de alta performance.",
     to: "/portfolio/criacao-de-aplicativos",
   },
 ];
@@ -343,7 +343,7 @@ function HomePage() {
     <>
       <Helmet>
         <title>NcBrasil - Sistemas Web e Sites de Alta Performance</title>
-        <meta name="description" content="NcBrasil: Especialistas em sistemas cinematográficos, plataformas de leilão e aplicativos de alto padrão. Tecnologia premium para empresas líderes." />
+        <meta name="description" content="NcBrasil: Especialistas em sistemas avançados, plataformas de leilão e aplicativos de alto padrão. Tecnologia premium para empresas líderes." />
         <meta name="keywords" content="criação de sites premium, sistemas web alta performance, plataforma de leilão online, aplicativos mobile premium, marketing digital estratégico, agência de tecnologia SP" />
       </Helmet>
 
@@ -371,7 +371,7 @@ function HomePage() {
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
                 Plataformas de alta escala projetadas para dominar o mercado. 
-                Tecnologia cinematográfica que converte.
+                Tecnologia avançada que converte.
               </p>
             </div>
             <Link 
@@ -450,13 +450,13 @@ function HomePage() {
         <div className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/40 to-transparent shadow-[0_0_20px_rgba(49,91,255,0.4)]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Workflow Cinematográfico"
+            eyebrow="Workflow Profissional"
             title={
               <>
                 Da Concepção à <span className="text-gradient">Soberania Digital</span>
               </>
             }
-            description="Cada etapa é uma cena meticulosamente planejada para garantir que seu projeto seja memorável e altamente lucrativo."
+            description="Cada etapa é meticulosamente planejada para garantir que seu projeto seja memorável e altamente lucrativo."
           />
 
 
