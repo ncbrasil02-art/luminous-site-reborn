@@ -288,7 +288,7 @@ function SolucoesWebPage() {
                     </p>
                     <Link
                       to="/contato"
-                      className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-foreground text-background px-6 py-4 text-sm font-semibold hover:bg-foreground/90 transition-colors"
+                      className="w-full inline-flex items-center justify-center gap-2 rounded-none bg-foreground text-background px-6 py-4 text-sm font-semibold hover:bg-foreground/90 transition-colors"
                     >
                       Agendar Consultoria Grátis
                     </Link>
