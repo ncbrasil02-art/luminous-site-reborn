@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
-import rocketAsset from "@/assets/3d/rocket.png.asset.json";
+import rocketAsset from "@/assets/3d/rocket-hero.png.asset.json";
 
 export function RocketTakeoff() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -9,10 +9,10 @@ export function RocketTakeoff() {
     offset: ["start end", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [100, -500]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [0, -15]);
-  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1.2, 0.5]);
-  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
+  const y = useTransform(scrollYProgress, [0, 1], [300, -800]);
+  const rotate = useTransform(scrollYProgress, [0, 1], [15, -15]);
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.6, 1.2, 0.4]);
+  const opacity = useTransform(scrollYProgress, [0, 0.1, 0.8, 1], [0, 1, 1, 0]);
 
   const smoothY = useSpring(y, { stiffness: 100, damping: 30 });
   const smoothRotate = useSpring(rotate, { stiffness: 100, damping: 30 });
@@ -37,9 +37,21 @@ export function RocketTakeoff() {
         />
         {/* Flame effect */}
         <motion.div 
-          animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
-          transition={{ duration: 0.2, repeat: Infinity }}
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-12 h-24 bg-gradient-to-t from-orange-500 via-primary to-transparent blur-xl"
+          animate={{ 
+            scaleY: [1, 1.5, 1], 
+            scaleX: [1, 0.9, 1.1, 1],
+            opacity: [0.6, 0.9, 0.6] 
+          }}
+          transition={{ duration: 0.15, repeat: Infinity }}
+          className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-16 h-48 bg-gradient-to-t from-transparent via-primary/80 to-primary blur-2xl -z-10"
+        />
+        <motion.div 
+          animate={{ 
+            scaleY: [1, 2, 1], 
+            opacity: [0.4, 0.7, 0.4] 
+          }}
+          transition={{ duration: 0.1, repeat: Infinity }}
+          className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-8 h-32 bg-white/40 blur-xl -z-10"
         />
       </motion.div>
     </div>
