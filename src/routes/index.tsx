@@ -546,7 +546,7 @@ function HomePage() {
                     },
                   ].map((it) => (
                     <li key={it.to} className="flex items-center gap-3">
-                      <span className="grid h-6 w-6 place-items-center rounded-full bg-primary/15 text-primary">
+                      <span className="grid h-6 w-6 place-items-center rounded-none bg-primary/15 text-primary">
                         <Code2 className="h-3.5 w-3.5" />
                       </span>
                       <Link to={it.to} className="story-link text-foreground font-medium">
