@@ -787,7 +787,7 @@ export function LandingPage({
                 <div className="mt-8 flex justify-center">
                   <Link 
                     to="/orcamento" 
-                    className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-10 py-4 text-base font-bold text-primary-foreground glow-md hover:scale-105 transition-transform"
+                    className="inline-flex items-center gap-2 rounded-none bg-gradient-primary px-10 py-4 text-base font-bold text-primary-foreground glow-md hover:scale-105 transition-transform"
                   >
                     Falar com especialista
                     <ArrowRight className="h-5 w-5" />
@@ -810,7 +810,7 @@ export function LandingPage({
             <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {gallery.map((g, i) => (
                 <Reveal key={g.src} delay={i * 0.05}>
-                  <figure className="group overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur">
+                  <figure className="group overflow-hidden rounded-none border border-border bg-card/60 backdrop-blur">>
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img
                         src={g.src}
@@ -857,7 +857,7 @@ export function LandingPage({
                 <Reveal key={t.author + i} delay={i * 0.1}>
                   <motion.div 
                     whileHover={{ y: -5 }}
-                    className="group relative flex h-full flex-col justify-between rounded-3xl border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:glow-sm"
+                    className="group relative flex h-full flex-col justify-between rounded-none border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:glow-sm"
                   >
                     <div>
                       <div className="mb-4 flex items-center gap-1 text-primary">
