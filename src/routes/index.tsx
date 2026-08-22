@@ -361,7 +361,7 @@ function HomePage() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
             <div className="max-w-2xl">
               <Reveal>
-                <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-primary-glow mb-6">
+                <span className="inline-flex items-center gap-2 rounded-none border border-primary/30 bg-primary/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-primary-glow mb-6">
                   <Rocket className="h-3.5 w-3.5" />
                   Ecossistema Premium
                 </span>
@@ -380,7 +380,7 @@ function HomePage() {
               className="group inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-primary-glow hover:text-white transition-all duration-300"
             >
               Catálogo Completo
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-primary/30 bg-primary/5 transition-transform group-hover:translate-x-2 group-hover:bg-primary group-hover:text-white">
+              <div className="flex h-10 w-10 items-center justify-center rounded-none border border-primary/30 bg-primary/5 transition-transform group-hover:translate-x-2 group-hover:bg-primary group-hover:text-white">
                 <ChevronRight className="h-4 w-4" />
               </div>
             </Link>
@@ -418,13 +418,13 @@ function HomePage() {
                 <Link
                   to={s.to}
                   onClick={() => trackClick(s.title, "Home Solutions Grid")}
-                  className="group relative block h-full overflow-hidden rounded-[2.5rem] border border-white/5 bg-navy-900/20 p-6 sm:p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
+                  className="group relative block h-full overflow-hidden rounded-none border border-white/5 bg-navy-900/20 p-6 sm:p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
                 >
                   {/* Glowing background hint */}
-                  <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/20" />
+                  <div className="absolute -right-20 -top-20 h-40 w-40 rounded-none bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/20" />
                   
                   <div className="relative z-10">
-                    <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-[1.25rem] bg-surface-elevated text-primary-glow shadow-glow-sm ring-1 ring-white/10 transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:glow-sm">
+                    <div className="mb-8 inline-flex h-16 w-16 items-center justify-center rounded-none bg-surface-elevated text-primary-glow shadow-glow-sm ring-1 ring-white/10 transition-all duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white group-hover:glow-sm">
                       <s.icon className="h-8 w-8" />
                     </div>
                     <h3 className="font-display text-2xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors">{s.title}</h3>
@@ -549,14 +549,14 @@ function HomePage() {
 
             <Reveal delay={0.15}>
               <div className="relative">
-                <div className="absolute -inset-6 rounded-3xl bg-gradient-primary opacity-30 blur-3xl animate-glow-pulse" />
-                <div className="relative overflow-hidden rounded-3xl border border-border bg-surface p-1">
-                  <div className="rounded-[22px] bg-background p-8">
+                <div className="absolute -inset-6 rounded-none bg-gradient-primary opacity-30 blur-3xl animate-glow-pulse" />
+                <div className="relative overflow-hidden rounded-none border border-border bg-surface p-1">
+                  <div className="rounded-none bg-background p-8">
                     <div className="grid grid-cols-3 gap-3">
                       {Array.from({ length: 9 }).map((_, i) => (
                         <div
                           key={i}
-                          className="aspect-square rounded-xl border border-border bg-gradient-to-br from-primary/10 to-transparent"
+                          className="aspect-square rounded-none border border-border bg-gradient-to-br from-primary/10 to-transparent"
                           style={{
                             animation: `glow-pulse 4s ease-in-out ${i * 0.15}s infinite`,
                           }}
@@ -564,9 +564,9 @@ function HomePage() {
                       ))}
                     </div>
                     <div className="mt-6 space-y-2">
-                      <div className="h-2 w-3/4 rounded-full bg-gradient-primary opacity-70" />
-                      <div className="h-2 w-1/2 rounded-full bg-muted" />
-                      <div className="h-2 w-2/3 rounded-full bg-muted" />
+                      <div className="h-2 w-3/4 rounded-none bg-gradient-primary opacity-70" />
+                      <div className="h-2 w-1/2 rounded-none bg-muted" />
+                      <div className="h-2 w-2/3 rounded-none bg-muted" />
                     </div>
                   </div>
                 </div>
@@ -584,8 +584,8 @@ function HomePage() {
         <div className="absolute inset-0 -z-10 bg-mesh" aria-hidden />
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal>
-            <div className="relative overflow-hidden rounded-3xl border border-primary/30 bg-surface/60 px-6 py-12 backdrop-blur md:px-12 md:py-16">
-              <div className="absolute -inset-px rounded-3xl bg-gradient-primary opacity-20 blur-2xl" />
+            <div className="relative overflow-hidden rounded-none border border-primary/30 bg-surface/60 px-6 py-12 backdrop-blur md:px-12 md:py-16">
+              <div className="absolute -inset-px rounded-none bg-gradient-primary opacity-20 blur-2xl" />
               <div className="relative">
                 <Rocket className="mx-auto h-10 w-10 text-primary" />
                 <h2 className="mt-6 font-display text-3xl font-bold leading-tight md:text-5xl">
@@ -598,14 +598,14 @@ function HomePage() {
                 <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
                   <Link
                     to="/orcamento"
-                    className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md hover:scale-105 transition-transform"
+                    className="inline-flex items-center gap-2 rounded-none bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md hover:scale-105 transition-transform"
                   >
                     Solicitar orçamento
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                   <Link
                     to="/contato"
-                    className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-7 py-3.5 text-sm font-semibold text-foreground hover:bg-surface"
+                    className="inline-flex items-center gap-2 rounded-none border border-border bg-surface/80 px-7 py-3.5 text-sm font-semibold text-foreground hover:bg-surface"
                   >
                     Falar com um especialista
                   </Link>
