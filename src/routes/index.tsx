@@ -390,9 +390,9 @@ function HomePage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="mt-6 font-display text-5xl font-bold leading-[1] tracking-tight text-foreground md:text-8xl lg:text-[7rem]"
+            className="mt-6 font-display text-5xl font-bold leading-[1] tracking-tight text-white md:text-8xl lg:text-[7rem]"
           >
-            Sistemas de <span className="text-gradient drop-shadow-[0_0_30px_rgba(49,91,255,0.3)]">Alta Performance</span>.
+            Ecossistemas Digitais de <span className="text-gradient drop-shadow-[0_0_30px_rgba(49,91,255,0.3)]">Alta Performance</span>.
           </motion.h1>
 
           <motion.div
@@ -402,9 +402,9 @@ function HomePage() {
             className="mt-8 mx-auto max-w-3xl"
           >
             <p className="text-lg text-muted-foreground md:text-xl leading-relaxed">
-              Transformamos ideias em <strong className="text-foreground">ecossistemas digitais</strong> cinematográficos. 
-              Especialistas em <strong className="text-primary-glow">plataformas de leilão</strong>, 
-              sistemas web escaláveis e apps de alto padrão para o mercado brasileiro.
+              Líder em <strong className="text-white">Plataformas de Leilão</strong> e sistemas cinematográficos. 
+              Tecnologia premium para <strong className="text-primary-glow">Rifas, Cassinos e Classificados</strong>, 
+              projetada para escalar seu negócio com design de alto padrão.
             </p>
           </motion.div>
 

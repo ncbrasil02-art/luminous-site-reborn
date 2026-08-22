@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowLeft, ArrowRight, Code2, Gavel, LayoutDashboard, ShoppingCart, Users, ChevronRight, Sparkles, Rocket } from "lucide-react";
+import { ArrowLeft, ArrowRight, Code2, Gavel, LayoutDashboard, ShoppingCart, Tractor, ChevronRight, Sparkles, Rocket } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/Section";
@@ -20,7 +20,35 @@ const systems = [
     description: "A plataforma de sorteios mais completa do Brasil. Totalmente automatizada com split de pagamentos e visual cinematográfico.",
     to: "/sistema-de-rifas",
     image: "/img-sistema-de-rifas/Fachada Profissional.png",
-    features: ["Pagamentos Automáticos", "Ranking de Compradores", "Reserva de Bilhetes"]
+    features: ["Pagamentos Automáticos", "Ranking de Compradores", "Reserva de Bilhetes"],
+    isPremium: true
+  },
+  {
+    icon: Rocket,
+    title: "Sistema de Cassino",
+    description: "Plataforma completa de iGaming com integração de provedores mundiais e gestão de banca segura.",
+    to: "/sistema-de-cassino",
+    image: "/img-sistema-de-leilao/dashboard-detalhe.png",
+    features: ["Slots & Live Casino", "Gestão de Afiliados", "Saque Imediato"],
+    isPremium: true
+  },
+  {
+    icon: Code2,
+    title: "Leilão de Centavos",
+    description: "Sistema de entretenimento e lances regressivos. Alta escalabilidade para milhares de acessos simultâneos.",
+    to: "/leilao-de-centavos",
+    image: "/img-sistema-de-leilao/vitrine.png",
+    features: ["Lances Regressivos", "Painel Financeiro", "Gamificação"],
+    isPremium: true
+  },
+  {
+    icon: Tractor,
+    title: "Leilão Rural",
+    description: "Tecnologia especializada para o agronegócio. Gestão de genealogia, vídeos de lotes e suporte a grandes eventos rurais.",
+    to: "/leilao-rural",
+    image: "/img-sistema-de-leilao/cards.png",
+    features: ["Catálogo Rural", "Lotes de Animais", "App Agro"],
+    isPremium: true
   },
   {
     icon: LayoutDashboard,
@@ -31,34 +59,10 @@ const systems = [
     features: ["Busca Avançada", "Painel Lojista", "SEO Nativo"]
   },
   {
-    icon: Users,
-    title: "Sistema de Leilão Rural",
-    description: "Tecnologia especializada para o agronegócio. Gestão de genealogia, vídeos de lotes e suporte a grandes eventos rurais.",
-    to: "/leilao-rural",
-    image: "/img-sistema-de-leilao/cards.png",
-    features: ["Catálogo Rural", "Lotes de Animais", "App Agro"]
-  },
-  {
-    icon: Code2,
-    title: "Leilão de Centavos",
-    description: "Sistema de entretenimento e lances regressivos. Alta escalabilidade para milhares de acessos simultâneos.",
-    to: "/leilao-de-centavos",
-    image: "/img-sistema-de-leilao/vitrine.png",
-    features: ["Lances Regressivos", "Painel Financeiro", "Gamificação"]
-  },
-  {
-    icon: Rocket,
-    title: "Sistema de Cassino",
-    description: "Plataforma completa de iGaming com integração de provedores mundiais e gestão de banca segura.",
-    to: "/sistema-de-cassino",
-    image: "/img-sistema-de-leilao/dashboard-detalhe.png",
-    features: ["Slots & Live Casino", "Gestão de Afiliados", "Saque Imediato"]
-  },
-  {
     icon: Sparkles,
     title: "Sistema de Raspadinha",
     description: "Engajamento instantâneo com raspadinhas digitais personalizáveis e controle total de prêmios.",
-    to: "/solucoes-web/sistemas-web",
+    to: "/sistema-de-raspadinha",
     image: "/img-sistema-de-leilao/cards.png",
     features: ["Prêmios Instantâneos", "Design Custom", "Auditagem"]
   }
