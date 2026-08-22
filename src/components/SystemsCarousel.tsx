@@ -81,12 +81,15 @@ export function SystemsCarousel() {
         {systems.map((system, index) => (
           <Reveal key={system.title} delay={index * 0.1}>
             <motion.div 
-              whileHover={{ y: -12 }}
+              whileHover={{ 
+                y: -15,
+                transition: { duration: 0.4, ease: "easeOut" }
+              }}
               className={cn(
-                "group relative h-[450px] sm:h-[550px] lg:h-[600px] overflow-hidden rounded-[2.5rem] sm:rounded-[3rem] border transition-all duration-500 backdrop-blur-xl",
+                "group relative h-[500px] sm:h-[600px] lg:h-[650px] overflow-hidden rounded-[2.5rem] sm:rounded-[3.5rem] border transition-all duration-500 backdrop-blur-xl",
                 system.isPremium 
-                  ? "border-primary/50 bg-navy-900/40 glow-md ring-1 ring-primary/20" 
-                  : "border-white/5 bg-navy-900/30 hover:border-primary/40 hover:glow-md hover:bg-navy-900/50"
+                  ? "border-primary/40 bg-[#0A1428]/60 glow-md ring-1 ring-primary/20 hover:border-primary-glow/60" 
+                  : "border-white/5 bg-[#0A1428]/40 hover:border-primary/40 hover:glow-md hover:bg-[#0A1428]/60"
               )}
             >
               {/* Premium Badge */}
