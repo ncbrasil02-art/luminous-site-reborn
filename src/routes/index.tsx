@@ -371,7 +371,7 @@ function HomePage() {
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
                 Plataformas de alta escala projetadas para dominar o mercado. 
-                Tecnologia cinematográfica que converte.
+                Tecnologia avançada que converte.
               </p>
             </div>
             <Link 
