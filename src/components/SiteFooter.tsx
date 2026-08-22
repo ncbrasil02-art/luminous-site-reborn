@@ -41,7 +41,7 @@ export function SiteFooter() {
     <footer className="relative overflow-hidden border-t border-border bg-surface">
       <div className="absolute inset-0 bg-mesh opacity-40" aria-hidden />
 
-      <div className="relative mx-auto max-w-7xl px-4 py-16 md:px-6">
+      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2">

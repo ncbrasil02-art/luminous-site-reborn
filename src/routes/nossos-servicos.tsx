@@ -62,7 +62,7 @@ export const Route = createFileRoute("/nossos-servicos")({
     faq: services.map(s => ({ q: `O que é ${s.title}?`, a: s.description })),
   }),
   component: () => (
-    <div className="pt-20">
+    <div className="pt-24 md:pt-32">
       <Helmet>
         <title>Nossos Serviços · NC Brasil — Sites, Sistemas, Apps e Marketing</title>
         <meta name="description" content="Conheça os serviços da NC Brasil: criação de sites, sistemas web, lojas virtuais, aplicativos mobile, identidade visual e marketing digital." />
@@ -72,7 +72,7 @@ export const Route = createFileRoute("/nossos-servicos")({
       <section className="relative overflow-hidden py-24 md:py-32">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <nav aria-label="Breadcrumb" className="mb-8">
               <ol className="flex flex-wrap items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground list-none p-0 m-0">
@@ -105,7 +105,7 @@ export const Route = createFileRoute("/nossos-servicos")({
 
       {/* Services Grid */}
       <section className="py-24">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, i) => (
               <Reveal key={service.title} delay={i * 0.05}>
@@ -151,7 +151,7 @@ export const Route = createFileRoute("/nossos-servicos")({
       {/* COMPLEMENTARY SYSTEMS SECTION ==================================== */}
       <section className="relative py-24 md:py-32 bg-surface/30">
         <div className="absolute inset-0 -z-10 grid-pattern opacity-20" />
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Engenharia Web"
             title={<>Sistemas que <span className="text-gradient">potencializam</span> seus serviços</>}
@@ -163,7 +163,7 @@ export const Route = createFileRoute("/nossos-servicos")({
         </div>
       </section>
       <section className="relative py-24 md:py-32">
-        <div className="mx-auto max-w-5xl px-4 md:px-6">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="relative overflow-hidden rounded-[2.5rem] bg-surface p-8 text-center md:p-16">
               <div className="absolute inset-0 -z-10 bg-mesh opacity-20" />

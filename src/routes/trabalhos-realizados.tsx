@@ -18,8 +18,8 @@ export const Route = createFileRoute("/trabalhos-realizados")({
     ]
   }),
   component: () => (
-    <div className="pt-20">
-      <div className="mx-auto max-w-7xl px-4 md:px-6">
+    <div className="pt-24 md:pt-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <nav aria-label="Breadcrumb" className="mb-8">
           <ol className="flex flex-wrap items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground list-none p-0 m-0">
             <li className="flex items-center gap-1">

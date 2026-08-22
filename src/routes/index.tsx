@@ -378,7 +378,7 @@ function HomePage() {
           </FloatingObject>
         </div>
 
-        <div className="relative z-20 mx-auto max-w-7xl px-4 py-24 text-center md:px-6">
+        <div className="relative z-20 mx-auto max-w-7xl px-4 py-24 text-center sm:px-6 lg:px-8">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-primary-glow backdrop-blur-md glow-sm mb-8">
               <Sparkles className="h-3.5 w-3.5 animate-pulse" />
@@ -436,18 +436,19 @@ function HomePage() {
           {/* Premium Partners / Trust */}
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
             className="mt-24 pt-12 border-t border-white/5"
           >
-            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground/60 mb-8">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground/60 mb-10 px-4">
               Tecnologia validada por centenas de negócios no Brasil
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+            <div className="grid grid-cols-2 gap-8 md:flex md:flex-wrap md:justify-center md:items-center md:gap-16 opacity-40 grayscale hover:grayscale-0 transition-all duration-500 px-4">
                {stats.map((s) => (
-                 <div key={s.label} className="text-center">
-                    <div className="text-xl md:text-2xl font-display font-bold text-foreground">{s.value}</div>
-                    <div className="text-[9px] uppercase tracking-tighter text-muted-foreground">{s.label}</div>
+                 <div key={s.label} className="text-center group">
+                    <div className="text-2xl md:text-3xl font-display font-bold text-foreground group-hover:text-primary-glow transition-colors">{s.value}</div>
+                    <div className="text-[9px] md:text-[10px] uppercase tracking-wider text-muted-foreground mt-1">{s.label}</div>
                  </div>
                ))}
             </div>
@@ -459,7 +460,7 @@ function HomePage() {
       {/* SISTEMAS EM DESTAQUE (SLIDER) ===================================== */}
       <section className="relative py-24 md:py-40 bg-navy-950/20">
         <div className="absolute inset-0 z-0 bg-hero-glow opacity-30 rotate-180" aria-hidden="true" />
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
             <div className="max-w-2xl">
               <Reveal>
@@ -498,7 +499,7 @@ function HomePage() {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px] -z-10" />
         
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Expertise Digital"
             title={
@@ -520,7 +521,7 @@ function HomePage() {
                 <Link
                   to={s.to}
                   onClick={() => trackClick(s.title, "Home Solutions Grid")}
-                  className="group relative block h-full overflow-hidden rounded-[2.5rem] border border-white/5 bg-navy-900/20 p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
+                  className="group relative block h-full overflow-hidden rounded-[2.5rem] border border-white/5 bg-navy-900/20 p-6 sm:p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
                 >
                   {/* Glowing background hint */}
                   <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/20" />
@@ -550,7 +551,7 @@ function HomePage() {
       <section className="relative overflow-hidden border-y border-white/5 bg-navy-950/40 py-24 md:py-40">
         <div className="absolute inset-0 bg-mesh opacity-20 pointer-events-none" aria-hidden="true" />
         <div className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/40 to-transparent shadow-[0_0_20px_rgba(49,91,255,0.4)]" />
-        <div className="relative mx-auto max-w-7xl px-4 md:px-6">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Workflow Cinematográfico"
             title={
@@ -565,7 +566,7 @@ function HomePage() {
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, i) => (
               <Reveal key={step.n} delay={i * 0.1}>
-                <div className="group relative h-full rounded-[2rem] border border-white/5 bg-navy-950/40 p-8 backdrop-blur-xl transition-all duration-500 hover:border-primary/30 hover:bg-navy-900/40 hover:-translate-y-2">
+                <div className="group relative h-full rounded-[2rem] border border-white/5 bg-navy-950/40 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:border-primary/30 hover:bg-navy-900/40 hover:-translate-y-2">
                   <div className="font-display text-6xl font-black text-white/5 transition-colors group-hover:text-primary/10">
                     {step.n}
                   </div>
@@ -583,7 +584,7 @@ function HomePage() {
 
       {/* DESTAQUES ======================================================== */}
       <section className="relative py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <Reveal>
               <div>
@@ -684,9 +685,9 @@ function HomePage() {
       {/* CTA FINAL ======================================================== */}
       <section className="relative overflow-hidden py-24 md:py-32">
         <div className="absolute inset-0 -z-10 bg-mesh" aria-hidden />
-        <div className="mx-auto max-w-4xl px-4 text-center md:px-6">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal>
-            <div className="relative overflow-hidden rounded-3xl border border-primary/30 bg-surface/60 px-6 py-16 backdrop-blur md:px-12">
+            <div className="relative overflow-hidden rounded-3xl border border-primary/30 bg-surface/60 px-6 py-12 backdrop-blur md:px-12 md:py-16">
               <div className="absolute -inset-px rounded-3xl bg-gradient-primary opacity-20 blur-2xl" />
               <div className="relative">
                 <Rocket className="mx-auto h-10 w-10 text-primary" />

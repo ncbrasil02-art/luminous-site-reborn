@@ -62,7 +62,7 @@ function SistemasHub() {
       <section className="relative isolate overflow-hidden pt-24 pb-16">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />
-        <div className="mx-auto max-w-5xl px-4 text-center md:px-6">
+        <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal>
             <nav aria-label="Breadcrumb" className="mb-8 flex justify-center">
               <ol className="flex flex-wrap items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-muted-foreground list-none p-0 m-0">
@@ -84,7 +84,7 @@ function SistemasHub() {
         </div>
       </section>
       <section className="pb-28">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {systems.map((s, i) => (
               <Reveal key={s.to} delay={i * 0.04}>

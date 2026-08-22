@@ -229,7 +229,7 @@ export function LandingPage({
         </div>
         <div className="absolute -top-24 left-1/2 -z-10 h-96 w-[42rem] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl pointer-events-none" aria-hidden="true" />
 
-        <div className="mx-auto max-w-6xl px-4 pt-14 md:px-6 md:pt-20">
+        <div className="mx-auto max-w-6xl px-4 pt-14 sm:px-6 lg:px-8 md:pt-20">
           {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="mb-8">
             <ol className="flex flex-wrap items-center gap-1 text-xs text-muted-foreground list-none p-0 m-0">
@@ -251,7 +251,7 @@ export function LandingPage({
           </nav>
         </div>
 
-        <div className="mx-auto max-w-5xl px-4 pb-20 pt-4 text-center md:px-6 md:pb-28">
+        <div className="mx-auto max-w-5xl px-4 pb-20 pt-4 text-center sm:px-6 lg:px-8 md:pb-28">
           <motion.span
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -311,7 +311,7 @@ export function LandingPage({
           </motion.div>
 
           {stats && (
-            <div className="mx-auto mt-16 grid max-w-3xl grid-cols-2 gap-4 md:grid-cols-4">
+            <div className="mx-auto mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
               {stats.map((s) => (
                 <div key={s.label} className="glass rounded-2xl px-4 py-5 text-center">
                   <div className="font-display text-2xl font-bold text-gradient md:text-3xl">{s.value}</div>
@@ -326,7 +326,7 @@ export function LandingPage({
       {/* CLIENTS */}
       {clients && clients.length > 0 && (
         <section className="relative border-y border-border bg-surface/30 py-10">
-          <div className="mx-auto max-w-6xl px-4 md:px-6">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <h2 className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">
               {clientsTitle ?? `Empresas que confiam no ${eyebrow} NC Brasil`}
             </h2>
@@ -349,7 +349,7 @@ export function LandingPage({
 
       {(problem || solution) && (
         <section className="relative py-20 md:py-28">
-          <div className="mx-auto grid max-w-6xl gap-8 px-4 md:grid-cols-2 md:px-6">
+          <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:px-8 md:grid-cols-2">
             {problem && (
               <Reveal>
                 <div className="h-full rounded-3xl border border-destructive/30 bg-destructive/5 p-8 backdrop-blur">
@@ -407,7 +407,7 @@ export function LandingPage({
       {/* PARALLAX SHOWCASE */}
       {((showParallaxshowcase && showcaseImages.length > 0) || (showcase && showcase.length > 0)) && (
         <section className="relative overflow-hidden py-24 md:py-32">
-          <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow={pathname.includes('rifas') ? "Script de Rifas" : pathname.includes('leilao') ? "Plataforma de Leilão" : "Showcase do Sistema"}
               title={<>Design <span className="text-gradient">Premium</span> & Performance</>}

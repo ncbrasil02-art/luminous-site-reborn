@@ -51,7 +51,7 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
     <section className="relative overflow-hidden py-24 md:py-32" id="contato">
       <div className="absolute inset-0 -z-10 bg-mesh opacity-40" />
       
-      <div className="mx-auto max-w-7xl px-4 md:px-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="text-center mb-16">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-primary backdrop-blur">
@@ -72,7 +72,7 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
           <Reveal className="lg:col-span-3">
             <form 
               onSubmit={handleSubmit}
-              className="group relative overflow-hidden rounded-[2.5rem] border border-border bg-card/40 p-8 backdrop-blur-sm transition-all hover:border-primary/40 md:p-12"
+              className="group relative overflow-hidden rounded-[2.5rem] border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 sm:p-8 md:p-12"
             >
               <div className="relative z-10">
                 <h3 className="font-display text-2xl font-bold md:text-3xl">Vamos conversar</h3>
@@ -222,7 +222,7 @@ function ContactInfoCard({
   external?: boolean 
 }) {
   const Card = (
-    <div className="group flex items-center gap-5 rounded-[2rem] border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:glow-sm">
+    <div className="group flex flex-col sm:flex-row items-center sm:items-start gap-5 rounded-[2rem] border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:glow-sm text-center sm:text-left">
       <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
         <Icon className="h-6 w-6" />
       </div>

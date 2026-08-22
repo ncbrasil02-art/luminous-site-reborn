@@ -81,7 +81,7 @@ function EmpresaPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30" />
-        <div className="mx-auto max-w-7xl px-4 py-24 md:px-6 md:py-32">
+        <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 md:py-32">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
@@ -143,7 +143,7 @@ function EmpresaPage() {
       {/* MISSÃO */}
       <section className="relative border-y border-border bg-surface py-20 md:py-28">
         <div className="absolute inset-0 bg-mesh opacity-40" aria-hidden />
-        <div className="relative mx-auto max-w-5xl px-4 text-center md:px-6">
+        <div className="relative mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal>
             <Rocket className="mx-auto h-10 w-10 text-primary" />
             <h2 className="mt-6 font-display text-3xl font-bold md:text-5xl">
@@ -161,7 +161,7 @@ function EmpresaPage() {
 
       {/* VALORES */}
       <section className="py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Nossos valores"
             title={
@@ -189,7 +189,7 @@ function EmpresaPage() {
       {/* EQUIPE */}
       <section className="relative overflow-hidden border-y border-border bg-surface py-24 md:py-32">
         <div className="absolute inset-0 grid-pattern opacity-30" aria-hidden />
-        <div className="relative mx-auto max-w-7xl px-4 md:px-6">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Nosso time"
             title={
@@ -219,7 +219,7 @@ function EmpresaPage() {
 
       {/* NÚMEROS */}
       <section className="py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="grid gap-6 rounded-3xl border border-border bg-surface p-10 md:grid-cols-4 md:p-14">
               {[
@@ -242,7 +242,7 @@ function EmpresaPage() {
 
       {/* CTA */}
       <section className="pb-24">
-        <div className="mx-auto max-w-4xl px-4 text-center md:px-6">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <Reveal>
             <div className="rounded-3xl border border-primary/30 bg-surface/60 px-6 py-14 backdrop-blur">
               <Award className="mx-auto h-10 w-10 text-primary" />
