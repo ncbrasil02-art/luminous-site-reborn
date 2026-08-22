@@ -9,12 +9,12 @@ export function RocketTakeoff() {
     offset: ["start end", "end start"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [400, -1200]);
+  const y = useTransform(scrollYProgress, [0, 1], [400, -800]);
   const rotate = useTransform(scrollYProgress, [0, 1], [5, -15]);
-  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.5, 1.4, 0.3]);
-  const opacity = useTransform(scrollYProgress, [0, 0.1, 0.8, 1], [0, 1, 1, 0]);
+  const scale = useTransform(scrollYProgress, [0, 0.4, 0.8, 1], [0.5, 1.2, 0.6, 0.3]);
+  const opacity = useTransform(scrollYProgress, [0, 0.05, 0.9, 1], [0, 1, 1, 0]);
 
-  const smoothY = useSpring(y, { stiffness: 80, damping: 25 });
+  const smoothY = useSpring(y, { stiffness: 40, damping: 20, restDelta: 0.001 });
   const smoothRotate = useSpring(rotate, { stiffness: 80, damping: 25 });
 
   return (
@@ -39,29 +39,28 @@ export function RocketTakeoff() {
         {/* Deep Exhaust Flame Effect */}
         <motion.div 
           animate={{ 
-            scaleY: [1, 1.8, 1], 
-            scaleX: [1, 0.85, 1.15, 1],
-            opacity: [0.7, 1, 0.7] 
+            scaleY: [1, 1.5, 1], 
+            opacity: [0.7, 0.9, 0.7] 
           }}
-          transition={{ duration: 0.12, repeat: Infinity }}
-          className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-20 h-64 bg-gradient-to-t from-transparent via-primary/90 to-primary blur-3xl -z-10"
+          transition={{ duration: 0.3, repeat: Infinity, ease: "linear" }}
+          className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-20 h-64 bg-gradient-to-t from-transparent via-primary/60 to-primary/90 blur-3xl -z-10 will-change-transform"
         />
         
-        {/* Intense Core Flame */}
+        {/* Intense Core Flame - Reduced complexity */}
         <motion.div 
           animate={{ 
-            scaleY: [1, 2.5, 1], 
-            opacity: [0.5, 0.8, 0.5] 
+            scaleY: [1, 1.3, 1], 
+            opacity: [0.5, 0.7, 0.5] 
           }}
-          transition={{ duration: 0.08, repeat: Infinity }}
-          className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-10 h-40 bg-white/60 blur-2xl -z-10 shadow-[0_0_50px_rgba(255,255,255,0.4)]"
+          transition={{ duration: 0.5, repeat: Infinity, ease: "linear" }}
+          className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-8 h-32 bg-white/40 blur-xl -z-10 will-change-transform"
         />
 
-        {/* Dynamic Glow Around Base */}
+        {/* Dynamic Glow Around Base - Simple Opacity */}
         <motion.div
-          animate={{ scale: [1, 1.4, 1], opacity: [0.2, 0.4, 0.2] }}
+          animate={{ opacity: [0.1, 0.3, 0.1] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/20 rounded-full blur-[100px] -z-20"
+          className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/10 rounded-full blur-[100px] -z-20 will-change-opacity"
         />
       </motion.div>
     </div>
