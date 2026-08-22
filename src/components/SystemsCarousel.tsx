@@ -125,10 +125,10 @@ export function SystemsCarousel() {
 
               <div className="relative flex h-full flex-col p-6 sm:p-10 pt-20 sm:pt-24">
                 <div className={cn(
-                  "mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl ring-1 ring-white/10 backdrop-blur transition-all duration-500 group-hover:scale-110 group-hover:glow-md",
-                  system.isPremium ? "bg-gradient-primary text-white shadow-glow-sm" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
+                  "mb-8 inline-flex h-20 w-20 items-center justify-center rounded-3xl ring-1 ring-white/10 backdrop-blur-xl transition-all duration-700 group-hover:scale-110 group-hover:rotate-6 group-hover:glow-lg",
+                  system.isPremium ? "bg-gradient-primary text-white shadow-glow-md" : "bg-surface-elevated text-primary-glow group-hover:bg-primary group-hover:text-white"
                 )}>
-                  <system.icon className="h-8 w-8" />
+                  <system.icon className="h-10 w-10" />
                 </div>
 
                 <h3 className="font-display text-2xl sm:text-4xl font-bold tracking-tight text-white group-hover:text-primary-glow transition-colors drop-shadow-sm">{system.title}</h3>
