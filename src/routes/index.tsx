@@ -402,6 +402,7 @@ function HomePage() {
             >
               Catálogo Completo
               <div className="flex h-10 w-10 items-center justify-center rounded-none border border-primary/30 bg-primary/5 transition-transform group-hover:translate-x-2 group-hover:bg-primary group-hover:text-white">
+
                 <ChevronRight className="h-4 w-4" />
               </div>
             </Link>
