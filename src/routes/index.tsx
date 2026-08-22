@@ -290,7 +290,7 @@ const solutions = [
   {
     icon: Smartphone,
     title: "Aplicativos Mobile",
-    desc: "Apps **iOS e Android** com UX cinematográfica, notificações e sistemas de alta performance.",
+    desc: "Apps **iOS e Android** com UX avançada, notificações e sistemas de alta performance.",
     to: "/portfolio/criacao-de-aplicativos",
   },
 ];
