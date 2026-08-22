@@ -52,7 +52,7 @@ export const rifasTestimonials = [
     rating: 5
   },
   {
-    quote: "A interface é incrível e as Raspadinhas Digitais funcionam sem travamentos. Meus lucros subiram 400% desde que migrei para a tecnologia cinematográfica da NC.",
+    quote: "A interface é incrível e as Raspadinhas Digitais funcionam sem travamentos. Meus lucros subiram 400% desde que migrei para a tecnologia avançada da NC.",
     author: "Valentina Ruggeri",
     role: "Organizador de Ações",
     image: "/testimonials/cale.jpg",

@@ -16,7 +16,7 @@ import heroTechAsset from "@/assets/hero-tech.jpg";
 const slides = [
   {
     id: "home",
-    eyebrow: "Liderança em Tecnologia Digital",
+    eyebrow: "Sistemas desenvolvidos",
     icon: Sparkles,
     title: "Ecossistemas Digitais de Alta Performance.",
     highlight: "Alta Performance.",
