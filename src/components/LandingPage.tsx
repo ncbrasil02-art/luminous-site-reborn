@@ -875,7 +875,7 @@ export function LandingPage({
 
                     <div className="mt-8 flex items-center gap-4 border-t border-border pt-6">
                       {t.image && (
-                        <div className="relative h-12 w-12 overflow-hidden rounded-full ring-2 ring-primary/20 group-hover:ring-primary/40 transition-all">
+                        <div className="relative h-12 w-12 overflow-hidden rounded-none ring-2 ring-primary/20 group-hover:ring-primary/40 transition-all">
                           <img 
                             src={t.image} 
                             alt={t.author}
@@ -913,7 +913,7 @@ export function LandingPage({
             <div className="mt-12 space-y-4">
               {faq.map((item, i) => (
                 <Reveal key={item.q} delay={i * 0.04}>
-                  <details className="group rounded-2xl border border-border bg-card/60 p-5 backdrop-blur transition-colors hover:border-primary/30">
+                  <details className="group rounded-none border border-border bg-card/60 p-5 backdrop-blur transition-colors hover:border-primary/30">
                     <summary className="flex cursor-pointer items-center justify-between gap-4 font-semibold list-none">
                       <span className="flex items-center gap-3">
                         <Check className="h-4 w-4 text-primary shrink-0" />
@@ -942,8 +942,8 @@ export function LandingPage({
         <div className="absolute inset-0 -z-10 bg-mesh opacity-60" />
         <div className="mx-auto max-w-4xl px-4 text-center md:px-6">
           <Reveal>
-            <div className="relative overflow-hidden rounded-3xl border border-primary/30 bg-surface/60 px-6 py-14 backdrop-blur md:px-12">
-              <div className="absolute -inset-px rounded-3xl bg-gradient-primary opacity-20 blur-2xl" />
+            <div className="relative overflow-hidden rounded-none border border-primary/30 bg-surface/60 px-6 py-14 backdrop-blur md:px-12">
+              <div className="absolute -inset-px rounded-none bg-gradient-primary opacity-20 blur-2xl" />
               <div className="relative">
                 <Rocket className="mx-auto h-10 w-10 text-primary" />
                 <h2 className="mt-6 font-display text-3xl font-bold leading-tight md:text-5xl">
@@ -956,7 +956,7 @@ export function LandingPage({
                   <Link 
                     to={finalPrimaryCta.to} 
                     onClick={() => trackClick(finalPrimaryCta.label, "Footer CTA")}
-                    className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md hover:scale-105 transition-transform"
+                    className="inline-flex items-center gap-2 rounded-none bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground glow-md hover:scale-105 transition-transform"
                   >
                     {finalPrimaryCta.label}
                     <ArrowRight className="h-4 w-4" />
@@ -964,7 +964,7 @@ export function LandingPage({
                   <Link 
                     to={finalSecondaryCta.to} 
                     onClick={() => trackClick(finalSecondaryCta.label, "Footer CTA")}
-                    className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-7 py-3.5 text-sm font-semibold text-foreground hover:bg-surface"
+                    className="inline-flex items-center gap-2 rounded-none border border-border bg-surface/80 px-7 py-3.5 text-sm font-semibold text-foreground hover:bg-surface"
                   >
                     <MessageCircle className="h-4 w-4" />
                     {finalSecondaryCta.label}
