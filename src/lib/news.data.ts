@@ -106,7 +106,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-63.jpg",
+    "image_url": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b7b?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "48599"
   },
   {
@@ -126,7 +126,7 @@ export const newsData: NewsPost[] = [
       "fazer site",
       "reformular website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-75.jpg",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "48611"
   },
   {
@@ -143,7 +143,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url": "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-26.jpg",
+    "image_url": "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -154,7 +154,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url": "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-64.jpg",
+    "image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -174,7 +174,7 @@ export const newsData: NewsPost[] = [
       "desenvolvimento de sistemas",
       "sites semânticos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/news/desenvolvimento-webdesign-109.jpg",
+    "image_url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "48648"
   },
   {
@@ -195,7 +195,7 @@ export const newsData: NewsPost[] = [
       "sítio eletrônic",
       "website"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-71.jpg",
+    "image_url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "48607"
   },
   {
@@ -210,7 +210,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-77.jpg",
+    "image_url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -221,7 +221,7 @@ export const newsData: NewsPost[] = [
     "content": "<h4>Hoje em dia, ter um site é item obrigatório para qualquer empresa. Quando nos recomendam uma empresa, a primeira coisa que fazemos é jogar seu nome no Google e acessar o site. Isso vale tanto para a escola em que você está pensando matricular seu filho, para a loja que uma amiga indicou para comprar um produto e até mesmo para um novo mercado que abriu no bairro.</h4>\nSim, o site é, muitas vezes, o seu cartão de visitas, aquilo que será o seu primeiro contato com um possível cliente. Por isso, não pode ser um site qualquer! Seu site tem que causar uma boa primeira impressão. Mas, mais do que isso, tem que ter alguns atrativos para que possam envolver seu cliente e fazê-lo interagir com sua empresa até efetivar a compra do seu produto ou serviço.\n\n<strong>ATRATIVO</strong>\n\nA primeira consideração é que ele seja atrativo e gostoso de navegar, que não tenha <strong>publicidade</strong> exagerada e que tenha a cara da empresa representada no seu layout. Ter uma fonte suave também é um fator decisivo para que o usuário permaneça no site, para que ele não “canse” de navegar nele.\n\nTextos demais costumam assustar os usuários, portanto, procure ser sucinto ao passar suas informações. Mas não cometa o erro de ser superficial demais, afinal, o cliente tem que entender do que se trata o seu produto. Busque um equilíbrio na quantidade de informações e procure quebrar o texto com imagens e informações destacadas. O uso de ícones tem funcionado bastante, pois cada vez mais, as pessoas estão fazendo o que chamamos de “leitura escaneada” ou seja: “ler” o texto através de ícones e imagens, buscando a mensagem geral do texto, sem precisar lê-lo inteiro. Abuse desse recurso. Ele é ótimo!\n\n<strong>IMAGENS REAIS</strong>\n\nAinda sobre <strong>layout</strong>, procure ter imagens boas, preferencialmente não de <strong>banco de imagens</strong>. Outra tendência de comportamento em relação a sites – e isso vale também para as mídias sociais! – é que as pessoas preferem imagens humanizadas e reais, algo que elas sabem que é verdadeiro e não algo totalmente inatingível para elas.\n\n<strong>FÁCIL DE NAVEGAR</strong>\n\nTão importante quanto o layout do site é a sua navegabilidade, ou seja, a facilidade proporcionada ao usuário para navegar pelo site (se ele encontra o que procura, se entende os caminhos que deve percorrer, etc). A regra principal desse item é: o produto não pode estar a mais de três cliques do usuário. Isso significa que o caminho deve ser simples e rápido. Além disso, certifique-se de que o site tem caminhos claros para o usuário, que ele consiga identificar facilmente qual o próximo passo, para que ele não desista de comprar no meio da experiência.\n\n<strong>ATUALIZADO</strong>\n\nUma outra questão essencial é que seu site não seja estático. Como assim? Claro que um site – e aqui não estamos falando de e-commerce, que é atualizado o tempo todo – é basicamente estático, ou seja, as informações não mudam. Mas você deve prever na sua estrutura alguns itens que possam ser atualizados periodicamente, como uma área de banner em destaque ou, melhor ainda, um blog, onde você poderá trazer assuntos bem atualizados sobre o seu mercado e o seu produto. Assim, seu cliente sempre perceberá novidades ao retornar ao seu site. Confira aqui algumas dicas de como produzir conteúdo interessante para seu blog\n\n<strong>CALL TO ACTION</strong>\n\nMais importante que isso tudo é que seu site tenha um ou vários call-to-action, ou seja, “ferramentas” que levem seu cliente a interagir com você, deixando um “rastro” para que você possa “segui-lo” até efetivar a venda. Isso você consegue com formulários de contato ou ofertas específicas em algum setor. Cada formulário ou oferta deverá levar seu usuário para uma página de captura de dados, chamada de <strong><a class=\"expresscurate_contentTags\" href=\"http://ncbrasil.com.br/tag/landing-page/\">#landing page</a></strong>. E é aí que a mágica de vendas do site começa. Você obtém os dados de contato do seu cliente e começa um relacionamento com ele, onde vai apresentando seus produtos e despertando nele o desejo da compra. Mas isso já é assunto para um outro post, ou melhor, para um e-book inteiro, que você pode acessar baixar gratuitamente acessando nosso e-book Como transformar acessos em <strong><a class=\"expresscurate_contentTags\" href=\"http://ncbrasil.com.br/tag/leads/\">#leads</a></strong>.\n\nSe você já tem um bom site, mas não está tendo resultados, pode ser que você esteja cometendo alguns erros. Para ver se esse é o seu caso, confira nosso e-book 5 Erros Mais Comuns em <strong><a class=\"expresscurate_contentTags\" href=\"http://ncbrasil.com.br/tag/marketing-digital/\">#Marketing Digital</a></strong>. É gratuito e fácil de acessar!",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/criacao-de-sistes-sistemas-13.jpg",
+    "image_url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -232,7 +232,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/criacao-de-sistes-sistemas-15.jpg",
+    "image_url": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -255,7 +255,7 @@ export const newsData: NewsPost[] = [
       "sites para celulares",
       "sites responsivos"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-23.png",
+    "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "48545"
   },
   {
@@ -266,7 +266,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-50.jpg",
+    "image_url": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -277,7 +277,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/criacao-de-sistes-sistemas-1.jpg",
+    "image_url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -300,7 +300,7 @@ export const newsData: NewsPost[] = [
       "sites semânticos",
       "webdesign"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/Imagem-blog.pngvC3ADdeos-corporativos-1.png",
+    "image_url": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49336"
   },
   {
@@ -311,7 +311,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/shutterstock_528070915-820x490-Copia-300x179-1.jpg",
+    "image_url": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -333,7 +333,7 @@ export const newsData: NewsPost[] = [
       "criar sites reponsivos",
       "loja virtual para celulares"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/diferencial-em-criacao-de-sites-e-e-commerces-820x450-Copia.jpg",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49283"
   },
   {
@@ -356,7 +356,7 @@ export const newsData: NewsPost[] = [
       "hospedagem de sites",
       "otimização de sites"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/por-que-que-e-seo-e-importante-na-criacao-de-sites-820x450-Copia.jpg",
+    "image_url": "https://images.unsplash.com/photo-1572021335469-3171624c9c5c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49285"
   },
   {
@@ -378,7 +378,7 @@ export const newsData: NewsPost[] = [
       "Rio de Janeiro",
       "seo"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/Imagem-blog-landing-page-CTA.png",
+    "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49331"
   },
   {
@@ -404,7 +404,7 @@ export const newsData: NewsPost[] = [
       "web designers",
       "webdesign"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/Imagem-blog-vC3ADdeos-corporativos-3.png",
+    "image_url": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49335"
   },
   {
@@ -428,7 +428,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "wordpress"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/4-dicas-para-criar-um-C3B3timo-logo-3.png",
+    "image_url": "https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49320"
   },
   {
@@ -439,7 +439,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/redes-sociais-Copia.png",
+    "image_url": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -450,7 +450,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Imagem-blog-landing-page-videos-sC3A3o-mais-chamativos.png",
+    "image_url": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -461,7 +461,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/4-dicas-para-criar-um-C3B3timo-logo-1.png",
+    "image_url": "https://images.unsplash.com/photo-1541462608141-ad4d74b1af7e?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -472,7 +472,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Erros-ao-criar-sites-3.png",
+    "image_url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -483,7 +483,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/img-mokups-dbs.jpg",
+    "image_url": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -494,7 +494,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/criacao-de-sistes-sistemas-14.jpg",
+    "image_url": "https://images.unsplash.com/photo-1492691523567-f73b3f658311?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -505,7 +505,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/faca-a-criacao-de-site-anuncie-no-google-e-apareca-Copia.jpg",
+    "image_url": "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -531,7 +531,7 @@ export const newsData: NewsPost[] = [
       "site para empresas",
       "webdesign"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/exibir-seu-site-nos-buscadores.jpg",
+    "image_url": "https://images.unsplash.com/photo-1562577353-f5bf847f89d6?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49342"
   },
   {
@@ -542,7 +542,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Fotografia-cuidados-com-a-construC3A7C3A3o-da-sua-marca-na-internet-1.png",
+    "image_url": "https://images.unsplash.com/photo-1452784444945-3f422708fe5e?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -553,7 +553,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Imagem-blog.png-landing-page.png",
+    "image_url": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -564,7 +564,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/loja-vritual-Copia.jpg",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -583,7 +583,7 @@ export const newsData: NewsPost[] = [
       "criar aplicativo",
       "criar loja virtual profissional"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/era-digital.png",
+    "image_url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49442"
   },
   {
@@ -617,7 +617,7 @@ export const newsData: NewsPost[] = [
       "webdesign",
       "website"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/quanto-custa-um-site-profissional-post-stavit-03.jpg",
+    "image_url": "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -640,7 +640,7 @@ export const newsData: NewsPost[] = [
       "Sites Turbinados",
       "Web Designer"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/full_xciWr5mV.jpg",
+    "image_url": "https://images.unsplash.com/photo-1572021335469-3171624c9c5c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49544"
   },
   {
@@ -666,7 +666,7 @@ export const newsData: NewsPost[] = [
       "Web Designer",
       "website"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/wdd2014.jpg",
+    "image_url": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49552"
   },
   {
@@ -677,7 +677,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Cv81ZQhWAAAmoTo.webp",
+    "image_url": "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -707,7 +707,7 @@ export const newsData: NewsPost[] = [
       "website",
       "wordpress"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/maxresdefault-scaled.jpg",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49608"
   },
   {
@@ -718,7 +718,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Como-Criar-Uma-Loja-Virtual-Para-2015-01.webp",
+    "image_url": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -748,7 +748,7 @@ export const newsData: NewsPost[] = [
       "Search Engine Marketing",
       "SEM"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/que-e-marketing-de-busca.jpg",
+    "image_url": "https://images.unsplash.com/photo-1557838923-2985c318be48?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49699"
   },
   {
@@ -759,7 +759,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/identidade_visual.jpg",
+    "image_url": "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -770,7 +770,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/imgempresas.jpg",
+    "image_url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -792,7 +792,7 @@ export const newsData: NewsPost[] = [
       "Sites para a igreja",
       "Tendência Web designer"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/pc-keyboard-thumb-large.jpg",
+    "image_url": "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49763"
   },
   {
@@ -811,7 +811,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/web-designer.jpg",
+    "image_url": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -832,7 +832,7 @@ export const newsData: NewsPost[] = [
       "Erros de E-commerce",
       "Web Designer"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/2016-e-commerce.png",
+    "image_url": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49789"
   },
   {
@@ -843,7 +843,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/e-commerce-para-a-Black-Friday.jpg",
+    "image_url": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -854,7 +854,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/credit-card1.jpg",
+    "image_url": "https://images.unsplash.com/photo-1556742111-a301076d9d18?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -865,7 +865,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/stockvault-online-marketing-concept-marketeer-working-at-the-desk176902-scaled.jpg",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -876,7 +876,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/loja_virtual_ecommerce_fornecedores.jpg",
+    "image_url": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -898,7 +898,7 @@ export const newsData: NewsPost[] = [
       "CSM",
       "Sistema de Gerenciamento de Conteúdo"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/content-management-system-in-mumbai.jpg",
+    "image_url": "https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -921,7 +921,7 @@ export const newsData: NewsPost[] = [
       "tipografia",
       "Web Design"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/webdesign-courses-1.jpg",
+    "image_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49891"
   },
   {
@@ -932,7 +932,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/blog-reinos-unidos-SEO-a-importância-de-ter-um-site-otimizado.jpg",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -943,7 +943,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/aplicativos.png",
+    "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -954,7 +954,7 @@ export const newsData: NewsPost[] = [
     "content": "<h1 class=\"mt25 mb25\">Por que eu preciso de um site?</h1>\n<p class=\"lead mt25\">A internet causou uma mudança total na forma como muitas pessoas fazem compras e procuram informação de que necessitam.</p>\n<p class=\"lead mt25\">Desde a criação da internet, a forma com que as pessoas fazem compras e buscam informações foi alterada e \"monopolizada\". Segundo pesquisas, em 2012 os consumidores gastaram cerca de $289.000.000.000 em compras online. Além disso, 80% das pessoas que usam a internet já fizeram pelo menos uma compra em sua vida.</p>\n<p class=\"lead mt25\">Com este poder de consumo muito alto, é de extrema importância, para qualquer empresa, independente do tamanho, ter uma presença no mundo virtual. Com a criação de um <strong>site,</strong> a empresa pode se manter competitivo dentro de seu ramo.</p>\n<p class=\"lead mt25\"><img class=\"aligncenter size-large wp-image-49962\" src=\"https://www.ncbrasil.com.br/news/conceito-cricao-site-1024x392.png\" alt=\"Site\" width=\"840\" height=\"322\" /></p>\n\n<h1 class=\"mt25 mb25\">Território</h1>\nTer um <strong>site</strong> ativo é importante, mesmo para as pequenas empresas, locais. De acordo com um estudo feito, 85% dos consumidores usam a Internet para encontrar uma empresa ou negócio local. Os motores de busca sempre buscarão resultados locais, sendo assim, ter um <strong>site</strong> é ainda mais importante se você tem um negócio local.\n<h1 class=\"mt25 mb25\">Alcance</h1>\nUma empresa com um <strong>site</strong> dá-lhe uma presença global instantânea e permite que o seu negócio para captar clientes de todo o mundo, aumentando assim a quantidade de clientes. Se você pode atender aos clientes a nível nacional ou global, um <strong>site</strong> reflete uma obrigação para as perspectivas que estão pesquisando o seu negócio.\n<h1>Comunicação instantânea</h1>\nUm <strong>site</strong> promove uma plataforma onde os clientes podem se comunicar instantaneamente com o vendedor.\n\nVendas futuras e novos produtos podem ser imediatamente anunciados no site da empresa, eliminando assim a necessidade de enviar flyers, panfletos e folhetos. Além de do fator de relacionar o  conteúdo e a integração dos meios de comunicação social com o site.\n\nA forma com que você gera conteúdo pode ajudar uma perspectiva, que você pode usar a mídia social para propagar imediatamente o conteúdo em milhares de potenciais clientes.\n<h1 class=\"mt25 mb25\">Melhor atendimento ao cliente</h1>\nGeralmente, uma empresa com um <strong>site</strong> irá incluir uma seção de contate-nos, dando aos seus clientes o acesso imediato a uma pergunta, orçamento, ou notificá-lo sobre um problema com seus produtos ou serviços. Isso lhe dá a capacidade de fornecer feedback imediato para o cliente e melhorar a sua taxa de satisfação de atendimento ao cliente.\n\nHá muitas maneiras criativas que você pode melhorar a experiência dos clientes, incluindo um simples formulário de contato para que eles possam contatá-lo com perguntas, um blog ou fórum que podem deixar perguntas ou até mesmo um bate-papo ao vivo para satisfação imediata.\n<h1 class=\"mt25 mb25\"><img class=\"wp-image-49961 size-medium alignleft\" src=\"https://www.ncbrasil.com.br/news/desenvolvimento-de-site-300x169.png\" alt=\"Site\" width=\"300\" height=\"169\" /></h1>\n<h1 class=\"mt25 mb25\"></h1>\n<h1 class=\"mt25 mb25\">Email@meusite.com.br</h1>\nSim, existem outras maneiras de fazer isso, mas por ter um <strong>site</strong> que você pode ter seu próprio e-mail: email@seusite.com.br.\nÉ mais profissional e mais fácil de lembrar.\n<h1 class=\"mt25 mb25\">24 horas por dia</h1>\nSeu <strong>site</strong> funciona 24/7 sem qualquer supervisão ou necessidade de fechar. Você pode sempre estar lá para os seus clientes.\n<h1 class=\"mt25 mb25\">Conveniência</h1>\nOs consumidores de hoje querem e anseiam por uma experiência de compras rápida e fácil, por isso que mais e mais pessoas estão se voltando para compras online.\n\nA manutenção de um site de negócios vai oferecer uma maneira mais conveniente de fazer compras para seus clientes. Hoje, comércio e informações é imediato.\n<div class=\"blog-three-mini\">\n<h1 class=\"mt25 mb25\">Marketing</h1>\nA internet abriu um novo mundo de marketing que não existia antes. Seu <strong>site</strong> pode atrair novos negócios usando toda uma série de marketing de baixo custo e técnicas.\n\n</div>\n&nbsp;\n<blockquote>\n<h1><img class=\"wp-image-49713 alignright\" src=\"https://www.ncbrasil.com.br/news/63071798@N06_r.jpg\" alt=\"NC Brasil - criação de sites\" width=\"204\" height=\"191\" />Precisando de um bom site?</h1>\n<h3>Entre em contato conosco da NC Brasil e faça um<a href=\"https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/\"> orçamento para criação de sites!</a></h3>\n</blockquote>",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/e29323b61ad9b563d74bf77628c18e0a5ed823b4.jpg",
+    "image_url": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -965,7 +965,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Venda-de-Carros-site.webp",
+    "image_url": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -985,7 +985,7 @@ export const newsData: NewsPost[] = [
       "criação de sites",
       "Tendência Web designer"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/tendencias-design-sites.jpg",
+    "image_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -996,7 +996,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Você-tem-um-bom-site-para-vender-seus-imóveis.png",
+    "image_url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1007,7 +1007,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/site1.jpg",
+    "image_url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1018,7 +1018,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/article-iae-para-entrenar-caballos-de-terceros-56681cf144a2a.webp",
+    "image_url": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1034,7 +1034,7 @@ export const newsData: NewsPost[] = [
       "Sistemas Web"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/bibel_og_pc.jpg",
+    "image_url": "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1056,7 +1056,7 @@ export const newsData: NewsPost[] = [
       "marca",
       "público-alvo"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/branding-concept.jpg",
+    "image_url": "https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1078,7 +1078,7 @@ export const newsData: NewsPost[] = [
       "Site de vendas",
       "Venda de veículos online"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/Zz03YTZlNTgxYTFhMGYwY2UwZmQ4Y2YyOTc2M2Y3ZjA5NA1-1024x1024.webp",
+    "image_url": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50044"
   },
   {
@@ -1101,7 +1101,7 @@ export const newsData: NewsPost[] = [
       "Tendência Redutiva",
       "Tendência Web designer"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/web-design-concepts-with-blurred-background_1134-82.jpg",
+    "image_url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50054"
   },
   {
@@ -1124,7 +1124,7 @@ export const newsData: NewsPost[] = [
       "UX",
       "Web site"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/user_experience_design.jpg",
+    "image_url": "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50058"
   },
   {
@@ -1135,7 +1135,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/apps.png",
+    "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1155,7 +1155,7 @@ export const newsData: NewsPost[] = [
       "logo",
       "marca"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/identidade-visual-design-grafico.jpg",
+    "image_url": "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50073"
   },
   {
@@ -1172,7 +1172,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/imagem_topo-14-1170x429.png",
+    "image_url": "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1183,7 +1183,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Marketing-Digital.webp",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1204,7 +1204,7 @@ export const newsData: NewsPost[] = [
       "logomarca",
       "marca"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/design_internet.jpg",
+    "image_url": "https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50097"
   },
   {
@@ -1215,7 +1215,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/melhores-celulares-chineses-baratos-2017.jpg",
+    "image_url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1226,7 +1226,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/797059169-patio-da-general-motors-na-cidade-de-gravatai-no-rio-grande-do-sul-carros-16-1024x576.jpeg",
+    "image_url": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1247,7 +1247,7 @@ export const newsData: NewsPost[] = [
       "Vendas de Veículos Online",
       "Web Carrão"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/Female-Accountant.webp",
+    "image_url": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50487"
   },
   {
@@ -1273,7 +1273,7 @@ export const newsData: NewsPost[] = [
       "Site de Cupom Online",
       "Tendência Web designer"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/b2b-vs-b2c-e-commerce-1024x579.webp",
+    "image_url": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50500"
   },
   {
@@ -1284,7 +1284,7 @@ export const newsData: NewsPost[] = [
     "content": "<h1>O que é um <strong>bom site</strong>?</h1>\n<span class=\"sumo_twilighter_highlighted twilighter-7ec5ee3e\">Um <strong>bom site</strong> é um <strong>endereço virtual</strong> acessado através da internet em um navegador. Mas isso todo mundo já sabe!\n</span>\n\n<span class=\"sumo_twilighter_highlighted twilighter-7ec5ee3e\">Mas o que um <strong>bom site</strong>? Um <strong>bom site</strong> deve fazer bem o que é proposto, que é divulgar os serviços ou produtos da empresa. Muito mais que um \"catálogo eletrônico\", ele deve ser um canal de relacionamento 24 horas com</span> os clientes. Cada segmento de negócios possui características que definem o tipo de conteúdo que o cliente procura no <strong>site</strong>.\n\nTodo <strong>bom site</strong> possui alguns fatores primordiais e padrões, dentre eles; Legibilidade, navegabilidade, rapidez, manutenção constante, foco no cliente, interatividade, funcionalidade e um bom design.\n<h2>Tenha um <strong>bom site</strong> também! Leia nosso artigo e saiba mais!</h2>\n&nbsp;\n\n<img class=\"aligncenter size-large wp-image-50506\" src=\"https://www.ncbrasil.com.br/news/default-nc.jpg\" alt=\"Bom site\" width=\"840\" height=\"459\" />\n\n&nbsp;\n<h2>Qual a importância de um bom site para sua empresa?</h2>\nDentre todos os meios de comunicação, os <strong>sites</strong> são os meios mais usados em todo o mundo. Não só pelo seu caráter quase ilimitado, como também pela facilidade com que pode ser desenvolvido e disponibilizado para o mundo todo, um<strong> bom site</strong> alavanca negócios e amplia as paredes de sua empresa, seu programa ou seus serviços.\n\nDe longe, é a melhor forma de impulsionar o seu negócio é com a criação de um <strong>bom site profissional</strong>.\n\nA criação de<strong> sites</strong> gerenciadas por uma agência web profissional, comprometida e experiente, como a <strong>NC Brasil</strong>, pode ser desenvolvida com uma combinação rara no mercado! Uma mistura de custos inferiores, se comparado a outras mídias, com qualidade de atendimento, designer e acabamentos!\n\n&nbsp;\n\n<img class=\"aligncenter size-full wp-image-50513\" src=\"https://www.ncbrasil.com.br/news/prestanto-bom-atendimento-ao-cliente.jpg\" alt=\"bom site\" width=\"870\" height=\"418\" />\n<h2></h2>\n<h2>Site Profissional</h2>\nSem dúvidas, um <strong>bom site</strong> é um <strong>site profissional</strong>. Então, do contrário do que muitos pensam, ter um <strong>bom site</strong> é sim essencial para o sucesso de qualquer negócio, já que eles servem não apenas como um meio de divulgação do produto ou serviço, mas também cumprem a função de comunicar os valores inerentes à empresa.\n\nA partir do momento em que você tem uma “vitrine” institucional online, as expectativas em relação aos resultados se tornam mais otimistas. Um <strong>bom site</strong> será capazes de atrair tráfego e, consequentemente, contribuirão para o aumento das vendas.\n<h2><strong>Site responsivo</strong></h2>\nOutro o fator importante para um <strong>bom site</strong>, é ter um <strong><a href=\"https://www.ncbrasil.com.br/sua-empresa-precisa-ter-um-site-responsivo/\">site responsivo</a>. </strong>Este é o tipo de website que se adapta a diferentes tipos de telas, ou seja, ao acessá-lo de dispositivos mobile, como smartphones e tablets. Todas as informações são colocadas de outra forma, para o tamanho da tela sem perder o design ou sem que haja a necessidade de ampliar as informações.\n\nSua maior vantagem, sem dúvidas, é a <strong>praticidade! </strong>Além de estar dentro das tendências do ano, seu site estará dentro dos padrões do <a href=\"http://www.google.com.br\"><strong>Google</strong></a>!\n\n&nbsp;\n\n<img class=\"aligncenter size-full wp-image-50510\" src=\"https://www.ncbrasil.com.br/news/101433-como-um-bom-site-pode-ajudar-seu-negocio-a-vender-mais-770x370.jpg\" alt=\"bom site\" width=\"770\" height=\"370\" />\n<h2>Sua empresa precisa de um <strong>bom site</strong>!</h2>\nTer um bom site ativo é importante, mesmo para as pequenas empresas. De acordo com um estudo, cerca de 85% dos consumidores usam a internet para encontrar uma empresa ou um negócio local. Os motores de busca sempre estarão atrás de resultados próximos aos clientes, sendo assim, ter um site é de extrema importância para sua empresa, sendo pequena ou grande!\n<p style=\"margin: 13.5pt 0cm .0001pt 0cm;\">Um negócio com um bom site, pode passar a ter presença global! Capte clientes de todo o Brasil e do mundo!</p>\n\n<blockquote>\n<h1><img class=\"size-full wp-image-48868 alignleft\" src=\"https://www.ncbrasil.com.br/news/logo-criacao-de-sites-e1475583609553.jpg\" alt=\"Criação de sites\" width=\"150\" height=\"138\" />Deseja ter um bom site?</h1>\n<h2>Entre em contato conosco e faça um <a href=\"https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/\">orçamento!</a></h2>\n</blockquote>\n&nbsp;",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/criação-de-sites-responsivos-em-salvador-empresa.jpg",
+    "image_url": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1301,7 +1301,7 @@ export const newsData: NewsPost[] = [
       "criar site responsivo",
       "site responsivo"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/entenda-o-que-e-um-site-responsivo-1132x600.jpg",
+    "image_url": "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50527"
   },
   {
@@ -1312,7 +1312,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/site-alex-031.jpg",
+    "image_url": "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1323,7 +1323,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/software-web.png",
+    "image_url": "https://images.unsplash.com/photo-1551288049-bbdac8a28a80?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1334,7 +1334,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/web-design-user-experience.jpg",
+    "image_url": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1352,7 +1352,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Planejamento SEO"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/sales-plannig-e1510279048728.jpg",
+    "image_url": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50581"
   },
   {
@@ -1367,7 +1367,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "seo"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/o-que-e-seo-destaque.gif",
+    "image_url": "https://images.unsplash.com/photo-1572177215152-32f247303126?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50599"
   },
   {
@@ -1381,7 +1381,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/marke-e1510967111661-scaled.jpg",
+    "image_url": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1396,7 +1396,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Plataforma de leilão"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/leilão-e1510970985900.jpg",
+    "image_url": "https://images.unsplash.com/photo-1579546673265-98a2791ccf0c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50612"
   },
   {
@@ -1413,7 +1413,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Sistemas de Veículos"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/sistema-veiculos-scaled.jpg",
+    "image_url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50621"
   },
   {
@@ -1429,7 +1429,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Sistema sob demanda"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/office-583841_960_720-e1510975970167.jpg",
+    "image_url": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50626"
   },
   {
@@ -1451,7 +1451,7 @@ export const newsData: NewsPost[] = [
       "sistemas web",
       "Software"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/2.webp",
+    "image_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50665"
   },
   {
@@ -1462,7 +1462,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/3-1.webp",
+    "image_url": "https://images.unsplash.com/photo-1541899481282-d53bffeacc7f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1486,7 +1486,7 @@ export const newsData: NewsPost[] = [
       "Site",
       "websites"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/sistemas-web.jpg",
+    "image_url": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50681"
   },
   {
@@ -1497,7 +1497,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/como-economizar-dinheiro-com-cupons-de-desconto.png.png",
+    "image_url": "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1508,7 +1508,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/1941243.webp",
+    "image_url": "https://images.unsplash.com/photo-1579546673265-98a2791ccf0c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1519,7 +1519,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/X-motivos-para-fazer-o-inventário-do-seu-estoque.jpg",
+    "image_url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1541,7 +1541,7 @@ export const newsData: NewsPost[] = [
       "wordpress",
       "WP"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/520116_edf5_2.webp",
+    "image_url": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50719"
   },
   {
@@ -1558,7 +1558,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Contabilidade",
       "Sistema de Gestão Contábil"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/cacaroot.jpg",
+    "image_url": "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50728"
   },
   {
@@ -1569,7 +1569,7 @@ export const newsData: NewsPost[] = [
     "content": "<h1>Entenda os Leilões Eletrônicos</h1>\n<h3>Primeiramente, saiba que todos e qualquer Leilões Eletrônicos são público.</h3>\nPodendo participar pessoas físicas maiores de 18 anos e jurídicas, ambas, de acordo com as normas e condições do <strong>Leilões Eletrônicos.</strong> O leilão é realizado em data, hora e local divulgados nas mídia eletrônica, seja site ou mídia social.\n\n<img class=\"aligncenter size-full wp-image-50737\" src=\"https://www.ncbrasil.com.br/news/leilao.jpg\" alt=\"Leilões Eletrônicos\" width=\"800\" height=\"445\" />\n<h2>Leilões Eletrônicos / Como Funciona?</h2>\nNo início de todos os sites, o leiloeiro deixará as condições do leilão descritas no catálogo. Em seguida, o usuário deve verificar quais serão os lotes anunciados um a um, que possuem fotos ilustrativas publicadas. Quando o lote for de seu interesse, entre na sala no horário aberto, e dispute pelo seu objeto de interesse. Vence a disputa pelo lote quem ofertar o maior lance, ou último lance, como no caso de <strong>Leilões Eletrônicos</strong> <strong>de Centavos</strong>.\n\n<img class=\"size-full wp-image-50739 alignleft\" src=\"https://www.ncbrasil.com.br/news/cronometro.png\" alt=\"Leilões Eletrônicos\" width=\"200\" height=\"167\" />\n<h2>Leilões Eletrônicos / Cronômetro</h2>\nNos<strong> Leilões Eletrônicos</strong> os cadastrados do site farão suas ofertas, no painel virtual, observando sempre o cronômetro para encerramento dos lances, acompanhando, desta forma, o leilão em tempo real.\n\n<strong>?Atenção:</strong> após o encerramento do cronômetro não haverá mais possibilidade de novos lances, salvo em condições especiais. Sempre que houver reforma de valor no lance, o cronômetro será reaberto por mais um minuto para lances.\n<h2>Leilões Eletrônicos / Categorias de Leilões Gerais</h2>\n<strong>Leilão Virtual</strong> – É denominado virtual todos os leilões onde somente os arrematantes cadastrados poderão participar, ofertar e arrematar os bens. (somente através do site)\n\n<strong>Leilão Online</strong> – É denominado online todos os leilões onde os cadastrados no site e os interessados que estiverem presentes no auditório do leiloeiro poderão participar. (site e salão de leilões)\n\n<strong>Leilão Presencial</strong> – É denominado presencial todos leilões onde somente os interessados que estiverem presentes no auditório poderão participar. (salão de leilões)\n\n&nbsp;\n\n<img class=\"aligncenter size-full wp-image-50738\" src=\"https://www.ncbrasil.com.br/news/pregao-eletronico-390x205.jpg\" alt=\"Leilões Eletrônicos\" width=\"390\" height=\"205\" />\n<h2>Leilões Eletrônicos / Termos comuns</h2>\n<strong>Leiloeiro:</strong> Os leiloeiros são as pessoas físicas proprietárias dos Leilões Eletrônicos. Eles são registrado na junta comercial do estado em que situa conforme o Decreto Nº 21.981 de 19 de Outubro de 1932. Realizam a comercialização dos bens que estão sendo leiloados e recebe uma comissão (geralmente de 5% do valor arrematado).\n\n<strong>Comitente:</strong> É o vendedor, ou seja, quem disponibilizou o bem para ir aos Leilões Eletrônicos. Por exemplo: bancos, financeira, seguradoras, prefeituras, empresas e até pessoas físicas.\n\n<strong>Arrematante:</strong> É o comprador, aquele que venceu a oferta por um item que foi a leilão.\n\n<strong>Edital</strong> <strong>de</strong> <strong>leilão:</strong> Documento oficial pelo qual se faz a publicação de todos os dados do leilão. É um item de leitura obrigatória para os interessados em participar das hastas.\n\nNeste documento são apresentadas todas as “regras do leilão”, como por exemplo: a lista dos bens a serem leiloados, estado de conservação, multas, relação de documentos necessários para um potencial comprador, data e hora do leilão, comissão do leiloeiro, procedimento para retirada do bem, prazo para entrega de documentos, etc.\n\n<strong>Lance Inicial:</strong> Lance inicial define como o primeiro lance dado por um interessado. Geralmente o seu valor é um pouco abaixo do valor de avaliação. Assim faz com que desperte o interesse nos participantes do leilão, gerando maior disputa e consequentemente aumentando o valor do bem leiloado.\n\n<strong>Lance Mínimo:</strong> valor mínimo ou valor de reserva: Estes são os termos utilizado para o menor lance em que o vendedor (comitente) aceita pelo lote. Quem define este valor são avaliadores do próprio vendedor.\n\nFiquem atentos nesses termos utilizados nos <strong>Leilões Eletrônicos</strong> (e demais) e boa sorte com os seus lances!\n\n&nbsp;\n<h2><img class=\"aligncenter size-large wp-image-50741\" src=\"https://www.ncbrasil.com.br/news/download-1024x689.jpg\" alt=\"Leilões Eletrônicos\" width=\"840\" height=\"565\" /></h2>\n<blockquote>\n<h2>Deseja ter um Sistema de Leilões Eletrônicos?</h2>\n<h1>Faça contato e um <a href=\"https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/\">orçamento no nosso site</a>!</h1>\n</blockquote>",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/download-scaled.jpg",
+    "image_url": "https://images.unsplash.com/photo-1579546673265-98a2791ccf0c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1584,7 +1584,7 @@ export const newsData: NewsPost[] = [
       "Sistemas Web"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/ARTIGO-CONTROLE-DE-ESTOQUE-740x432.webp",
+    "image_url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1595,7 +1595,7 @@ export const newsData: NewsPost[] = [
     "content": "<h1>Leilão Virtual</h1>\nA internet mudou a maneira como as pessoas compram e vendem seus objetos, e com isso surgiu o <strong>leilão virtual.</strong> Esses leilões vêm crescendo no Brasil, é uma forma de comprar sem precisar sair de casa e ainda arrematar itens pelo melhor preço.\n\nNão sabe como funciona um <strong>leilão virtual?</strong> É muito mais simples do que imagina! Conheça todos os detalhes para adquirir os melhores bens com preços que realmente valem a pena.\n\n&nbsp;\n\n<img class=\"aligncenter size-full wp-image-50753\" src=\"https://www.ncbrasil.com.br/news/25f-1.png\" alt=\"Leilão Virtual\" width=\"1200\" height=\"630\" />\n<h2>Leilão Virtual / Sobre</h2>\nO comércio eletrônico é hoje uma das mais importantes formas de compra dos consumidores brasileiros. De acordo com um relatório divulgado neste ano pela E-bit, empresa que fornece informações sobre o e-commerce nacional, 61,6 milhões de brasileiros já realizaram algum tipo de compra online.\n\nAcompanhando esse fenômeno, os <strong>sites</strong> de <strong>leilões virtuais</strong> têm crescido e compreendem um mecanismo muito procurado por quem quer adquirir algo sem ter que deixar o conforto de casa e ainda conseguir um melhor preço arrematando bons itens.\n\n<img class=\"alignleft size-full wp-image-50755\" src=\"https://www.ncbrasil.com.br/news/leilao-on-line-6.jpg\" alt=\"Leilão Virtual\" width=\"300\" height=\"253\" />Semelhante a um leilão comum, o <strong>leilão virtual</strong> funciona da seguinte forma: na página do lote, em que está um ou mais itens que serão leiloados, a pessoa poderá ver fotos e uma descrição detalhada sobre o produto. Assim, é possível decidir se tem interesse ou não naquele lote e enviar seu lance.\n\nNo Auditório Virtual é possível acompanhar o desenvolvimento em tempo real, ver imagens dos lotes, assistir arremates e lances e ainda enviar o seu lance para o item que tem interesse em adquirir.\n\nFeita a oferta se inicia um tempo de contagem, que varia de um site de <strong>leilão virtual</strong> para outro, para que outro cliente tenha a oportunidade de oferecer um valor maior. Se surgirem novas propostas você pode dar outros lances, se não, o produto foi arrematado por você.\n\nAlguns leilões duram horas enquanto outros podem durar semanas. O objetivo é que o lote seja vendido pelo maior valor possível.\n\nÉ muito prático e simples, o <strong>leilão virtual</strong> pode render bons arremates quanto um leilão comum. É muito importante que durante o leilão a pessoa continue conectada no computador, assim não corre o risco de perder a vez ou uma grande oportunidade.\n\n&nbsp;\n<h2>Leilão Virtual / Participação</h2>\nPara participar de qualquer <strong>leilão virtual</strong> é preciso fazer um cadastro no site para dar lances.\n\nApós a liberação, basta fazer login no site, aceitar as condições de venda e acompanhar o leilão, seja do auditório virtual ou da página do lote de sua preferência, e enviar o seu lance.\n\nPara os lotes mais disputados há uma opção interessante no <strong>leilão online</strong>, o lance automático. Quando você escolhe essa opção, é possível selecionar um valor máximo e o sistema briga automaticamente por você. Mas se preferir você envia os seus lances manualmente, definindo o valor e confirmando.\n\n&nbsp;\n<h2><strong>Leilão Virtual / Sistema</strong></h2>\nUm <strong>Sistema de Leilão Virtual</strong> <strong>da NC Brasil</strong>, oferece em tempo real grandes características, tanto para <img class=\"alignleft size-full wp-image-50754\" src=\"https://www.ncbrasil.com.br/news/mh_interna_compraromovelleilao-1.jpg\" alt=\"Leilão Virtual\" width=\"390\" height=\"300\" />Leiloeiros, quanto para as Galerias. Um exemplo é opotencial em adquirir em massa novos clientes e o aumento de preços, alcançados devido as disputas ocorridas entre os arrematantes.\n<blockquote><a href=\"https://www.ncbrasil.com.br/sistema-de-leilao-de-centavos/\">Clique aqui e saiba melhor sobre <strong>Sistema de Leilão de Centavos</strong></a></blockquote>\nAo utilizar a <strong>plataforma para leilões online</strong> <strong>da NC Brasil</strong>, você pode melhorar e/ou ampliar o desempenho de seus leilões e, ao mesmo tempo, obter um maior proveito deste mercado através das visitações e tráfegos gerados.\n\nAlém do recurso de Lances em Tempo Real, que permite o arrematante ofertar seu lances, também, no momento em que o pregão estiver sendo realizado. Além dos lances tradicionais, por telefone ou presencial (quando o leilão for presencial), os arrematantes poderão participar, dando lances através da internet, utilizando um computador, tablet ou smarphone.\n\n&nbsp;\n<blockquote>\n<h2>Adquira já a sua Plataforma de Leilão Virtual!</h2>\n<h1><a href=\"https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/\">Clique aqui e faça um orçamento</a></h1>\n</blockquote>",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/25f-1.png",
+    "image_url": "https://images.unsplash.com/photo-1579546673265-98a2791ccf0c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1606,7 +1606,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/alamo.webp",
+    "image_url": "https://images.unsplash.com/photo-1541899481282-d53bffeacc7f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1617,7 +1617,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/c4810d3a-0bd8-4486-bac4-dc744347392f.jpg",
+    "image_url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1638,7 +1638,7 @@ export const newsData: NewsPost[] = [
       "Sistema",
       "Software Empresarial"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/86585-o-funcionario-nao-sai-do-celular-use-isso-a-favor-da-sua-empresa-900x365.webp",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50773"
   },
   {
@@ -1649,7 +1649,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/email-marketing-automacao-pluga.png",
+    "image_url": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1669,7 +1669,7 @@ export const newsData: NewsPost[] = [
       "Sistema Gerador de Relatórios",
       "Sistemas"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/4-razoes-para-utilizar-a-automacao-de-email-marketing.jpeg",
+    "image_url": "https://images.unsplash.com/photo-1551288049-bbdac8a28a80?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50784"
   },
   {
@@ -1680,7 +1680,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/site-responsivo-x-site-mobile.png",
+    "image_url": "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1691,7 +1691,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Site-Responsivo-Feira-de-Santana.webp",
+    "image_url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1702,7 +1702,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/mercado-de-criacao-de-aplicativos-mobile.jpg",
+    "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1713,7 +1713,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Learn-SEO-796x398.webp",
+    "image_url": "https://images.unsplash.com/photo-1572177215152-32f247303126?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1724,7 +1724,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/sistema-de-gestao-integrada-1-e1530023148898.jpg",
+    "image_url": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1750,7 +1750,7 @@ export const newsData: NewsPost[] = [
       "Planejamento",
       "Plataforma eletrônica"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/T-ecommerce-D-loja-Virtual.webp",
+    "image_url": "https://images.unsplash.com/photo-1556742111-a301076d9d18?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50854"
   },
   {
@@ -1761,7 +1761,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/imóveis.jpg.jpeg",
+    "image_url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1772,7 +1772,7 @@ export const newsData: NewsPost[] = [
     "content": "<h1>Sistema Gerador de Nota Fiscal</h1>\nA <strong>Nota Fiscal</strong> eletrônica (NF-e) é o documento de existência digital, emitido e armazenado eletronicamente, com o intuito de documentar circulação de mercadorias ou uma prestação de serviços. Logo, toda empresa precisa de um <strong>Sistema Gerador de Nota Fiscal.</strong>\n\nLeia mais sobre!\n\n<img class=\"aligncenter size-full wp-image-50867\" src=\"https://www.ncbrasil.com.br/news/1507046448_image2.jpg\" alt=\"Sistema Gerador de Nota Fiscal\" width=\"944\" height=\"715\" />\n<h2>Sistema Gerador de Nota Fiscal / Sobre</h2>\nA emissão de <strong>Nota Fiscal</strong> é um requisito obrigatório para grande parte dos empreendimentos, e para isso, é necessário obter um <strong>Sistema Gerador de Nota Fiscal.</strong>\n\nCom o uso desse software, o empresário pode aprimorar os resultados reduzindo o tempo gasto em operações do tipo, deixando tudo para a automação do <strong>Sistema Gerador de Nota Fiscal</strong>.\n\nA facilidade e a otimização desse sistema ajuda a organizar a empresa, segundo suas responsabilidades fiscais.\n\nGerando portanto, uma eficiência na equipe e na produtividade.\n\nLogo, ter um<strong> Sistema Gerador de Nota Fiscal</strong> de qualidade é essencial para suprir as necessidades básicas da empresa.\n\nTrazendo dessa forma uma organização e uma automatização instantânea!\n<h2></h2>\n<h2>Sistema Gerador de Nota Fiscal / Por que pagar por um?</h2>\nExiste inúmeras versões gratuitas disponíveis pela web, mas apenas um <strong>Sistema Gerador de Nota Fiscal</strong> pago pode, na maioria dos casos, ser a melhor decisão.\n\nJá que as versões gratuitas possuem uma série de limitações de uso, que afinal, à torna um peso, uma desvantagem.\n\nApenas os programas de emissão de nota fiscal pago e únicos, possuem funções adaptadas para a sua empresa. Pois além de oferecerem a emissão de notas, o software possui singularidades.\n\nUm design próprio e adaptável à sua empresa, suporte técnico especializado, interatividade e muitas outras funções projetadas para impulsionar o negócio do cliente.\n\n&nbsp;\n\n<img class=\"aligncenter size-full wp-image-50866\" src=\"https://www.ncbrasil.com.br/news/NOTA-FISCAL.png\" alt=\"Sistema Gerador de Nota Fiscal\" width=\"350\" height=\"200\" />\n<p class=\"col-md-8 col-md-offset-2 tc bl-spacing\">Emita todos os tipos de<strong> Notas Fiscais Eletrônicas</strong> com o<strong> Sistema Gerador de Notas Fiscais</strong> da <strong>NC Brasil</strong></p>\n\n<div class=\"col-md-12\">\n<div class=\"row\">\n<div class=\"col-md-6\">\n<div class=\"col-md-12 col-xs-12\">\n<div class=\"row\">\n<div class=\"vh-page__section--space\">\n<div class=\"col-md-12\">\n\nCom nosso software o empresário pode emitir notas fiscais com todos os dados armazenados na nuvem. Podendo assim imprimir, exportar, inutilizar e realizar carta de correção, além de enviar tudo pro e-mail sem perder conteúdo e em qualquer lugar!\n\nTotalmente integrado, nosso <strong>Sistema Gerador de Notas Fiscais</strong> relaciona outros departamentos, como o estoque, com as vendas e o financeiro.\n\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"row tl-spacing\">\n<div class=\"col-md-6\">\n<div class=\"col-md-12 col-xs-12\">\n<div class=\"row\">\n<div class=\"vh-page__section--space\">\n<div class=\"col-md-12\">\n<p class=\"vh-title__small mit-null bottom-small-spacing title-underline-hover\">Ainda não acabou! Continue vendo as Vantagens abaixo!</p>\n\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\nO <strong>Sistema Gerador de Notas Fiscais</strong> também colabora para a diminuição de gastos, trazendo praticidade e eficiência para sua empresa. Emitindo nota fiscal do consumidor e enviando por e-mail ou imprimindo na hora!\n<div></div>\n<div></div>\n<div><img class=\"aligncenter size-full wp-image-50869\" src=\"https://www.ncbrasil.com.br/news/nota-fiscal-certifique-eua.png\" alt=\"Sistema Gerador de Nota Fiscal\" width=\"256\" height=\"256\" /></div>\n<div class=\"col-md-12\">\n<div class=\"row tl-spacing\">\n<div class=\"col-md-6\">\n<div class=\"col-md-12 col-xs-12\">\n<div class=\"row\">\n<div></div>\n<div class=\"col-md-12\">Um bom sistema pago para emitir <strong>Nota Fiscal Eletrônica</strong> apresenta inúmeras funções. Estas, fuções automáticas que vão facilitar a vida do empresário e seus colaboradores. Isso porque você e seu time não vão precisar se preocupar com diversas tarefas manuais simples, mas que, por serem muito burocráticas, levam tempo!</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div></div>\n<div>Obtenha já o melhor <strong>Sistema Gerador de Nota Fiscal, </strong>na<strong> NC Brasil</strong>!</div>\n<div></div>\n<blockquote>\n<h2>Tenha já o seu Sistema Gerador de Nota Fiscal!</h2>\n<h1><a href=\"https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/\">Acesse agora nossa página de orçamento, clicando aqui!</a></h1>\n</blockquote>\n&nbsp;",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Qual_emissor_de_nota_fiscal_devo_escolher_10_55_39.png",
+    "image_url": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1783,7 +1783,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/confira-4-softwares-para-salao-de-beleza-que-voce-deveria-usar.jpeg",
+    "image_url": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1804,7 +1804,7 @@ export const newsData: NewsPost[] = [
       "rede Social",
       "Site"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/shutterstock_575844202-700x484.jpg",
+    "image_url": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50915"
   },
   {
@@ -1821,7 +1821,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/20130731174543_660_420.webp",
+    "image_url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1832,7 +1832,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/sistema-erp-sob-demanda-entenda-importancia-1000x642.jpg",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1845,7 +1845,7 @@ export const newsData: NewsPost[] = [
       "E-commerce"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/eCommerce-concch.jpg",
+    "image_url": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1864,7 +1864,7 @@ export const newsData: NewsPost[] = [
       "Sistemas Sob Demanda",
       "Software"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50969"
   },
   {
@@ -1875,7 +1875,7 @@ export const newsData: NewsPost[] = [
     "content": "<h1>Software</h1>\nO que é um <strong>Software?</strong> Vantagens de um <strong>Software</strong> único? Como obter<strong>?</strong>\n\nEstas e outras perguntas serão as bases desse nosso artigo. Conheça mais sobre o empreendimento que vai mudar seu negócio para sempre!\n\n&nbsp;\n\n<img class=\"aligncenter size-large wp-image-50991\" src=\"https://www.ncbrasil.com.br/news/2014011315350452d407a830ca4-1024x427.jpeg\" alt=\"Software\" width=\"840\" height=\"350\" />\n<h2>O que é?</h2>\nSe buscar a frase <em>\"o que é um Software?\"</em> no <strong>Google,</strong> você encontrará essa seguinte definição:\n\n<em>\"Software é o conjunto de componentes lógicos de um computador ou sistema de processamento de dados; programa, rotina ou conjunto de instruções que controlam o funcionamento de um computador; suporte lógico.\"</em>\n\nIsso explica o que é em termos um pouco mais científicos. Mas dissertando o assunto, podemos dizer que um <strong>software</strong> (Traduzindo para o português: brando ou suave) é o conjunto dos componentes lógicos que formam uma aplicação, que é designada para realizar um procedimento único.\n\nVocê, caro leitor, lida com <strong>software</strong> o dia inteiro. Agora, por exemplo, você está utilizando um <strong>software</strong> de Navegação na Internet. Basicamente, estas aplicações são utilizadas no nosso dia a dia para facilitar um procedimento.\n\n<strong>Se você possui uma empresa, para agilizar e facilitar, deixando tudo mais eficiente, sua empresa necessita de um Software Único!</strong>\n\n&nbsp;\n\n<img class=\"aligncenter size-large wp-image-50989\" src=\"https://www.ncbrasil.com.br/news/desenvolvimento-de-softwares-1024x533.jpg\" alt=\"Software\" width=\"840\" height=\"437\" />\n<h2>Vantagens?</h2>\n<strong>1. Foco nas necessidades específicas da empresa</strong>\n\nA maior vantagem de um <strong>software personalizado,</strong> sem dúvidas, é a especificação. Obtendo um Software que seja adaptado para a sua empresa, este poderá facilitar e os procedimentos.\n\nDessa forma, o <strong>software</strong> que se adapta a Empresa e não o inverso, como é comum atualmente.\n\nA escolha por um <strong>sistena personalizado</strong> garante que todos os processos, as rotinas e até mesmo os diferenciais competitivos da empresa sejam incluídos no sistema, sem necessidade de alteração no modelo de negócio.\n\nO que, aliás, acontece muitas vezes com os sistemas de prateleira, pois, pela sua falta de flexibilização, as empresas precisam mudar seus processos para se adaptarem à ferramentas.\n\n<strong>2. Mobilidade</strong>\n\nOs funcionários podem utilizar o <strong>software integrado</strong> em qualquer lugar e a qualquer momento, bastando apenas que tenham acesso à internet. Um analista contábil, por exemplo, pode realizar a mesma função que faria se estivesse na sede, viajando a trabalho ou em casa.\n\n<strong>3. Menor incidência de erros</strong>\n\nQuando executamos tarefas manuais, é provável que erros aconteçam. Um documento perdido, um número a menos em uma tabela de controle ou o esquecimento de uma obrigação importante podem comprometer todo o planejamento estabelecido pela equipe.\n\nO mesmo acontece com a comunicação: ao solicitar uma informação sobre outro departamento, é possível que ela esteja errada ou defasada e, por consequência, a tarefa feita em cima desse erro não servirá para nada.\n\nConcentrando em um mesmo software toda a base de controle de dados, ocorrências como essa são evitadas. Além de assegurar um fluxo de trabalho constante — que possibilita realizar buscas de números, relatórios e contatos em um único local —, a precisão das informações dá estabilidade para a sua equipe desempenhar tarefas da melhor maneira possível.\n\n<strong>4. Redução de custos</strong>\n\nEssa é uma vantagem que pode ser decisiva, pois um <strong>software único</strong> diminui o tempo de realização de algumas tarefas e reduz a demanda de impressão — o que contribui com o meio ambiente e evita custos elevados com a compra de folhas, impressoras e tonéis de tinta.\n\nAlém disso, é possível economizar tanto na contratação de funcionários de TI quanto com custos de energia elétrica, visto que o centro de dados que hospeda o <strong>software integrado</strong> não fará parte da base da sua empresa, e sim do fornecedor contratado.\n\n&nbsp;\n\n<img class=\"aligncenter size-large wp-image-50990\" src=\"https://www.ncbrasil.com.br/news/wordpress-1600x800-e1514233849780-1024x576.jpg\" alt=\"Software\" width=\"840\" height=\"473\" />\n<h2>Como obter<strong>?</strong></h2>\nPara obter um <strong>Software,</strong> basta entrar em contato conosco!\n\nNós da <strong>NC Brasil</strong> possuímos uma equipe única e especializada na criação de <strong>Sistemas Personalizados</strong> para todo os tipos de empresas!\n<blockquote>\n<h1><a href=\"https://www.ncbrasil.com.br/solucoes/orcamento-criacao-de-sites/\">Faça já um orçamento clicando aqui!</a></h1>\n</blockquote>\n&nbsp;",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/2014011315350452d407a830ca4.jpeg",
+    "image_url": "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
@@ -1901,7 +1901,7 @@ export const newsData: NewsPost[] = [
       "Marketing",
       "Marketing Digital"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/instagram-b9-type-ss.jpg",
+    "image_url": "https://images.unsplash.com/photo-1611267254323-4db7b39c732c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50995"
   }
 ];
