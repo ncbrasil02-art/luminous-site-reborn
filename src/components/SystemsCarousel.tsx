@@ -95,9 +95,9 @@ export function SystemsCarousel() {
               {/* Premium Badge */}
               {system.isPremium && (
                 <div className="absolute left-10 top-10 z-20">
-                  <span className="inline-flex items-center gap-2 rounded-full border border-primary/50 bg-primary/20 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary-glow backdrop-blur-md animate-pulse shadow-[0_0_15px_rgba(49,91,255,0.3)]">
+                  <span className="inline-flex items-center gap-2 rounded-none border border-primary/50 bg-primary/20 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-primary-glow backdrop-blur-md animate-pulse shadow-[0_0_15px_rgba(49,91,255,0.3)]">
                     <Sparkles className="h-3 w-3" />
-                    Sistemas desenvolvidos
+                    Sistema Personalizado
                   </span>
                 </div>
               )}
