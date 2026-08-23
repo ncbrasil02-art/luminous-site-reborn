@@ -811,7 +811,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/web-designer.jpg",
+    "image_url": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
