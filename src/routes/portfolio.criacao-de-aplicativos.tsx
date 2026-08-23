@@ -98,7 +98,7 @@ export const Route = createFileRoute("/portfolio/criacao-de-aplicativos")({
                 O seu negócio na <span className="text-gradient">palma da mão</span> dos seus clientes.
               </h1>
               <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-                Desenvolvemos aplicativos mobile que de fato agregam valor ao seu negócio. Tecnologia de ponta com <strong className="text-foreground text-primary">UX cinematográfica</strong> e performance impecável.
+                Desenvolvemos aplicativos mobile que de fato agregam valor ao seu negócio. Tecnologia de ponta com <strong className="text-foreground text-primary">UX de alta performance</strong> e performance impecável.
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <Link

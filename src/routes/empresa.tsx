@@ -153,7 +153,7 @@ function EmpresaPage() {
               Transformamos processos manuais em <strong className="text-foreground">plataformas digitais</strong>,
               ideias soltas em <strong className="text-foreground">produtos rentáveis</strong> e marcas
               esquecíveis em <strong className="text-foreground">experiências memoráveis</strong>. Tudo com
-              tecnologia de ponta e estética cinematográfica.
+              tecnologia de ponta e estética premium.
             </p>
           </Reveal>
         </div>

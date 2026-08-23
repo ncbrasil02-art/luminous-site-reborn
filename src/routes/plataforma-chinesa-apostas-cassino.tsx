@@ -74,7 +74,7 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
       showcase={[
         {
           title: "Interface de Jogador Premium",
-          desc: "Design cinematográfico focado na experiência do usuário e alta retenção.",
+          desc: "Design premium focado na experiência do usuário e alta retenção.",
           image: ui1Asset.url,
         },
         {

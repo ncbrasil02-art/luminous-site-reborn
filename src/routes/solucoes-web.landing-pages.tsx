@@ -35,7 +35,7 @@ export const Route = createFileRoute("/solucoes-web/landing-pages")({
       featuresTitle={<>Estrutura das nossas <span className="text-gradient">LPs focadas em leads</span></>}
       faqTitle={<>Dúvidas sobre <span className="text-gradient">criação de landing pages</span></>}
       h1={<>Landing Pages que <span className="text-gradient">Escalam sua Captação de Leads</span></>}
-      intro={<>Transforme cliques em lucro com **Landing Pages de altíssima conversão**. Projetamos LPs persuasivas com gatilhos mentais e design cinematográfico para capturar leads qualificados para seu produto ou serviço.</>}
+      intro={<>Transforme cliques em lucro com **Landing Pages de altíssima conversão**. Projetamos LPs persuasivas com gatilhos mentais e design moderno para capturar leads qualificados para seu produto ou serviço.</>}
       stats={[{ value: "500+", label: "LPs entregues" }, { value: "12%", label: "Conversão média" }, { value: "72h", label: "Entrega expressa" }, { value: "A/B", label: "Testes inclusos" }]}
       benefits={[
         { icon: MousePointerClick, title: "CTA Estratégico", desc: "**Botões testados A/B**, contraste otimizado e microcopy que aumenta cliques em 30%." },

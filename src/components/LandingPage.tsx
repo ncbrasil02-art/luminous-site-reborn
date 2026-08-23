@@ -456,7 +456,7 @@ export function LandingPage({
                   i === 5 ? "Visão estratégica do faturamento em tempo real." :
                   "Integração segura com múltiplos gateways de pagamento."
                 ) : (
-                  i === 0 ? "Design cinematográfico para atrair os melhores arrematantes." :
+                  i === 0 ? "Design de alta conversão para atrair os melhores arrematantes." :
                   i === 1 ? "Apresentação detalhada de bens com galeria de alta qualidade." :
                   i === 2 ? "Controle total do leiloeiro sobre lances e pregões." :
                   i === 3 ? "Automação completa de documentos e editais judiciais." :
