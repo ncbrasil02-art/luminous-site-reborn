@@ -24,15 +24,30 @@ export function PartnerCarousel({
   const duplicatedLogos = [...logos, ...logos, ...logos, ...logos, ...logos];
 
   return (
-    <div className="w-full py-16 overflow-hidden border-b border-white/5 bg-[#0A1428]/50 backdrop-blur-sm relative isolate">
-      {/* Cinematic Glow Effect */}
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+    <div className={cn(
+      "w-full py-16 overflow-hidden relative isolate",
+      showBackground && "border-b border-white/5 bg-[#0A1428]/50 backdrop-blur-sm"
+    )}>
+      {showBackground && (
+        <>
+          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
+        </>
+      )}
       
-      {title && (
-        <h2 className="text-center text-[11px] md:text-[12px] font-black uppercase tracking-[0.3em] text-blue-400/60 mb-12 drop-shadow-[0_0_8px_rgba(59,130,246,0.3)]">
-          {title}
-        </h2>
+      {(title || subtitle) && (
+        <div className="text-center mb-12 px-4">
+          {title && (
+            <div className="mb-4">
+              {title}
+            </div>
+          )}
+          {subtitle && (
+            <div className="text-muted-foreground">
+              {subtitle}
+            </div>
+          )}
+        </div>
       )}
       
       <div className="relative flex max-w-[100vw] overflow-hidden marquee-mask-cinematic">
