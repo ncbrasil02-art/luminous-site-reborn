@@ -583,7 +583,7 @@ export const newsData: NewsPost[] = [
       "criar aplicativo",
       "criar loja virtual profissional"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/era-digital.png",
+    "image_url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49442"
   },
   {
