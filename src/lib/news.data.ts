@@ -1519,7 +1519,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/X-motivos-para-fazer-o-inventário-do-seu-estoque.jpg",
+    "image_url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
