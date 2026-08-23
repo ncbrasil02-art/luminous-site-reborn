@@ -1783,7 +1783,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/confira-4-softwares-para-salao-de-beleza-que-voce-deveria-usar.jpeg",
+    "image_url": "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
