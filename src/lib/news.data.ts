@@ -12,6 +12,25 @@ export interface NewsPost {
 
 export const newsData: NewsPost[] = [
   {
+    "id": "new-1",
+    "title": "NcBrasil lança recurso novo para Leilões de Pedras Preciosas",
+    "slug": "ncbrasil-lanca-recurso-novo-para-leiloes-de-pedras-preciosas",
+    "date": new Date().toUTCString(),
+    "content": "<p>A NcBrasil acaba de anunciar o lançamento de uma funcionalidade revolucionária voltada exclusivamente para o mercado de luxo: o novo recurso para <strong>Leilões de Pedras Preciosas</strong>. Com esta atualização, o nosso <a href=\"/sistema-de-leilao\" class=\"font-bold text-primary hover:underline\">sistema de leilão</a> atinge um novo patamar de precisão e segurança, permitindo a catalogação detalhada e a verificação de autenticidade em tempo real para diamantes, esmeraldas e outras gemas de alto valor.</p>\n\n<p>Este avanço tecnológico foi projetado para atender às exigências rigorosas de colecionadores e investidores internacionais. A <a href=\"/sistema-de-leilao\" class=\"font-bold text-primary hover:underline\">plataforma de leilão</a> agora integra certificados digitais e visualização em altíssima definição, garantindo que cada detalhe da pedra seja analisado minuciosamente pelos licitantes. A NcBrasil reafirma seu compromisso em fornecer a tecnologia mais avançada do mercado para quem busca excelência e transparência em transações de ativos valiosos.</p>\n\n<p>Se você busca uma solução robusta e confiável, conheça a nossa <a href=\"/sistema-de-leilao\" class=\"font-bold text-primary hover:underline\">plataforma de leilão online</a> completa. Este novo recurso é apenas o começo de uma série de inovações que estamos trazendo para o setor. Fique atento às nossas próximas atualizações e descubra como o nosso <strong>sistema de leilão</strong> pode transformar o seu negócio e elevar a sua autoridade no mercado de leilões eletrônicos.</p>",
+    "categories": [
+      "Sistemas",
+      "Leilões"
+    ],
+    "tags": [
+      "sistema de leilão",
+      "plataforma de leilão",
+      "leilão de pedras preciosas",
+      "tecnologia leilões"
+    ],
+    "image_url": "https://images.unsplash.com/photo-1551376670-3486306e0339?q=80&w=2070&auto=format&fit=crop",
+    "thumb_id": ""
+  },
+  {
     "id": "49040",
     "title": "Site ou Landing Page. O que é melhor para sua empresa? - Agência WT | Criação de Sites",
     "slug": "",
