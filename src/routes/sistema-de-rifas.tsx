@@ -11,14 +11,14 @@ import { rifasTestimonials } from "@/lib/testimonials.data";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
 
 // Image Assets - Otimizadas com SEO
-const rifasLogoUrl = "/img-sistema-de-rifas/nc-rifas-logo-premium.png";
-const rifasShowcase1Url = "/img-sistema-de-rifas/sistema-de-rifas-dashboard-admin-01.png";
-const rifasShowcase2Url = "/img-sistema-de-rifas/sistema-de-rifas-configuracoes-identidade-02.png";
-const rifasShowcase3Url = "/img-sistema-de-rifas/sistema-de-rifas-edicao-campanha-03.png";
-const rifasShowcase4Url = "/img-sistema-de-rifas/plataforma-de-rifas-vitrine-cliente-04.png";
-const rifasShowcase5Url = "/img-sistema-de-rifas/sistema-de-rifas-mobile-app-05.png";
-const rifasShowcase6Url = "/img-sistema-de-rifas/plataforma-de-rifas-mobile-cotas-06.png";
-const rifasShowcase7Url = "/img-sistema-de-rifas/sistema-de-rifas-mobile-checkout-07.png";
+const rifasLogoUrl = "/img-sistema-de-rifas/nc-rifas-logo-premium.webp";
+const rifasShowcase1Url = "/img-sistema-de-rifas/sistema-de-rifas-dashboard-admin-01.webp";
+const rifasShowcase2Url = "/img-sistema-de-rifas/sistema-de-rifas-configuracoes-identidade-02.webp";
+const rifasShowcase3Url = "/img-sistema-de-rifas/sistema-de-rifas-edicao-campanha-03.webp";
+const rifasShowcase4Url = "/img-sistema-de-rifas/plataforma-de-rifas-vitrine-cliente-04.webp";
+const rifasShowcase5Url = "/img-sistema-de-rifas/sistema-de-rifas-mobile-app-05.webp";
+const rifasShowcase6Url = "/img-sistema-de-rifas/plataforma-de-rifas-mobile-cotas-06.webp";
+const rifasShowcase7Url = "/img-sistema-de-rifas/sistema-de-rifas-mobile-checkout-07.webp";
 
 
 const URL = "https://www.ncbrasil.com.br/sistema-de-rifas";
