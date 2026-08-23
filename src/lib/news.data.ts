@@ -126,7 +126,7 @@ export const newsData: NewsPost[] = [
       "fazer site",
       "reformular website"
     ],
-    "image_url": "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-75.jpg",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "48611"
   },
   {
