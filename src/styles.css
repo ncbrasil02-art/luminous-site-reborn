@@ -53,55 +53,55 @@
 :root {
   --radius: 0rem;
 
-  /* Base — Premium Ink / Navy */
-  --background: #01061F; /* --color-ink */
-  --foreground: #F7F8FF; /* --color-text-light */
+  /* Base — Deep Tech Black (based on logo) */
+  --background: #000000;
+  --foreground: #F7F8FF; 
   
-  --surface: #061044; /* --color-navy-900 */
-  --surface-elevated: #0B1760; /* --color-navy-800 */
+  --surface: #0A0A0A;
+  --surface-elevated: #111111;
 
-  --card: rgba(6, 16, 68, 0.4);
+  --card: rgba(10, 10, 10, 0.4);
   --card-foreground: #F7F8FF;
-  --popover: #061044;
+  --popover: #0A0A0A;
   --popover-foreground: #F7F8FF;
 
-  /* Primary — Electric Blue & Cyan */
-  --primary: #315BFF; /* --color-blue */
+  /* Primary — Logo Blue & Electric Cyan */
+  --primary: #0047FF; 
   --primary-foreground: #FFFFFF;
-  --primary-glow: #12BFFF; /* --color-cyan */
+  --primary-glow: #00D1FF;
 
-  --secondary: #6D5CFF; /* --color-violet */
+  --secondary: #4F39FF;
   --secondary-foreground: #FFFFFF;
 
-  --muted: rgba(184, 192, 224, 0.1);
-  --muted-foreground: #B8C0E0; /* --color-text-muted-light */
+  --muted: rgba(184, 192, 224, 0.05);
+  --muted-foreground: #94A3B8;
 
-  --accent: #35D8FF; /* --color-cyan-bright */
-  --accent-foreground: #01061F;
+  --accent: #00D1FF;
+  --accent-foreground: #000000;
 
   --destructive: oklch(0.62 0.24 25);
   --destructive-foreground: #FFFFFF;
 
-  --border: rgba(111, 139, 255, 0.15); /* --color-border-dark adjusted */
-  --input: rgba(111, 139, 255, 0.1);
-  --ring: #315BFF;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.05);
+  --ring: #0047FF;
 
   /* Premium Gradients */
-  --gradient-primary: linear-gradient(135deg, #315BFF, #12BFFF);
-  --gradient-hero: radial-gradient(circle at 50% 0%, rgba(49, 91, 255, 0.15) 0%, transparent 70%);
-  --gradient-mesh: radial-gradient(at 0% 0%, rgba(49, 91, 255, 0.12) 0px, transparent 50%),
-                   radial-gradient(at 100% 0%, rgba(18, 191, 255, 0.1) 0px, transparent 50%),
-                   radial-gradient(at 50% 100%, rgba(109, 92, 255, 0.08) 0px, transparent 50%);
+  --gradient-primary: linear-gradient(135deg, #0047FF, #00D1FF);
+  --gradient-hero: radial-gradient(circle at 50% 0%, rgba(0, 71, 255, 0.1) 0%, transparent 70%);
+  --gradient-mesh: radial-gradient(at 0% 0%, rgba(0, 71, 255, 0.1) 0px, transparent 50%),
+                   radial-gradient(at 100% 0%, rgba(0, 209, 255, 0.08) 0px, transparent 50%),
+                   radial-gradient(at 50% 100%, rgba(79, 57, 255, 0.06) 0px, transparent 50%);
 
-  --chart-1: #315BFF;
-  --chart-2: #12BFFF;
-  --chart-3: #6D5CFF;
+  --chart-1: #0047FF;
+  --chart-2: #00D1FF;
+  --chart-3: #4F39FF;
   --chart-4: #35D8FF;
   --chart-5: #8B5CFF;
 }
 
 .dark {
-  --background: #01061F;
+  --background: #000000;
   --foreground: #F7F8FF;
 }
 

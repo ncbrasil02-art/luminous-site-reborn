@@ -120,7 +120,7 @@ export function HeroSlider() {
   };
 
   return (
-    <section className="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center overflow-hidden bg-[#0A1428]">
+    <section className="relative min-h-[90vh] lg:min-h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* Foguete 3D decolando no Hero */}
       <RocketTakeoff />
 
@@ -142,8 +142,8 @@ export function HeroSlider() {
             className="w-full h-full object-cover"
           />
           {/* Overlay gradiente para profundidade e legibilidade */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#0A1428]/80 via-[#0A1428]/40 to-[#0A1428]" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0A1428] via-transparent to-[#0A1428]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black" />
         </motion.div>
       </AnimatePresence>
 
@@ -185,7 +185,7 @@ export function HeroSlider() {
               <Link
                 to={slide.to}
                 onClick={() => trackClick(`Slider CTA 1: ${slide.title}`, "Home Hero")}
-                className="group relative flex h-16 items-center justify-center overflow-hidden rounded-none bg-[#315BFF] px-10 text-sm font-bold uppercase tracking-widest text-white transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20"
+                className="group relative flex h-16 items-center justify-center overflow-hidden rounded-none bg-[#0047FF] px-10 text-sm font-bold uppercase tracking-widest text-white transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20"
               >
                 <span className="relative z-10 flex items-center gap-3">
                   {slide.cta1}

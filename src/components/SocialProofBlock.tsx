@@ -56,7 +56,7 @@ export function SocialProofBlock({ className }: SocialProofBlockProps) {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.5 }}
-              className="inline-block h-10 w-10 md:h-12 md:w-12 rounded-full border-2 border-[#0A1428] ring-2 ring-white/10"
+              className="inline-block h-10 w-10 md:h-12 md:w-12 rounded-full border-2 border-black ring-2 ring-white/10"
             >
               <img 
                 src={url} 
