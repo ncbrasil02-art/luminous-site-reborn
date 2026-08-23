@@ -1215,7 +1215,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/melhores-celulares-chineses-baratos-2017.jpg",
+    "image_url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
