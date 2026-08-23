@@ -921,7 +921,7 @@ export const newsData: NewsPost[] = [
       "tipografia",
       "Web Design"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/webdesign-courses-1.jpg",
+    "image_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49891"
   },
   {
