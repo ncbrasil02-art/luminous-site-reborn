@@ -1429,7 +1429,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Sistema sob demanda"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/office-583841_960_720-e1510975970167.jpg",
+    "image_url": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50626"
   },
   {
