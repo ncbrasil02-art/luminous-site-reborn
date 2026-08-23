@@ -36,6 +36,7 @@ function NewsIndex() {
 
   const filteredNews = useMemo(() => {
     return newsData.filter(post => {
+      if (!post.slug || post.slug.trim() === '') return false
       const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
                           post.content.toLowerCase().includes(searchQuery.toLowerCase())
       const matchesCategory = !selectedCategory || post.categories.includes(selectedCategory)
