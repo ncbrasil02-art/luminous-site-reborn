@@ -1078,7 +1078,7 @@ export const newsData: NewsPost[] = [
       "Site de vendas",
       "Venda de veículos online"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/Zz03YTZlNTgxYTFhMGYwY2UwZmQ4Y2YyOTc2M2Y3ZjA5NA1-1024x1024.webp",
+    "image_url": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50044"
   },
   {
