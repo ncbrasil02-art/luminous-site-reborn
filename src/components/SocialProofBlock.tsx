@@ -58,7 +58,15 @@ export function SocialProofBlock({ className }: SocialProofBlockProps) {
               transition={{ duration: 0.5 }}
               className="inline-block h-10 w-10 md:h-12 md:w-12 rounded-full border-2 border-[#0A1428] ring-2 ring-white/10"
             >
-              <img src={url} alt="User avatar" className="h-full w-full rounded-full object-cover" />
+              <img 
+                src={url} 
+                alt="User avatar" 
+                className="h-full w-full rounded-full object-cover"
+                loading="lazy"
+                decoding="async"
+                width={48}
+                height={48}
+              />
             </motion.div>
           ))}
         </AnimatePresence>
