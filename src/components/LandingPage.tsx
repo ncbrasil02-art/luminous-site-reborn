@@ -120,7 +120,7 @@ function renderBold(text: string) {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
   return parts.map((p, i) =>
     p.startsWith("**") && p.endsWith("**") ? (
-      <strong key={i} className="font-semibold text-foreground">
+      <strong key={i} className="font-semibold text-primary-glow">
         {p.slice(2, -2)}
       </strong>
     ) : (
@@ -206,7 +206,7 @@ export function LandingPage({
       </Helmet> 
       */}
       {/* HERO */}
-      <section className="relative isolate overflow-hidden">
+      <section className="relative isolate overflow-hidden bg-black">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30 pointer-events-none" aria-hidden="true" />
         <div className={`absolute inset-0 -z-10 ${pathname.includes('leilao') ? 'bg-black/80' : 'bg-black/40'}`} />
@@ -267,7 +267,7 @@ export function LandingPage({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl"
+            className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl text-white"
           >
             {h1}
           </motion.h1>
@@ -306,7 +306,7 @@ export function LandingPage({
             <Link
               to={secondaryCta.to}
               onClick={() => trackClick(secondaryCta.label, `Hero Secondary (${eyebrow})`)}
-              className="inline-flex items-center gap-2 rounded-none border border-border bg-surface/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur hover:bg-surface"
+              className="inline-flex items-center gap-2 rounded-none border border-border bg-surface-elevated/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur hover:bg-surface-elevated"
             >
               {secondaryCta.label}
             </Link>
@@ -324,8 +324,8 @@ export function LandingPage({
           {stats && (
             <div className="mx-auto mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
               {stats.map((s) => (
-                <div key={s.label} className="glass rounded-none px-4 py-5 text-center">
-                  <div className="font-display text-2xl font-bold text-gradient md:text-3xl">{s.value}</div>
+                <div key={s.label} className="glass rounded-none px-4 py-5 text-center bg-surface-elevated/40 border-white/5">
+                  <div className="font-display text-2xl font-bold text-primary-glow md:text-3xl">{s.value}</div>
                   <div className="mt-1 text-xs text-muted-foreground">{s.label}</div>
                 </div>
               ))}
@@ -336,7 +336,7 @@ export function LandingPage({
 
       {/* CLIENTS */}
       {clients && clients.length > 0 && (
-        <section className="relative border-y border-border bg-surface/30 py-10">
+        <section className="relative border-y border-border bg-surface-elevated/30 py-10">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <h2 className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">
               {clientsTitle ?? `Empresas que confiam no ${eyebrow} NC Brasil`}
@@ -362,7 +362,7 @@ export function LandingPage({
       {/* PROBLEM / SOLUTION */}
 
       {(problem || solution) && (
-        <section className="relative py-20 md:py-28">
+        <section className="relative py-20 md:py-28 bg-black">
           <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:px-8 md:grid-cols-2">
             {problem && (
               <Reveal>
