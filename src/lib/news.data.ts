@@ -378,7 +378,7 @@ export const newsData: NewsPost[] = [
       "Rio de Janeiro",
       "seo"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/Imagem-blog-landing-page-CTA.png",
+    "image_url": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49331"
   },
   {
