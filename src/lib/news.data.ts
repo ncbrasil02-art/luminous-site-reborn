@@ -1669,7 +1669,7 @@ export const newsData: NewsPost[] = [
       "Sistema Gerador de Relatórios",
       "Sistemas"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/4-razoes-para-utilizar-a-automacao-de-email-marketing.jpeg",
+    "image_url": "https://images.unsplash.com/photo-1551288049-bbdac8a28a80?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50784"
   },
   {
