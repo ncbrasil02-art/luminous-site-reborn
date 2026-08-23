@@ -428,7 +428,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "wordpress"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/4-dicas-para-criar-um-C3B3timo-logo-3.png",
+    "image_url": "https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49320"
   },
   {
