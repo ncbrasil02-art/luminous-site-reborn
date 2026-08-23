@@ -1901,7 +1901,7 @@ export const newsData: NewsPost[] = [
       "Marketing",
       "Marketing Digital"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/instagram-b9-type-ss.jpg",
+    "image_url": "https://images.unsplash.com/photo-1611267254323-4db7b39c732c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50995"
   }
 ];
