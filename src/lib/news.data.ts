@@ -666,7 +666,7 @@ export const newsData: NewsPost[] = [
       "Web Designer",
       "website"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/wdd2014.jpg",
+    "image_url": "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49552"
   },
   {
