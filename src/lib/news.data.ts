@@ -277,7 +277,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/criacao-de-sistes-sistemas-1.jpg",
+    "image_url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
