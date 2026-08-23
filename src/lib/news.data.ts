@@ -640,7 +640,7 @@ export const newsData: NewsPost[] = [
       "Sites Turbinados",
       "Web Designer"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/full_xciWr5mV.jpg",
+    "image_url": "https://images.unsplash.com/photo-1572021335469-3171624c9c5c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49544"
   },
   {
