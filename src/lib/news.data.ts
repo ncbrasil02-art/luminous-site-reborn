@@ -1541,7 +1541,7 @@ export const newsData: NewsPost[] = [
       "wordpress",
       "WP"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/520116_edf5_2.webp",
+    "image_url": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50719"
   },
   {
