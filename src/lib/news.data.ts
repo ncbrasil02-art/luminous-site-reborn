@@ -1101,7 +1101,7 @@ export const newsData: NewsPost[] = [
       "Tendência Redutiva",
       "Tendência Web designer"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/web-design-concepts-with-blurred-background_1134-82.jpg",
+    "image_url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50054"
   },
   {
