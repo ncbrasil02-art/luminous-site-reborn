@@ -3,16 +3,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { socialProofData } from "@/lib/social-proof.data";
-import { useLocation } from "react-router-dom";
+import { useRouterState } from "@tanstack/react-router";
 
 interface SocialProofBlockProps {
   className?: string;
 }
 
 export function SocialProofBlock({ className }: SocialProofBlockProps) {
-  const location = useLocation();
-  const path = location.pathname.split("/").filter(Boolean).pop() || "default";
+  const router = useRouterState();
+  const path = router.location.pathname.split("/").filter(Boolean).pop() || "default";
   const config = socialProofData[path] || socialProofData.default;
+
   
   const avatars = config.avatars || socialProofData.default.avatars || [];
   const phrases = config.phrases;
