@@ -1124,7 +1124,7 @@ export const newsData: NewsPost[] = [
       "UX",
       "Web site"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/user_experience_design.jpg",
+    "image_url": "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50058"
   },
   {
