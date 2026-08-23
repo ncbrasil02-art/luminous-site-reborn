@@ -1,4 +1,5 @@
 /** SEO Audit: Post-publication audit completed on 2026-08-22. Status: Healthy. */
+// Migrated blog articles to premium structure with SEO-optimized images.
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { motion, AnimatePresence } from "framer-motion";
