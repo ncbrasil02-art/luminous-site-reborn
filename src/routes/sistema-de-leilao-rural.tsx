@@ -206,8 +206,8 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
         text: "Sistema de Leilão Rural Profissional e Personalizado",
         image: leilaoRuralHome.url
       }}
-      logo="/logo.jpg"
-      heroImage="/logo.jpg"
+      logo="/logo-nc-brasil.png"
+      heroImage={leilaoRuralHome.url}
     />
     </>
   ),
