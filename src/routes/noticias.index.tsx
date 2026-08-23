@@ -28,14 +28,14 @@ function NewsIndex() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
 
   const allCategories = useMemo(() => 
-    Array.from(new Set(newsIndex.flatMap(p => p.categories))).sort(), 
+    Array.from(new Set(newsIndex.flatMap((p: any) => p.categories))).sort(), 
   [])
   const allTags = useMemo(() => 
-    Array.from(new Set(newsIndex.flatMap(p => p.tags))).sort(), 
+    Array.from(new Set(newsIndex.flatMap((p: any) => p.tags))).sort(), 
   [])
 
   const filteredNews = useMemo(() => {
-    return newsIndex.filter(post => {
+    return newsIndex.filter((post: any) => {
       if (!post.slug || post.slug.trim() === "") return false
       const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase())
       const matchesCategory = !selectedCategory || post.categories.includes(selectedCategory)
