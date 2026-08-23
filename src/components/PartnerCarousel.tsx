@@ -9,10 +9,17 @@ interface PartnerLogo {
 
 interface PartnerCarouselProps {
   logos: PartnerLogo[];
-  title?: string;
+  title?: React.ReactNode;
+  subtitle?: React.ReactNode;
+  showBackground?: boolean;
 }
 
-export function PartnerCarousel({ logos, title = "Órgãos Homologados e Parceiros" }: PartnerCarouselProps) {
+export function PartnerCarousel({ 
+  logos, 
+  title, 
+  subtitle,
+  showBackground = true 
+}: PartnerCarouselProps) {
   // Duplicate logos for infinite scroll effect
   const duplicatedLogos = [...logos, ...logos, ...logos, ...logos, ...logos];
 
