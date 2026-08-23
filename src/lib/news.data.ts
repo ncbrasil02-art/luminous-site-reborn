@@ -1724,7 +1724,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/sistema-de-gestao-integrada-1-e1530023148898.jpg",
+    "image_url": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
