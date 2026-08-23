@@ -79,7 +79,7 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
       }}
       solution={{
         title: <>A resposta é um <span className="text-gradient">sistema de leilões para animais</span> feito para o campo</>,
-        desc: <>Desde 2007 a NC Brasil constrói o <strong>sistema rural de leilões</strong> para martelos oficiais, cabanhas e associações. Nosso software foi projetado com pregoeiros e produtores para ser a <strong>melhor plataforma de leilão rural</strong>, eliminando retrabalho e maximizando a arrematação por lote.</>,
+        desc: <>Desde 2007 a NC Brasil constrói o <strong className="text-foreground text-primary">sistema rural de leilões</strong> para martelos oficiais, cabanhas e associações. Nosso software foi projetado com pregoeiros e produtores para ser a <strong className="text-foreground text-primary">melhor plataforma de leilão rural</strong>, eliminando retrabalho e maximizando a arrematação por lote.</>,
         highlights: [
           "**Licença perpétua** ou SaaS com taxa por lote — você escolhe",
           "**GTA automática** integrada às Defesas Agropecuárias",
