@@ -90,10 +90,6 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         { value: "500K+", label: "Lances processados" },
         { value: "24/7", label: "Suporte em pregões" },
       ]}
-      clients={[
-        "Tribunais de Justiça", "Detran", "Bancos", "Cooperativas Rurais",
-        "Leiloeiros Oficiais", "Prefeituras", "Concessionárias", "Cartórios",
-      ]}
       problem={{
         title: <>Alugar plataforma de terceiros <span className="text-destructive">custa caro</span> e limita seu negócio</>,
         items: [
@@ -106,10 +102,56 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         ],
       }}
       extraContentBeforeProblem={
-        <div className="relative isolate py-20">
-          <div className="absolute inset-0 -z-10 bg-primary/5 blur-3xl opacity-30" />
+        <div className="relative isolate pt-24 pb-16">
+          <div className="absolute inset-0 -z-10 bg-primary/5 blur-3xl opacity-20" />
           <PartnerCarousel 
-            title="Sistema Homologado e Utilizado por Grandes Órgãos"
+            showBackground={false}
+            title={
+              <div className="space-y-4">
+                <h2 className="font-display text-3xl md:text-5xl font-bold tracking-tight text-white px-4">
+                  Empresas que confiam no <span className="text-gradient">sistema para leiloeiro</span> da NC Brasil
+                </h2>
+                <p className="text-lg md:text-xl text-blue-400 font-medium uppercase tracking-[0.2em]">
+                  Sistema homologado e utilizado por grandes órgãos e leiloeiros
+                </p>
+              </div>
+            }
+            subtitle={
+              <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm md:text-base font-semibold text-muted-foreground/80 max-w-4xl mx-auto px-6">
+                <span className="flex items-center gap-2 hover:text-white transition-colors duration-300">
+                  <span className="h-1.5 w-1.5 bg-primary rounded-full" />
+                  Tribunal de Justiça
+                </span>
+                <span className="flex items-center gap-2 hover:text-white transition-colors duration-300">
+                  <span className="h-1.5 w-1.5 bg-primary rounded-full" />
+                  Detran
+                </span>
+                <span className="flex items-center gap-2 hover:text-white transition-colors duration-300">
+                  <span className="h-1.5 w-1.5 bg-primary rounded-full" />
+                  Bancos
+                </span>
+                <span className="flex items-center gap-2 hover:text-white transition-colors duration-300">
+                  <span className="h-1.5 w-1.5 bg-primary rounded-full" />
+                  Cooperativas
+                </span>
+                <span className="flex items-center gap-2 hover:text-white transition-colors duration-300">
+                  <span className="h-1.5 w-1.5 bg-primary rounded-full" />
+                  Leiloeiros Oficiais
+                </span>
+                <span className="flex items-center gap-2 hover:text-white transition-colors duration-300">
+                  <span className="h-1.5 w-1.5 bg-primary rounded-full" />
+                  Prefeituras
+                </span>
+                <span className="flex items-center gap-2 hover:text-white transition-colors duration-300">
+                  <span className="h-1.5 w-1.5 bg-primary rounded-full" />
+                  Concessionárias
+                </span>
+                <span className="flex items-center gap-2 hover:text-white transition-colors duration-300">
+                  <span className="h-1.5 w-1.5 bg-primary rounded-full" />
+                  Cartórios
+                </span>
+              </div>
+            }
             logos={[
               { name: "TJRS", url: "/partners/tjrs.webp", link: "https://www.tjrs.jus.br/" },
               { name: "Caixa", url: "/partners/caixa.webp", link: "https://www.caixa.gov.br/" },
