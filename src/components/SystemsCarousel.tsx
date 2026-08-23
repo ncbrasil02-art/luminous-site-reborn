@@ -88,8 +88,8 @@ export function SystemsCarousel() {
               className={cn(
                 "group relative h-[500px] sm:h-[600px] lg:h-[650px] overflow-hidden rounded-none border transition-all duration-500 backdrop-blur-md",
                 system.isPremium 
-                  ? "border-primary/40 bg-black/60 ring-1 ring-primary/20 hover:border-primary-glow/60" 
-                  : "border-white/5 bg-black/40 hover:border-primary/40 hover:bg-black/60"
+                  ? "border-primary/40 bg-surface-elevated/60 ring-1 ring-primary/20 hover:border-primary-glow/60" 
+                  : "border-white/5 bg-surface-elevated/40 hover:border-primary/40 hover:bg-surface-elevated/60"
               )}
             >
               {/* Premium Badge */}
@@ -151,8 +151,8 @@ export function SystemsCarousel() {
                     className={cn(
                       "group/btn relative flex w-full items-center justify-between overflow-hidden rounded-none px-6 py-5 text-sm font-bold uppercase tracking-widest transition-all",
                       system.isPremium 
-                        ? "bg-primary text-white glow-sm hover:scale-[1.02]" 
-                        : "bg-white/5 text-white hover:bg-primary hover:glow-sm"
+                        ? "bg-primary text-white glow-md hover:scale-[1.02]" 
+                        : "bg-surface-elevated text-white hover:bg-primary hover:glow-md"
                     )}
                   >
                     <span className="relative z-10">Ver Sistema</span>
