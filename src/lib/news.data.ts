@@ -1750,7 +1750,7 @@ export const newsData: NewsPost[] = [
       "Planejamento",
       "Plataforma eletrônica"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/T-ecommerce-D-loja-Virtual.webp",
+    "image_url": "https://images.unsplash.com/photo-1556742111-a301076d9d18?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50854"
   },
   {
