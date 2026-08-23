@@ -1018,7 +1018,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/article-iae-para-entrenar-caballos-de-terceros-56681cf144a2a.webp",
+    "image_url": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
