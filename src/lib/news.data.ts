@@ -266,7 +266,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-50.jpg",
+    "image_url": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
