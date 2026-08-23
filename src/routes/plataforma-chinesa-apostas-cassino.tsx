@@ -115,7 +115,7 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
       }}
       solution={{
         title: <>A melhor <span className="text-gradient">plataforma de jogos chinesa</span> tropicalizada pela NcBrasil</>,
-        desc: <>Desenvolvemos um **script de cassino online** robusto, com código limpo e focado em **SEO técnico**. Nossa plataforma entrega o que há de mais moderno em iGaming: **baixa latência, segurança extrema e alta escalabilidade**.</>,
+        desc: <>Desenvolvemos um <strong className="text-foreground text-primary">script de cassino online</strong> robusto, com código limpo e focado em <strong className="text-foreground text-primary">SEO técnico</strong>. Nossa plataforma entrega o que há de mais moderno em iGaming: <strong className="text-foreground text-primary">baixa latência, segurança extrema e alta escalabilidade</strong>.</>,
         highlights: [
           "**SEO Otimizado** para ranquear nas principais palavras-chaves do nicho.",
           "**Pix Nativo** com liquidação imediata na conta do operador.",
