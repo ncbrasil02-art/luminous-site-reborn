@@ -6,6 +6,7 @@ import {
   DollarSign, Wrench, TrendingUp,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { SecuritySeals } from "@/components/SecuritySeals";
 import { veiculosTestimonials } from "@/lib/testimonials.data";
 
 // Import asset pointers
@@ -146,6 +147,7 @@ export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
       finalCtaDesc={<>Fale com especialistas em **Plataforma de anúncio de veículos**. Demonstração disponível.</>}
       relatedNewsTags={["Veículos", "Classificados", "Sistemas"]}
     />
+      <SecuritySeals />
     </>
   ),
 });

@@ -6,6 +6,7 @@ import {
   Trophy, Users, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { SecuritySeals } from "@/components/SecuritySeals";
 import { cassinoTestimonials } from "@/lib/testimonials.data";
 
 // Import assets
@@ -53,7 +54,8 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
     ogImage: mainAsset.url,
   }),
   component: () => (
-    <LandingPage
+    <>
+      <LandingPage
       breadcrumbs={[
         { to: "/", label: "Home" },
         { to: "/nossos-sistemas", label: "Sistemas" },
@@ -148,5 +150,7 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
       faq={lpFaq}
       relatedNewsTags={["Cassino", "iGaming", "Sistemas", "Tecnologia"]}
     />
+    <SecuritySeals />
+    </>
   ),
 });

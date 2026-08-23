@@ -5,6 +5,7 @@ import {
   BarChart3, Zap, Lock, Cloud, Database, Award, Globe2, Smartphone, FileCheck, Gauge,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { SecuritySeals } from "@/components/SecuritySeals";
 import { veiculosTestimonials } from "@/lib/testimonials.data";
 
 const URL = "https://www.ncbrasil.com.br/classificados-de-veiculos";
@@ -130,6 +131,7 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
       finalCtaDesc={<>Fale com nossos especialistas em <strong className="text-foreground">sistemas para revenda de veículos</strong>. Demonstração personalizada disponível.</>}
       relatedNewsTags={["Veículos", "Classificados", "Sistemas"]}
     />
+      <SecuritySeals />
     </>
   ),
 });

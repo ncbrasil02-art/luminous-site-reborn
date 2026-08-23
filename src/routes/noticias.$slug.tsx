@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { newsData, type NewsPost } from "@/lib/news.data";
 import { buildMeta, SITE_URL } from "@/lib/seo";
 import { Reveal } from "@/components/Section";
+import { SecuritySeals } from "@/components/SecuritySeals";
 import { ShareButtons } from "@/components/ShareButtons";
 import { Calendar, ChevronRight, ArrowRight, Tag } from "lucide-react";
 
@@ -183,6 +184,10 @@ function NewsArticle() {
           Voltar para as notícias
         </Link>
       </article>
+
+      <div className="mt-20">
+        <SecuritySeals />
+      </div>
     </main>
   );
 }
