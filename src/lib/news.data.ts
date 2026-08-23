@@ -1413,7 +1413,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Sistemas de Veículos"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/sistema-veiculos-scaled.jpg",
+    "image_url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50621"
   },
   {
