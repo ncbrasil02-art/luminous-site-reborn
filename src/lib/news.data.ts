@@ -210,7 +210,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-77.jpg",
+    "image_url": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
