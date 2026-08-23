@@ -404,7 +404,7 @@ export const newsData: NewsPost[] = [
       "web designers",
       "webdesign"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/Imagem-blog-vC3ADdeos-corporativos-3.png",
+    "image_url": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49335"
   },
   {
