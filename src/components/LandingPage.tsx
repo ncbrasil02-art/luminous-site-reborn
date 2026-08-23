@@ -420,11 +420,11 @@ export function LandingPage({
 
       {/* PARALLAX SHOWCASE */}
       {((showParallaxshowcase && showcaseImages.length > 0) || (showcase && showcase.length > 0)) && (
-        <section className="relative overflow-hidden py-24 md:py-32">
+        <section className="relative overflow-hidden py-24 md:py-32 bg-black">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow={pathname.includes('rifas') ? "Sistema de Rifas" : pathname.includes('leilao') ? "Plataforma de Leilão" : "Showcase do Sistema"}
-              title={<>Design <span className="text-gradient">Avançado</span> & Performance</>}
+              title={<>Design <span className="text-primary-glow">Avançado</span> & Performance</>}
               description={pathname.includes('rifas') 
                 ? "Conheça a interface moderna e intuitiva da nossa plataforma de ações online." 
                 : pathname.includes('leilao')
