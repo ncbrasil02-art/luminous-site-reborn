@@ -2,8 +2,26 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
+import av1 from "@/assets/avatars/avatar-1.webp.asset.json";
+import av2 from "@/assets/avatars/avatar-2.webp.asset.json";
+import av3 from "@/assets/avatars/avatar-3.webp.asset.json";
+import av4 from "@/assets/avatars/avatar-4.webp.asset.json";
+import av5 from "@/assets/avatars/avatar-5.webp.asset.json";
+import av6 from "@/assets/avatars/avatar-6.webp.asset.json";
+import av7 from "@/assets/avatars/avatar-7.webp.asset.json";
+import av8 from "@/assets/avatars/avatar-8.webp.asset.json";
+import av9 from "@/assets/avatars/avatar-9.webp.asset.json";
 
 const avatars = [
+  av1.url,
+  av2.url,
+  av3.url,
+  av4.url,
+  av5.url,
+  av6.url,
+  av7.url,
+  av8.url,
+  av9.url,
   "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=256&h=256&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=256&h=256&auto=format&fit=crop",
   "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=256&h=256&auto=format&fit=crop",
@@ -16,7 +34,7 @@ const avatars = [
 
 const phrases = [
   "pessoas que assinaram com a NC Brasil estão prosperando em suas plataformas",
-  "Aprovado por mais de 85.000 profissionais de tecnologia",
+  "Aprovado por mais de 1.500 empresas",
   "Líder em sistemas de alta performance no Brasil",
   "Tecnologia premium para leilões, rifas e iGaming",
   "Escalabilidade garantida para grandes volumes de acessos",
@@ -71,7 +89,7 @@ export function SocialProofBlock({ className }: SocialProofBlockProps) {
           {[...Array(5)].map((_, i) => (
             <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
           ))}
-          <span className="ml-2 text-sm font-bold text-white">Aprovado por mais de 85.000 pessoas</span>
+          <span className="ml-2 text-sm font-bold text-white">Aprovado por mais de 1.500 empresas</span>
         </div>
         
         <div className="h-6 overflow-hidden relative w-full">
