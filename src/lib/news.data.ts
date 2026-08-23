@@ -1367,7 +1367,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "seo"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/o-que-e-seo-destaque.gif",
+    "image_url": "https://images.unsplash.com/photo-1572177215152-32f247303126?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50599"
   },
   {
