@@ -996,7 +996,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Você-tem-um-bom-site-para-vender-seus-imóveis.png",
+    "image_url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
