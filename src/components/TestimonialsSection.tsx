@@ -37,13 +37,13 @@ export function TestimonialsSection() {
   };
 
   return (
-    <section className="relative overflow-hidden py-24 md:py-32">
+    <section className="relative overflow-hidden py-24 md:py-32 bg-black">
       <div className="absolute inset-0 -z-10 bg-mesh opacity-30" aria-hidden="true" />
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <SectionHeading
             eyebrow="Prova Social"
-            title={<>Clientes que <span className="text-gradient">confiam</span> em nós</>}
+            title={<>Clientes que <span className="text-primary-glow">confiam</span> em nós</>}
             description="A satisfação de quem utiliza nossas soluções é o nosso maior selo de qualidade."
             className="mb-0 text-left md:max-w-2xl"
           />
@@ -51,14 +51,14 @@ export function TestimonialsSection() {
           <div className="flex items-center gap-3">
             <button
               onClick={prev}
-              className="group flex h-12 w-12 items-center justify-center rounded-none border border-border bg-card/40 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:text-primary"
+              className="group flex h-12 w-12 items-center justify-center rounded-none border border-border bg-surface-elevated/40 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-surface-elevated/60 hover:text-primary"
               aria-label="Anterior"
             >
               <ChevronLeft className="h-6 w-6 transition-transform group-hover:-translate-x-0.5" />
             </button>
             <button
               onClick={next}
-              className="group flex h-12 w-12 items-center justify-center rounded-none border border-border bg-card/40 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:text-primary"
+              className="group flex h-12 w-12 items-center justify-center rounded-none border border-border bg-surface-elevated/40 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-surface-elevated/60 hover:text-primary"
               aria-label="Próximo"
             >
               <ChevronRight className="h-6 w-6 transition-transform group-hover:translate-x-0.5" />
@@ -83,7 +83,7 @@ export function TestimonialsSection() {
                     opacity: { duration: 0.2 }
                   }}
                   whileHover={{ y: -5 }}
-                  className="group relative flex h-full flex-col justify-between rounded-none border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:glow-sm"
+                  className="group relative flex h-full flex-col justify-between rounded-none border border-border bg-surface-elevated/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-surface-elevated/60 hover:glow-sm"
                 >
                   <div>
                     <div className="mb-4 flex items-center gap-1 text-primary">
