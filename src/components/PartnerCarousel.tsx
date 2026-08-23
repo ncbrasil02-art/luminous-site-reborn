@@ -38,7 +38,7 @@ export function PartnerCarousel({ logos, title = "Órgãos Homologados e Parceir
             repeat: Infinity,
             ease: "linear",
           }}
-          className="flex gap-24 md:gap-32 items-center whitespace-nowrap px-8" // Increased gaps
+          className="flex gap-24 md:gap-40 items-center whitespace-nowrap px-8" // Aumentado gap para distanciamento premium
         >
           {duplicatedLogos.map((logo, index) => (
             <div
