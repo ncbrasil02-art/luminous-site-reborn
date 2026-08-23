@@ -60,7 +60,7 @@ export function PartnerCarousel({
             repeat: Infinity,
             ease: "linear",
           }}
-          className="flex gap-24 md:gap-40 items-center whitespace-nowrap px-8" // Aumentado gap para distanciamento premium
+          className="flex gap-16 md:gap-24 items-center whitespace-nowrap px-8" // Reduzido gap para aproximar os logotipos
         >
           {duplicatedLogos.map((logo, index) => (
             <div
