@@ -28,7 +28,6 @@ export const socialProofData: Record<string, SocialProofConfig> = {
     mainText: "Aprovado por mais de 1.500 empresas",
     phrases: [
       "pessoas que assinaram com a NC Brasil estão prosperando em suas plataformas",
-      "Aprovado por mais de 1.500 empresas",
       "Líder em sistemas de alta performance no Brasil",
       "Tecnologia premium para leilões, rifas e iGaming",
       "Escalabilidade garantida para grandes volumes de acessos",
@@ -54,5 +53,16 @@ export const socialProofData: Record<string, SocialProofConfig> = {
       "Alta conversão para campanhas de marketing",
     ],
     avatars: defaultAvatars
+  },
+  "noticias": {
+    mainText: "A maior revista de tecnologia para sistemas do Brasil",
+    phrases: [
+      "Atualizações diárias sobre o mercado de leilões e iGaming",
+      "Mais de 260 artigos técnicos e estratégicos",
+      "Tendências de Inteligência Artificial e Automação",
+      "Insights exclusivos para escalar seu negócio digital",
+    ],
+    avatars: defaultAvatars
   }
 };
+
