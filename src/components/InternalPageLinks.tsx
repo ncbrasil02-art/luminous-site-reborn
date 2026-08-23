@@ -51,7 +51,7 @@ export function InternalPageLinks({ currentPath }: { currentPath: string }) {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
               <h2 className="font-display text-3xl font-bold tracking-tight text-white">
-                Soluções <span className="text-gradient">Interligadas</span>
+                Soluções <span className="text-primary-glow">Interligadas</span>
               </h2>
               <p className="mt-4 text-muted-foreground max-w-xl">
                 Maximize seus resultados combinando nossas tecnologias para criar uma presença digital dominante.

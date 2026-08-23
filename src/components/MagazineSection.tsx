@@ -14,7 +14,7 @@ export function MagazineSection() {
   if (!featured) return null;
 
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden border-t border-border bg-background">
+    <section className="relative py-24 md:py-32 overflow-hidden border-t border-border bg-black">
       <div className="absolute inset-0 -z-10 opacity-30">
         <div className="absolute top-0 right-0 h-[600px] w-[600px] bg-primary/5 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
         <div className="absolute bottom-0 left-0 h-[600px] w-[600px] bg-primary/5 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/2" />
@@ -54,7 +54,7 @@ export function MagazineSection() {
               <Link 
                 to="/noticias/$slug"
                 params={{ slug: featured.slug || "" }}
-                className="group relative block aspect-[16/9] lg:aspect-auto lg:h-[600px] overflow-hidden rounded-none border border-border bg-card shadow-2xl"
+                className="group relative block aspect-[16/9] lg:aspect-auto lg:h-[600px] overflow-hidden rounded-none border border-border bg-surface shadow-2xl"
               >
                 <img 
                   src={featured.image_url || "/news/default-nc.jpg"} 
@@ -67,7 +67,7 @@ export function MagazineSection() {
                     (e.target as HTMLImageElement).src = "/news/default-nc.jpg";
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent p-6 md:p-12 flex flex-col justify-end">
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-6 md:p-12 flex flex-col justify-end">
                   <div className="flex flex-wrap gap-3 mb-6">
                     {featured.categories.slice(0, 2).map(cat => (
                       <span key={cat} className="rounded-none bg-primary/90 px-4 py-1.5 text-[10px] font-bold text-white uppercase tracking-widest shadow-lg">
