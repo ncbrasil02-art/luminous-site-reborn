@@ -25,6 +25,7 @@ import { Reveal, SectionHeading } from "./Section";
 import { ContactSection } from "./ContactSection";
 import { InternalPageLinks } from "./InternalPageLinks";
 import { SocialProofBlock } from "./SocialProofBlock";
+import { SecuritySeals } from "./SecuritySeals";
 
 export type LPFeature = { icon: LucideIcon; title: string; desc: string };
 export type LPBenefit = { icon: LucideIcon; title: string; desc: string };
@@ -351,6 +352,9 @@ export function LandingPage({
           </div>
         </section>
       )}
+
+      {/* SECURITY SEALS */}
+      <SecuritySeals />
 
       {/* EXTRA CONTENT BEFORE PROBLEM */}
       {extraContentBeforeProblem}
