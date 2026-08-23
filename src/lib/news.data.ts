@@ -542,7 +542,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Fotografia-cuidados-com-a-construC3A7C3A3o-da-sua-marca-na-internet-1.png",
+    "image_url": "https://images.unsplash.com/photo-1452784444945-3f422708fe5e?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
