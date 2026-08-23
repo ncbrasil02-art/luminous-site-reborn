@@ -24,6 +24,7 @@ import {
 import { Reveal, SectionHeading } from "./Section";
 import { ContactSection } from "./ContactSection";
 import { InternalPageLinks } from "./InternalPageLinks";
+import { SocialProofBlock } from "./SocialProofBlock";
 
 export type LPFeature = { icon: LucideIcon; title: string; desc: string };
 export type LPBenefit = { icon: LucideIcon; title: string; desc: string };
@@ -277,6 +278,15 @@ export function LandingPage({
           >
             {intro}
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.25 }}
+            className="mt-8"
+          >
+            <SocialProofBlock />
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 16 }}
