@@ -28,17 +28,16 @@ function NewsIndex() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
 
   const allCategories = useMemo(() => 
-    Array.from(new Set(newsData.flatMap(p => p.categories))).sort(), 
+    Array.from(new Set(newsIndex.flatMap(p => p.categories))).sort(), 
   [])
   const allTags = useMemo(() => 
-    Array.from(new Set(newsData.flatMap(p => p.tags))).sort(), 
+    Array.from(new Set(newsIndex.flatMap(p => p.tags))).sort(), 
   [])
 
   const filteredNews = useMemo(() => {
-    return newsData.filter(post => {
-      if (!post.slug || post.slug.trim() === '') return false
-      const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          post.content.toLowerCase().includes(searchQuery.toLowerCase())
+    return newsIndex.filter(post => {
+      if (!post.slug || post.slug.trim() === "") return false
+      const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase())
       const matchesCategory = !selectedCategory || post.categories.includes(selectedCategory)
       return matchesSearch && matchesCategory
     })
@@ -114,7 +113,7 @@ function NewsIndex() {
           >
             Tudo
           </button>
-          {allCategories.slice(0, 8).map(cat => (
+          {allCategories.slice(0, 8).map((cat: any) => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
@@ -188,7 +187,7 @@ function NewsIndex() {
 
         {/* Grid News */}
         <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {displayedNews.map((news, i) => {
+          {displayedNews.map((news: any, i: number) => {
             // Skip first one only if not searching/filtering
             if (i === 0 && !searchQuery && !selectedCategory) return null;
             
@@ -271,7 +270,7 @@ function NewsIndex() {
               Tópicos Recomendados
             </h3>
             <div className="flex flex-wrap gap-2">
-              {allTags.slice(0, 40).map(tag => (
+              {allTags.slice(0, 40).map((tag: any) => (
                 <Link
                   key={tag}
                   to="/noticias/tag/$tag"

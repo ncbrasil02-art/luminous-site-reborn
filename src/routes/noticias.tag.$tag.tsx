@@ -60,7 +60,7 @@ function TagPage() {
         />
 
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((news, i: number) => (
+          {posts.map((news: any, i: number) => (
             <Reveal key={news.id} delay={i * 0.05}>
               <Link 
                 to="/noticias/$slug"
