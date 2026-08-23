@@ -843,7 +843,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/e-commerce-para-a-Black-Friday.jpg",
+    "image_url": "https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
