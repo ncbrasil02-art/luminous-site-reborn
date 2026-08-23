@@ -47,6 +47,7 @@ export const newsData: NewsPost[] = [
   {
     "id": "new-1",
     "title": "NcBrasil lança novo Sistema de Leilão para Pedras Preciosas e Artigos de Luxo",
+
     "slug": "ncbrasil-lanca-novo-sistema-de-leilao-para-pedras-preciosas",
 
     "date": new Date().toUTCString(),
