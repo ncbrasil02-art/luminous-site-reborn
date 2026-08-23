@@ -1558,7 +1558,7 @@ export const newsData: NewsPost[] = [
       "Sistema de Contabilidade",
       "Sistema de Gestão Contábil"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/cacaroot.jpg",
+    "image_url": "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50728"
   },
   {
