@@ -356,7 +356,7 @@ export const newsData: NewsPost[] = [
       "hospedagem de sites",
       "otimização de sites"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/por-que-que-e-seo-e-importante-na-criacao-de-sites-820x450-Copia.jpg",
+    "image_url": "https://images.unsplash.com/photo-1572021335469-3171624c9c5c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49285"
   },
   {
