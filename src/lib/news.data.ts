@@ -333,7 +333,7 @@ export const newsData: NewsPost[] = [
       "criar sites reponsivos",
       "loja virtual para celulares"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/diferencial-em-criacao-de-sites-e-e-commerces-820x450-Copia.jpg",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49283"
   },
   {
