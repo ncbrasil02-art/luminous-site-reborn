@@ -41,6 +41,7 @@ import { MagazineSection } from "@/components/MagazineSection";
 
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { testimonialsData } from "@/lib/testimonials.data";
+import { SecuritySeals } from "@/components/SecuritySeals";
 
 import logoRifa from "@/assets/logotipos/logo-rifa.png.asset.json";
 import logoVeiculos from "@/assets/logotipos/logo-veiculos.png.asset.json";
@@ -237,6 +238,9 @@ function HomePage() {
 
       {/* HERO ============================================================= */}
       <HeroSlider />
+      
+      {/* SELOS DE SEGURANÇA =============================================== */}
+      <SecuritySeals />
 
 
       {/* SISTEMAS EM DESTAQUE (SLIDER) ===================================== */}
