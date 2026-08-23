@@ -505,7 +505,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/faca-a-criacao-de-site-anuncie-no-google-e-apareca-Copia.jpg",
+    "image_url": "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
