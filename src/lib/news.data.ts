@@ -300,7 +300,7 @@ export const newsData: NewsPost[] = [
       "sites semânticos",
       "webdesign"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/Imagem-blog.pngvC3ADdeos-corporativos-1.png",
+    "image_url": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49336"
   },
   {
