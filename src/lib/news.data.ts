@@ -531,7 +531,7 @@ export const newsData: NewsPost[] = [
       "site para empresas",
       "webdesign"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/exibir-seu-site-nos-buscadores.jpg",
+    "image_url": "https://images.unsplash.com/photo-1562577353-f5bf847f89d6?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49342"
   },
   {
