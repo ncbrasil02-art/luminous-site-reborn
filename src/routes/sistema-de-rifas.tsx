@@ -41,7 +41,7 @@ export const lpFaq = [
 export const Route = createFileRoute("/sistema-de-rifas")({
   head: () => buildLPMeta({
     title: "Sistema de Rifas com Hora Premiada, Roletas e Raspadinhas Online",
-    description: "NcBrasil: Plataforma cinematográfica de rifas com Hora Premiada, Roletas, Raspadinhas e Cotas Premiadas. O sistema mais completo e viral do Brasil.",
+    description: "NcBrasil: Plataforma profissional de rifas com Hora Premiada, Roletas, Raspadinhas e Cotas Premiadas. O sistema mais completo e viral do Brasil.",
     keywords: "sistema de rifas, hora premiada, roletas online, raspadinhas digitais, cotas premiadas, plataforma de rifas profissional, script de rifas viral",
     canonical: "https://www.ncbrasil.com.br/sistema-de-rifas",
     h1: "NcBrasil - Sistema de Rifas Online",
@@ -56,7 +56,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
     <>
       <Helmet>
         <title>Sistema de Rifas com Hora Premiada, Roletas e Raspadinhas Online</title>
-        <meta name="description" content="Tenha sua plataforma cinematográfica de rifas com módulos de Hora Premiada, Roletas e Raspadinhas. O sistema mais completo e viral do mercado brasileiro." />
+        <meta name="description" content="Tenha sua plataforma profissional de rifas com módulos de Hora Premiada, Roletas e Raspadinhas. O sistema mais completo e viral do mercado brasileiro." />
         <meta name="keywords" content="sistema de rifas, hora premiada, roletas online, raspadinhas digitais, cotas premiadas, plataforma de rifas profissional, script de rifas viral" />
         <link rel="canonical" href="https://www.ncbrasil.com.br/sistema-de-rifas" />
       </Helmet>
@@ -79,7 +79,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
       ]}
       eyebrow="Ações Online · Script de Rifas · Lucro Real"
       h1={<>Sistema de Rifas com <span className="text-gradient">Hora Premiada</span>, Roletas, Raspadinhas e Cotas Premiadas</>}
-      intro={<>Tenha seu próprio <strong className="text-foreground">sistema de rifas</strong> profissional com módulos de <strong className="text-foreground">Hora Premiada</strong>, Roletas Interativas, Raspadinhas Digitais e Cotas Premiadas. Nossa <strong className="text-foreground">plataforma de ações online</strong> é a única que entrega o <strong className="text-foreground">script de ações</strong> completo e viral. Com o nosso <strong className="text-foreground">sistema de ações de rifas</strong> você escala seu faturamento com automação total e <strong className="text-foreground">Pix instantâneo</strong>.</>}
+      intro={<>Tenha seu próprio <strong className="text-foreground text-primary">sistema de rifas</strong> profissional com módulos de <strong className="text-foreground text-primary">Hora Premiada</strong>, Roletas Interativas, Raspadinhas Digitais e Cotas Premiadas. Nossa <strong className="text-foreground text-primary">plataforma de ações online</strong> é a única que entrega o <strong className="text-foreground text-primary">script de ações</strong> completo e viral. Com o nosso <strong className="text-foreground text-primary">sistema de ações de rifas</strong> você escala seu faturamento com automação total e <strong className="text-foreground text-primary">Pix instantâneo</strong>.</>}
       stats={[
         { value: "50Mi+", label: "Cotas vendidas" },
         { value: "3.000+", label: "Rifas realizadas" },
@@ -118,7 +118,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
       }}
       solution={{
         title: <>Seu <span className="text-gradient">Sistema de Rifas</span> com Hora Premiada e Roletas</>,
-        desc: <>Ao contratar nossa <strong className="text-foreground">plataforma de rifas</strong>, você recebe recursos exclusivos como <strong className="text-foreground">Hora Premiada</strong>, Roletas e Raspadinhas Digitais. Nosso <strong className="text-foreground">sistema de rifas</strong> permite que você gerencie campanhas virais de alta conversão. É a solução definitiva para quem busca um <strong className="text-foreground">script de ações</strong> robusto, seguro e altamente tecnológico com <strong className="text-foreground">Cotas Premiadas</strong> automáticas.</>,
+        desc: <>Ao contratar nossa <strong className="text-foreground text-primary">plataforma de rifas</strong>, você recebe recursos exclusivos como <strong className="text-foreground text-primary">Hora Premiada</strong>, Roletas e Raspadinhas Digitais. Nosso <strong className="text-foreground text-primary">sistema de rifas</strong> permite que você gerencie campanhas virais de alta conversão. É a solução definitiva para quem busca um <strong className="text-foreground text-primary">script de ações</strong> robusto, seguro e altamente tecnológico com <strong className="text-foreground text-primary">Cotas Premiadas</strong> automáticas.</>,
         highlights: [
           "**Módulo Hora Premiada** — Sorteios relâmpago automatizados",
           "**Roletas e Raspadinhas** — Gamificação para engajamento viral",

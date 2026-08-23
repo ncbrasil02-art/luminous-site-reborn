@@ -77,7 +77,7 @@ export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
       }}
       solution={{
         title: <>A melhor <span className="text-gradient">Plataforma de anúncio de veículos</span> do Brasil</>,
-        desc: <>Desenvolvemos um **Sistema para revendedor de carros** robusto e focado em conversão. Nossa solução de **Portal anúncio de veículos** entrega autonomia total para sua marca.</>,
+        desc: <>Desenvolvemos um <strong className="text-foreground text-primary">Sistema para revendedor de carros</strong> robusto e focado em conversão. Nossa solução de <strong className="text-foreground text-primary">Portal anúncio de veículos</strong> entrega autonomia total para sua marca.</>,
         highlights: [
           "**White Label Completo** no seu **Classificado de veículos PHP**",
           "**Importador de Estoque** para o **Sistema portal de veículos**",
@@ -100,7 +100,7 @@ export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
         },
         {
           title: "Vitrine Premium e Mobile First",
-          desc: "Experiência cinematográfica na sua **Plataforma de anúncio de veículos**.",
+          desc: "Experiência de alta performance na sua **Plataforma de anúncio de veículos**.",
           image: vitrineMobiAsset.url
         },
         {

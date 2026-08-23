@@ -108,7 +108,7 @@ export const Route = createFileRoute("/sistema-de-leilao-de-centavos")({
       }}
       solution={{
         title: <>A melhor <span className="text-gradient">Plataforma de Leilão de Centavos</span> do Brasil</>,
-        desc: <>Desenvolvemos um **software de leilão de centavos** do zero, focado em alta performance e escalabilidade. Com nosso **sistema leilão de centavos**, você tem controle total sobre as margens, cronogramas de leilões e pacotes de créditos. É a ferramenta perfeita para quem quer dominar o mercado de **penny auction** com um design cinematográfico e tecnologia de ponta.</>,
+        desc: <>Desenvolvemos um <strong className="text-foreground text-primary">software de leilão de centavos</strong> do zero, focado em alta performance e escalabilidade. Com nosso <strong className="text-foreground text-primary">sistema leilão de centavos</strong>, você tem controle total sobre as margens, cronogramas de leilões e pacotes de créditos. É a ferramenta perfeita para quem quer dominar o mercado de <strong className="text-foreground text-primary">penny auction</strong> com um design premium e tecnologia de ponta.</>,
         highlights: [
           "**Motor WebSockets** — lances em tempo real com latência zero",
           "**BidButler (Lance Automático)** — mais lances mesmo sem o usuário logado",

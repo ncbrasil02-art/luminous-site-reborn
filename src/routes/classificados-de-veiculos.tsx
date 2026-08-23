@@ -71,7 +71,7 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
       }}
       solution={{
         title: <>A melhor <span className="text-gradient">plataforma profissional estilo WebMotors</span> do Brasil</>,
-        desc: <>Desenvolvemos um <strong className="text-foreground">sistema para revenda de autos</strong> robusto, focado em conversão e SEO. Nossa solução de <strong className="text-foreground">portal de anúncios de veículos</strong> entrega autonomia total para sua marca dominar o mercado regional ou nacional.</>,
+        desc: <>Desenvolvemos um <strong className="text-foreground text-primary">sistema para revenda de autos</strong> robusto, focado em conversão e SEO. Nossa solução de <strong className="text-foreground text-primary">portal de anúncios de veículos</strong> entrega autonomia total para sua marca dominar o mercado regional ou nacional.</>,
         highlights: [
           "**White Label Completo** — Use sua marca e domínio próprio",
           "**Importador de Estoque** — Sincronização automática com WebMotors e OLX",

@@ -89,7 +89,7 @@ export const Route = createFileRoute("/portfolio/lojas-virtuais-criadas")({
                 Lojas virtuais que <span className="text-gradient">convertem</span> visitantes em clientes.
               </h1>
               <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-                Tecnologia cinematográfica para o seu comércio eletrônico. Uma loja rápida, segura e focada na melhor <strong className="text-foreground text-primary">experiência de compra</strong>.
+                Tecnologia de ponta para o seu comércio eletrônico. Uma loja rápida, segura e focada na melhor <strong className="text-foreground text-primary">experiência de compra</strong>.
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <Link

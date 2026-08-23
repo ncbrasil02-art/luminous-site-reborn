@@ -40,7 +40,7 @@ const features = [
   {
     icon: Layout,
     title: "Design de Interface UI/UX",
-    description: "Interfaces intuitivas e cinematográficas desenhadas para encantar o usuário e facilitar a navegação."
+    description: "Interfaces intuitivas e profissionais desenhadas para encantar o usuário e facilitar a navegação."
   },
   {
     icon: Code2,
@@ -76,7 +76,7 @@ const steps = [
 export const Route = createFileRoute("/portfolio/criacao-de-aplicativos")({
   head: () => buildStubMeta({
     title: "Criação de Aplicativos Mobile Profissionais · NC Brasil",
-    description: "Desenvolvimento de apps iOS e Android sob medida. UX cinematográfica, performance nativa e integração total com seus sistemas.",
+    description: "Desenvolvimento de apps iOS e Android sob medida. UX fluida, performance nativa e integração total com seus sistemas.",
     keywords: "criação de aplicativos, desenvolvimento mobile, app iOS Android, aplicativo personalizado, empresa de apps sp",
     canonical: URL,
     ogImage: "/criacao-de-apps-og.jpg",
@@ -98,7 +98,7 @@ export const Route = createFileRoute("/portfolio/criacao-de-aplicativos")({
                 O seu negócio na <span className="text-gradient">palma da mão</span> dos seus clientes.
               </h1>
               <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-                Desenvolvemos aplicativos mobile que de fato agregam valor ao seu negócio. Tecnologia de ponta com <strong className="text-foreground text-primary">UX cinematográfica</strong> e performance impecável.
+                Desenvolvemos aplicativos mobile que de fato agregam valor ao seu negócio. Tecnologia de ponta com <strong className="text-foreground text-primary">UX de alta performance</strong> e performance impecável.
               </p>
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <Link
