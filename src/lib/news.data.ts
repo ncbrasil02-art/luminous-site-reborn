@@ -450,7 +450,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Imagem-blog-landing-page-videos-sC3A3o-mais-chamativos.png",
+    "image_url": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
