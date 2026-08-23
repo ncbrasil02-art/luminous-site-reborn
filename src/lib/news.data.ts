@@ -832,7 +832,7 @@ export const newsData: NewsPost[] = [
       "Erros de E-commerce",
       "Web Designer"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/2016-e-commerce.png",
+    "image_url": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49789"
   },
   {
