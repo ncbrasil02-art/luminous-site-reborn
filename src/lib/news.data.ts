@@ -1204,7 +1204,7 @@ export const newsData: NewsPost[] = [
       "logomarca",
       "marca"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/design_internet.jpg",
+    "image_url": "https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50097"
   },
   {
