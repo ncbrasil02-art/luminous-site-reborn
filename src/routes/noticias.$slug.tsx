@@ -76,7 +76,7 @@ function NewsArticle() {
           </nav>
 
           <div className="mb-4 flex flex-wrap gap-2">
-            {post.categories.map((cat) => (
+            {post.categories.map((cat: string) => (
               <Link
                 key={cat}
                 to="/noticias/categoria/$category"
@@ -123,7 +123,7 @@ function NewsArticle() {
         {post.tags.length > 0 && (
           <div className="mt-10 flex flex-wrap items-center gap-2">
             <Tag className="h-4 w-4 text-primary" aria-hidden="true" />
-            {post.tags.map((t) => (
+            {post.tags.map((t: string) => (
               <Link
                 key={t}
                 to="/noticias/tag/$tag"
