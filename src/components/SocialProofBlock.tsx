@@ -11,8 +11,14 @@ interface SocialProofBlockProps {
 
 export function SocialProofBlock({ className }: SocialProofBlockProps) {
   const router = useRouterState();
-  const path = router.location.pathname.split("/").filter(Boolean).pop() || "default";
-  const config = socialProofData[path] || socialProofData.default;
+  const pathParts = router.location.pathname.split("/").filter(Boolean);
+  
+  // Try to match the most specific path first, then fall back to the last segment
+  const specificPath = pathParts.join("/");
+  const lastSegment = pathParts.pop() || "default";
+  
+  const config = socialProofData[specificPath] || socialProofData[lastSegment] || socialProofData.default;
+
 
   
   const avatars = config.avatars || socialProofData.default.avatars || [];

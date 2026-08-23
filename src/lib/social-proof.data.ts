@@ -63,6 +63,27 @@ export const socialProofData: Record<string, SocialProofConfig> = {
       "Insights exclusivos para escalar seu negócio digital",
     ],
     avatars: defaultAvatars
+  },
+  "solucoes-web/marketing-digital": {
+    mainText: "Expertise em Marketing de Performance",
+    phrases: [
+      "Estratégias de growth hacking para SaaS e E-commerce",
+      "Gestão profissional de tráfego pago (Google/Meta Ads)",
+      "Aumento real na taxa de conversão de leads",
+      "Relatórios detalhados de ROI e performance mensal",
+    ],
+    avatars: defaultAvatars
+  },
+  "solucoes-web/desenvolvimento-de-sites": {
+    mainText: "Sites Modernos e Focados em Conversão",
+    phrases: [
+      "Design minimalista com performance de carregamento",
+      "Sites 100% responsivos e otimizados para Mobile",
+      "Arquitetura da informação planejada para o usuário",
+      "Integração com CRMs e ferramentas de automação",
+    ],
+    avatars: defaultAvatars
   }
 };
+
 
