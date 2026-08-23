@@ -461,7 +461,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/4-dicas-para-criar-um-C3B3timo-logo-1.png",
+    "image_url": "https://images.unsplash.com/photo-1541462608141-ad4d74b1af7e?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
