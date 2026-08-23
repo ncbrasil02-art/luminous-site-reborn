@@ -54,7 +54,8 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
     ogImage: mainAsset.url,
   }),
   component: () => (
-    <LandingPage
+    <>
+      <LandingPage
       breadcrumbs={[
         { to: "/", label: "Home" },
         { to: "/nossos-sistemas", label: "Sistemas" },
