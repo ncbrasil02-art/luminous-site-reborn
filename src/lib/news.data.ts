@@ -748,7 +748,7 @@ export const newsData: NewsPost[] = [
       "Search Engine Marketing",
       "SEM"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/que-e-marketing-de-busca.jpg",
+    "image_url": "https://images.unsplash.com/photo-1557838923-2985c318be48?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49699"
   },
   {
