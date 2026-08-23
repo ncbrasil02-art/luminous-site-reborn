@@ -617,7 +617,7 @@ export const newsData: NewsPost[] = [
       "webdesign",
       "website"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/quanto-custa-um-site-profissional-post-stavit-03.jpg",
+    "image_url": "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
