@@ -1845,7 +1845,7 @@ export const newsData: NewsPost[] = [
       "E-commerce"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/eCommerce-concch.jpg",
+    "image_url": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
