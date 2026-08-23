@@ -250,11 +250,14 @@ export const Route = createFileRoute("/sistema-de-rifas")({
         { icon: FileCheck, title: "Hash Blockchain", desc: "Cada cota registra **hash SHA-256 timestamped** — impossível alterar depois de vendida." },
       ]}
       timeline={[
-        { step: "Semana 1", title: "Kickoff & Design", desc: "Reunião de descoberta, definição de escopo, **coleta de identidade visual, orientação legal** e wireframes aprovados." },
-        { step: "Semana 2", title: "Setup Técnico", desc: "Provisionamento da infra, **domínio + SSL, gateway integrado, branding aplicado** e ambiente de homologação." },
-        { step: "Semana 3", title: "Homologação & Testes", desc: "Testes de carga, **teste do fluxo Pix, sorteio simulado, treinamento do time** e ajustes finais." },
-        { step: "Semana 4", title: "Go-Live", desc: "**Publicação em produção, submissão do app nas lojas iOS/Android, primeira rifa ativa** e monitoramento assistido 24/7." },
-        { step: "Mês 2 em diante", title: "Suporte & Evolução", desc: "Sprint de melhorias mensais, **relatório de performance, novos módulos** e suporte técnico contínuo." },
+        { step: "Etapa 01", title: "Briefing", desc: "Reunião inicial para alinhamento de expectativas e coleta de requisitos da sua plataforma de ações." },
+        { step: "Etapa 02", title: "Montagem do Template", desc: "Personalização da identidade visual e estrutura das rifas conforme sua marca." },
+        { step: "Etapa 03", title: "Apresentação da Plataforma", desc: "Demonstração das funcionalidades de cotas, combos e gateway de pagamento." },
+        { step: "Etapa 04", title: "Testes das Funcionalidades", desc: "Verificação rigorosa de todos os módulos de vendas, segurança e performance." },
+        { step: "Etapa 05", title: "Campanha de Teste", desc: "Simulação de um sorteio real para garantir que o fluxo Pix e as cotas operem perfeitamente." },
+        { step: "Etapa 06", title: "Treinamento da Equipe", desc: "Capacitação completa para sua equipe gerenciar campanhas e afiliados com maestria." },
+        { step: "Etapa 07", title: "Publicação no Domínio Final", desc: "Lançamento oficial no seu domínio com toda a infraestrutura pronta para vender." },
+        { step: "Etapa 08", title: "Suporte e Atualizações", desc: "Prestação de suporte contínuo e evolução da plataforma com atualizações constantes." },
       ]}
       comparative={{
         usLabel: "NC Brasil",

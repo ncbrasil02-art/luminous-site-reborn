@@ -141,11 +141,14 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
         { icon: Database, title: "Auditoria Total", desc: "Log imutável de todo lance, alteração e pagamento — pronto para fiscalização do MAPA." },
       ]}
       timeline={[
-        { step: "01", title: "Diagnóstico do Leiloeiro", desc: "Mapeamos volume, categorias de animais, regiões e integrações necessárias." },
-        { step: "02", title: "Configuração & White Label", desc: "Sua marca, domínio, cores e templates de catálogo aplicados em até 15 dias." },
-        { step: "03", title: "Homologação Sanitária", desc: "Conectamos com sua Defesa Agropecuária estadual e testamos emissão de GTA." },
-        { step: "04", title: "Piloto com Leilão Real", desc: "Primeiro leilão acompanhado pela nossa equipe técnica com suporte war-room." },
-        { step: "05", title: "Operação & Escala", desc: "Suporte 24/7, upgrades trimestrais e treinamento contínuo da equipe." },
+        { step: "Etapa 01", title: "Briefing", desc: "Reunião inicial para alinhamento de expectativas e coleta de requisitos específicos para o agro." },
+        { step: "Etapa 02", title: "Montagem do Template", desc: "Personalização da identidade visual e estrutura da plataforma conforme a marca da sua cabanha ou leiloeira." },
+        { step: "Etapa 03", title: "Apresentação da Plataforma", desc: "Demonstração das funcionalidades configuradas e validação do fluxo de navegação rural." },
+        { step: "Etapa 04", title: "Testes das Funcionalidades", desc: "Verificação rigorosa de todos os módulos de lances, segurança e performance dos **Leilões Rurais**." },
+        { step: "Etapa 05", title: "Pregão Eletrônico de Teste", desc: "Simulação de um evento real para garantir que tudo opere perfeitamente sob pressão." },
+        { step: "Etapa 06", title: "Treinamento da Equipe", desc: "Capacitação completa para empresa e equipe da **plataforma de leilões** dominarem o sistema." },
+        { step: "Etapa 07", title: "Publicação no Domínio Final", desc: "Lançamento oficial no domínio final com toda a infraestrutura pronta para o primeiro martelo." },
+        { step: "Etapa 08", title: "Suporte e Atualizações", desc: "Prestação de suporte contínuo e evolução da plataforma com atualizações tecnológicas." },
       ]}
       comparative={{
         usLabel: "NC Brasil",
