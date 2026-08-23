@@ -2,49 +2,21 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
-import av1 from "@/assets/avatars/avatar-1.webp.asset.json";
-import av2 from "@/assets/avatars/avatar-2.webp.asset.json";
-import av3 from "@/assets/avatars/avatar-3.webp.asset.json";
-import av4 from "@/assets/avatars/avatar-4.webp.asset.json";
-import av5 from "@/assets/avatars/avatar-5.webp.asset.json";
-import av6 from "@/assets/avatars/avatar-6.webp.asset.json";
-import av7 from "@/assets/avatars/avatar-7.webp.asset.json";
-import av8 from "@/assets/avatars/avatar-8.webp.asset.json";
-import av9 from "@/assets/avatars/avatar-9.webp.asset.json";
-
-const avatars = [
-  av1.url,
-  av2.url,
-  av3.url,
-  av4.url,
-  av5.url,
-  av6.url,
-  av7.url,
-  av8.url,
-  av9.url,
-  "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=256&h=256&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=256&h=256&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=256&h=256&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=256&h=256&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=256&h=256&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=256&h=256&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=256&h=256&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=256&h=256&auto=format&fit=crop",
-];
-
-const phrases = [
-  "pessoas que assinaram com a NC Brasil estão prosperando em suas plataformas",
-  "Aprovado por mais de 1.500 empresas",
-  "Líder em sistemas de alta performance no Brasil",
-  "Tecnologia premium para leilões, rifas e iGaming",
-  "Escalabilidade garantida para grandes volumes de acessos",
-];
+import { socialProofData } from "@/lib/social-proof.data";
+import { useLocation } from "react-router-dom";
 
 interface SocialProofBlockProps {
   className?: string;
 }
 
 export function SocialProofBlock({ className }: SocialProofBlockProps) {
+  const location = useLocation();
+  const path = location.pathname.split("/").filter(Boolean).pop() || "default";
+  const config = socialProofData[path] || socialProofData.default;
+  
+  const avatars = config.avatars || socialProofData.default.avatars || [];
+  const phrases = config.phrases;
+
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [avatarOffset, setAvatarOffset] = useState(0);
 
@@ -54,16 +26,17 @@ export function SocialProofBlock({ className }: SocialProofBlockProps) {
     }, 5000);
 
     const avatarInterval = setInterval(() => {
-      setAvatarOffset((prev) => (prev + 1) % (avatars.length - 4));
+      setAvatarOffset((prev) => (prev + 1) % (Math.max(1, avatars.length - 4)));
     }, 3000);
 
     return () => {
       clearInterval(phraseInterval);
       clearInterval(avatarInterval);
     };
-  }, []);
+  }, [phrases.length, avatars.length]);
 
   const visibleAvatars = avatars.slice(avatarOffset, avatarOffset + 5);
+
 
   return (
     <div className={cn("flex flex-col md:flex-row items-center justify-center gap-4", className)}>
