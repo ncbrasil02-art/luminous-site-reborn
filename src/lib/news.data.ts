@@ -1247,7 +1247,7 @@ export const newsData: NewsPost[] = [
       "Vendas de Veículos Online",
       "Web Carrão"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/Female-Accountant.webp",
+    "image_url": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50487"
   },
   {
