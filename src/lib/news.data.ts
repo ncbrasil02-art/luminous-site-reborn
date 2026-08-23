@@ -1584,7 +1584,7 @@ export const newsData: NewsPost[] = [
       "Sistemas Web"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/ARTIGO-CONTROLE-DE-ESTOQUE-740x432.webp",
+    "image_url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
