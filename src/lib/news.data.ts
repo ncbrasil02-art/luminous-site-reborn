@@ -1352,7 +1352,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Planejamento SEO"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/sales-plannig-e1510279048728.jpg",
+    "image_url": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50581"
   },
   {
