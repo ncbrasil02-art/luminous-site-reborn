@@ -174,7 +174,7 @@ export const newsData: NewsPost[] = [
       "desenvolvimento de sistemas",
       "sites semânticos"
     ],
-    "image_url": "https://www.ncbrasil.com.br/news/desenvolvimento-webdesign-109.jpg",
+    "image_url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "48648"
   },
   {
