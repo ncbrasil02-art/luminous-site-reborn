@@ -1638,7 +1638,7 @@ export const newsData: NewsPost[] = [
       "Sistema",
       "Software Empresarial"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/86585-o-funcionario-nao-sai-do-celular-use-isso-a-favor-da-sua-empresa-900x365.webp",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50773"
   },
   {
