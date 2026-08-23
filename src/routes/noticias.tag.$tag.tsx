@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from '@tanstack/react-router'
-import { newsData, type NewsPost } from '@/lib/news.data'
+import { newsIndex } from '@/lib/news-index.data'
 import { Calendar, Tag, ArrowRight, ChevronRight } from 'lucide-react'
 import { Reveal, SectionHeading } from '@/components/Section'
 import { buildMeta, SITE_URL } from '@/lib/seo'
@@ -8,7 +8,7 @@ import { buildMeta, SITE_URL } from '@/lib/seo'
 export const Route = createFileRoute('/noticias/tag/$tag')({
   loader: ({ params }) => {
     const tag = decodeURIComponent(params.tag)
-    const posts = newsData.filter(p => 
+    const posts = newsIndex.filter(p => 
       p.tags.some(t => t.toLowerCase() === tag.toLowerCase())
     )
     if (posts.length === 0) throw notFound()
@@ -60,7 +60,7 @@ function TagPage() {
         />
 
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((news: NewsPost, i: number) => (
+          {posts.map((news: any, i: number) => (
             <Reveal key={news.id} delay={i * 0.05}>
               <Link 
                 to="/noticias/$slug"
