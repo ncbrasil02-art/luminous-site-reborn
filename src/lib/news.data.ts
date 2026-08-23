@@ -898,7 +898,7 @@ export const newsData: NewsPost[] = [
       "CSM",
       "Sistema de Gerenciamento de Conteúdo"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/content-management-system-in-mumbai.jpg",
+    "image_url": "https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
