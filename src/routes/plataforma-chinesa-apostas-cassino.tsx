@@ -148,8 +148,8 @@ export const Route = createFileRoute("/plataforma-chinesa-apostas-cassino")({
       testimonials={cassinoTestimonials}
       faq={lpFaq}
       relatedNewsTags={["Cassino", "iGaming", "Sistemas", "Tecnologia"]}
-    >
-      <SecuritySeals />
-    </LandingPage>
+    />
+    <SecuritySeals />
+    </>
   ),
 });
