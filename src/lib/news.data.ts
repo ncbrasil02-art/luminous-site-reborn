@@ -1396,7 +1396,7 @@ export const newsData: NewsPost[] = [
     "tags": [
       "Plataforma de leilão"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/leilão-e1510970985900.jpg",
+    "image_url": "https://images.unsplash.com/photo-1579546673265-98a2791ccf0c?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50612"
   },
   {
