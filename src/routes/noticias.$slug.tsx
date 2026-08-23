@@ -8,7 +8,10 @@ import { Calendar, ChevronRight, ArrowRight, Tag } from "lucide-react";
 export const Route = createFileRoute("/noticias/$slug")({
   loader: ({ params }) => {
     const post = newsData.find((p) => p.slug === params.slug);
-    if (!post) throw notFound();
+    if (!post) {
+      console.warn(`[NewsLoader] Post not found for slug: "${params.slug}". Total posts: ${newsData.length}`);
+      throw notFound();
+    }
     const related = newsData
       .filter(
         (p) =>
