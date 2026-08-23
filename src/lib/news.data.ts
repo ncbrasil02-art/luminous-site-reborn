@@ -1301,7 +1301,7 @@ export const newsData: NewsPost[] = [
       "criar site responsivo",
       "site responsivo"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/entenda-o-que-e-um-site-responsivo-1132x600.jpg",
+    "image_url": "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50527"
   },
   {
