@@ -1381,7 +1381,7 @@ export const newsData: NewsPost[] = [
       "Marketing Digital"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/marke-e1510967111661-scaled.jpg",
+    "image_url": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
