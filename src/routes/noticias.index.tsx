@@ -4,6 +4,7 @@ import { newsIndex } from '@/lib/news-index.data'
 import { Link } from '@tanstack/react-router'
 import { Calendar, Tag, ArrowRight, Search, ChevronRight, Newspaper } from 'lucide-react'
 import { Reveal, SectionHeading } from '@/components/Section'
+import { SecuritySeals } from '@/components/SecuritySeals'
 import { useState, useMemo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -283,6 +284,10 @@ function NewsIndex() {
             </div>
           </div>
         </Reveal>
+      </div>
+      
+      <div className="mt-20">
+        <SecuritySeals />
       </div>
     </main>
     </>

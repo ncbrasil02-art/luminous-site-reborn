@@ -6,6 +6,7 @@ import {
   Trophy, Users, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { SecuritySeals } from "@/components/SecuritySeals";
 import { cassinoTestimonials } from "@/lib/testimonials.data";
 
 // Import assets

@@ -5,6 +5,7 @@ import {
   Sprout, Radio, FileCheck, BarChart3, Users, Wallet, Cloud, Award, Zap, Lock, Database,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { SecuritySeals } from "@/components/SecuritySeals";
 import { testimonialsData } from "@/lib/testimonials.data";
 import leilaoRuralAdmin from "@/assets/leilao-rural-admin.asset.json";
 import leilaoRuralLotes from "@/assets/leilao-rural-lotes.asset.json";
@@ -209,6 +210,7 @@ export const Route = createFileRoute("/sistema-de-leilao-rural")({
       logo="/logo-nc-brasil.png"
       heroImage={leilaoRuralHome.url}
     />
+      <SecuritySeals />
     </>
   ),
 });

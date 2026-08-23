@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Helmet } from "react-helmet-async";
 import { Banknote, BarChart3, Clock, Coins, Gift, ShieldCheck, Sparkles, Timer, Trophy, Users, Wallet, Zap, Smartphone, ShoppingCart, Percent } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { SecuritySeals } from "@/components/SecuritySeals";
 import { centavosTestimonials } from "@/lib/testimonials.data";
 import { SITE_URL } from "@/lib/seo";
 
@@ -142,6 +143,7 @@ export const Route = createFileRoute("/sistema-de-leilao-de-centavos")({
         image: heroAsset.url
       }}
     />
+      <SecuritySeals />
     </>
   ),
 });
