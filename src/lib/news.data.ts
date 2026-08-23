@@ -1226,7 +1226,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/797059169-patio-da-general-motors-na-cidade-de-gravatai-no-rio-grande-do-sul-carros-16-1024x576.jpeg",
+    "image_url": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
