@@ -90,10 +90,6 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         { value: "500K+", label: "Lances processados" },
         { value: "24/7", label: "Suporte em pregões" },
       ]}
-      clients={[
-        "Tribunais de Justiça", "Detran", "Bancos", "Cooperativas Rurais",
-        "Leiloeiros Oficiais", "Prefeituras", "Concessionárias", "Cartórios",
-      ]}
       problem={{
         title: <>Alugar plataforma de terceiros <span className="text-destructive">custa caro</span> e limita seu negócio</>,
         items: [
