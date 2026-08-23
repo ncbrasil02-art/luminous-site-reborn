@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { Helmet } from 'react-helmet-async'
-import { newsData } from '@/lib/news.data'
+import { newsIndex } from '@/lib/news-index.data'
 import { Link } from '@tanstack/react-router'
 import { Calendar, Tag, ArrowRight, Search, ChevronRight, Newspaper } from 'lucide-react'
 import { Reveal, SectionHeading } from '@/components/Section'
@@ -167,7 +167,7 @@ function NewsIndex() {
                       {featuredNews.title}
                     </h2>
                     <p className="mt-6 text-muted-foreground line-clamp-3 leading-relaxed">
-                      {featuredNews.content.replace(/<[^>]*>/g, '').slice(0, 250)}...
+                      {featuredNews.excerpt}
                     </p>
                     <div className="mt-10 flex items-center justify-between">
                       <div className="flex items-center gap-4 text-xs font-bold uppercase tracking-widest text-muted-foreground">

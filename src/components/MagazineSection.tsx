@@ -1,11 +1,11 @@
 import { Link } from "@tanstack/react-router";
-import { newsData } from "@/lib/news.data";
+import { newsIndex } from "@/lib/news-index.data";
 import { Reveal, SectionHeading } from "./Section";
 import { Calendar, ArrowRight, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 
 export function MagazineSection() {
-  const magazineNews = newsData
+  const magazineNews = newsIndex
     .filter(news => news.slug && news.slug.trim() !== "")
     .slice(0, 10);
   const featured = magazineNews[0];
