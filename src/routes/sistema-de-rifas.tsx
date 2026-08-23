@@ -7,6 +7,7 @@ import {
   Ticket, Trophy, Users, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { SecuritySeals } from "@/components/SecuritySeals";
 import { rifasTestimonials } from "@/lib/testimonials.data";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
 
@@ -279,6 +280,7 @@ export const Route = createFileRoute("/sistema-de-rifas")({
       }}
       relatedNewsTags={["rifas", "sistemas", "vendas", "tecnologia"]}
       />
+      <SecuritySeals />
     </>
   ),
 });

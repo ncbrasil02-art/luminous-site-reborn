@@ -6,6 +6,7 @@ import {
   Sparkles, Target, TrendingUp, Users, Video, Wallet, Zap,
 } from "lucide-react";
 import { LandingPage, buildLPMeta } from "@/components/LandingPage";
+import { SecuritySeals } from "@/components/SecuritySeals";
 import { PartnerCarousel } from "@/components/PartnerCarousel";
 import { SITE_URL } from "@/lib/seo";
 import { leilaoTestimonials } from "@/lib/testimonials.data";
@@ -295,6 +296,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       }}
       relatedNewsTags={["leilão", "sistemas", "jurídico", "tecnologia"]}
     />
+      <SecuritySeals />
     </>
   ),
 });
