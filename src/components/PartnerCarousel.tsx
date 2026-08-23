@@ -31,10 +31,10 @@ export function PartnerCarousel({ logos, title = "Órgãos Homologados e Parceir
       <div className="relative flex max-w-[100vw] overflow-hidden marquee-mask-cinematic">
         <motion.div
           animate={{
-            x: [0, -2500],
+            x: [0, -3500],
           }}
           transition={{
-            duration: 60, // Slowed down from 30 to 60 for "suavidade"
+            duration: 90, // Further slowed down to 90s for maximum smoothness ("suavidade")
             repeat: Infinity,
             ease: "linear",
           }}
