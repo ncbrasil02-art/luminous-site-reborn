@@ -45,7 +45,7 @@ export function InternalPageLinks({ currentPath }: { currentPath: string }) {
   const filtered = internalServices.filter(s => s.to !== currentPath).slice(0, 3);
 
   return (
-    <section className="relative py-20 overflow-hidden bg-navy-950/20">
+    <section className="relative py-20 overflow-hidden bg-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
@@ -72,7 +72,7 @@ export function InternalPageLinks({ currentPath }: { currentPath: string }) {
             <Reveal key={s.to} delay={i * 0.1}>
               <Link
                 to={s.to}
-                className="group relative block overflow-hidden rounded-none border border-white/5 bg-navy-900/40 p-6 backdrop-blur transition-all hover:border-primary/30 hover:glow-sm hover:-translate-y-1"
+                className="group relative block overflow-hidden rounded-none border border-white/5 bg-surface-elevated/40 p-6 backdrop-blur transition-all hover:border-primary/30 hover:glow-sm hover:-translate-y-1"
               >
                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-none bg-primary/10 text-primary-glow ring-1 ring-white/10 group-hover:bg-primary group-hover:text-white transition-colors">
                   <s.icon className="h-6 w-6" />
