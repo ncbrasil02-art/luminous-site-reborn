@@ -35,7 +35,7 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
       { label: "Classificados de Veículos", to: "/classificados-de-veiculos" },
     ],
     faq: lpFaq,
-    ogImage: "/img-sistema-de-veiculos/sistema-de-classificados-de-veiculos-hero.jpeg",
+    ogImage: "/img-sistema-de-veiculos/sistema-de-classificados-de-veiculos-hero.webp",
   }),
   component: () => (
     <>
@@ -50,7 +50,7 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
       h1={<>Sistema de <span className="text-gradient">Classificados de Veículos</span> Profissional</>}
       intro={<>Lançamos seu <strong className="text-foreground">portal de anúncios de veículos</strong> com tecnologia de ponta. Uma <strong className="text-foreground">plataforma profissional estilo WebMotors</strong> completa com Tabela FIPE, financiamento integrado e <strong className="text-foreground">gerenciamento de vendas de veículos</strong> para revendas e particulares.</>}
       logo="/img-sistema-de-veiculos/nc-veiculos-logo-premium.png"
-      heroImage="/img-sistema-de-veiculos/sistema-de-classificados-de-veiculos-hero.jpeg"
+      heroImage="/img-sistema-de-veiculos/sistema-de-classificados-de-veiculos-hero.webp"
       stats={[
         { value: "50K+", label: "Anúncios ativos" },
         { value: "2M", label: "Visitas mensais" },
@@ -85,22 +85,22 @@ export const Route = createFileRoute("/classificados-de-veiculos")({
         {
           title: "Dashboard Administrativo de Alta Performance",
           desc: "Controle total sobre seu portal de anúncios de autos. Métricas de MRR, novos anúncios, usuários e gestão de lojistas em tempo real.",
-          image: "/img-sistema-de-veiculos/sistema-para-revenda-de-autos-admin-dashboard.jpeg"
+          image: "/img-sistema-de-veiculos/sistema-para-revenda-de-autos-admin-dashboard.webp"
         },
         {
           title: "Painel do Lojista e Revenda",
           desc: "Cada parceiro tem seu próprio ambiente para gerenciar leads, visualizações e o desempenho da sua loja de veículos.",
-          image: "/img-sistema-de-veiculos/portal-de-anuncios-de-veiculos-loja-dashboard.jpeg"
+          image: "/img-sistema-de-veiculos/portal-de-anuncios-de-veiculos-loja-dashboard.webp"
         },
         {
           title: "Importação Inteligente de Estoque",
           desc: "Importe centenas de veículos instantaneamente de outros portais como WebMotors e OLX com nosso extrator via URL.",
-          image: "/img-sistema-de-veiculos/plataforma-estilo-webmotors-importador.png"
+          image: "/img-sistema-de-veiculos/plataforma-estilo-webmotors-importador.webp"
         },
         {
           title: "Gestão de Inventário e Status",
           desc: "Visualização clara de todos os veículos, anos, KM, preços e status de moderação no sistema de gerenciamento de vendas.",
-          image: "/img-sistema-de-veiculos/sistema-para-gerenciamento-de-vendas-de-veiculos-lista.png"
+          image: "/img-sistema-de-veiculos/sistema-para-gerenciamento-de-vendas-de-veiculos-lista.webp"
         }
       ]}
       benefits={[

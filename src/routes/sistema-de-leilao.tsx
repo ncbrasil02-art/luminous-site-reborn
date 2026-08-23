@@ -50,10 +50,10 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       imageKeyword="sistema de leilão"
       showParallaxshowcase
       showcaseImages={[
-        "/img-sistema-de-leilao/sistema-de-leilao-configuracoes-identidade-01.png",
-        "/img-sistema-de-leilao/plataforma-de-leilao-dashboard-gerencial-02.png",
-        "/img-sistema-de-leilao/sistema-de-leilao-modelos-de-card-moderno-03.png",
-        "/img-sistema-de-leilao/plataforma-de-leilao-lote-detalhe-agronegocio-04.png",
+        "/img-sistema-de-leilao/sistema-de-leilao-configuracoes-identidade-01.webp",
+        "/img-sistema-de-leilao/plataforma-de-leilao-dashboard-gerencial-02.webp",
+        "/img-sistema-de-leilao/sistema-de-leilao-modelos-de-card-moderno-03.webp",
+        "/img-sistema-de-leilao/plataforma-de-leilao-lote-detalhe-agronegocio-04.webp",
       ]}
       breadcrumbs={[
         { to: "/", label: "Home" },
@@ -64,7 +64,7 @@ export const Route = createFileRoute("/sistema-de-leilao")({
       h1={
         <div className="flex flex-col items-center gap-8">
           <img 
-            src="/img-sistema-de-leilao/nc-leiloes-logo-premium.png"
+            src="/img-sistema-de-leilao/nc-leiloes-logo-premium.webp"
             alt="NC Leilões - Plataforma de Leilão" 
             className="h-20 md:h-28 w-auto transition-transform duration-500 hover:scale-105"
             loading="eager"
