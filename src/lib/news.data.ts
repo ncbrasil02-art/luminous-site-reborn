@@ -68,25 +68,25 @@ export const newsData: NewsPost[] = [
   {
     "id": "49040",
     "title": "Site ou Landing Page. O que é melhor para sua empresa? - Agência WT | Criação de Sites",
-    "slug": "",
+    "slug": "site-ou-landing-page-o-que-e-melhor",
     "date": "Sun, 09 Oct 2016 15:26:47 +0000",
-    "content": "<p class=\"expresscurate_source\">See full story on <cite><a href=\"http://www.agenciawt.com.br/blog/site-ou-landing-page-o-que-e-melhor-para-sua-empresa/\">Site ou Landing Page. O que é melhor para sua empresa? - Agência WT | Criação de Sites</a></cite></p>",
+    "content": "<p class=\"expresscurate_source\">Veja o artigo completo sobre a escolha entre <a href=\"/solucoes-web/desenvolvimento-de-sites\">Sites Institucionais</a> ou <a href=\"/solucoes-web/landing-pages\">Landing Pages</a> para converter mais leads em seu negócio digital.</p>",
     "categories": [
-      "Sem categoria"
+      "Marketing Digital"
     ],
-    "tags": [],
-    "image_url": "https://www.ncbrasil.com.br/logo.jpg",
+    "tags": ["landing page", "criação de sites", "estratégia digital"],
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49041"
   },
   {
     "id": "49043",
     "title": "O Que é Plano de Marketing?",
-    "slug": "",
+    "slug": "o-que-e-plano-de-marketing",
     "date": "Sun, 09 Oct 2016 15:37:41 +0000",
-    "content": "",
-    "categories": [],
-    "tags": [],
-    "image_url": "https://www.ncbrasil.com.br/logo.jpg",
+    "content": "<p>O plano de marketing é uma ferramenta de gestão que deve ser usada por toda empresa para guiar as estratégias de comunicação e vendas.</p>",
+    "categories": ["Marketing Digital"],
+    "tags": ["plano de marketing", "estratégia"],
+    "image_url": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
