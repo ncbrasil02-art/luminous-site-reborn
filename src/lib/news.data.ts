@@ -61,7 +61,7 @@ export const newsData: NewsPost[] = [
       "leilão de pedras preciosas",
       "tecnologia leilões"
     ],
-    "image_url": "/__l5e/assets-v1/be2a8063-f735-4af0-bfbe-410efbc704e0/nc-sistema-de-leilao-img001.png",
+    "image_url": "https://images.unsplash.com/photo-1584302174649-5117e297c1fd?q=80&w=2070&auto=format&fit=crop",
     "thumb_id": ""
 
   },
