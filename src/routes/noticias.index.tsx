@@ -59,11 +59,11 @@ function NewsIndex() {
         <title>Revista Digital NC Brasil · Tecnologia, Sistemas e Negócios</title>
         <meta name="description" content="Fique por dentro das últimas notícias sobre tecnologia, sistemas web, e-commerce e marketing digital. Artigos aprofundados e tendências." />
       </Helmet>
-      <main className="relative pt-24 pb-20 overflow-hidden">
+      <main className="relative pt-24 pb-20 overflow-hidden bg-black">
       {/* Background Decor */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 pointer-events-none opacity-20">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/20 blur-[120px] rounded-full" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary/20 blur-[120px] rounded-full" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 pointer-events-none opacity-20 bg-mesh">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/10 blur-[120px] rounded-full" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary/10 blur-[120px] rounded-full" />
       </div>
 
       <div className="mx-auto max-w-7xl px-4 md:px-6">
@@ -96,7 +96,7 @@ function NewsIndex() {
                 placeholder="Buscar notícias..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full sm:w-64 pl-11 pr-4 py-3 rounded-2xl border border-border bg-card/50 backdrop-blur-sm focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all text-sm"
+                className="w-full sm:w-64 pl-11 pr-4 py-3 rounded-none border border-border bg-black/50 backdrop-blur-sm focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all text-sm"
               />
             </div>
           </div>
@@ -106,7 +106,7 @@ function NewsIndex() {
         <div className="flex flex-wrap gap-2 mb-12">
           <button
             onClick={() => setSelectedCategory(null)}
-            className={`px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-widest transition-all ${
+            className={`px-5 py-2 rounded-none text-xs font-bold uppercase tracking-widest transition-all ${
               !selectedCategory 
                 ? 'bg-primary text-white shadow-lg shadow-primary/25' 
                 : 'bg-card/40 border border-border text-muted-foreground hover:bg-card hover:text-primary'
@@ -118,7 +118,7 @@ function NewsIndex() {
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-widest transition-all ${
+              className={`px-5 py-2 rounded-none text-xs font-bold uppercase tracking-widest transition-all ${
                 selectedCategory === cat 
                   ? 'bg-primary text-white shadow-lg shadow-primary/25 border-primary' 
                   : 'bg-card/40 border border-border text-muted-foreground hover:bg-card hover:text-primary hover:border-primary/50'
@@ -141,7 +141,7 @@ function NewsIndex() {
               <Link 
                 to="/noticias/$slug"
                 params={{ slug: featuredNews.slug }}
-                className="relative block overflow-hidden rounded-[3rem] border border-border bg-card shadow-2xl group"
+                className="relative block overflow-hidden rounded-none border border-border bg-surface shadow-2xl group"
               >
                 <div className="grid lg:grid-cols-2">
                   <div className="relative h-80 lg:h-[500px] overflow-hidden">
@@ -197,9 +197,9 @@ function NewsIndex() {
                 <Link 
                   to="/noticias/$slug"
                   params={{ slug: news.slug || "" }}
-                className="group block space-y-6 rounded-[2rem] border border-border bg-card/40 p-6 transition-all hover:-translate-y-2 hover:border-primary/40 hover:bg-card hover:glow-sm"
+                className="group block space-y-6 rounded-none border border-white/5 bg-surface-elevated/40 p-6 transition-all hover:-translate-y-2 hover:border-primary/40 hover:bg-surface-elevated hover:glow-sm"
               >
-                <div className="relative aspect-[16/10] overflow-hidden rounded-2xl bg-surface border border-border/50">
+                <div className="relative aspect-[16/10] overflow-hidden rounded-none bg-surface border border-border/50">
                   <img 
                     src={news.image_url || "/news/default-nc.jpg"} 
                     alt={news.title} 
@@ -212,7 +212,7 @@ function NewsIndex() {
                     }}
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-background/80 backdrop-blur-md px-3 py-1 rounded-full text-[9px] font-black uppercase tracking-widest border border-white/10 text-white">
+                    <span className="bg-background/80 backdrop-blur-md px-3 py-1 rounded-none text-[9px] font-black uppercase tracking-widest border border-white/10 text-white">
                       {news.categories[0] || 'Geral'}
                     </span>
                   </div>
@@ -237,7 +237,7 @@ function NewsIndex() {
 
         {/* No Results */}
         {displayedNews.length === 0 && (
-          <div className="mt-20 py-20 text-center rounded-[2rem] border border-dashed border-border bg-card/20">
+          <div className="mt-20 py-20 text-center rounded-none border border-dashed border-border bg-surface-elevated/20">
             <Newspaper className="h-12 w-12 text-muted-foreground mx-auto mb-4 opacity-20" />
             <h3 className="text-xl font-bold">Nenhum artigo encontrado</h3>
             <p className="text-muted-foreground mt-2">Tente buscar por outros termos ou categorias.</p>
@@ -276,7 +276,7 @@ function NewsIndex() {
                   key={tag}
                   to="/noticias/tag/$tag"
                   params={{ tag: tag }}
-                  className="px-4 py-2 rounded-xl bg-card/40 border border-border text-xs font-medium text-muted-foreground hover:border-primary/50 hover:bg-card hover:text-primary transition-all uppercase tracking-widest"
+                  className="px-4 py-2 rounded-none bg-surface-elevated/40 border border-border text-xs font-medium text-muted-foreground hover:border-primary/50 hover:bg-surface-elevated hover:text-primary transition-all uppercase tracking-widest"
                 >
                   #{tag}
                 </Link>

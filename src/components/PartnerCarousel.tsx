@@ -26,7 +26,7 @@ export function PartnerCarousel({
   return (
     <div className={cn(
       "w-full py-16 overflow-hidden relative isolate",
-      showBackground && "border-b border-white/5 bg-[#0A1428]/50 backdrop-blur-sm"
+      showBackground && "border-b border-white/5 bg-black/50 backdrop-blur-sm"
     )}>
       {showBackground && (
         <>

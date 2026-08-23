@@ -120,7 +120,7 @@ function renderBold(text: string) {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
   return parts.map((p, i) =>
     p.startsWith("**") && p.endsWith("**") ? (
-      <strong key={i} className="font-semibold text-foreground">
+      <strong key={i} className="font-semibold text-primary-glow">
         {p.slice(2, -2)}
       </strong>
     ) : (
@@ -206,7 +206,7 @@ export function LandingPage({
       </Helmet> 
       */}
       {/* HERO */}
-      <section className="relative isolate overflow-hidden">
+      <section className="relative isolate overflow-hidden bg-black">
         <div className="absolute inset-0 -z-10 bg-hero-glow" />
         <div className="absolute inset-0 -z-10 grid-pattern opacity-30 pointer-events-none" aria-hidden="true" />
         <div className={`absolute inset-0 -z-10 ${pathname.includes('leilao') ? 'bg-black/80' : 'bg-black/40'}`} />
@@ -267,7 +267,7 @@ export function LandingPage({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl"
+            className="mt-6 font-display text-4xl font-bold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl text-white"
           >
             {h1}
           </motion.h1>
@@ -306,7 +306,7 @@ export function LandingPage({
             <Link
               to={secondaryCta.to}
               onClick={() => trackClick(secondaryCta.label, `Hero Secondary (${eyebrow})`)}
-              className="inline-flex items-center gap-2 rounded-none border border-border bg-surface/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur hover:bg-surface"
+              className="inline-flex items-center gap-2 rounded-none border border-border bg-surface-elevated/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur hover:bg-surface-elevated"
             >
               {secondaryCta.label}
             </Link>
@@ -324,8 +324,8 @@ export function LandingPage({
           {stats && (
             <div className="mx-auto mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
               {stats.map((s) => (
-                <div key={s.label} className="glass rounded-none px-4 py-5 text-center">
-                  <div className="font-display text-2xl font-bold text-gradient md:text-3xl">{s.value}</div>
+                <div key={s.label} className="glass rounded-none px-4 py-5 text-center bg-surface-elevated/40 border-white/5">
+                  <div className="font-display text-2xl font-bold text-primary-glow md:text-3xl">{s.value}</div>
                   <div className="mt-1 text-xs text-muted-foreground">{s.label}</div>
                 </div>
               ))}
@@ -336,7 +336,7 @@ export function LandingPage({
 
       {/* CLIENTS */}
       {clients && clients.length > 0 && (
-        <section className="relative border-y border-border bg-surface/30 py-10">
+        <section className="relative border-y border-border bg-surface-elevated/30 py-10">
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <h2 className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">
               {clientsTitle ?? `Empresas que confiam no ${eyebrow} NC Brasil`}
@@ -362,7 +362,7 @@ export function LandingPage({
       {/* PROBLEM / SOLUTION */}
 
       {(problem || solution) && (
-        <section className="relative py-20 md:py-28">
+        <section className="relative py-20 md:py-28 bg-black">
           <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 lg:px-8 md:grid-cols-2">
             {problem && (
               <Reveal>
@@ -420,11 +420,11 @@ export function LandingPage({
 
       {/* PARALLAX SHOWCASE */}
       {((showParallaxshowcase && showcaseImages.length > 0) || (showcase && showcase.length > 0)) && (
-        <section className="relative overflow-hidden py-24 md:py-32">
+        <section className="relative overflow-hidden py-24 md:py-32 bg-black">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow={pathname.includes('rifas') ? "Sistema de Rifas" : pathname.includes('leilao') ? "Plataforma de Leilão" : "Showcase do Sistema"}
-              title={<>Design <span className="text-gradient">Avançado</span> & Performance</>}
+              title={<>Design <span className="text-primary-glow">Avançado</span> & Performance</>}
               description={pathname.includes('rifas') 
                 ? "Conheça a interface moderna e intuitiva da nossa plataforma de ações online." 
                 : pathname.includes('leilao')
@@ -469,7 +469,7 @@ export function LandingPage({
                 )
               }))).map((item, i) => (
                 <Reveal key={item.image + i} delay={i * 0.1}>
-                  <div className="group relative flex flex-col overflow-hidden rounded-none border border-border bg-card/20 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/40 hover:glow-sm">
+                  <div className="group relative flex flex-col overflow-hidden rounded-none border border-border bg-surface-elevated/20 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-surface-elevated/40 hover:glow-sm">
                     {/* Header/Caption */}
                     <div className="flex flex-col gap-2 p-8 text-center md:p-10">
                       <h3 className="font-display text-2xl font-bold md:text-3xl">
@@ -521,7 +521,7 @@ export function LandingPage({
                             {expandedImages[i] && (
                               <button 
                                 onClick={() => toggleExpand(i)}
-                                className="inline-flex items-center gap-2 rounded-none bg-surface/80 border border-white/20 px-6 py-2.5 text-sm font-semibold text-white backdrop-blur shadow-lg transition-transform hover:scale-105"
+                                className="inline-flex items-center gap-2 rounded-none bg-surface-elevated/80 border border-white/20 px-6 py-2.5 text-sm font-semibold text-white backdrop-blur shadow-lg transition-transform hover:scale-105"
                               >
                                 <Minus className="h-4 w-4" /> Recolher
                               </button>
@@ -552,16 +552,16 @@ export function LandingPage({
 
       {/* BENEFITS */}
       {benefits && benefits.length > 0 && (
-        <section className="relative py-20 md:py-28">
+        <section className="relative py-20 md:py-28 bg-black">
           <div className="mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Por que escolher"
-              title={benefitsTitle ?? <>Vantagens que fazem <span className="text-gradient">a diferença</span></>}
+              title={benefitsTitle ?? <>Vantagens que fazem <span className="text-primary-glow">a diferença</span></>}
             />
             <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
               {benefits.map((b, i) => (
                 <Reveal key={b.title} delay={i * 0.05}>
-                  <div className="group h-full rounded-none border border-border bg-card/40 p-6 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-sm">
+                  <div className="group h-full rounded-none border border-border bg-surface-elevated/40 p-6 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40 hover:glow-sm">
                     <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-none bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform group-hover:scale-110">
                       <b.icon className="h-6 w-6" />
                     </div>
@@ -577,17 +577,17 @@ export function LandingPage({
 
       {/* FEATURES */}
       {features && features.length > 0 && (
-        <section id="features" className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
+        <section id="features" className="relative overflow-hidden border-y border-border bg-black py-20 md:py-28">
           <div className="absolute inset-0 grid-pattern opacity-20 pointer-events-none" aria-hidden="true" />
           <div className="relative mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Recursos"
-              title={featuresTitle ?? <>Tudo que você precisa <span className="text-gradient">em um só lugar</span></>}
+              title={featuresTitle ?? <>Tudo que você precisa <span className="text-primary-glow">em um só lugar</span></>}
             />
             <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {features.map((f, i) => (
                 <Reveal key={f.title} delay={i * 0.04}>
-                  <div className="flex h-full gap-4 rounded-none border border-border bg-card/60 p-6 backdrop-blur transition-colors hover:border-primary/40">
+                  <div className="flex h-full gap-4 rounded-none border border-border bg-surface-elevated/60 p-6 backdrop-blur transition-colors hover:border-primary/40">
                     <div className="mt-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-none bg-primary/10 text-primary">
                       <f.icon className="h-5 w-5" />
                     </div>
@@ -605,16 +605,16 @@ export function LandingPage({
 
       {/* MODULES */}
       {modules && modules.length > 0 && (
-        <section className="relative py-20 md:py-28">
+        <section className="relative py-20 md:py-28 bg-black">
           <div className="mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Módulos"
-              title={modulesTitle ?? <>Módulos que compõem <span className="text-gradient">a plataforma</span></>}
+              title={modulesTitle ?? <>Módulos que compõem <span className="text-primary-glow">a plataforma</span></>}
             />
             <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               {modules.map((m, i) => (
                 <Reveal key={m.title} delay={i * 0.05}>
-                  <div className="h-full rounded-none border border-border bg-card/40 p-6 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40">
+                  <div className="h-full rounded-none border border-border bg-surface-elevated/40 p-6 backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/40">
                     <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-none bg-primary/10 text-primary ring-1 ring-primary/20">
                       <m.icon className="h-5 w-5" />
                     </div>
@@ -637,16 +637,16 @@ export function LandingPage({
 
       {/* USE CASES */}
       {useCases && useCases.length > 0 && (
-        <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
+        <section className="relative overflow-hidden border-y border-border bg-black py-20 md:py-28">
           <div className="mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Casos de uso"
-              title={useCasesTitle ?? <>Feito para <span className="text-gradient">quem faz acontecer</span></>}
+              title={useCasesTitle ?? <>Feito para <span className="text-primary-glow">quem faz acontecer</span></>}
             />
             <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {useCases.map((u, i) => (
                 <Reveal key={u.title} delay={i * 0.04}>
-                  <div className="group h-full rounded-none border border-border bg-card/60 p-6 backdrop-blur transition-all hover:border-primary/40 hover:glow-sm">
+                  <div className="group h-full rounded-none border border-border bg-surface-elevated/60 p-6 backdrop-blur transition-all hover:border-primary/40 hover:glow-sm">
                     <u.icon className="h-8 w-8 text-primary transition-transform group-hover:scale-110" />
                     <h3 className="mt-4 font-display text-lg font-semibold">{u.title}</h3>
                     <p className="mt-2 text-sm text-muted-foreground">{renderBold(u.desc)}</p>
@@ -660,16 +660,16 @@ export function LandingPage({
 
       {/* INTEGRATIONS */}
       {integrations && integrations.length > 0 && (
-        <section className="relative py-20 md:py-28">
+        <section className="relative py-20 md:py-28 bg-black">
           <div className="mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Integrações"
-              title={integrationsTitle ?? <>Conecta com <span className="text-gradient">seu ecossistema</span></>}
+              title={integrationsTitle ?? <>Conecta com <span className="text-primary-glow">seu ecossistema</span></>}
             />
             <div className="mt-12 flex flex-wrap justify-center gap-3">
               {integrations.map((it, i) => (
                 <Reveal key={it.label} delay={i * 0.02}>
-                  <div className="rounded-none border border-border bg-card/60 px-5 py-2.5 text-sm font-medium backdrop-blur transition-all hover:border-primary/50 hover:text-primary">
+                  <div className="rounded-none border border-border bg-surface-elevated/60 px-5 py-2.5 text-sm font-medium backdrop-blur transition-all hover:border-primary/50 hover:text-primary">
                     {it.label}
                     {it.category && <span className="ml-2 text-xs text-muted-foreground">· {it.category}</span>}
                   </div>
@@ -682,17 +682,17 @@ export function LandingPage({
 
       {/* SECURITY */}
       {security && security.length > 0 && (
-        <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
+        <section className="relative overflow-hidden border-y border-border bg-black py-20 md:py-28">
           <div className="absolute inset-0 grid-pattern opacity-20 pointer-events-none" />
           <div className="relative mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Segurança"
-              title={securityTitle ?? <>Segurança e <span className="text-gradient">conformidade</span> em primeiro lugar</>}
+              title={securityTitle ?? <>Segurança e <span className="text-primary-glow">conformidade</span> em primeiro lugar</>}
             />
             <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
               {security.map((s, i) => (
                 <Reveal key={s.title} delay={i * 0.04}>
-                  <div className="h-full rounded-none border border-border bg-card/60 p-6 text-center backdrop-blur">
+                  <div className="h-full rounded-none border border-border bg-surface-elevated/60 p-6 text-center backdrop-blur">
                     <div className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-none bg-primary/10 text-primary ring-1 ring-primary/20">
                       <s.icon className="h-6 w-6" />
                     </div>
@@ -708,11 +708,11 @@ export function LandingPage({
 
       {/* TIMELINE */}
       {timeline && timeline.length > 0 && (
-        <section className="relative py-20 md:py-28">
+        <section className="relative py-20 md:py-28 bg-black">
           <div className="mx-auto max-w-4xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Linha do tempo"
-              title={timelineTitle ?? <>Como implantamos <span className="text-gradient">seu projeto</span></>}
+              title={timelineTitle ?? <>Como implantamos <span className="text-primary-glow">seu projeto</span></>}
             />
             <ol className="relative mt-14 space-y-8 border-l border-primary/30 pl-8">
               {timeline.map((t, i) => (
@@ -721,7 +721,7 @@ export function LandingPage({
                     <span className="absolute -left-[42px] flex h-8 w-8 items-center justify-center rounded-none bg-gradient-primary text-xs font-bold text-primary-foreground glow-sm">
                       {i + 1}
                     </span>
-                    <div className="rounded-none border border-border bg-card/60 p-5 backdrop-blur">
+                    <div className="rounded-none border border-border bg-surface-elevated/60 p-5 backdrop-blur">
                       <div className="text-xs font-semibold uppercase tracking-wider text-primary">{t.step}</div>
                       <h3 className="mt-1 font-display text-lg font-semibold">{t.title}</h3>
                       <p className="mt-2 text-sm text-muted-foreground">{renderBold(t.desc)}</p>
@@ -736,14 +736,14 @@ export function LandingPage({
 
       {/* COMPARATIVE */}
       {comparative && comparative.rows.length > 0 && (
-        <section className="relative overflow-hidden border-y border-border bg-surface/40 py-20 md:py-28">
+        <section className="relative overflow-hidden border-y border-border bg-black py-20 md:py-28">
           <div className="mx-auto max-w-5xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Comparativo"
-              title={comparativeTitle ?? <>Por que somos <span className="text-gradient">a melhor escolha</span></>}
+              title={comparativeTitle ?? <>Por que somos <span className="text-primary-glow">a melhor escolha</span></>}
             />
             <Reveal>
-              <div className="mt-14 overflow-hidden rounded-none border border-border bg-card/60 backdrop-blur">
+              <div className="mt-14 overflow-hidden rounded-none border border-border bg-surface-elevated/60 backdrop-blur">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-border bg-surface/60">

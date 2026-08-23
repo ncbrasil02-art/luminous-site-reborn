@@ -112,7 +112,7 @@ export function SiteHeader() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        scrolled ? "glass border-b border-border/60 py-2" : "bg-transparent py-4",
+        scrolled ? "glass border-b border-border/60 py-2 bg-black/80" : "bg-transparent py-4",
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -169,7 +169,7 @@ export function SiteHeader() {
                         duration: 0.3, 
                         ease: [0.23, 1, 0.32, 1] 
                       }}
-                      className="absolute left-0 top-full mt-2 w-80 overflow-hidden rounded-none border border-white/10 bg-card/95 p-2 shadow-2xl backdrop-blur-xl"
+                      className="absolute left-0 top-full mt-2 w-80 overflow-hidden rounded-none border border-white/10 bg-black/95 p-2 shadow-2xl backdrop-blur-xl"
                     >
                       <div className="grid gap-1 max-h-[70vh] overflow-y-auto scrollbar-none">
                         {item.submenu.map((subItem) => (
@@ -260,7 +260,7 @@ export function SiteHeader() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 top-[68px] z-40 bg-background/95 backdrop-blur-xl lg:hidden overflow-y-auto"
+            className="fixed inset-0 top-[68px] z-40 bg-black/95 backdrop-blur-xl lg:hidden overflow-y-auto"
           >
             <nav className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-8 sm:px-6">
               {navItems.map((item) => (

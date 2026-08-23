@@ -48,7 +48,7 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
   };
 
   return (
-    <section className="relative overflow-hidden py-24 md:py-32" id="contato">
+    <section className="relative overflow-hidden py-24 md:py-32 bg-black" id="contato">
       <div className="absolute inset-0 -z-10 bg-mesh opacity-40" />
       
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -59,7 +59,7 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
               Solicite um Orçamento
             </span>
             <h2 className="mt-6 font-display text-4xl font-bold leading-tight md:text-6xl">
-              Entre em <span className="text-gradient">Contato</span>
+              Entre em <span className="text-primary-glow">Contato</span>
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-muted-foreground md:text-lg">
               Pronto para revolucionar seu projeto? Nossa equipe está aqui para ajudar você a começar hoje mesmo.
@@ -72,7 +72,7 @@ export function ContactSection({ pageTitle }: ContactSectionProps) {
           <Reveal className="lg:col-span-3">
             <form 
               onSubmit={handleSubmit}
-              className="group relative overflow-hidden rounded-none border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 sm:p-8 md:p-12"
+              className="group relative overflow-hidden rounded-none border border-border bg-surface-elevated/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 sm:p-8 md:p-12"
             >
               <div className="relative z-10">
                 <h3 className="font-display text-2xl font-bold md:text-3xl">Vamos conversar</h3>
@@ -222,7 +222,7 @@ function ContactInfoCard({
   external?: boolean 
 }) {
   const Card = (
-    <div className="group flex flex-col sm:flex-row items-center sm:items-start gap-5 rounded-none border border-border bg-card/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-card/60 hover:glow-sm text-center sm:text-left">
+    <div className="group flex flex-col sm:flex-row items-center sm:items-start gap-5 rounded-none border border-border bg-surface-elevated/40 p-6 backdrop-blur-sm transition-all hover:border-primary/40 hover:bg-surface-elevated/60 hover:glow-sm text-center sm:text-left">
       <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-none bg-primary/10 text-primary ring-1 ring-primary/20 transition-transform duration-500 group-hover:scale-110 group-hover:bg-primary group-hover:text-white">
         <Icon className="h-6 w-6" />
       </div>

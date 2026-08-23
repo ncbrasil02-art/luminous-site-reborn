@@ -80,7 +80,7 @@ export function SectionHeading({
         </Reveal>
       )}
       <Reveal delay={0.05}>
-        <As id={headingId} className="mt-4 font-display text-3xl font-bold leading-tight md:text-5xl scroll-mt-24">
+        <As id={headingId} className="mt-4 font-display text-3xl font-bold leading-tight md:text-5xl scroll-mt-24 text-white">
           {title}
         </As>
       </Reveal>

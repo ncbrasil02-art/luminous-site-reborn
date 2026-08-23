@@ -215,7 +215,7 @@ function renderBold(text: string) {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
   return parts.map((p, i) =>
     p.startsWith("**") && p.endsWith("**") ? (
-      <strong key={i} className="font-semibold text-foreground">
+      <strong key={i} className="font-semibold text-primary-glow">
         {p.slice(2, -2)}
       </strong>
     ) : (
@@ -244,7 +244,7 @@ function HomePage() {
 
 
       {/* SISTEMAS EM DESTAQUE (SLIDER) ===================================== */}
-      <section className="relative py-24 md:py-40 bg-navy-950/20">
+      <section className="relative py-24 md:py-40 bg-black">
         <div className="absolute inset-0 z-0 bg-hero-glow opacity-30 rotate-180" aria-hidden="true" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20">
@@ -256,7 +256,7 @@ function HomePage() {
                 </span>
               </Reveal>
               <h2 className="font-display text-4xl font-bold tracking-tight text-white md:text-6xl leading-[1.1]">
-                Nossos <span className="text-gradient">Sistemas Personalizados</span>
+                Nossos <span className="text-primary-glow">Sistemas Personalizados</span>
               </h2>
               <p className="mt-6 text-lg text-muted-foreground">
                 Plataformas de alta escala projetadas para dominar o mercado. 
@@ -281,7 +281,7 @@ function HomePage() {
       </section>
 
       {/* SERVIÇOS E SOLUÇÕES =============================================== */}
-      <section className="relative py-24 md:py-40 overflow-hidden">
+      <section className="relative py-24 md:py-40 overflow-hidden bg-black">
         {/* Decorative elements for services section */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -z-10" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px] -z-10" />
@@ -291,7 +291,7 @@ function HomePage() {
             eyebrow="Expertise Digital"
             title={
               <>
-                Ecossistema de <span className="text-gradient">Alta Performance</span>
+                Ecossistema de <span className="text-primary-glow">Alta Performance</span>
               </>
             }
             description={
@@ -311,7 +311,7 @@ function HomePage() {
                   <Link
                     to={s.to}
                     onClick={() => trackClick(s.title, "Home Solutions Grid")}
-                    className="group relative block h-full overflow-hidden rounded-none border border-white/5 bg-navy-900/20 p-6 sm:p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-navy-900/40"
+                    className="group relative block h-full overflow-hidden rounded-none border border-white/5 bg-surface-elevated/20 p-6 sm:p-10 backdrop-blur-md transition-all duration-500 hover:-translate-y-3 hover:border-primary/30 hover:glow-md hover:bg-surface-elevated/40"
                   >
                     {/* Glowing background hint */}
                     <div className="absolute -right-20 -top-20 h-40 w-40 rounded-none bg-primary/5 blur-3xl transition-all duration-700 group-hover:bg-primary/20" />
@@ -339,7 +339,7 @@ function HomePage() {
 
 
       {/* PROCESSO ========================================================= */}
-      <section className="relative overflow-hidden border-y border-white/5 bg-navy-950/40 py-24 md:py-40">
+      <section className="relative overflow-hidden border-y border-white/5 bg-black py-24 md:py-40">
         <div className="absolute inset-0 bg-mesh opacity-20 pointer-events-none" aria-hidden="true" />
         <div className="absolute left-1/2 top-0 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-primary/40 to-transparent shadow-[0_0_20px_rgba(49,91,255,0.4)]" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -347,7 +347,7 @@ function HomePage() {
             eyebrow="Workflow Profissional"
             title={
               <>
-                Da Concepção à <span className="text-gradient">Soberania Digital</span>
+                Da Concepção à <span className="text-primary-glow">Soberania Digital</span>
               </>
             }
             description="Cada etapa é meticulosamente planejada para garantir que seu projeto seja memorável e altamente lucrativo."
@@ -357,7 +357,7 @@ function HomePage() {
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, i) => (
               <Reveal key={step.n} delay={i * 0.1}>
-                <div className="group relative h-full rounded-[2rem] border border-white/5 bg-navy-950/40 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:border-primary/30 hover:bg-navy-900/40 hover:-translate-y-2">
+                <div className="group relative h-full rounded-none border border-white/5 bg-surface-elevated/40 p-6 sm:p-8 backdrop-blur-xl transition-all duration-500 hover:border-primary/30 hover:bg-surface-elevated/60 hover:-translate-y-2">
                   <div className="font-display text-6xl font-black text-white/5 transition-colors group-hover:text-primary/10">
                     {step.n}
                   </div>
@@ -374,7 +374,7 @@ function HomePage() {
       </section>
 
       {/* DESTAQUES ======================================================== */}
-      <section className="relative py-24 md:py-32">
+      <section className="relative py-24 md:py-32 bg-black">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <Reveal>
@@ -384,7 +384,7 @@ function HomePage() {
                   Especialidades
                 </span>
                 <h2 className="mt-4 font-display text-3xl font-bold leading-tight md:text-5xl">
-                  Plataformas <span className="text-gradient">sob demanda</span> que escalam com
+                  Plataformas <span className="text-primary-glow">sob demanda</span> que escalam com
                   você
                 </h2>
                 <p className="mt-5 text-muted-foreground md:text-lg">

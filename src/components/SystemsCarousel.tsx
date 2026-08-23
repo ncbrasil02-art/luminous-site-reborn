@@ -88,8 +88,8 @@ export function SystemsCarousel() {
               className={cn(
                 "group relative h-[500px] sm:h-[600px] lg:h-[650px] overflow-hidden rounded-none border transition-all duration-500 backdrop-blur-md",
                 system.isPremium 
-                  ? "border-primary/40 bg-[#0A1428]/60 ring-1 ring-primary/20 hover:border-primary-glow/60" 
-                  : "border-white/5 bg-[#0A1428]/40 hover:border-primary/40 hover:bg-[#0A1428]/60"
+                  ? "border-primary/40 bg-surface-elevated/60 ring-1 ring-primary/20 hover:border-primary-glow/60" 
+                  : "border-white/5 bg-surface-elevated/40 hover:border-primary/40 hover:bg-surface-elevated/60"
               )}
             >
               {/* Premium Badge */}
@@ -117,9 +117,9 @@ export function SystemsCarousel() {
                     (e.target as HTMLImageElement).src = "/logo.jpg";
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1428] via-[#0A1428]/95 to-[#0A1428]/30" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/95 to-black/30" />
                 {/* Dynamic Glow Effect on Hover */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_50%_0%,rgba(49,91,255,0.15),transparent_70%)]" />
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(circle_at_50%_0%,rgba(0,71,255,0.15),transparent_70%)]" />
               </div>
 
 
@@ -151,8 +151,8 @@ export function SystemsCarousel() {
                     className={cn(
                       "group/btn relative flex w-full items-center justify-between overflow-hidden rounded-none px-6 py-5 text-sm font-bold uppercase tracking-widest transition-all",
                       system.isPremium 
-                        ? "bg-primary text-white glow-sm hover:scale-[1.02]" 
-                        : "bg-white/5 text-white hover:bg-primary hover:glow-sm"
+                        ? "bg-primary text-white glow-md hover:scale-[1.02]" 
+                        : "bg-surface-elevated text-white hover:bg-primary hover:glow-md"
                     )}
                   >
                     <span className="relative z-10">Ver Sistema</span>
