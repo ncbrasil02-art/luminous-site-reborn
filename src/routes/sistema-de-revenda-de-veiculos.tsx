@@ -100,7 +100,7 @@ export const Route = createFileRoute("/sistema-de-revenda-de-veiculos")({
         },
         {
           title: "Vitrine Premium e Mobile First",
-          desc: "Experiência cinematográfica na sua **Plataforma de anúncio de veículos**.",
+          desc: "Experiência de alta performance na sua **Plataforma de anúncio de veículos**.",
           image: vitrineMobiAsset.url
         },
         {
