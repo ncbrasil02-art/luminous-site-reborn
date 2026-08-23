@@ -718,7 +718,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Como-Criar-Uma-Loja-Virtual-Para-2015-01.webp",
+    "image_url": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
