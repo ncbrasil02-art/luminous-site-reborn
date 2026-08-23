@@ -564,7 +564,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/loja-vritual-Copia.jpg",
+    "image_url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
