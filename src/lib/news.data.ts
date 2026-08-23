@@ -44,10 +44,8 @@ export const newsData: NewsPost[] = [
     "image_url": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2070&auto=format&fit=crop",
     "thumb_id": ""
   },
+  {
 
-
-
-    "id": "new-1",
     "title": "NcBrasil lança novo Sistema de Leilão para Pedras Preciosas e Artigos de Luxo",
     "slug": "ncbrasil-lanca-novo-sistema-de-leilao-para-pedras-preciosas",
     "date": new Date().toUTCString(),
