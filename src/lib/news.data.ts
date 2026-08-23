@@ -1155,7 +1155,7 @@ export const newsData: NewsPost[] = [
       "logo",
       "marca"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/identidade-visual-design-grafico.jpg",
+    "image_url": "https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50073"
   },
   {
