@@ -5,6 +5,7 @@ import { Link } from "@tanstack/react-router";
 import { cn } from "@/lib/utils";
 import { trackClick } from "@/lib/analytics";
 import { RocketTakeoff } from "./RocketTakeoff";
+import { SocialProofBlock } from "./SocialProofBlock";
 
 // Importando os assets via JSON pointers para usar as URLs corretas
 import leilaoHomeAsset from "@/assets/sistema-de-leilao-home-premium.png.asset.json";
@@ -176,6 +177,8 @@ export function HeroSlider() {
             <p className="text-lg md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-12">
               {renderBold(slide.description)}
             </p>
+
+            <SocialProofBlock className="mb-12" />
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
