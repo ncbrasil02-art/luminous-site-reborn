@@ -89,7 +89,7 @@ export function SocialProofBlock({ className }: SocialProofBlockProps) {
           {[...Array(5)].map((_, i) => (
             <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
           ))}
-          <span className="ml-2 text-sm font-bold text-white">Aprovado por mais de 85.000 pessoas</span>
+          <span className="ml-2 text-sm font-bold text-white">Aprovado por mais de 1.500 empresas</span>
         </div>
         
         <div className="h-6 overflow-hidden relative w-full">
