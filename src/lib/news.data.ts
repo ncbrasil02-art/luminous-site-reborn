@@ -1056,7 +1056,7 @@ export const newsData: NewsPost[] = [
       "marca",
       "público-alvo"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/branding-concept.jpg",
+    "image_url": "https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
