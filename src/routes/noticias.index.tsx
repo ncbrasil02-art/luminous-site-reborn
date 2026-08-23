@@ -119,8 +119,8 @@ function NewsIndex() {
               onClick={() => setSelectedCategory(cat)}
               className={`px-5 py-2 rounded-xl text-xs font-bold uppercase tracking-widest transition-all ${
                 selectedCategory === cat 
-                  ? 'bg-primary text-white shadow-lg shadow-primary/25' 
-                  : 'bg-card/40 border border-border text-muted-foreground hover:bg-card hover:text-primary'
+                  ? 'bg-primary text-white shadow-lg shadow-primary/25 border-primary' 
+                  : 'bg-card/40 border border-border text-muted-foreground hover:bg-card hover:text-primary hover:border-primary/50'
               }`}
             >
               {cat}
