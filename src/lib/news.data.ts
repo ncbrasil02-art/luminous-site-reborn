@@ -1691,7 +1691,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Site-Responsivo-Feira-de-Santana.webp",
+    "image_url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
