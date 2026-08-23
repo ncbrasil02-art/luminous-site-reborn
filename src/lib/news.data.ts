@@ -1172,7 +1172,7 @@ export const newsData: NewsPost[] = [
       "Webdesign"
     ],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/imagem_topo-14-1170x429.png",
+    "image_url": "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
