@@ -106,7 +106,7 @@ export const newsData: NewsPost[] = [
       "site responsivo",
       "webdesign"
     ],
-    "image_url": "https://www.ncbrasil.com.br/news/criacao-de-sites-rj-63.jpg",
+    "image_url": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b7b?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "48599"
   },
   {
