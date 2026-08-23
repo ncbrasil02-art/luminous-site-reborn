@@ -311,7 +311,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/shutterstock_528070915-820x490-Copia-300x179-1.jpg",
+    "image_url": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
