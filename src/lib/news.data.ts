@@ -1649,7 +1649,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/email-marketing-automacao-pluga.png",
+    "image_url": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
