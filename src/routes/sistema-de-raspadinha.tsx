@@ -200,11 +200,14 @@ export const Route = createFileRoute("/sistema-de-raspadinha")({
         { icon: FileCheck, title: "RNG Certificado", desc: "**iTech Labs / GLI ready** — auditoria externa e hash público por jogada." },
       ]}
       timeline={[
-        { step: "Semana 1-2", title: "Discovery & Design", desc: "Reunião, **definição do modelo legal, identidade visual, arte das raspadinhas** e configuração de lotes." },
-        { step: "Semana 3-4", title: "Setup & Integração", desc: "**Infra provisionada, domínio + SSL, gateway Pix, KYC, RNG certificado** e ambiente de homologação." },
-        { step: "Semana 5", title: "Homologação", desc: "**Testes de carga (10k req/s), auditoria de RNG, teste de fluxo Pix, treinamento** e ajustes finais." },
-        { step: "Semana 6", title: "Go-Live", desc: "**Publicação em produção, submissão do app iOS/Android, campanha de lançamento** e monitoramento 24/7." },
-        { step: "Mês 2-3", title: "Otimização", desc: "**A/B tests, ajuste de RTP, novas raspadinhas temáticas, expansão de canais** de aquisição." },
+        { step: "Etapa 01", title: "Briefing", desc: "Reunião inicial para alinhamento de expectativas e definição das mecânicas de premiação." },
+        { step: "Etapa 02", title: "Montagem do Template", desc: "Personalização da identidade visual e arte das raspadinhas digitais." },
+        { step: "Etapa 03", title: "Apresentação da Plataforma", desc: "Demonstração do RNG, animações das raspadinhas e fluxo de usuário." },
+        { step: "Etapa 04", title: "Testes das Funcionalidades", desc: "Verificação rigorosa da segurança do RNG e performance dos jogos." },
+        { step: "Etapa 05", title: "Simulação de Prêmios", desc: "Testes práticos de ganhos e resgates para garantir a lisura e fluidez do sistema." },
+        { step: "Etapa 06", title: "Treinamento da Equipe", desc: "Capacitação completa para gestão de inventário de prêmios e monitoramento de jogos." },
+        { step: "Etapa 07", title: "Publicação no Domínio Final", desc: "Lançamento oficial no seu domínio com infraestrutura escalável ativada." },
+        { step: "Etapa 08", title: "Suporte e Atualizações", desc: "Prestação de suporte contínuo e evolução tecnológica das raspadinhas." },
       ]}
       comparative={{
         usLabel: "NC Brasil",

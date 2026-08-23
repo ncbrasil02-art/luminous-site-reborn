@@ -266,10 +266,14 @@ export const Route = createFileRoute("/sistema-de-leilao")({
         { icon: Search, title: "Trilha de Auditoria", desc: "Todo evento é logado — quem fez, quando, de onde e o que mudou." },
       ]}
       timeline={[
-        { step: "Semana 1-2", title: "Descoberta e Setup", desc: "Kick-off, mapeamento de regras de negócio, provisionamento da instância e **configuração white-label** (cores, domínio, logo)." },
-        { step: "Semana 3-4", title: "Configuração e Integrações", desc: "Meios de pagamento, KYC, e-mail transacional, DOE e **integrações com seu ERP/TJ**." },
-        { step: "Semana 5-6", title: "Treinamento", desc: "Capacitação da equipe: **operadores, moderadores e financeiro**, com manual e vídeos." },
-        { step: "Semana 7-8", title: "Leilão-piloto acompanhado", desc: "Primeiro pregão com **suporte in-loco em tempo real** e ajustes finos." },
+        { step: "Etapa 01", title: "Briefing", desc: "Reunião inicial para alinhamento de expectativas e coleta de requisitos específicos do leiloeiro." },
+        { step: "Etapa 02", title: "Montagem do Template", desc: "Personalização da identidade visual e estrutura da plataforma conforme a marca do cliente." },
+        { step: "Etapa 03", title: "Apresentação da Plataforma", desc: "Demonstração das funcionalidades configuradas e validação do fluxo de navegação." },
+        { step: "Etapa 04", title: "Testes das Funcionalidades", desc: "Verificação rigorosa de todos os módulos de lances, segurança e performance dos **Leilões**." },
+        { step: "Etapa 05", title: "Pregão Eletrônico de Teste", desc: "Simulação de um evento real para garantir que tudo opere perfeitamente sob pressão." },
+        { step: "Etapa 06", title: "Treinamento da Equipe", desc: "Capacitação completa para empresa e equipe da **plataforma de leilões** dominarem o sistema." },
+        { step: "Etapa 07", title: "Publicação no Domínio Final", desc: "Lançamento oficial no domínio final do **leiloeiro** com toda a infraestrutura pronta." },
+        { step: "Etapa 08", title: "Suporte e Atualizações", desc: "Prestação de suporte contínuo e evolução da plataforma com atualizações tecnológicas." },
       ]}
       comparative={{
         usLabel: "NC Brasil",
