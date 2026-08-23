@@ -1323,7 +1323,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/software-web.png",
+    "image_url": "https://images.unsplash.com/photo-1551288049-bbdac8a28a80?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
