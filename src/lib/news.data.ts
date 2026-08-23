@@ -1713,7 +1713,7 @@ export const newsData: NewsPost[] = [
     "content": "",
     "categories": [],
     "tags": [],
-    "image_url":  "https://www.ncbrasil.com.br/news/Learn-SEO-796x398.webp",
+    "image_url": "https://images.unsplash.com/photo-1572177215152-32f247303126?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": ""
   },
   {
