@@ -792,7 +792,7 @@ export const newsData: NewsPost[] = [
       "Sites para a igreja",
       "Tendência Web designer"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/pc-keyboard-thumb-large.jpg",
+    "image_url": "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "49763"
   },
   {
