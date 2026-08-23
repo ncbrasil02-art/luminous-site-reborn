@@ -173,6 +173,10 @@
     mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   }
 
+  .marquee-mask-cinematic {
+    mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  }
+
   .scrollbar-none {
     -ms-overflow-style: none;
     scrollbar-width: none;
