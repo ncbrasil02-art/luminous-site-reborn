@@ -1864,7 +1864,7 @@ export const newsData: NewsPost[] = [
       "Sistemas Sob Demanda",
       "Software"
     ],
-    "image_url":  "https://www.ncbrasil.com.br/news/ordem-de-producao-e-a-importancia-da-tecnologia-para-evitar-perdas-750x410.jpeg",
+    "image_url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop",
     "thumb_id": "50969"
   },
   {
