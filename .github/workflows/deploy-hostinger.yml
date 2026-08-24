@@ -15,7 +15,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          # prerender.js imports a .ts file directly (native TS support),
+          # which needs Node 23.6+/24 — Node 20 crashes with ERR_UNKNOWN_FILE_EXTENSION.
+          node-version: 24
           cache: npm
 
       # Lovable's own editor now manages dependencies via bun (bun.lockb) and
