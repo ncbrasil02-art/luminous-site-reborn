@@ -18,15 +18,18 @@ jobs:
           node-version: 20
           cache: npm
 
+      # Lovable's own editor now manages dependencies via bun (bun.lockb) and
+      # doesn't keep package-lock.json in sync, so `npm ci` breaks any time it
+      # adds/changes a package. `npm install` tolerates that drift.
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build (static site)
         run: npm run build
 
-      # Site is a plain client-side SPA build now (no Node.js runtime needed),
-      # so the "dist/" folder is uploaded straight to the document root
-      # (HOSTINGER_APP_PATH, e.g. public_html) — no remote install/restart step.
+      # Site is served as static prerendered HTML on Hostinger (no Node.js
+      # runtime there), so only the client build is uploaded to the document
+      # root (HOSTINGER_APP_PATH, e.g. public_html).
       - name: Upload dist/ to Hostinger via SSH
         uses: easingthemes/ssh-deploy@v6
         with:
@@ -38,4 +41,7 @@ jobs:
           TARGET: ${{ secrets.HOSTINGER_APP_PATH }}
           # news/ is excluded: it's a ~1GB media library that lives only on
           # the server (not in git), so --delete must not touch it.
-          ARGS: "-rlgoDzvc -i --delete --exclude=news"
+          # server/ is excluded: it's the SSR bundle used only to generate
+          # the prerendered HTML during the build — Hostinger has no Node.js
+          # runtime, so shipping it would just waste ~1GB of upload per run.
+          ARGS: "-rlgoDzvc -i --delete --exclude=news --exclude=server"
