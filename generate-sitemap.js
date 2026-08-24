@@ -31,7 +31,10 @@ const systems = [
   '/sistema-de-raspadinha',
   '/programa-de-ordem-de-servico',
   '/plataforma-chinesa-apostas-cassino',
-  '/sistema-de-ofertas-cupom-marketplace'
+  '/sistema-de-ofertas-cupom-marketplace',
+  '/dicas-para-e-commerce',
+  '/erros-na-criacao-de-um-aplicativo',
+  '/instagram-para-empresas'
 ];
 
 const services = [
